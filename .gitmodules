@@ -1,0 +1,3 @@
+[submodule "neurable-eeg-stream"]
+	path = neurable-eeg-stream
+	url = https://github.com/mindfulmakers/neurable-eeg-stream
