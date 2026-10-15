@@ -1,0 +1,52 @@
+{
+  "kind": "toy-measurement-control",
+  "size": 64,
+  "steps": 64,
+  "numpy": "2.3.5",
+  "boundary": "toroidal; assert no cells touch boundary in any measured frame",
+  "randomness": "none; deterministic known patterns",
+  "patterns": {
+    "block": {
+      "unique_raw_frames": 1,
+      "unique_translation_normalized_shapes": 1,
+      "relative_recurrence_period": 1,
+      "displacement_per_period": [
+        0,
+        0
+      ],
+      "all_period_shift_checks_passed": true
+    },
+    "blinker": {
+      "unique_raw_frames": 2,
+      "unique_translation_normalized_shapes": 2,
+      "relative_recurrence_period": 2,
+      "displacement_per_period": [
+        0,
+        0
+      ],
+      "all_period_shift_checks_passed": true
+    },
+    "glider": {
+      "unique_raw_frames": 64,
+      "unique_translation_normalized_shapes": 4,
+      "relative_recurrence_period": 4,
+      "displacement_per_period": [
+        1,
+        1
+      ],
+      "all_period_shift_checks_passed": true
+    }
+  },
+  "translated_glider_archive": {
+    "members": 16,
+    "raw_patterns": 16,
+    "translation_normalized_patterns": 1
+  },
+  "interpretation": "A moving recurrent object can yield many image-unique observations without new intrinsic shape organization. Translation and velocity remain functionally important for navigation and collisions. Neither descriptor is universally correct.",
+  "limits": [
+    "Not a test of CLIP, ASAL, AURORA or Lenia.",
+    "Known hand-selected patterns; no search algorithm comparison or inferential statistics.",
+    "No evidence of agent-team superiority, indefinite novelty, evolution or cognition.",
+    "Translation normalization is appropriate only when absolute location is irrelevant to the question."
+  ]
+}

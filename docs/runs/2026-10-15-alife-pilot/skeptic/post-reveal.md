@@ -1,0 +1,15 @@
+# Skeptic after reveal
+
+I read Explorer and Evaluator only after the three first passes were committed and revealed. We independently converge on a bounded interpretation: these papers supply useful discovery machinery and conceptual distinctions; neither visual novelty nor named agent roles establishes open-ended evolution or intelligence. Agreement here is evidence of compatible readings, not three independent model-family replications.
+
+Explorer adds an important mechanistic distinction: external search over simulated worlds differs from reproduction and selection occurring inside one ecology. Evaluator adds the statistical unit: frames, related archive members, and admitted offspring are not independent search replications. My additional emphasis is construct validity: which properties does the observer retain, and which meaningful behaviors does an invariance rule erase?
+
+The proposed glider diagnostic is worthwhile if labeled as a toy counterexample about measurement. Sixteen spatially translated initial patterns can yield sixteen distinct pixel arrays and one translation-normalized pattern. Over 64 steps, one moving glider can generate 64 raw images while cycling through four normalized shapes; a four-step recurrence with displacement (1,1) is a traveling periodic structure. These are predicted checks until the code actually produces them. Record finite-grid boundaries, initial coordinates, canonicalization, and the recurrence check; clipping or wraparound can change the count.
+
+What a successful check would establish: exact pixel uniqueness can exceed shape novelty, and finite-window image novelty alone cannot identify accumulating organization. It can exercise reproducible artifact production, contrast alternative descriptors, and verify that the team reports an ambiguity rather than erasing it.
+
+What it cannot establish: that CLIP misclassifies gliders, that ASAL's actual embedding objective behaves like exact pixel hashing, that AURORA is dominated by translation, or that either paper's results fail to replicate. No encoder, paper algorithm, learned archive, statistical comparison, or original simulation configuration is reproduced by this diagnostic.
+
+Preserved tension: translation is a nuisance only for the question of intrinsic shape novelty. It is behaviorally meaningful for navigation, transport, encounters, and collisions. Normalization could merge organisms with distinct speeds or environmental functions. Therefore retain both descriptions: normalized morphology plus displacement/velocity and relevant interaction outcomes. The appropriate descriptor is specified by the scientific question; fewer equivalence classes is not automatically a better science metric.
+
+Recommended next decision: use the toy as a visible measurement audit, then choose one paper-specific held-out test. Freeze the selected candidates and the validation definition before running it. A real complementarity benchmark additionally needs matched-budget single-agent and independent-ensemble controls; this coordinated paper pilot does not estimate the causal value of complementary agents.

@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-15",
+  "sources": [
+    "https://arxiv.org/html/2412.17799v1",
+    "https://arxiv.org/html/2406.04235v1",
+    "https://arxiv.org/html/2407.09502v1"
+  ],
+  "discovery": "Emergent Mind paper listings; full primary arXiv v1 texts used for analysis",
+  "separate_agent_contexts": [
+    "explorer",
+    "skeptic",
+    "evaluator",
+    "synthesizer"
+  ],
+  "builder": "Parent coordinator",
+  "shared_model": true,
+  "model_identifier": "Not separately verified; inherited same parent model",
+  "commit_versions": [
+    12,
+    13,
+    14
+  ],
+  "reveal_versions": [
+    15,
+    16,
+    17
+  ],
+  "round": "alife-papers-20261015-r1",
+  "native_artifact_source_commit": "ab9aba130200e0a7dd4c76dca5cf945169f8c44a",
+  "native_artifact_module_sha256": "c5108c064c5aa85c18c3c32a890f2d93f148ea6fa91ba9791b54cbf8f9f3fcce",
+  "artifact_count": 8,
+  "limitations": [
+    "Same inherited model and source corpus, no cross-model independence.",
+    "Not a replication of original ALife search experiments.",
+    "No equal-budget team superiority benchmark run.",
+    "Human task approval remains pending."
+  ],
+  "script_sha256": "aef50b91263a9f5225d8725900a395ec782d1c2f209692476a443a65373fa7ba"
+}
