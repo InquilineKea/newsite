@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "operation": "Paper-level characterization; no new quality-diversity proposal run",
+  "readers": {
+    "map_fedichev": "Latent aging models, observational inference and intervention interpretation",
+    "map_gootenberg": "Engineered molecular capabilities, assay denominators and discovery breadth",
+    "map_anchors": "Search representations, diversity descriptors and generated hypotheses"
+  },
+  "audit": {
+    "context": "map_audit",
+    "focus": "Claim-type calibration, alternative explanations, sampling units, priority and reader coverage",
+    "record": "audit.json"
+  },
+  "coordinator": "root; rubric, reconciliation, source integration and publication",
+  "interface": "map_interface; no scientific rating assignment",
+  "independence": "All contexts inherit the same parent model family. Role separation does not establish independent model errors or external peer review.",
+  "execution": "Actual primary-text reading, role-separated critique and deterministic export/validation. Scientific experiments and independent reproductions were not run.",
+  "sourceRecord": "readings/ retains original reader outputs before coordinator refinements. papers.json is the final curated map.",
+  "browserQA": "Unavailable; no browser QA was performed. Data, JavaScript and meaningful unit checks are used instead.",
+  "humanReview": "Pending; published profiles remain editable research judgments.",
+  "recordHashes": {
+    "audit.json": "c2566c7a2c86aea027b47738299f04f97db4a0fe0dcd6295d1a714e73ea714f2",
+    "papers.json": "61a9b77dd926c1401deb14b2008f658b81517171f5e28efc97cc9943caa903d2",
+    "rubric.json": "6358181d074212ce3597777a84fbc8c53d20622895aeaa44cd942317e3bb2693"
+  }
+}

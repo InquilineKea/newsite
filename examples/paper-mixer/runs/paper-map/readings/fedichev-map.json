@@ -1,0 +1,97 @@
+{
+  "reviewDate": "2026-10-15",
+  "reader": "map_fedichev",
+  "modelIndependence": "Separate reading context; same inherited model family as coordinator.",
+  "papers": [
+    {
+      "id": "DOSI",
+      "group": "Fedichev",
+      "title": "Longitudinal analysis of blood markers reveals progressive loss of resilience and predicts human lifespan limit",
+      "authors": ["Timothy V. Pyrkov", "Konstantin Avchaciov", "Andrei E. Tarkhov", "Leonid I. Menshikov", "Andrei V. Gudkov", "Peter O. Fedichev"],
+      "year": 2021,
+      "status": "Published research article; Nature Communications version of record, 25 May 2021",
+      "version": "Version of record, DOI 10.1038/s41467-021-23014-1",
+      "url": "https://www.nature.com/articles/s41467-021-23014-1",
+      "doi": "10.1038/s41467-021-23014-1",
+      "tags": {"mechanism": ["critical slowing", "phenomenological dynamics"], "scale": ["human", "organism", "population"], "evidence": ["CBC", "wearable activity", "mortality"], "validation": ["held-out cohort", "cross-modality", "observational"]},
+      "assessments": {
+        "conceptual": {"score": 3, "confidence": "medium", "rationale": "Adds recovery dynamics to static biological-age prediction.", "locator": "Introduction; Results: Physiological state fluctuations and loss of resilience"},
+        "observability": {"score": 3, "confidence": "medium", "rationale": "Recovery-time estimates recur in blood and activity.", "locator": "Fig. 3A–C"},
+        "diversity": {"score": 3, "confidence": "high", "rationale": "Blood, activity, mortality constrain related observational claims.", "locator": "Figs. 2–3; Methods: Hazards model"},
+        "controls": {"score": 2, "confidence": "medium", "rationale": "Cohort checks help; clinical selection remains consequential.", "locator": "Methods: Hazards model; Results: Physiological state fluctuations"},
+        "statistics": {"score": 2, "confidence": "medium", "rationale": "Held-out prediction does not validate lifespan extrapolation.", "locator": "Methods: Hazards model; Fig. 3C"},
+        "scope": {"score": 2, "confidence": "high", "rationale": "Phenomenological caveat coexists with absolute-limit framing.", "locator": "Abstract; Discussion, final paragraphs"},
+        "reproducibility": {"score": 2, "confidence": "medium", "rationale": "Methods specified; additional data require author request.", "locator": "Methods; Data availability"},
+        "depth": {"score": 4, "confidence": "high", "rationale": "Selection and extrapolation materially change headline interpretation.", "locator": "Results: Physiological state fluctuations; Fig. 3C"}
+      },
+      "details": [
+        {"observation": "GEROLONG lacked diagnoses; DOSI thresholds selected the analyzed subgroup.", "interpretation": "Health classification partly reuses the modeled signal.", "boundary": "Not independently verified disease-free aging.", "locator": "Results: Physiological state fluctuations and loss of resilience"},
+        {"observation": "Recovery-rate trends are extrapolated beyond observed ages.", "interpretation": "The proposed ceiling depends on continued trend behavior.", "boundary": "No observed universal survival limit.", "locator": "Fig. 3C; Discussion"}
+      ],
+      "novelty": {"comparator": "Levine (2013), Modeling the rate of senescence", "comparatorUrl": "https://doi.org/10.1093/gerona/gls233", "increment": "Temporal resilience adds information beyond a mortality-associated snapshot.", "limit": "Comparator abstract reviewed; global priority unverified."},
+      "nextTest": "Prospectively compare recovery models under standardized perturbations, testing age-trend curvature and clinical-selection sensitivity.",
+      "coverage": {"read": ["Publisher main-text PDF: abstract, introduction and initial results", "Publisher indexed Results: Physiological state fluctuations and loss of resilience, Fig. 3 caption, Discussion", "Publisher indexed Methods: Complete blood count datasets, Step counts datasets, Hazards model; Data availability", "Levine comparator PubMed abstract"], "notRead": ["Supplementary PDF", "Peer Review File", "Reporting Summary", "Raw data or executable code", "Full comparator methods"]},
+      "references": [{"title": "Publisher article", "url": "https://www.nature.com/articles/s41467-021-23014-1", "scope": "Main text and indexed publisher methods"}, {"title": "Publisher PDF", "url": "https://www.nature.com/articles/s41467-021-23014-1.pdf", "scope": "Initial main-text pages accessible; subsequent direct fetches intermittently blocked"}]
+    },
+    {
+      "id": "TBA",
+      "group": "Fedichev",
+      "title": "Aging Clocks, Entropy, and the Challenge of Age Reversal",
+      "authors": ["Andrei E. Tarkhov", "Kirill A. Denisov", "Peter O. Fedichev"],
+      "year": 2024,
+      "status": "Published research article; Aging Biology, 12 August 2024",
+      "version": "Published article, DOI 10.59368/agingbio.20240031",
+      "url": "https://agingcelljournal.org/Archive/Volume2/20240031/",
+      "doi": "10.59368/agingbio.20240031",
+      "tags": {"mechanism": ["metastable transitions", "mean-field theory", "configuration entropy"], "scale": ["human", "CpG", "population"], "evidence": ["bulk DNAm", "medical records"], "validation": ["cross-modality", "model fit", "observational"]},
+      "assessments": {
+        "conceptual": {"score": 3, "confidence": "medium", "rationale": "Organizes drift and resilience as coupled aging components.", "locator": "Theory; Eqs. 5–8; Discussion"},
+        "observability": {"score": 2, "confidence": "medium", "rationale": "Latent summaries proposed; causal entities remain unidentified.", "locator": "Figs. 1–4; Eq. 7"},
+        "diversity": {"score": 3, "confidence": "high", "rationale": "Methylation and longitudinal diagnoses probe related signatures.", "locator": "Figs. 1–2; Methods: DNAm and EMRs"},
+        "controls": {"score": 2, "confidence": "medium", "rationale": "Cross-modality agreement leaves alternative generative explanations open.", "locator": "Results: Aging signatures; Theory"},
+        "statistics": {"score": 2, "confidence": "medium", "rationale": "Age-selected features and extrapolation complicate validation.", "locator": "Methods: PCA of the DNAm data; Fig. 1D"},
+        "scope": {"score": 1, "confidence": "medium", "rationale": "Entropy interpretation extends beyond uniquely identified mechanism.", "locator": "Eq. 7; Discussion: age-reversal predictions"},
+        "reproducibility": {"score": 2, "confidence": "medium", "rationale": "Dataset identifiers and transformations supplied; execution unverified.", "locator": "Materials and Methods"},
+        "depth": {"score": 4, "confidence": "high", "rationale": "Feature selection and entropy assumptions bear central claims.", "locator": "Methods: PCA; Eq. 2; Results surrounding Eq. 7"}
+      },
+      "details": [
+        {"observation": "Age-correlated CpGs precede PCA; eligibility differs: Methods excludes under-20s, Results specifies over-25s.", "interpretation": "Age alignment partly reflects selection; exact eligibility needs clarification.", "boundary": "Cell-composition adjustment unverified.", "locator": "Methods: PCA of the DNAm data, p. 2; Results: Aging signatures, p. 3"},
+        {"observation": "Bulk methylation supplies per-site marginal Shannon entropy.", "interpretation": "Thermodynamic age additionally assumes rare, approximately independent transitions.", "boundary": "Not direct measurement of organism-wide thermodynamic entropy.", "locator": "Methods: Entropy determination, Eq. 2; Eq. 7"}
+      ],
+      "novelty": {"comparator": "Pyrkov et al. (2021), DOSI resilience analysis", "comparatorUrl": "https://doi.org/10.1038/s41467-021-23014-1", "increment": "Adds a proposed microscopic transition account linking drift to resilience.", "limit": "Fit compatibility does not establish unique causation."},
+      "nextTest": "Freeze CpGs and loadings; compare longitudinal, cell-type-resolved predictions against alternative drift models.",
+      "coverage": {"read": ["Complete main HTML: Materials and Methods, Theory, Results and Discussion, including equations and figure captions", "Published status and conflicts disclosure", "DOSI comparator main sections documented above"], "notRead": ["Separate Supplementary PDF: retrieval failed", "Raw methylation or UK Biobank records", "Executable analysis", "Longitudinal DNAm validation"]},
+      "references": [{"title": "Published full HTML", "url": "https://agingcelljournal.org/Archive/Volume2/20240031/", "scope": "Main methods, theory, results, discussion"}, {"title": "Published PDF", "url": "https://agingbiologyjournal.org/Archive/Volume2/20240031/agingbio.20240031.pdf", "scope": "Publisher PDF retrieved; assessment based on main HTML"}]
+    },
+    {
+      "id": "DYNAMIC-ENTROPIC",
+      "group": "Fedichev",
+      "title": "Differential Responses of Dynamic and Entropic Aging Factors to Longevity Interventions",
+      "authors": ["Kristina Perevoshchikova", "Peter O. Fedichev"],
+      "year": 2024,
+      "status": "Reviewed as bioRxiv preprint v1, posted 28 February 2024; later publication or revision not established",
+      "version": "bioRxiv v1, 28 February 2024",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.02.25.581928v1",
+      "doi": "10.1101/2024.02.25.581928",
+      "tags": {"mechanism": ["dynamic instability", "configuration entropy", "latent decomposition"], "scale": ["mouse", "blood", "single cell"], "evidence": ["bulk DNAm", "single-cell DNAm", "intervention reanalysis"], "validation": ["external dataset", "caloric restriction", "parabiosis"]},
+      "assessments": {
+        "conceptual": {"score": 2, "confidence": "medium", "rationale": "Extends dynamic–entropic separation to intervention interpretation.", "locator": "Introduction; Results II.D; Discussion"},
+        "observability": {"score": 2, "confidence": "medium", "rationale": "Separates intervention-associated molecular summaries in existing datasets.", "locator": "Figs. 1, 3–4"},
+        "diversity": {"score": 2, "confidence": "medium", "rationale": "Bulk, single-cell and intervention evidence remain methylation-centered.", "locator": "Results II.A–D"},
+        "controls": {"score": 2, "confidence": "medium", "rationale": "External parabiosis and isochronic comparisons; alternatives remain.", "locator": "Results II.D; Fig. 4"},
+        "statistics": {"score": 1, "confidence": "high", "rationale": "Reported significance conflicts with printed p = 0.0705.", "locator": "Results II.D, p. 5; Fig. 4C discussion"},
+        "scope": {"score": 1, "confidence": "high", "rationale": "Null intervention findings do not establish irreversible damage.", "locator": "Results II.D; Discussion"},
+        "reproducibility": {"score": 2, "confidence": "medium", "rationale": "Detailed filters; early-access data and execution unverified.", "locator": "Acknowledgements; S.I. Methods A–C"},
+        "depth": {"score": 4, "confidence": "high", "rationale": "Printed statistics and filtering qualify abstract-level claims.", "locator": "Results II.D; S.I. Methods A–C"}
+      },
+      "details": [
+        {"observation": "Immediate parabiosis p = 0.0705; two-month p = 0.0429, one-sided.", "interpretation": "Immediate evidence is weaker than the significance wording.", "boundary": "No reanalysis performed.", "locator": "Results II.D, p. 5"},
+        {"observation": "Age-filtered PCA excludes mice younger than five months.", "interpretation": "Age structure and developmental exclusions shape extracted factors.", "boundary": "Unchanged PC2 is not an equivalence result.", "locator": "S.I. Methods A; Results II.D"}
+      ],
+      "novelty": {"comparator": "Petkovich et al. (2017), mouse methylation clock", "comparatorUrl": "https://doi.org/10.1016/j.cmet.2017.03.016", "increment": "Decomposes overlapping clock data into distinct response signatures.", "limit": "Prior global demethylation acknowledged; priority unverified."},
+      "nextTest": "Preregister PC2 equivalence margins and cell-composition controls in independent longitudinal intervention cohorts.",
+      "coverage": {"read": ["Full nine-page author preprint PDF, v1 date displayed in footer: Results, Discussion and embedded S.I. Methods A–C", "bioRxiv indexed abstract and metadata", "PDF accessed through ResearchHub mirror of author manuscript; title, authors, DOI and version match bioRxiv record", "Search for later versions/publication found no established successor; this is not proof that none exists"], "notRead": ["Separate Supplementary Tables 1–2", "Raw data", "Code or executable reproduction", "Full Petkovich comparator methods", "Direct bioRxiv full text: retrieval failed"]},
+      "references": [{"title": "bioRxiv v1 record", "url": "https://www.biorxiv.org/content/10.1101/2024.02.25.581928v1", "scope": "Version metadata and abstract"}, {"title": "Author preprint PDF mirror", "url": "https://storage.prod.researchhub.com/uploads/papers/2024/02/29/2024.02.25.581928.full.pdf", "scope": "Primary author text with v1 footer; full methods and results read, hosted by a mirror"}]
+    }
+  ]
+}

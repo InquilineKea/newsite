@@ -1,0 +1,1297 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Paper Map · See different kinds of new",
+  "date": "2026-10-15",
+  "description": "Nine paper profiles across eight separate axes. Inspect conceptual novelty, new capability, evidence diversity, rigor and consequential details beyond the abstract. Compare mechanisms without reducing papers or authors to one score.",
+  "limitations": [
+    "These are editorial AI assessments of specific reviewed versions, with source locators and confidence; they are not measured properties or expert-calibrated rankings.",
+    "Three domain readers and a methods/novelty auditor worked in separate contexts of the same inherited model family. A coordinator reconciled concrete wording and score differences.",
+    "No raw-data reanalysis, code reproduction, biochemical experiment or independent scientific replication was performed.",
+    "Nearby comparators are scoped checks, not an exhaustive priority search. Easy to miss from the abstract does not mean historically overlooked.",
+    "Axes depend on claim type. Biological measurements, theoretical inference, engineering capability and generated research proposals have different validation requirements.",
+    "High careful-reading yield can reveal a limitation. It is not a bonus for rigor. Unknown is null, never zero; ordinal spacing is not a measured distance.",
+    "Preprints are version-pinned. Reading coverage explicitly records unavailable supplements and access limits; this corpus is illustrative, not exhaustive."
+  ],
+  "papers": [
+    {
+      "id": "DOSI",
+      "group": "Fedichev",
+      "title": "Longitudinal analysis of blood markers reveals progressive loss of resilience and predicts human lifespan limit",
+      "authors": [
+        "Timothy V. Pyrkov",
+        "Konstantin Avchaciov",
+        "Andrei E. Tarkhov",
+        "Leonid I. Menshikov",
+        "Andrei V. Gudkov",
+        "Peter O. Fedichev"
+      ],
+      "year": 2021,
+      "status": "Published research article; Nature Communications version of record, 25 May 2021",
+      "version": "Version of record, DOI 10.1038/s41467-021-23014-1",
+      "url": "https://www.nature.com/articles/s41467-021-23014-1",
+      "doi": "10.1038/s41467-021-23014-1",
+      "tags": {
+        "mechanism": [
+          "critical slowing",
+          "phenomenological dynamics"
+        ],
+        "scale": [
+          "human",
+          "organism",
+          "population"
+        ],
+        "evidence": [
+          "CBC",
+          "wearable activity",
+          "mortality"
+        ],
+        "validation": [
+          "held-out cohort",
+          "cross-modality",
+          "observational"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Adds recovery dynamics to static biological-age prediction.",
+          "locator": "Introduction; Results: Physiological state fluctuations and loss of resilience"
+        },
+        "observability": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Recovery-time estimates recur in blood and activity.",
+          "locator": "Fig. 3A–C"
+        },
+        "diversity": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Blood, activity, mortality constrain related observational claims.",
+          "locator": "Figs. 2–3; Methods: Hazards model"
+        },
+        "controls": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Cohort checks help; clinical selection remains consequential.",
+          "locator": "Methods: Hazards model; Results: Physiological state fluctuations"
+        },
+        "statistics": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Held-out prediction does not validate lifespan extrapolation.",
+          "locator": "Methods: Hazards model; Fig. 3C"
+        },
+        "scope": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Phenomenological caveat coexists with absolute-limit framing.",
+          "locator": "Abstract; Discussion, final paragraphs"
+        },
+        "reproducibility": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Methods specified; additional data require author request.",
+          "locator": "Methods; Data availability"
+        },
+        "depth": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Selection and extrapolation materially change headline interpretation.",
+          "locator": "Results: Physiological state fluctuations; Fig. 3C"
+        }
+      },
+      "details": [
+        {
+          "observation": "GEROLONG lacked diagnoses; DOSI thresholds selected the analyzed subgroup.",
+          "interpretation": "Health classification partly reuses the modeled signal.",
+          "boundary": "Not independently verified disease-free aging.",
+          "locator": "Results: Physiological state fluctuations and loss of resilience"
+        },
+        {
+          "observation": "Recovery-rate trends are extrapolated beyond observed ages.",
+          "interpretation": "The proposed ceiling depends on continued trend behavior.",
+          "boundary": "No observed universal survival limit.",
+          "locator": "Fig. 3C; Discussion"
+        }
+      ],
+      "novelty": {
+        "comparator": "Levine (2013), Modeling the rate of senescence",
+        "comparatorUrl": "https://doi.org/10.1093/gerona/gls233",
+        "increment": "Temporal resilience adds information beyond a mortality-associated snapshot.",
+        "limit": "Comparator abstract reviewed; global priority unverified."
+      },
+      "nextTest": "Prospectively compare recovery models under standardized perturbations, testing age-trend curvature and clinical-selection sensitivity.",
+      "coverage": {
+        "read": [
+          "Publisher main-text PDF: abstract, introduction and initial results",
+          "Publisher indexed Results: Physiological state fluctuations and loss of resilience, Fig. 3 caption, Discussion",
+          "Publisher indexed Methods: Complete blood count datasets, Step counts datasets, Hazards model; Data availability",
+          "Levine comparator PubMed abstract"
+        ],
+        "notRead": [
+          "Supplementary PDF",
+          "Peer Review File",
+          "Reporting Summary",
+          "Raw data or executable code",
+          "Full comparator methods"
+        ]
+      },
+      "references": [
+        {
+          "title": "Publisher article",
+          "url": "https://www.nature.com/articles/s41467-021-23014-1",
+          "scope": "Main text and indexed publisher methods"
+        },
+        {
+          "title": "Publisher PDF",
+          "url": "https://www.nature.com/articles/s41467-021-23014-1.pdf",
+          "scope": "Initial main-text pages accessible; subsequent direct fetches intermittently blocked"
+        }
+      ],
+      "summary": "Blood and activity fluctuations offer a dynamic view of aging resilience."
+    },
+    {
+      "id": "TBA",
+      "group": "Fedichev",
+      "title": "Aging Clocks, Entropy, and the Challenge of Age Reversal",
+      "authors": [
+        "Andrei E. Tarkhov",
+        "Kirill A. Denisov",
+        "Peter O. Fedichev"
+      ],
+      "year": 2024,
+      "status": "Published research article; Aging Biology, 12 August 2024",
+      "version": "Published article, DOI 10.59368/agingbio.20240031",
+      "url": "https://agingcelljournal.org/Archive/Volume2/20240031/",
+      "doi": "10.59368/agingbio.20240031",
+      "tags": {
+        "mechanism": [
+          "metastable transitions",
+          "mean-field theory",
+          "configuration entropy"
+        ],
+        "scale": [
+          "human",
+          "CpG",
+          "population"
+        ],
+        "evidence": [
+          "bulk DNAm",
+          "medical records"
+        ],
+        "validation": [
+          "cross-modality",
+          "model fit",
+          "observational"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Organizes drift and resilience as coupled aging components.",
+          "locator": "Theory; Eqs. 5–8; Discussion"
+        },
+        "observability": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Latent summaries proposed; causal entities remain unidentified.",
+          "locator": "Figs. 1–4; Eq. 7"
+        },
+        "diversity": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Methylation and longitudinal diagnoses probe related signatures.",
+          "locator": "Figs. 1–2; Methods: DNAm and EMRs"
+        },
+        "controls": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Cross-modality agreement leaves alternative generative explanations open.",
+          "locator": "Results: Aging signatures; Theory"
+        },
+        "statistics": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Age-selected features and extrapolation complicate validation.",
+          "locator": "Methods: PCA of the DNAm data; Fig. 1D"
+        },
+        "scope": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Entropy interpretation extends beyond uniquely identified mechanism.",
+          "locator": "Eq. 7; Discussion: age-reversal predictions"
+        },
+        "reproducibility": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Dataset IDs and transformations given; eligibility inconsistency and packaging limit replay.",
+          "locator": "Materials and Methods"
+        },
+        "depth": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Feature selection and entropy assumptions bear central claims.",
+          "locator": "Methods: PCA; Eq. 2; Results surrounding Eq. 7"
+        }
+      },
+      "details": [
+        {
+          "observation": "Age-correlated CpGs precede PCA; eligibility differs: Methods excludes under-20s, Results specifies over-25s.",
+          "interpretation": "Age alignment partly reflects selection; exact eligibility needs clarification.",
+          "boundary": "Cell-composition adjustment unverified.",
+          "locator": "Methods: PCA of the DNAm data, p. 2; Results: Aging signatures, p. 3"
+        },
+        {
+          "observation": "Bulk methylation supplies per-site marginal Shannon entropy.",
+          "interpretation": "Thermodynamic age additionally assumes rare, approximately independent transitions.",
+          "boundary": "Not direct measurement of organism-wide thermodynamic entropy.",
+          "locator": "Methods: Entropy determination, Eq. 2; Eq. 7"
+        }
+      ],
+      "novelty": {
+        "comparator": "Pyrkov et al. (2021), DOSI resilience analysis",
+        "comparatorUrl": "https://doi.org/10.1038/s41467-021-23014-1",
+        "increment": "Adds a proposed microscopic transition account linking drift to resilience.",
+        "limit": "Fit compatibility does not establish unique causation."
+      },
+      "nextTest": "Freeze CpGs and loadings; compare longitudinal, cell-type-resolved predictions against alternative drift models.",
+      "coverage": {
+        "read": [
+          "Complete main HTML: Materials and Methods, Theory, Results and Discussion, including equations and figure captions",
+          "Published status and conflicts disclosure",
+          "DOSI comparator main sections documented above"
+        ],
+        "notRead": [
+          "Separate Supplementary PDF: retrieval failed",
+          "Raw methylation or UK Biobank records",
+          "Executable analysis",
+          "Longitudinal DNAm validation"
+        ]
+      },
+      "references": [
+        {
+          "title": "Published full HTML",
+          "url": "https://agingcelljournal.org/Archive/Volume2/20240031/",
+          "scope": "Main methods, theory, results, discussion"
+        },
+        {
+          "title": "Published PDF",
+          "url": "https://agingbiologyjournal.org/Archive/Volume2/20240031/agingbio.20240031.pdf",
+          "scope": "Publisher PDF retrieved; assessment based on main HTML"
+        }
+      ],
+      "summary": "A metastable-transition model links aging drift, entropy proxies and resilience."
+    },
+    {
+      "id": "DYNAMIC-ENTROPIC",
+      "group": "Fedichev",
+      "title": "Differential Responses of Dynamic and Entropic Aging Factors to Longevity Interventions",
+      "authors": [
+        "Kristina Perevoshchikova",
+        "Peter O. Fedichev"
+      ],
+      "year": 2024,
+      "status": "Reviewed as bioRxiv preprint v1, posted 28 February 2024; later publication or revision not established",
+      "version": "bioRxiv v1, 28 February 2024",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.02.25.581928v1",
+      "doi": "10.1101/2024.02.25.581928",
+      "tags": {
+        "mechanism": [
+          "dynamic instability",
+          "configuration entropy",
+          "latent decomposition"
+        ],
+        "scale": [
+          "mouse",
+          "blood",
+          "single cell"
+        ],
+        "evidence": [
+          "bulk DNAm",
+          "single-cell DNAm",
+          "intervention reanalysis"
+        ],
+        "validation": [
+          "external dataset",
+          "caloric restriction",
+          "parabiosis"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Extends dynamic–entropic separation to intervention interpretation.",
+          "locator": "Introduction; Results II.D; Discussion"
+        },
+        "observability": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Separates intervention-associated molecular summaries in existing datasets.",
+          "locator": "Figs. 1, 3–4"
+        },
+        "diversity": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Bulk, single-cell and intervention evidence remain methylation-centered.",
+          "locator": "Results II.A–D"
+        },
+        "controls": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "External parabiosis and isochronic comparisons; alternatives remain.",
+          "locator": "Results II.D; Fig. 4"
+        },
+        "statistics": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "One-sided comparisons and null results do not support equivalence; p = 0.0705 conflicts with significance wording.",
+          "locator": "Results II.D, p. 5; Fig. 4C discussion"
+        },
+        "scope": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Null intervention findings do not establish irreversible damage.",
+          "locator": "Results II.D; Discussion"
+        },
+        "reproducibility": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Filters and datasets described; early-access inputs and unread tables limit resource assessment.",
+          "locator": "Acknowledgements; S.I. Methods A–C"
+        },
+        "depth": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Printed statistics and filtering qualify abstract-level claims.",
+          "locator": "Results II.D; S.I. Methods A–C"
+        }
+      },
+      "details": [
+        {
+          "observation": "Immediate parabiosis p = 0.0705; two-month p = 0.0429, one-sided.",
+          "interpretation": "Immediate evidence is weaker than the significance wording.",
+          "boundary": "No reanalysis performed.",
+          "locator": "Results II.D, p. 5"
+        },
+        {
+          "observation": "Age-filtered PCA excludes mice younger than five months.",
+          "interpretation": "Age structure and developmental exclusions shape extracted factors.",
+          "boundary": "Unchanged PC2 is not an equivalence result.",
+          "locator": "S.I. Methods A; Results II.D"
+        }
+      ],
+      "novelty": {
+        "comparator": "Petkovich et al. (2017), mouse methylation clock",
+        "comparatorUrl": "https://doi.org/10.1016/j.cmet.2017.03.016",
+        "increment": "Decomposes overlapping clock data into distinct response signatures.",
+        "limit": "Prior global demethylation acknowledged; priority unverified."
+      },
+      "nextTest": "Preregister PC2 equivalence margins and cell-composition controls in independent longitudinal intervention cohorts.",
+      "coverage": {
+        "read": [
+          "Full nine-page author preprint PDF, v1 date displayed in footer: Results, Discussion and embedded S.I. Methods A–C",
+          "bioRxiv indexed abstract and metadata",
+          "PDF accessed through ResearchHub mirror of author manuscript; title, authors, DOI and version match bioRxiv record",
+          "Search for later versions/publication found no established successor; this is not proof that none exists"
+        ],
+        "notRead": [
+          "Separate Supplementary Tables 1–2",
+          "Raw data",
+          "Code or executable reproduction",
+          "Full Petkovich comparator methods",
+          "Direct bioRxiv full text: retrieval failed"
+        ]
+      },
+      "references": [
+        {
+          "title": "bioRxiv v1 record",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.02.25.581928v1",
+          "scope": "Version metadata and abstract"
+        },
+        {
+          "title": "Author preprint PDF mirror",
+          "url": "https://storage.prod.researchhub.com/uploads/papers/2024/02/29/2024.02.25.581928.full.pdf",
+          "scope": "Primary author text with v1 footer; full methods and results read, hosted by a mirror"
+        }
+      ],
+      "summary": "Methylation reanalysis separates intervention-associated dynamic and entropic signatures."
+    },
+    {
+      "id": "SHERLOCK",
+      "group": "Gootenberg",
+      "title": "Nucleic acid detection with CRISPR-Cas13a/C2c2",
+      "authors": [
+        "Jonathan S. Gootenberg",
+        "Omar O. Abudayyeh",
+        "Jeong Wook Lee",
+        "Patrick Essletzbichler",
+        "Aaron J. Dy",
+        "Julia Joung",
+        "Vanessa Verdine",
+        "Nina Donghia",
+        "Nichole M. Daringer",
+        "Catherine A. Freije",
+        "Cameron Myhrvold",
+        "Roby P. Bhattacharyya",
+        "Jonathan Livny",
+        "Aviv Regev",
+        "Eugene V. Koonin",
+        "Deborah T. Hung",
+        "Pardis C. Sabeti",
+        "James J. Collins",
+        "Feng Zhang"
+      ],
+      "year": 2017,
+      "status": "Peer-reviewed Science article; PMC author manuscript",
+      "version": "Online 13 April 2017; issue 28 April 2017",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5526198/",
+      "doi": "10.1126/science.aam9321",
+      "summary": "Collateral cleavage becomes a programmable diagnostic readout.",
+      "tags": {
+        "mechanism": [
+          "RNA-guided collateral cleavage",
+          "isothermal amplification"
+        ],
+        "scale": [
+          "molecule",
+          "specimen"
+        ],
+        "evidence": [
+          "biochemistry",
+          "patient-derived samples",
+          "synthetic targets"
+        ],
+        "validation": [
+          "technical replicates",
+          "qPCR/ddPCR comparison"
+        ]
+      },
+      "novelty": {
+        "comparator": "East-Seletsky et al. 2016, RNA detection with C2c2",
+        "comparatorUrl": "https://doi.org/10.1038/nature19802",
+        "increment": "Amplification-coupled sensitivity plus diverse diagnostic demonstrations.",
+        "limit": "Collateral-RNA detection predates SHERLOCK; priority search is incomplete."
+      },
+      "details": [
+        {
+          "observation": "Cas13a alone reaches approximately 50 fM; amplification enables attomolar detection.",
+          "interpretation": "Sensitivity belongs to the coupled workflow.",
+          "boundary": "This is not amplification-free single-molecule detection.",
+          "locator": "Results introducing SHERLOCK; Fig. 1C"
+        },
+        {
+          "observation": "Cancer-mutation experiments use mock cell-free DNA.",
+          "interpretation": "Low allele fractions are an analytical demonstration.",
+          "boundary": "They do not establish patient-level cancer diagnostic accuracy.",
+          "locator": "Results final experiment; Fig. 4C–F"
+        }
+      ],
+      "nextTest": "Blind a prospective specimen panel with prespecified thresholds, extraction procedures and clinical sensitivity/specificity.",
+      "coverage": {
+        "read": [
+          "Main text and all figure captions through NCBI BioC XML",
+          "Comparator primary PubMed/Nature record"
+        ],
+        "notRead": [
+          "Separate supplementary methods PDF: download returned HTML",
+          "Raw data; independent reproduction"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Integrates existing sensing and amplification principles.",
+          "locator": "Introduction; Fig. 1A"
+        },
+        "observability": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Sensitive DNA/RNA detection and allele discrimination.",
+          "locator": "Figs. 1–4"
+        },
+        "diversity": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Biochemical, pathogen and genotype demonstrations.",
+          "locator": "Figs. 1–4"
+        },
+        "controls": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Matched targets and established assay comparisons.",
+          "locator": "Figs. 2H, 3; Results comparing ddPCR/qPCR"
+        },
+        "statistics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Small technical-replicate sets limit population inference.",
+          "locator": "Figs. 1–4 captions: n=2–4 technical replicates"
+        },
+        "scope": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Analytical demonstrations are mostly bounded; clinical sensitivity and specificity remain unestablished.",
+          "locator": "Figs. 2F, 4C–F; Discussion"
+        },
+        "reproducibility": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Supplement located but unread; insufficient reviewed evidence to rate resource completeness.",
+          "locator": "Supplementary Material; declared reading coverage"
+        },
+        "depth": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Amplification and specimen provenance change interpretation.",
+          "locator": "Fig. 1C; Fig. 4E–F"
+        }
+      }
+    },
+    {
+      "id": "PASTE",
+      "group": "Gootenberg",
+      "title": "Drag-and-drop genome insertion of large sequences without double-strand DNA cleavage using CRISPR-directed integrases",
+      "authors": [
+        "Matthew T. N. Yarnall",
+        "Eleonora I. Ioannidi",
+        "Cian Schmitt-Ulms",
+        "Rohan N. Krajeski",
+        "Justin Lim",
+        "Lukas Villiger",
+        "Wenyuan Zhou",
+        "Kaiyi Jiang",
+        "Sofya K. Garushyants",
+        "Nathaniel Roberts",
+        "Liyang Zhang",
+        "Christopher A. Vakulskas",
+        "John A. Walker II",
+        "Anastasia P. Kadina",
+        "Adrianna E. Zepeda",
+        "Kevin Holden",
+        "Hong Ma",
+        "Jun Xie",
+        "Guangping Gao",
+        "Lander Foquet",
+        "Greg Bial",
+        "Sara K. Donnelly",
+        "Yoshinari Miyata",
+        "Daniel R. Radiloff",
+        "Jordana M. Henderson",
+        "Andrew Ujita",
+        "Omar O. Abudayyeh",
+        "Jonathan S. Gootenberg"
+      ],
+      "year": 2023,
+      "status": "Peer-reviewed Nature Biotechnology article; PMC author manuscript",
+      "version": "Online 24 November 2022; April 2023 issue, 41:500–512",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257351/",
+      "doi": "10.1038/s41587-022-01527-4",
+      "summary": "Prime-editing landing sites recruit integrases for large-cargo insertion.",
+      "tags": {
+        "mechanism": [
+          "prime editing",
+          "serine integration"
+        ],
+        "scale": [
+          "sequence",
+          "cell",
+          "mouse liver"
+        ],
+        "evidence": [
+          "junction sequencing",
+          "ddPCR",
+          "protein expression",
+          "metagenomic mining"
+        ],
+        "validation": [
+          "HDR/HITI comparisons",
+          "primary cells",
+          "in vivo feasibility"
+        ]
+      },
+      "novelty": {
+        "comparator": "Anzalone et al., twinPE plus Bxb1 (online 2021; issue 2022)",
+        "comparatorUrl": "https://doi.org/10.1038/s41587-021-01133-w",
+        "increment": "Optimized fusion/recruitment, larger tested cargo and expanded delivery settings.",
+        "limit": "Prime-editing-enabled integrase insertion already existed; not global priority certification."
+      },
+      "details": [
+        {
+          "observation": "PASTE employs Cas9 nickase and flap repair.",
+          "interpretation": "It avoids reliance on exposed double-strand-break repair.",
+          "boundary": "It does not eliminate DNA nicking or all cellular repair.",
+          "locator": "Results, PASTE combines CRISPR editing; Fig. 1A–D"
+        },
+        {
+          "observation": "Fig. 6F points represent different liver regions.",
+          "interpretation": "Spatial samples are not automatically independent animals.",
+          "boundary": "Do not interpret the stated n=8 as eight independent mice.",
+          "locator": "Fig. 6F caption; Methods, In vivo injections of PASTE adenovirus"
+        }
+      ],
+      "nextTest": "Replicate across donors using prespecified unsorted-cell denominators and long-read on/off-target integration assessment.",
+      "coverage": {
+        "read": [
+          "Main results; selected quantification, off-target, modelling and animal methods",
+          "All main figure captions; data availability; comparator primary record"
+        ],
+        "notRead": [
+          "Separate supplementary tables/PDF",
+          "Raw reads, code execution or plasmid verification"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Substantial synthesis of prime editing and integration.",
+          "locator": "Introduction; Results, PASTE combines CRISPR editing"
+        },
+        "observability": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Large-cargo insertion across several biological settings.",
+          "locator": "Figs. 1, 6"
+        },
+        "diversity": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Sequencing, expression, primary-cell and animal evidence.",
+          "locator": "Figs. 1–6"
+        },
+        "controls": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Matched HDR/HITI and component comparisons.",
+          "locator": "Figs. 1D, 3"
+        },
+        "statistics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Replicate and sampling units require careful interpretation.",
+          "locator": "Fig. 6E: n=1; Fig. 6F: liver-region points"
+        },
+        "scope": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Mostly bounded proof of concept; sorted-cell denominators and limited settings constrain transfer.",
+          "locator": "Results: primary cells; Fig. 6; Discussion"
+        },
+        "reproducibility": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Detailed methods, deposited reads, plasmids and code.",
+          "locator": "Methods; Data availability: PRJNA700575; atgRNA_rank"
+        },
+        "depth": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Nicking and sample denominators reshape headline claims.",
+          "locator": "Results opening; Fig. 6F"
+        }
+      }
+    },
+    {
+      "id": "FANZOR",
+      "group": "Gootenberg",
+      "title": "Programmable RNA-guided DNA endonucleases are widespread in eukaryotes and their viruses",
+      "authors": [
+        "Kaiyi Jiang",
+        "Justin Lim",
+        "Samantha Sgrizzi",
+        "Michael Trinh",
+        "Alisan Kayabolen",
+        "Natalya Yutin",
+        "Weidong Bao",
+        "Kazuki Kato",
+        "Eugene V. Koonin",
+        "Jonathan S. Gootenberg",
+        "Omar O. Abudayyeh"
+      ],
+      "year": 2023,
+      "status": "Peer-reviewed Science Advances article, 9:eadk0171",
+      "version": "Published 27 September 2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10530073/",
+      "doi": "10.1126/sciadv.adk0171",
+      "summary": "Genome mining connects diverse Fanzors to programmable nuclease activity.",
+      "tags": {
+        "mechanism": [
+          "RNA-guided DNA cleavage",
+          "transposon association"
+        ],
+        "scale": [
+          "protein",
+          "genome",
+          "evolutionary lineage"
+        ],
+        "evidence": [
+          "phylogenomics",
+          "RNA sequencing",
+          "biochemistry",
+          "cell editing"
+        ],
+        "validation": [
+          "catalytic mutants",
+          "TAM controls",
+          "endogenous loci"
+        ]
+      },
+      "novelty": {
+        "comparator": "Saito et al. 2023, Fanzor is a eukaryotic programmable RNA-guided endonuclease",
+        "comparatorUrl": "https://doi.org/10.1038/s41586-023-06356-2",
+        "increment": "Broader census, evolutionary analysis and additional biochemical/cellular characterization.",
+        "limit": "June 2023 comparator already demonstrated Fanzor programmability; endogenous function remains unresolved."
+      },
+      "details": [
+        {
+          "observation": "3,655 clustered candidates are mined; only selected enzymes are tested.",
+          "interpretation": "Catalogue breadth is not equivalent to validated enzyme breadth.",
+          "boundary": "Activity cannot be assigned to every candidate.",
+          "locator": "Results first paragraph; Figs. 2–3"
+        },
+        {
+          "observation": "CrFNuc-1 forms an RNA complex but shows no detected cleavage.",
+          "interpretation": "RNA association alone does not establish nuclease activity.",
+          "boundary": "Failed reconstitution and native inactivity remain alternatives.",
+          "locator": "Results, fRNA-guided DNA endonucleases are present in diverse eukaryotic genomes, final paragraph"
+        }
+      ],
+      "nextTest": "Test native-host Fanzor loss and rescue for transposon persistence, separating nuclease activity from association.",
+      "coverage": {
+        "read": [
+          "Main text, figures, computational discovery/phylogeny, biochemical and mammalian-editing methods via BioC",
+          "PMC data/material statement; comparator primary PubMed record"
+        ],
+        "notRead": [
+          "Separate supplementary PDFs and tables",
+          "Raw sequencing, deposited plasmids and native-host functional experiments"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Broad evolutionary organization beyond earlier Fanzor characterization.",
+          "locator": "Discussion first paragraph; Fig. 1"
+        },
+        "observability": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Expanded catalogue plus programmable-enzyme demonstrations.",
+          "locator": "Figs. 1–5"
+        },
+        "diversity": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Sequence, RNA, biochemical and cellular convergence.",
+          "locator": "Figs. 1–5"
+        },
+        "controls": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Target, TAM and catalytic-mutant controls.",
+          "locator": "Figs. 2E, 4D, 5E–F"
+        },
+        "statistics": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Quantified screens; selected enzymes constrain generalization.",
+          "locator": "Fig. 1 statistics; Fig. 5C–F; cleavage-assay Methods"
+        },
+        "scope": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Native transposon function remains explicitly unresolved.",
+          "locator": "Discussion, association with transposases"
+        },
+        "reproducibility": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Detailed methods and named data/material resources.",
+          "locator": "Methods; Data and materials availability: PRJNA1002369"
+        },
+        "depth": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Inactive examples bound the computational catalogue.",
+          "locator": "Results, CrFNuc-1; Fig. 1A–B"
+        }
+      }
+    },
+    {
+      "id": "ASAL",
+      "title": "Automating the Search for Artificial Life with Foundation Models",
+      "authors": [
+        "Akarsh Kumar",
+        "Chris Lu",
+        "Louis Kirsch",
+        "Yujin Tang",
+        "Kenneth O. Stanley",
+        "Phillip Isola",
+        "David Ha"
+      ],
+      "year": 2024,
+      "status": "arXiv preprint snapshot",
+      "version": "v1, 23 December 2024",
+      "url": "https://arxiv.org/html/2412.17799v1",
+      "arxiv": "2412.17799v1",
+      "doi": "10.48550/arXiv.2412.17799",
+      "nextTest": "Test held-out long rollouts with translation-normalized recurrence and independent behavioral descriptors.",
+      "group": "Artificial life",
+      "tags": {
+        "mechanism": [
+          "Foundation-model-guided search",
+          "Embedding novelty"
+        ],
+        "scale": [
+          "Simulation rules",
+          "Population repertoires"
+        ],
+        "evidence": [
+          "Computational search",
+          "Representation ablation"
+        ],
+        "validation": [
+          "Multiple substrates",
+          "Finite rollouts"
+        ]
+      },
+      "details": [
+        {
+          "observation": "CA scoring samples 32 times over 2,048 steps and 256 initial states.",
+          "interpretation": "Novelty is finite and representation-dependent.",
+          "boundary": "It does not establish indefinite biological innovation.",
+          "locator": "Appendix B.2; §3.2"
+        },
+        {
+          "observation": "Lenia search centers on a known organism.",
+          "interpretation": "Discoveries explore a seeded neighborhood.",
+          "boundary": "Global substrate coverage is not demonstrated.",
+          "locator": "§4, Lenia; Appendix A"
+        }
+      ],
+      "novelty": {
+        "comparator": "LeniaBreeder / novelty search",
+        "comparatorUrl": "https://arxiv.org/html/2406.04235v1",
+        "increment": "Pretrained visual representations, text targets, multiple substrates.",
+        "limit": "Priority search is not exhaustive.",
+        "locator": "§2, Automatic Search Algorithms"
+      },
+      "coverage": {
+        "read": [
+          "Methods/results assessed",
+          "A–B text and captions accessed"
+        ],
+        "notRead": [
+          "Videos, linked code execution, independent replication"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 2,
+          "rationale": "Transfers foundation-model representations into simulation search.",
+          "locator": "§§2–3",
+          "confidence": "medium"
+        },
+        "observability": {
+          "score": 3,
+          "rationale": "Enables prompt search and visual atlases.",
+          "locator": "§§4.1–4.3; Figs 3–6",
+          "confidence": "high"
+        },
+        "diversity": {
+          "score": 2,
+          "rationale": "Five substrates; related computational evidence.",
+          "locator": "§4, Substrates",
+          "confidence": "high"
+        },
+        "controls": {
+          "score": 2,
+          "rationale": "Representation ablation, largely qualitative comparisons.",
+          "locator": "§4.5; Fig 8",
+          "confidence": "high"
+        },
+        "statistics": {
+          "score": 2,
+          "rationale": "CA sweeps repeat initial states; single-target search evaluates one seed, not independent search replicates.",
+          "locator": "Appendix B.1–B.2; §4.5",
+          "confidence": "medium"
+        },
+        "scope": {
+          "score": 2,
+          "rationale": "Finite representation novelty limits open-endedness inference.",
+          "locator": "§3.2; Appendix B.2",
+          "confidence": "high"
+        },
+        "reproducibility": {
+          "score": 3,
+          "rationale": "Code link and search hyperparameters supplied.",
+          "locator": "Code link; Appendices A–B",
+          "confidence": "medium"
+        },
+        "depth": {
+          "score": 3,
+          "rationale": "Sampling choices substantially qualify headline claims.",
+          "locator": "Appendix B.2",
+          "confidence": "high"
+        }
+      },
+      "summary": "Foundation-model representations guide simulation searches and visual repertoires."
+    },
+    {
+      "id": "LENIA",
+      "title": "Toward Artificial Open-Ended Evolution within Lenia using Quality-Diversity",
+      "authors": [
+        "Maxence Faldor",
+        "Antoine Cully"
+      ],
+      "year": 2024,
+      "status": "arXiv preprint snapshot",
+      "version": "v1, 6 June 2024",
+      "url": "https://arxiv.org/html/2406.04235v1",
+      "arxiv": "2406.04235v1",
+      "doi": "10.48550/arXiv.2406.04235",
+      "nextTest": "Compare matched budgets using invariant descriptors and alternative starting organisms; measure new behaviors after normalization.",
+      "group": "Artificial life",
+      "tags": {
+        "mechanism": [
+          "Quality diversity",
+          "Learned temporal descriptors"
+        ],
+        "scale": [
+          "Cellular automata",
+          "Population repertoires"
+        ],
+        "evidence": [
+          "Computational evolution",
+          "Seed replication"
+        ],
+        "validation": [
+          "Fitness comparisons",
+          "Corrected rank tests"
+        ]
+      },
+      "details": [
+        {
+          "observation": "Fitness rewards low temporal latent dispersion.",
+          "interpretation": "Persistent morphology is privileged.",
+          "boundary": "Periodic motion can be penalized.",
+          "locator": "Methods, Unsupervised Statistical Measures"
+        },
+        {
+          "observation": "Encoder lacks rotation/scale invariance.",
+          "interpretation": "Transformations can inflate apparent morphological diversity.",
+          "boundary": "Increasing repertoire diversity need not mean new behavior.",
+          "locator": "Conclusion"
+        }
+      ],
+      "novelty": {
+        "comparator": "AURORA / IMGEP exploration",
+        "comparatorUrl": "https://doi.org/10.1109/TEVC.2022.3159855",
+        "increment": "Temporal descriptors and fitness-driven, non-goal-directed repertoire evolution.",
+        "limit": "Existing QD algorithms remain central.",
+        "locator": "Related Work; Methods"
+      },
+      "coverage": {
+        "read": [
+          "Methods/results and caveats assessed",
+          "No appendix in this HTML snapshot"
+        ],
+        "notRead": [
+          "Linked code execution, independent replication"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 2,
+          "rationale": "Combines established QD with temporal phenotypes.",
+          "locator": "Related Work; Methods",
+          "confidence": "medium"
+        },
+        "observability": {
+          "score": 3,
+          "rationale": "Learned descriptors expand discoverable Lenia repertoires.",
+          "locator": "Experiments, Unsupervised Diversity; Fig 4",
+          "confidence": "high"
+        },
+        "diversity": {
+          "score": 2,
+          "rationale": "Multiple objectives within one seeded substrate.",
+          "locator": "Experiments; Methods, Search Space",
+          "confidence": "high"
+        },
+        "controls": {
+          "score": 2,
+          "rationale": "Compares fitness choices; initialization remains shared.",
+          "locator": "Experiments; Conclusion",
+          "confidence": "medium"
+        },
+        "statistics": {
+          "score": 3,
+          "rationale": "Ten seeds, rank tests, multiplicity correction.",
+          "locator": "Experiments, opening paragraph",
+          "confidence": "high"
+        },
+        "scope": {
+          "score": 3,
+          "rationale": "Explicitly disclaims theoretical open-endedness.",
+          "locator": "Background, Open-Ended Evolution",
+          "confidence": "high"
+        },
+        "reproducibility": {
+          "score": 3,
+          "rationale": "Code provided; genotype and metrics specified.",
+          "locator": "Methods; Experiments",
+          "confidence": "medium"
+        },
+        "depth": {
+          "score": 4,
+          "rationale": "Fitness and invariance caveats alter interpretation.",
+          "locator": "Methods, Unsupervised Statistical Measures; Conclusion",
+          "confidence": "high"
+        }
+      },
+      "summary": "Quality-diversity search evolves repertoires of self-organizing Lenia patterns."
+    },
+    {
+      "id": "SCIAGENTS",
+      "title": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "authors": [
+        "Alireza Ghafarollahi",
+        "Markus J. Buehler"
+      ],
+      "year": 2024,
+      "status": "arXiv preprint snapshot",
+      "version": "v1, 9 September 2024",
+      "url": "https://arxiv.org/html/2409.05556v1",
+      "arxiv": "2409.05556v1",
+      "doi": "10.48550/arXiv.2409.05556",
+      "nextTest": "Blindly benchmark validated hypotheses against matched-budget single-agent, graph-free, and human baselines.",
+      "group": "Buehler",
+      "tags": {
+        "mechanism": [
+          "Knowledge-graph path search",
+          "Role-based language agents"
+        ],
+        "scale": [
+          "Scientific concepts",
+          "Research proposals"
+        ],
+        "evidence": [
+          "Generated case studies",
+          "Literature retrieval"
+        ],
+        "validation": [
+          "Internal agent critique",
+          "Uncalibrated novelty ratings"
+        ]
+      },
+      "details": [
+        {
+          "observation": "Novelty tool retrieves three sets of ten abstracts.",
+          "interpretation": "Novelty depends on retrieval coverage.",
+          "boundary": "Missing matches do not establish priority.",
+          "locator": "§4.6"
+        },
+        {
+          "observation": "Material gains are forecast outcomes.",
+          "interpretation": "Detailed proposals remain hypotheses.",
+          "boundary": "No measured material improvement is demonstrated.",
+          "locator": "§2.2; §3, future work"
+        }
+      ],
+      "novelty": {
+        "comparator": "Earlier graph reasoning / AutoGen",
+        "comparatorUrl": "https://doi.org/10.1088/2632-2153/ad7228",
+        "increment": "Randomized paths with multi-agent proposal expansion and critique.",
+        "limit": "Generated connection is not validated mechanism.",
+        "locator": "§2.1, Path generation; §4.4"
+      },
+      "coverage": {
+        "read": [
+          "Methods/results assessed",
+          "Headings/captions accessible; S1–S7 output bodies absent from HTML extraction"
+        ],
+        "notRead": [
+          "Full supplementary output, code execution, independent replication"
+        ]
+      },
+      "assessments": {
+        "conceptual": {
+          "score": 2,
+          "rationale": "Integrates graph paths with role-specialized agents.",
+          "locator": "§§2.1, 4.2–4.4",
+          "confidence": "medium"
+        },
+        "observability": {
+          "score": 2,
+          "rationale": "Surfaces candidate connections, not validated mechanisms.",
+          "locator": "§2.2; §3, future work",
+          "confidence": "high"
+        },
+        "diversity": {
+          "score": 1,
+          "rationale": "Literature-grounded proposals; no new material measurements.",
+          "locator": "§§2.1–2.2; §3",
+          "confidence": "high"
+        },
+        "controls": {
+          "score": 1,
+          "rationale": "Illustrative workflows lack matched independent benchmarking.",
+          "locator": "§§2.1–2.2",
+          "confidence": "medium"
+        },
+        "statistics": {
+          "score": 1,
+          "rationale": "Case studies; agent ratings lack calibration.",
+          "locator": "§2.2; §4.6",
+          "confidence": "medium"
+        },
+        "scope": {
+          "score": 2,
+          "rationale": "Detailed proposal workflow is demonstrated; broad discovery language awaits independent physical validation.",
+          "locator": "Abstract; §3, future work",
+          "confidence": "medium"
+        },
+        "reproducibility": {
+          "score": 2,
+          "rationale": "Methods/code links; full outputs uninspected.",
+          "locator": "§4; Data and code availability",
+          "confidence": "medium"
+        },
+        "depth": {
+          "score": 4,
+          "rationale": "Retrieval limits and forecasts change interpretation.",
+          "locator": "§4.6; §2.2",
+          "confidence": "high"
+        }
+      },
+      "summary": "Graph paths and specialized agents structure materials hypothesis generation."
+    }
+  ],
+  "rubric": {
+    "version": "1.0",
+    "date": "2026-10-15",
+    "scale": "Ordinal editorial AI judgments, 0–4. Adjacent numbers are ordered categories, not equal measured distances. No aggregate score or author ranking.",
+    "missing": "null means insufficient reviewed evidence, never zero. N/A is reserved for a criterion outside the claim type, with a reason.",
+    "axes": [
+      {
+        "id": "conceptual",
+        "label": "Conceptual novelty",
+        "group": "Novelty",
+        "question": "How much does the framing change relative to the named comparator?",
+        "anchors": [
+          "No distinct increment identified",
+          "Local extension",
+          "Substantial synthesis or reframing",
+          "New explanatory organization",
+          "Unusually far-reaching reorganization; priority still unverified"
+        ]
+      },
+      {
+        "id": "observability",
+        "label": "New capability / observability",
+        "group": "Novelty",
+        "question": "What can be measured, found or done that the named comparator could not demonstrate?",
+        "anchors": [
+          "No new capability demonstrated",
+          "Narrow extension",
+          "New capability in a limited setting",
+          "Multiple convincing demonstrations of a new capability",
+          "Broadly tested capability with consequential new access"
+        ]
+      },
+      {
+        "id": "diversity",
+        "label": "Evidence diversity",
+        "group": "Diversity",
+        "question": "How many meaningfully different kinds of evidence constrain the central claim?",
+        "anchors": [
+          "No empirical constraints reviewed",
+          "One kind of evidence",
+          "Several related assays or settings",
+          "Distinct modalities or validation approaches",
+          "Converging independent evidence types and contexts"
+        ]
+      },
+      {
+        "id": "controls",
+        "label": "Design and controls",
+        "group": "Rigor",
+        "question": "Do comparisons distinguish the claimed effect from plausible alternatives, relative to the claim type?",
+        "anchors": [
+          "Not supported by reviewed comparisons",
+          "Limited comparisons",
+          "Relevant baselines; major alternatives remain",
+          "Strong claim-matched controls",
+          "Discriminating controls across central alternatives"
+        ]
+      },
+      {
+        "id": "statistics",
+        "label": "Statistical support",
+        "group": "Rigor",
+        "question": "How well do sampling, uncertainty and analysis support the stated inference?",
+        "anchors": [
+          "No relevant support reviewed",
+          "Descriptive or weakly characterized uncertainty",
+          "Useful quantitative analysis with important gaps",
+          "Well-supported analysis with scoped residual limits",
+          "Extensive calibration and sensitivity analysis for the inference"
+        ]
+      },
+      {
+        "id": "scope",
+        "label": "Claim–evidence alignment",
+        "group": "Rigor",
+        "question": "How closely does the interpreted claim stay within what was actually tested?",
+        "anchors": [
+          "Large unsupported leap",
+          "Major interpretive overreach",
+          "Mixed alignment; important extrapolation",
+          "Mostly bounded claims",
+          "Exceptionally explicit and well-supported boundaries"
+        ]
+      },
+      {
+        "id": "reproducibility",
+        "label": "Reproduction resources",
+        "group": "Rigor",
+        "question": "Do the reviewed methods, data and materials make the work inspectable and repeatable?",
+        "anchors": [
+          "No usable resources found",
+          "Sparse procedural detail",
+          "Methods and some resources available",
+          "Substantial methods, data or code resources",
+          "Comprehensive reusable resources with unusually clear provenance"
+        ]
+      },
+      {
+        "id": "depth",
+        "label": "Careful-reading yield",
+        "group": "Reading",
+        "question": "How consequential are details beyond the abstract for interpreting or reproducing this paper?",
+        "anchors": [
+          "No consequential detail identified",
+          "Mostly implementation detail",
+          "Detail changes reproduction choices",
+          "Detail materially changes interpretation",
+          "Load-bearing details strongly change the apparent claim"
+        ]
+      }
+    ],
+    "protocol": [
+      "Separate novelty of a representation, mechanism, observation and usable tool. Name a nearby comparator; do not certify global priority.",
+      "Describe diversity using mechanism, scale, evidence and validation tags as well as evidence-diversity ratings. Different fields need different controls.",
+      "Separate observation, model interpretation and extrapolation. A fitted latent variable need not identify its proposed cause.",
+      "Record sample selection, filtering, normalization, covariates and endpoint construction when consequential; unverified adjustment is not a proven omission.",
+      "Use confidence and reading coverage to expose uncertainty. No experiment or independent reproduction is performed here.",
+      "Easy to miss from an abstract is a reading observation; historically overlooked requires separate reception evidence.",
+      "Keep role-separated readings and coordinator decisions visible. All contexts inherit the same model family."
+    ]
+  }
+}

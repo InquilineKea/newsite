@@ -109,3 +109,37 @@ vote on whether an original paper is right. Citation attention, conceptual and
 ethical disagreement, data corrections, causal identification and direct
 replication are kept distinct. Scores across the two corpora are not calibrated
 for comparison. Proposed reanalyses and studies remain unexecuted.
+
+## Paper map: separate novelty, diversity, rigor and reading depth
+
+`/paper-map/` adds nine paper-level profiles: three Peter Fedichev papers, three
+Jonathan Gootenberg papers, ASAL, LeniaBreeder, and SciAgents. It uses eight
+ordinal axes, precise source locators, confidence and declared reading coverage.
+No composite score ranks papers or authors. Conceptual novelty, new capability,
+evidence diversity, controls, statistical support, claim alignment, reproduction
+resources and careful-reading yield are separate judgments. A high reading-yield
+category can expose a limitation; it is not a rigor bonus.
+
+Novelty is relative to a named nearby comparator, not an exhaustive priority
+search. Diversity also has categorical descriptors for mechanism, scale, evidence
+and validation. Two-paper comparison generates a grounded mixer brief; copying
+it does not call a model or execute a new scientific experiment.
+
+Three domain readers, one methods/novelty auditor, and a coordinator performed
+this reading pass in separate contexts of the same inherited model family.
+The audit log preserves refinements, disagreements and remaining limitations.
+The website builder implemented the interface separately from scientific ratings.
+Full data, rubric, original reading records, audit and provenance live in
+`runs/paper-map/`; public exports are in `dist/paper-map/`. Preprints are pinned
+to the reviewed versions. A later version may exist beyond the stated scope.
+
+```sh
+python scripts/build_paper_map.py
+node scripts/test_paper_map.mjs
+```
+
+The export command validates and packages the recorded reading. It makes no new
+model calls and does not recompute editorial ratings from source texts. Unknown
+assessments remain null and are omitted from a scatter axis instead of plotted
+as zero. Scatter offsets only separate tied ordinal categories; they add no
+scientific precision. The accessible table retains exact categories.

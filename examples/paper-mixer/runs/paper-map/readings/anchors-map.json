@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "assessmentType": "Evidence-anchored ordinal reading assessments; not author ratings or independent replications",
+  "ratingNote": "0–4; no total; confidence describes the assessment, not the truth of every paper claim. Nearby comparators are paper-cited, not exhaustive priority searches.",
+  "papers": [
+    {
+      "id": "ASAL",
+      "title": "Automating the Search for Artificial Life with Foundation Models",
+      "authors": [
+        "Akarsh Kumar",
+        "Chris Lu",
+        "Louis Kirsch",
+        "Yujin Tang",
+        "Kenneth O. Stanley",
+        "Phillip Isola",
+        "David Ha"
+      ],
+      "year": 2024,
+      "status": "arXiv preprint snapshot",
+      "version": "v1, 23 December 2024",
+      "url": "https://arxiv.org/html/2412.17799v1",
+      "arxiv": "2412.17799v1",
+      "doi": "10.48550/arXiv.2412.17799",
+      "axes": {
+        "conceptual": {
+          "score": 2,
+          "rationale": "Transfers foundation-model representations into simulation search.",
+          "locator": "§§2–3",
+          "confidence": "medium"
+        },
+        "observability": {
+          "score": 3,
+          "rationale": "Enables prompt search and visual atlases.",
+          "locator": "§§4.1–4.3; Figs 3–6",
+          "confidence": "high"
+        },
+        "diversity": {
+          "score": 2,
+          "rationale": "Five substrates; related computational evidence.",
+          "locator": "§4, Substrates",
+          "confidence": "high"
+        },
+        "controls": {
+          "score": 2,
+          "rationale": "Representation ablation, largely qualitative comparisons.",
+          "locator": "§4.5; Fig 8",
+          "confidence": "high"
+        },
+        "statistics": {
+          "score": 2,
+          "rationale": "Repeated initial states; limited uncertainty reporting.",
+          "locator": "Appendix B.2; §4.5",
+          "confidence": "medium"
+        },
+        "scope": {
+          "score": 2,
+          "rationale": "Finite representation novelty limits open-endedness inference.",
+          "locator": "§3.2; Appendix B.2",
+          "confidence": "high"
+        },
+        "reproducibility": {
+          "score": 3,
+          "rationale": "Code link and search hyperparameters supplied.",
+          "locator": "Code link; Appendices A–B",
+          "confidence": "medium"
+        },
+        "depth": {
+          "score": 3,
+          "rationale": "Sampling choices substantially qualify headline claims.",
+          "locator": "Appendix B.2",
+          "confidence": "high"
+        }
+      },
+      "nextTest": "Test held-out long rollouts with translation-normalized recurrence and independent behavioral descriptors.",
+      "group": "Artificial life",
+      "tags": {
+        "mechanism": [
+          "Foundation-model-guided search",
+          "Embedding novelty"
+        ],
+        "scale": [
+          "Simulation rules",
+          "Population repertoires"
+        ],
+        "evidence": [
+          "Computational search",
+          "Representation ablation"
+        ],
+        "validation": [
+          "Multiple substrates",
+          "Finite rollouts"
+        ]
+      },
+      "details": [
+        {
+          "observation": "CA scoring samples 32 times over 2,048 steps and 256 initial states.",
+          "interpretation": "Novelty is finite and representation-dependent.",
+          "boundary": "It does not establish indefinite biological innovation.",
+          "locator": "Appendix B.2; §3.2"
+        },
+        {
+          "observation": "Lenia search centers on a known organism.",
+          "interpretation": "Discoveries explore a seeded neighborhood.",
+          "boundary": "Global substrate coverage is not demonstrated.",
+          "locator": "§4, Lenia; Appendix A"
+        }
+      ],
+      "novelty": {
+        "comparator": "LeniaBreeder / novelty search",
+        "comparatorUrl": "https://arxiv.org/html/2406.04235v1",
+        "increment": "Pretrained visual representations, text targets, multiple substrates.",
+        "limit": "Priority search is not exhaustive.",
+        "locator": "§2, Automatic Search Algorithms"
+      },
+      "coverage": {
+        "read": [
+          "Methods/results assessed",
+          "A–B text and captions accessed"
+        ],
+        "notRead": [
+          "Videos, linked code execution, independent replication"
+        ]
+      }
+    },
+    {
+      "id": "LENIA",
+      "title": "Toward Artificial Open-Ended Evolution within Lenia using Quality-Diversity",
+      "authors": [
+        "Maxence Faldor",
+        "Antoine Cully"
+      ],
+      "year": 2024,
+      "status": "arXiv preprint snapshot",
+      "version": "v1, 6 June 2024",
+      "url": "https://arxiv.org/html/2406.04235v1",
+      "arxiv": "2406.04235v1",
+      "doi": "10.48550/arXiv.2406.04235",
+      "axes": {
+        "conceptual": {
+          "score": 2,
+          "rationale": "Combines established QD with temporal phenotypes.",
+          "locator": "Related Work; Methods",
+          "confidence": "medium"
+        },
+        "observability": {
+          "score": 3,
+          "rationale": "Learned descriptors expand discoverable Lenia repertoires.",
+          "locator": "Experiments, Unsupervised Diversity; Fig 4",
+          "confidence": "high"
+        },
+        "diversity": {
+          "score": 2,
+          "rationale": "Multiple objectives within one seeded substrate.",
+          "locator": "Experiments; Methods, Search Space",
+          "confidence": "high"
+        },
+        "controls": {
+          "score": 2,
+          "rationale": "Compares fitness choices; initialization remains shared.",
+          "locator": "Experiments; Conclusion",
+          "confidence": "medium"
+        },
+        "statistics": {
+          "score": 3,
+          "rationale": "Ten seeds, rank tests, multiplicity correction.",
+          "locator": "Experiments, opening paragraph",
+          "confidence": "high"
+        },
+        "scope": {
+          "score": 3,
+          "rationale": "Explicitly disclaims theoretical open-endedness.",
+          "locator": "Background, Open-Ended Evolution",
+          "confidence": "high"
+        },
+        "reproducibility": {
+          "score": 3,
+          "rationale": "Code provided; genotype and metrics specified.",
+          "locator": "Methods; Experiments",
+          "confidence": "medium"
+        },
+        "depth": {
+          "score": 4,
+          "rationale": "Fitness and invariance caveats alter interpretation.",
+          "locator": "Methods, Unsupervised Statistical Measures; Conclusion",
+          "confidence": "high"
+        }
+      },
+      "nextTest": "Compare matched budgets using invariant descriptors and alternative starting organisms; measure new behaviors after normalization.",
+      "group": "Artificial life",
+      "tags": {
+        "mechanism": [
+          "Quality diversity",
+          "Learned temporal descriptors"
+        ],
+        "scale": [
+          "Cellular automata",
+          "Population repertoires"
+        ],
+        "evidence": [
+          "Computational evolution",
+          "Seed replication"
+        ],
+        "validation": [
+          "Fitness comparisons",
+          "Corrected rank tests"
+        ]
+      },
+      "details": [
+        {
+          "observation": "Fitness rewards low temporal latent dispersion.",
+          "interpretation": "Persistent morphology is privileged.",
+          "boundary": "Periodic motion can be penalized.",
+          "locator": "Methods, Unsupervised Statistical Measures"
+        },
+        {
+          "observation": "Encoder lacks rotation/scale invariance.",
+          "interpretation": "Transformations can inflate apparent morphological diversity.",
+          "boundary": "Increasing repertoire diversity need not mean new behavior.",
+          "locator": "Conclusion"
+        }
+      ],
+      "novelty": {
+        "comparator": "AURORA / IMGEP exploration",
+        "comparatorUrl": "https://doi.org/10.1109/TEVC.2022.3159855",
+        "increment": "Temporal descriptors and fitness-driven, non-goal-directed repertoire evolution.",
+        "limit": "Existing QD algorithms remain central.",
+        "locator": "Related Work; Methods"
+      },
+      "coverage": {
+        "read": [
+          "Methods/results and caveats assessed",
+          "No appendix in this HTML snapshot"
+        ],
+        "notRead": [
+          "Linked code execution, independent replication"
+        ]
+      }
+    },
+    {
+      "id": "SCIAGENTS",
+      "title": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "authors": [
+        "Alireza Ghafarollahi",
+        "Markus J. Buehler"
+      ],
+      "year": 2024,
+      "status": "arXiv preprint snapshot",
+      "version": "v1, 9 September 2024",
+      "url": "https://arxiv.org/html/2409.05556v1",
+      "arxiv": "2409.05556v1",
+      "doi": "10.48550/arXiv.2409.05556",
+      "axes": {
+        "conceptual": {
+          "score": 2,
+          "rationale": "Integrates graph paths with role-specialized agents.",
+          "locator": "§§2.1, 4.2–4.4",
+          "confidence": "medium"
+        },
+        "observability": {
+          "score": 2,
+          "rationale": "Surfaces candidate connections, not validated mechanisms.",
+          "locator": "§2.2; §3, future work",
+          "confidence": "high"
+        },
+        "diversity": {
+          "score": 1,
+          "rationale": "Literature-grounded proposals; no new material measurements.",
+          "locator": "§§2.1–2.2; §3",
+          "confidence": "high"
+        },
+        "controls": {
+          "score": 1,
+          "rationale": "Illustrative workflows lack matched independent benchmarking.",
+          "locator": "§§2.1–2.2",
+          "confidence": "medium"
+        },
+        "statistics": {
+          "score": 1,
+          "rationale": "Case studies; agent ratings lack calibration.",
+          "locator": "§2.2; §4.6",
+          "confidence": "medium"
+        },
+        "scope": {
+          "score": 1,
+          "rationale": "Discovery rhetoric exceeds demonstrated proposal generation.",
+          "locator": "Abstract; §3, future work",
+          "confidence": "high"
+        },
+        "reproducibility": {
+          "score": 2,
+          "rationale": "Methods/code links; full outputs uninspected.",
+          "locator": "§4; Data and code availability",
+          "confidence": "medium"
+        },
+        "depth": {
+          "score": 4,
+          "rationale": "Retrieval limits and forecasts change interpretation.",
+          "locator": "§4.6; §2.2",
+          "confidence": "high"
+        }
+      },
+      "nextTest": "Blindly benchmark validated hypotheses against matched-budget single-agent, graph-free, and human baselines.",
+      "group": "Buehler",
+      "tags": {
+        "mechanism": [
+          "Knowledge-graph path search",
+          "Role-based language agents"
+        ],
+        "scale": [
+          "Scientific concepts",
+          "Research proposals"
+        ],
+        "evidence": [
+          "Generated case studies",
+          "Literature retrieval"
+        ],
+        "validation": [
+          "Internal agent critique",
+          "Uncalibrated novelty ratings"
+        ]
+      },
+      "details": [
+        {
+          "observation": "Novelty tool retrieves three sets of ten abstracts.",
+          "interpretation": "Novelty depends on retrieval coverage.",
+          "boundary": "Missing matches do not establish priority.",
+          "locator": "§4.6"
+        },
+        {
+          "observation": "Material gains are forecast outcomes.",
+          "interpretation": "Detailed proposals remain hypotheses.",
+          "boundary": "No measured material improvement is demonstrated.",
+          "locator": "§2.2; §3, future work"
+        }
+      ],
+      "novelty": {
+        "comparator": "Earlier graph reasoning / AutoGen",
+        "comparatorUrl": "https://doi.org/10.1088/2632-2153/ad7228",
+        "increment": "Randomized paths with multi-agent proposal expansion and critique.",
+        "limit": "Generated connection is not validated mechanism.",
+        "locator": "§2.1, Path generation; §4.4"
+      },
+      "coverage": {
+        "read": [
+          "Methods/results assessed",
+          "Headings/captions accessible; S1–S7 output bodies absent from HTML extraction"
+        ],
+        "notRead": [
+          "Full supplementary output, code execution, independent replication"
+        ]
+      }
+    }
+  ]
+}

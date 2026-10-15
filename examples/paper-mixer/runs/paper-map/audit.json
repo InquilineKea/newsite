@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "role": "Methods and novelty audit",
+  "status": "Complete: nine profiles reviewed; selected primary-text details spot-checked",
+  "independence": "Role-separated review within the same inherited model family; no independent experimental replication.",
+  "globalCautions": [
+    "Ordinal axes describe different claim types and are not interval measurements or a total quality ranking.",
+    "High careful-reading yield can expose limitations as well as strengths; it is not a rigor score.",
+    "New representation, newly measured phenomenon, new mechanism and usable tool capability must be distinguished.",
+    "Resource availability is not independent reproduction; unknown coverage is not evidence of an omission.",
+    "Non-significance does not demonstrate equivalence or independence.",
+    "Proposals, embedding scores and proxy endpoints are not experimentally validated mechanisms."
+  ],
+  "changes": [
+    {
+      "paperId": "ASAL",
+      "field": "axes.statistics.rationale",
+      "action": "Proposed wording refinement",
+      "before": "Repeated initial states; limited uncertainty reporting.",
+      "after": "CA sweep repeats initial states; single-target search uses one initial-state seed per evaluation. Repeated search uncertainty is limited.",
+      "evidence": {
+        "url": "https://arxiv.org/html/2412.17799v1",
+        "locator": "Appendix B.1–B.2"
+      },
+      "reason": "Do not generalize initial-state replication across all search tasks."
+    },
+    {
+      "paperId": "TBA",
+      "field": "details[0]",
+      "action": "Reader incorporated during audit",
+      "after": "Age-correlated CpGs precede PCA; Methods excludes under-20s while Results specifies over-25s. Exact eligibility needs clarification.",
+      "evidence": {
+        "url": "https://agingcelljournal.org/Archive/Volume2/20240031/agingbio.20240031.pdf",
+        "locator": "Methods p2; Results p3"
+      },
+      "reason": "Age selection and an internal threshold discrepancy materially affect interpretation and reproduction."
+    },
+    {
+      "paperId": "TBA",
+      "field": "axes.reproducibility.rationale",
+      "action": "Proposed wording refinement",
+      "after": "Dataset IDs and transformations given; eligibility inconsistency and analysis packaging limit replay.",
+      "reason": "Judge resource completeness/access rather than whether this review executed the code."
+    },
+    {
+      "paperId": "DYNAMIC-ENTROPIC",
+      "field": "axes.reproducibility.rationale",
+      "action": "Proposed wording refinement",
+      "after": "Filters and source datasets described; early-access inputs and missing supplementary tables limit replay.",
+      "reason": "Execution unverified applies to all profiles and is not by itself a difference in available reproduction resources."
+    },
+    {
+      "paperId": "DYNAMIC-ENTROPIC",
+      "field": "axes.statistics.rationale",
+      "action": "Proposed scope refinement",
+      "after": "A reported significance discrepancy and absence of equivalence testing weaken support for the central irreversible-factor inference.",
+      "reason": "A printed p-value concern does not invalidate all quantitative analysis; keep the judgment matched to the claim."
+    },
+    {
+      "paperId": "SCIAGENTS",
+      "field": "axes.scope",
+      "action": "Coordinator and auditor adjudication",
+      "before": {
+        "score": 1,
+        "rationale": "Discovery rhetoric exceeds demonstrated proposal generation."
+      },
+      "after": {
+        "score": 2,
+        "rationale": "Detailed proposal workflow is demonstrated; broad discovery language awaits independent physical validation."
+      },
+      "evidence": {
+        "url": "https://arxiv.org/html/2409.05556v1",
+        "locator": "Abstract; Sections 2.1–2.2; Discussion future work"
+      },
+      "reason": "Mixed alignment matches rubric anchor 2: proposal generation is demonstrated and future physical tests are acknowledged. Benchmarking weaknesses are separately represented in controls/statistics. Agreement is between same-model contexts, not independent consensus."
+    },
+    {
+      "paperId": "SHERLOCK",
+      "field": "axes.reproducibility",
+      "action": "Accepted coordinator and auditor adjudication",
+      "before": {
+        "score": 2,
+        "rationale": "Methods supplement located but not read."
+      },
+      "after": {
+        "score": null,
+        "confidence": "low",
+        "rationale": "Supplement located; insufficient reviewed evidence to rate resource completeness."
+      },
+      "reason": "Reading coverage is not a reproduction-resource quality rating. Missing reviewed evidence must be null, not a low score."
+    },
+    {
+      "paperId": "PASTE",
+      "field": "axes.scope",
+      "action": "Accepted coordinator and auditor adjudication",
+      "before": {
+        "score": 2,
+        "rationale": "Primary-hepatocyte efficiency uses sorted transfected cells."
+      },
+      "after": {
+        "score": 3,
+        "rationale": "Mostly bounded proof of concept; sorted-cell denominators and generalization limits are disclosed."
+      },
+      "reason": "A disclosed conditional denominator is a boundary to preserve, not by itself evidence of scope overreach. Clinical and unsorted-cell performance remain unestablished."
+    },
+    {
+      "paperId": "SHERLOCK",
+      "field": "axes.scope",
+      "action": "Auditor recommended coordinator adjudication",
+      "before": {
+        "score": 2,
+        "rationale": "Clinical promise exceeds demonstrated diagnostic validation."
+      },
+      "after": {
+        "score": 3,
+        "rationale": "Analytical demonstrations are mostly bounded; clinical sensitivity and specificity remain unestablished."
+      },
+      "reason": "The reviewed analytical-platform claim and explicit mock samples support mostly bounded interpretation. Clinical potential is not itself a claim of established clinical diagnostic performance."
+    }
+  ],
+  "checks": [
+    {
+      "paperId": "LENIA",
+      "outcome": "Key careful-reading details confirmed",
+      "evidence": {
+        "url": "https://arxiv.org/html/2406.04235v1",
+        "locator": "Unsupervised Statistical Measures; Experiments; Conclusion"
+      },
+      "note": "Ten seeded runs and corrected rank tests support the specific comparison; latent fitness penalties and lack of rotation/scale invariance bound the diversity interpretation."
+    },
+    {
+      "paperId": "SCIAGENTS",
+      "outcome": "Novelty retrieval detail confirmed",
+      "evidence": {
+        "url": "https://arxiv.org/html/2409.05556v1",
+        "locator": "Section 4.6"
+      },
+      "note": "Novelty assistant receives three batches of ten abstracts. Absence of retrieved matches does not certify priority."
+    },
+    {
+      "paperId": "DOSI",
+      "outcome": "Profile review passed with coverage caveat",
+      "note": "Observed recovery dynamics, observational selection, withheld diagnoses, model extrapolation and absent independent survival-limit validation are distinguished. Supplement was not read."
+    },
+    {
+      "paperId": "TBA",
+      "outcome": "Central distinctions retained",
+      "note": "Age-selected PCA, cross-sectional DNAm versus longitudinal diagnoses, model fit versus unique causal mechanism, marginal entropy versus whole-organism entropy and eligibility discrepancy are visible."
+    },
+    {
+      "paperId": "DYNAMIC-ENTROPIC",
+      "outcome": "Profile correctly separates intervention association from equivalence",
+      "note": "Mirror-hosted primary author text is labeled; causal irreversibility and lack of significant change are not conflated. Raw data and separate tables were not reviewed."
+    },
+    {
+      "paperId": "SHERLOCK",
+      "outcome": "Profile boundaries retained; resource and scope calibration refined",
+      "note": "Amplification-coupled sensitivity is distinguished from enzyme-only activity. Mock cell-free DNA is distinct from patient cancer diagnosis. Small technical-replicate sets do not quantify clinical accuracy. Full supplementary methods remain unread."
+    },
+    {
+      "paperId": "PASTE",
+      "outcome": "Main sample-unit detail independently spot-checked",
+      "evidence": {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257351/",
+        "locator": "Figure 6F caption"
+      },
+      "note": "Primary indexed caption explicitly says integration points represent different liver regions. The n=8 cannot automatically be treated as eight independent animals. Nickase-mediated landing-site creation is not absence of all DNA nicking or repair."
+    },
+    {
+      "paperId": "FANZOR",
+      "outcome": "Profile review passed with experimental-coverage caveat",
+      "note": "Catalogue breadth is distinguished from selected functional validation; RNA-complex formation without detected cleavage does not establish general inactivity or activity. Named June 2023 comparator prevents assigning global priority to the September article. Native transposon function remains unresolved."
+    }
+  ],
+  "unresolved": [
+    {
+      "paper": "Aging Clocks, Entropy, and the Challenge of Age Reversal",
+      "issue": "Internal inclusion threshold inconsistency",
+      "evidence": {
+        "url": "https://agingcelljournal.org/Archive/Volume2/20240031/agingbio.20240031.pdf",
+        "locator": "Methods p2 vs Results p3"
+      },
+      "note": "Methods says exclude below 20 (620 remain); Results says analyze older than 25. Reproduction must reconcile this."
+    },
+    {
+      "paperId": "DOSI",
+      "issue": "Lifespan ceiling extrapolation",
+      "note": "Recovery-rate patterns are observational and extrapolated beyond observed ages. Prospective perturbations and alternative curvature remain untested here."
+    },
+    {
+      "paperId": "TBA",
+      "issue": "Latent and entropy identifiability",
+      "note": "Age-selected cross-sectional methylation and longitudinal diagnosis patterns are compatible with a proposed model; they do not identify a unique microscopic cause or directly measure whole-organism thermodynamic entropy."
+    },
+    {
+      "paperId": "DYNAMIC-ENTROPIC",
+      "issue": "Null results versus irreversibility",
+      "note": "An unchanged signature is not an equivalence result. Reporting/one-sided testing issues and power should be resolved before treating intervention non-response as irreversible damage."
+    },
+    {
+      "paperId": "SHERLOCK",
+      "issue": "Supplementary resource coverage",
+      "note": "Methods supplement was located but not read, so resource completeness is unknown. No prospective blinded clinical cohort was evaluated by this review."
+    },
+    {
+      "paperId": "PASTE",
+      "issue": "Sampling and safety generalization",
+      "note": "Liver-region samples are not automatically independent mice; sorted transfected-cell efficiencies do not imply population-wide delivery rates. No broad clinical or all-target off-target-safety conclusion follows."
+    },
+    {
+      "paperId": "FANZOR",
+      "issue": "Catalogue and native-function extrapolation",
+      "note": "Selected reconstitutions and engineered-cell assays do not establish activity of every mined candidate or native biological function."
+    },
+    {
+      "paperIds": [
+        "ASAL",
+        "LENIA",
+        "SCIAGENTS"
+      ],
+      "issue": "Surrogate endpoints and search evaluation",
+      "note": "Embedding novelty, repertoire descriptors and agent-generated ratings are operational measures. They are not direct proof of biological open-endedness or experimentally realized materials discoveries."
+    },
+    {
+      "paperIds": [
+        "DOSI",
+        "TBA",
+        "DYNAMIC-ENTROPIC",
+        "SHERLOCK",
+        "PASTE",
+        "FANZOR",
+        "ASAL",
+        "LENIA",
+        "SCIAGENTS"
+      ],
+      "issue": "Cross-field comparability and review independence",
+      "note": "Ratings condition on claim type and documented coverage. All reviewer contexts inherit the same model family. No experiment, raw-data reanalysis or independent reproduction was performed."
+    }
+  ],
+  "coordinatorApplication": {
+    "status": "Applied after concrete review",
+    "changes": [
+      {
+        "paperId": "TBA",
+        "assessments": {
+          "conceptual": {
+            "score": 3,
+            "confidence": "medium",
+            "rationale": "Organizes drift and resilience as coupled aging components.",
+            "locator": "Theory; Eqs. 5–8; Discussion"
+          },
+          "observability": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Latent summaries proposed; causal entities remain unidentified.",
+            "locator": "Figs. 1–4; Eq. 7"
+          },
+          "diversity": {
+            "score": 3,
+            "confidence": "high",
+            "rationale": "Methylation and longitudinal diagnoses probe related signatures.",
+            "locator": "Figs. 1–2; Methods: DNAm and EMRs"
+          },
+          "controls": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Cross-modality agreement leaves alternative generative explanations open.",
+            "locator": "Results: Aging signatures; Theory"
+          },
+          "statistics": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Age-selected features and extrapolation complicate validation.",
+            "locator": "Methods: PCA of the DNAm data; Fig. 1D"
+          },
+          "scope": {
+            "score": 1,
+            "confidence": "medium",
+            "rationale": "Entropy interpretation extends beyond uniquely identified mechanism.",
+            "locator": "Eq. 7; Discussion: age-reversal predictions"
+          },
+          "reproducibility": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Dataset IDs and transformations given; eligibility inconsistency and packaging limit replay.",
+            "locator": "Materials and Methods"
+          },
+          "depth": {
+            "score": 4,
+            "confidence": "high",
+            "rationale": "Feature selection and entropy assumptions bear central claims.",
+            "locator": "Methods: PCA; Eq. 2; Results surrounding Eq. 7"
+          }
+        }
+      },
+      {
+        "paperId": "DYNAMIC-ENTROPIC",
+        "assessments": {
+          "conceptual": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Extends dynamic–entropic separation to intervention interpretation.",
+            "locator": "Introduction; Results II.D; Discussion"
+          },
+          "observability": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Separates intervention-associated molecular summaries in existing datasets.",
+            "locator": "Figs. 1, 3–4"
+          },
+          "diversity": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Bulk, single-cell and intervention evidence remain methylation-centered.",
+            "locator": "Results II.A–D"
+          },
+          "controls": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "External parabiosis and isochronic comparisons; alternatives remain.",
+            "locator": "Results II.D; Fig. 4"
+          },
+          "statistics": {
+            "score": 1,
+            "confidence": "high",
+            "rationale": "One-sided comparisons and null results do not support equivalence; p = 0.0705 conflicts with significance wording.",
+            "locator": "Results II.D, p. 5; Fig. 4C discussion"
+          },
+          "scope": {
+            "score": 1,
+            "confidence": "high",
+            "rationale": "Null intervention findings do not establish irreversible damage.",
+            "locator": "Results II.D; Discussion"
+          },
+          "reproducibility": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Filters and datasets described; early-access inputs and unread tables limit resource assessment.",
+            "locator": "Acknowledgements; S.I. Methods A–C"
+          },
+          "depth": {
+            "score": 4,
+            "confidence": "high",
+            "rationale": "Printed statistics and filtering qualify abstract-level claims.",
+            "locator": "Results II.D; S.I. Methods A–C"
+          }
+        }
+      },
+      {
+        "paperId": "SHERLOCK",
+        "assessments": {
+          "conceptual": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Integrates existing sensing and amplification principles.",
+            "locator": "Introduction; Fig. 1A"
+          },
+          "observability": {
+            "score": 3,
+            "confidence": "high",
+            "rationale": "Sensitive DNA/RNA detection and allele discrimination.",
+            "locator": "Figs. 1–4"
+          },
+          "diversity": {
+            "score": 3,
+            "confidence": "high",
+            "rationale": "Biochemical, pathogen and genotype demonstrations.",
+            "locator": "Figs. 1–4"
+          },
+          "controls": {
+            "score": 3,
+            "confidence": "medium",
+            "rationale": "Matched targets and established assay comparisons.",
+            "locator": "Figs. 2H, 3; Results comparing ddPCR/qPCR"
+          },
+          "statistics": {
+            "score": 2,
+            "confidence": "high",
+            "rationale": "Small technical-replicate sets limit population inference.",
+            "locator": "Figs. 1–4 captions: n=2–4 technical replicates"
+          },
+          "scope": {
+            "score": 3,
+            "confidence": "medium",
+            "rationale": "Analytical demonstrations are mostly bounded; clinical sensitivity and specificity remain unestablished.",
+            "locator": "Figs. 2F, 4C–F; Discussion"
+          },
+          "reproducibility": {
+            "score": null,
+            "confidence": "low",
+            "rationale": "Supplement located but unread; insufficient reviewed evidence to rate resource completeness.",
+            "locator": "Supplementary Material; declared reading coverage"
+          },
+          "depth": {
+            "score": 4,
+            "confidence": "high",
+            "rationale": "Amplification and specimen provenance change interpretation.",
+            "locator": "Fig. 1C; Fig. 4E–F"
+          }
+        }
+      },
+      {
+        "paperId": "PASTE",
+        "assessments": {
+          "conceptual": {
+            "score": 2,
+            "confidence": "medium",
+            "rationale": "Substantial synthesis of prime editing and integration.",
+            "locator": "Introduction; Results, PASTE combines CRISPR editing"
+          },
+          "observability": {
+            "score": 3,
+            "confidence": "high",
+            "rationale": "Large-cargo insertion across several biological settings.",
+            "locator": "Figs. 1, 6"
+          },
+          "diversity": {
+            "score": 4,
+            "confidence": "high",
+            "rationale": "Sequencing, expression, primary-cell and animal evidence.",
+            "locator": "Figs. 1–6"
+          },
+          "controls": {
+            "score": 3,
+            "confidence": "high",
+            "rationale": "Matched HDR/HITI and component comparisons.",
+            "locator": "Figs. 1D, 3"
+          },
+          "statistics": {
+            "score": 2,
+            "confidence": "high",
+            "rationale": "Replicate and sampling units require careful interpretation.",
+            "locator": "Fig. 6E: n=1; Fig. 6F: liver-region points"
+          },
+          "scope": {
+            "score": 3,
+            "confidence": "medium",
+            "rationale": "Mostly bounded proof of concept; sorted-cell denominators and limited settings constrain transfer.",
+            "locator": "Results: primary cells; Fig. 6; Discussion"
+          },
+          "reproducibility": {
+            "score": 3,
+            "confidence": "medium",
+            "rationale": "Detailed methods, deposited reads, plasmids and code.",
+            "locator": "Methods; Data availability: PRJNA700575; atgRNA_rank"
+          },
+          "depth": {
+            "score": 4,
+            "confidence": "high",
+            "rationale": "Nicking and sample denominators reshape headline claims.",
+            "locator": "Results opening; Fig. 6F"
+          }
+        }
+      },
+      {
+        "paperId": "ASAL",
+        "assessments": {
+          "conceptual": {
+            "score": 2,
+            "rationale": "Transfers foundation-model representations into simulation search.",
+            "locator": "§§2–3",
+            "confidence": "medium"
+          },
+          "observability": {
+            "score": 3,
+            "rationale": "Enables prompt search and visual atlases.",
+            "locator": "§§4.1–4.3; Figs 3–6",
+            "confidence": "high"
+          },
+          "diversity": {
+            "score": 2,
+            "rationale": "Five substrates; related computational evidence.",
+            "locator": "§4, Substrates",
+            "confidence": "high"
+          },
+          "controls": {
+            "score": 2,
+            "rationale": "Representation ablation, largely qualitative comparisons.",
+            "locator": "§4.5; Fig 8",
+            "confidence": "high"
+          },
+          "statistics": {
+            "score": 2,
+            "rationale": "CA sweeps repeat initial states; single-target search evaluates one seed, not independent search replicates.",
+            "locator": "Appendix B.1–B.2; §4.5",
+            "confidence": "medium"
+          },
+          "scope": {
+            "score": 2,
+            "rationale": "Finite representation novelty limits open-endedness inference.",
+            "locator": "§3.2; Appendix B.2",
+            "confidence": "high"
+          },
+          "reproducibility": {
+            "score": 3,
+            "rationale": "Code link and search hyperparameters supplied.",
+            "locator": "Code link; Appendices A–B",
+            "confidence": "medium"
+          },
+          "depth": {
+            "score": 3,
+            "rationale": "Sampling choices substantially qualify headline claims.",
+            "locator": "Appendix B.2",
+            "confidence": "high"
+          }
+        }
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "assessments": {
+          "conceptual": {
+            "score": 2,
+            "rationale": "Integrates graph paths with role-specialized agents.",
+            "locator": "§§2.1, 4.2–4.4",
+            "confidence": "medium"
+          },
+          "observability": {
+            "score": 2,
+            "rationale": "Surfaces candidate connections, not validated mechanisms.",
+            "locator": "§2.2; §3, future work",
+            "confidence": "high"
+          },
+          "diversity": {
+            "score": 1,
+            "rationale": "Literature-grounded proposals; no new material measurements.",
+            "locator": "§§2.1–2.2; §3",
+            "confidence": "high"
+          },
+          "controls": {
+            "score": 1,
+            "rationale": "Illustrative workflows lack matched independent benchmarking.",
+            "locator": "§§2.1–2.2",
+            "confidence": "medium"
+          },
+          "statistics": {
+            "score": 1,
+            "rationale": "Case studies; agent ratings lack calibration.",
+            "locator": "§2.2; §4.6",
+            "confidence": "medium"
+          },
+          "scope": {
+            "score": 2,
+            "rationale": "Detailed proposal workflow is demonstrated; broad discovery language awaits independent physical validation.",
+            "locator": "Abstract; §3, future work",
+            "confidence": "medium"
+          },
+          "reproducibility": {
+            "score": 2,
+            "rationale": "Methods/code links; full outputs uninspected.",
+            "locator": "§4; Data and code availability",
+            "confidence": "medium"
+          },
+          "depth": {
+            "score": 4,
+            "rationale": "Retrieval limits and forecasts change interpretation.",
+            "locator": "§4.6; §2.2",
+            "confidence": "high"
+          }
+        }
+      }
+    ],
+    "note": "Final snapshots retain exact applied wording and null handling. Original reader outputs remain in readings/."
+  }
+}

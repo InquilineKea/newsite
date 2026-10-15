@@ -1,0 +1,405 @@
+[
+  {
+    "id": "SHERLOCK",
+    "group": "Gootenberg",
+    "title": "Nucleic acid detection with CRISPR-Cas13a/C2c2",
+    "authors": [
+      "Jonathan S. Gootenberg",
+      "Omar O. Abudayyeh",
+      "Jeong Wook Lee",
+      "Patrick Essletzbichler",
+      "Aaron J. Dy",
+      "Julia Joung",
+      "Vanessa Verdine",
+      "Nina Donghia",
+      "Nichole M. Daringer",
+      "Catherine A. Freije",
+      "Cameron Myhrvold",
+      "Roby P. Bhattacharyya",
+      "Jonathan Livny",
+      "Aviv Regev",
+      "Eugene V. Koonin",
+      "Deborah T. Hung",
+      "Pardis C. Sabeti",
+      "James J. Collins",
+      "Feng Zhang"
+    ],
+    "year": 2017,
+    "status": "Peer-reviewed Science article; PMC author manuscript",
+    "version": "Online 13 April 2017; issue 28 April 2017",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5526198/",
+    "doi": "10.1126/science.aam9321",
+    "summary": "Collateral cleavage becomes a programmable diagnostic readout.",
+    "tags": {
+      "mechanism": [
+        "RNA-guided collateral cleavage",
+        "isothermal amplification"
+      ],
+      "scale": [
+        "molecule",
+        "specimen"
+      ],
+      "evidence": [
+        "biochemistry",
+        "patient-derived samples",
+        "synthetic targets"
+      ],
+      "validation": [
+        "technical replicates",
+        "qPCR/ddPCR comparison"
+      ]
+    },
+    "axes": {
+      "conceptual": {
+        "score": 2,
+        "confidence": "medium",
+        "rationale": "Integrates existing sensing and amplification principles.",
+        "locator": "Introduction; Fig. 1A"
+      },
+      "observability": {
+        "score": 3,
+        "confidence": "high",
+        "rationale": "Sensitive DNA/RNA detection and allele discrimination.",
+        "locator": "Figs. 1–4"
+      },
+      "diversity": {
+        "score": 3,
+        "confidence": "high",
+        "rationale": "Biochemical, pathogen and genotype demonstrations.",
+        "locator": "Figs. 1–4"
+      },
+      "controls": {
+        "score": 3,
+        "confidence": "medium",
+        "rationale": "Matched targets and established assay comparisons.",
+        "locator": "Figs. 2H, 3; Results comparing ddPCR/qPCR"
+      },
+      "statistics": {
+        "score": 2,
+        "confidence": "high",
+        "rationale": "Small technical-replicate sets limit population inference.",
+        "locator": "Figs. 1–4 captions: n=2–4 technical replicates"
+      },
+      "scope": {
+        "score": 2,
+        "confidence": "medium",
+        "rationale": "Clinical promise exceeds demonstrated diagnostic validation.",
+        "locator": "Fig. 2F; Fig. 4E–F"
+      },
+      "reproducibility": {
+        "score": 2,
+        "confidence": "medium",
+        "rationale": "Methods supplement located but not read.",
+        "locator": "Supplementary Material"
+      },
+      "depth": {
+        "score": 4,
+        "confidence": "high",
+        "rationale": "Amplification and specimen provenance change interpretation.",
+        "locator": "Fig. 1C; Fig. 4E–F"
+      }
+    },
+    "novelty": {
+      "comparator": "East-Seletsky et al. 2016, RNA detection with C2c2",
+      "comparatorUrl": "https://doi.org/10.1038/nature19802",
+      "increment": "Amplification-coupled sensitivity plus diverse diagnostic demonstrations.",
+      "limit": "Collateral-RNA detection predates SHERLOCK; priority search is incomplete."
+    },
+    "details": [
+      {
+        "observation": "Cas13a alone reaches approximately 50 fM; amplification enables attomolar detection.",
+        "interpretation": "Sensitivity belongs to the coupled workflow.",
+        "boundary": "This is not amplification-free single-molecule detection.",
+        "locator": "Results introducing SHERLOCK; Fig. 1C"
+      },
+      {
+        "observation": "Cancer-mutation experiments use mock cell-free DNA.",
+        "interpretation": "Low allele fractions are an analytical demonstration.",
+        "boundary": "They do not establish patient-level cancer diagnostic accuracy.",
+        "locator": "Results final experiment; Fig. 4C–F"
+      }
+    ],
+    "nextTest": "Blind a prospective specimen panel with prespecified thresholds, extraction procedures and clinical sensitivity/specificity.",
+    "coverage": {
+      "read": [
+        "Main text and all figure captions through NCBI BioC XML",
+        "Comparator primary PubMed/Nature record"
+      ],
+      "notRead": [
+        "Separate supplementary methods PDF: download returned HTML",
+        "Raw data; independent reproduction"
+      ]
+    }
+  },
+  {
+    "id": "PASTE",
+    "group": "Gootenberg",
+    "title": "Drag-and-drop genome insertion of large sequences without double-strand DNA cleavage using CRISPR-directed integrases",
+    "authors": [
+      "Matthew T. N. Yarnall",
+      "Eleonora I. Ioannidi",
+      "Cian Schmitt-Ulms",
+      "Rohan N. Krajeski",
+      "Justin Lim",
+      "Lukas Villiger",
+      "Wenyuan Zhou",
+      "Kaiyi Jiang",
+      "Sofya K. Garushyants",
+      "Nathaniel Roberts",
+      "Liyang Zhang",
+      "Christopher A. Vakulskas",
+      "John A. Walker II",
+      "Anastasia P. Kadina",
+      "Adrianna E. Zepeda",
+      "Kevin Holden",
+      "Hong Ma",
+      "Jun Xie",
+      "Guangping Gao",
+      "Lander Foquet",
+      "Greg Bial",
+      "Sara K. Donnelly",
+      "Yoshinari Miyata",
+      "Daniel R. Radiloff",
+      "Jordana M. Henderson",
+      "Andrew Ujita",
+      "Omar O. Abudayyeh",
+      "Jonathan S. Gootenberg"
+    ],
+    "year": 2023,
+    "status": "Peer-reviewed Nature Biotechnology article; PMC author manuscript",
+    "version": "Online 24 November 2022; April 2023 issue, 41:500–512",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10257351/",
+    "doi": "10.1038/s41587-022-01527-4",
+    "summary": "Prime-editing landing sites recruit integrases for large-cargo insertion.",
+    "tags": {
+      "mechanism": [
+        "prime editing",
+        "serine integration"
+      ],
+      "scale": [
+        "sequence",
+        "cell",
+        "mouse liver"
+      ],
+      "evidence": [
+        "junction sequencing",
+        "ddPCR",
+        "protein expression",
+        "metagenomic mining"
+      ],
+      "validation": [
+        "HDR/HITI comparisons",
+        "primary cells",
+        "in vivo feasibility"
+      ]
+    },
+    "axes": {
+      "conceptual": {
+        "score": 2,
+        "confidence": "medium",
+        "rationale": "Substantial synthesis of prime editing and integration.",
+        "locator": "Introduction; Results, PASTE combines CRISPR editing"
+      },
+      "observability": {
+        "score": 3,
+        "confidence": "high",
+        "rationale": "Large-cargo insertion across several biological settings.",
+        "locator": "Figs. 1, 6"
+      },
+      "diversity": {
+        "score": 4,
+        "confidence": "high",
+        "rationale": "Sequencing, expression, primary-cell and animal evidence.",
+        "locator": "Figs. 1–6"
+      },
+      "controls": {
+        "score": 3,
+        "confidence": "high",
+        "rationale": "Matched HDR/HITI and component comparisons.",
+        "locator": "Figs. 1D, 3"
+      },
+      "statistics": {
+        "score": 2,
+        "confidence": "high",
+        "rationale": "Replicate and sampling units require careful interpretation.",
+        "locator": "Fig. 6E: n=1; Fig. 6F: liver-region points"
+      },
+      "scope": {
+        "score": 2,
+        "confidence": "medium",
+        "rationale": "Primary-hepatocyte efficiency uses sorted transfected cells.",
+        "locator": "Results, PASTE efficiency in non-dividing and primary cells"
+      },
+      "reproducibility": {
+        "score": 3,
+        "confidence": "medium",
+        "rationale": "Detailed methods, deposited reads, plasmids and code.",
+        "locator": "Methods; Data availability: PRJNA700575; atgRNA_rank"
+      },
+      "depth": {
+        "score": 4,
+        "confidence": "high",
+        "rationale": "Nicking and sample denominators reshape headline claims.",
+        "locator": "Results opening; Fig. 6F"
+      }
+    },
+    "novelty": {
+      "comparator": "Anzalone et al., twinPE plus Bxb1 (online 2021; issue 2022)",
+      "comparatorUrl": "https://doi.org/10.1038/s41587-021-01133-w",
+      "increment": "Optimized fusion/recruitment, larger tested cargo and expanded delivery settings.",
+      "limit": "Prime-editing-enabled integrase insertion already existed; not global priority certification."
+    },
+    "details": [
+      {
+        "observation": "PASTE employs Cas9 nickase and flap repair.",
+        "interpretation": "It avoids reliance on exposed double-strand-break repair.",
+        "boundary": "It does not eliminate DNA nicking or all cellular repair.",
+        "locator": "Results, PASTE combines CRISPR editing; Fig. 1A–D"
+      },
+      {
+        "observation": "Fig. 6F points represent different liver regions.",
+        "interpretation": "Spatial samples are not automatically independent animals.",
+        "boundary": "Do not interpret the stated n=8 as eight independent mice.",
+        "locator": "Fig. 6F caption; Methods, In vivo injections of PASTE adenovirus"
+      }
+    ],
+    "nextTest": "Replicate across donors using prespecified unsorted-cell denominators and long-read on/off-target integration assessment.",
+    "coverage": {
+      "read": [
+        "Main results; selected quantification, off-target, modelling and animal methods",
+        "All main figure captions; data availability; comparator primary record"
+      ],
+      "notRead": [
+        "Separate supplementary tables/PDF",
+        "Raw reads, code execution or plasmid verification"
+      ]
+    }
+  },
+  {
+    "id": "FANZOR",
+    "group": "Gootenberg",
+    "title": "Programmable RNA-guided DNA endonucleases are widespread in eukaryotes and their viruses",
+    "authors": [
+      "Kaiyi Jiang",
+      "Justin Lim",
+      "Samantha Sgrizzi",
+      "Michael Trinh",
+      "Alisan Kayabolen",
+      "Natalya Yutin",
+      "Weidong Bao",
+      "Kazuki Kato",
+      "Eugene V. Koonin",
+      "Jonathan S. Gootenberg",
+      "Omar O. Abudayyeh"
+    ],
+    "year": 2023,
+    "status": "Peer-reviewed Science Advances article, 9:eadk0171",
+    "version": "Published 27 September 2023",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10530073/",
+    "doi": "10.1126/sciadv.adk0171",
+    "summary": "Genome mining connects diverse Fanzors to programmable nuclease activity.",
+    "tags": {
+      "mechanism": [
+        "RNA-guided DNA cleavage",
+        "transposon association"
+      ],
+      "scale": [
+        "protein",
+        "genome",
+        "evolutionary lineage"
+      ],
+      "evidence": [
+        "phylogenomics",
+        "RNA sequencing",
+        "biochemistry",
+        "cell editing"
+      ],
+      "validation": [
+        "catalytic mutants",
+        "TAM controls",
+        "endogenous loci"
+      ]
+    },
+    "axes": {
+      "conceptual": {
+        "score": 2,
+        "confidence": "medium",
+        "rationale": "Broad evolutionary organization beyond earlier Fanzor characterization.",
+        "locator": "Discussion first paragraph; Fig. 1"
+      },
+      "observability": {
+        "score": 3,
+        "confidence": "high",
+        "rationale": "Expanded catalogue plus programmable-enzyme demonstrations.",
+        "locator": "Figs. 1–5"
+      },
+      "diversity": {
+        "score": 4,
+        "confidence": "high",
+        "rationale": "Sequence, RNA, biochemical and cellular convergence.",
+        "locator": "Figs. 1–5"
+      },
+      "controls": {
+        "score": 3,
+        "confidence": "high",
+        "rationale": "Target, TAM and catalytic-mutant controls.",
+        "locator": "Figs. 2E, 4D, 5E–F"
+      },
+      "statistics": {
+        "score": 2,
+        "confidence": "medium",
+        "rationale": "Quantified screens; selected enzymes constrain generalization.",
+        "locator": "Fig. 1 statistics; Fig. 5C–F; cleavage-assay Methods"
+      },
+      "scope": {
+        "score": 3,
+        "confidence": "high",
+        "rationale": "Native transposon function remains explicitly unresolved.",
+        "locator": "Discussion, association with transposases"
+      },
+      "reproducibility": {
+        "score": 3,
+        "confidence": "medium",
+        "rationale": "Detailed methods and named data/material resources.",
+        "locator": "Methods; Data and materials availability: PRJNA1002369"
+      },
+      "depth": {
+        "score": 4,
+        "confidence": "high",
+        "rationale": "Inactive examples bound the computational catalogue.",
+        "locator": "Results, CrFNuc-1; Fig. 1A–B"
+      }
+    },
+    "novelty": {
+      "comparator": "Saito et al. 2023, Fanzor is a eukaryotic programmable RNA-guided endonuclease",
+      "comparatorUrl": "https://doi.org/10.1038/s41586-023-06356-2",
+      "increment": "Broader census, evolutionary analysis and additional biochemical/cellular characterization.",
+      "limit": "June 2023 comparator already demonstrated Fanzor programmability; endogenous function remains unresolved."
+    },
+    "details": [
+      {
+        "observation": "3,655 clustered candidates are mined; only selected enzymes are tested.",
+        "interpretation": "Catalogue breadth is not equivalent to validated enzyme breadth.",
+        "boundary": "Activity cannot be assigned to every candidate.",
+        "locator": "Results first paragraph; Figs. 2–3"
+      },
+      {
+        "observation": "CrFNuc-1 forms an RNA complex but shows no detected cleavage.",
+        "interpretation": "RNA association alone does not establish nuclease activity.",
+        "boundary": "Failed reconstitution and native inactivity remain alternatives.",
+        "locator": "Results, fRNA-guided DNA endonucleases are present in diverse eukaryotic genomes, final paragraph"
+      }
+    ],
+    "nextTest": "Test native-host Fanzor loss and rescue for transposon persistence, separating nuclease activity from association.",
+    "coverage": {
+      "read": [
+        "Main text, figures, computational discovery/phylogeny, biochemical and mammalian-editing methods via BioC",
+        "PMC data/material statement; comparator primary PubMed record"
+      ],
+      "notRead": [
+        "Separate supplementary PDFs and tables",
+        "Raw sequencing, deposited plasmids and native-host functional experiments"
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "date": "2026-10-15",
+  "scale": "Ordinal editorial AI judgments, 0–4. Adjacent numbers are ordered categories, not equal measured distances. No aggregate score or author ranking.",
+  "missing": "null means insufficient reviewed evidence, never zero. N/A is reserved for a criterion outside the claim type, with a reason.",
+  "axes": [
+    {"id":"conceptual","label":"Conceptual novelty","group":"Novelty","question":"How much does the framing change relative to the named comparator?","anchors":["No distinct increment identified","Local extension","Substantial synthesis or reframing","New explanatory organization","Unusually far-reaching reorganization; priority still unverified"]},
+    {"id":"observability","label":"New capability / observability","group":"Novelty","question":"What can be measured, found or done that the named comparator could not demonstrate?","anchors":["No new capability demonstrated","Narrow extension","New capability in a limited setting","Multiple convincing demonstrations of a new capability","Broadly tested capability with consequential new access"]},
+    {"id":"diversity","label":"Evidence diversity","group":"Diversity","question":"How many meaningfully different kinds of evidence constrain the central claim?","anchors":["No empirical constraints reviewed","One kind of evidence","Several related assays or settings","Distinct modalities or validation approaches","Converging independent evidence types and contexts"]},
+    {"id":"controls","label":"Design and controls","group":"Rigor","question":"Do comparisons distinguish the claimed effect from plausible alternatives, relative to the claim type?","anchors":["Not supported by reviewed comparisons","Limited comparisons","Relevant baselines; major alternatives remain","Strong claim-matched controls","Discriminating controls across central alternatives"]},
+    {"id":"statistics","label":"Statistical support","group":"Rigor","question":"How well do sampling, uncertainty and analysis support the stated inference?","anchors":["No relevant support reviewed","Descriptive or weakly characterized uncertainty","Useful quantitative analysis with important gaps","Well-supported analysis with scoped residual limits","Extensive calibration and sensitivity analysis for the inference"]},
+    {"id":"scope","label":"Claim–evidence alignment","group":"Rigor","question":"How closely does the interpreted claim stay within what was actually tested?","anchors":["Large unsupported leap","Major interpretive overreach","Mixed alignment; important extrapolation","Mostly bounded claims","Exceptionally explicit and well-supported boundaries"]},
+    {"id":"reproducibility","label":"Reproduction resources","group":"Rigor","question":"Do the reviewed methods, data and materials make the work inspectable and repeatable?","anchors":["No usable resources found","Sparse procedural detail","Methods and some resources available","Substantial methods, data or code resources","Comprehensive reusable resources with unusually clear provenance"]},
+    {"id":"depth","label":"Careful-reading yield","group":"Reading","question":"How consequential are details beyond the abstract for interpreting or reproducing this paper?","anchors":["No consequential detail identified","Mostly implementation detail","Detail changes reproduction choices","Detail materially changes interpretation","Load-bearing details strongly change the apparent claim"]}
+  ],
+  "protocol": [
+    "Separate novelty of a representation, mechanism, observation and usable tool. Name a nearby comparator; do not certify global priority.",
+    "Describe diversity using mechanism, scale, evidence and validation tags as well as evidence-diversity ratings. Different fields need different controls.",
+    "Separate observation, model interpretation and extrapolation. A fitted latent variable need not identify its proposed cause.",
+    "Record sample selection, filtering, normalization, covariates and endpoint construction when consequential; unverified adjustment is not a proven omission.",
+    "Use confidence and reading coverage to expose uncertainty. No experiment or independent reproduction is performed here.",
+    "Easy to miss from an abstract is a reading observation; historically overlooked requires separate reception evidence.",
+    "Keep role-separated readings and coordinator decisions visible. All contexts inherit the same model family."
+  ]
+}
