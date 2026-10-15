@@ -1,0 +1,118 @@
+{
+  "kind": "differential_expression",
+  "question": "TEMPLATE: replace with the exact question and estimand.",
+  "dataProvenance": "TEMPLATE: dataset accession, input hashes, and metadata revision.",
+  "experimentalUnit": "TEMPLATE: state the independent biological unit; cells are not independent donors.",
+  "includedSamples": [
+    "REPLACE_SAMPLE_A",
+    "REPLACE_SAMPLE_B"
+  ],
+  "excludedSamples": [],
+  "replicateCounts": [
+    {
+      "group": "REPLACE_GROUP_A",
+      "independentReplicates": 1
+    },
+    {
+      "group": "REPLACE_GROUP_B",
+      "independentReplicates": 1
+    }
+  ],
+  "geneFilter": "TEMPLATE: specify count/prevalence thresholds and when filtering was chosen.",
+  "normalization": "TEMPLATE: specify normalization, assumptions, and depth/composition diagnostics.",
+  "designFormula": "REPLACE_WITH_ACTUAL_FORMULA",
+  "contrast": "TEMPLATE: specify tested coefficients, reference group, and conditioning variables.",
+  "covariates": [
+    {
+      "name": "sequencing lane / batch",
+      "handling": "unmeasured",
+      "reason": "TEMPLATE: explain whether available, handled, and confounded with condition.",
+      "confoundedWithCondition": false,
+      "causalRole": "unknown"
+    },
+    {
+      "name": "developmental maturity",
+      "handling": "unmeasured",
+      "reason": "TEMPLATE: identify stage measurements or state that maturity remains untested.",
+      "confoundedWithCondition": false,
+      "causalRole": "unknown"
+    },
+    {
+      "name": "cell-type composition",
+      "handling": "unmeasured",
+      "reason": "TEMPLATE: identify composition measures or state that mixture effects remain untested.",
+      "confoundedWithCondition": false,
+      "causalRole": "unknown"
+    },
+    {
+      "name": "laboratory conditions / temperature",
+      "handling": "unmeasured",
+      "reason": "TEMPLATE: identify recorded technical metadata and unmeasured alternatives.",
+      "confoundedWithCondition": false,
+      "causalRole": "unknown"
+    }
+  ],
+  "identifiability": "unknown",
+  "software": "TEMPLATE: tool, version, parameters, reference annotations and reproducible command.",
+  "multipleTesting": "TEMPLATE: hypothesis family, correction method, threshold, independent filtering.",
+  "effectSize": "TEMPLATE: contrast effect size, uncertainty, shrinkage and any selection effects.",
+  "sensitivityChecks": [
+    {
+      "category": "sample-selection",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    },
+    {
+      "category": "gene-filtering",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    },
+    {
+      "category": "batch-and-covariates",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    },
+    {
+      "category": "maturity",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    },
+    {
+      "category": "cell-composition",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    },
+    {
+      "category": "sequencing-depth",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    },
+    {
+      "category": "independent-replication",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    },
+    {
+      "category": "model-and-multiplicity",
+      "status": "not-run",
+      "finding": "TEMPLATE: record actual checks and artifacts or explain why the check remains untested.",
+      "artifactIds": []
+    }
+  ],
+  "claim": {
+    "scope": "association",
+    "statement": "TEMPLATE: describe the measured association under this specific contrast, sample set and model."
+  },
+  "limitations": [
+    "TEMPLATE: replace every field using actual evidence before import. This template is not an analysis result."
+  ],
+  "estimand": "TEMPLATE: target total group association or a conditional/direct contrast; explain how adjustment changes the question.",
+  "choiceTiming": "retrospective"
+}
