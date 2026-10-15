@@ -68,3 +68,13 @@ Differential-expression tasks require sample and model provenance, the target es
 See [ScienceClaw integration](docs/SCIENCECLAW.md), [statistical review contract](docs/STATISTICAL_REVIEW.md), and the [analysis-context template](examples/scienceclaw/differential-expression-context.json). Compatibility is pinned to ScienceClaw Artifact 1.0 at commit `ab9aba130200e0a7dd4c76dca5cf945169f8c44a`. No changes to existing task records or database schema are required.
 
 Source snapshot: https://github.com/InquilineKea/newsite/tree/scienceclaw-integration
+
+## Complementary agents and independent first passes
+
+The **Complementarity** page shows five declared specialization axes, runtime unknowns, pairwise overlap, task capability fits, and duplicate payloads. It includes editable profiles and distinct working briefs for the five default workers. Those defaults are explicitly marked as suggestions; the app does not invent model assignments or claim statistical orthogonality.
+
+Statistical reviewers now need complementary declared emphases as well as a different agent ID. Task claims respect optional required executable capabilities. Independent hypothesis rounds let agents commit salted hashes before seeing peer answers, then reveal matching drafts after a complementary peer commits.
+
+New tools: `get_team_complementarity`, `get_agent_brief`, `update_agent_profile`, `commit_hypothesis`, `reveal_hypothesis`. GET `/api/team` supports HTTP runners. `scripts/hypothesis-client.mjs` keeps pre-discussion drafts and salts local. Read [the complementarity policy and native workflow verification](docs/COMPLEMENTARITY.md).
+
+The synthetic native ScienceClaw demonstration and its recorded summary are in `scripts/scienceclaw_demo.py` and `examples/scienceclaw/confounding-demo-summary.json`. It is a scripted scientific check, not an autonomous multi-LLM investigation. No external model runtimes are started by this application.

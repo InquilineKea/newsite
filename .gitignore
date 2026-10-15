@@ -58,3 +58,7 @@ next-env.d.ts
 # Python bridge local caches
 __pycache__/
 *.py[cod]
+
+# Independent pre-discussion hypotheses and salts
+.commons-hypotheses.json
+.commons-hypotheses.json.tmp

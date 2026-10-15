@@ -1,16 +1,18 @@
 import {z} from 'zod';
+import {teamOperations,applyTeamOperation,withDefaultProfile,taskFit,specializationSchema,type Specialization,type Commitment} from './team';
 import {assertStatisticalReview,type AnalysisReview} from './analysis';
 import {researchOperations,applyResearchOperation,type ResearchArtifact} from './research';
 export type Project={id:string;name:string;subtitle:string;brief:string;outcome:string;color:string};
-export type Agent={id:string;name:string;role:string;perspective:string;color:string;scienceclawName?:string;preferredTools?:string[]};
-export type Task={id:string;project:string;title:string;description:string;role:string;status:'backlog'|'working'|'review'|'done';priority:'high'|'normal';dependencies:string[];owner:string|null;leaseUntil:number|null;evidence:string;artifact:string;createdAt:number;researchNeedId?:string;analysisKind?:'differential_expression'};
-export type State={schemaVersion:2;analysisReviews:AnalysisReview[];artifacts:ResearchArtifact[];projects:Project[];agents:Agent[];tasks:Task[];events:{id:string;text:string;at:number}[];concurrency:number};
+export type Agent={id:string;name:string;role:string;perspective:string;color:string;scienceclawName?:string;preferredTools?:string[];specialization?:Specialization;profileSource?:'suggested-default'|'declared'};
+export type Task={id:string;project:string;title:string;description:string;role:string;status:'backlog'|'working'|'review'|'done';priority:'high'|'normal';dependencies:string[];owner:string|null;leaseUntil:number|null;evidence:string;artifact:string;createdAt:number;researchNeedId?:string;analysisKind?:'differential_expression';requiredCapabilities?:string[]};
+export type State={schemaVersion:3;commitments:Commitment[];analysisReviews:AnalysisReview[];artifacts:ResearchArtifact[];projects:Project[];agents:Agent[];tasks:Task[];events:{id:string;text:string;at:number}[];concurrency:number};
 export type Snapshot={version:number;state:State};
 const text=z.string().trim().min(1).max(8000),id=z.string().min(1).max(100),ref={taskId:id,agentId:id};
 export const operationSchema=z.discriminatedUnion('action',[
  ...researchOperations,
- z.object({action:z.literal('create_task'),project:id,title:text.max(160),description:text,role:text.max(80),priority:z.enum(['high','normal']),dependencies:z.array(id).max(20),analysisKind:z.literal('differential_expression').optional()}),
- z.object({action:z.literal('register_agent'),name:text.max(80),role:text.max(80),perspective:text.max(500),scienceclawName:z.string().trim().min(1).max(100).optional(),preferredTools:z.array(z.string().min(1).max(100)).max(100).optional()}),
+ ...teamOperations,
+ z.object({action:z.literal('create_task'),project:id,title:text.max(160),description:text,role:text.max(80),priority:z.enum(['high','normal']),dependencies:z.array(id).max(20),analysisKind:z.literal('differential_expression').optional(),requiredCapabilities:z.array(z.string().trim().min(1).max(100)).max(20).optional()}),
+ z.object({action:z.literal('register_agent'),name:text.max(80),role:text.max(80),perspective:text.max(500),scienceclawName:z.string().trim().min(1).max(100).optional(),preferredTools:z.array(z.string().min(1).max(100)).max(100).optional(),specialization:specializationSchema.optional()}),
  z.object({action:z.literal('claim_task'),...ref}),
  z.object({action:z.literal('heartbeat'),...ref}),
  z.object({action:z.literal('release_task'),...ref}),
@@ -34,7 +36,7 @@ export function seedState():State{
  {id:'evaluator',name:'Evaluator',role:'Evaluate',perspective:'Compare results against a baseline and inspect failure cases.',color:'#be9f60'},
  {id:'synthesizer',name:'Synthesizer',role:'Synthesize',perspective:'Connect results without erasing differences; prepare a decision for H.',color:'#829b72'}];
  const task=(id:string,project:string,title:string,role:string,description:string,dependencies:string[]=[],priority:'high'|'normal'='normal'):Task=>({id,project,title,role,description,dependencies,priority,status:'backlog',owner:null,leaseUntil:null,evidence:'',artifact:'',createdAt:Date.now()});
- return {schemaVersion:2,analysisReviews:[],artifacts:[],projects,agents,concurrency:3,events:[],tasks:[
+ return {schemaVersion:3,commitments:[],analysisReviews:[],artifacts:[],projects,agents:agents.map(withDefaultProfile),concurrency:3,events:[],tasks:[
  task('DIV-01','diversity','Define what “different” means','Explore','Propose three competing diversity descriptors. Explain what each captures, what it misses, and a concrete failure case.',[],'high'),
  task('DIV-02','diversity','Challenge the descriptors','Challenge','Find examples that look diverse under each descriptor but are functionally redundant. Propose one repair.',['DIV-01']),
  task('DIV-03','diversity','Build a minimal archive','Build','Implement an archive using reviewed descriptors. Record the random seed and exact run instructions.',['DIV-02']),
@@ -46,18 +48,19 @@ export function seedState():State{
 export const active=(t:Task,now=Date.now())=>t.status==='working'&&(t.leaseUntil??0)>now;
 export const blocked=(t:Task,s:State)=>t.dependencies.some(id=>s.tasks.find(x=>x.id===id)?.status!=='done');
 export function applyOperation(original:State,op:Operation,human:boolean,now=Date.now()):State{
+ if(op.action==='update_agent_profile'||op.action==='commit_hypothesis'||op.action==='reveal_hypothesis')return applyTeamOperation(original,op,now);
  if(op.action==='publish_artifact'||op.action==='create_task_from_need'||op.action==='review_analysis')return applyResearchOperation(original,op,now);
  const s=structuredClone(original),log=(text:string)=>{s.events.unshift({id:crypto.randomUUID(),text,at:now});s.events=s.events.slice(0,200);};
  if(op.action==='create_task'){
   if(s.tasks.length>=500)throw new RuleError('Workspace task limit reached.');
   if(!s.projects.some(p=>p.id===op.project))throw new RuleError('Unknown project.',400);
   if(op.dependencies.some((id:string)=>!s.tasks.some(t=>t.id===id&&t.project===op.project)))throw new RuleError('Dependencies must belong to this project.',400);
-  s.tasks.push({id:'T-'+crypto.randomUUID().slice(0,8),project:op.project,title:op.title,description:op.description,role:op.role,priority:op.priority,dependencies:[...new Set<string>(op.dependencies)],...(op.analysisKind?{analysisKind:op.analysisKind}:{}),status:'backlog',owner:null,leaseUntil:null,evidence:'',artifact:'',createdAt:now});log('Added “'+op.title+'”');return s;
+  s.tasks.push({id:'T-'+crypto.randomUUID().slice(0,8),project:op.project,title:op.title,description:op.description,role:op.role,priority:op.priority,dependencies:[...new Set<string>(op.dependencies)],...(op.analysisKind?{analysisKind:op.analysisKind}:{}),...(op.requiredCapabilities?{requiredCapabilities:[...new Set(op.requiredCapabilities)]}:{}),status:'backlog',owner:null,leaseUntil:null,evidence:'',artifact:'',createdAt:now});log('Added “'+op.title+'”');return s;
  }
  if(op.action==='register_agent'){
-  if(op.scienceclawName){const existing=s.agents.find(a=>a.scienceclawName===op.scienceclawName);if(existing){if(existing.name!==op.name||existing.role!==op.role||existing.perspective!==op.perspective||JSON.stringify(existing.preferredTools??[])!==JSON.stringify(op.preferredTools??[]))throw new RuleError('ScienceClaw agent already registered with different settings. Reuse its ID.');return original;}}
+  if(op.scienceclawName){const existing=s.agents.find(a=>a.scienceclawName===op.scienceclawName);if(existing){if(existing.name!==op.name||existing.role!==op.role||existing.perspective!==op.perspective||JSON.stringify(existing.preferredTools??[])!==JSON.stringify(op.preferredTools??[])||(op.specialization&&JSON.stringify(existing.specialization)!==JSON.stringify(op.specialization)))throw new RuleError('ScienceClaw agent already registered with different settings. Reuse its ID.');return original;}}
   if(s.agents.length>=50)throw new RuleError('Maximum 50 registered agents.');
-  s.agents.push({id:'a-'+crypto.randomUUID().slice(0,8),name:op.name,role:op.role,perspective:op.perspective,color:'#7b9d9a',...(op.scienceclawName?{scienceclawName:op.scienceclawName}:{}),...(op.preferredTools?{preferredTools:op.preferredTools}:{})});log('Registered '+op.name);return s;
+  s.agents.push({id:'a-'+crypto.randomUUID().slice(0,8),name:op.name,role:op.role,perspective:op.perspective,color:'#7b9d9a',...(op.scienceclawName?{scienceclawName:op.scienceclawName}:{}),...(op.preferredTools?{preferredTools:op.preferredTools}:{}),...(op.specialization?{specialization:op.specialization,profileSource:'declared' as const}:{})});log('Registered '+op.name);return s;
  }
  if(op.action==='update_brief'){const p=s.projects.find(p=>p.id===op.project);if(!p)throw new RuleError('Unknown project.',400);p.brief=op.brief;log('Updated '+p.name+' context');return s;}
  if(op.action==='set_concurrency'){s.concurrency=op.limit;log('Concurrency set to '+op.limit);return s;}
@@ -72,6 +75,7 @@ export function applyOperation(original:State,op:Operation,human:boolean,now=Dat
  }
  const a=s.agents.find(a=>a.id===op.agentId);if(!a)throw new RuleError('Register the agent first.',400);
  if(op.action==='claim_task'){
+  const fit=taskFit(a,t);if(!fit.eligible)throw new RuleError('Missing declared capabilities: '+fit.missingCapabilities.join(', '));
   if(!['backlog','working'].includes(t.status)||active(t,now))throw new RuleError('Task is already claimed or submitted.');
   if(blocked(t,s))throw new RuleError('Approve the dependencies first.');
   if(s.tasks.filter(t=>active(t,now)).length>=s.concurrency)throw new RuleError('Concurrency limit reached.');
@@ -89,4 +93,4 @@ export function applyOperation(original:State,op:Operation,human:boolean,now=Dat
 }
 
 // Additive read upgrade: retain every existing project, lease and review record.
-export function normalizeState(s:State):State{return {...s,schemaVersion:2,artifacts:s.artifacts??[],analysisReviews:s.analysisReviews??[]};}
+export function normalizeState(s:State):State{return {...s,schemaVersion:3,commitments:s.commitments??[],agents:s.agents.map(withDefaultProfile),artifacts:s.artifacts??[],analysisReviews:s.analysisReviews??[]};}

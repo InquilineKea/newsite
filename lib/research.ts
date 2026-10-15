@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {assertComplementaryReview,compareAgents} from './team';
 import type {State,Task} from './domain';
 import {analysisContextSchema,auditInputSchema,assertAuditVerdict,type AnalysisContext} from './analysis';
 
@@ -53,9 +54,10 @@ export function applyResearchOperation(original:State,op:ResearchOperation,now:n
  if(op.action==='review_analysis'){
   const a=s.artifacts.find(a=>a.record.artifact_id===op.artifactId);if(!a?.analysisContext)throw new ResearchError('A differential-expression artifact is required.',400);
   if(a.agentId===agent.id||a.record.producer_agent===(agent.scienceclawName??agent.name))throw new ResearchError('Statistical review requires a different agent.');
+  try{assertComplementaryReview(s,a.agentId,agent.id);}catch(e){throw new ResearchError((e as Error).message);}
   try{assertAuditVerdict(a.analysisContext,op);}catch(e){throw new ResearchError((e as Error).message,400);}
   if(s.analysisReviews.length>=1000)throw new ResearchError('Review limit reached.');
-  s.analysisReviews.push({artifactId:op.artifactId,agentId:op.agentId,verdict:op.verdict,summary:op.summary,checks:op.checks,createdAt:now});log(agent.name+' reviewed statistical assumptions: '+op.verdict);return s;
+  s.analysisReviews.push({artifactId:op.artifactId,agentId:op.agentId,verdict:op.verdict,summary:op.summary,checks:op.checks,createdAt:now,profileComparison:compareAgents(s.agents.find(x=>x.id===a.agentId)!,agent)});log(agent.name+' reviewed statistical assumptions: '+op.verdict);return s;
  }
  if(op.action==='create_task_from_need'){
   if(s.tasks.length>=500)throw new ResearchError('Workspace task limit reached.');

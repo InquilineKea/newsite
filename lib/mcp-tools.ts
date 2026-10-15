@@ -1,4 +1,5 @@
 import {z,type ZodTypeAny} from 'zod';
+import {axes} from './team';
 import {operationSchema} from './domain';
 import {analysisContextSchema,auditCategories} from './analysis';
 // Keep discovery schemas derived from the same Zod schemas used for writes.
@@ -18,7 +19,10 @@ export function jsonSchema(schema:ZodTypeAny):Record<string,unknown>{
  throw new Error('Unsupported discovery schema: '+schema._def.typeName);
 }
 const descriptions:Record<string,string>={
- register_agent:'Register a trusted worker. Optional scienceclawName and preferredTools link a native ScienceClaw identity. Identical native registrations are idempotent.',
+ update_agent_profile:'Declare methods, evidence sources, assumptions, scale, search style and known runtime/toolchain. Profiles are declarations, not proofs of independence.',
+ commit_hypothesis:'Commit SHA-256(nonce + newline + trimmed draft) before seeing peer answers. Keep the draft and nonce locally; another complementary agent must commit before reveal.',
+ reveal_hypothesis:'Reveal an immutable initial hypothesis after a complementary peer commits. Requires the original draft and nonce; late joiners cannot enter a revealing round.',
+ register_agent:'Register a trusted worker. Optional specialization describes complementary methods and assumptions. Optional scienceclawName and preferredTools link a native ScienceClaw identity. Identical native registrations are idempotent.',
  create_task:'Add scoped work with existing dependencies. Set analysisKind=differential_expression to require statistical provenance and independent audit before human approval.',
  claim_task:'Atomically claim an available task for 30 minutes. Respects dependencies and concurrency limit.',
  heartbeat:'Renew a current task lease before it expires.',release_task:'Release a current task lease.',
@@ -30,6 +34,8 @@ const descriptions:Record<string,string>={
 export const tools=[
  {name:'get_workspace',description:'Read projects, agents, tasks, dependencies, artifact metadata and workspace version.',inputSchema:{type:'object',properties:{},additionalProperties:false}},
  {name:'get_research',description:'Read ScienceClaw artifact lineage, unmet needs, competing responses and statistical reviews with the current workspace version.',inputSchema:{type:'object',properties:{},additionalProperties:false}},
+ {name:'get_team_complementarity',description:'Inspect declared profile coverage, pairwise overlap, unknown runtime independence and duplicate payloads. Optional taskId checks declared tool capabilities. This is not a statistical independence score.',inputSchema:{type:'object',properties:{taskId:{type:'string'}},additionalProperties:false}},
+ {name:'get_agent_brief',description:'Read the agent’s distinct method, evidence and assumption responsibilities and optional task requirements before starting.',inputSchema:{type:'object',properties:{agentId:{type:'string'},taskId:{type:'string'}},required:['agentId'],additionalProperties:false}},
  {name:'get_analysis_contract',description:'Read the required statistical context schema and independent audit checklist before differential-expression work.',inputSchema:{type:'object',properties:{},additionalProperties:false}},
  ...operationSchema.options.filter(op=>descriptions[op.shape.action.value]).map(op=>{
   const {action,...properties}=op.shape;
@@ -37,6 +43,7 @@ export const tools=[
   return {name:action.value,description:descriptions[action.value],inputSchema};
  })
 ];
+export const teamContract=()=>({axes,policy:['Profiles should differ on methods, evidence and assumptions while sharing evidence standards.','Do not infer independence from names, role labels or model-family labels.','Use independent salted commitments before exchanging initial answers, then test claims against common data and budgets.','Unknown models, shared provenance, shared toolchains and duplicated payloads remain visible.']});
 export const analysisContract=()=>({kind:'differential_expression',contextSchema:jsonSchema(analysisContextSchema),auditCategories,policy:[
  'Record exact sample inclusion/exclusion, experimental unit, independent replicate counts, gene filtering, normalization, design formula, contrast, software and data provenance.',
  'State the target estimand and whether choices were prespecified, exploratory or retrospective. Classify covariates as technical factors, confounders, mediators, colliders, proxies, effect modifiers or unknown; justify adjustment instead of controlling for everything.',

@@ -1,4 +1,5 @@
 import {env} from 'cloudflare:workers';
+import {verifyTeamOperation,TeamError} from './team';
 import {seedState,applyOperation,operationSchema,RuleError,normalizeState,type Snapshot} from './domain';
 import {verifyArtifactPayload,ResearchError} from './research';
 export async function readWorkspace():Promise<Snapshot>{
@@ -17,6 +18,7 @@ export async function mutate(body:unknown,human=false):Promise<Snapshot>{
  const current=await readWorkspace();
  if(current.version!==b.version)throw new RuleError('Workspace changed. Refresh and retry.');
  if(op.data.action==='publish_artifact')await verifyArtifactPayload(op.data);
+ if(op.data.action==='reveal_hypothesis')await verifyTeamOperation(current.state,op.data);
  const state=applyOperation(current.state,op.data,human);
  if(state===current.state)return current;
  if(new TextEncoder().encode(JSON.stringify(state)).byteLength>1500000)throw new RuleError('Workspace is full. Export it before adding more records.',413);
@@ -29,4 +31,4 @@ export async function requestBody(request:Request){
  const raw=await request.text();if(raw.length>131072)throw new RuleError('Request too large.',413);
  try{return JSON.parse(raw);}catch{throw new RuleError('Invalid JSON.',400);}
 }
-export function errorResponse(e:unknown){return Response.json({error:e instanceof RuleError||e instanceof ResearchError?e.message:'The request could not be completed. Please retry.'},{status:e instanceof RuleError||e instanceof ResearchError?e.status:500,headers:{'Cache-Control':'no-store'}});}
+export function errorResponse(e:unknown){return Response.json({error:e instanceof RuleError||e instanceof ResearchError||e instanceof TeamError?e.message:'The request could not be completed. Please retry.'},{status:e instanceof RuleError||e instanceof ResearchError||e instanceof TeamError?e.status:500,headers:{'Cache-Control':'no-store'}});}

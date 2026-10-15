@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import type {compareAgents} from './team';
 import type {State,Task} from './domain';
 const note=z.string().trim().min(10).max(2000);
 export const auditCategories=['sample-selection','gene-filtering','batch-and-covariates','maturity','cell-composition','sequencing-depth','independent-replication','model-and-multiplicity'] as const;
@@ -18,7 +19,7 @@ export const analysisContextSchema=z.object({
 }).superRefine((c,ctx)=>{if(new Set(c.includedSamples).size!==c.includedSamples.length)ctx.addIssue({code:z.ZodIssueCode.custom,message:'Included samples must be unique.'});if(c.excludedSamples.some(x=>c.includedSamples.includes(x.sample)))ctx.addIssue({code:z.ZodIssueCode.custom,message:'A sample cannot be both included and excluded.'});});
 export type AnalysisContext=z.infer<typeof analysisContextSchema>;
 export const auditInputSchema=z.object({artifactId:z.string().min(1).max(200),agentId:z.string().min(1).max(200),verdict:z.enum(['supported','qualified','blocked']),summary:note,checks:z.array(z.object({category,status:z.enum(['supported','concern','untested','not-applicable']),evidence:note})).length(8).refine(allCategories,'Review every audit category exactly once.')});
-export type AnalysisReview=z.infer<typeof auditInputSchema>&{createdAt:number};
+export type AnalysisReview=z.infer<typeof auditInputSchema>&{createdAt:number;profileComparison?:ReturnType<typeof compareAgents>};
 export function assertAuditVerdict(context:AnalysisContext,review:z.infer<typeof auditInputSchema>){
  if(review.verdict!=='blocked'&&context.identifiability==='not-identifiable')throw new Error('The contrast is not identifiable. Record a blocked review and request a revised analysis or claim.');
  if(review.verdict==='supported'&&(context.identifiability!=='estimable'||context.covariates.some(c=>c.confoundedWithCondition)||context.sensitivityChecks.some(c=>['failed','not-run'].includes(c.status))||review.checks.some(c=>['concern','untested'].includes(c.status))))throw new Error('Unresolved confounding, failed checks or untested alternatives require a qualified or blocked verdict.');

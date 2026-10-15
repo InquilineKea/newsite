@@ -1,0 +1,29 @@
+{
+  "kind": "synthetic-native-artifact-integration",
+  "scienceclaw_contract": "Artifact 1.0",
+  "reference_commit": "ab9aba130200e0a7dd4c76dca5cf945169f8c44a",
+  "native_source_sha256": "c5108c064c5aa85c18c3c32a890f2d93f148ea6fa91ba9791b54cbf8f9f3fcce",
+  "seed": 42,
+  "n": 240,
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "checks": {
+    "known_direct_condition_effect": 0.0,
+    "naive_condition_coefficient": -1.0692508644786878,
+    "adjusted_condition_coefficient": 0.05072787050990296,
+    "residualization_coefficient": 0.05072787050990339,
+    "algebraic_agreement_absolute_error": 4.3021142204224816e-16,
+    "adjusted_bootstrap_95_percent_interval": [
+      -0.03791557818687624,
+      0.14659098500837078
+    ],
+    "mean_adjusted_coefficient_over_20_seeds": 0.0012006090120016744,
+    "condition_maturity_correlation": 0.7128263808938687,
+    "design_rank": 4
+  },
+  "native_artifacts_created": 5,
+  "all_native_hashes_verified": true,
+  "models_launched": 0,
+  "external_publications": 0,
+  "limitation": "Scripted scientific workflow, not a multi-LLM investigation or RNA-seq differential-expression analysis."
+}

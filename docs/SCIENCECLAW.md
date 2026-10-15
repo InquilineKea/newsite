@@ -73,3 +73,7 @@ Limits: 500 tasks, 50 agents, 500 artifact metadata records, 1000 statistical re
 ## Compatibility evidence
 
 `tests/fixtures/scienceclaw-artifact-1.0.jsonl` was generated using the upstream Artifact dataclass at the pinned commit. It contains synthetic test data only. Tests verify native Unicode/float hashing, a Python HTTP bridge round trip against the real application reducer and SQLite store, duplicate import, parent lineage, need limits, old-state preservation, statistical review rules, and MCP discovery. This is not an end-to-end run of a ScienceClaw model investigation or an Infinite integration test.
+
+## Complementarity extension
+
+Workspace reads now add schema version 3, suggested profiles for known built-in workers and an empty commitment list when absent. Existing task, review and artifact records are retained. Imported native workers remain unprofiled until explicitly configured. See [COMPLEMENTARITY.md](COMPLEMENTARITY.md) for profile axes, task-capability checks, complementary reviewer screening, immutable initial hypotheses, and the completed five-node native artifact-chain demonstration.
