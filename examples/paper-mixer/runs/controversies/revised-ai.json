@@ -1,0 +1,150 @@
+[
+  {
+    "id": "A-M2-v2",
+    "title": "Four resource denominators, with unstable rankings left unresolved",
+    "target": "ai",
+    "lever": "measurement",
+    "sourceIds": [
+      "PARROTS",
+      "DEBT"
+    ],
+    "sources": [
+      {
+        "paperId": "PARROTS",
+        "locator": "Environmental-cost, opportunity-cost and language-understanding discussions",
+        "use": "Keep empirical resource accounting separate from conceptual and ethical claims.",
+        "boundary": "A local energy proxy cannot settle historical training emissions or social value."
+      },
+      {
+        "paperId": "DEBT",
+        "locator": "Debt-bin aggregation; critical replication on weighting and inclusion; author response",
+        "use": "Audit how denominators and group weighting alter a summary.",
+        "boundary": "No debt threshold, causal direction or economics effect transfers."
+      }
+    ],
+    "mechanism": "Different denominators answer different questions. Transfer the debt dispute's aggregation audit to AI resource evaluation: cost per request, cost per verified answer and cost per task family can rank the same systems differently without resolving ethical judgments.",
+    "hypothesis": "If task-mix weighting matters, request-weighted and equal-family costs will reverse model ranking with paired intervals excluding a tie; stable orders favor robust rankings and overlapping intervals remain inconclusive.",
+    "experiment": "Freeze two local models/tokenizers, hardware/runtime, decoding, formal-answer format, character caps and hidden tests. Use 80 synthetic families with prespecified 2/4/8 requests each, balanced difficulty/length strata, and three paired timing repetitions. Counterbalance execution order. Amortize fixed warm-up/loading costs over a declared deployment batch; prompt-search budget is zero. Report cached/uncached policies separately.",
+    "baseline": "Identical requested outputs and tests; report achieved accuracy because equal caps do not guarantee matched capability. Seconds are primary; tokenizer-specific tokens are diagnostics, never emissions. Derive analytical reweighting predictions from stratum totals before interpreting observed reversals.",
+    "metric": "With overhead-inclusive cost C_fr and correctness Y_fr: D1=sum(C)/N asks cost per request; D2=sum(C)/sum(Y) asks cost per verified answer; D3=mean_f[sum_r(C_fr)/n_f] asks equal-family request cost; D4=mean_f[sum_r(C_fr)/sum_r(Y_fr)] asks equal-family verified-answer cost. Zero-success D2/D4 is infinite/undefined, never dropped. Bootstrap paired families and timing repetitions. Report ratio intervals and predicted versus observed reversals.",
+    "falsifier": "Stable order with narrow intervals across all four denominators weakens mix sensitivity. Opposite orders excluding ties favor denominator dependence, not universal superiority. Near ties, nonfinite ratios or low accuracy leave ranking unresolved; report the accuracy/time frontier.",
+    "confound": "Thermal drift, caching, batch-size amortization and sparse successes; report raw totals, zero-success families and overhead sensitivity.",
+    "feasibility": "Ceiling 2,500 short local generations including repetitions; no emissions, training-cost or ethical verdict. No run performed.",
+    "round": 1,
+    "parentIds": [
+      "A-M2"
+    ],
+    "changes": "Enumerated formulas and decision questions; added matched output requirements, achieved accuracy, overhead/search policy, repeated timing, analytical reweighting, zero-success handling and inconclusive rankings."
+  },
+  {
+    "id": "A-C1-v2",
+    "title": "A randomized rule intervention with one paired estimand",
+    "target": "ai",
+    "lever": "causality",
+    "sourceIds": [
+      "SPARKS",
+      "WAGE"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "§7.2.1, §8 and §10 capability examples and limitations",
+        "use": "Turn selected task performance into a narrowly defined intervention test.",
+        "boundary": "No single benchmark identifies general intelligence or exactly repeats early GPT-4."
+      },
+      {
+        "paperId": "WAGE",
+        "locator": "Original NJ/PA before-after comparison; 2000 comment and reply",
+        "use": "Transfer explicit comparison-group and measurement assumptions.",
+        "boundary": "A synthetic randomized intervention does not inherit wage-study effects or policy validity."
+      }
+    ],
+    "mechanism": "An answer may follow supplied evidence or remembered associations. Transfer comparison-group scrutiny into a randomized synthetic evidence intervention: preserve task form while changing only a fictional rule, and compare changes against an untouched matched rule.",
+    "hypothesis": "Rule-specific updating predicts a positive affected-minus-unaffected contrast above a locked threshold; generic disruption predicts comparable changes in both question types or lost baseline correctness.",
+    "experiment": "Create a disjoint 20-family pilot and 100-family confirmation set, each with two independent fictional rules and binary questions. Collect original, one-rule-flipped and length-matched sham conditions, asking both questions; randomize order and flipped rule. Freeze vocabulary/templates before confirmation. Keep generator seeds, solver keys and answer strings outside prompts; supply premises and questions only.",
+    "baseline": "Same model, deterministic decoding, formal answer format and token cap for all six outputs per family. A symbolic solver validates changed and unchanged targets. Report original-rule accuracy separately from updating.",
+    "metric": "Y_a,k=1 if affected answer equals the flipped target in condition k=flip or sham; Y_u,k=1 if companion answer equals its unchanged target. Estimate Δ=mean_f[(Y_a,flip−Y_a,sham)−(Y_u,flip−Y_u,sham)]. Probability means frequency across families, not repeated decoding. Report four component frequencies, original accuracy and paired family-bootstrap intervals.",
+    "falsifier": "Before confirmation lock δ=min(0.30,max(0.10,0.5×pilot original accuracy)), excluding pilot families. Prospectively simulate precision for Δ=0,δ,0.60; retain 100 families if feasible, otherwise declare inadequate precision. Interval above δ with stable companions favors updating; near zero with equal degradation favors disruption. Low baseline accuracy, ceiling limits or intervals spanning explanations remain unresolved.",
+    "confound": "Token/answer-position bias, malformed rules and sham salience; counterbalance labels, solver-check every item and retain failures without outcome-guided replacement.",
+    "feasibility": "720 short offline generations including pilot, plus simulations. No wage-effect transfer, historical GPT-4 replication or general-intelligence verdict. No run performed.",
+    "round": 1,
+    "parentIds": [
+      "A-C1"
+    ],
+    "changes": "Defined binary scoring and exact paired estimand; separated updating from accuracy, sealed keys/seeds, added pilot-locked thresholds and precision simulations, and specified unresolved low-accuracy/ceiling cases."
+  },
+  {
+    "id": "A-R1-v2",
+    "title": "Template robustness with a replication passport",
+    "target": "ai",
+    "lever": "replication",
+    "sourceIds": [
+      "SPARKS",
+      "BEM"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "Early-model disclosure; §10 limitations",
+        "use": "Record which model, prompts and endpoints are actually reproducible.",
+        "boundary": "Unavailable early GPT-4 cannot be exactly replicated with a newer build."
+      },
+      {
+        "paperId": "BEM",
+        "locator": "Original nine experiments; Failing the Future retroactive-recall replications; 90-experiment follow-up",
+        "use": "Transfer endpoint-matched, leakage-controlled replication boundaries.",
+        "boundary": "Recall replication results do not adjudicate every Bem paradigm or any AI claim."
+      }
+    ],
+    "mechanism": "Transfer paradigm matching from Bem into a replication passport. Test behavioral robustness across information-preserving templates for identical latent problems; treat computational determinism as a runtime diagnostic rather than evidence of general competence.",
+    "hypothesis": "Presentation-sensitive competence predicts alternate-template accuracy at least 0.15 below reference; simultaneous paired intervals within ±0.05 for both alternates favor local template equivalence.",
+    "experiment": "Use 80 latent synthetic problems, three templates and four prespecified stochastic seeds per template. Before calls validate identical logical content and target answers using canonical representations and a symbolic solver. Seal keys/seeds outside prompts. Archive model/tokenizer hashes, prompt bytes, runtime/container, accelerator/kernel and decoding settings.",
+    "baseline": "Same latent problems, answer format and token cap across templates; shared seed labels permit pairing without assuming identical random trajectories. Separately rerun 20 reference prompts twice under fixed deterministic settings in one environment to diagnose computational repeatability.",
+    "metric": "Average binary correctness over four seeds within each problem/template; estimate alternate-minus-reference differences separately for both alternates. Bootstrap latent problems with full seed/template blocks; use simultaneous intervals. Deterministic exact-output agreement is reported only as a runtime diagnostic.",
+    "falsifier": "Gap below −0.15 favors presentation-limited performance; both intervals inside ±0.05 favor local equivalence. Intermediate gaps, wide intervals or validation failures are unresolved. Nondeterministic kernels change passport status, not competence interpretation.",
+    "confound": "Semantic drift, runtime variation and seed variance; archive rejected templates before execution. Keep same-build reruns, template transport and cross-build extensions distinct.",
+    "feasibility": "960 stochastic plus 40 deterministic-check generations. The passport supplies bookkeeping; this tests template robustness, not passport superiority. A new build cannot exactly replicate unavailable early GPT-4, and no Bem experiment is executed.",
+    "round": 1,
+    "parentIds": [
+      "A-R1"
+    ],
+    "changes": "Selected template robustness as outcome; separated deterministic checks from stochastic behavior, paired latent problems, specified information checks/sealed keys, runtime hashes, simultaneous margins and unresolved cases."
+  },
+  {
+    "id": "A-S1-v2",
+    "title": "When balancing fixes showcase selection—and when it cannot",
+    "target": "ai",
+    "lever": "selection",
+    "sourceIds": [
+      "SPARKS",
+      "DEBT"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "§1.1 exploratory demonstration scope; §8 and §10 limitations",
+        "use": "Make the sampling unit behind a broad capability summary explicit.",
+        "boundary": "Synthetic sampling cannot reconstruct undocumented historical selection decisions."
+      },
+      {
+        "paperId": "DEBT",
+        "locator": "Country/year inclusion and weighting in original, critical replication and author response",
+        "use": "Transfer inclusion and aggregation sensitivity analysis.",
+        "boundary": "Corrected association does not establish a debt threshold, nor does weighting establish AI generality."
+      }
+    ],
+    "mechanism": "Overrepresented easy families can dominate a pooled success rate. Transfer inclusion and weighting audits from historical economic summaries to AI demonstrations, retaining all generated tasks and showing exactly which family weights produce the reported capability headline.",
+    "hypothesis": "Equal-family weighting should remove family-mix inflation under random within-family sampling, but may fail under within-family easy-item selection; unchanged gaps favor limited benefit from balancing.",
+    "experiment": "Prespecify 12 synthetic families, with 20 pool and 10 sealed reference instances each, two decoding seeds per instance. Freeze model, format and caps. A disjoint pilot fixes family/item ease predictors without confirmation answers. Simulate 36-item showcases with softmax strengths β=0,1,3: family-biased, within-family-biased and balanced-but-within-family-biased selection. Reuse identical outputs for all summaries.",
+    "baseline": "Matched 36-item showcases and shared generation budget; β=0 is random selection. No curator/reweighting step sees reference labels, and keys remain outside model prompts. Compare pooled and equal-family estimates; flag missing-family support rather than imputing accuracy. No historical selection allegation.",
+    "metric": "Target θ is equal-family mean correctness over declared sealed reference items and two seeds. Report estimate−θ, family coverage and worst-family accuracy. One thousand showcase resamples quantify only conditional selection variability. Separately report reference-instance bootstrap and seed differences, conditional on these 12 families—not 1,000 independent model evaluations.",
+    "falsifier": "Family-only bias attenuated by weighting while within-family bias persists supports the boundary. Persistent family-only bias weakens that account; small gaps across β favor population-specific robustness. Missing support, seed disagreement or wide intervals remain unresolved.",
+    "confound": "Pilot ease may not transport. Reserve two untouched generator variants, 10 items each, for a separately labeled out-of-population check; report transport gaps without claiming two variants represent a universal family distribution.",
+    "feasibility": "760 confirmation/transport generations plus pilot ceiling 80; cheap conditional resampling. No uncertainty claim for unspecified task universes or historical selection. No run performed.",
+    "round": 1,
+    "parentIds": [
+      "A-S1"
+    ],
+    "changes": "Added random-to-strong selection, balanced contaminated showcases, disjoint ease predictors and sealed labels; defined the finite-population target and separated conditional, instance, seed and limited generator-transport uncertainty."
+  }
+]

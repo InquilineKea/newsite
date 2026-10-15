@@ -1,0 +1,150 @@
+[
+  {
+    "id": "P-M2-v2",
+    "title": "Overlap-aware evidence ledger with explicit abstention",
+    "target": "psychology",
+    "lever": "measurement",
+    "sourceIds": [
+      "BEM",
+      "WAGE"
+    ],
+    "sources": [
+      {
+        "paperId": "BEM",
+        "locator": "PMID 21280961; PMC3303812; F1000Research 4-1188",
+        "use": "Separate recall-specific replications, broader paradigms and repeated samples.",
+        "boundary": "Failed recall replications and the favorable author-led pooled synthesis test different evidence units."
+      },
+      {
+        "paperId": "WAGE",
+        "locator": "NBER w4509; DOI 10.1257/aer.90.5.1362; DOI 10.1257/aer.90.5.1397",
+        "use": "Track alternate measurements and sample construction separately.",
+        "boundary": "Employment measurement disputes supply methods, not evidence about anomalous cognition."
+      }
+    ],
+    "mechanism": "A global overlap graph joins reports sharing participants across any paradigm. Endpoint-specific estimates use connected components as dependence clusters; missing overlap produces conditional sensitivity intervals or abstention, not invented independent samples.",
+    "hypothesis": "Overlap-aware uncertainty will improve synthetic interval coverage beyond paper-ID deduplication when reports share participants across paradigms.",
+    "experiment": "Predeclare 500 seeds of 60 base samples yielding 180 reports in three paradigms: independent samples, exact duplicates, partial cross-paradigm overlap and correlated outcomes. Reveal the same report summaries and global hashed participant-set metadata to every method; hide generation parameters. Strip selected overlap metadata in a separate condition. Within each endpoint, equally weight base-sample summaries after removing exact report duplicates; bootstrap graph components 1,000 times for 95% intervals. Components spanning paradigms remain one cluster. With fewer than 20 components, refuse calibrated intervals. For missing edges, enumerate a fixed ten admissible overlap graphs and display the union of their intervals, explicitly conditional on this graph set. No cross-paradigm pooled effect is required.",
+    "baseline": "Report pooling, paper-ID deduplication and global exact-sample deduplication receive identical inputs, endpoint labels, 1,000 resamples and output schema: estimate, interval, evidence scope, unresolved flag.",
+    "metric": "Endpoint-specific 95% coverage with binomial Monte Carlo intervals; duplicate-count error; coverage conditional on declared overlap graphs; unresolved rate and retained precision.",
+    "falsifier": "If exact-sample deduplication matches coverage and precision, prefer it. If conditional graph envelopes miss truth when the true graph is excluded, label that metadata case unresolved rather than claim robust coverage.",
+    "confound": "Unknown dependence is not recoverable from labels alone; connected-component clustering can discard substantial information. Report over-connected graphs and honest abstention costs separately.",
+    "feasibility": "Offline synthetic audit only; no real meta-analysis recomputed.",
+    "round": 1,
+    "parentIds": [
+      "P-M2"
+    ],
+    "changes": "Global participant identity now spans paradigms; dependence uses component bootstrap, matched output/resample budgets, explicit minimum cluster count, conditional missing-overlap bounds and Monte Carlo uncertainty."
+  },
+  {
+    "id": "P-C2-v2",
+    "title": "Adjustment audit against ordinary randomized-trial practice",
+    "target": "psychology",
+    "lever": "causality",
+    "sourceIds": [
+      "POWER",
+      "DEBT"
+    ],
+    "sources": [
+      {
+        "paperId": "POWER",
+        "locator": "PMID 20855902; PMID 25810452; DOI 10.1037/bul0000356",
+        "use": "Audit total assignment effects separately from proposed pathways.",
+        "boundary": "Original hormone/risk claims, larger replication and broader subjective-posture evidence remain separate."
+      },
+      {
+        "paperId": "DEBT",
+        "locator": "DOI 10.1257/aer.100.2.573; Herndon–Ash–Pollin replication; Reinhart–Rogoff April 2013 response",
+        "use": "Separate association reconstruction from causal identification.",
+        "boundary": "An observational debt critique does not transfer its confounding structure to randomized posture assignment."
+      }
+    ],
+    "mechanism": "A checker uses declared timing and estimands to reject unsupported pathway interpretations. Its value is measured against sound randomized-trial baselines, with unknown or misleading graph metadata tested explicitly rather than treating the simulator's hidden DAG as available evidence.",
+    "hypothesis": "The checker may prevent interpretation errors beyond an ordinary trial analysis; added estimation accuracy is not presumed.",
+    "experiment": "Freeze equations before sampling: A~Bernoulli(.5), X,U,e independent standard normal; M=aA+bX+U; H=tA+dM+cX+e. Null: a=t=d=0; subjective-only: a=.4,t=d=0; mediated: a=.4,d=.4,t=0. Collider case replaces M by .4A+U and H by cX+U+e. Report M and H separately; risk outcomes are outside this pilot. Across 1,000 datasets of 240 records per case, expose identical A,X,M,H tables and declared metadata; the checker never sees equations or hidden case IDs. Test correct, wrong and unknown metadata separately. Fit unadjusted H~A, baseline-adjusted H~A+X and indiscriminate H~A+X+M once per dataset; repeat for M. The checker selects among these cached fits or abstains: only verified pre-assignment covariates enter total-effect adjustment; unknown roles fall back to unadjusted estimates. Mediation remains unidentified without extra assumptions.",
+    "baseline": "Unadjusted assignment and pre-assignment-X precision adjustment; all policies share six cached fits and identical output slots for total-effect estimate, interval and pathway-identification status.",
+    "metric": "Bias and 95% HC3 interval coverage: H total=t+da and M total=a (collider H total=0), by endpoint and metadata regime; unsupported mediation assertions; precision and abstention costs. Hidden truth is used only by evaluation.",
+    "falsifier": "If baseline-X practice matches error prevention and precision, prefer it. Wrong metadata that causes false pathway identification counts as failure; observational equivalence requires an unresolved pathway verdict, never automatic causal classification.",
+    "confound": "Correct metadata is an assumption, not something observational tables validate. Random assignment identifies total effects under the simulated design, not mediator effects.",
+    "feasibility": "Offline simulation; no human intervention or original-data reanalysis.",
+    "round": 1,
+    "parentIds": [
+      "P-C2"
+    ],
+    "changes": "Added strong precision-adjusted baseline, frozen structural equations, equal cached fits/outputs, blinded simulator truth, three metadata regimes and explicit unidentified mediation."
+  },
+  {
+    "id": "P-R2-v2",
+    "title": "A crossed replication atlas with identifiable relative components",
+    "target": "psychology",
+    "lever": "replication",
+    "sourceIds": [
+      "POWER",
+      "WAGE"
+    ],
+    "sources": [
+      {
+        "paperId": "POWER",
+        "locator": "PMID 20855902; PMID 25810452; DOI 10.1037/bul0000356; PMID 40534239",
+        "use": "Keep outcomes, measurement and intervention context separate.",
+        "boundary": "Broader subjective-posture synthesis and daily-life follow-up do not directly replicate original hormone/risk endpoints."
+      },
+      {
+        "paperId": "WAGE",
+        "locator": "NBER w4509; DOI 10.1257/aer.90.5.1362; DOI 10.1257/aer.90.5.1397",
+        "use": "Cross measurement with context to examine comparability.",
+        "boundary": "Policy-episode evidence supplies design lessons, not posture effects."
+      }
+    ],
+    "mechanism": "Randomize treatment and instrument independently within each synthetic site. A crossed hierarchical model estimates relative site and instrument treatment contrasts; it abstains when interactions or weak site information prevent localization.",
+    "hypothesis": "Crossing independent measurements will distinguish relative instrument bias from site moderation more reliably than confounding site and instrument.",
+    "experiment": "For each endpoint separately generate Z=b_s+alpha_m+(tau+u_s+v_m+w_sm)A+epsilon, with independent participant noise and sum-to-zero u,v,w. Use 12 sites, 80 distinct participants per site, 20 in each treatment-by-instrument cell: 960 records and 960 genuinely independent measurements per endpoint. Predeclare site-only, instrument-only, both, neither and interaction stress scenarios; 200 seeds each. Fit site random intercept/slope plus fixed instrument and treatment interaction; use 1,000 whole-site bootstrap draws. Reserve four sites before tuning, retaining eight for fitting. Freeze contrasts and practical thresholds on a separate synthetic tuning seed set. Common absolute instrument bias is not identified; only relative components are estimands.",
+    "baseline": "Confounded allocation uses the same 960 records, 960 independent measurements and treatment balance, assigning one instrument per site; harmonization uses one instrument everywhere. All output relative component intervals or 'not identifiable'; each gets identical fit/bootstrap budgets.",
+    "metric": "Site-level 95% coverage; held-out-site endpoint prediction error; false localization and abstention. Label site-only or instrument-only only when its component interval clears the frozen threshold and the other's lies wholly within equivalence bounds; otherwise both/neither/unresolved. Report 25% four-class random guessing and always-unresolved baselines, scoring accuracy and abstention separately.",
+    "falsifier": "If harmonization matches prediction and coverage, prefer it. If crossed intervals cannot localize components with eight training sites, report insufficient information. Large w_sm or equivalent models require unresolved localization, not a forced causal label.",
+    "confound": "Sum-to-zero constraints identify relative contrasts, not physiological truth. Site and treatment-dependent instrument interactions can defeat decomposition; participant observations are never duplicated across instruments.",
+    "feasibility": "Offline hierarchical simulation; no human replication or original-data reanalysis.",
+    "round": 1,
+    "parentIds": [
+      "P-R2"
+    ],
+    "changes": "Replaced paired recodings with independent randomized measurements; fixed equations/allocation, held-out sites, component estimands, cluster bootstrap, equal budgets and explicit interaction/weak-information abstention."
+  },
+  {
+    "id": "P-S2-v2",
+    "title": "Locked confirmation with matched estimators and batch stress tests",
+    "target": "psychology",
+    "lever": "selection",
+    "sourceIds": [
+      "POWER",
+      "SPARKS"
+    ],
+    "sources": [
+      {
+        "paperId": "POWER",
+        "locator": "PMID 20855902; PMID 25810452; DOI 10.1037/bul0000356",
+        "use": "Freeze endpoint identity and multiplicity before confirmation.",
+        "boundary": "Hormone, risk and subjective endpoints remain distinct; the synthetic audit alleges no selective reporting by any original author."
+      },
+      {
+        "paperId": "SPARKS",
+        "locator": "arXiv 2303.12712v5, sections 1.1, 8 and 10",
+        "use": "Distinguish informative exploratory examples from calibrated confirmation.",
+        "boundary": "Selected demonstrations do not define a population success rate; this is not a replication of an early proprietary model."
+      }
+    ],
+    "mechanism": "An append-only ledger freezes candidate contrasts and a family-wide selection rule. Independent confirmation estimates are compared with multiplicity-adjusted full-sample estimates under identical synthetic records, while secondary comparisons separate estimator precision from selection.",
+    "hypothesis": "Held-out confirmation may reduce selected-effect inflation; any gain must survive budget matching and be reported alongside power costs.",
+    "experiment": "Predeclare 300 campaigns per null, sparse and endpoint-specific signal scenario. Each has 30 synthetic standardized contrasts, ten per endpoint family, and 240 independent records split 120/120; every policy receives the same generated records. Freeze two-sided z tests with known unit variance and a family of all 30 contrasts. Split policy ranks first-half |z|, locks top three, then confirms each only if second-half p<=.05/3 with matching sign; effect estimate uses second half alone. Full-data comparator tests all 30 by Holm(.05) and reports the three largest-|z| estimates, clearly distinguishing selected from confirmed. Both compute all 30 contrasts on each half: exactly 60 evaluations; pooled sufficient statistics cost no extra contrast evaluations. Secondary comparison fixes the split-selected three and contrasts their 120-record held-out estimates with 120-record discovery estimates, isolating selection from sample size.",
+    "baseline": "Holm full-data analysis plus unadjusted full-data selection; identical records, 60 evaluations and output fields. All retain every candidate and endpoint label, not only successes.",
+    "metric": "Campaign-wise probability of any false confirmation; true-signal recovery; conditional selected-effect bias E[estimate-truth|selected], separately by endpoint; conditional confirmation power and estimator variance. Never compare only successful campaigns.",
+    "falsifier": "If full-data Holm matches error control and improves recovery, prefer it. If reduced inflation vanishes at matched estimator sample size, credit precision/selection tradeoffs rather than the ledger. Shared-batch failure means confirmation is unresolved, not independently validated.",
+    "confound": "Lock a second generator with correlated batch errors across halves before evaluation; retain nominal tests to expose miscalibration and report the failure. Administrative separation cannot create stochastic independence.",
+    "feasibility": "Offline synthetic audit and ledger prototype; no participant research or model benchmark.",
+    "round": 1,
+    "parentIds": [
+      "P-S2"
+    ],
+    "changes": "Specified top-three selection, exact z tests, Holm/Bonferroni families, sign rule, estimator and bias estimand; matched records/evaluations, added sample-size-matched comparison and prelocked shared-batch stress."
+  }
+]

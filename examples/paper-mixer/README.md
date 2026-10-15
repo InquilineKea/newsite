@@ -79,3 +79,33 @@ fixture: ten calls reproduced the completed archive exactly. That fixture test
 makes no new model-generation or independent validation claim. UI verification
 includes actual-data DOM unit rendering and interaction checks; interactive
 browser QA was unavailable in the managed environment.
+
+## Experiment 002: high-attention disputed papers
+
+The second run is in `runs/controversies/`, displayed at `/controversies/`.
+It retains the original ALife run and its exports. The six focal dossiers cover
+Stochastic Parrots, Sparks of AGI, Feeling the Future, power posing, Growth in a
+Time of Debt, and Card–Krueger minimum wages. Nineteen reference entries link
+original work, primary critiques, author replies, and scoped follow-ups. Access
+levels vary and are described; this is a curated starting packet, not a current
+citation ranking or an exhaustive systematic review.
+
+The archive crosses AI, psychology and economics with measurement, causality,
+replication and selection. Each transfer must use two focal dossiers from two
+domains, including the target domain. It mixes methods for resolving disputes,
+not effects or truth values. Source requirements are declared per corpus;
+absent requirements retain the first run's ALife + Buehler rule.
+
+```sh
+python scripts/replay.py --run-dir runs/controversies --dist-dir dist/controversies
+python scripts/make_report.py --run-dir runs/controversies --dist-dir dist/controversies
+python scripts/test_archive.py
+node scripts/test_ui.mjs
+node scripts/test_ui.mjs dist/controversies
+```
+
+AI feedback rates the formulation of a dispute-resolution proposal. It does not
+vote on whether an original paper is right. Citation attention, conceptual and
+ethical disagreement, data corrections, causal identification and direct
+replication are kept distinct. Scores across the two corpora are not calibrated
+for comparison. Proposed reanalyses and studies remain unexecuted.

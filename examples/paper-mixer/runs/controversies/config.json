@@ -1,0 +1,256 @@
+{
+  "question": "What testable dispute-resolution methods emerge by transferring lessons among influential contested AI, psychology and economics papers?",
+  "display": {
+    "edition": "EXPERIMENT 002",
+    "title": "Disagreement deserves better experiments.",
+    "description": "Six high-attention disputes. Original claims, critiques and follow-ups stay attached while the mixer evolves testable ways to discriminate explanations.",
+    "sourceHeading": "Six disputes. Evidence on more than one side.",
+    "targetLabel": "Application domain",
+    "nextDescription": "Continue a dispute-resolution proposal with an explicit test, not a stronger rhetorical claim."
+  },
+  "paperFamilies": {
+    "ai": "AI / INTERPRETATION",
+    "psychology": "PSYCHOLOGY / REPLICATION",
+    "economics": "ECONOMICS / IDENTIFICATION"
+  },
+  "name": "Controversial papers: dispute-resolution mixer",
+  "targets": [
+    "ai",
+    "psychology",
+    "economics"
+  ],
+  "levers": [
+    "measurement",
+    "causality",
+    "replication",
+    "selection"
+  ],
+  "rubric": [
+    "grounding",
+    "mechanism",
+    "falsifiability",
+    "feasibility"
+  ],
+  "scoreRange": [
+    0,
+    4
+  ],
+  "sourceRequirements": {
+    "minimumDistinctPapers": 2,
+    "minimumDistinctFamilies": 2,
+    "requiredFamilies": [],
+    "requireTargetFamily": true
+  },
+  "archiveRule": "One eligible proposal per application-domain × dispute lever niche, highest mean AI-rated formulation score; strict ties retain incumbent. No score for controversy, citations, agreement or rhetorical force.",
+  "eligibility": "Two distinct focal paper dossiers from at least two domains, each with locators and transfer boundaries. The target domain must be represented. Both critics accept the niche, flag no fatal scope distortion, and score grounding >=2. Preserve original, challenge and reply scope.",
+  "selection": "Two actual model-generated initial proposals per predefined niche; one feedback-guided child per initial elite. Targeted initialization, not an unbiased diversity benchmark.",
+  "limitations": [
+    "This is a curated high-attention selection, not a citation-ranked or exhaustive list. No current citation counts are asserted.",
+    "Controversy is not evidence of error, fraud or equal evidential support. Normative claims and empirical hypotheses require different treatment.",
+    "Mix methods of resolving disputes, not effect sizes, populations or the truth values of unrelated claims.",
+    "AI ratings assess proposal formulation; neither model consensus nor citation attention establishes scientific truth.",
+    "All generator, critic and revision contexts share one inherited model family; they are not independent model replications.",
+    "No proposed human-subject study, policy intervention, original-data reanalysis or model capability benchmark has been executed.",
+    "Scores across this corpus and the earlier ALife corpus are not calibrated for comparison."
+  ],
+  "papers": [
+    {
+      "id": "PARROTS",
+      "family": "ai",
+      "title": "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?",
+      "url": "https://doi.org/10.1145/3442188.3445922",
+      "locator": "Sections on environmental costs, training-data curation, research opportunity costs and language understanding",
+      "mechanism": "A conceptual and sociotechnical argument distinguishes fluent form from grounded meaning and examines scale-related harms.",
+      "boundary": "Benchmark capability does not automatically resolve ethical claims; this is not a single empirical claim that one task can falsify.",
+      "status": "Conceptual and normative dispute; assess each empirical or ethical claim separately.",
+      "attention": "The lead author documents extensive media coverage; selected for attention, not a verified citation rank.",
+      "attentionUrl": "https://faculty.washington.edu/ebender/stochasticparrots.html",
+      "references": [
+        {
+          "title": "Stochastic Parrots, original",
+          "url": "https://doi.org/10.1145/3442188.3445922",
+          "relation": "original",
+          "scope": "Publisher metadata and primary abstract; full access may vary."
+        },
+        {
+          "title": "Sparks of AGI, early GPT-4 demonstrations",
+          "url": "https://arxiv.org/pdf/2303.12712v5",
+          "relation": "contrasting evidence, not a direct refutation",
+          "scope": "Primary demonstrations and limitations; competence does not settle values."
+        },
+        {
+          "title": "Talking About Large Language Models",
+          "url": "https://arxiv.org/abs/2212.03551",
+          "relation": "conceptual perspective",
+          "scope": "Distinguishes anthropomorphic descriptions from system mechanisms."
+        }
+      ]
+    },
+    {
+      "id": "SPARKS",
+      "family": "ai",
+      "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+      "url": "https://arxiv.org/pdf/2303.12712v5",
+      "locator": "Sections 1.1, 7.2.1, 8, 10 and early-model disclosure",
+      "mechanism": "Exploratory demonstrations across tasks motivate a broad capability interpretation while also documenting limitations.",
+      "boundary": "A selected demonstration set on an early proprietary model is not a fixed operational test of general intelligence; later builds are not exact replications.",
+      "status": "Disputed interpretation and evaluation scope; not labeled a retracted paper.",
+      "attention": "Microsoft Research published the study and dedicated Research Forum discussion to its findings.",
+      "attentionUrl": "https://www.microsoft.com/en-us/research/publication/sparks-of-artificial-general-intelligence-early-experiments-with-gpt-4/",
+      "references": [
+        {
+          "title": "Sparks, primary v5",
+          "url": "https://arxiv.org/pdf/2303.12712v5",
+          "relation": "original",
+          "scope": "Exploratory task examples plus limitations."
+        },
+        {
+          "title": "Are Emergent Abilities of Large Language Models a Mirage?",
+          "url": "https://arxiv.org/abs/2304.15004",
+          "relation": "related methodological challenge, not a direct replication",
+          "scope": "Tests metric-induced discontinuities; does not show all capabilities are unreal."
+        },
+        {
+          "title": "Stochastic Parrots",
+          "url": "https://doi.org/10.1145/3442188.3445922",
+          "relation": "contrasting conceptual argument",
+          "scope": "Competence, grounded meaning and social harms are distinct endpoints."
+        }
+      ]
+    },
+    {
+      "id": "BEM",
+      "family": "psychology",
+      "title": "Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences on Cognition and Affect",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21280961/",
+      "locator": "Original nine experiments; distinguish retroactive-recall experiments from other paradigms",
+      "mechanism": "An extraordinary retroactive-influence interpretation was proposed from behavioral experiments.",
+      "boundary": "A failure to replicate one paradigm is not a test of every original endpoint; favorable pooled estimates are not a substitute for leakage-controlled preregistered replication.",
+      "status": "Contested extraordinary claim with unsuccessful direct replications and favorable author-led meta-analysis; no truth decided by citation count.",
+      "attention": "The paper prompted multiple direct replications, published rebuttals and an author-led 90-experiment meta-analysis.",
+      "attentionUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/",
+      "references": [
+        {
+          "title": "Original author manuscript",
+          "url": "https://dbem.org/wp-content/uploads/2023/02/FeelingFuture.pdf",
+          "relation": "original",
+          "scope": "Author manuscript, not copy of record."
+        },
+        {
+          "title": "Failing the Future: three unsuccessful attempts",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/",
+          "relation": "direct replication challenge",
+          "scope": "Tests retroactive facilitation of recall specifically."
+        },
+        {
+          "title": "Feeling the Future: meta-analysis of 90 experiments",
+          "url": "https://f1000research.com/articles/4-1188",
+          "relation": "favorable follow-up by original author and colleagues",
+          "scope": "Authors report positive pooled evidence; design and selection assumptions remain examinable."
+        }
+      ]
+    },
+    {
+      "id": "POWER",
+      "family": "psychology",
+      "title": "Power Posing: Brief Nonverbal Displays Affect Neuroendocrine Levels and Risk Tolerance",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20855902/",
+      "locator": "Original hormone, risk-taking and self-report endpoints; retain endpoint distinctions",
+      "mechanism": "The original experiment linked assigned expansive versus contractive poses to physiological, behavioral and subjective outcomes.",
+      "boundary": "Failure of hormone or risk effects does not by itself refute every subjective-posture effect; later meta-analyses cover a broader intervention family.",
+      "status": "Endpoint-specific replication dispute; do not merge hormones, subjective feeling and real-world behavior.",
+      "attention": "The APA describes major media attention, criticism and a large preregistered meta-analysis.",
+      "attentionUrl": "https://www.apa.org/pubs/highlights/spotlight/issue-239",
+      "references": [
+        {
+          "title": "Original power-posing paper",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20855902/",
+          "relation": "original",
+          "scope": "Primary indexed abstract."
+        },
+        {
+          "title": "Assessing the robustness of power posing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25810452/",
+          "relation": "replication challenge",
+          "scope": "Larger-sample hormone/risk test; original endpoint match matters."
+        },
+        {
+          "title": "Dominance and prestige: meta-analytic review",
+          "url": "https://doi.org/10.1037/bul0000356",
+          "relation": "broader endpoint-specific synthesis",
+          "scope": "Preregistered meta-analysis; subjective and physiological evidence differ."
+        },
+        {
+          "title": "The Power of Posing, 2025 daily-life study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40534239/",
+          "relation": "later field follow-up",
+          "scope": "Different intervention/outcomes; not an exact original replication."
+        }
+      ]
+    },
+    {
+      "id": "DEBT",
+      "family": "economics",
+      "title": "Growth in a Time of Debt",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573",
+      "locator": "Debt bins, country/year weighting, spreadsheet ranges and causal interpretation",
+      "mechanism": "Historical debt and growth associations were summarized using thresholds and aggregation choices.",
+      "boundary": "Reproducing a corrected summary does not identify a causal threshold; an association can remain while a sharp universal rule fails.",
+      "status": "Documented reproducibility correction plus disputed generalization and causal interpretation.",
+      "attention": "The original authors discuss worldwide policy attention; a published critical replication supplies data and code.",
+      "attentionUrl": "https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf",
+      "references": [
+        {
+          "title": "Growth in a Time of Debt, original",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573",
+          "relation": "original",
+          "scope": "Publisher record; original results need exact aggregation reconstruction."
+        },
+        {
+          "title": "Herndon, Ash and Pollin critical replication",
+          "url": "https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/",
+          "relation": "critical replication with code",
+          "scope": "Identifies coding, inclusion and weighting effects."
+        },
+        {
+          "title": "Reinhart and Rogoff response, April 2013",
+          "url": "https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf",
+          "relation": "author response",
+          "scope": "Acknowledges spreadsheet error and defends broader association; not an independent validation."
+        }
+      ]
+    },
+    {
+      "id": "WAGE",
+      "family": "economics",
+      "title": "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania",
+      "url": "https://www.nber.org/papers/w4509",
+      "locator": "1993 working paper / 1994 published case study; 2000 comment and reply",
+      "mechanism": "A before/after comparison across neighboring states tests an employment response to a minimum-wage change.",
+      "boundary": "One policy episode is not a universal wage law; payroll/survey construction and comparison-group assumptions matter.",
+      "status": "Contested measurement and context-specific causal interpretation; not treated as a discredited result.",
+      "attention": "The 2021 Nobel committee highlights Card’s natural-experiment contributions and the minimum-wage challenge to conventional wisdom; this is attention evidence, not proof of every estimate.",
+      "attentionUrl": "https://www.nobelprize.org/prizes/economic-sciences/2021/press-release/",
+      "references": [
+        {
+          "title": "Card and Krueger, original working paper",
+          "url": "https://www.nber.org/papers/w4509",
+          "relation": "original",
+          "scope": "Working-paper version linked to the 1994 journal publication."
+        },
+        {
+          "title": "Neumark and Wascher 2000 comment",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1362",
+          "relation": "measurement/reanalysis challenge",
+          "scope": "Payroll-based challenge; assess sample construction and comparability."
+        },
+        {
+          "title": "Card and Krueger 2000 reply",
+          "url": "https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1397",
+          "relation": "author reply and reanalysis",
+          "scope": "Adds administrative-data analysis; not universal causal identification."
+        }
+      ]
+    }
+  ]
+}

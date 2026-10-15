@@ -1,0 +1,150 @@
+[
+  {
+    "id": "E-M1-v2",
+    "title": "Compare wage endpoints against a strong units-and-frame baseline",
+    "target": "economics",
+    "lever": "measurement",
+    "sourceIds": [
+      "WAGE",
+      "POWER"
+    ],
+    "sources": [
+      {
+        "paperId": "WAGE",
+        "locator": "Card–Krueger original https://www.nber.org/papers/w4509; Neumark–Wascher comment https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1362; Card–Krueger reply https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1397",
+        "use": "Keep survey, payroll and administrative employment constructions and sample frames separately identifiable.",
+        "boundary": "The reply remains attached to the challenge; no source is treated as establishing a universal wage effect."
+      },
+      {
+        "paperId": "POWER",
+        "locator": "Original endpoints https://pubmed.ncbi.nlm.nih.gov/20855902/; robustness study https://pubmed.ncbi.nlm.nih.gov/25810452/; endpoint-specific synthesis https://doi.org/10.1037/bul0000356",
+        "use": "Transfer the requirement to distinguish physiological, behavioral and subjective endpoints into a ledger of distinct employment estimands.",
+        "boundary": "No posture effect size or evidence strength transfers to labor markets; distinguishing endpoints does not automatically reconcile estimates."
+      }
+    ],
+    "mechanism": "A typed endpoint ledger checks numerator, denominator, period and establishment frame before comparing employment contrasts. A conventional units-and-frame table receives identical information. The test asks whether automatic compatibility checks add value beyond competent unit checking, without interpreting a descriptive contrast as a causal effect.",
+    "hypothesis": "At equal information and analysis budgets, typed compatibility checks reduce false contradiction labels on incomparable endpoint/frame pairs while retaining genuine disagreement for aligned estimands; a competent plain table may perform equally well.",
+    "experiment": "Preregister 40 synthetic state-pair episodes with 80 initial establishments per state, arranged in 10 independent global-shock regimes of four dependent episodes. Define headcount as all workers, weekly hours as total paid hours, FTE as hours/40 and survival as an open indicator. For initial-population means, closed establishments contribute zero to all four numerators and remain in the denominator; survivor means are separate estimands. Nonresponse remains missing, never zero. Generate survey/payroll/administrative-like extracts with overlap, composition shifts and systematic errors. Freeze exactly 24 analyses: 3 sources × 4 endpoints × 2 frames. Both workflows see identical records, formulas, units, frame notes and missingness flags. Lock pair comparisons and reporting rules before held-out simulation seeds. For each episode define truth as the full synthetic population descriptive difference in changes, not an identified causal effect. Use 2,000 regime-block bootstrap draws for uncertainty across episode contrasts; assess small-regime interval calibration by repeated simulated regimes.",
+    "baseline": "A common-estimand table containing explicit formulas, units, dates, frame notes and all 24 results, with manual compatibility checks. Both workflows may output aligned agreement, aligned disagreement, incomparable or unresolved, and the same optional explanatory fields. No workflow is forced to assert a sign or causal conclusion.",
+    "metric": "Primary: false contradiction labels / all predeclared truly incomparable pairs. Also report mismatch sensitivity and specificity; aligned sign errors / aligned nonzero-truth contrasts; unresolved fraction; and 95% regime-block interval coverage across repeated simulations. Define aligned disagreement as opposing nonzero descriptive contrasts only when numerator, denominator, period and frame match. Score numerics and compatibility separately; no causal-recovery score.",
+    "falsifier": "If the typed ledger does not outperform the competent table on false contradictions while maintaining aligned-disagreement sensitivity, the simpler table is favored. Persistent disagreements after exact alignment count against endpoint mismatch as a sufficient explanation, without selecting a winner among the wage papers.",
+    "confound": "Unobserved management shocks, strategic reporting and source-dependent missingness can leave aligned contrasts unresolved. Ten global-shock regimes may yield poorly calibrated bootstrap intervals; simulation coverage, not a nominal label, must reveal that limitation. No simulated result transports the episode to a universal wage law.",
+    "feasibility": "A proposed offline generator, two deterministic report procedures and a fixed 24-result table; no original-data reanalysis or policy intervention has been executed.",
+    "round": 1,
+    "parentIds": [
+      "E-M1"
+    ],
+    "changes": "Replaced the weak one-column comparator with a competent formula/units/frame table and identical output choices. Defined four endpoint formulas, initial-population versus survivor denominators and closure versus nonresponse. Locked 24 analyses, separated descriptive compatibility from causal inference, and added global-regime sampling plus explicit metric denominators."
+  },
+  {
+    "id": "E-C1-v2",
+    "title": "Benchmark causal abstention on exactly indistinguishable debt-growth worlds",
+    "target": "economics",
+    "lever": "causality",
+    "sourceIds": [
+      "DEBT",
+      "BEM"
+    ],
+    "sources": [
+      {
+        "paperId": "DEBT",
+        "locator": "Original historical association https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573; critical reconstruction https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/; response https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf",
+        "use": "Separate reproducing corrected aggregates from distinguishing debt-causes-growth, growth-causes-debt and common-shock explanations.",
+        "boundary": "The response's broader association remains compatible with multiple causal graphs; this audit does not infer authors' motives."
+      },
+      {
+        "paperId": "BEM",
+        "locator": "Original nine experiments https://pubmed.ncbi.nlm.nih.gov/21280961/; recall-specific direct replications https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/; favorable pooled follow-up https://f1000research.com/articles/4-1188",
+        "use": "Transfer locked time order, endpoint-specific tests and temporal-leakage controls into synthetic panel identification challenges.",
+        "boundary": "Future outcomes can statistically predict current economic variables without retrocausality; a placebo failure diagnoses model assumptions, not paranormal influence or every original Bem endpoint."
+      }
+    ],
+    "mechanism": "A frozen candidate-graph audit retains every structural world compatible with observed panel summaries. Time-direction placebos can remove some incompatible worlds, but exactly identical observational fixtures must remain underidentified. A strong residual-diagnostic baseline gets the same candidate families, data, fit budget and permissible conclusions.",
+    "hypothesis": "Temporal placebos may reduce confidently wrong causal-direction declarations on distinguishable synthetic worlds; they must not create direction information in observationally equivalent or mixed-feedback worlds. Appropriate underidentification is a successful result, not an error.",
+    "experiment": "Publish structural families and observable columns: country, year, measured debt D and growth G only. Families include G_t=beta D_(t-1)+aG_(t-1)+u_t; D_t=gamma G_(t-1)+bD_(t-1)+v_t; both equations jointly; and latent persistent H_t entering both, with shared global shock Z_t. Generate 90 training and 90 held-out 50-country, 30-year panels using disjoint parameter regimes and shock processes. Add exact-equivalence fixtures by generating standardized correlated Gaussian observed arrays once and pairing them with forward and reverse structural factorizations having the identical observable distribution; hide construction labels. Both workflows fit the same four prespecified families with 10 fixed diagnostic operations. Freeze pseudocode: retain any family not rejected at a training-calibrated threshold; report a direction only when every retained family implies it, otherwise underidentified; empty retained sets mean model-misspecified/unresolved. The temporal workflow allocates diagnostics to time shifts/leads, the baseline to standard residual/serial-fit checks; publish both fixed menus before holdout. Calibrate only on training panels. Resample independent full panels for aggregate error intervals; within panels block both countries and whole global-shock trajectories, never treat country-years as independent.",
+    "baseline": "The same candidate-family set, 10-operation budget, raw observations and direction/underidentified/model-misspecified output set, using conventional residual and lag-fit diagnostics. Both use loss 1 for a wrong identified direction, 0.2 for abstention in identifiable fixtures, 0 for correct direction, and 0 for underidentified in exact-equivalence fixtures. Report each component separately so an arbitrary loss cannot hide overclaiming.",
+    "metric": "Primary: wrong-direction declarations / all held-out panels and separately / nonabstained panels. Report identified fraction, underidentification rate on exact-equivalence fixtures, missed mixed-feedback rate, retained-family coverage and global-shock-stratified calibration. Direction accuracy is scored only in preregistered distinguishable fixtures under the declared candidate family; simulator identity is not observational identifiability.",
+    "falsifier": "If temporal diagnostics pass in confounded worlds without preserving underidentification, their causal-discrimination claim fails. Any direction declaration on exactly identical forward/reverse fixtures is overclaiming. If the baseline matches calibration and useful identification coverage, its simpler diagnostic menu is favored. Zero identification everywhere does not establish improvement.",
+    "confound": "Unobserved crises and institutions outside the candidate library can invalidate both workflows; confidence is conditional on modeled families. Global shocks break country independence. A finite generator cannot establish real-world identification, and future-predicts-present associations do not imply retrocausality.",
+    "feasibility": "All structural generators, decisions and losses would be frozen before the proposed offline benchmark. No economic causal analysis, paranormal test or original-data reanalysis has been executed.",
+    "round": 1,
+    "parentIds": [
+      "E-C1"
+    ],
+    "changes": "Specified observable inputs, structural families, retained-family decision pseudocode and common abstention losses. Added exactly identical observational fixtures, bidirectional effects, latent persistence and held-out global-shock regimes. Replaced country-only calibration with panel/global-shock-aware assessment and distinguished conditional identification from knowledge of simulator labels."
+  },
+  {
+    "id": "E-R1-v2",
+    "title": "Test replication manifests against a competent spreadsheet audit",
+    "target": "economics",
+    "lever": "replication",
+    "sourceIds": [
+      "DEBT",
+      "BEM"
+    ],
+    "sources": [
+      {
+        "paperId": "DEBT",
+        "locator": "Original https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573; replication code and data entry https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/; author response https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf",
+        "use": "Define separate reproduction targets for spreadsheet range, country inclusion, weighting and the broader descriptive association defended in the response.",
+        "boundary": "Matching corrected aggregates validates reconstruction only; neither a match nor a mismatch identifies a causal debt threshold."
+      },
+      {
+        "paperId": "BEM",
+        "locator": "Original paradigms https://pubmed.ncbi.nlm.nih.gov/21280961/; three recall replications https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/; author-led 90-experiment synthesis https://f1000research.com/articles/4-1188",
+        "use": "Transfer exact replication-target labeling and preserve scope differences between a specific paradigm and a pooled broader claim.",
+        "boundary": "Recall-replication outcomes and pooled psychological effects do not transfer to economic associations; the analogy concerns target matching."
+      }
+    ],
+    "mechanism": "A layered manifest distinguishes raw extraction, implemented aggregation, declared alternative estimands and causal scope. A conventional formula-and-scope audit receives the same information and output choices. Hidden interacting mutations test whether layers improve reconstruction and error localization rather than simply restating expected answers.",
+    "hypothesis": "Layered manifests may improve defect localization and scope reporting beyond a standard spreadsheet audit under equal operations, without misclassifying legitimate weighting variants as bugs or matching corrected aggregates as causal identification.",
+    "experiment": "Generate 24 independent parent workbooks with 30 country histories and unequal 10–40-year observations. Create four blinded variants per parent: clean, one injected range/inclusion defect, interacting defects and an explicitly declared valid weighting variant. Shuffle labels and hide mutation maps and numerical expected values; give both auditors the same raw synthetic country-year data, formulas, declared aggregation specification and hashes. Publish hidden-score commitments before auditing and reveal reference outputs only afterward. Freeze 20 operations per workbook from the same menu: range-boundary scan, raw-to-cell reconciliation, inclusion-list comparison, weight-sum check, manual recomputation and scope-statement check. Both auditors use identical executed checks; compare a standard formula-audit report with scope notes against a layer-organized report. All variants of a parent remain in one train/test split. Estimate differences and intervals over independent parent workbooks, never treating 96 variants or country-years as independent audit replications.",
+    "baseline": "A conventional spreadsheet-audit checklist with formula review, data reconciliation, explicit estimand and causal-scope notes. Same files, specifications, 20 checks and report fields: implemented output, spec-compliant output, suspected cell/rule defects, valid alternative estimand, and causal-scope verdict. No forced binary badge or denied localization opportunity.",
+    "metric": "Report separately: exact defect-set recovery and cell/rule precision/recall; implemented-output and spec-compliant-output absolute errors against hidden references; false bug labels on declared valid variants; and unsupported causal-validation statements / all reports. Set numerical tolerance at 1e-10 × max(1, absolute reference), publish rounding rules, and retain unresolved defect labels. Cluster every metric by parent workbook.",
+    "falsifier": "If the standard audit matches localization and numerical reconstruction with equal checks, layering has no demonstrated advantage. If layered reporting labels legitimate variants as bugs or treats matched numbers as causal confirmation, its mechanism fails. Defect recovery cannot establish the real debt-growth causal threshold.",
+    "confound": "Injected mutations may be cleaner than undocumented historical revisions; source-country definitions and hidden missingness can remain unresolved. Equal-country and equal-observation weighting are different estimands unless one contradicts the declared specification; neither is inherently a coding error. The author response and critical reconstruction remain attached without manufacturing a winner.",
+    "feasibility": "Proposed deterministic synthetic workbook generator and report renderer; no original workbooks, historical-data rerun or policy inference has been executed.",
+    "round": 1,
+    "parentIds": [
+      "E-R1"
+    ],
+    "changes": "Replaced the checksum badge with a strong formula-and-scope baseline and identical report fields/checks. Hid scoring references and mutation labels, added interacting mutations plus valid weighting alternatives, separated implemented versus specification-compliant outputs, fixed numerical tolerances, and clustered clones by source workbook."
+  },
+  {
+    "id": "E-S2-v2",
+    "title": "Preserve unresolved selection explanations in wage reporting matrices",
+    "target": "economics",
+    "lever": "selection",
+    "sourceIds": [
+      "WAGE",
+      "POWER"
+    ],
+    "sources": [
+      {
+        "paperId": "WAGE",
+        "locator": "Original establishment survey https://www.nber.org/papers/w4509; payroll-based comment https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1362; reply with administrative analysis https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1397",
+        "use": "Compare respondent, payroll-available and administrative-covered establishment frames with common and frame-specific estimands.",
+        "boundary": "The comment and reply are rival measurement/coverage checks, not an assumed winner; the episode remains context-specific."
+      },
+      {
+        "paperId": "POWER",
+        "locator": "Original multiple outcomes https://pubmed.ncbi.nlm.nih.gov/20855902/; larger replication https://pubmed.ncbi.nlm.nih.gov/25810452/; broader preregistered synthesis https://doi.org/10.1037/bul0000356",
+        "use": "Transfer outcome-family declaration and reporting of all endpoints to distinguish outcome cherry-picking from sample attrition.",
+        "boundary": "Physiological and subjective posture outcomes are not wage outcomes; this transfers selection-accounting methods, not conclusions about either paper."
+      }
+    ],
+    "mechanism": "A frame-by-endpoint matrix can expose observable sample and outcome differences without uniquely identifying why they occurred. Comparing it with an equally complete narrative tests reporting discipline. Explicit unresolved classes prevent sample selection, effect heterogeneity and latent nonresponse from being forced into a single explanation.",
+    "hypothesis": "With identical results and permissible labels, a structured matrix may reduce false attribution and false reconciliation relative to a complete narrative. It must preserve unresolved observationally equivalent mixtures, not gain credit merely for printing more labels.",
+    "experiment": "Generate 72 independent synthetic policy episodes, each with 200 initial establishments and pre/post measurements of headcount, paid hours and open status. Closure means zero population headcount/hours and open=0; nonresponse is missing, not closure. Define frames as survey-responding, payroll-available and administrative-covered; each frame is fixed by pre-policy membership where observable. Frame-specific descriptive contrasts target that fixed cohort including observed closures; full initial-population contrasts are separate truth values, not assumed identifiable from responding frames. Freeze nine analyses: 3 frames × 3 endpoints. Include isolated observed-selection, endpoint-definition and size-heterogeneity worlds plus mixed latent-manager-shock worlds. Construct paired latent worlds with identical released observations/masks but different unobserved nonrespondent outcomes, so population attribution is genuinely unresolved. Both reporting algorithms receive all nine estimates, definitions and masks; freeze training-tuned rules before holding out complete episode families. Use 2,000 whole-episode bootstrap draws for aggregate report-error rates. Within-episode joint intervals for nine frame contrasts use prespecified cluster max-t simulation calibrated on independent episode-family draws; report failures under global shocks separately, not as guaranteed nominal coverage.",
+    "baseline": "A fully reported narrative with all nine estimates, intervals, endpoint/frame dictionary and missingness information, identical length budget and labels. Both may label observable frame sensitivity, observable endpoint sensitivity, unresolved/mixture or no detected disagreement; latent causal-source labels require identification. Both can preserve disagreement and abstain. Matrix layout alone earns no score.",
+    "metric": "Freeze attribution rules: flag frame sensitivity only for different-frame contrasts with matched endpoints; endpoint sensitivity only for different endpoints within a fixed frame; neither flag is a causal explanation. If two latent worlds yield identical released data but disagree on the population contrast/source, the required label is unresolved/mixture. Measure false definitive attribution / unresolved fixtures, missed observable sensitivities, and false reconciliation / truly conflicting aligned contrasts. Report familywise 95% coverage for nine frame-specific contrasts and separately coverage/abstention for population contrasts; no pooling of their denominators.",
+    "falsifier": "If structured reporting assigns a unique source in observationally equivalent mixtures, it fails. Persistent within-frame, within-endpoint disagreement counts against sample/endpoint mismatch alone. If the complete narrative preserves disagreement and calibration equally well, the matrix has no demonstrated advantage. Apparent source attribution without identification is not success.",
+    "confound": "Unobserved manager shocks and employer anticipation can jointly drive response and employment, leaving full-population effects unidentified. Fixed pre-policy frames differ from observed post-policy availability; missing membership must be flagged unresolved. Shared episode shocks can invalidate within-episode interval calibration. Neither workflow settles a universal wage law or ranks the comment and reply as winners.",
+    "feasibility": "Proposed offline generator, fixed nine-analysis table and two deterministic report algorithms; no original-data reanalysis, real causal effect estimate or policy advice has been executed.",
+    "round": 1,
+    "parentIds": [
+      "E-S2"
+    ],
+    "changes": "Added a fully reported baseline with equal labels, results and output budget. Defined closure/nonresponse, fixed frames, frame-specific versus population estimands, observable sensitivity rules and a mandatory unresolved class for exact observational equivalence. Specified joint-interval calibration, independent episode-family sampling and separate denominators for attribution and coverage."
+  }
+]

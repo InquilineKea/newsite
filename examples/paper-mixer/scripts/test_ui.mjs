@@ -2,28 +2,30 @@
 import {readFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const root=new URL('../',import.meta.url);
-const data=JSON.parse(await readFile(new URL('dist/run.json',root),'utf8'));
+const publicDir=process.argv[2]||'dist';
+const data=JSON.parse(await readFile(new URL(publicDir+'/run.json',root),'utf8'));
 const code=await readFile(new URL('dist/app.js',root),'utf8');
 const core=await import('data:text/javascript;base64,'+Buffer.from(code).toString('base64'));
 assert.equal(core.validateRun(data),data);
 for(const c of data.candidates){
  const ev=data.evaluations.filter(e=>e.candidateId===c.id);
  assert.equal(core.meanQuality(ev),data.scores[c.id].quality);
- assert.equal(core.candidateEligible(c,ev,data.config.papers),data.scores[c.id].eligible);
+ assert.equal(core.candidateEligible(c,ev,data.config.papers,data.config.sourceRequirements),data.scores[c.id].eligible);
 }
 assert.equal(core.filterCandidates(data.candidates,{selectedSources:new Set(),evaluations:data.evaluations,papers:data.config.papers}).length,0);
 const all=new Set(data.config.papers.map(p=>p.id));
 assert.equal(core.filterCandidates(data.candidates,{selectedSources:all}).length,data.candidates.length);
-const sourceOnly=core.filterCandidates(data.candidates,{selectedSources:new Set(['LENIA'])});
-assert(sourceOnly.every(c=>c.sourceIds.includes('LENIA')));
+const firstPaper=data.config.papers[0].id;
+const sourceOnly=core.filterCandidates(data.candidates,{selectedSources:new Set([firstPaper])});
+assert(sourceOnly.every(c=>c.sourceIds.includes(firstPaper)));
 assert.equal(core.summarizeArchive(data.archive).qdScore,data.snapshots.at(-1).qdScore);
 class Element{
  constructor(tag){this.tag=tag;this.children=[];this.attrs={};this.events={};this.dataset={};this.style={};this.value='';this.hidden=false;this.classes=new Set();this.classList={add:x=>this.classes.add(x),toggle:(x,v)=>v?this.classes.add(x):this.classes.delete(x)};}
  append(...a){this.children.push(...a)}replaceChildren(...a){this.children=[...a]}setAttribute(k,v){this.attrs[k]=v}removeAttribute(k){delete this.attrs[k]}addEventListener(k,v){this.events[k]=v}scrollIntoView(){}focus(){}select(){}click(){this.events.click?.({target:this})}
 }
-const html=await readFile(new URL('dist/index.html',root),'utf8');
+const html=await readFile(new URL(publicDir+'/index.html',root),'utf8');
 const ids=new Map([...html.matchAll(/id="([^"]+)"/g)].map(m=>[m[1],new Element('div')]));
-globalThis.document={getElementById:id=>{assert(ids.has(id),'Unknown DOM ID '+id);return ids.get(id)},createElement:tag=>new Element(tag)};
+globalThis.document={querySelector:()=>({content:''}),getElementById:id=>{assert(ids.has(id),'Unknown DOM ID '+id);return ids.get(id)},createElement:tag=>new Element(tag)};
 globalThis.window={matchMedia:()=>({matches:false})};
 globalThis.fetch=async()=>({ok:true,json:async()=>data});
 await import('data:text/javascript;base64,'+Buffer.from(code+'\n// DOM harness').toString('base64'));

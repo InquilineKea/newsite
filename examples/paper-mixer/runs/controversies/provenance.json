@@ -1,0 +1,47 @@
+{
+  "contexts": {
+    "generators": [
+      "controversy_gen_ai",
+      "controversy_gen_psych",
+      "controversy_gen_econ"
+    ],
+    "critics": [
+      "controversy_critic_evidence",
+      "controversy_critic_feasibility"
+    ],
+    "revision": "Same generator contexts, given the two real reviews of selected parents"
+  },
+  "model_independence": "All contexts share the inherited parent model. No independent empirical replication or truth vote is claimed.",
+  "selection": "Curated documented attention, not a verified citation ranking; source access and claim scopes are in config.json.",
+  "scientific_execution": "Actual AI generation, critique and revision; deterministic archive replay. Proposed scientific studies, audits and reanalyses were not run.",
+  "checks": [
+    "11 archive and corpus-policy invariants",
+    "Original and new actual-data DOM unit tests",
+    "JavaScript syntax and Python compilation",
+    "Generic JSON adapter fixture parity; fixture makes no new model calls"
+  ],
+  "browser_qa": "Unavailable; no managed browser capability was available.",
+  "count": {
+    "candidates": 36,
+    "reviews": 72,
+    "elites": 12
+  },
+  "record_hashes": {
+    "config.json": "62a673751f43d28cccdcc92679c108b5835a04ed945950b8ee2d3e8cd06857c8",
+    "feedback-initial-evidence.json": "68972f641d5e12697c8426e08c93272512110633e4240409cde6fa0213fb13cc",
+    "feedback-initial-feasibility.json": "36174e7c3b39288400563bb0fd459a8739ecf7479dfe0caa8fd292c1590d7fa2",
+    "feedback-revised-evidence.json": "346183d3175baf25cda214b16ce45e48be5427dd5756ccf3bdb8657af68435f7",
+    "feedback-revised-feasibility.json": "1ba2e8a48a46a2c0508963c2f9fc626830bc9211ae500c6ec8f9df42318892db",
+    "initial-ai.json": "120e9cd8f40386782c04842a7da97bfb30319dd07fcce21b811fd723855b166a",
+    "initial-archive.json": "257fb546415b03396b38e7b70943d5b9483f463b3f140cef6c0a6beabaacd0f9",
+    "initial-economics.json": "3e2e9aa3bab7784368b8284d9bd94a3dd4ed69c4717e8ba7e9986c0d1a64fe96",
+    "initial-psychology.json": "6b9fb59425b546a11f5e4663c8a205c5d3ade61b90a30cf0bf34b3523f467750",
+    "results.json": "845061b478c9cb34bc47af7df2ace91d8d98227c5e4871dc89ba6b9293be302a",
+    "revised-ai.json": "e315e3e6d19fb3617189d73180cc683b94fb0686319f5d45804c81fba53f77ac",
+    "revised-economics.json": "5937a3fc16a53dcd7950ec2721c3fd0676fe601b53083aa49c23f99934ead7a7",
+    "revised-psychology.json": "63ab0e65b8047297ec31fe265c79e62a5a0ea08000ed03da7d40ced7c5403730",
+    "revision-packet-ai.json": "15f43c570c022e098085def514ade74e1c27f59d675bf57b1d61e3ad43f83520",
+    "revision-packet-economics.json": "32e81f6d7ce24db27441ea59e5b07534d30665618d181a6a7f0db2135f57e8ab",
+    "revision-packet-psychology.json": "55ef630b92be803649d72050e3feddf54e62c828c8894330426535fe73737773"
+  }
+}

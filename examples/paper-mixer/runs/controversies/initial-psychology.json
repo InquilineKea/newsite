@@ -1,0 +1,282 @@
+[
+  {
+    "id": "P-M1",
+    "title": "Endpoint-preserving score translation",
+    "target": "psychology",
+    "lever": "measurement",
+    "sourceIds": [
+      "POWER",
+      "SPARKS"
+    ],
+    "sources": [
+      {
+        "paperId": "POWER",
+        "locator": "Original PubMed 20855902; robustness replication PubMed 25810452; broader meta-analysis DOI 10.1037/bul0000356",
+        "use": "Keep hormone, risk-taking and subjective-feeling outcomes in separate measurement channels when interpreting replication.",
+        "boundary": "A broader posture literature cannot be relabeled a direct replication of the original hormonal result."
+      },
+      {
+        "paperId": "SPARKS",
+        "locator": "Sparks v5, arXiv 2303.12712, sections 1.1 and 10; related metric critique arXiv 2304.15004",
+        "use": "Transfer the lesson that conclusions can depend on score construction and task thresholds.",
+        "boundary": "The related emergence-metric critique is not a direct replication of Sparks and supplies no psychology effect sizes."
+      }
+    ],
+    "mechanism": "Represent each claim with an endpoint identity and score definition before aggregation. A synthetic audit varies scoring thresholds while holding observations fixed, testing whether apparent cross-endpoint agreement is created by recoding rather than shared evidence.",
+    "hypothesis": "A typed scoring pipeline will reject unsupported hormone-to-subjective generalization while preserving evidence that genuinely concerns the same endpoint.",
+    "experiment": "Offline pilot: generate 120 synthetic study summaries, 40 per endpoint class, with fixed known effects and measurement scales; include null-hormone/positive-subjective and concordant-effect scenarios. Compare an endpoint-typed parser and an untyped pooling parser on the identical summaries and 24 predeclared recoding perturbations. The sample unit is a synthetic study summary; each method receives the same summaries and number of scoring passes. Use only public abstract/metadata statements to define endpoint labels, not to invent original participant values.",
+    "baseline": "Untyped standardized-score aggregation plus a simple endpoint-stratified table; match the number of summaries, perturbations and output assertions.",
+    "metric": "Unsupported cross-endpoint assertions per 100 outputs; same-endpoint recovery rate; conclusion changes under score-only transformations.",
+    "falsifier": "If the simple endpoint-stratified table matches the typed pipeline on error rate and recovery across all seeded scenarios, favor endpoint stratification alone over the proposed richer representation. If scoring changes alter conclusions even within endpoint-matched continuous analyses, investigate scale sensitivity rather than endpoint confusion.",
+    "confound": "Artificially obvious labels may make the audit trivial. Include predeclared ambiguous outcome descriptions and require an unknown label instead of a forced classification.",
+    "feasibility": "Small deterministic offline generator and assertion checker; no participant recruitment, causal claims about posture or new model-capability experiments.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "P-M2",
+    "title": "Evidence-unit ledger before meta-analysis",
+    "target": "psychology",
+    "lever": "measurement",
+    "sourceIds": [
+      "BEM",
+      "WAGE"
+    ],
+    "sources": [
+      {
+        "paperId": "BEM",
+        "locator": "Original nine experiments, PMID 21280961; Failing the Future, PMC3303812; 90-experiment meta-analysis, F1000Research 4-1188",
+        "use": "Distinguish particular retroactive-recall replications from a pooled collection of paradigms and outcomes.",
+        "boundary": "A favorable author-led pooled estimate and failed recall replications have different evidence units; neither can be substituted for the other."
+      },
+      {
+        "paperId": "WAGE",
+        "locator": "Original NBER w4509; 2000 comment DOI 10.1257/aer.90.5.1362; reply DOI 10.1257/aer.90.5.1397",
+        "use": "Transfer attention to payroll-versus-survey measurement, sample construction and paired observational units.",
+        "boundary": "Restaurant employment measurement disagreements are methodological analogies, not evidence for or against anomalous cognition."
+      }
+    ],
+    "mechanism": "Assign study, sample, paradigm and outcome identifiers before combining reports. A provenance ledger separates repeated analyses of one sample from independent replications, analogous to separating alternate employment measurements from additional restaurants.",
+    "hypothesis": "Deduplicating at the sample-and-paradigm level will prevent confidence gains caused solely by counting alternate reports as independent evidence.",
+    "experiment": "Construct 60 synthetic base experiments in three paradigm groups, then produce 180 report records with disclosed sample overlap, alternate outcomes and mixed paradigm labels. Create two conditions with identical report counts: true independent samples and duplicated samples. Compare ledger-aware and report-level summaries with the same fixed effect estimator. The unit for uncertainty is the base experiment; allocate the same 180-record parsing budget and estimator calls to both pipelines. Public BEM follow-ups determine the ledger fields, not simulated effect magnitudes.",
+    "baseline": "Report-level pooling and a paper-ID deduplication baseline; both receive the same records.",
+    "metric": "Coverage of synthetic 95% intervals across 500 seeded datasets; effective independent-unit count error; correct separation of recall-specific and broader-paradigm claims.",
+    "falsifier": "If paper-ID deduplication gives calibrated coverage and correct paradigm scope under the same overlap patterns, favor the simpler ledger. If interval failure persists after exact sample deduplication, correlated outcomes or estimator assumptions are the stronger explanation.",
+    "confound": "Unknown overlap in real publications cannot be solved by assigning IDs. The offline audit must include unresolved overlap marked unknown and report uncertainty bounds.",
+    "feasibility": "Synthetic records and public evidence metadata only; no original-data reanalysis and no new human study.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "P-C1",
+    "title": "Time-arrow controls for retroactive-claim pipelines",
+    "target": "psychology",
+    "lever": "causality",
+    "sourceIds": [
+      "BEM",
+      "WAGE"
+    ],
+    "sources": [
+      {
+        "paperId": "BEM",
+        "locator": "Feeling the Future, PMID 21280961, retroactive-recall experiments; Failing the Future, PMC3303812",
+        "use": "Specify which outcome precedes which randomized future event and which recall paradigm is actually being tested.",
+        "boundary": "The failed direct replications concern retroactive facilitation of recall; they do not empirically cover every original experiment."
+      },
+      {
+        "paperId": "WAGE",
+        "locator": "NBER w4509, before/after New Jersey–Pennsylvania comparison; comment/reply DOI 10.1257/aer.90.5.1362 and 10.1257/aer.90.5.1397",
+        "use": "Transfer placebo timing and comparison-unit reasoning to distinguish pipeline artifacts from a temporally specific estimand.",
+        "boundary": "A natural experiment and a randomized cognition paradigm have different identifying assumptions; no economic effect or causal conclusion transfers."
+      }
+    ],
+    "mechanism": "Treat temporal ordering as an executable data contract. Synthetic event streams include hidden look-ahead, time-index drift and selection on future information; predeclared placebo contrasts expose associations that a nominally retroactive test can inherit from bookkeeping.",
+    "hypothesis": "A time-index validator plus placebo-event contrasts will detect planted look-ahead artifacts with fewer false retroactive flags than an effect-only analysis.",
+    "experiment": "Simulate 200 independent sessions per seed with observed recall fixed before a later randomized practice event. Across 100 seeds each, test null streams, an injected retroactive signal, index drift, and leakage during record selection. Compare equal-budget pipelines with 20 contrasts per seed: validation/placebos versus 20 ordinary resamples. The session is the independent unit. The injected signal is a software positive control, not a physical model or empirical evidence that retrocausation occurs.",
+    "baseline": "The same recall contrast without timing validation; ordinary resampling uses the identical contrast count and generated sessions.",
+    "metric": "Artifact-detection sensitivity at a fixed 5% null flag rate; correct classification of planted artifacts versus clean injected signals; contract violations localized per session.",
+    "falsifier": "If clean-null and clean-injected-signal streams are flagged equally often as leaked streams, the temporal controls lack discrimination. If ordinary resampling detects all planted artifacts at matched false-positive rate, favor that simpler pipeline.",
+    "confound": "Controls tailored only to the planted leakage family can overstate usefulness. Reserve a blinded synthetic artifact family and publish sensitivity by family.",
+    "feasibility": "An offline event-log test suite; any preregistered human replication remains future work requiring its own approvals and design.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "P-C2",
+    "title": "Separate posture totals from post-treatment pathways",
+    "target": "psychology",
+    "lever": "causality",
+    "sourceIds": [
+      "POWER",
+      "DEBT"
+    ],
+    "sources": [
+      {
+        "paperId": "POWER",
+        "locator": "Original PMID 20855902, hormone/risk/self-report outcomes; larger replication PMID 25810452; meta-analysis DOI 10.1037/bul0000356",
+        "use": "Keep original outcomes separate and clarify whether analysis targets assignment, subjective experience or physiological pathways.",
+        "boundary": "The offline exercise cannot establish whether any real posture effect exists; subjective and endocrine endpoints remain distinct."
+      },
+      {
+        "paperId": "DEBT",
+        "locator": "Growth in a Time of Debt, DOI 10.1257/aer.100.2.573; Herndon–Ash–Pollin critical replication; Reinhart–Rogoff April 2013 response",
+        "use": "Transfer the distinction between a reproducible association and a causal claim, with explicit estimands before adjustment.",
+        "boundary": "Country-level debt confounding does not imply randomized posture assignment has the same confounding problem."
+      }
+    ],
+    "mechanism": "An estimand-first graph records which variables precede assignment and which could be mediators. Simulated posture trials demonstrate how controlling for post-treatment subjective feelings can change the estimated total effect without resolving the underlying endocrine dispute.",
+    "hypothesis": "An adjustment checker tied to an explicit total-effect estimand will avoid mediator and collider bias more reliably than a rule that adjusts for every measured correlate.",
+    "experiment": "Generate 1,000 synthetic randomized two-arm datasets of 240 independent participant records, using four predeclared DAGs: pure null, subjective-only pathway, mediated endocrine pathway and post-treatment collider. Fit three fixed models per dataset with identical records and compute budgets: unadjusted assignment contrast, all-covariate adjustment, and estimand-approved adjustment. Sample sizes and pathways are illustrative, not reconstructed original power-posing data. Evaluate hormone and subjective outcomes separately.",
+    "baseline": "Unadjusted randomized contrast and indiscriminate all-covariate regression; all receive the same covariate table and three-model budget.",
+    "metric": "Bias and interval coverage for the known synthetic total effect, by endpoint and DAG; frequency of correct refusal to interpret an adjusted association as a total effect.",
+    "falsifier": "If unadjusted contrasts match the checker across every randomized scenario, favor the simpler unadjusted analysis for total effects. If the checker fails under an omitted mediator-outcome confounder, favor an explicitly unidentified pathway conclusion over a mediation claim.",
+    "confound": "Correct graph specification supplies information unavailable from data alone. Report performance with wrong graphs and unknown temporal roles, not just oracle graphs.",
+    "feasibility": "Offline simulation and model-audit specification; no hormone sampling, intervention or original-data reanalysis.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "P-R1",
+    "title": "Replication passports with version-sensitive scope",
+    "target": "psychology",
+    "lever": "replication",
+    "sourceIds": [
+      "BEM",
+      "SPARKS"
+    ],
+    "sources": [
+      {
+        "paperId": "BEM",
+        "locator": "Original PMID 21280961, nine experiments; PMC3303812, three recall replication attempts; F1000Research 4-1188, 90-experiment synthesis",
+        "use": "Make paradigm, timing and outcome fidelity explicit before assigning a direct-replication label.",
+        "boundary": "Broad favorable synthesis cannot erase a recall-specific failure, and a recall-specific failure cannot be relabeled a test of all nine experiments."
+      },
+      {
+        "paperId": "SPARKS",
+        "locator": "Sparks v5 arXiv 2303.12712, sections 1.1 and 10 and early-model disclosure",
+        "use": "Transfer version and procedure identity requirements from evaluation of an early proprietary model.",
+        "boundary": "A later model is not the original model; version mismatch is a scope limit, not an automatic excuse for a failed test."
+      }
+    ],
+    "mechanism": "A replication passport separates exact procedure identity, justified functional equivalence and unknown deviations. Cross-domain version tracking supplies a disciplined way to label what a replication can test without letting every unfavorable result be dismissed as different.",
+    "hypothesis": "A locked passport taxonomy will reduce both false direct-replication labels and post-hoc exemption of unfavorable results.",
+    "experiment": "Prepare 80 synthetic protocol pairs varying one predeclared field at a time: recall paradigm, event order, outcome, randomization, software timing or unavailable implementation version. A rule-based classifier sees only protocol differences; a result-aware baseline additionally sees a randomly assigned favorable/unfavorable label. The unit is a protocol pair; both use the same 80 pairs and one classification pass. Ground field definitions in the primary BEM and Sparks disclosures; do not invent details of inaccessible protocols.",
+    "baseline": "An endpoint-only matching rule and a permissive similarity rule, each fixed before outcome labels are revealed.",
+    "metric": "Classification agreement with a published deterministic rubric; label invariance when favorable/unfavorable results are swapped; unknown-versus-direct misclassification rate.",
+    "falsifier": "If endpoint-only matching achieves the same scope classification and outcome-label invariance, favor the simpler rule. If reasonable rubric choices materially reverse labels, report unresolved procedural equivalence rather than claim the passport resolves replication.",
+    "confound": "A rubric authored by the same team is not ground truth. Predeclare alternate defensible rubrics and report disagreements; keep missing fields unknown.",
+    "feasibility": "Offline protocol-metadata exercise; no new participants or later-model capability test is run.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "P-R2",
+    "title": "Crossed measurement-and-context replication atlas",
+    "target": "psychology",
+    "lever": "replication",
+    "sourceIds": [
+      "POWER",
+      "WAGE"
+    ],
+    "sources": [
+      {
+        "paperId": "POWER",
+        "locator": "Original PMID 20855902; larger replication PMID 25810452; broader meta-analysis DOI 10.1037/bul0000356; daily-life follow-up PMID 40534239",
+        "use": "Separate endpoint changes from intervention/context changes when comparing laboratory and later posture studies.",
+        "boundary": "A later daily-life follow-up is not an exact replication of the original hormone or risk experiment."
+      },
+      {
+        "paperId": "WAGE",
+        "locator": "Original NBER w4509; payroll challenge DOI 10.1257/aer.90.5.1362; administrative-data reply DOI 10.1257/aer.90.5.1397",
+        "use": "Transfer a crossed design that distinguishes changed measurement from changed samples or contexts.",
+        "boundary": "The specific wage-policy episode does not determine whether posture findings generalize."
+      }
+    ],
+    "mechanism": "Cross context with measurement method rather than changing both together. Synthetic multi-site datasets reveal when apparent replication differences arise from instrument construction, true context moderation or both, while maintaining separate hormone, subjective and behavioral outcomes.",
+    "hypothesis": "A balanced context-by-measurement atlas will distinguish measurement artifacts from context heterogeneity more accurately than a collection where each site uses its own instrument.",
+    "experiment": "Generate 12 synthetic sites with 80 independent participant records each, three endpoint channels and two alternate measurement mappings per record. In separate known scenarios plant only measurement bias, only context moderation, both or neither. Compare crossed and confounded allocations at 960 participant records and the same 1,920 measurement evaluations per endpoint. Repeat 200 seeds. Synthetic paired measurements are explicitly constructed; no claim is made that real hormone and self-report measures share a latent scale.",
+    "baseline": "Site-specific instruments without crossing; a same-instrument-only pooled analysis; match participant and measurement budgets.",
+    "metric": "Correct identification of the planted source of heterogeneity; false moderation rate; held-out-site predictive error reported separately for each endpoint.",
+    "falsifier": "If the crossed allocation cannot distinguish measurement-only from context-only scenarios above the predeclared chance baseline, favor non-identifiability. If a single harmonized instrument performs equally well under matched budgets, prefer harmonization over the more complex atlas.",
+    "confound": "Two synthetic mappings of one record are dependent. Cluster uncertainty by participant and site; include instrument-by-context interaction that violates simple additive decomposition.",
+    "feasibility": "Offline simulation plus a public protocol template; collecting any crossed human replication is separate future work.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "P-S1",
+    "title": "Selection stress maps with locked evidence units",
+    "target": "psychology",
+    "lever": "selection",
+    "sourceIds": [
+      "BEM",
+      "DEBT"
+    ],
+    "sources": [
+      {
+        "paperId": "BEM",
+        "locator": "Feeling the Future PMID 21280961; recall replications PMC3303812; author-led 90-experiment meta-analysis F1000Research 4-1188",
+        "use": "Audit how paradigm inclusion, outcome choice and publication selection affect pooled summaries without conflating different tests.",
+        "boundary": "A synthetic selection mechanism cannot establish that any particular author used that mechanism or estimate the real extent of publication bias."
+      },
+      {
+        "paperId": "DEBT",
+        "locator": "Original DOI 10.1257/aer.100.2.573; Herndon–Ash–Pollin replication, coding/inclusion/weighting analyses; Reinhart–Rogoff April 2013 response",
+        "use": "Transfer explicit inclusion and weighting sensitivity from a documented reproducibility correction.",
+        "boundary": "A documented spreadsheet error in economics is not evidence of an analogous error, misconduct or retraction in psychology."
+      }
+    ],
+    "mechanism": "Factor the analysis into eligible evidence units, admissible exclusions and weights. A predeclared sensitivity grid measures which conclusions survive these choices, distinguishing a correctable implementation error from a conclusion that depends on selective aggregation.",
+    "hypothesis": "A locked multiverse will correctly localize whether a synthetic pooled effect changes because of weighting, missing null studies or outcome selection.",
+    "experiment": "Simulate 100 base experiments in four distinct paradigm strata, then expose report collections under four known selection mechanisms. Evaluate a fixed 3-by-3-by-3 grid of weighting, admissible-inclusion and outcome rules, always showing stratum-specific results before any pooled value. Use 200 seeded corpora per mechanism; the unit is the base experiment. Give every pipeline exactly 27 estimations per corpus and identical visible records. Withheld studies are known only to the scoring harness.",
+    "baseline": "One preferred pooled specification and 27 random admissible specifications; identical estimator budget and visible evidence.",
+    "metric": "Recovery of the planted sensitivity source; coverage of true synthetic stratum effects; number of sign conclusions stable across all declared choices.",
+    "falsifier": "If random specifications localize the planted selection source as well as the structured grid, favor the simpler search. If all admissible choices remain biased under hidden missingness, favor an unidentified missing-evidence conclusion rather than interpreting stability as validity.",
+    "confound": "The visible multiverse cannot recover studies never observed. Include missing-not-at-random scenarios and state that stability within visible evidence does not resolve them.",
+    "feasibility": "Synthetic experiment-level audit; no actual meta-analysis effect is recomputed or attributed to a paper.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "P-S2",
+    "title": "A discovery-to-confirmation firewall for persuasive examples",
+    "target": "psychology",
+    "lever": "selection",
+    "sourceIds": [
+      "POWER",
+      "SPARKS"
+    ],
+    "sources": [
+      {
+        "paperId": "POWER",
+        "locator": "Original PMID 20855902, separate hormones/risk/self-report; larger replication PMID 25810452; broader synthesis DOI 10.1037/bul0000356",
+        "use": "Prevent favorable endpoint selection from being presented as confirmation of the original multi-endpoint claim.",
+        "boundary": "The audit tests a selection procedure, not whether real posture outcomes were intentionally cherry-picked."
+      },
+      {
+        "paperId": "SPARKS",
+        "locator": "Sparks v5 arXiv 2303.12712, sections 1.1, 8 and 10",
+        "use": "Transfer the distinction between exploratory selected demonstrations and a locked confirmatory evaluation.",
+        "boundary": "Selected demonstrations can be informative; their existence does not supply a calibrated population success rate or resolve a general-intelligence definition."
+      }
+    ],
+    "mechanism": "Keep an immutable discovery ledger, then freeze endpoint identities and success criteria before a held-out confirmation stage. Synthetic searches quantify how selecting persuasive examples inflates apparent reliability even when each displayed result is reported accurately.",
+    "hypothesis": "A discovery/confirmation firewall will reduce winner's-curse inflation while retaining more true signals than merely demanding a stricter threshold on selected discovery results.",
+    "experiment": "Generate 300 synthetic research campaigns, each with 30 candidate contrasts distributed across hormone, risk and subjective endpoint families. Discovery and confirmation each receive 120 independent synthetic records per campaign. Allocate a fixed 60 contrast evaluations: 30 discovery plus 30 locked confirmation. Compare with 60 discovery-only evaluations using a predeclared adjusted threshold. Include null, sparse-signal and endpoint-specific-signal scenarios; no original participants or model outputs enter the simulation.",
+    "baseline": "Discovery-only top-result selection, with and without multiplicity adjustment; hold total synthetic records and contrast evaluations equal by splitting versus pooling the same 240-record budget.",
+    "metric": "Selected-effect inflation, false confirmation rate, true-signal recovery and endpoint-identity violations; report all by planted endpoint family.",
+    "falsifier": "If the multiplicity-adjusted discovery-only method matches confirmation error and exceeds true-signal recovery at the same budget, favor that alternative. If the firewall fails when confirmation shares hidden batch effects, favor an independently generated confirmation dataset over administrative separation alone.",
+    "confound": "Artificial independence between discovery and confirmation makes the firewall look too strong. Add a predeclared shared-batch scenario and analyze its failure separately.",
+    "feasibility": "Offline simulation and append-only ledger prototype; no human experiment or new model benchmark is executed.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  }
+]

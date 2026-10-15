@@ -1,0 +1,170 @@
+[
+  {
+    "candidateId": "A-M2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The four denominators now identify distinct decision questions, preserve Parrots ethical scope, and avoid transferring a debt effect. Nonfinite ratios and unresolved rankings are operationally acknowledged. Remaining feasibility issues concern paired timing dependence and whether overhead amortization dominates the claimed denominator reversal.",
+    "revision": "Specify the nested resampling algorithm and interval construction for nonfinite family ratios. Report fixed-batch overhead sensitivity independently of reweighting sensitivity, retaining accuracy/time frontiers when scalar rankings disagree."
+  },
+  {
+    "candidateId": "A-C1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The intervention estimand is now explicit and the sources retain their limited scope. Component reporting and baseline accuracy constrain misleading update claims. However, subtracting companion degradation can enlarge the contrast; the stable-companion condition needs an actual equivalence criterion rather than a verbal proviso.",
+    "revision": "Lock a companion noninferiority margin and multiplicity-adjusted joint decision rule before confirmation. Explain why the pilot-derived threshold represents useful evidence use; preserve unresolved labels when targeted updating coexists with substantial unrelated disruption."
+  },
+  {
+    "candidateId": "A-R1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The revision cleanly separates deterministic reruns from stochastic template robustness, with simultaneous contrasts and explicit equivalence margins. Its narrow outcome no longer credits passport bookkeeping with causal improvement. Eighty problems may yield inconclusive equivalence intervals, which the proposal appropriately treats as unresolved.",
+    "revision": "Specify the simultaneous interval algorithm and prospectively simulate interval width across correlated seed outcomes. Keep latent-problem generation and template validation separate from confirmation scoring; report whether the desired equivalence precision was attainable."
+  },
+  {
+    "candidateId": "A-S1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Selection mechanisms now include random and within-family-biased conditions, and uncertainty is limited to declared families. The source transfer remains fair. A sealed reference set estimates a separate finite-population mean, so discrepancies can combine showcase bias with reference sampling error rather than isolate selection.",
+    "revision": "Define target correctness over a common enumerated population or explicitly decompose reference-sampling error from selection bias. Publish softmax sampling formulas, weighting estimators and missing-support rules before observing confirmation outputs."
+  },
+  {
+    "candidateId": "P-M2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Global dependence clustering and conditional missing-overlap envelopes repair major uncertainty omissions while preserving paradigm scope. The proposed union of intervals is explicitly conditional, which is appropriate. Equal base-sample weighting still needs a precise rule when partial participant overlap prevents a unique base-sample decomposition.",
+    "revision": "Define estimable endpoint targets and weights using only released summaries and overlap metadata. Include ambiguous decompositions, show resulting identification sets or abstention, and specify component-bootstrap validity checks beyond a fixed minimum cluster count."
+  },
+  {
+    "candidateId": "P-C2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The structural equations, cached fits and ordinary precision-adjustment comparator make this a bounded executable audit. Random assignment identifies total effects while pathway claims remain unresolved. Declared timing information can still be wrong; the checker cannot verify graph roles from the observed table alone.",
+    "revision": "Define exactly what counts as verified pre-assignment metadata and predeclare how erroneous metadata enters the checker. Retain estimation and interpretation outcomes separately; demonstrate any added value over ordinary baseline-adjusted randomized-trial practice."
+  },
+  {
+    "candidateId": "P-R2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Independent crossed measurements and relative component estimands repair the previous paired-recoding problem. Source boundaries remain careful, and weak information permits abstention. Eight training sites constrain random-slope coverage; the stated fitted model omits the interaction stress term without defining how interaction-driven nonidentifiability is detected.",
+    "revision": "Specify the instrument-by-site interaction diagnostic and complete both/neither/unresolved decision table. Prospectively calibrate bootstrap coverage and localization with eight sites, reporting insufficient information rather than treating simulation truth as observable component evidence."
+  },
+  {
+    "candidateId": "P-S2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Selection, confirmation, multiplicity and estimators are now operational and comparable to full-data Holm. The text preserves endpoint-specific scope and avoids historical allegations. Shared-batch stress correctly exposes independence assumptions. Joint dependence among the thirty synthetic contrasts and record-level construction still require a concrete generator.",
+    "revision": "Publish joint contrast covariance and record-generation equations, including the prelocked shared-batch regime. Report conditional effect inflation separately for selection and confirmation, retaining the sample-size-matched comparison and endpoint-wise uncertainty."
+  },
+  {
+    "candidateId": "E-M1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The strong units-and-frame comparator, closure handling and descriptive truth target substantially improve fairness. The wage reply and posture endpoint distinctions remain attached without forced reconciliation. Ten regimes can give unstable bootstrap uncertainty, and exact automated compatibility-label rules are still required.",
+    "revision": "Publish both report procedures as deterministic rules on the same fields, including equivalence tolerances and unknown metadata. Calibrate across independent regime draws, separating numerical estimation coverage from compatibility-classification performance."
+  },
+  {
+    "candidateId": "E-C1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The revised audit operationalizes retained-family abstention and explicitly penalizes directional claims on indistinguishable fixtures. It transfers temporal safeguards without implying retrocausality. Candidate models containing latent persistent shocks need identifiable fitting and rejection procedures; their names alone do not make observational compatibility testable.",
+    "revision": "Specify fitted latent-model likelihoods, parameter bounds and exact rejection diagnostics before generation. Prove identical observables for equivalence fixtures and report conditional model-set coverage; retain unresolved verdicts when latent families cannot be distinguished or fitted reliably."
+  },
+  {
+    "candidateId": "E-R1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 4,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Hidden mutation maps, strong audits and valid alternative estimands preserve the historical reconstruction dispute unusually precisely. Parent-workbook clustering avoids clone pseudoreplication. With identical executed checks and report fields, however, the additional mechanism may be report organization alone; the transformation producing different decisions needs definition.",
+    "revision": "Implement both report renderers and decision policies before testing, specifying how layer structure can alter localization or scope assertions with identical check results. Treat equal performance as evidence against added utility, not an underpowered success."
+  },
+  {
+    "candidateId": "E-S2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Observable sensitivity flags are now explicitly distinguished from causal source attribution, and indistinguishable latent worlds mandate unresolved conclusions. The source transfer remains appropriately narrow. Frame membership and missing outcomes can obstruct even frame-specific descriptive contrasts; joint interval calibration is named but not yet executable.",
+    "revision": "Specify contrast estimators and missing-data assumptions for each fixed frame, refusing intervals where its target remains unidentified. Publish joint max-t generation and complete reporting rules; validate frame-specific and population coverage separately under latent nonresponse."
+  }
+]

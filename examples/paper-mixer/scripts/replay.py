@@ -15,9 +15,13 @@ def validate_candidates(config,candidates):
         assert c['round'] in [0,1] and isinstance(c['parentIds'],list)
         for key in ['title','mechanism','hypothesis','experiment','baseline','metric','falsifier','confound','feasibility']:
             assert isinstance(c.get(key),str) and c[key].strip(),(c['id'],key)
-        assert len(set(c['sourceIds']))>=2
+        requirements=config.get('sourceRequirements',{'minimumDistinctPapers':2,'requiredFamilies':['alife','buehler']})
+        assert len(set(c['sourceIds']))>=requirements.get('minimumDistinctPapers',2)
         assert set(c['sourceIds'])<=set(papers)
-        assert {'alife','buehler'}<=set(papers[i]['family'] for i in c['sourceIds'])
+        families={papers[i]['family'] for i in c['sourceIds']}
+        assert set(requirements.get('requiredFamilies',[]))<=families
+        assert len(families)>=requirements.get('minimumDistinctFamilies',1)
+        if requirements.get('requireTargetFamily'):assert c['target'] in families
         assert set(s['paperId'] for s in c['sources'])==set(c['sourceIds'])
         for s in c['sources']:
             assert all(isinstance(s.get(k),str) and s[k].strip() for k in ['locator','use','boundary'])
@@ -55,24 +59,25 @@ def build(config,candidates,evaluations):
     return scored,snapshots,events
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--initial-only',action='store_true');args=parser.parse_args()
-    config=load(ROOT/'run/config.json');candidates=sum([load(ROOT/'run'/('initial-'+t+'.json')) for t in config['targets']],[])
+    parser=argparse.ArgumentParser();parser.add_argument('--initial-only',action='store_true');parser.add_argument('--run-dir',type=Path,default=ROOT/'run');parser.add_argument('--dist-dir',type=Path,default=ROOT/'dist');args=parser.parse_args()
+    data_dir=args.run_dir.resolve();public_dir=args.dist_dir.resolve();public_dir.mkdir(parents=True,exist_ok=True)
+    config=load(data_dir/'config.json');candidates=sum([load(data_dir/('initial-'+t+'.json')) for t in config['targets']],[])
     if not args.initial_only:
         for t in config['targets']:
-            path=ROOT/'run'/('revised-'+t+'.json')
+            path=data_dir/('revised-'+t+'.json')
             if path.exists():candidates+=load(path)
     evaluations=[]
     for name in ['evidence','feasibility']:
-        evaluations+=load(ROOT/'run'/('feedback-initial-'+name+'.json'))
-        path=ROOT/'run'/('feedback-revised-'+name+'.json')
+        evaluations+=load(data_dir/('feedback-initial-'+name+'.json'))
+        path=data_dir/('feedback-revised-'+name+'.json')
         if not args.initial_only and path.exists():evaluations+=load(path)
     scored,snapshots,events=build(config,candidates,evaluations)
-    run={'name':'ALife × Buehler paper mixer','generatedAt':'2026-10-15','method':'Small QDAIF-inspired stratified search with recorded AI generation, critique and feedback-guided mutation.','model':'All contexts inherit the same parent model; exact model identifier not independently verified.','tokens':'Not measured; no equal-budget performance comparison.','proposalsTested':False,'rubricInterpretation':'AI-rated proposal quality, not empirical correctness or certified novelty.','initialization':'Two targeted initial candidates per predefined niche; coverage is deliberately seeded.','limitation':'A two-round demonstration, not original QDAIF reproduction or scientific discovery validation.'}
+    run={'name':config.get('name','ALife × Buehler paper mixer'),'generatedAt':'2026-10-15','method':'Small QDAIF-inspired stratified search with recorded AI generation, critique and feedback-guided mutation.','model':'All contexts inherit the same parent model; exact model identifier not independently verified.','tokens':'Not measured; no equal-budget performance comparison.','proposalsTested':False,'rubricInterpretation':'AI-rated proposal quality, not empirical correctness or certified novelty.','initialization':'Two targeted initial candidates per predefined niche; coverage is deliberately seeded.','limitation':'A two-round demonstration, not original QDAIF reproduction or scientific discovery validation.'}
     out={'config':config,'run':run,'candidates':candidates,'evaluations':evaluations,'scores':scored,'archive':snapshots[-1]['archive'],'snapshots':snapshots,'events':events}
-    dest=ROOT/'run'/('initial-archive.json' if args.initial_only else 'results.json');dest.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
+    dest=data_dir/('initial-archive.json' if args.initial_only else 'results.json');dest.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
     if not args.initial_only:
-        (ROOT/'dist/run.json').write_text(json.dumps(out,ensure_ascii=False))
-        with (ROOT/'dist/candidates.csv').open('w',newline='') as f:
+        (public_dir/'run.json').write_text(json.dumps(out,ensure_ascii=False))
+        with (public_dir/'candidates.csv').open('w',newline='') as f:
             writer=csv.writer(f);writer.writerow(['id','title','round','target','lever','source_ids','parent_ids','ai_quality_0_100','critic_spread','eligible','final_elite','hypothesis','experiment','falsifier'])
             elites={a['candidateId'] for a in out['archive']}
             for c in candidates:

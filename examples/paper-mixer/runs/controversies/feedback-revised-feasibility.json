@@ -1,0 +1,110 @@
+[
+  {
+    "candidateId": "A-M2-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 4},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The four formulas, overhead policy, paired timing and explicit nonfinite outcomes turn the denominator argument into a discriminating audit. Accuracy remains visible rather than hidden inside efficiency. Repetition accounting should distinguish repeated measurements of fixed outputs from genuinely stochastic answer variation.",
+    "revision": "Lock whether timing repeats regenerate answers or replay fixed workloads, and assign output randomness its own level if needed. Publish family counts, amortization batch sizes and the preregistered paired rank-contrast calculation before measurement."
+  },
+  {
+    "candidateId": "A-C1-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 4},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The exact affected-minus-companion estimand, sham condition, separate original accuracy and sealed solver keys distinguish targeted updating from disruption. Pilot thresholds are locked before confirmation. The minimum meaningful contrast remains a design choice, so modest effects should not be transformed into evidence of no updating.",
+    "revision": "Report the continuous contrast and all component rates alongside threshold verdicts. Prespecify simultaneous uncertainty for updating and companion stability, and retain the inadequate-precision verdict without adaptively expanding confirmation after inspecting outcomes."
+  },
+  {
+    "candidateId": "A-R1-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 4},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "This now tests template robustness rather than claiming the passport caused improvement. Latent-problem blocks, separate runtime checks and simultaneous equivalence margins align units with conclusions. Three templates only support local robustness, which the stated boundaries preserve; symbolic equivalence still needs a locked validation rule.",
+    "revision": "Specify the simultaneous interval construction and rejection criteria for template validation. Retain all latent-problem seed blocks, publish runtime repeatability separately, and label inference conditional on the three prespecified templates and frozen model."
+  },
+  {
+    "candidateId": "A-S1-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 4},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Random selection, family-only selection and within-family contamination can now distinguish when weighting helps rather than guarantee its success. The finite reference target and conditional resampling boundaries are explicit. Bootstrap uncertainty over reference instances represents a further sampling interpretation, not uncertainty in an already fixed reference mean.",
+    "revision": "Separate descriptive error against the fixed reference mean from inferential error for a generator-defined population. Freeze ease predictors and missing-support rules, and report transport-generator results separately without pooling them into reference-population performance."
+  },
+  {
+    "candidateId": "P-M2-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 3},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Global participant overlap, component clustering and conditional graph envelopes repair the principal dependence problem. However, partial-overlap report summaries do not necessarily reveal base-sample summaries or participant outcomes. The estimator must operate only on released summaries, rather than reconstructing latent independent samples from generator knowledge.",
+    "revision": "Define the observable report-level estimand and its aggregation weights explicitly; distinguish exact report duplication from overlapping participants. Publish graph-generation rules and component bootstrap computation without accessing hidden sample-level outcomes, and retain minimum-component abstention."
+  },
+  {
+    "candidateId": "P-C2-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 3, "feasibility": 3},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Strong randomized-trial baselines, frozen equations and hidden case labels make the total-effect comparison honest. A mechanical repeat of the six-fit recipe for outcome M would include M as its own predictor, creating a degenerate model. Distinct equations also need endpoint-specific truth formulas in the collider case.",
+    "revision": "Prohibit adjustment for the outcome itself and list valid fits separately for H and M. Define subjective versus hormone truth for each structural case, including the collider replacement, and keep wrong-metadata interpretation failures separate from estimation error."
+  },
+  {
+    "candidateId": "P-R2-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 3},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Independent instrument assignment and relative-component estimands remove the earlier paired-recoding ambiguity. Strong harmonization and unresolved baselines keep the comparison fair. Eight training sites provide fragile slope and bootstrap inference; the measurement budget is clear, but hierarchical fit failures and confounded-allocation instrument balance need operational handling.",
+    "revision": "Freeze instrument assignment counts in the confounded allocation, the exact hierarchical likelihood and singular-fit policy. Assess bootstrap coverage over seeds before treating intervals as calibrated; count fit failure as unresolved and retain its cost."
+  },
+  {
+    "candidateId": "P-S2-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 4},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Locked top-three selection, exact tests, matched records and the secondary equal-estimator-size comparison distinguish selection from precision tradeoffs. The shared-batch stress case can invalidate apparent confirmation rather than being excluded. A full-data Holm win remains admissible, so added procedural complexity is not automatically rewarded.",
+    "revision": "Define whether full-data true-signal recovery includes all Holm discoveries or only the displayed three, and report both if relevant. Publish within-campaign contrast covariance and Monte Carlo intervals for campaign-wise error and conditional bias."
+  },
+  {
+    "candidateId": "E-M1-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 4},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Explicit endpoint formulas, closure conventions, competent table baseline and common output classes make this a fair compatibility audit. Regime-level inference respects shared shocks. The remaining implementation question is how manual compatibility checks become a repeatable comparator without adding unmeasured human time or hidden judgment.",
+    "revision": "Freeze deterministic pseudocode for both compatibility procedures, or define and budget human annotation separately. Publish the exact pair list and repeated-regime coverage design; distinguish numeric alignment failures from disagreement caused by source measurement error."
+  },
+  {
+    "candidateId": "E-C1-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 3, "falsifiability": 4, "feasibility": 3},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Exact observational equivalence, common abstention losses and retained-family decisions prevent hidden simulator labels from masquerading as causal identification. Still, the four fitting methods and ten-operation menus are promised rather than specified. Latent-family rejection may depend strongly on arbitrary parameter restrictions and diagnostics.",
+    "revision": "Publish the exact fitted likelihoods, admissible parameter ranges, diagnostic menus and training-threshold algorithm before holdout. Define equivalence fixtures within that same candidate library, and count library misspecification separately from wrong causal-direction declarations."
+  },
+  {
+    "candidateId": "E-R1-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 3, "falsifiability": 4, "feasibility": 4},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Hidden scoring references, interacting mutations and parent-level evaluation substantially improve the audit. Both reports now receive identical executed checks, so layering cannot improve which checks discover a defect; any gain must arise from extraction or reporting. Numerical improvement should not be presumed from layout alone.",
+    "revision": "Define how each frozen renderer maps the same check results into reported defect sets and values. Predeclare numerical equality as an expected control where computations are identical, and reserve the primary contrast for reporting omissions and scope errors."
+  },
+  {
+    "candidateId": "E-S2-v2",
+    "critic": "feasibility",
+    "scores": {"grounding": 4, "mechanism": 4, "falsifiability": 4, "feasibility": 3},
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The complete narrative comparator and indistinguishable latent worlds repair forced attribution. Observable sensitivity is correctly separated from causal explanation. Joint frame-contrast intervals remain incompletely specified, especially with nonresponse and fixed-cohort estimands; simulator labels must score failure without serving as instructions to the reporting workflow.",
+    "revision": "Specify the frame-contrast estimator, missing-outcome policy and max-t resampling units. Release only observations, masks and declared assumptions to both renderers; reserve latent-world identity for scoring and require population abstention whenever released information cannot identify it."
+  }
+]

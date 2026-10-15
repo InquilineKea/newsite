@@ -1,0 +1,282 @@
+[
+  {
+    "id": "A-M1",
+    "title": "An endpoint ledger for impressive demonstrations",
+    "target": "ai",
+    "lever": "measurement",
+    "sourceIds": [
+      "SPARKS",
+      "POWER"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "§§1.1, 8, 10; early-model disclosure",
+        "use": "Separate task demonstrations from broad capability interpretation.",
+        "boundary": "A new frozen model cannot reproduce the unavailable early GPT-4 build."
+      },
+      {
+        "paperId": "POWER",
+        "locator": "Original hormone, risk and subjective endpoints; larger-sample replication and broader meta-analysis",
+        "use": "Transfer endpoint separation to AI evaluation.",
+        "boundary": "Neither effect sizes nor a verdict on posture transfer to AI."
+      }
+    ],
+    "mechanism": "A fluent explanation, executable answer and successful transfer are different endpoints. Carry the endpoint distinctions emphasized by the power-posing dispute into a capability ledger so a persuasive narrative cannot substitute for correctness or robustness.",
+    "hypothesis": "On a frozen local model, explanation fluency will show weaker agreement with held-out task correctness than executable checks do; an agreement gap below 0.10 would favor endpoint convergence over dissociation.",
+    "experiment": "Preregister 60 procedurally generated logic/programming task families and four surface variants each. Freeze prompts, decoding and model checksum. Score exact solutions, executable tests, counterfactual transfer and a fixed textual-fluency rubric separately; bootstrap families, not variants.",
+    "baseline": "Same 240 outputs, equal token budgets; compare an unweighted four-endpoint composite with the preregistered endpoint ledger. A generator provides hidden correct solutions. No evaluator sees task provenance.",
+    "metric": "Family-level endpoint disagreement, correctness calibration, and the fluency-versus-executable agreement difference with bootstrap intervals.",
+    "falsifier": "A narrow interval wholly below the 0.10 disagreement-gap threshold favors coherent endpoints; large preregistered dissociation favors reporting separate competencies.",
+    "confound": "Rubric reliability and task difficulty can create apparent dissociation; retain raw scores and stratify by generator difficulty.",
+    "feasibility": "Offline audit, 240 generations plus local tests; synthetic success does not establish general intelligence.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "A-M2",
+    "title": "Cost denominators without a single understanding score",
+    "target": "ai",
+    "lever": "measurement",
+    "sourceIds": [
+      "PARROTS",
+      "DEBT"
+    ],
+    "sources": [
+      {
+        "paperId": "PARROTS",
+        "locator": "Environmental-cost, opportunity-cost and language-understanding discussions",
+        "use": "Keep empirical resource accounting separate from conceptual and ethical claims.",
+        "boundary": "A local energy proxy cannot settle historical training emissions or social value."
+      },
+      {
+        "paperId": "DEBT",
+        "locator": "Debt-bin aggregation; critical replication on weighting and inclusion; author response",
+        "use": "Audit how denominators and group weighting alter a summary.",
+        "boundary": "No debt threshold, causal direction or economics effect transfers."
+      }
+    ],
+    "mechanism": "Different denominators answer different questions. Transfer the debt dispute's aggregation audit to AI resource evaluation: cost per request, cost per verified answer and cost per task family can rank the same systems differently without resolving ethical judgments.",
+    "hypothesis": "Two frozen local models' cost rankings will reverse across at least two preregistered denominators if one gains accuracy mainly on long tasks; stable rankings would favor denominator robustness.",
+    "experiment": "Use 80 synthetic task families, balanced easy/hard and short/long. Record wall time and generated tokens for one fixed attempt per model; use measured joules only if a supported meter exists. Report four denominators and all task failures.",
+    "baseline": "Identical hardware, task families and output caps; alternate execution order. Compare equal-family weighting with request weighting. Treat tokens/time as proxies explicitly, never as emissions.",
+    "metric": "Rank reversals, resource per verified answer, failure-inclusive totals and family-bootstrap intervals.",
+    "falsifier": "Consistent rankings with narrow paired uncertainty across all four denominators weaken denominator sensitivity; reversals support a conditional efficiency conclusion.",
+    "confound": "Warm-up, caching and output length; freeze cache policy, randomize order, and report uncached/cached strata.",
+    "feasibility": "160 local generations; a resource-accounting proposal only. The Parrots normative concerns remain separate even if efficiency improves.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "A-C1",
+    "title": "Synthetic natural experiments for evidence use",
+    "target": "ai",
+    "lever": "causality",
+    "sourceIds": [
+      "SPARKS",
+      "WAGE"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "§7.2.1, §8 and §10 capability examples and limitations",
+        "use": "Turn selected task performance into a narrowly defined intervention test.",
+        "boundary": "No single benchmark identifies general intelligence or exactly repeats early GPT-4."
+      },
+      {
+        "paperId": "WAGE",
+        "locator": "Original NJ/PA before-after comparison; 2000 comment and reply",
+        "use": "Transfer explicit comparison-group and measurement assumptions.",
+        "boundary": "A synthetic randomized intervention does not inherit wage-study effects or policy validity."
+      }
+    ],
+    "mechanism": "An answer may follow supplied evidence or remembered associations. Transfer comparison-group scrutiny into a randomized synthetic evidence intervention: preserve task form while changing only a fictional rule, and compare changes against an untouched matched rule.",
+    "hypothesis": "If answers use supplied rules, random rule reversals will shift the affected answers by at least 0.60 more than matched unaffected answers; generic prompt disruption predicts similar degradation in both.",
+    "experiment": "Generate 100 fictional-world families with two independent rules and known answers. Randomly reverse one rule in half the families' paired prompts; retain unaltered companion questions. Freeze model, prompt template and scoring before collection.",
+    "baseline": "Same families, token cap and query count for intervention and control. Estimate a paired difference in changes, with family as unit; include a neutral text-edit placebo of matched length.",
+    "metric": "Difference-in-differences in rule-consistent answer probability, placebo degradation and family-randomization intervals.",
+    "falsifier": "Near-zero targeted contrast with comparable affected/unaffected degradation favors disruption or shallow matching; a targeted contrast above 0.60 with low placebo effect favors evidence-sensitive behavior on these tasks.",
+    "confound": "Rule ambiguity or changed tokenization; use balanced symbol assignments and deterministic ground-truth validation.",
+    "feasibility": "Approximately 600 offline generations; intervention causality is confined to generated prompts and this frozen model.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "A-C2",
+    "title": "Can anthropomorphic framing move judgments without performance?",
+    "target": "ai",
+    "lever": "causality",
+    "sourceIds": [
+      "PARROTS",
+      "POWER"
+    ],
+    "sources": [
+      {
+        "paperId": "PARROTS",
+        "locator": "Language-understanding and sociotechnical-risk discussions",
+        "use": "Separate interpretation of fluent outputs from measured behavior.",
+        "boundary": "A framing effect would not refute understanding or decide normative claims."
+      },
+      {
+        "paperId": "POWER",
+        "locator": "Original subjective, behavioral and physiological endpoint distinction; replication challenge",
+        "use": "Transfer endpoint-specific intervention logic.",
+        "boundary": "No bodily-posture mechanism or empirical effect size transfers."
+      }
+    ],
+    "mechanism": "Descriptions can influence evaluations without changing the underlying artifact. Transfer endpoint separation to an automated judge audit: manipulate anthropomorphic versus mechanical labels around identical outputs, while executable correctness remains fixed and separately recorded.",
+    "hypothesis": "An automated judge susceptible to framing will change attributed-understanding scores by at least 0.5 on a seven-point scale across labels, while identical outputs retain identical correctness; a gap below 0.2 favors framing robustness.",
+    "experiment": "Freeze 100 synthetic programming/logic outputs, balanced correct/incorrect by hidden tests. Present each output under randomized anthropomorphic, mechanical and neutral labels to a fixed local judge in isolated contexts; preregister rubric, order and thresholds.",
+    "baseline": "Identical output bytes and equal judge-token budgets; correctness comes from the same executable tests, not judge agreement. Use artifact as the paired unit.",
+    "metric": "Within-output label effect on understanding and correctness judgments, against invariant test results; report artifact-bootstrap intervals.",
+    "falsifier": "A narrow effect interval within ±0.2 weakens the framing hypothesis. A >0.5 shift confined to interpretive ratings supports judgment sensitivity without proving anything about genuine understanding.",
+    "confound": "Label text can leak intended ratings; use equal-length symmetric templates and include neutral-label repetition for stochastic variation.",
+    "feasibility": "300 automated judgments plus executable tests; evaluates a judge, not human susceptibility or ethical acceptability.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "A-R1",
+    "title": "A replication passport for changing model builds",
+    "target": "ai",
+    "lever": "replication",
+    "sourceIds": [
+      "SPARKS",
+      "BEM"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "Early-model disclosure; §10 limitations",
+        "use": "Record which model, prompts and endpoints are actually reproducible.",
+        "boundary": "Unavailable early GPT-4 cannot be exactly replicated with a newer build."
+      },
+      {
+        "paperId": "BEM",
+        "locator": "Original nine experiments; Failing the Future retroactive-recall replications; 90-experiment follow-up",
+        "use": "Transfer endpoint-matched, leakage-controlled replication boundaries.",
+        "boundary": "Recall replication results do not adjudicate every Bem paradigm or any AI claim."
+      }
+    ],
+    "mechanism": "A replication label can conceal a changed endpoint or system. Transfer paradigm matching from the Bem dispute into a machine-readable passport separating same-build reruns, template transfer and cross-build conceptual follow-ups before any AI result is compared.",
+    "hypothesis": "For one frozen model, task-template transfer will reduce accuracy by at least 0.15 relative to same-template reruns if apparent reliability depends on presentation; a gap below 0.05 favors template robustness.",
+    "experiment": "Preregister 80 synthetic task families, three equivalent templates and two fixed-seed runs. Archive model/tokenizer hashes, prompt bytes and all outcomes. Analyze same-build reproducibility and template transfer separately; any second model becomes a conceptual extension.",
+    "baseline": "Same task families, decoding parameters and per-query token cap. Matched rerun and transfer contrasts use family averages, not individual prompts as independent observations.",
+    "metric": "Exact-output repeatability, answer consistency and the template-transfer accuracy gap with family-bootstrap intervals.",
+    "falsifier": "A narrow transfer gap under 0.05 weakens template dependence; a gap above 0.15 despite repeatable same-template outputs favors presentation-limited reliability.",
+    "confound": "Equivalent templates might inadvertently differ in information; validate every template against a symbolic solver and archive rejected templates.",
+    "feasibility": "480 small local generations; no claimed reproduction of historical GPT-4 or of Bem's human experiments.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "A-R2",
+    "title": "Replicate claim-specific audits, not whole-paper verdicts",
+    "target": "ai",
+    "lever": "replication",
+    "sourceIds": [
+      "PARROTS",
+      "POWER"
+    ],
+    "sources": [
+      {
+        "paperId": "PARROTS",
+        "locator": "Training-data curation, environmental costs and language-understanding sections",
+        "use": "Build separate empirical, conceptual and normative claim ledgers.",
+        "boundary": "A capability result cannot falsify the paper as a whole or settle its values."
+      },
+      {
+        "paperId": "POWER",
+        "locator": "Hormone/risk/self-report endpoints; larger replication; broader synthesis",
+        "use": "Transfer endpoint-matched replication bookkeeping.",
+        "boundary": "Later subjective-posture evidence is not a direct replication of every original endpoint."
+      }
+    ],
+    "mechanism": "A whole-paper verdict conflates claims requiring different evidence. Transfer endpoint-specific replication bookkeeping to an AI argument audit, checking whether independently rerun extraction preserves the boundary between a measurable proposition, an interpretation and an ethical judgment.",
+    "hypothesis": "A typed claim ledger will reduce invalid whole-paper refutation links by at least 30 percentage points versus an untyped summary when both process identical constructed evidence packets.",
+    "experiment": "Construct 90 synthetic claim/evidence packets with author-written answer keys, balanced empirical/conceptual/normative and mixed-strength evidence. Freeze two extraction prompts; run isolated contexts twice. Include deliberately irrelevant capability successes and endpoint-mismatched follow-ups.",
+    "baseline": "Equal packet counts, model, context and output-token budget; typed versus untyped extraction. Packet is the independent unit; exact keys encode scope relations rather than contested philosophical truth.",
+    "metric": "Invalid-refutation rate, correct scope-link rate, omission rate and rerun agreement; paired packet-bootstrap intervals.",
+    "falsifier": "A narrow improvement below 10 points or a compensating omission increase favors no useful ledger benefit; ≥30 points without omission inflation supports improved scope bookkeeping.",
+    "confound": "Synthetic keys may privilege the ledger vocabulary; counterbalance wording and reserve paraphrased packet families before prompt design.",
+    "feasibility": "360 short local generations. This tests bookkeeping on constructed examples, not the truth of Parrots or power posing.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "A-S1",
+    "title": "Task-family weighting versus the showcase average",
+    "target": "ai",
+    "lever": "selection",
+    "sourceIds": [
+      "SPARKS",
+      "DEBT"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "§1.1 exploratory demonstration scope; §8 and §10 limitations",
+        "use": "Make the sampling unit behind a broad capability summary explicit.",
+        "boundary": "Synthetic sampling cannot reconstruct undocumented historical selection decisions."
+      },
+      {
+        "paperId": "DEBT",
+        "locator": "Country/year inclusion and weighting in original, critical replication and author response",
+        "use": "Transfer inclusion and aggregation sensitivity analysis.",
+        "boundary": "Corrected association does not establish a debt threshold, nor does weighting establish AI generality."
+      }
+    ],
+    "mechanism": "Overrepresented easy families can dominate a pooled success rate. Transfer inclusion and weighting audits from historical economic summaries to AI demonstrations, retaining all generated tasks and showing exactly which family weights produce the reported capability headline.",
+    "hypothesis": "A deliberately imbalanced showcase sample will overstate equal-family held-out accuracy by at least 0.15; balanced reporting should reduce that inflation below 0.05 when evaluated against the same known task population.",
+    "experiment": "Preregister 12 synthetic task families, 20 instances each, and a sealed 10-per-family holdout. Freeze local model and scoring. Compare random showcases with an explicitly simulated curator selecting easy-family examples; audit all inclusions.",
+    "baseline": "Equal showcase size and total generated-response budget. Compare pooled, equal-family and holdout-standardized estimates using the same outputs; never infer unobserved Sparks selection.",
+    "metric": "Headline-minus-heldout accuracy, family coverage and worst-family accuracy; repeat sampling 1,000 times from the fixed output pool.",
+    "falsifier": "Inflation below 0.05 even under specified imbalance favors robust aggregation; ≥0.15 inflation removed by balancing supports the proposed selection diagnostic.",
+    "confound": "Task families may differ in semantic overlap, not only difficulty; publish generator definitions and stratify overlap using known construction labels.",
+    "feasibility": "360 local generations, then cheap resampling. Establishes an audit failure mode, not that the focal paper exhibits it.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "A-S2",
+    "title": "A discovery-and-confirmation firewall for capability search",
+    "target": "ai",
+    "lever": "selection",
+    "sourceIds": [
+      "SPARKS",
+      "BEM"
+    ],
+    "sources": [
+      {
+        "paperId": "SPARKS",
+        "locator": "Exploratory task examples and §10 limitations",
+        "use": "Keep exploratory demonstrations distinct from locked confirmatory tests.",
+        "boundary": "Exploration is useful; this protocol makes no allegation about the authors' search history."
+      },
+      {
+        "paperId": "BEM",
+        "locator": "Original experimental set, retroactive-recall replications and 90-experiment meta-analysis",
+        "use": "Transfer prospective endpoint choice and selection sensitivity.",
+        "boundary": "No pooled effect or failed paradigm transfers to model competence."
+      }
+    ],
+    "mechanism": "Trying many prompts can discover a useful interface and also select lucky outcomes. Transfer prospective replication discipline into a capability-search firewall: spend a fixed discovery budget, then lock the prompt and evaluate untouched task families with all attempts retained.",
+    "hypothesis": "Selecting the best of 20 prompts on a small discovery set will produce a discovery-to-confirmation gap at least 0.10 larger than a preregistered fixed prompt under a matched total token budget.",
+    "experiment": "Use 100 synthetic task families split before generation into discovery and sealed confirmation. Prespecify 20 wording variants. Allocate a fixed token budget to prompt search and confirmation; run 30 resampled family splits on a reusable fixed response matrix.",
+    "baseline": "A fixed-prompt condition receives the identical overall response-token budget, with surplus spent on additional confirmation families; compare at equal total cost and report both equal-family subsets and expanded confirmation.",
+    "metric": "Optimism gap, held-out correct families per million tokens, prompt-rank stability and family-level uncertainty.",
+    "falsifier": "No excess optimism plus greater held-out correct families per token favors productive prompt discovery; a large gap with no budget-adjusted gain favors selection overfitting.",
+    "confound": "Prompt search can be a legitimate part of the deployed system; define the evaluated system to include search and report its cost, not only the winning prompt.",
+    "feasibility": "Up to 2,000 short offline generations with a hard token ceiling; simulation/resampling evaluates the protocol, not historical experiments.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  }
+]

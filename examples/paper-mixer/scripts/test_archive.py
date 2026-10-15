@@ -26,4 +26,20 @@ class ArchiveTests(unittest.TestCase):
         with self.assertRaises(AssertionError):build(CFG,[c],feedback('p',4))
     def test_parent_must_precede_revision(self):
         with self.assertRaises(AssertionError):build(CFG,[candidate('child',1,'missing')],feedback('child',4))
+
+class CorpusPolicyTests(unittest.TestCase):
+    def config(self):
+        c=copy.deepcopy(CFG);c['targets']=['ai','economics'];c['papers']=[{'id':'a','family':'ai'},{'id':'b','family':'psychology'}];c['sourceRequirements']={'minimumDistinctPapers':2,'minimumDistinctFamilies':2,'requiredFamilies':[],'requireTargetFamily':True};return c
+    def test_cross_domain_transfer_can_replace_old_family_rule(self):
+        c=candidate();c['target']='ai';_,s,_=build(self.config(),[c],feedback('p',3));self.assertEqual(s[0]['coverage'],1)
+    def test_target_domain_must_be_represented(self):
+        c=candidate();c['target']='economics'
+        with self.assertRaises(AssertionError):build(self.config(),[c],feedback('p',3))
+    def test_two_papers_in_one_family_do_not_count_as_cross_domain(self):
+        cfg=self.config();cfg['papers'][1]['family']='ai';c=candidate();c['target']='ai'
+        with self.assertRaises(AssertionError):build(cfg,[c],feedback('p',3))
+    def test_attention_is_not_a_quality_bonus(self):
+        one=candidate();two=candidate('popular');two['citationCount']=1000000;two['attention']='viral'
+        _,s,_=build(CFG,[one,two],feedback('p',3)+feedback('popular',2));self.assertEqual(s[0]['archive'][0]['candidateId'],'p')
+
 if __name__=='__main__':unittest.main()

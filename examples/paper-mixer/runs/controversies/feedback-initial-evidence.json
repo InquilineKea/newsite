@@ -1,0 +1,338 @@
+[
+  {
+    "candidateId": "A-M1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 2,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Endpoint separation and unavailable-build caveats respect both dossiers. The fluency-versus-executable agreement comparison is underspecified: agreement with what, on which scale, and how is correctness leakage prevented? The deterministic test baseline is feasible, but a 0.10 cutoff lacks justification.",
+    "revision": "Define agreement as preregistered discrimination against separate held-out solution labels; specify fluency raters, reliability checks and a justified minimum effect. Keep disagreement descriptive and avoid equating it with absent understanding."
+  },
+  {
+    "candidateId": "A-M2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 2,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The transfer concerns aggregation rather than economic effects, and keeps ethical conclusions separate. Four denominators are promised but not completely enumerated. Rank reversals can follow arithmetic and task mix mechanically; this alone would establish neither broad efficiency nor conceptual novelty.",
+    "revision": "Name all four denominators and their intended decision questions; preregister hardware/time normalization and zero-success handling. Contrast observed reversals with analytically predicted reversals and report uncertainty for near ties."
+  },
+  {
+    "candidateId": "A-C1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The randomized fictional-rule contrast is appropriately narrower than the wage natural experiment or general intelligence. Mechanism and controls are credible. Probability shifts, answer changes and difference-in-differences are not yet one clearly defined estimand, and the 0.60 target may be ceiling-limited.",
+    "revision": "Specify binary rule-consistency scoring and a paired randomized-intervention estimand; distinguish updating from factual accuracy. Set attainable effect thresholds using a separately generated pilot and freeze all fictional vocabulary before confirmation."
+  },
+  {
+    "candidateId": "A-C2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The proposal fairly separates Parrots interpretations from ethics and posture endpoints. Identical outputs provide an unusually clean framing intervention. The understanding rubric nevertheless invites contested semantics; correctness-judgment changes and interpretive-rating changes need distinct hypotheses rather than a single susceptibility verdict.",
+    "revision": "Publish exact symmetric label templates and operational rating anchors. Analyze correctness-label error separately from understanding attribution, with equivalence bounds and multiplicity handling; avoid interpreting a judge framing effect as a human or ontology result."
+  },
+  {
+    "candidateId": "A-R1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Version and paradigm boundaries are faithfully preserved, and task-family uncertainty is appropriate. A fixed-seed rerun may be deterministic by construction, making repeatability trivial. The comparison between reruns and new templates also changes presentation without clearly defining matched accuracy differences.",
+    "revision": "Separate computational determinism from behavioral robustness; add controlled stochastic decoding or repeated environments where relevant. Define paired template contrasts on the same latent problems and preregister equivalence margins with information-preserving template validation."
+  },
+  {
+    "candidateId": "A-R2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 2,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The source transfer protects normative and endpoint distinctions, with no whole-paper truth claim. Mechanistic improvement may come from putting the answer taxonomy into one prompt rather than from replication bookkeeping. Synthetic author keys and ledger vocabulary could make the result circular.",
+    "revision": "Use independently authored ambiguous packets, blind the answer-key construction to prompts, and add an equally explicit untyped instruction baseline. Evaluate evidence-link entailment with adjudicated uncertainty rather than compulsory philosophical classifications."
+  },
+  {
+    "candidateId": "A-S1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Selection and weighting are methodological transfers with historical allegations explicitly excluded. A known task population gives a useful benchmark. Deliberately curating easy examples practically guarantees inflation; uncertainty from a fixed output pool cannot cover new model generations or family universes.",
+    "revision": "Vary curator strength including random selection and report when balancing fails under within-family selection. Define the population estimand and separate resampling uncertainty from generation and task-family sampling uncertainty; include balanced but contaminated showcases."
+  },
+  {
+    "candidateId": "A-S2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 2,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The firewall appropriately treats exploration as useful and avoids attributing undisclosed search to authors. However, the stated reusable response matrix, extra confirmation families and matched realized token costs are not mutually specified. Repeated splits can leak confirmation through protocol development.",
+    "revision": "Fix the complete query matrix and cost accounting before generation; reserve one untouched final split outside the 30 resamples. Compare search as a deployable system, reporting both fixed-query and realized-token budget analyses."
+  },
+  {
+    "candidateId": "P-M1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Endpoint distinctions and related-versus-direct challenge status are precise. Comparing against a simple endpoint table is valuable. The parser implementation and assertive-output generation remain unclear; a deterministic pipeline can win because the injected errors are exactly those its type rules forbid.",
+    "revision": "Specify both executable parsers and a blinded held-out summary generator. Include measurement noninvariance within endpoints and ambiguous labels; score abstention and false rejection, with thresholds fixed before synthetic world identities are disclosed."
+  },
+  {
+    "candidateId": "P-M2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The ledger fairly distinguishes recall-specific studies, broader paradigms and alternate employment measurements. Duplicate reports genuinely threaten uncertainty. But sample-and-paradigm deduplication can still count multiple correlated outcomes as independent, and the fixed estimator does not yet define dependence handling.",
+    "revision": "Specify a sample-level multivariate or cluster-robust estimator and explicit overlap graph. Include partially overlapping participants across paradigms, imperfect overlap metadata and duplicate-independent reports; score uncertainty calibration without treating deduplication itself as sufficient."
+  },
+  {
+    "candidateId": "P-C1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Temporal contracts transfer as software safeguards without pretending failed recall tests cover all Bem endpoints. Positive-control language avoids endorsing retrocausation. Event-stream generation and artifact classification still need operational definitions; ordinary resampling is a weak comparator for systematic indexing defects.",
+    "revision": "Add standard timestamp validation and permutation/placebo baselines at matched implementation effort. Publish exact leakage mechanisms, blinded artifact families and separate false scientific-effect flags from software-integrity warnings; keep signal detectability distinct from artifact localization."
+  },
+  {
+    "candidateId": "P-C2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The randomized-versus-observational distinction is explicit, and total effects are separated from pathways. The synthetic examples are feasible and fair. Given random assignment, an unadjusted contrast already identifies the total effect; the checker may only prevent an intentionally bad adjustment baseline.",
+    "revision": "Add baseline-covariate precision adjustment and blinded role metadata, alongside the unadjusted gold-standard baseline. Evaluate whether the checker recognizes unidentified mediation and wrong graphs, measuring extra information or error prevention beyond ordinary randomized-trial practice."
+  },
+  {
+    "candidateId": "P-R1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 2,
+      "falsifiability": 2,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Both source scopes and missing implementation information are treated carefully. A locked rule classifier is necessarily invariant to outcome labels when it never receives them; comparison with a result-aware baseline therefore risks proving an input restriction rather than better replication judgment.",
+    "revision": "Give all workflows identical protocol inputs and optional blinded outcome fields, then score using independently adjudicated equivalence cases and alternative rubrics. Include justified same-endpoint procedural deviations and report unresolved cases rather than forcing direct labels."
+  },
+  {
+    "candidateId": "P-R2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Crossing instruments and contexts is a defensible method transfer, with endpoint scales explicitly kept separate. The design has only 12 sites and complex dependence; two mappings of one synthetic record do not supply independent instrument validation. Classification chance and power are unspecified.",
+    "revision": "Define the hierarchical generative model, identifiability assumptions and classification rule; set chance and abstention baselines. Include instrument-by-context interactions and independent instrument noise, checking site-level interval coverage and feasibility before claiming moderator localization."
+  },
+  {
+    "candidateId": "P-S1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The proposal preserves paradigm distinctions and openly recognizes invisible missing studies. A sensitivity grid tests robustness but generally cannot identify whether weighting or unobserved selection generated the data. Recovery of a planted source risks using simulator-specific signatures unavailable in actual literature.",
+    "revision": "Define an explicit observable-only classifier with an unresolved category and test observationally equivalent selection worlds. Report coverage by paradigm and missingness assumptions; describe the grid as sensitivity mapping unless identification is demonstrated on held-out generators."
+  },
+  {
+    "candidateId": "P-S2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The method transfer avoids accusing either original of selective reporting and preserves endpoint identity. Budget-matched multiplicity correction is a strong comparator. Discovery-only and split-sample procedures currently conflate selection rules with unequal estimation precision, and confirmation criteria are not operationally stated.",
+    "revision": "Specify exact tests, multiplicity procedures and selected-effect estimators, with sample-size-matched secondary comparisons. Lock endpoint-specific confirmation and shared-batch generators before search; report conditional power and inflation without claiming that an administrative firewall creates independence."
+  },
+  {
+    "candidateId": "E-M1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The endpoint ledger represents comment and reply fairly and does not turn a local wage estimate into a universal law. Synthetic endpoint truth makes testing feasible. The deliberately common employment label is weak; ordinary unit checking may provide most of the benefit.",
+    "revision": "Add a strong baseline using explicit units and sample-frame notes without a ledger. Define contradictory effects only for aligned estimands and report mismatched endpoints as incomparable; predeclare closure handling and episode-level interval construction."
+  },
+  {
+    "candidateId": "E-M2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 2,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The proposal distinguishes descriptive debt summaries from causal thresholds and labels the AI metric challenge as related. Yet neighboring-bin differences do not inherently declare discontinuities. Nominally matching false-positive budgets needs a shared threshold null; otherwise the central comparison is apples to oranges.",
+    "revision": "Define a discontinuity estimand and calibrated tests with the same null and error rate; retain bin contrasts as descriptive unless explicitly tested. Specify country-held-out selection and block dependence before contrasting smooth and genuine-break worlds."
+  },
+  {
+    "candidateId": "E-C1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The temporal analogy is explicitly methodological, and passing placebos is not claimed to prove causality. Allowing abstention improves fairness. However, observationally equivalent worlds cannot be direction-classified reliably; neither the classifier nor the graph-plus-placebo rule is executable yet.",
+    "revision": "Publish the observable inputs, decision rules and common abstention loss. Add exactly observationally equivalent worlds, mixed bidirectional effects and persistent shocks; report underidentification as success rather than penalizing correct refusal to infer causal direction."
+  },
+  {
+    "candidateId": "E-C2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The claim ledger preserves both the wage dispute and Parrots normative distinction. Episode-level assessment avoids establishment pseudoreplication. A latent shock may be undetectable in observed panels, so scoring correct causal labels against hidden world labels can reward impossible oracle behavior.",
+    "revision": "Define which violations are diagnostically observable and construct indistinguishable valid/confounded worlds. Equalize both workflows information and abstention loss; score calibrated identification sets or acknowledged uncertainty, and keep policy values entirely outside empirical correctness ratings."
+  },
+  {
+    "candidateId": "E-R1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 4,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Replication layers faithfully distinguish documented spreadsheet defects, valid weighting alternatives and causal claims; the author response is retained. Mutation testing is practical. A single checksum badge is an undemanding comparator, while expected outputs may disclose the injected defect too directly.",
+    "revision": "Use a standard spreadsheet-audit baseline with explicit scope notes and equal checks. Hide clone labels, include interacting mutations and valid alternative estimands, and score localization separately from output matching and unsupported causal-validation language."
+  },
+  {
+    "candidateId": "E-R2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Version locking is transferred without importing AI or wage effect sizes, and measurement versus transport distinctions are fair. The four-class scoring assumes a dataset difference has one cause; real vintage changes can combine population and measurement changes, as already acknowledged.",
+    "revision": "Include mixed-cause and genuinely unresolved cases with multlabel or abstention scoring. Add a strong flat report with free-text scope explanation, retain exact code-failure tests, and score universal extrapolation separately from reconstruction category labels."
+  },
+  {
+    "candidateId": "E-S1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Country histories are not equated with independent psychology experiments, and selection sensitivity is not called causal identification. The mechanism is defensible. Contribution bounds require specified growth support and missingness assumptions; without these, full-panel interval coverage and reversal detection may be infeasible.",
+    "revision": "State growth support, observed-selection assumptions and bound construction before simulation. Include indistinguishable latent-selection worlds, score justified unresolved conclusions, and separate descriptive contribution attribution from claims to recover missing full-history associations."
+  },
+  {
+    "candidateId": "E-S2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The frame-by-endpoint matrix preserves rival evidence and does not presume equal support or a winner. Its transfer is methodological and testable. Attribution among selection, heterogeneity and latent manager shocks can remain unidentified despite a complete matrix; multiplicity coverage needs a defined procedure.",
+    "revision": "Specify observed-data attribution rules, simultaneous interval method and a mixture/unresolved class. Add indistinguishable causal worlds and a strong fully reported baseline; distinguish establishment closure from nonresponse throughout the synthetic estimand dictionary."
+  }
+]

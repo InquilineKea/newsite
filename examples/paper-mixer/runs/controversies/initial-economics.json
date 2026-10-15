@@ -1,0 +1,178 @@
+[
+  {
+    "id": "E-M1",
+    "title": "Separate employment endpoints before comparing minimum-wage results",
+    "target": "economics",
+    "lever": "measurement",
+    "sourceIds": ["WAGE", "POWER"],
+    "sources": [
+      {"paperId": "WAGE", "locator": "Card–Krueger original https://www.nber.org/papers/w4509; Neumark–Wascher comment https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1362; Card–Krueger reply https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1397", "use": "Keep survey, payroll and administrative employment constructions and sample frames separately identifiable.", "boundary": "The reply remains attached to the challenge; no source is treated as establishing a universal wage effect."},
+      {"paperId": "POWER", "locator": "Original endpoints https://pubmed.ncbi.nlm.nih.gov/20855902/; robustness study https://pubmed.ncbi.nlm.nih.gov/25810452/; endpoint-specific synthesis https://doi.org/10.1037/bul0000356", "use": "Transfer the requirement to distinguish physiological, behavioral and subjective endpoints into a ledger of distinct employment estimands.", "boundary": "No posture effect size or evidence strength transfers to labor markets; distinguishing endpoints does not automatically reconcile estimates."}
+    ],
+    "mechanism": "An endpoint ledger prevents headcount, full-time-equivalent staffing, hours and establishment survival from silently substituting for one another. Synthetic records permit controlled changes to each quantity while holding the others fixed, revealing whether a disagreement arises from measurement or persists under a shared estimand.",
+    "hypothesis": "When artificial datasets encode identical hours but different full-time/part-time composition, a shared endpoint ledger reduces false declarations of contradictory employment effects relative to a single-label employment comparison.",
+    "experiment": "Offline, preregister 40 synthetic state-pair policy episodes with 80 establishments each. Independently vary staffing composition, hours, survival and survey error; retain known truth for every endpoint. Create survey, payroll and administrative-like extracts with explicit overlap. Compare a ledger workflow against a one-endpoint-label workflow with equal 24-analysis budgets and identical records. Score recovery by endpoint and aggregate uncertainty over policy episodes, not establishments as independent policy assignments.",
+    "baseline": "One employment column per extract with a common units label; identical available observations, analytical budget and estimator.",
+    "metric": "Wrong-sign claims against endpoint-specific synthetic truth; endpoint mismatch detection sensitivity and specificity; coverage of episode-cluster uncertainty intervals.",
+    "falsifier": "If disagreements and error rates persist after exact endpoint and sample alignment, measurement mismatch is insufficient. If the ledger induces extra exclusions or no lower wrong-sign rate, prefer the simpler common-endpoint workflow.",
+    "confound": "Synthetic error may omit strategic reporting or unobserved management responses. Neither payroll status nor administrative coverage guarantees accurate hours or an exogenous comparator.",
+    "feasibility": "One Python simulation plus a machine-readable endpoint dictionary; no original-data reanalysis, employer contact or policy intervention is required.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "E-M2",
+    "title": "Stress-test apparent debt thresholds against binning artifacts",
+    "target": "economics",
+    "lever": "measurement",
+    "sourceIds": ["DEBT", "SPARKS"],
+    "sources": [
+      {"paperId": "DEBT", "locator": "Original debt bins https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573; Herndon–Ash–Pollin replication https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/; author response https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf", "use": "Represent threshold, inclusion and weighting choices as separate measurement operations while retaining the response's broader-association defense.", "boundary": "A corrected descriptive association can remain without a sharp threshold or identified causal effect."},
+      {"paperId": "SPARKS", "locator": "Original exploratory demonstrations and limitations https://arxiv.org/pdf/2303.12712v5; related methodological challenge https://arxiv.org/abs/2304.15004", "use": "Transfer continuous-versus-discrete metric stress tests from the emergent-abilities discussion to binned debt-growth summaries.", "boundary": "The metric-artifact paper is not a direct replication of Sparks; neither its results nor AI capability claims determine debt-growth behavior."}
+    ],
+    "mechanism": "A smooth relationship can acquire an apparent jump when observations are discretized and unevenly weighted. Compare binned summaries with smooth and genuine-change-point alternatives on synthetic panels where the response shape is known, separating estimator artifacts from detectable structural changes.",
+    "hypothesis": "Under smooth synthetic debt-growth relationships and unequal country histories, prespecified neighboring-bin contrasts produce more false threshold declarations than held-out change-point tests calibrated to the same false-positive budget.",
+    "experiment": "Generate 60 synthetic country panels with 25 years each under three worlds: no relation, smooth negative association and true change point. Vary unequal observation lengths and serial dependence independently. Freeze 12 binned/smooth/change-point procedures before revealing world labels; give each equal training observations and held-out-country folds. Repeat 100 seeds and bootstrap entire countries. Include the original-style debt bins as one documented descriptive procedure, not an assumed ground truth.",
+    "baseline": "Prespecified binned high-versus-low summary with its declared weighting; compare at matched nominal false-positive rate and equal procedure-selection budget.",
+    "metric": "False threshold rate in smooth worlds; threshold localization and power in change-point worlds; held-out-country prediction error; weighting sensitivity.",
+    "falsifier": "If matched-budget binned contrasts control false positives and locate genuine breaks as well as alternatives, the proposed stress test adds little. A stable break favoring the change-point world would count against a pure binning-artifact explanation.",
+    "confound": "Synthetic debt measurement may omit valuation revisions and crisis-specific reporting. Real reverse causality and omitted institutions remain unmeasured and cannot be settled by this measurement audit.",
+    "feasibility": "Offline panel simulation and transparent summaries; no causal policy recommendation or claim about the real threshold follows.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "E-C1",
+    "title": "Use time-direction placebos to expose debt-growth identification limits",
+    "target": "economics",
+    "lever": "causality",
+    "sourceIds": ["DEBT", "BEM"],
+    "sources": [
+      {"paperId": "DEBT", "locator": "Original historical association https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573; critical reconstruction https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/; response https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf", "use": "Separate reproducing corrected aggregates from distinguishing debt-causes-growth, growth-causes-debt and common-shock explanations.", "boundary": "The response's broader association remains compatible with multiple causal graphs; this audit does not infer authors' motives."},
+      {"paperId": "BEM", "locator": "Original nine experiments https://pubmed.ncbi.nlm.nih.gov/21280961/; recall-specific direct replications https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/; favorable pooled follow-up https://f1000research.com/articles/4-1188", "use": "Transfer locked time order, endpoint-specific tests and temporal-leakage controls into synthetic panel identification challenges.", "boundary": "Future outcomes can statistically predict current economic variables without retrocausality; a placebo failure diagnoses model assumptions, not paranormal influence or every original Bem endpoint."}
+    ],
+    "mechanism": "Known-direction synthetic panels provide a blind identification challenge: analysts must distinguish a causal exposure effect from reverse feedback and persistent common shocks. Time-shifted placebo exposures reveal some failures, while deliberately observationally similar worlds reveal cases where the correct output is underidentification.",
+    "hypothesis": "Adding prespecified time-direction placebos and an explicit underidentified verdict reduces confident wrong-direction claims relative to contemporaneous association alone, without claiming that passing placebos proves causation.",
+    "experiment": "Generate 90 synthetic 50-country, 30-year panels divided equally among debt-to-growth, growth-to-debt and latent-crisis-common-cause worlds. Include serial dependence and overlapping observable summaries; reserve world labels. Compare an association-only classifier and a graph-plus-placebo workflow with the same 10 fits per panel. Hold out whole countries and whole synthetic worlds; calibrate uncertainty by country. Permit both workflows to abstain under an identical stated loss function.",
+    "baseline": "Contemporaneous and lagged associations with equal fit budget and the same abstention option; no randomized-policy interpretation.",
+    "metric": "Wrong confident causal-direction rate; abstention versus identification accuracy; detection of deliberate temporal leakage; calibration by causal world.",
+    "falsifier": "If time placebos pass equally in confounded and causal worlds and the workflow still overclaims, they do not discriminate the hypotheses. If baseline abstention achieves equal calibration and accuracy, prefer that simpler procedure.",
+    "confound": "Latent crisis severity, institutional changes and measurement revisions may defeat all chosen controls. Multiple real causal pathways can coexist; the simulation's exclusive worlds simplify that possibility.",
+    "feasibility": "A bounded offline simulator and blinded labels; no new causal claim about actual country histories or debt policy.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "E-C2",
+    "title": "Separate wage estimands, identification assumptions and policy values",
+    "target": "economics",
+    "lever": "causality",
+    "sourceIds": ["WAGE", "PARROTS"],
+    "sources": [
+      {"paperId": "WAGE", "locator": "Original state comparison https://www.nber.org/papers/w4509; payroll comment https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1362; administrative-data reply https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1397", "use": "Keep the episode-specific comparison and measurement dispute attached while auditing comparison trends, spillovers and employment definitions.", "boundary": "An episode-specific employment estimate does not determine all wage effects or whether a policy is desirable."},
+      {"paperId": "PARROTS", "locator": "Original sociotechnical argument https://doi.org/10.1145/3442188.3445922; contrasting demonstrations https://arxiv.org/pdf/2303.12712v5; conceptual distinctions https://arxiv.org/abs/2212.03551", "use": "Transfer claim decomposition: empirical performance, interpretation and normative consequences require separate evidence and decision rules.", "boundary": "No finding about language meaning or environmental harms transfers to minimum-wage effects; this proposal tests an audit workflow, not ethical truth."}
+    ],
+    "mechanism": "A claim ledger distinguishes the numerical employment contrast, assumptions giving it a causal interpretation, and additional values needed for policy judgment. Synthetic counterfactual panels test whether this separation improves appropriate causal abstention when spillovers or differential trends undermine the neighboring-state comparison.",
+    "hypothesis": "A graph-and-claim ledger reduces unsupported causal extrapolation across synthetic policy episodes relative to an estimate-only report, while retaining causal claims when the explicitly simulated identification assumptions hold.",
+    "experiment": "Create 60 synthetic two-state policy episodes, each with 24 pre/post periods and 100 establishments per state. Factorially vary differential pretrends, cross-border spillovers and a latent demand shock; disclose only observed variables. Freeze both reporting workflows and give them six fits per episode. Blind held-out episode labels and score causal estimates and causal/associational/underidentified labels separately. Cluster assessment at policy episode; treat establishments as repeated observations.",
+    "baseline": "Difference-in-differences estimate and interval with a conventional assumption paragraph; same data, six fits and permitted abstention.",
+    "metric": "Coverage of episode-specific true effects; unsupported causal-label frequency; appropriate abstention under violated assumptions; specificity when assumptions hold. Policy preferences are unscored.",
+    "falsifier": "If the ledger merely suppresses every causal conclusion or fails to flag confounded episodes, it has not improved identification. If estimates remain calibrated under simulated spillovers, the simpler workflow is favored for that world.",
+    "confound": "Unobserved employer anticipation and consumer substitution can mimic favorable pretrends. Good pretrend diagnostics cannot prove parallel counterfactual trends or transport a local effect to other labor markets.",
+    "feasibility": "Offline synthetic panels and rule-based report audits; no intervention, actual employer data or policy recommendation.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "E-R1",
+    "title": "Keep debt spreadsheet reconstruction separate from causal replication",
+    "target": "economics",
+    "lever": "replication",
+    "sourceIds": ["DEBT", "BEM"],
+    "sources": [
+      {"paperId": "DEBT", "locator": "Original https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573; replication code and data entry https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/; author response https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf", "use": "Define separate reproduction targets for spreadsheet range, country inclusion, weighting and the broader descriptive association defended in the response.", "boundary": "Matching corrected aggregates validates reconstruction only; neither a match nor a mismatch identifies a causal debt threshold."},
+      {"paperId": "BEM", "locator": "Original paradigms https://pubmed.ncbi.nlm.nih.gov/21280961/; three recall replications https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/; author-led 90-experiment synthesis https://f1000research.com/articles/4-1188", "use": "Transfer exact replication-target labeling and preserve scope differences between a specific paradigm and a pooled broader claim.", "boundary": "Recall-replication outcomes and pooled psychological effects do not transfer to economic associations; the analogy concerns target matching."}
+    ],
+    "mechanism": "A layered replication manifest records what each result reproduces: data extraction, a specific aggregation, corrected descriptive association or a causal estimand. Mutation-tested synthetic spreadsheets reveal whether broad replication labels conceal a successful calculation coupled to an unsupported interpretation.",
+    "hypothesis": "Layer-specific manifests detect more injected reconstruction errors and fewer false causal-validation claims than a single pass/fail replication badge under equal audit time.",
+    "experiment": "Build 24 synthetic country-year spreadsheets with 30 countries and unequal 10–40-year histories. Inject one known defect per clone: off-by-one range, omitted country, changed year inclusion or equal-country versus equal-observation weighting. Publish exact checksums and expected descriptive outputs before a blinded audit. Compare layered and pass/fail reports with 20 checks each and matched input data. Score by independent workbook and aggregate country-level contribution diagnostics within each workbook.",
+    "baseline": "A single aggregate checksum and pass/fail reproduction conclusion, with the same 20 allowed checks and access to the same manifest fields.",
+    "metric": "Injected-defect localization accuracy; false failure on deliberate valid weighting variants; unsupported causal-validation statements; recovery of exact descriptive reference values.",
+    "falsifier": "If layered labels do not improve localization or increase confusion between valid alternative estimands and coding defects, retain the simpler badge plus explicit scope statement. Matching values in a confounded world must never count as causal success.",
+    "confound": "Cleanly injected spreadsheet defects may be easier than undocumented historical data revisions. Hidden changes in country definitions remain outside the fixture and could defeat exact reproduction.",
+    "feasibility": "Small generated spreadsheets or CSVs and a deterministic audit harness; this is not a claimed reanalysis of the original economic dataset.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "E-R2",
+    "title": "Version-lock the wage episode before testing transport to new settings",
+    "target": "economics",
+    "lever": "replication",
+    "sourceIds": ["WAGE", "SPARKS"],
+    "sources": [
+      {"paperId": "WAGE", "locator": "1993 working paper / 1994 case study https://www.nber.org/papers/w4509; 2000 comment https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1362; 2000 reply https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1397", "use": "Tag dataset vintage, sample construction and estimator so exact reconstruction is distinguished from new-data corroboration and new-episode transport.", "boundary": "Both the comment and reply remain visible; administrative evidence is a distinct check, not automatic universal validation."},
+      {"paperId": "SPARKS", "locator": "Early-model disclosure, exploratory examples and limitations https://arxiv.org/pdf/2303.12712v5; metric-related challenge https://arxiv.org/abs/2304.15004", "use": "Transfer model-build and task version locking into dataset-vintage and episode locking, with explicit separation of exact reruns from changed-system tests.", "boundary": "A later model is not an exact replication of the early proprietary model; similarly a later wage episode is a transport test, not a rerun. No effect-size analogy is asserted."}
+    ],
+    "mechanism": "A versioned replication contract fixes input hashes, definitions and estimators before an exact rerun, then separately permits new measurement sources and new episodes. Synthetic counterexamples test whether provenance prevents expected contextual heterogeneity from being mislabeled as computational irreproducibility.",
+    "hypothesis": "A three-tier exact-rerun, measurement-check and episode-transport contract reduces category errors relative to a flat replicated/not-replicated label without masking genuine implementation failures.",
+    "experiment": "Generate 12 synthetic policy-episode families, each with one frozen original panel, a same-population alternate measurement, a changed-policy-context panel and an intentionally defective code rerun. Include both homogeneous and heterogeneous treatment-effect worlds. Assign equal 16-check budgets to flat-label and tiered workflows; hide defect/context labels until scoring. Evaluate by held-out episode family and use episode-family uncertainty, not establishment counts.",
+    "baseline": "Flat replication label with the same data files, hashes and estimator choices available; equal audit effort and no additional observations.",
+    "metric": "Four-way classification of exact reproduction, measurement disagreement, transport heterogeneity and software defect; missed-defect rate; unjustified universal-effect claims.",
+    "falsifier": "If flat labels recover the distinctions equally well, tiering adds bureaucracy without value. If the tiered workflow excuses injected code failures as contextual variation, it fails the proposed mechanism.",
+    "confound": "Dataset vintage can encode both measurement and genuine population change. Unmeasured institutional differences may make real transport discrepancies nondecomposable even with perfect hashes.",
+    "feasibility": "Offline versioned synthetic datasets and deterministic labels; no original-data rerun, new survey, real policy inference or claim of exact GPT-4 replication.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "E-S1",
+    "title": "Audit country-history selection before interpreting debt bins",
+    "target": "economics",
+    "lever": "selection",
+    "sourceIds": ["DEBT", "BEM"],
+    "sources": [
+      {"paperId": "DEBT", "locator": "Original inclusion and aggregation https://www.aeaweb.org/articles?id=10.1257/aer.100.2.573; critical replication https://peri.umass.edu/publication/does-high-public-debt-consistently-stifle-economic-growth-a-critique-of-reinhart-and-rogoff/; broader-association response https://scholar.harvard.edu/files/rogoff/files/debt_growth_and_the_austerity_debate.pdf", "use": "Keep country exclusions, year exclusions and country-versus-year weighting as separate declared selection mechanisms.", "boundary": "Selection sensitivity can explain instability without proving every debt-growth association false; the original response remains an explicit alternative."},
+      {"paperId": "BEM", "locator": "Original experiments https://pubmed.ncbi.nlm.nih.gov/21280961/; recall replication https://pmc.ncbi.nlm.nih.gov/articles/PMC3303812/; favorable 90-experiment synthesis https://f1000research.com/articles/4-1188", "use": "Transfer declared study-flow accounting and examination of selective inclusion into country-year contribution accounting.", "boundary": "Countries are dependent historical units, not independent psychology experiments; no meta-analytic psychological result is imported."}
+    ],
+    "mechanism": "A contribution ledger exposes how country entry, observation duration and weighting alter an aggregate association. By generating known missingness mechanisms, the audit tests when transparent sample accounting can detect selection-driven sign changes and when unobserved selection leaves the result unresolved.",
+    "hypothesis": "Country-history flow diagrams plus contribution bounds identify selection-induced reversals more reliably than a final-sample summary when missingness depends on observed country histories, but offer weaker discrimination under latent-crisis missingness.",
+    "experiment": "Generate 100 synthetic 40-country panels with 40 years each. Impose random missingness, observed-history-dependent truncation and unobserved-crisis-dependent suppression at matched missing fractions. Compare final-sample analysis with a prespecified flow/contribution audit using equal 12 recomputations. Include both zero and negative full-panel associations. Draw held-out entire country histories and estimate uncertainty by country blocks; report each missingness world separately.",
+    "baseline": "One declared complete-case country-year sample and its prespecified weighting, with the same 12 recomputations and metadata access.",
+    "metric": "Detection of full-panel-to-observed sign reversals; specificity when no reversal exists; full-panel-summary interval coverage; sensitivity across missingness worlds.",
+    "falsifier": "If the audit flags all incomplete panels indiscriminately or misses observed-selection reversals, its ledger has not discriminated the alternatives. Stable negative associations under all declared inclusions favor a robust descriptive association, still without identifying causality.",
+    "confound": "Missing historical observations may depend on unrecorded wars, definitions and institutions. Bounds requiring observed-selection assumptions can be misleading under latent selection; those cases must remain unresolved.",
+    "feasibility": "Offline generated panels and sample-flow reports; no access to original country histories or policy judgment is needed.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "E-S2",
+    "title": "Distinguish wage sample attrition from endpoint selection",
+    "target": "economics",
+    "lever": "selection",
+    "sourceIds": ["WAGE", "POWER"],
+    "sources": [
+      {"paperId": "WAGE", "locator": "Original establishment survey https://www.nber.org/papers/w4509; payroll-based comment https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1362; reply with administrative analysis https://www.aeaweb.org/articles?id=10.1257/aer.90.5.1397", "use": "Compare respondent, payroll-available and administrative-covered establishment frames with common and frame-specific estimands.", "boundary": "The comment and reply are rival measurement/coverage checks, not an assumed winner; the episode remains context-specific."},
+      {"paperId": "POWER", "locator": "Original multiple outcomes https://pubmed.ncbi.nlm.nih.gov/20855902/; larger replication https://pubmed.ncbi.nlm.nih.gov/25810452/; broader preregistered synthesis https://doi.org/10.1037/bul0000356", "use": "Transfer outcome-family declaration and reporting of all endpoints to distinguish outcome cherry-picking from sample attrition.", "boundary": "Physiological and subjective posture outcomes are not wage outcomes; this transfers selection-accounting methods, not conclusions about either paper."}
+    ],
+    "mechanism": "Crossing a fixed endpoint family with a fixed establishment-frame family separates two routes to apparent contradiction: choosing different employers and choosing different outcomes. A prespecified complete matrix makes selective presentation detectable while retaining genuine disagreement within matched cells.",
+    "hypothesis": "A frame-by-endpoint audit reduces erroneous reconciliation of opposing estimates relative to a pooled narrative when synthetic disagreement is deliberately caused by sample selection, endpoint selection or true effect heterogeneity.",
+    "experiment": "Generate 72 synthetic policy episodes, each with 200 establishments and known employment hours, headcount and survival. Independently vary response attrition, payroll availability and size-dependent treatment effects; include an unobserved manager-shock attrition world. Give both workflows the same 3 frames × 3 endpoints and exactly 9 estimator runs. Compare a preregistered full matrix with a pooled-summary workflow. Hold out complete policy episodes; calculate performance across episodes, not within-store observations as policy replicates.",
+    "baseline": "A pooled report from the identical nine analyses and records with a declared primary endpoint, allowed to report disagreement but without mandatory frame-by-endpoint attribution.",
+    "metric": "Correct attribution of disagreement to frame selection, endpoint selection, effect heterogeneity or unresolved mixture; false reconciliation rate; interval coverage for each declared frame-specific estimand.",
+    "falsifier": "If disagreements persist within exactly matched frames and endpoints, sample/endpoint selection is insufficient and heterogeneity or bias remains plausible. If the full matrix does not improve blinded attribution or loses coverage through multiplicity, prefer the simpler report.",
+    "confound": "Unobserved manager shocks can drive both attrition and employment, defeating observed-variable weighting. A closed establishment's absence must be distinguished from missing data; synthetic convenience cannot establish real nonresponse assumptions.",
+    "feasibility": "A small offline factorial simulator and complete reporting table; no employer contact, new economic estimate, policy intervention or policy recommendation.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  }
+]

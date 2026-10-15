@@ -13,21 +13,23 @@ export function meanQuality(evaluations) {
   const values = list(evaluations).flatMap(e => RUBRIC.map(key => e.scores?.[key]).filter(v => typeof v === 'number' && Number.isFinite(v)));
   return values.length ? values.reduce((a, b) => a + b, 0) / values.length / 4 * 100 : 0;
 }
-export function candidateEligible(candidate, evaluations, papers) {
+export function candidateEligible(candidate, evaluations, papers, sourceRequirements) {
   const ids = sourceIds(candidate);
   const known = new Map(list(papers).map(p => [p.id, p]));
   const families = ids.map(id => known.get(id)?.family);
+  const requirements = sourceRequirements || {minimumDistinctPapers: 2, minimumDistinctFamilies: 2, requiredFamilies: ['alife', 'buehler']};
+  const familyFit = new Set(families.filter(Boolean)).size >= (requirements.minimumDistinctFamilies ?? 2) && list(requirements.requiredFamilies).every(family => families.includes(family)) && (!requirements.requireTargetFamily || families.includes(candidate.target));
   const sources = list(candidate.sources);
-  return ids.length >= 2 && ids.every(id => known.has(id)) && families.includes('alife') && families.includes('buehler') && sources.length >= 2 && sources.every(s => text(s.locator).trim() && text(s.use).trim() && text(s.boundary).trim()) && evaluations.length >= 2 && evaluations.every(e => e.nicheFit === true && e.fatal === false && number(e.scores?.grounding) >= 2);
+  return ids.length >= (requirements.minimumDistinctPapers ?? 2) && ids.every(id => known.has(id)) && familyFit && sources.length >= 2 && sources.every(s => text(s.locator).trim() && text(s.use).trim() && text(s.boundary).trim()) && evaluations.length >= 2 && evaluations.every(e => e.nicheFit === true && e.fatal === false && number(e.scores?.grounding) >= 2);
 }
-export function filterCandidates(candidates, {selectedSources, query = '', status = 'all', eliteIds = new Set(), evaluations = [], papers = []}) {
+export function filterCandidates(candidates, {selectedSources, query = '', status = 'all', eliteIds = new Set(), evaluations = [], papers = [], sourceRequirements}) {
   const queryLower = query.trim().toLowerCase();
   return list(candidates).filter(candidate => {
     if (!sourceIds(candidate).some(id => selectedSources.has(id))) return false;
     if (queryLower && !JSON.stringify(candidate).toLowerCase().includes(queryLower)) return false;
     if (status === 'elites' && !eliteIds.has(candidate.id)) return false;
     if (status === 'revised' && !list(candidate.parentIds).length) return false;
-    if (status === 'rejected' && candidateEligible(candidate, evaluations.filter(e => e.candidateId === candidate.id), papers)) return false;
+    if (status === 'rejected' && candidateEligible(candidate, evaluations.filter(e => e.candidateId === candidate.id), papers, sourceRequirements)) return false;
     return true;
   });
 }
@@ -75,6 +77,22 @@ function start(data) {
   const sourceVisible = candidate => candidate && sourceIds(candidate).some(id => state.sources.has(id));
   const roundLabel = snap => `Round ${snap.round}${snap === snapshots[0] ? ' · Initial' : snap === snapshots.at(-1) ? ' · Feedback' : ''}`;
   const finalSummary = summarizeArchive(data.archive);
+  const display = config.display || {};
+  const familyLabel = family => config.paperFamilies?.[family] || ({alife: 'ARTIFICIAL LIFE', buehler: 'BUEHLER / MATERIALS', method: 'SEARCH METHOD'}[family]) || titleCase(family);
+  const requirements = config.sourceRequirements || {minimumDistinctPapers: 2, minimumDistinctFamilies: 2, requiredFamilies: ['alife', 'buehler']};
+  const sourceRule = `Use at least ${requirements.minimumDistinctPapers ?? 2} distinct papers from at least ${requirements.minimumDistinctFamilies ?? 2} source families.${list(requirements.requiredFamilies).length ? ' Required families: ' + requirements.requiredFamilies.map(familyLabel).join(', ') + '.' : ''}${requirements.requireTargetFamily ? ' Include evidence from the target application domain.' : ''}`;
+  if (display.title) { $('hero-title').textContent = display.title; document.title = `${display.title} · Paper Mixer`; }
+  if (display.description) { $('hero-description').textContent = display.description; document.querySelector('meta[name="description"]').content = display.description; }
+  if (display.edition) $('edition').textContent = display.edition;
+  if (display.sourceHeading) $('sources-heading').textContent = display.sourceHeading;
+  if (display.nextDescription) $('next-description').textContent = display.nextDescription + ' Copy a prompt with its source record and feedback to run in your own agent environment.';
+  $('tag-papers').textContent = `${config.papers.length} source papers`;
+  $('tag-niches').textContent = `${totalCells} research niches`;
+  $('source-rule').textContent = `Select source papers to filter proposals using any selected paper. ${sourceRule}`;
+  if (display.targetLabel) $('target-axis').textContent = `↓ ${display.targetLabel}`;
+  $('controversy-note').hidden = !config.sourceRequirements;
+  document.documentElement?.style?.setProperty?.('--lever-count', config.levers.length);
+
 
   $('stat-proposals').textContent = data.candidates.length;
   $('stat-rounds').textContent = `${snapshots.length} recorded snapshots · ${data.evaluations.length} critic evaluations`;
@@ -92,7 +110,7 @@ function start(data) {
       const card = el('article', `source-card${state.sources.has(paper.id) ? ' selected' : ''}`);
       card.dataset.family = paper.family;
       const top = el('div', 'source-top');
-      const tag = paper.family === 'alife' ? 'ARTIFICIAL LIFE' : paper.family === 'buehler' ? 'BUEHLER / MATERIALS' : 'SEARCH METHOD';
+      const tag = familyLabel(paper.family);
       const label = el('label', 'source-toggle');
       const input = document.createElement('input'); input.type = 'checkbox'; input.checked = state.sources.has(paper.id); input.setAttribute('aria-label', `Include proposals using ${paper.id}`);
       input.addEventListener('change', () => { input.checked ? state.sources.add(paper.id) : state.sources.delete(paper.id); card.classList.toggle('selected', input.checked); renderResults(); });
@@ -101,7 +119,25 @@ function start(data) {
       const bottom = el('div', 'source-bottom');
       const only = el('button', 'source-only', 'View only'); only.type = 'button'; only.setAttribute('aria-label', `Filter to proposals using ${paper.id}`); only.addEventListener('click', () => { state.sources = new Set([paper.id]); renderSources(); renderResults(); });
       bottom.append(el('span', '', paper.id), only, safeLink(paper.url, 'Read paper ↗'));
-      card.append(top, el('h3', '', paper.title), el('p', '', paper.mechanism), bottom);
+      card.append(top, el('h3', '', paper.title), el('p', '', paper.mechanism));
+      if (paper.status) card.append(el('p', 'source-status', paper.status));
+      if (paper.attention) {
+        const attention = el('div', 'source-attention');
+        attention.append(el('strong', '', 'Why selected'), el('p', '', paper.attention));
+        if (paper.attentionUrl) attention.append(safeLink(paper.attentionUrl, 'Attention context ↗'));
+        card.append(attention);
+      }
+      if (list(paper.references).length) {
+        const details = el('details', 'source-references');
+        details.append(el('summary', '', `Original / challenge / follow-up record (${paper.references.length})`));
+        for (const reference of paper.references) {
+          const item = el('div', 'reference-item');
+          item.append(el('strong', '', titleCase(reference.relation)), safeLink(reference.url, reference.title), el('p', '', reference.scope));
+          details.append(item);
+        }
+        card.append(details);
+      }
+      card.append(bottom);
       return card;
     }));
   }
@@ -127,10 +163,10 @@ function start(data) {
   }
   function renderArchive() {
     const grid = $('archive');
-    replace(grid, el('span', 'axis-corner', 'TARGET / LEVER'), ...config.levers.map(lever => el('span', 'col-heading', lever)));
+    replace(grid, el('span', 'axis-corner', `${display.targetLabel || 'TARGET'} / LEVER`), ...config.levers.map(lever => el('span', 'col-heading', lever)));
     let shown = 0;
     for (const target of config.targets) {
-      grid.append(el('span', 'row-heading', target));
+      grid.append(el('span', 'row-heading', config.paperFamilies ? familyLabel(target).split(' / ')[0] : target));
       for (const lever of config.levers) {
         const entry = archive().find(e => e.target === target && e.lever === lever);
         const candidate = entry && candidates.get(entry.candidateId);
@@ -166,7 +202,7 @@ function start(data) {
     panel.classList.toggle('has-selection', Boolean(candidate));
     if (!candidate) { replace(panel, el('p', 'eyebrow', 'PROPOSAL INSPECTOR'), el('h3', '', 'Select an archive cell'), el('p', '', 'Follow the mechanism transfer, source boundaries, and critic feedback behind each proposal.')); return; }
     const reviews = evaluations(candidate.id);
-    const eligible = candidateEligible(candidate, reviews, config.papers);
+    const eligible = candidateEligible(candidate, reviews, config.papers, config.sourceRequirements);
     const isElite = eliteIds().has(candidate.id);
     const badges = el('div', 'detail-meta');
     badges.append(el('span', `chip${isElite ? ' elite' : ''}`, isElite ? 'Selected-round elite' : eligible ? 'Eligible · outside archive' : 'Ineligible'), el('span', 'chip', `${candidate.target} × ${candidate.lever}`), el('span', 'chip', `Round ${candidate.round}`));
@@ -212,7 +248,7 @@ function start(data) {
     }
   }
   function renderCandidates() {
-    const filtered = filterCandidates(data.candidates, {selectedSources: state.sources, query: state.query, status: state.status, eliteIds: eliteIds(), evaluations: data.evaluations, papers: config.papers});
+    const filtered = filterCandidates(data.candidates, {selectedSources: state.sources, query: state.query, status: state.status, eliteIds: eliteIds(), evaluations: data.evaluations, papers: config.papers, sourceRequirements: config.sourceRequirements});
     $('candidate-count').textContent = `${filtered.length} / ${data.candidates.length} proposals`;
     replace($('candidate-list'), ...filtered.map(candidate => {
       const reviews = evaluations(candidate.id);
@@ -220,7 +256,7 @@ function start(data) {
       const button = el('button', `candidate-row${candidate.id === state.selectedId ? ' active' : ''}`); button.type = 'button'; button.setAttribute('aria-label', `Inspect ${candidate.id}: ${candidate.title}`);
       const title = el('span'); title.append(el('span', 'candidate-title', candidate.title), el('span', 'candidate-sources', `${sourceIds(candidate).join(' + ')} · Round ${candidate.round}${list(candidate.parentIds).length ? ' · Feedback-guided child' : ''}`));
       const niche = el('span', 'candidate-niche', `${candidate.target} / ${candidate.lever}`);
-      const quality = el('span', 'candidate-quality', fmt(meanQuality(reviews))); quality.append(el('small', '', isElite ? 'ELITE' : candidateEligible(candidate, reviews, config.papers) ? 'ELIGIBLE' : 'INELIGIBLE'));
+      const quality = el('span', 'candidate-quality', fmt(meanQuality(reviews))); quality.append(el('small', '', isElite ? 'ELITE' : candidateEligible(candidate, reviews, config.papers, config.sourceRequirements) ? 'ELIGIBLE' : 'INELIGIBLE'));
       button.append(el('span', 'candidate-id', candidate.id), title, niche, quality, el('span', 'candidate-arrow', '↗'));
       button.addEventListener('click', () => selectCandidate(candidate.id, true)); return button;
     }));
@@ -235,7 +271,7 @@ function start(data) {
   $('sources-reset').addEventListener('click', () => { state.sources = new Set(papers.keys()); renderSources(); renderResults(); });
   $('search').addEventListener('input', event => { state.query = event.target.value; renderCandidates(); });
   $('status-filter').addEventListener('change', event => { state.status = event.target.value; renderCandidates(); });
-  $('export-json').addEventListener('click', () => { const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'}); const url = URL.createObjectURL(blob); const a = el('a'); a.href = url; a.download = 'paper-mixer-recorded-run.json'; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); });
+  $('export-json').addEventListener('click', () => { const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'}); const url = URL.createObjectURL(blob); const a = el('a'); a.href = url; a.download = `${text(data.run?.id || config.name || 'paper-mixer-recorded-run').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); });
   $('copy-prompt').addEventListener('click', async () => {
     const candidate = candidates.get(state.selectedId);
     if (!candidate) { $('copy-status').textContent = 'Select a proposal from the archive or list first.'; return; }
@@ -247,7 +283,7 @@ function start(data) {
       `Exact recorded critic feedback:\n${JSON.stringify(evaluations(candidate.id), null, 2)}`,
       `Source paper metadata:\n${JSON.stringify(config.papers.filter(p => sourceIds(candidate).includes(p.id)), null, 2)}`,
       `Additional constraint:\n${$('next-brief').value.trim() || 'Reduce the largest source-transfer or experimental-validity risk identified by the critics.'}`,
-      'Return title, target, lever, sourceIds, sources [{paperId,locator,use,boundary}], mechanism, hypothesis, experiment, baseline, metric, falsifier, confound, feasibility, parentIds, and changes. Ground substantive transfers in at least one ALife and one Buehler source. State an executable baseline and failure condition. Preserve disagreements and distinguish a conceptual analogy from demonstrated evidence. Do not fabricate source details; consult the actual papers.',
+      `Return title, target, lever, sourceIds, sources [{paperId,locator,use,boundary}], mechanism, hypothesis, experiment, baseline, metric, falsifier, confound, feasibility, parentIds, and changes. ${sourceRule} Keep the proposal target explicit. State an executable baseline and failure condition. Preserve original claims, challenges, replies and their precise scope. Preserve disagreements and distinguish conceptual, normative and empirical claims. Ratings cannot decide scientific truth. Do not fabricate source details; consult the actual papers.`,
       `Archive rule: ${config.archiveRule}`,
       'Ask two separate critic contexts to score grounding, mechanism, falsifiability and feasibility from 0 to 4, flag nicheFit and fatal issues, and record exact feedback. Same-model critics are not independent scientific replication.'
     ].join('\n\n');
