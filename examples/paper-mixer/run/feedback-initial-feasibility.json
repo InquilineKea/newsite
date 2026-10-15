@@ -1,0 +1,338 @@
+[
+  {
+    "candidateId": "O-R1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The fixed candidate pool isolates descriptor choice cleanly, and withheld loads are a useful external test. Disconnected motifs can remain singular despite fixed boundaries; repeated pools, independent response-class definitions and a prespecified distance normalization are still missing.",
+    "revision": "Declare connectivity and rank checks, two training loads, disjoint evaluation angles and twenty independent motif pools. Freeze normalization and compare archives within each pool, reporting paired uncertainty across pools."
+  },
+  {
+    "candidateId": "O-R2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Matched coefficient-change distributions are the right control, but sixty mutations and one withheld seed do not establish robustness across search runs. Grammar-versus-flat differences can disappear once both encode the same induced proposal distribution; that null result must remain informative.",
+    "revision": "Publish the grammar compiler and growth equation; freeze viability thresholds. Run multiple independent searches and evaluate each retained archive on a reserved seed bank, matching coefficient-change distributions and full rollout cost."
+  },
+  {
+    "candidateId": "O-I1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The displaced-resource intervention makes pursuit testable, with force-strength accounting appropriately explicit. However, equal force magnitude is not equal actuation work, and the reciprocal search has fewer free parameters. Search and holdout seeds must be separated before coefficient selection.",
+    "revision": "Specify interaction kernels, integrator and resource sensing; compare matched effective search budgets and realized work. Reserve independent resource trajectories and seeds, using coefficient-search runs as replication units rather than particle counts."
+  },
+  {
+    "candidateId": "O-I2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 2,
+      "mechanism": 2,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The intervention and timestep check are sensible, but no activator-inhibitor equations or bounded rest-length law are actually supplied. Establishing a stable traveling pulse and mechanical coupling within one day is optimistic; equal integration calls also need to include refinement costs.",
+    "revision": "Start with one published or fully specified excitable-ring equation and verify its uncoupled pulse. Freeze coupling and indentation grids, reserve disturbance phases, and compare independently initialized rings with refinement costs explicitly charged."
+  },
+  {
+    "candidateId": "O-M1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 2,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Equal impulse does not imply equal work, while equal work and exactly matched visible geometry may be difficult to realize for different histories. The claimed passive internal-variable energy is unnamed. Noisy repeats of one motif support only within-motif memory discrimination.",
+    "revision": "Write the energy and relaxation dynamics and derive dissipation first. Define geometry-matching tolerance without selecting on outcome, hold out pulse amplitudes, and distinguish independent motif replicates from repeated noisy observations of one motif."
+  },
+  {
+    "candidateId": "O-M2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 3,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The hidden-state swap is a direct, inexpensive causal test with an explicit update and appropriate scalar-gain controls. Because memory is built into the equations, a positive result verifies implementation and state dependence; it cannot establish newly evolved memory or general utility.",
+    "revision": "Freeze the visible growth rule, probe and mass-response window. Pair every history with reset, mean-only and shuffled-state interventions; hold out pulse intervals and report paired effects across independently initialized patterns."
+  },
+  {
+    "candidateId": "O-S1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The proposal has clear selection and held-out lesion tests, but identical mutation streams cannot generally persist after selection chooses different parents. Eighty candidates near one viable seed may characterize that lineage rather than a transferable recovery-selection effect.",
+    "revision": "Pair random-number schedules rather than requiring identical offspring. Run independent searches from several viable seeds, separate search and evaluation rollouts, freeze mass-matched lesion operators, and summarize recovery per search archive."
+  },
+  {
+    "candidateId": "O-S2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Renderer-only perturbations provide a particularly sharp negative control, and the shared candidate pool cleanly tests selection. Response novelty may nevertheless overfit its handcrafted assays, while a simple silhouette descriptor would be an unfair proxy for ASAL foundation-model descriptors.",
+    "revision": "State that visual baselines are handcrafted, freeze all descriptors and function assays, hold out entire perturbation families, and replicate shared candidate pools. Include untreated persistence so selecting diverse failure responses cannot win."
+  },
+  {
+    "candidateId": "C-R1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The synthetic packet test is executable and addresses duplicated evidence directly. Typed formatting bundles provenance, uncertainty and compatibility rules, so its apparent benefit may be entirely source deduplication. Message-count matching alone does not guarantee equal bits or aggregation access.",
+    "revision": "Specify the packet schema, Bayesian reference aggregator and equal bit budget. Factorially ablate provenance, typing and uncertainty; reserve sensor-reliability distributions and duplicate rates, reporting error and calibration across independent simulated worlds."
+  },
+  {
+    "candidateId": "C-R2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 2,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Translation controls and anchored-resource counterexamples are valuable, but the forager policy family, transfer rules and image embedding implementation remain unspecified. An independent ensemble is not obviously a valid comparator for a task that requires resource exchange, complicating fair-budget interpretation.",
+    "revision": "Define a small deterministic grid-world and finite policy catalogue first. Compare graph, matched low-cost image and random archives on identical policies; reserve map generators and score independent archive-building runs at fixed simulator budgets."
+  },
+  {
+    "candidateId": "C-I1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Contradiction-triggered sampling is a concrete interaction mechanism with a useful common-mode-failure counterprediction. The fresh-sample allocation can accidentally change observation budgets or timing. Shared failure episodes, rather than individual reports, must define independent replicates and train-test separation.",
+    "revision": "Specify quorum, contradiction threshold and sample ledger. Give every policy identical pre-generated sample streams and total observation/message ceilings; reserve failure-pattern families and report episode-level paired error-delay tradeoffs including common-mode cases."
+  },
+  {
+    "candidateId": "C-I2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Parity makes complementary information objectively testable, but an independent ensemble with centralized aggregation could solve the puzzle without meaningful routing constraints. Equal received packets can also hide different transmission costs, and prelabelled relevant sources may trivialize novelty selection.",
+    "revision": "Specify observation and aggregator locality, packet size and per-edge transmission costs. Compare source-aware random routing and fixed shortest paths; withhold graph families and sensor allocations, evaluating independent evolved routing policies rather than packets."
+  },
+  {
+    "candidateId": "C-M1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The recurring-versus-unprecedented shift comparison cleanly distinguishes reuse from general adaptation. However, a minority policy is not yet operationally defined, and the retrieval mechanism may carry most of the benefit. Equal slots need matching policy complexity as well as counts.",
+    "revision": "Freeze graph descriptors, niche thresholds and an observation-only retrieval rule. Cross archive-retention and retrieval ablations under equal memory bytes, train on separate maps, and report adaptation across independently generated regime sequences."
+  },
+  {
+    "candidateId": "C-M2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Packet replay is inexpensive and directly exercises ancestry memory; corrupt-link stress tests are especially important. A ground-truth correction delivered to every agent is stronger information than realistic corroboration, so reversal speed alone may reward mechanically trusting a privileged correction channel.",
+    "revision": "Add unreliable corrections with known calibrated reliability and a source-ID deduplication baseline. Freeze discount rules before testing, reserve graph and corruption families, and pair outcomes by independent report-cascade episode."
+  },
+  {
+    "candidateId": "C-S1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Role removal makes complementarity testable, but simply deleting signalers also reduces population size and action budget. Training sparse and testing dense visibility mainly tests loss of usefulness; it does not alone show improved generalization to new coordination challenges.",
+    "revision": "Replace removed signalers with equal-cost neutral or alternate-role agents, not empty slots. Freeze policy grammars and capacities; evaluate independent searches on unseen sparse maps as well as dense visibility controls and matched team sizes."
+  },
+  {
+    "candidateId": "C-S2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 2,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Fault-niche selection is plausible, but a mixed consensus population can violate convergence even when each homogeneous policy converges. Switching rules and adversarial corruption assumptions are unspecified. Building and validating that protocol library is a larger task than the stated easy CPU feasibility suggests.",
+    "revision": "Choose a bounded finite-state consensus protocol family with explicit fault thresholds and mixing semantics. Validate homogeneous baselines first, freeze detector and switching rules, then evaluate independent graph instances and withheld fault-switch schedules."
+  },
+  {
+    "candidateId": "D-R1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The authored evidence corpus makes support labels cheap and budgets inspectable. Fifty cards and exact claim keys can nevertheless turn retrieval into template matching; learned descriptor adaptation requires a training-only fitting rule, and worst-template performance may be unstable with tiny test groups.",
+    "revision": "Publish corpus generation, retrieval configurations and descriptor-fitting code. Reserve relation families and question generators, keep test answers inaccessible during fitting, and report per-family sample counts with paired independent corpus/search replications."
+  },
+  {
+    "candidateId": "D-R2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Counterfactual model discrimination gives a clear external task, and the unknown-law test addresses misspecification. The descriptor still needs a formula and uncertainty model. An expected-information baseline given the same correct toy laws may be hard to beat, appropriately limiting ambitious claims.",
+    "revision": "Specify measurement distributions, discrimination distance and unknown-model rejection threshold using training data. Reserve topology generators and law parameters; compare independent search archives at matched total forward-solve and measurement costs, retaining negative results."
+  },
+  {
+    "candidateId": "D-I1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The single-substitution factorial is an unusually useful check on claimed workflow synergy. Equal attempted children and solver calls cannot generally both be fixed when compatibility screening rejects different fractions; curated module traps may also favor the proposed type system.",
+    "revision": "Choose one primary total-cost budget and report attempted children and solver calls separately. Publish a fixed module library, reserve assumption-error families, and estimate interaction contrasts within matched problems across independent workflow-search runs."
+  },
+  {
+    "candidateId": "D-I2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The shared evidence ledger supports an executable interaction test, but repeated noisy measurements are not necessarily duplicates: they can be informative replication. Deleting all repeats from baselines could cripple legitimate uncertainty reduction, while true-model retention needs an explicit probabilistic update rule.",
+    "revision": "Define duplicates as exact reused observations, separately price independent repeated measurements, and supply likelihood/update equations. Reserve law parameters and noise regimes; compare independent policy-search runs including misspecified-law rejection and calibrated uncertainty."
+  },
+  {
+    "candidateId": "D-M1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "A deterministic graph oracle makes the proposed negative-memory mechanism readily testable. However, novelty distance over failure signatures is undefined, and repeated evaluation within one graph is not independent replication. Context-dependent exceptions are essential to distinguish learning from simply blacklisting categories.",
+    "revision": "Publish the oracle, failure-distance function and exception generator. Reserve graph instances and context-rule combinations, charge every constraint query, and compare paired independent searches against failure-count heuristics and exact executable-consequence deduplication."
+  },
+  {
+    "candidateId": "D-M2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Lineage-preserving routine reuse has a manageable implementation path, with good template holdouts and overhead accounting. The no-memory baseline cannot literally share library capacity, and solver calls may be a poor cost proxy when cached routines do substantial non-solver computation.",
+    "revision": "Specify routine contracts, frozen retrieval and provenance validators. Match memory-enabled baselines by bytes, report cold-start and amortized costs separately, and reserve complete task-generating templates while pairing independent library construction and evaluation runs."
+  },
+  {
+    "candidateId": "D-S1",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Budget-specific accuracy and a Pareto comparator make the hypothesis falsifiable without equating diversity with quality. The retrieval rule could itself give the niche archive privileged budget conditioning; paired measurement noise and archive capacity need precise accounting across methods.",
+    "revision": "Use one train-only retrieval rule applicable to every archive, with identical budget information and plan costs. Freeze budget bins and shifted-cost tests, and report paired independent archive builds with full enumeration and storage overhead."
+  },
+  {
+    "candidateId": "D-S2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Known consequence labels and explicit paraphrase controls support a compact selection test. Forty authored directions may reveal evaluator design rather than scientific generalization, and consequence-equivalence queries can leak the oracle solution if they share labels with the final evaluation.",
+    "revision": "Separate the selection-time equivalence function from hidden evaluator labels. Reserve consequence-generating rules and contextual transformations, audit false merges, and compare independently generated corpora against consequence-only deduplication at matched query and storage budgets."
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "candidateId": "O-R1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Geometry, rank screening, independent loads and graph-shuffling now make the representation transfer reproducible. Fixed-pool scope is appropriately bounded. However, the 200-attempt cap may produce fewer than 100 accepted motifs; confidence intervals spanning zero indicate inconclusive advantage rather than evidence of absence.",
+    "revision": "Specify minimum accepted pool size and handling of cap failures without selective replacement. Distinguish an equivalence test from an inconclusive superiority test, and report whether the four proposed classes are actually populated."
+  },
+  {
+    "candidateId": "O-I1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Explicit active equations, held-out jumps and search-level replication address the main causal gaps. The resource-only control still retains the repulsive force when pair coefficients are zero, so its label is inaccurate. Work strata are properly acknowledged as diagnostics, not randomized energy matching.",
+    "revision": "Call zero-coefficient control resource-plus-repulsion, or remove the entire pair term for a true resource-only arm. Define zero-distance unit vectors and report matched-time work-performance frontiers without interpreting post-outcome strata causally."
+  },
+  {
+    "candidateId": "O-M2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The full update, reachable-state distinction and reset controls meaningfully improve causal interpretation. The imposed 0.95 hidden-state decay applies exactly only when visible trajectories remain matched throughout, not merely at intervention time. Candidate disks may extinguish; reporting extinction protects against selective survivor claims.",
+    "revision": "Derive hidden-state differences with the visible-input difference term included, or clamp visible trajectories for the exponential benchmark. Preregister handling of zero initial or extinct mass, and label useful-memory claims separately from programmed sensitivity."
+  },
+  {
+    "candidateId": "O-S2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The revision sharply separates handcrafted rendering from ASAL performance and fixes whole-family holdouts. Failure-only diversity is controlled. Viability conditioning can still select different survivor populations across arms, and a pool with fewer than ten viable candidates needs an explicit archive policy.",
+    "revision": "Define archive eligibility and shortfall handling before selecting ten elites. Report an intention-to-select outcome charging extinct candidates alongside survivor-only distances, and state exactly which frames and normalization constants enter image descriptors."
+  },
+  {
+    "candidateId": "C-R1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Equal parsing and separate provenance switches directly address representation fairness; correlated origins are no longer mistaken for independence. However, relation compatibility and uncertainty fields remain undefined in a hidden-bit task. Without an explicit relation algebra, the hypothesized typing effect cannot be reproduced.",
+    "revision": "Define packet field widths, sensor generative laws and relation compatibility table. Fix how incompatible reports are weighted and predeclare the incremental typing contrast separately from provenance and uncertainty contributions."
+  },
+  {
+    "candidateId": "C-I1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Fixed times, sample budgets and failure-family holdouts substantially tighten the intervention. The sources remain motivation rather than validation. The most recently disagreeing pair is not uniquely defined when reports change simultaneously, and final quorum decisions need explicit failure or abstention scoring.",
+    "revision": "Specify deterministic pair tie-breaking, whether a resample replaces or augments each vote, and scores for no quorum. Report sample-allocation effects separately from message protocol effects under the shared bit ceiling."
+  },
+  {
+    "candidateId": "C-M2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Claim-specific corrections, fallible reliability and observation-ID controls repair the earlier source-revocation issue. The ancestry advantage now faces a credible simpler baseline. Frozen likelihood contributions still need a rule for dependent original observations, otherwise calibration can fail despite perfect relay deduplication.",
+    "revision": "Specify the likelihood combination and correction-discount equations, including common-cause handling. Test independent duplicates, correlated originals and false corrections separately; report the graph storage tradeoff against flat observation-ID memory at each byte budget."
+  },
+  {
+    "candidateId": "C-S1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Matched population replacement and shuffled messages now test information value rather than simple agent removal. Identical sensing and costs bound the role claim appropriately. The policy grammar and archive descriptor remain verbal, and per-recipient broadcast charging must reconcile sender actions with transmission energy.",
+    "revision": "Publish finite-state transition tables, descriptor bins and mutation probabilities. Define simultaneous sensing and actions plus exact broadcast accounting, then preregister role replacement contrasts and independent search count before evaluating unseen maps."
+  },
+  {
+    "candidateId": "D-R2-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Concrete laws, explicit noise, unknown-model calibration and independent archives repair major identifiability gaps. The discrimination descriptor is a justified extension, not a source result. Pairwise closeness within five sigma is not transitive, so equivalence-class merging needs a mathematically specified grouping rule.",
+    "revision": "Define equivalence classes using a conservative complete-link criterion or score response-distance tolerance directly. Publish parameter priors and plan composition, and separate threshold calibration from fourth-law distinguishability evaluation without test-label access."
+  },
+  {
+    "candidateId": "D-I1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The factorial sign, invalid-workflow penalty and separate budget designs now make the interaction claim auditable. Source boundaries are precise. Clipping can create apparent nonadditivity near the loss ceiling, while weighted accounting units remain an operational convention rather than equal compute.",
+    "revision": "Report unclipped errors for valid workflows alongside bounded loss and validity transitions. Freeze module implementations and timing calibration, and show interaction signs across cost weights and alternative scientifically interpretable loss scales."
+  },
+  {
+    "candidateId": "D-M1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 2,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Observable-only candidate features and exception tests address leakage. One inconsistency remains: the baseline promises exact executable-consequence deduplication while equivalence labels are evaluation-only. Without a public computable equality test, either the baseline gets privileged information or its promised comparison cannot be implemented.",
+    "revision": "Use canonical executable serialization or public probe-signature deduplication as the search baseline; reserve exact oracle consequence equivalence for evaluation. Specify the online validity estimator, update budget and scoring treatment of uncertain feedback."
+  },
+  {
+    "candidateId": "D-S1-v2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Common retrieval rules and separate Pareto claims address the strongest fairness concerns. Four quartile bins for three pair distances crossed with three cost bins can create far more than twelve cells. Capacity twelve therefore requires an eviction rule that may undo local niche competition.",
+    "revision": "Define twelve cells explicitly or publish a deterministic training-only eviction policy shared with appropriate controls. Specify measurement costs and nonlinear parameter priors, then report occupied cells and eviction-induced losses without consulting held-out accuracy."
+  }
+]

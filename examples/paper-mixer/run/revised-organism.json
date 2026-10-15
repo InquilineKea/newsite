@@ -1,0 +1,150 @@
+[
+  {
+    "id": "O-R1-v2",
+    "title": "Archive spring motifs with frozen response tests and rank checks",
+    "target": "organism",
+    "lever": "representation",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Section 3.3",
+        "use": "Borrow simulation illumination through behavioral representations.",
+        "boundary": "Representation diversity does not establish physical function."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1, 4.2",
+        "use": "Borrow graph paths as explicit mechanism suggestions.",
+        "boundary": "Semantic edges do not supply mechanical constants."
+      }
+    ],
+    "mechanism": "Propose twelve nodes on a 3-by-4 unit grid with uniform +/-0.05 jitter. Include each pair below distance 1.6 with probability 0.85. Fix left-column displacements. Quadratic axial spring energy uses stiffnesses sampled uniform 0.5–1.5 then normalized to sum 24. Reject disconnected motifs or reduced stiffness eigenvalue ratio below 1e-8. A graph path suggests descriptors; energy independently defines forces.",
+    "hypothesis": "Response selection may preserve more withheld-load variation than silhouettes after rank and material-budget checks; graph guidance may add nothing beyond arbitrary descriptor choice.",
+    "experiment": "Freeze twenty pools of 100 accepted motifs, with a 200-attempt cap and all rejection counts reported. Training descriptors concatenate free-node displacements under unit x and y loads at the top-right node. Retain twenty motifs by identical farthest-point selection and deterministic ties. Evaluate loads at the middle-right node at angles 45,135,225,315 degrees; no evaluation coordinates enter selection.",
+    "baseline": "Compare response, 32-by-32 binary-silhouette and random archives within each shared pool. A shuffled graph-path control chooses two unrelated training load-node coordinates from a fixed lookup. Match accepted pools, archive sizes and all solves; count rejected attempts and descriptor costs.",
+    "metric": "Freeze the held-out vector as all free-node x/y displacements for the four evaluation loads. Normalize every vector by the same unjittered fully connected reference response norm, never by its own norm. Report pairwise response distances plus four fixed classes: sign of top-right y displacement under 45 degrees crossed with middle-right compliance above reference compliance. Report paired pool differences with bootstrap intervals.",
+    "falsifier": "Reject a useful descriptor advantage if the paired uncertainty includes no improvement over random across pools, or effects vanish after fixed material-budget control. Reject graph-specific benefit if shuffled-path descriptors perform equally.",
+    "confound": "Boundary choice, rigid mechanisms, near-singularity and candidate-dependent normalization can manufacture separation. Predeclare geometry, eigenvalue cutoff, independent evaluation loads and thresholds; report both raw and reference-normalized distances, with sensitivity to the cutoff.",
+    "feasibility": "One-day NumPy CPU experiment using small dense linear solves. No physical-material or foundation-model claim; fixed-pool archive selection does not establish evolutionary search superiority.",
+    "round": 1,
+    "parentIds": [
+      "O-R1"
+    ],
+    "changes": "Specified geometry, constraints, energy and rank rejection; froze disjoint training/evaluation loads, normalization and class thresholds; added twenty paired pools, uncertainty and shuffled-path guidance control."
+  },
+  {
+    "id": "O-I1-v2",
+    "title": "Disentangle asymmetric pursuit from sensing and actuation budgets",
+    "target": "organism",
+    "lever": "interaction",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Section 4: Substrates, Particle Life",
+        "use": "Borrow typed-particle interaction matrices as a searchable substrate.",
+        "boundary": "Attraction patterns alone do not establish agency."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1, 4.3",
+        "use": "Borrow paths to propose testable directional relationships.",
+        "boundary": "A graph arrow is not evidence for a force law."
+      }
+    ],
+    "mechanism": "Propose 24 particles, twelve per type, in an unbounded plane. With r=|xj-xi|, pair force is [-max(0,1-r/0.2)+aij*max(0,1-|r-0.6|/0.4)] times the unit separation. Resource force is bi*tanh(|R-xi|)*unit(R-xi), with b1=1,b2=0. Set v=sat1(total force), drag=1, and Euler x-next=x+0.02*v; sat1 caps vector norm at one. Graph direction only proposes a12!=a21; these equations define an active toy.",
+    "hypothesis": "Nonreciprocity may improve resource tracking beyond a reciprocal interaction and resource-only controller, conditional on realized actuation work; unequal parameter counts remain a limitation, not a removed difference.",
+    "experiment": "Run twelve independent searches per family, each evaluating 24 coefficients on three fixed training seeds for 300 steps; resource jumps at step 150. Fix a11=a22=0 and Frobenius norm of off-diagonal coefficients to one. Select by training tracking, then evaluate ten untouched seeds and eight withheld resource jumps/directions, paired across families. Repeat selected tests at dt=0.01 for equal duration.",
+    "baseline": "Reciprocal a12=a21 and asymmetric families get equal objective calls and steps; report their differing effective dimensions. Add resource-only interactions with pair coefficients zero, species-label shuffles, no-jump trials, and paired counterfactual jumps with sensing frozen to the old resource location.",
+    "metric": "Measure post-jump centroid distance, cluster radius and tracking latency. Log realized force norms and overdamped work proxy sum(|v|^2*dt), including resource actuation. Compare within preregistered common work strata [0,50),[50,100),[100,200),[200,infinity); report empty strata and whole cost-performance curves. Bootstrap paired search-level means, not particle counts.",
+    "falsifier": "Reject the claimed advantage if it disappears under common-work comparisons, fails withheld jumps, equals resource-only control, survives frozen sensing equally, or changes materially with timestep halving.",
+    "confound": "Coefficient bounds do not equate realized force or work; saturation changes effective laws. Matching work after outcomes can bias comparisons, so present stratified results as diagnostics alongside unconditioned curves. Do not treat particles or evaluation seeds as independent search replications.",
+    "feasibility": "One-day vectorized NumPy CPU toy, with a fixed roughly 260,000 training-step budget across twelve searches per family. No passive-material or chemotaxis claim; no physical energy calibration.",
+    "round": 1,
+    "parentIds": [
+      "O-I1"
+    ],
+    "changes": "Added explicit kernels, sensing, saturation and integration; separated search and holdout trials; matched objective budgets; added resource-only and sensing-frozen controls, work diagnostics and search-level uncertainty."
+  },
+  {
+    "id": "O-M2-v2",
+    "title": "Test reachable refractory histories and artificial hidden-state swaps",
+    "target": "organism",
+    "lever": "memory",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Statistical Measures",
+        "use": "Borrow phenotype trajectories and localized-pattern evaluation.",
+        "boundary": "A latent descriptor does not identify causal memory."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1, 4.3",
+        "use": "Borrow a graph path to formulate a mechanistic hypothesis.",
+        "boundary": "The graph supplies an experimental suggestion, not proof."
+      }
+    ],
+    "mechanism": "Propose x in [0,1] on a periodic 32-by-32 grid. Let K be the normalized radius-three Gaussian kernel, u=K*x, g(u)=2*exp(-(u-0.30)^2/(2*0.05^2))-1. Update x-next=clip(x+0.1*(g(u)-0.2*h)+pulse,0,1); h-next=clip(0.95*h+0.05*x,0,1), using old x. A graph path proposes inhibition; equations explicitly impose history dependence, not discovered memory.",
+    "hypothesis": "History-dependent responses may persist beyond visible-state matching, with a delay scale related to h decay; spatially organized history must outperform equal-mean and equal-variance controls to support more than scalar excitability.",
+    "experiment": "Initialize twenty independently jittered disks, h=0. Training pulses add 0.10 inside a radius-two disk at steps 10 and 30; probe adds 0.05 at step 60. Freeze probe response as total x change over the next twenty steps minus a paired no-probe trajectory, normalized by initial mass. Hold out pulse intervals 7,17,37 and delays 10,30,60 steps; record extinction rather than omit it.",
+    "baseline": "For each history, pair untreated h, reset h=0, mean-only h, spatial permutation preserving mean and variance, and matched alternate-history h. Copy x exactly for artificial swaps, labeling these interventions potentially unreachable. Separately simulate reachable histories from h=0 and match final x within normalized RMS 0.02; report match counts and residual mismatch.",
+    "metric": "Report paired probe-response differences across the twenty initializations with bootstrap intervals. Predeclare a practically nonzero effect as 0.05 initial-mass units. Fit h differences at matched x to the imposed 0.95^delay decay benchmark; do not require visible nonlinear responses to follow an exact exponential. Compare actual localized maps with mean-only and mean/variance-preserving shuffled maps.",
+    "falsifier": "Reject an operational history effect if resetting h leaves the difference unchanged or effects fail the 0.05 threshold. Reject a spatial-memory claim if shuffled maps match localized maps. If no reachable x-matched pairs exist, restrict conclusions to artificial intervention sensitivity.",
+    "confound": "Artificial swaps may lie outside states obtainable from the specified histories. Hidden-state gain and nonlinear clipping can explain responses without useful memory; report reachable and artificial results separately, clipping frequency and initial-state mismatches.",
+    "feasibility": "One-day NumPy grid test of programmed state dependence and implementation. It neither searches for evolved memory nor establishes cognitive utility or a biological mechanism.",
+    "round": 1,
+    "parentIds": [
+      "O-M2"
+    ],
+    "changes": "Published the full clipped update, pulses and response window; separated reachable matches from artificial swaps; added paired reset/mean/variance controls, held-out intervals, effect threshold and a decay benchmark."
+  },
+  {
+    "id": "O-S2-v2",
+    "title": "Freeze renderer traps and held-out functions before archive selection",
+    "target": "organism",
+    "lever": "selection",
+    "sourceIds": [
+      "ASAL",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3, 4.5",
+        "use": "Borrow historical novelty and representation-based illumination.",
+        "boundary": "A novelty proxy does not establish functional innovation."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Sections 2.2–2.3",
+        "use": "Borrow interpretable hypotheses checked by executable modeling.",
+        "boundary": "Graph assertions require an independently specified test."
+      }
+    ],
+    "mechanism": "Propose continuous-cellular rules x-next=clip(x+0.1*[2*exp(-(K*x-mu)^2/(2*sigma^2))-1],0,1), using a normalized Gaussian K. Graph paths suggest lesion recovery and pulse response as functions; these are explicit assays, not material laws. Compare novelty selection in fixed handcrafted image and response spaces. Renderer-only color changes never modify x.",
+    "hypothesis": "Response selection may preserve held-out function while resisting color-only novelty. Corrupting response labels should remove any advantage dependent on accurate measurements.",
+    "experiment": "Freeze twenty seed-specific pools of eighty rules: mu uniform 0.15–0.45, sigma 0.02–0.10, kernel radius 2–5, fixed jittered seed disks, 24-by-24 periodic grids and 200 steps. Viability requires mass in [0.2,3] times initial mass and no more than half the grid above 0.9 at step 200. Train assays at step 100: radius-two erasure at (6,6) and +0.1 pulse at (18,18).",
+    "baseline": "Retain ten candidates per arm with identical farthest-point selection: grayscale or RGB image vectors, response vectors, random, and response vectors permuted across candidates. Base RGB=(x,x^2,sqrt(x)); renderers preserve this, permute channels every ten steps, or rotate hue each step. Images are 8-by-8 pooled frames. Freeze normalization on separate calibration seeds; match pools, rollouts and archive sizes.",
+    "metric": "Freeze response vectors as mass ratio and normalized state L2 differences from untreated trajectories at assay delays 10,30,60. On untouched assays, hold out entire families: a removed vertical stripe and a translating inhibitory patch. Report held-out pairwise response distances only among viable survivors, untreated persistence, survival fraction, renderer membership Jaccard and paired pool uncertainty. Diverse failures cannot improve the viable-only metric.",
+    "falsifier": "Reject a functional advantage if it fails held-out perturbation families or merely selects failures. Reject renderer robustness if membership changes under color-only transformations. If corrupted labels perform equally, reject a measurement-specific benefit.",
+    "confound": "Handcrafted vision does not benchmark ASAL encoders; chosen assays privilege functions. Fixed-pool selection is primary. A separately labeled search-loop follow-up uses twenty initial rules plus sixty mutations and matched evaluations per arm; never pool its results with fixed-pool results.",
+    "feasibility": "One-day CPU fixed-pool pilot. The separate search-loop extension is optional follow-up, not pooled evidence. No proposed experiment has run.",
+    "round": 1,
+    "parentIds": [
+      "O-S2"
+    ],
+    "changes": "Fixed rule sampling, viability, renderers, descriptors and assays; added twenty pools, held-out intervention families, corrupted-response control and untreated persistence; explicitly separated fixed-pool selection from search-loop follow-up."
+  }
+]

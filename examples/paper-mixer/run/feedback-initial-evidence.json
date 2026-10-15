@@ -1,0 +1,338 @@
+[
+  {
+    "candidateId": "O-R1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The illumination-to-response transfer is explicit and the graph analogy remains bounded. Positive spring stiffness alone does not ensure a nonsingular constrained network. Response classes and held-out evaluation geometry remain underspecified, making apparent descriptor success vulnerable to stiffness normalization and evaluator design.",
+    "revision": "Define node placement, connectivity, constraints and a rank rejection rule. Freeze a held-out response vector and class thresholds before selection; include graph-path-shuffled descriptor choices to test whether graph guidance contributes."
+  },
+  {
+    "candidateId": "O-R2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The typed representation has a plausible executable boundary and a good induced-mutation confound control. However, the grammar and starting viable pattern are absent, so sixty mutations may mostly test initialization failure. Source transfer supports representation design, not the promised retention benefit.",
+    "revision": "Provide one viable two-channel seed, the exact graph-to-kernel compiler and clipping rules. Predefine viability, coefficient-change matching and failure handling; distinguish grammar constraints from explanatory labels in an ablation."
+  },
+  {
+    "candidateId": "O-I1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "ASAL Appendix B explicitly supports asymmetric typed-particle interactions; active driving is correctly distinguished from passive mechanics. The resource sensing law and tracking target are undefined. Matching coefficient bounds does not match realized actuation or isolate resource-driven motion from interspecies asymmetry.",
+    "revision": "Write the force and resource-sensing equations, force saturation and timestep. Compare symmetric and asymmetric laws under realized-force or work strata, with a resource-only controller and matched counterfactual displacement trials."
+  },
+  {
+    "candidateId": "O-I2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 2,
+      "mechanism": 2,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The proposal responsibly labels new mechanochemical equations as assumptions. Yet the cited Lenia statistical measures do little mechanistic work, and the activator-inhibitor law, drive and strain feedback signs are missing. A ring of central springs may introduce floppy modes obscuring recovery.",
+    "revision": "Specify the complete reaction equations, coupling signs and ring stabilization. State the borrowed Lenia measure exactly and separate traveling-pulse recovery from externally driven oscillations using fixed-drive and fixed-geometry controls."
+  },
+  {
+    "candidateId": "O-M1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 2,
+      "mechanism": 2,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The history-state intervention is promising, but MECHGPT Section 2.3.3 demonstrates DFT-based O2 force-field fitting, not viscoelastic constitutive identification. Passive rest-length adaptation and geometry-matched history separation require an explicit energy law; equal impulse alone does not equal work.",
+    "revision": "Relabel MECHGPT transfer as executable fitting workflow inspiration. Supply energy and dissipative evolution equations, pulse directions and geometry-matching procedure; verify nonnegative dissipation and avoid matching work by conditioning on post-treatment outcomes."
+  },
+  {
+    "candidateId": "O-M2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The hidden-channel swap cleanly distinguishes visible geometry from an imposed historical state, with appropriate scalar-excitability controls. This tests programmed history dependence rather than discovery of memory, which is explicitly acknowledged. The growth law and physically attainable swapped-state constraints still need specification.",
+    "revision": "Publish the full visible-channel update and clipping. Separate reachable-history pairs from artificial swaps, preregister delay scaling and effect size, and compare localized history maps with equal-mean and equal-variance controls."
+  },
+  {
+    "candidateId": "O-S1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Transferring local niche competition to lesion robustness is faithful without claiming regeneration. Held-out lesions and matched removed mass are useful. However, recovery can mean returning to any high-mass blob rather than preserving the original localized dynamics, and seed viability is assumed.",
+    "revision": "Name a reproducible viable seed and dynamics. Define functional recovery using localization, trajectory and persistence thresholds alongside mass; hold out lesion shape families and initial phases rather than only masks."
+  },
+  {
+    "candidateId": "O-S2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The renderer-only intervention is a strong test of observer dependence and preserves the possibility that visual dynamics matter. Handcrafted descriptors cannot evaluate ASAL foundation-model performance, correctly noted. Candidate viability and perturbation definitions are still needed for a reproducible functional advantage test.",
+    "revision": "Freeze candidate generation, renderer transformations and perturbation-response vectors. Report both fixed-pool selection and search-loop versions separately, and include response-descriptor corruption to test whether gains depend on accurate functional measurements."
+  },
+  {
+    "candidateId": "C-R1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The review-to-communication transfer is bounded and the provenance ablation targets a real causal alternative. Rule-based agents receiving free-form packets require a specified parser; otherwise differences may simply reflect unequal interpretability. Correlated sensors can remain dependent even with distinct provenance identifiers.",
+    "revision": "Use an identical parser or reversible packet encoding across conditions. Model shared sensor causes separately from duplicated relays, and preregister aggregation weights so provenance identity is not equated with statistical independence."
+  },
+  {
+    "candidateId": "C-R2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 2,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "ASAL motivates trajectory descriptors, but MECHGPT does not establish relative-coordinate swarm features; this is an engineering analogy. Resource transfer rules and archive-to-test policy selection are unspecified. Prerecorded embeddings may be invalid for newly generated policies unless the candidate pool is fixed.",
+    "revision": "Fix and cache one candidate-policy pool, specify exchange dynamics and archive retrieval, and describe MECHGPT as graph-interpretability inspiration. Compare pixel and fixed pretrained descriptors separately with all rendering and embedding costs recorded."
+  },
+  {
+    "candidateId": "C-I1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The contradiction-triggered sensor intervention is specific, readily simulated and appropriately predicts a common-mode failure boundary. Equal-sampling controls and random resampling make it falsifiable. The current wording still leaves quorum thresholds, stopping rules and allocation of unused challenge tokens open.",
+    "revision": "Provide the finite-state protocol, token budget and quorum rule. Match sequential stopping and sample timing across controls, then report a preregistered delay-error frontier over localized and common-mode failure rates."
+  },
+  {
+    "candidateId": "C-I2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The source-combination routing mechanism is explicit and does not mistake graph paths for physical laws. However, a parity task makes source complementarity nearly definitional; novelty may reduce to collecting missing bits. Packet payload growth and reducer access could dominate routing comparisons.",
+    "revision": "Define per-packet bits, route termination and aggregation. Add a greedy missing-source coverage baseline, tasks with redundant or irrelevant sources, and separate benefits of historical novelty from source-aware routing information."
+  },
+  {
+    "candidateId": "C-M1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Archive retention and graph-indexed reuse are transferred coherently to collective adaptation. The dominant effect could be an external controller retrieving entire policies rather than population memory. Recurring regimes also create a legitimate memorization benefit, so recurrence alone should not be treated as failure.",
+    "revision": "Specify whether memory and retrieval are local or centralized. Separate recurring-regime reuse from unseen-regime transfer, include a matched centralized library control, and define recovery thresholds independently of observed results."
+  },
+  {
+    "candidateId": "C-M2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Ancestry tracking gives a concrete mechanism and a strong simpler-memory falsifier. The papers supply motivation rather than proof, correctly bounded. The correction oracle and source-disproof semantics are idealizations: one false observation does not normally invalidate every claim from its source.",
+    "revision": "Distinguish correction of one observation from revocation of source reliability. Define probabilistic discount rules and test false corrections, missing links and independent corroboration while keeping correction arrival times identical."
+  },
+  {
+    "candidateId": "C-S1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Team-level selection and role ablations operationalize complementarity beyond labels. Yet removing signalers also changes population and resource budgets; equalizing sensing could erase the very specialization being tested. The mechanism needs explicit action costs and a functional replacement control.",
+    "revision": "Define role policies and action budgets. Replace removed signalers with matched-cost nonsignaling agents, hold total population fixed, and compare archive benefits against reward-only team search under identical visibility distributions."
+  },
+  {
+    "candidateId": "C-S2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 2,
+      "mechanism": 2,
+      "falsifiability": 3,
+      "feasibility": 2
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The selection niche fits, but consensus validity, fault assumptions and mixed-policy composition are underspecified. MECHGPT Section 2.3 concerns LLM teams executing materials tasks, not validation of fault-tolerant consensus. Adaptive mixtures can fail even when each constituent protocol works separately.",
+    "revision": "State topology, synchrony, fault budget and a feasible consensus objective. Specify a composable switching protocol, retain identical detectors across baselines, and present MECHGPT only as executable-agent-workflow inspiration."
+  },
+  {
+    "candidateId": "D-R1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Adaptive behavioral descriptors and grounded retrieval are cleanly transferred, with sensible template holdouts and fixed-category reporting. But learned descriptors from only fifty cards can be unstable, and minimum-template accuracy requires a declared rule choosing a workflow from the archive without labels.",
+    "revision": "Specify descriptor learning, training sample count and query-time archive selection without answer access. Add a fixed-descriptor archive baseline and report uncertainty over held-out template families rather than only question instances."
+  },
+  {
+    "candidateId": "D-R2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Counterfactual discrimination is an explicit workflow behavior descriptor, with meaningful misspecification and information-gain controls. Three linear spring laws may be indistinguishable under the chosen interventions. Hidden-law accuracy must not reward arbitrary labels for observationally equivalent models or omit unknown-model calibration.",
+    "revision": "List constitutive laws, admissible loads and noise. Verify identifiability before training, score equivalent laws together, and predefine unknown-model detection thresholds with calibration and abstention penalties on the withheld fourth law."
+  },
+  {
+    "candidateId": "D-I1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Typed recombination and the two-substitution factorial contrast make module interaction testable rather than metaphorical. Lenia supplies evolutionary variation and retention, not evidence for workflow crossover. Matching both attempted children and solver calls needs explicit accounting because compatibility rejection changes execution rates.",
+    "revision": "Define module interfaces, two chosen substitution slots and accuracy loss. Report attempted-child and solver-budget experiments separately; include type-only screening and assumption-aware screening to isolate scientific compatibility from syntax filtering."
+  },
+  {
+    "candidateId": "D-I2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Evidence-dependent plan value is a credible interaction mechanism, and the bookkeeping-only ablation is essential. The Bayesian or heuristic update rule remains unspecified, so true-model probability and preservation of alternatives are not reproducible metrics yet. ASAL is search inspiration, not evidence for coupling benefits.",
+    "revision": "Provide likelihoods, ledger semantics and reprioritization equations. Split deduplication, evidence conditioning and archive retention into factorial controls; evaluate posterior calibration and unknown-law abstention alongside identification accuracy under misspecification."
+  },
+  {
+    "candidateId": "D-M1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The failure-signature memory implements a clear historical influence and directly challenges the deduplication alternative. The synthetic oracle keeps feasibility high but can build the desired generalization into hand-authored categories. Validity and novelty should stay separate when uncertain failures generalize poorly.",
+    "revision": "Publish failure signatures and proposal scoring before held-out graphs. Include context reversals and uncertain failure labels, compare a constraint-learning baseline, and charge all repairs, archive queries and oracle evaluations consistently."
+  },
+  {
+    "candidateId": "D-M2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The archive-to-reusable-routine transfer is explicit and correctly bounded to workflow memory. Provenance-matched controls isolate some benefits, but the assembly procedure and applicability checker are absent. Counting routines independently needs behavior-based equivalence, otherwise renamed templates can inflate archive diversity.",
+    "revision": "Define routine signatures, applicability tests and assembly search. Freeze behavioral equivalence on held-out input probes; separate diversity retention, provenance checks and reuse using a factorial design with all validation costs charged."
+  },
+  {
+    "candidateId": "D-S1",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Cost-conditioned local selection is an especially clear QD transfer and includes a serious Pareto-front alternative. The retrieval rule and cost-to-information tradeoff need precise definitions. Rejection against Pareto performance concerns added value, not whether cost-conditioned archives are scientifically meaningful.",
+    "revision": "Specify cost bins, discrimination descriptors and budget-time selection. Match feasible candidate sets across methods, report uncertainty per budget and distinguish superiority over top-k from incremental value beyond Pareto retention."
+  },
+  {
+    "candidateId": "D-S2",
+    "critic": "evidence",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Redescription invariance yields an explicit selection test with an appropriate consequence-deduplication baseline. Its relation to ASAL is an extension, not a reported result. Synthetic oracle consequences can make success circular unless evaluators are frozen and independently separate the selection and testing contexts.",
+    "revision": "Publish equivalence labels, context fields and abstention rules. Hold out intervention families and transformation generators, and compare consequence-only deduplication under identical oracle access, reporting valid distinctions lost through invariance filtering."
+  }
+]

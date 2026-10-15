@@ -1,0 +1,150 @@
+[
+  {
+    "id": "C-R1-v2",
+    "title": "Typed evidence packets tested against correlation and equal-bit controls",
+    "target": "collective",
+    "lever": "representation",
+    "sourceIds": [
+      "TEXTLIFE",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "TEXTLIFE",
+        "locator": "Collective Intelligence",
+        "use": "Multiagent information aggregation motivates the collective task.",
+        "boundary": "No claim of emergent cognition or living agents."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2",
+        "use": "Ontological relation paths motivate typed message fields.",
+        "boundary": "Relation types are an engineering representation, not physical laws."
+      }
+    ],
+    "mechanism": "Eight finite-state agents infer a hidden bit from noisy sensors. Each 64-bit packet contains origin, sequence, relation type, value, uncertainty and relay fields plus padding. All conditions use one reversible encoder/parser. Typed aggregation checks relation compatibility; ancestry deduplication and uncertainty weighting are separate switches. Distinct origins never automatically imply independent evidence.",
+    "hypothesis": "Typing should reduce decision error beyond source-ID deduplication only when relation compatibility carries useful information; deduplication alone should address repeated relays but not distinct sensors sharing hidden causes.",
+    "experiment": "Factorially ablate typing, provenance and uncertainty, with 16 observations and 32 transmitted 64-bit packets per episode. Freeze weights on training worlds. Hold out reliability ranges, duplicate rates and shared-cause generator families; pair methods within independent worlds, not individual packets.",
+    "baseline": "Compare flat source-tagged aggregation and an equal-budget noncommunicating ensemble whose reducer receives exactly the same transmitted bits. Include a correctly specified Bayesian oracle only as a labeled ceiling; its hidden generator parameters are inaccessible to tested policies.",
+    "metric": "Report episode-level paired error differences, Brier score and relay-overcount across duplication and common-cause conditions. Count sensor samples, payload bits and transmissions including repeated relays; lexical diversity does not indicate functional diversity.",
+    "falsifier": "Reject an incremental typing benefit if source-tagged flat aggregation matches it after equal encoding, observations and access. Reject provenance-as-independence if distinct correlated sensors still induce overconfidence, even when duplicate relays are perfectly removed.",
+    "confound": "Field semantics may leak task structure. Give all conditions identical field dictionaries and parser outputs, masking only the preregistered aggregation components. Infer correlation weights from training data rather than assigning independence from source identifiers.",
+    "feasibility": "A CPU packet simulator and finite aggregation rules suffice. All proposed experiments remain unexecuted; no cognition, biological independence or materials-law inference follows from this engineered communication test.",
+    "round": 1,
+    "parentIds": [
+      "C-R1"
+    ],
+    "changes": "Replaced ambiguous free-form parsing with a shared reversible 64-bit schema; separated typing, provenance and uncertainty; specified fixed observation/transmission budgets, train-only weights, held-out generator families and an explicitly oracle-only Bayesian ceiling."
+  },
+  {
+    "id": "C-I1-v2",
+    "title": "A fixed-budget contradiction protocol with episode-level failure tests",
+    "target": "collective",
+    "lever": "interaction",
+    "sourceIds": [
+      "TEXTLIFE",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "TEXTLIFE",
+        "locator": "Collective Intelligence",
+        "use": "Communication among heterogeneous agents supplies the collective setting.",
+        "boundary": "Task success does not establish general intelligence."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 4.1–4.6",
+        "use": "Specialized generation and critique motivate message challenges.",
+        "boundary": "Critique becomes a testable protocol, not validation of materials claims."
+      }
+    ],
+    "mechanism": "Eight binary sensors vote at round zero. Four further rounds allocate two fresh-sample tokens each. If each side has at least two votes, sample the most recently disagreeing pair; otherwise sample a fixed cyclic pair. Updated majority decisions use a five-of-eight quorum; ties abstain. Freeze every rule before testing.",
+    "hypothesis": "Targeted challenges should improve the error-delay frontier over cyclic or random resampling under localized failures, but their advantage should shrink under episode-wide common-mode corruption despite identical sample schedules.",
+    "experiment": "Pregenerate per-sensor sample streams; every policy receives eight initial plus eight reserved samples at identical times. Compare allocations using independent failure episodes, reserving spatial and temporal failure-generator families. Primary decisions occur at round four; secondary stopping thresholds use identical permitted times.",
+    "baseline": "Compare random allocation, cyclic resampling and an equal-budget independent ensemble with the same sixteen observations and final reducer access. Each round permits eight padded 64-bit broadcasts and two 16-bit request slots; count retransmissions and pad unused slots.",
+    "metric": "Preregister error, abstention and delay thresholds; report paired episode-level frontiers over localized and common-mode failure rates. Log observed samples, requested samples, used bits and transmitted slots separately. Different verbal explanations never count as different detection functions.",
+    "falsifier": "Reject the interaction benefit if cyclic or random allocation matches its frontier under the same deadlines, observation count and bit ceiling. Report a common-mode failure boundary even if localized cases improve.",
+    "confound": "Sampling allocations change which observations are seen, the intended intervention; counts and timing must remain fixed. Policies see only prior reports, never failure labels, unused future streams or ground truth. Reserve whole episode families rather than splitting correlated reports.",
+    "feasibility": "Binary finite-state policies permit CPU simulation with an auditable ledger. No physical sensors or autonomous language-model calls are required; the protocol and predicted advantages remain untested.",
+    "round": 1,
+    "parentIds": [
+      "C-I1"
+    ],
+    "changes": "Specified quorum, contradiction threshold, four-round token allocation and unused-token policy; fixed sample timing and packet slots; added held-out failure families, episode-level pairing and a preregistered delay-error frontier without oracle access."
+  },
+  {
+    "id": "C-M2-v2",
+    "title": "Claim-specific provenance memory with fallible corrections",
+    "target": "collective",
+    "lever": "memory",
+    "sourceIds": [
+      "TEXTLIFE",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "TEXTLIFE",
+        "locator": "Collective Intelligence",
+        "use": "Multiagent information sharing motivates cascade experiments.",
+        "boundary": "Social organization is an experimental setting, not evidence of life."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results and Discussion: retrieval and ontological graphs",
+        "use": "Retrieved relations motivate source-linked episodic memory.",
+        "boundary": "Retrieved claims remain defeasible; graph edges are not causal proof."
+      }
+    ],
+    "mechanism": "Store observation IDs, relay ancestry and signed correction claims in a bounded graph. Duplicate relays share one likelihood contribution. A correction targets one observation, never automatically revoking its source. Its likelihood ratio uses reliability estimated on training episodes; independent corroboration can outweigh it. Separate source-reliability updates require multiple audited observations.",
+    "hypothesis": "Ancestry memory should reduce persistent false consensus beyond source-ID deduplication when relays obscure observation identity, but its advantage should decline as ancestry corruption or correction unreliability increases.",
+    "experiment": "Replay independent report-cascade episodes with identical correction arrival times. Train then freeze discount rules; test held-out graph families, correction-error generators and ancestry-loss mechanisms. Include false corrections and distinct sources sharing hidden causes, not only duplicated relays.",
+    "baseline": "Compare source-ID deduplication, observation-ID flat memory, timestamp retrieval and an equal-budget independent ensemble. Equalize original samples, correction messages, final reducer access, total stored bytes and transmission bits; pad overhead in controls and report effective retained claims.",
+    "metric": "Measure episode-level paired reversal delay, Brier score, residual false belief and retention of valid corroboration. Ground truth is accessible only to scoring; semantic diversity and distinct source IDs do not establish functional or statistical independence.",
+    "falsifier": "Reject the graph-memory advantage if observation-ID flat memory matches it at equal byte cost. Reject the correction rule if false corrections erase valid corroboration or its gains require privileged true corrections unavailable to controls.",
+    "confound": "A correction channel may become an oracle. Make reliability imperfect and calibrated from training episodes, reveal identical channel metadata everywhere, and vary reliability out of distribution. Treat observation correction and source-level reliability changes as separately ablated operations.",
+    "feasibility": "CPU packet replay and adjacency lists suffice. The unexecuted study tests engineered belief revision under synthetic uncertainty; it cannot adjudicate real scientific claims or demonstrate cognition.",
+    "round": 1,
+    "parentIds": [
+      "C-M2"
+    ],
+    "changes": "Separated observation correction from source revocation; added frozen probabilistic discounts and fallible corrections, equal-byte/source-ID controls, shared-cause sensors, held-out cascade generators and identical correction timing with no ground-truth channel."
+  },
+  {
+    "id": "C-S1-v2",
+    "title": "Team-level selection with matched-cost role replacement controls",
+    "target": "collective",
+    "lever": "selection",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Background/AURORA; Experiments",
+        "use": "Local niche competition motivates a population archive.",
+        "boundary": "Niches are chosen descriptors, not certified functional categories."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 4.1–4.6",
+        "use": "Specialized agent roles motivate heterogeneous team composition.",
+        "boundary": "Role labels alone do not demonstrate complementarity or independence."
+      }
+    ],
+    "mechanism": "Ten finite-state grid agents share radius-one sensors, speed, 128-bit memory and one action per tick. Scouts explore, carriers return resources and signalers spend actions relaying observed resource locations in 32-bit packets. Archive whole teams by measured scouting-transfer patterns; mutations alter role proportions and thresholds within a frozen policy grammar.",
+    "hypothesis": "Niche-selected teams should retain signalers whose removal reduces held-out sparse-map deliveries beyond matched-cost replacements. Their contribution should shrink under dense visibility; archive benefits must also exceed reward-only team search at equal evaluation cost.",
+    "experiment": "Run independent searches with identical training visibility distributions and fixed capacities. Hold out map-generator families, obstacles and resource clustering, including unseen sparse maps and dense controls. Evaluate frozen teams; replace signalers with neutral or alternative-role agents, keeping ten agents and action capacities fixed.",
+    "baseline": "Compare individual selection, reward-only team selection and an equal-budget noncommunicating ensemble. Equalize simulator steps, evaluations, sensors, total memory and energy. Every sense, move, carry or send costs one action; broadcasts cost sender energy and one slot per directed recipient.",
+    "metric": "Measure delivered resources per energy budget, paired reward loss after matched role replacement and successful interaction patterns across held-out maps. Report actual packet transmissions and action allocation; role labels and semantic diversity alone demonstrate no functional complementarity.",
+    "falsifier": "Reject signaler complementarity if neutral or alternative-role replacements preserve delivery at matched cost. Reject an archive-specific benefit if reward-only team search reaches equivalent held-out performance and interaction coverage under identical search budgets.",
+    "confound": "Role replacement can alter activity rather than information value. Add matched send-cost dummy packets and receiver-shuffled locations; charge identical transmission slots while destroying useful signaling. All roles see only local observations, never hidden map labels or simulator ground truth.",
+    "feasibility": "Finite-state grid agents allow CPU search and exact replacement interventions. These are unexecuted, task-specific transport predictions; specialization supplies no evidence of independent model families or general emergent intelligence.",
+    "round": 1,
+    "parentIds": [
+      "C-S1"
+    ],
+    "changes": "Fixed role grammar, sensing, population and memory; replaced deletion with equal-cost neutral/alternative roles; charged sender actions and per-recipient transmissions; added dummy-message controls and held-out sparse map generators alongside dense controls."
+  }
+]

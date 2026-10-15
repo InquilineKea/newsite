@@ -1,0 +1,282 @@
+[
+  {
+    "id": "C-R1",
+    "title": "Typed evidence packets for collective hidden-state inference",
+    "target": "collective",
+    "lever": "representation",
+    "sourceIds": [
+      "TEXTLIFE",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "TEXTLIFE",
+        "locator": "Collective Intelligence",
+        "use": "Multiagent information aggregation motivates the collective task.",
+        "boundary": "No claim of emergent cognition or living agents."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2",
+        "use": "Ontological relation paths motivate typed message fields.",
+        "boundary": "Relation types are an engineering representation, not physical laws."
+      }
+    ],
+    "mechanism": "Eight rule-based agents observe noisy fragments of a hidden binary state. Compare free-form recorded packets with typed packets separating observation, inferred relation and uncertainty. A receiving agent composes only compatible relation paths, preventing repeated hearsay from being counted as fresh observations.",
+    "hypothesis": "Typed packets should reduce error more under duplicated reports than independent reports, specifically testing resistance to repeated hearsay.",
+    "experiment": "Vary duplication and sensor reliability in matched CPU runs; fix sensor draws, packet capacity and total messages across formats.",
+    "baseline": "Compare untyped communication and an equal-budget independent ensemble; equalize observations, packet capacity and final aggregation access.",
+    "metric": "Measure decision error, calibration and duplicate-evidence overcount on held-out draws; lexical diversity is never scored as functional diversity.",
+    "falsifier": "Reject if untyped packets with identical provenance match accuracy, or gains require greater packet capacity or more sensor samples.",
+    "confound": "Compression could explain gains. Pad capacity and separately ablate provenance, relation labels and uncertainty to identify the effective component.",
+    "feasibility": "Discrete-event Python and recorded templates suffice; observations are synthetic. This is an unexecuted proposal requiring no language-model runtime.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "C-R2",
+    "title": "Collective descriptors that separate coordination from shared drift",
+    "target": "collective",
+    "lever": "representation",
+    "sourceIds": [
+      "ASAL",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.1–3.3",
+        "use": "Trajectory embeddings motivate collective descriptors.",
+        "boundary": "Embedding novelty is not functional innovation."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results: ontological graphs",
+        "use": "Interpretable graphs motivate relative-coordinate features.",
+        "boundary": "Swarm graphs are not materials constitutive models."
+      }
+    ],
+    "mechanism": "Represent simulated foraging populations using encounter graphs and resource-transfer relations, alongside rendered trajectory embeddings. Relative graph features remove uniform translation while retaining coordinated exchange. Archive teams by either descriptor, then evaluate unseen resource layouts with a frozen archive, separating apparent visual novelty from successful transfer strategies.",
+    "hypothesis": "Graph descriptors should retain more transfer strategies succeeding after spatial shifts; image descriptors should retain more shifted duplicates.",
+    "experiment": "Compare matched descriptor archives in grid-world populations, then replay frozen elites on translated and shuffled-resource maps with identical budgets.",
+    "baseline": "Compare handcrafted descriptors and an equal-budget independent ensemble; equalize observations, policy evaluations, simulator steps and embedding computation.",
+    "metric": "Measure held-out delivered resources, transfer motifs and translation-equivalent duplicates; embedding distance and niche occupancy do not establish functional diversity.",
+    "falsifier": "Reject if image elites match after translated duplicates merge, or graph descriptors erase spatial specialization needed for resource delivery.",
+    "confound": "Invariance can erase meaningful position. Include anchored-resource maps and report losses as well as gains across environmental conditions.",
+    "feasibility": "CPU grid-worlds and compact graph features suffice; prerecorded image embeddings are possible if their computation is explicitly budgeted.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "C-I1",
+    "title": "Contradiction-triggered quorum checks in communicating populations",
+    "target": "collective",
+    "lever": "interaction",
+    "sourceIds": [
+      "TEXTLIFE",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "TEXTLIFE",
+        "locator": "Collective Intelligence",
+        "use": "Communication among heterogeneous agents supplies the collective setting.",
+        "boundary": "Task success does not establish general intelligence."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 4.1–4.6",
+        "use": "Specialized generation and critique motivate message challenges.",
+        "boundary": "Critique becomes a testable protocol, not validation of materials claims."
+      }
+    ],
+    "mechanism": "In distributed hazard detection, agents broadcast local observations. A contradiction between two reports activates a critic that requests one fresh sensor sample before a quorum acts. Challenge tokens are limited, so the protocol concentrates interaction on disagreements instead of broadcasting every observation equally.",
+    "hypothesis": "Contradiction-triggered sampling should reduce false alarms under localized failures, but lose its advantage under common-mode corruption shared by all sensors.",
+    "experiment": "Replay matched sensor draws under localized and shared failures; equalize sampling budgets across challenge, broadcast and independent conditions.",
+    "baseline": "Compare random resampling, majority voting and an equal-budget independent ensemble; count challenge messages and every additional sensor sample.",
+    "metric": "Measure false alarms, missed hazards, delay and useful observations per message; differing rationales never count as distinct detection functions.",
+    "falsifier": "Reject if random resampling matches targeted challenges, or if gains disappear after extra sensor observations and messages are equalized.",
+    "confound": "Disagreements may expose sensor identities. Randomize identities, fix failure prevalence and evaluate unseen failure patterns across matched seeds.",
+    "feasibility": "Binary sensors, finite-state quorums and prerecorded packets fit a CPU simulator; this proposed experiment needs no physical sensors.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "C-I2",
+    "title": "Novelty-guided communication routing through complementary sensors",
+    "target": "collective",
+    "lever": "interaction",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.1–3.3",
+        "use": "Historical novelty motivates exploring alternative interaction patterns.",
+        "boundary": "Finite routing novelty does not imply open-ended evolution."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2",
+        "use": "Graph-path sampling motivates communication routes.",
+        "boundary": "Information routing is tested directly; no physical analogy is assumed."
+      }
+    ],
+    "mechanism": "Agents observe different components of a small parity puzzle. Route a limited number of packets along sampled graph paths, rewarding routes that encounter previously uncombined sensor types. Historical route novelty operates on information-source combinations rather than wording, allowing the population to discover complementary communication circuits.",
+    "hypothesis": "Source-combination routing should improve parity recovery on sparse networks; gains should shrink when every component is already directly accessible.",
+    "experiment": "Evolve route policies across small graphs; test held-out sensor allocations and edge failures using matched puzzles and packet budgets.",
+    "baseline": "Compare random walks, centrality routing and an equal-budget independent ensemble; equalize received packets and forbid privileged global sensor access.",
+    "metric": "Measure parity accuracy, required-source delivery and resilience after edge removal; route novelty alone never qualifies as functional diversity.",
+    "falsifier": "Reject if source-aware random routing matches accuracy, or gains depend on withholding equivalent information from the independent ensemble reducer.",
+    "confound": "Source labels may leak puzzle structure. Provide identical metadata everywhere and test puzzles requiring irrelevant sensor components to be ignored.",
+    "feasibility": "CPU graph simulation with binary packets and exhaustive small puzzles suffices; count transmissions explicitly, without autonomous language-model calls.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "C-M1",
+    "title": "A minority-memory archive for collective adaptation after regime shifts",
+    "target": "collective",
+    "lever": "memory",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Background/AURORA; Experiments",
+        "use": "Locally competitive archives motivate retaining multiple strategies.",
+        "boundary": "Archive occupancy does not establish indefinite innovation."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2",
+        "use": "Graph-connected hypotheses motivate indexing collective strategies by relations.",
+        "boundary": "The indexed objects are policies, not validated materials mechanisms."
+      }
+    ],
+    "mechanism": "A communicating foraging population stores successful coordination policies in a bounded graph-indexed memory. Each niche preserves a minority policy defined by resource-transfer structure, even while the dominant policy earns more current reward. After a resource regime switches, agents retrieve policies matching the new transfer constraints.",
+    "hypothesis": "Minority-policy memory should shorten recovery after recurring regime shifts, while producing a measurable stationary-environment cost from reserving archive space.",
+    "experiment": "Run recurring, unprecedented and absent regime shifts in matched grid-world seeds; equalize memory slots, retrieval attempts and simulator steps.",
+    "baseline": "Compare FIFO, top-reward memories and an equal-budget independent ensemble; equalize total policies retained, retrieval trials and communication counts.",
+    "metric": "Measure recovery time, stationary reward cost and successful transfer patterns; different policy descriptions never substitute for distinct behavioral effects.",
+    "falsifier": "Reject if reward-only retention matches recovery under equal memory, or benefits occur only on previously memorized resource layouts.",
+    "confound": "Archive indices may leak regimes. Use observable encounters and transfers only; test unfamiliar resource placements without privileged regime labels.",
+    "feasibility": "Finite-state policies and bounded graph features permit CPU execution; any result would concern synthetic adaptation rather than biological memory.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "C-M2",
+    "title": "Provenance memory that limits collective error cascades",
+    "target": "collective",
+    "lever": "memory",
+    "sourceIds": [
+      "TEXTLIFE",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "TEXTLIFE",
+        "locator": "Collective Intelligence",
+        "use": "Multiagent information sharing motivates cascade experiments.",
+        "boundary": "Social organization is an experimental setting, not evidence of life."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results and Discussion: retrieval and ontological graphs",
+        "use": "Retrieved relations motivate source-linked episodic memory.",
+        "boundary": "Retrieved claims remain defeasible; graph edges are not causal proof."
+      }
+    ],
+    "mechanism": "Agents retain packet ancestry in an episodic graph: original observation, relay chain and later correction. Repeated relays share one evidential weight. When a source is disproved, agents discount descendants while preserving unrelated observations, potentially allowing a communicating population to reverse a mistaken consensus.",
+    "hypothesis": "Ancestry memory should accelerate correction after influential-source failure, particularly in clustered networks that repeatedly circulate the same observation.",
+    "experiment": "Replay binary reports through graph populations; time a ground-truth correction and vary clustering while matching packets, memory and sensor reliability.",
+    "baseline": "Compare timestamp-only memory, flat retrieval and an equal-budget independent ensemble; provide identical corrections, original observations and total storage.",
+    "metric": "Measure reversal delay, residual false beliefs and valid-evidence retention; lexical variation across relays does not count as independent evidence.",
+    "falsifier": "Reject if flat source-tagged memory matches ancestry tracking, or if ancestry discounting suppresses genuinely independent corroboration enough to negate gains.",
+    "confound": "Perfect ancestry is unrealistic. Hide and corrupt links, reporting failure thresholds instead of assuming reliably available provenance in every packet.",
+    "feasibility": "CPU packet replay and adjacency lists suffice; all reports are synthetic, and no actual scientific claims or cognition are adjudicated.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "C-S1",
+    "title": "Selecting complementary role mixtures instead of individually strong agents",
+    "target": "collective",
+    "lever": "selection",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Background/AURORA; Experiments",
+        "use": "Local niche competition motivates a population archive.",
+        "boundary": "Niches are chosen descriptors, not certified functional categories."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 4.1–4.6",
+        "use": "Specialized agent roles motivate heterogeneous team composition.",
+        "boundary": "Role labels alone do not demonstrate complementarity or independence."
+      }
+    ],
+    "mechanism": "Select whole teams in a resource-transport simulation, archiving mixtures of scouts, carriers and signalers by measured interaction patterns. Within each niche, reward delivered resources. Mutations alter role proportions and communication thresholds, allowing individually weak signalers to survive when they improve team coordination.",
+    "hypothesis": "Team niche selection should retain useful signalers under sparse discovery; their advantage should diminish when all resources become directly visible.",
+    "experiment": "Evolve finite-state teams under sparse visibility, then test dense visibility and role removal with matched mutation opportunities and simulator evaluations.",
+    "baseline": "Compare individual selection, reward-only team selection and an equal-budget independent ensemble; equalize sensing, movement, population sizes and evaluation counts.",
+    "metric": "Measure delivery reward, losses after signaler removal and successful role mixtures; role names alone do not demonstrate functional diversity.",
+    "falsifier": "Reject complementarity if removing signalers changes no reward, or if matched reward-only selection finds equally effective teams at equal budget.",
+    "confound": "Signalers may have privileged sensing or cheaper actions. Equalize both, then treat information asymmetry as an explicitly varied experimental factor.",
+    "feasibility": "Finite-state grid agents permit CPU search and exact role ablations; this untested proposal makes task-specific predictions about synthetic transport.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "C-S2",
+    "title": "Selecting collective policies across communication breakdown niches",
+    "target": "collective",
+    "lever": "selection",
+    "sourceIds": [
+      "ASAL",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.1–3.3",
+        "use": "Diverse targets motivate fault niches.",
+        "boundary": "Finite coverage is not open-endedness."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results: agent-based simulation",
+        "use": "Simulation connects proposals to executable checks.",
+        "boundary": "No physical materials claim follows."
+      }
+    ],
+    "mechanism": "Archive consensus policies by tolerance to delay, loss and corrupt relays. Select competitive policies within each fault regime, then assemble mixed populations switching with observed network conditions. Selection retains recovery mechanisms across faults; semantic novelty supplies no reward. Held-out fault sequences test whether specialized policies jointly generalize.",
+    "hypothesis": "Niche-selected mixtures should recover consensus after communication-regime switches more reliably than average-reward selection, while causing errors near switching boundaries.",
+    "experiment": "Train on separate packet-fault regimes, then test held-out switching sequences; equalize evaluations, messages and network-detector information across conditions.",
+    "baseline": "Compare average-reward selection, worst-case selection and an equal-budget independent ensemble; also give homogeneous populations the identical regime detector.",
+    "metric": "Measure correct consensus, recovery delay, switching errors and failure-profile coverage; semantic policy differences alone do not establish functional diversity.",
+    "falsifier": "Reject if detector-equipped homogeneous policies match recovery, or mixed populations succeed only by transmitting additional packets during regime transitions.",
+    "confound": "Detection may supply the benefit. Freeze or scramble detector outputs and disable switching to separate archive, mixture and detector effects.",
+    "feasibility": "Deterministic policies and simulated packet faults allow CPU execution; this untested proposal predicts synthetic distributed behavior, not physical materials properties.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  }
+]

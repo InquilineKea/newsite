@@ -1,0 +1,13 @@
+{
+  "run_file": "run.json",
+  "sha256": "1b81ee5895a650b537388739ef8ff48b83f67a183030ab071242570c9f2931ff",
+  "source_packet_sha256": "06944b29fa89c9b82eaf24fead1a86cb5c7cfe227345c5327a8316c97af68e96",
+  "candidate_count": 36,
+  "feedback_records": 72,
+  "final_elites": 12,
+  "new_final_elites": 9,
+  "rating_scale": "0\u2013100 AI-rated formulation quality",
+  "physical_experiments": 0,
+  "executed_model_calls": "Actual subagent generation, critique and revision, orchestrated by coordinator. Adapter runner supplied separately; sample did not invoke an external provider API.",
+  "shared_inherited_model": true
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "D-R1",
+    "title": "Behavioral niches for evidence-retrieval workflows",
+    "target": "discovery",
+    "lever": "representation",
+    "sourceIds": [
+      "LENIA",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Measures",
+        "use": "Behavioral niches and local competition.",
+        "boundary": "No open-endedness guarantee."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results: retrieval and graphs",
+        "use": "Ground retrieval and executable mappings.",
+        "boundary": "Relations require assumption checks."
+      }
+    ],
+    "mechanism": "Encode retrieval traces by evidence type, relation coverage and contradiction handling. Learn training-only descriptors and retain locally competitive workflows across niches. Graph-grounded traces let Lenia-style illumination diversify retrieval behavior rather than answer wording.",
+    "hypothesis": "Behavioral niches preserve retrieval strategies useful for different test materials questions, improving worst-question-type performance compared with selecting one globally highest-scoring retriever.",
+    "experiment": "Author fifty evidence cards with explicit claims and distractors. Split templates before searching retrieval depth, relation filters and contradiction rules; freeze workflows before testing.",
+    "baseline": "Compare random search, global top-k and fixed lexical retrieval using same configurations, evidence access, context limits and scoring-call budgets across matched seeds.",
+    "metric": "Predeclare test supported-answer accuracy, citation precision and worst-template accuracy. Report archive coverage separately using fixed categories; descriptor spread is not research quality.",
+    "falsifier": "Reject the advantage if worst-template accuracy fails to improve across matched seeds, or if randomly permuted descriptors perform equally well at equal budgets.",
+    "confound": "Wording may favor descriptors. Hold out relation families and question templates; match context length so varied contexts cannot simply supply more evidence.",
+    "feasibility": "Offline Python retrieval over authored cards runs on CPU. Exact claim keys provide labels; cache optional model paraphrases before any train-test split.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "D-R2",
+    "title": "Counterfactual descriptors for graph-guided experiment plans",
+    "target": "discovery",
+    "lever": "representation",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3",
+        "use": "Transfer trajectory novelty to workflow search.",
+        "boundary": "Novelty is observer dependent."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2, 4.1–4.6",
+        "use": "Graph-path hypothesis construction.",
+        "boundary": "Graph paths do not validate properties."
+      }
+    ],
+    "mechanism": "Encode plans by discrimination among toy spring laws. Graph paths propose measures; nearest-neighbor illumination retains distinct discrimination vectors. ASAL trajectory search becomes workflow search over observable consequences under explicit competing models.",
+    "hypothesis": "Counterfactual descriptors retain experiments discriminating different mechanisms, whereas lexical novelty retains differently phrased plans with redundant consequences on test model pairs.",
+    "experiment": "Author three spring-network laws and candidate measures. Archive graph-derived plans on training networks, then test frozen selections on withheld networks and hidden laws.",
+    "baseline": "Use same plan pools and measure budgets for lexical novelty, random archive assignment and global info selection; freeze descriptor dimensions before holdout evaluation.",
+    "metric": "Measure hidden-law identification, redundant measures and cost per correct identification on fixed holdouts. Report descriptor coverage separately from task outcomes and physical validity.",
+    "falsifier": "Reject the proposal if discrimination niches do not improve identification or reduce redundancy, or gains disappear when every method receives identical initial plans.",
+    "confound": "Correctly specified toy laws exaggerate usefulness. Include a withheld fourth law and unknown-model response; calibration under misspecification matters alongside model identification accuracy.",
+    "feasibility": "Small linear spring systems and plan enumeration require only CPU NumPy. Any result concerns a planning benchmark, without validating actual materials or hypotheses.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "D-I1",
+    "title": "Compatibility-tested recombination of scientific workflows",
+    "target": "discovery",
+    "lever": "interaction",
+    "sourceIds": [
+      "LENIA",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Measures",
+        "use": "Behavioral niches and local competition.",
+        "boundary": "No open-endedness guarantee."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results: retrieval and graphs",
+        "use": "Ground retrieval and executable mappings.",
+        "boundary": "Relations require assumption checks."
+      }
+    ],
+    "mechanism": "Recombine typed retrieval, solver and validation modules across niches only when units, shapes and assumptions align. Execute parents, single substitutions and combined children to measure interactions. Grounded executable mappings constrain Lenia-style variation.",
+    "hypothesis": "Compatibility-constrained recombination yields more accurate executable workflows per evaluation than unconstrained crossover; factorial tests reveal individually useful modules that become harmful together.",
+    "experiment": "Build spring-network tasks and typed modules containing unit and boundary-condition traps. Search training topologies, then execute selected workflows on unseen topology families.",
+    "baseline": "Compare mutation-only, unconstrained crossover and random assembly with equal attempted children, solver calls and validation budgets; charge compatibility screening to total cost.",
+    "metric": "Predeclare test solver accuracy, executable-child fraction and evaluations per improvement. Measure interactions with fixed two-substitution factorial contrasts; report failures and beneficial combinations.",
+    "falsifier": "Reject synergy if one substitution explains child improvements, or screening gives no advantage beyond syntax filtering at matched total evaluation costs.",
+    "confound": "Curated modules may encode answers. Hold out topology families and include type-correct invalid modules, separating interface correctness from scientific validity of assumptions.",
+    "feasibility": "A JSON executor and CPU NumPy solves test workflow assembly. Successful graph recombination would not establish physical material performance or general discovery capability.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "D-I2",
+    "title": "Evidence-coupled competition among experiment plans",
+    "target": "discovery",
+    "lever": "interaction",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3",
+        "use": "Transfer trajectory novelty to workflow search.",
+        "boundary": "Novelty is observer dependent."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2, 4.1–4.6",
+        "use": "Graph-path hypothesis construction.",
+        "boundary": "Graph paths do not validate properties."
+      }
+    ],
+    "mechanism": "Graph-derived plans share evidence. One measure changes every competing plan’s informativeness. Search update rules and archive accuracy-cost trajectories across hidden models, transferring ASAL trajectory search to workflows interacting through evidence rather than independent hypothesis ratings.",
+    "hypothesis": "Evidence-coupled updates avoid duplicated experiments and preserve alternative explanations longer than independent rankings, improving hidden-model identification within a fixed total measure budget.",
+    "experiment": "Simulate noisy measures from competing spring laws. Tune plan-update rules on training cases; evaluate frozen policies with new noise seeds and withheld parameters.",
+    "baseline": "Compare independent rankings, greedy info gain and random scheduling with same hypotheses, measure access and costs; use common random numbers for paired comparisons.",
+    "metric": "Measure test identification accuracy, duplicate-measure fraction and probability retained on the true model. Freeze metrics before search; archive diversity remains a secondary description.",
+    "falsifier": "Reject the mechanism if gains persist after shared-evidence randomization, or vanish when equivalent duplicate-removal bookkeeping is supplied to every control at matched cost.",
+    "confound": "Bookkeeping may explain improvements. Ablate sharing, reprioritization and retention separately; include misspecified laws so rapid premature consensus cannot masquerade as efficient discovery.",
+    "feasibility": "Explicit CPU simulators and cached graph cards supply all observations. No live agents or physical experiments are necessary for this proposed plan-interaction benchmark.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "D-M1",
+    "title": "A failure archive that redirects graph exploration",
+    "target": "discovery",
+    "lever": "memory",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3",
+        "use": "Transfer trajectory novelty to workflow search.",
+        "boundary": "Novelty is observer dependent."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2, 4.1–4.6",
+        "use": "Graph-path hypothesis construction.",
+        "boundary": "Graph paths do not validate properties."
+      }
+    ],
+    "mechanism": "Store failed paths with violated constraints and attempted repairs. Historical-neighbor novelty redirects exploration away from recurring failure mechanisms while validity checks remain fixed. This rewards different executable paths rather than paraphrases of rejected hypotheses.",
+    "hypothesis": "Negative-result memory reduces invalid repetition and discovers more distinct valid experiment plans per evaluation budget than retaining successful hypotheses alone.",
+    "experiment": "Construct graphs with hidden unit, incompatibility and unsupported-edge traps. Reveal failures only upon evaluation; test test instances sharing failure categories but different paths.",
+    "baseline": "Compare success-only memory, exact-path deduplication, random exploration and failure-count heuristics using same graphs, proposal seeds and constraint-query budgets; include memory maintenance costs.",
+    "metric": "Predeclare valid-plan count, repeated failures and test constraint coverage. Merge plans by executable consequence so superficial path permutations cannot inflate discovery diversity.",
+    "falsifier": "Reject added value if exact-path deduplication matches performance, or if improvements require hidden constraint labels leaking into unevaluated paths through archive features.",
+    "confound": "Failure categories may suppress productive exceptions. Include context-dependent constraints and track false rejection of valid plans alongside efficiency from avoiding previously observed mistakes.",
+    "feasibility": "Hundreds of nodes and a constraint oracle fit an offline CPU benchmark. Benefits establish exploration efficiency, without demonstrating real-material feasibility or open-ended discovery.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "D-M2",
+    "title": "Lineage-preserving reuse of experiment subroutines",
+    "target": "discovery",
+    "lever": "memory",
+    "sourceIds": [
+      "LENIA",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Measures",
+        "use": "Behavioral niches and local competition.",
+        "boundary": "No open-endedness guarantee."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results: retrieval and graphs",
+        "use": "Ground retrieval and executable mappings.",
+        "boundary": "Relations require assumption checks."
+      }
+    ],
+    "mechanism": "Archive validated subroutines with provenance, assumptions and observed behavior. Retrieve distinct parents, preserve lineage and revalidate interfaces. Lenia-style niches retain rare routines; graph-grounded retrieval supplies applicability checks for reuse.",
+    "hypothesis": "Diverse reusable libraries reduce solver calls on test tasks; lineage and assumption checks prevent inappropriate transfers between cases that share superficial descriptions.",
+    "experiment": "Create stiffness-estimation, boundary-checking and identifiability tasks. Populate memory on training topology families, then assemble validated workflows for withheld families within fixed execution budgets.",
+    "baseline": "Compare no memory, recency-only and quality-ranked memory with same capacity, retrieval counts and validation calls; supply same provenance fields to all memory controls.",
+    "metric": "Measure correctly solved test tasks per solver call, invalid reuse and retained routine families. Charge maintenance and revalidation against the same total budget.",
+    "falsifier": "Reject the advantage if matching library size and provenance removes benefits, or rare routine retention increases coverage without improving test accuracy or efficiency.",
+    "confound": "Shared implementation templates can trivialize reuse. Hold out generating templates and parameters; track whether retrieved routines import incorrect boundary conditions despite valid interfaces.",
+    "feasibility": "Typed routines, JSON provenance and CPU NumPy suffice. The suite evaluates workflow memory, without proving general autonomous discovery or validity of physical predictions.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "D-S1",
+    "title": "Local competition across experiment-cost niches",
+    "target": "discovery",
+    "lever": "selection",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Measures",
+        "use": "Behavioral niches and local competition.",
+        "boundary": "No open-endedness guarantee."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2, 4.1–4.6",
+        "use": "Graph-path hypothesis construction.",
+        "boundary": "Graph paths do not validate properties."
+      }
+    ],
+    "mechanism": "Retain graph-grounded plan elites separately by cost and mechanism-discrimination profile. Lenia-style local competition preserves inexpensive partial tests beside expensive comprehensive plans. A fixed deployment budget selects among alternatives that global ranking could discard.",
+    "hypothesis": "Cost-conditioned archives improve correct-model identification across test budgets because inexpensive useful plans survive despite having lower absolute info scores than expensive alternatives.",
+    "experiment": "Define noisy spring measures with explicit costs. Search training models, then evaluate archive retrieval on withheld models at prespecified small, medium and large budgets.",
+    "baseline": "Compare global top-k, Pareto retention and random archives with same capacities, candidates and simulator evaluations; apply same budget-selection rules and charge all overhead.",
+    "metric": "Predeclare identification accuracy at each test budget and area under its budget curve. Freeze bins and mechanism labels; infeasible selected plans count as failures.",
+    "falsifier": "Reject added benefit if Pareto retention matches every budget result at equivalent storage and scoring costs, or if gains require post-hoc budget bins.",
+    "confound": "Handpicked bins can favor local competition. Freeze training-only bins and test shifted costs, separating useful retention from advantages attributable merely to archive capacity.",
+    "feasibility": "Small-plan enumeration and toy simulations run offline on CPU. The test evaluates selection policy, without inferring that retained hypotheses describe physically realizable materials.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "D-S2",
+    "title": "Select research directions by novelty that survives re-description",
+    "target": "discovery",
+    "lever": "selection",
+    "sourceIds": [
+      "ASAL",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3",
+        "use": "Transfer trajectory novelty to workflow search.",
+        "boundary": "Novelty is observer dependent."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results: retrieval and graphs",
+        "use": "Ground retrieval and executable mappings.",
+        "boundary": "Relations require assumption checks."
+      }
+    ],
+    "mechanism": "Retain directions with distinct predicted test consequences after graph relabeling and paraphrasing. Combine ASAL novelty with consequence-equivalence checks for grounded plans, selecting falsifiable differences rather than descriptive novelty; preserve uncertain equivalences separately.",
+    "hypothesis": "Consequence-constrained novelty retains more informative experiments and fewer paraphrase duplicates than single-encoding novelty, while preserving supported-plan quality on unseen questions.",
+    "experiment": "Author forty directions with known consequences and paraphrases. Tune training thresholds; select equal-sized archives on withheld consequences and separately generated transformations.",
+    "baseline": "Compare lexical novelty, graph-edit novelty, random selection and consequence deduplication using the same candidates and capacity; charge every encoding and equivalence query.",
+    "metric": "Measure distinct correct consequences, duplicates and supported-plan validity against frozen labels. Report novelty separately; audit equivalence accuracy on test cases.",
+    "falsifier": "Reject added value if consequence deduplication matches performance, or invariance filtering merges substantively different plans because relevant contexts escape the encoding.",
+    "confound": "Context makes similar measures different. Include units, boundary conditions and intervention targets in oracle labels; preserve uncertainty rather than forcing consequentially different plans into one niche.",
+    "feasibility": "An offline CPU graph benchmark uses authored labels and fixed synthetic paraphrases. Optional cached model transformations must precede train-test splitting.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "O-R1",
+    "title": "Describe deforming motifs by their responses, not their silhouettes",
+    "target": "organism",
+    "lever": "representation",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Section 3.3",
+        "use": "Borrow simulation illumination through behavioral representations.",
+        "boundary": "Representation diversity does not establish physical function."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1, 4.2",
+        "use": "Borrow graph paths as explicit mechanism suggestions.",
+        "boundary": "Semantic edges do not supply mechanical constants."
+      }
+    ],
+    "mechanism": "Propose positive-stiffness spring motifs. A connectivity-to-deformation graph path selects displacement under two loads as a descriptor. Geometric neighbors become springs, with forces derived from quadratic energy. Archives compare measured responses instead of silhouettes; graph edges never supply mechanical constants.",
+    "hypothesis": "Response descriptors may distinguish visually similar motifs with different load transfer, while visual descriptors may separate silhouettes that implement nearly identical responses.",
+    "experiment": "On CPU, sample 100 twelve-node motifs and solve fixed-boundary linear equilibria. Build equal-size response and silhouette archives from the identical pool; evaluate withheld load directions.",
+    "baseline": "Match motif pools, archive sizes and equilibrium solves for response, silhouette and random archives.",
+    "metric": "Report pairwise distances between held-out displacement responses and reconstruction of response classes, alongside occupied bins under a fixed independent evaluator.",
+    "falsifier": "Reject the proposed advantage if held-out response separation is no better than random across repeated pools, or follows only node count or stiffness totals.",
+    "confound": "Unconstrained rigid modes and overall stiffness can dominate distances; fix boundaries, normalize material budget and report dimensional versus normalized responses.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "O-R2",
+    "title": "Compile relation graphs into a bounded Lenia kernel grammar",
+    "target": "organism",
+    "lever": "representation",
+    "sourceIds": [
+      "LENIA",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Statistical Measures; Experiments",
+        "use": "Borrow niche archives of continuous cellular patterns.",
+        "boundary": "This toy does not demonstrate open-ended evolution."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Section 2.2: ontological knowledge graphs",
+        "use": "Borrow interpretable relational representations for candidate construction.",
+        "boundary": "Conceptual relations do not determine kernel physics."
+      }
+    ],
+    "mechanism": "Propose a graph grammar for continuous cellular automata. Nodes denote channels; edges compile to normalized radial kernels and bounded growth coefficients. An inhibition relation proposes an edge type, with mathematics independently defined. Compare graph mutations against flat coefficient mutations.",
+    "hypothesis": "If reusable motifs provide useful search structure, grammar mutations may retain viable patterns more often than matched flat mutations after a new channel coupling is introduced.",
+    "experiment": "Run 60 paired mutations on a 32-by-32 grid for 150 steps, matching starting patterns and parameter ranges; evaluate a withheld seed.",
+    "baseline": "Match coefficient counts, mutation norms, rollouts and archive capacities; add a label-shuffled grammar.",
+    "metric": "Measure surviving localized patterns after mutation and held-out-seed persistence; report descriptor coverage using one frozen evaluator for every encoding.",
+    "falsifier": "Reject a grammar benefit if matched flat encoding performs equally or better, or any apparent gain disappears after matching the distribution of coefficient changes.",
+    "confound": "Grammar search may silently restrict candidates to safer regions. Log the induced parameter distribution and compare conditioned subsets before attributing a compositional advantage.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "O-I1",
+    "title": "Test when nonreciprocal particle couplings produce functional pursuit",
+    "target": "organism",
+    "lever": "interaction",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Section 4: Substrates, Particle Life",
+        "use": "Borrow typed-particle interaction matrices as a searchable substrate.",
+        "boundary": "Attraction patterns alone do not establish agency."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1, 4.3",
+        "use": "Borrow paths to propose testable directional relationships.",
+        "boundary": "A graph arrow is not evidence for a force law."
+      }
+    ],
+    "mechanism": "Propose a two-species overdamped particle toy where a graph path suggests asymmetric sensing. Specify bounded radial interactions a12 and a21; drag removes momentum conservation. Search reciprocal and nonreciprocal families for localized pursuit tracking a displaced resource, rather than task-free circling.",
+    "hypothesis": "Under specified drag and resource attraction, asymmetric coefficients may support sustained pursuit with better tracking than reciprocal couplings of the same interaction strength.",
+    "experiment": "Simulate 24 particles for 400 steps over 40 coefficient pairs and ten seeds; displace a resource halfway through and measure tracking after the intervention.",
+    "baseline": "Match force bounds, drag, seeds and rollouts for reciprocal, asymmetric and species-shuffled controls.",
+    "metric": "Use post-displacement resource distance, cluster persistence and speed; include total force magnitude to expose gains purchased by stronger actuation.",
+    "falsifier": "Reject the pursuit claim if tracking gains vanish under matched force magnitude or occur equally when the resource displacement signal is removed.",
+    "confound": "Circular motion can masquerade as tracking, and boundary wrapping can reduce apparent distances; use unwrapped trajectories and counterfactual resource positions.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "O-I2",
+    "title": "Couple elastic deformation to a local reaction pattern",
+    "target": "organism",
+    "lever": "interaction",
+    "sourceIds": [
+      "LENIA",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Statistical Measures",
+        "use": "Borrow persistence and locomotion measures for local patterns.",
+        "boundary": "A reaction toy is not a Lenia replication."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Sections 2.2–2.3",
+        "use": "Borrow explicit graph interpretation linked to executable modeling.",
+        "boundary": "Retrieved analogies do not establish constitutive equations."
+      }
+    ],
+    "mechanism": "Propose an elastic ring carrying an activator-inhibitor field. A strain-to-activation-to-rest-length cycle compiles to explicit equations: strain adds bounded activation, activation changes rest lengths, and positions follow elastic gradients. Declare external chemical drive; graph relations supply dependencies, never unvalidated material constants.",
+    "hypothesis": "Within a stable parameter region, two-way coupling may preserve a traveling excitation after a localized mechanical disturbance more often than one-way coupling.",
+    "experiment": "Sweep 30 coupling settings, ten seeds and 500 steps; indent one ring node at a fixed time and track pulse propagation and recovery with timestep-halving checks.",
+    "baseline": "Match initial fields, elastic budgets and integration calls across two-way, one-way and zero coupling.",
+    "metric": "Measure pulse lap completion, recovery time and bounded deformation; report chemical drive and elastic dissipation separately rather than inferring efficiency.",
+    "falsifier": "Reject the coupling advantage if it disappears under timestep refinement or if comparable persistence requires no strain feedback.",
+    "confound": "Numerical instability and imposed reaction oscillations can mimic self-organization; test isolated field dynamics, boundedness and dependence on initial phase.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "O-M1",
+    "title": "Give a spring motif a local record of previous loading",
+    "target": "organism",
+    "lever": "memory",
+    "sourceIds": [
+      "ASAL",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.1–3.3",
+        "use": "Borrow trajectory-conditioned searches for dynamical motifs.",
+        "boundary": "Distinct trajectories do not establish useful memory."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Section 2.3.3",
+        "use": "Borrow executable constitutive fitting and validation loops.",
+        "boundary": "The proposed law is not an experimentally fitted material."
+      }
+    ],
+    "mechanism": "Propose spring motifs with slow rest-length variables relaxing toward extension. A loading-history-response path maps to an explicit internal-variable energy with positive relaxation and damping. Search relaxation times for history discrimination while matching geometry and current force; graph analogy establishes no constitutive validity.",
+    "hypothesis": "A slow internal variable may preserve information about pulse order after fast displacement relaxes, permitting better discrimination than a memoryless spring motif.",
+    "experiment": "Apply AB and BA load pulses with equal total impulse; after a fixed delay, apply the same probe and classify histories using displacement in 100 noisy repeats.",
+    "baseline": "Use frozen-memory and randomized-history controls; match geometry, stiffness, pulse energy and classifier data.",
+    "metric": "Report held-out history classification, decay with delay and dissipated work; test whether separation survives conditioning on the visible pre-probe geometry.",
+    "falsifier": "Reject hidden-memory behavior if classification falls to chance after geometry matching, or if initial-state leakage predicts history equally well.",
+    "confound": "Residual displacement, unequal work and classifier overfitting can mimic memory; split by noisy realization and audit the full mechanical state before probing.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "O-M2",
+    "title": "Separate refractory-state memory from visible cellular shape",
+    "target": "organism",
+    "lever": "memory",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Statistical Measures",
+        "use": "Borrow phenotype trajectories and localized-pattern evaluation.",
+        "boundary": "A latent descriptor does not identify causal memory."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1, 4.3",
+        "use": "Borrow a graph path to formulate a mechanistic hypothesis.",
+        "boundary": "The graph supplies an experimental suggestion, not proof."
+      }
+    ],
+    "mechanism": "Propose a cellular pattern with refractory channel h integrating activation and inhibiting growth. The activation-to-refractoriness-to-response path maps to h-next=(1-alpha)h+alpha*x plus inhibited growth. Swap or reset h while keeping visible x identical to causally test state-dependent responses rather than infer memory from descriptors.",
+    "hypothesis": "If refractory state stores operational history, identical visible patterns should respond differently to an identical probe after h swapping, with differences decaying at the specified relaxation timescale.",
+    "experiment": "Use 32-by-32 grids, paired activation pulses and ten seeds; copy visible state across matched histories, then swap hidden channels before applying a fixed probe.",
+    "baseline": "Use reset-memory, shuffled-memory and memoryless controls; match grids, rollouts, patterns and probes.",
+    "metric": "Measure probe-induced mass change and recovery latency as functions of pulse interval; estimate the causal effect of hidden-channel replacement on matched visible states.",
+    "falsifier": "Reject a refractory-memory explanation if hidden-state swaps do not alter response, or differences persist unchanged after resetting h.",
+    "confound": "A hidden channel can simply change effective excitability. Compare spatially shuffled and constant-mean h to distinguish local history structure from a scalar gain change.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "O-S1",
+    "title": "Select locally persistent patterns for recovery across lesion types",
+    "target": "organism",
+    "lever": "selection",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Background: MAP-Elites; Experiments",
+        "use": "Borrow local competition in a behavioral archive.",
+        "boundary": "Archive occupancy does not prove biological adaptability."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1, 4.3",
+        "use": "Borrow structure-function paths to propose intervention families.",
+        "boundary": "Materials analogies do not certify cellular regeneration."
+      }
+    ],
+    "mechanism": "Propose selecting cellular patterns in mass-speed niches, replacing persistence fitness with lesion recovery. A redundancy-to-connectivity-to-damage-tolerance path proposes central and peripheral erasure. These operators act on cellular state; graph terminology changes no growth equations and asserts no tissue equivalence.",
+    "hypothesis": "At equal rollout budget, lesion-conditioned selection may improve recovery to withheld lesion locations compared with selection for undisturbed persistence alone.",
+    "experiment": "Mutate 80 candidates around a known viable seed on a 32-by-32 grid. Alternate two training lesion classes; evaluate retained patterns on held-out wedge lesions and seeds.",
+    "baseline": "Match mutations, niches and simulation steps; give persistence-only selection extra repeated evaluations.",
+    "metric": "Measure post-lesion survival, normalized mass recovery and connected-pattern retention; report undisturbed persistence and occupied niches to expose robustness-diversity tradeoffs.",
+    "falsifier": "Reject transferable recovery if gains occur only for trained lesion masks, reflect simply larger initial mass, or disappear on held-out initial conditions.",
+    "confound": "Mass and empty-space placement can mechanically reduce lesion severity; match fractional mass removed and analyze size-stratified outcomes.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  },
+  {
+    "id": "O-S2",
+    "title": "Select visual novelty against intervention-tested function",
+    "target": "organism",
+    "lever": "selection",
+    "sourceIds": [
+      "ASAL",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3, 4.5",
+        "use": "Borrow historical novelty and representation-based illumination.",
+        "boundary": "A novelty proxy does not establish functional innovation."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Sections 2.2–2.3",
+        "use": "Borrow interpretable hypotheses checked by executable modeling.",
+        "boundary": "Graph assertions require an independently specified test."
+      }
+    ],
+    "mechanism": "Propose excitable cellular motifs where graph paths name functions compiled into perturbation assays. Compare visual novelty selection against response novelty conditional on viability. A control renderer adds color cycles without changing state; functional responses are measured on unrendered dynamics, not semantic descriptions.",
+    "hypothesis": "Function-conditioned selection may resist color-cycle novelty traps better than visual selection while retaining patterns with distinct responses to local deletion and timed excitation.",
+    "experiment": "Evaluate 80 shared candidate rules on 24-by-24 grids with three renderers; build equal-capacity archives and evaluate unselected perturbation times and deletion locations.",
+    "baseline": "Match pools, rollouts, assays and archive sizes for visual, response and random selection; count descriptor costs.",
+    "metric": "Report renderer sensitivity of archive membership, held-out response diversity and viable fraction; compute function descriptors using fixed lesion and excitation definitions.",
+    "falsifier": "Reject the selection advantage if response-selected archives lack more held-out functional diversity than random or are equally altered by renderer-only changes.",
+    "confound": "Handcrafted assays privilege chosen functions and may miss meaningful visual dynamics; preserve disagreements rather than declaring visual novelty scientifically worthless.",
+    "feasibility": "One-day dimensionless CPU toy using NumPy; physical validation, biological agency and open-ended evolution remain unestablished.",
+    "round": 0,
+    "parentIds": [],
+    "changes": ""
+  }
+]

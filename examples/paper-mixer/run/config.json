@@ -1,0 +1,90 @@
+{
+  "question": "Which testable research directions emerge by mixing artificial-life discovery mechanisms with graph-based materials reasoning?",
+  "targets": [
+    "organism",
+    "collective",
+    "discovery"
+  ],
+  "levers": [
+    "representation",
+    "interaction",
+    "memory",
+    "selection"
+  ],
+  "rubric": [
+    "grounding",
+    "mechanism",
+    "falsifiability",
+    "feasibility"
+  ],
+  "scoreRange": [
+    0,
+    4
+  ],
+  "archiveRule": "One eligible candidate with highest mean AI-rated rubric score per target × lever cell; ties retain earlier candidate. No novelty score is added to quality.",
+  "eligibility": "At least two distinct known source papers, including one ALife and one Buehler paper; each source use has a locator and explicit transfer boundary; both critics accept niche fit, have no fatal flag, and score grounding >=2. All generated mechanisms remain untested proposals.",
+  "selection": "Two model-generated initial proposals deliberately seeded per cell; one feedback-guided child of each initial elite. This is a small QDAIF-inspired demonstration, not the original QDAIF implementation or an unbiased search-space coverage benchmark.",
+  "limitations": [
+    "Generators, critics and revisers inherit one model family; they are separate contexts, not independent model families.",
+    "AI scores express proposal quality under this rubric, not probability of scientific success, novelty certification or empirical validation.",
+    "No proposed biological, physical or materials experiment has been executed.",
+    "Niches and source cards are human/coordinator designed; targeted initialization makes coverage easier.",
+    "Token usage was not measured and no equal-budget superiority claim is made."
+  ],
+  "papers": [
+    {
+      "id": "ASAL",
+      "title": "Automating the Search for Artificial Life with Foundation Models",
+      "family": "alife",
+      "url": "https://arxiv.org/html/2412.17799v1",
+      "locator": "Sections 3.1–3.3, 4.2–4.5, Appendix B",
+      "mechanism": "Search rendered simulation trajectories using learned visual representations for targets, historical novelty or archive diversity.",
+      "boundary": "Visual and finite-horizon novelty do not establish indefinite innovation or cognition."
+    },
+    {
+      "id": "LENIA",
+      "title": "Toward Artificial Open-Ended Evolution within Lenia using Quality-Diversity",
+      "family": "alife",
+      "url": "https://arxiv.org/html/2406.04235v1",
+      "locator": "Background/AURORA; Methods/Unsupervised Statistical Measures; Experiments",
+      "mechanism": "Maintain many locally competitive niches; adapt learned descriptors while externally evolving Lenia seeds and rule parameters.",
+      "boundary": "Adaptive descriptors change the ruler; the paper does not claim theoretical open-endedness."
+    },
+    {
+      "id": "TEXTLIFE",
+      "title": "From Text to Life: On the Reciprocal Relationship between Artificial Life and Large Language Models",
+      "family": "alife",
+      "url": "https://arxiv.org/html/2407.09502v1",
+      "locator": "LLMs as Tools for ALife; ALife for LLMs/Emergence; Collective Intelligence",
+      "mechanism": "A review connects model-guided variation, environmental generation and multiagent organization.",
+      "boundary": "A conceptual bridge does not experimentally establish living or emergently intelligent LLMs."
+    },
+    {
+      "id": "SCIAGENTS",
+      "title": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "family": "buehler",
+      "url": "https://arxiv.org/html/2409.05556v1",
+      "locator": "Sections 2.1–2.2, 4.1–4.6",
+      "mechanism": "Sample paths in an ontological graph and use specialized agents to generate, expand and critique materials hypotheses.",
+      "boundary": "Graph relations and model-proposed property improvements require independent physical validation."
+    },
+    {
+      "id": "MECHGPT",
+      "title": "Generative retrieval-augmented ontologic graph and multi-agent strategies for interpretive large language model-based materials design",
+      "family": "buehler",
+      "url": "https://arxiv.org/pdf/2310.19998",
+      "locator": "Results and Discussion: retrieval, ontological graphs and agent-based simulation; Materials and Methods",
+      "mechanism": "Ground materials reasoning in retrieved context and interpretable relation graphs; connect agent reasoning to simulation workflows.",
+      "boundary": "Retrieved relations are not automatically causal laws; analogies need units, mappings and executable checks."
+    },
+    {
+      "id": "QDAIF",
+      "title": "Quality-Diversity through AI Feedback",
+      "family": "method",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/5b9bef4eae0f574cedbf9f4bf29d8ae7-Paper-Conference.pdf",
+      "locator": "Method and experiments (ICLR 2024)",
+      "mechanism": "Use language models to generate variation and evaluate quality and diversity inside an evolutionary archive.",
+      "boundary": "Creative-text evidence does not establish the scientific validity of research proposals."
+    }
+  ]
+}

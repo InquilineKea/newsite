@@ -1,0 +1,150 @@
+[
+  {
+    "id": "D-R2-v2",
+    "title": "Identifiability-audited descriptors for experiment-plan search",
+    "target": "discovery",
+    "lever": "representation",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3",
+        "use": "Transfer trajectory novelty to workflow search.",
+        "boundary": "Novelty is observer dependent."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2, 4.1–4.6",
+        "use": "Graph-path hypothesis construction.",
+        "boundary": "Graph paths do not validate properties."
+      }
+    ],
+    "mechanism": "Transfer ASAL illumination to graph-proposed plans. Descriptor component d_mn(P)=sum over selected loads of (mu_m-mu_n)^2/(2 sigma^2), the equal-variance Gaussian discrimination distance. Predictions use public training-fitted candidate models, never hidden test labels or unacquired observations. Archive by these three pair distances; freeze scales and bins before testing.",
+    "hypothesis": "Discrimination niches may preserve complementary plans and reduce redundant measurements versus lexical novelty. Incremental value beyond expected-information selection remains an open empirical question, not an assumed advantage.",
+    "experiment": "Normalized spring laws: F=kx; F=kx+ax^3; F=kx+a max(0,x-x0), positive parameters. Loads {0.1,0.3,0.6,1.0}; displacement noise N(0,0.01^2). Solve parallel-spring networks by bisection. Training calibration freezes priors and rejection thresholds. Reserve topology generators and parameter ranges; test fourth law F=kx+a tanh(x/b), b>0. Build twenty independent archives with paired problem/noise seeds across methods.",
+    "baseline": "Random, lexical-novelty and expected-information archives receive identical initial pools, admissible plans and capacity. Charge every forward solve for descriptors, training and scoring, plus acquired observations. Match total forward-solve and measurement budgets; report runtime separately.",
+    "metric": "Before search audit identifiability: merge laws whose noiseless responses remain within five sigma at every admissible load. Score equivalence classes. Report held-out accuracy, redundancy, Brier score, unknown rejection/detection and selective risk. Freeze abstention loss at 0.25, incorrect loss 1 and correct loss 0.",
+    "falsifier": "No support if niches fail to improve preregistered accuracy or redundancy across independent builds. Failure against expected information limits added value. Fourth-law detection is scored only where oracle distinguishability holds; otherwise report non-identifiability.",
+    "confound": "Parameters can hide nonlinearities or leave thresholds unexcited. Freeze equivalence rules and report such cases. Unknown rejection uses known-law training calibration residuals at the 95th percentile, excluding the fourth law. Test-law fits are evaluation-only, inaccessible to search.",
+    "feasibility": "Scalar bisection and NumPy likelihoods run offline on CPU. Publish laws, splits, counters and seeds before execution. Neither this proposed benchmark nor a physical experiment has run.",
+    "round": 1,
+    "parentIds": [
+      "D-R2"
+    ],
+    "changes": "Defined laws, loads, noise, Gaussian descriptor, equivalence classes and unknown calibration; isolated test labels; added independent archive builds and charged descriptor forward solves."
+  },
+  {
+    "id": "D-I1-v2",
+    "title": "Budget-accounted factorial tests of workflow recombination",
+    "target": "discovery",
+    "lever": "interaction",
+    "sourceIds": [
+      "LENIA",
+      "MECHGPT"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Measures",
+        "use": "Behavioral niches and local competition.",
+        "boundary": "No open-endedness guarantee."
+      },
+      {
+        "paperId": "MECHGPT",
+        "locator": "Results: retrieval and graphs",
+        "use": "Ground retrieval and executable mappings.",
+        "boundary": "Relations require assumption checks."
+      }
+    ],
+    "mechanism": "Transfer Lenia niche retention to typed workflows with MechGPT-style executable mappings. Modules declare units, shapes, boundary assumptions and pure JSON-to-array interfaces. Recombine two slots: A assembles units/boundaries; B configures the solver. Execute parent 00, substitutions 10 and 01, and combined child 11 on identical problems.",
+    "hypothesis": "Assumption-aware compatibility may improve valid workflows per computational cost. Recombination needs to exceed mutation and type filtering; source papers do not establish workflow-crossover synergy.",
+    "experiment": "Publish fixed modules and spring generators before search: SI conversion, boundary assembly, linearization and nonlinear bisection. Some modules pass types but violate assumptions. Reserve topology generators and entire assumption-error families. Run twenty independent searches; estimate factorial contrasts within matched withheld problems and noise seeds.",
+    "baseline": "Primary budget is 10000 accounting units: type checks 1, assumption checks 2, solver calls 20, archive operations 1. Charge rejected children; freeze weights after training-only timing calibration, reporting wall time and raw counts. Compare no screening, type-only, assumption-aware, mutation-only and random assembly. Auxiliary designs separately fix attempted children or solver calls; neither claims both matched.",
+    "metric": "L=displacement RMSE/fixed training displacement scale, clipped at 2; invalid workflows receive L=2. Interaction I=L11-L10-L01+L00 is negative for beneficial nonadditivity. Report all four losses, executable fraction, accuracy per cost and independent-build intervals; bootstrap builds rather than repeated evaluations.",
+    "falsifier": "Reject added value if assumption checks do not exceed type-only controls at primary cost, or one substitution explains all improvement without negative interaction. Contrasts depend on loss scale, not universal scientific synergy.",
+    "confound": "Curated traps may favor the checker. Withhold error families, include valid unusual modules and report false rejection. Public interface metadata must not expose hidden correctness labels; only specifications and training observations guide checks.",
+    "feasibility": "A CPU JSON executor and NumPy solvers suffice. Accounting weights are operational rather than universal compute equivalence; vary them in sensitivity analyses. This remains unexecuted and physically unvalidated.",
+    "round": 1,
+    "parentIds": [
+      "D-I1"
+    ],
+    "changes": "Specified interfaces and substitution slots; defined bounded loss and factorial sign; replaced impossible dual budget matching with primary cost and separate auxiliary designs; added type-only controls and independent builds."
+  },
+  {
+    "id": "D-M1-v2",
+    "title": "Exception-aware failure memory without hidden-label access",
+    "target": "discovery",
+    "lever": "memory",
+    "sourceIds": [
+      "ASAL",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "ASAL",
+        "locator": "Sections 3.2–3.3",
+        "use": "Transfer trajectory novelty to workflow search.",
+        "boundary": "Novelty is observer dependent."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2, 4.1–4.6",
+        "use": "Graph-path hypothesis construction.",
+        "boundary": "Graph paths do not validate properties."
+      }
+    ],
+    "mechanism": "Transfer ASAL historical-neighbor novelty to graph-path exploration. Evaluated failures store public path features, returned categories and context. Candidate novelty is minimum weighted Jaccard distance from stored public feature sets; candidate failure labels are unavailable. Rank by novelty times an online validity estimate trained only on observed outcomes. Selected plans always face unchanged oracle checks.",
+    "hypothesis": "Failure-context memory may reduce invalid repetition beyond exact deduplication and failure counts without suppressing valid exceptions. Novelty and evidence validity remain separately measured.",
+    "experiment": "Publish graph generator, deterministic oracle, signature vocabulary and equal feature weights before testing. Oracle labels appear only after charged queries. Include unit mismatch, unsupported edges and context-conditional incompatibility with rule-reversing exceptions. Mark 10% of training feedback uncertain, represented as unknown rather than hard failures. Reserve graphs and context-rule combinations; run thirty independent paired graph/search builds.",
+    "baseline": "Compare success-only memory, exact executable-consequence deduplication, failure-count heuristics and online constraint learning using identical public features and observed labels. Match candidate generators and total cost: proposal, repair or archive query 1; oracle query 20. Count classifier updates and archive scans, reporting raw counts and wall time.",
+    "metric": "Predeclare distinct valid consequences per cost, repeated failures, false rejection of exception plans and validity calibration. Evaluation-only exhaustive enumeration supplies equivalence labels; search cannot access those labels or unevaluated oracle outcomes. Resample independent graph builds for intervals.",
+    "falsifier": "No added support if deduplication or constraint learning matches valid-plan yield, or novelty suppresses context reversals. Requiring hidden failure labels in candidate features invalidates the run rather than supporting memory.",
+    "confound": "Handwritten signatures may encode intended generalization. Freeze features, oracle and reversals before holdouts; include unseen combinations and report uncertain labels separately. Public features may proxy rules, requiring feature-ablation controls.",
+    "feasibility": "Hundreds of nodes and explicit constraints fit an offline CPU benchmark. Release code and split hashes before execution. This tests negative-result memory, not demonstrated materials discovery; no outcomes are asserted.",
+    "round": 1,
+    "parentIds": [
+      "D-M1"
+    ],
+    "changes": "Defined observable-only failure distance, ranking and uncertain feedback; prohibited label and equivalence-oracle leakage; added reversals, constraint-learning control, full costs and independent graph replicates."
+  },
+  {
+    "id": "D-S1-v2",
+    "title": "Fair cost-niche selection against budget-aware Pareto archives",
+    "target": "discovery",
+    "lever": "selection",
+    "sourceIds": [
+      "LENIA",
+      "SCIAGENTS"
+    ],
+    "sources": [
+      {
+        "paperId": "LENIA",
+        "locator": "Methods: Unsupervised Measures",
+        "use": "Behavioral niches and local competition.",
+        "boundary": "No open-endedness guarantee."
+      },
+      {
+        "paperId": "SCIAGENTS",
+        "locator": "Sections 2.1–2.2, 4.1–4.6",
+        "use": "Graph-path hypothesis construction.",
+        "boundary": "Graph paths do not validate properties."
+      }
+    ],
+    "mechanism": "Transfer Lenia local competition to graph-grounded plans. Freeze cost bins [1,2], [3,5], [6,10] and discrimination bins from training quartiles of d_mn=sum_P (mu_m-mu_n)^2/(2 sigma^2). Retain highest training identification accuracy per cell, capacity twelve. Every archive retrieves the feasible retained plan with highest training accuracy, ties by lower cost then immutable ID.",
+    "hypothesis": "Cost niches may improve budget-conditioned accuracy over global top-k. Incremental benefit over same-capacity Pareto retention is separate; equal Pareto performance does not invalidate meaningful cost-conditioned coverage.",
+    "experiment": "Use F=kx, F=kx+ax^3 and F=kx+a max(0,x-x0), positive parameters; displacement noise N(0,0.01^2); finite load plans from {0.1,0.3,0.6,1}. Cost sums public measurement costs; training accuracy and discrimination determine retention. Reserve topology generators, parameters and noise. Build thirty independent paired archives with the same pools and seeds. Test budgets {2,5,10} and a frozen shifted schedule doubling one measurement type’s cost.",
+    "baseline": "Niche, top-k, Pareto and random archives each hold twelve plans and receive identical evaluated candidates, costs, feasible options and budget information. All use the same retrieval rule. Truncate oversized Pareto fronts by training-only crowding distance with deterministic ties. Charge enumeration, simulation, updates and storage; report search costs separately from deployment measurements.",
+    "metric": "Report each budget’s accuracy and trapezoidal accuracy-budget area, with paired intervals across independent builds. Infeasible or empty choices score zero; report frequency. Separate contrasts versus top-k and Pareto, retaining negative results. Coverage is descriptive, not a success metric.",
+    "falsifier": "No operational top-k superiority if the paired accuracy-area interval fails to exceed the prespecified meaningful gain of 0.02. Apply the same criterion separately to Pareto. Neither failure disproves the broader archive concept.",
+    "confound": "Bins, costs and retrieval may privilege niches. Freeze all on training data and reveal identical budget information. Under shifted costs, recompute feasibility using the same frozen retrieval. Never inspect test accuracy for ties, truncation or plan selection.",
+    "feasibility": "Scalar spring simulations and enumeration run offline on CPU. Training cost, storage and test measurements stay separate because they lack a natural common unit. All plans and performance comparisons remain untested.",
+    "round": 1,
+    "parentIds": [
+      "D-S1"
+    ],
+    "changes": "Fixed bins, capacity, descriptors and common budget-aware retrieval; matched candidate information and Pareto truncation; separated top-k/Pareto claims; added independent builds, shifted costs and overhead accounting."
+  }
+]

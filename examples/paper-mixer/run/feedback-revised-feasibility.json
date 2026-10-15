@@ -1,0 +1,170 @@
+[
+  {
+    "candidateId": "O-R1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The geometry, rank rejection, fixed normalization and twenty independent pools now make this a directly executable descriptor comparison. The attempt cap may produce undersized pools, and the four-class outcome could collapse to one class under these load and boundary choices.",
+    "revision": "Prespecify treatment of pools with fewer than one hundred accepted motifs; never silently refill differently across methods. Check class occupancy using calibration-only motifs and report continuous held-out distances even when class coverage degenerates."
+  },
+  {
+    "candidateId": "O-I1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The force law, sensing-frozen control and search-level uncertainty substantially improve identifiability of the proposed effect. Reciprocal coefficients at fixed off-diagonal norm have only two distinct possibilities, so twenty-four evaluations may mostly repeat candidates while asymmetry receives genuine exploration.",
+    "revision": "Enumerate the reciprocal family exactly and report its two-point support. Separate simulator-cost parity from distinct-proposal counts; add an equal-dimensional reciprocal control by varying another declared interaction parameter without changing force or sensing budgets."
+  },
+  {
+    "candidateId": "O-M2-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "This is now an executable programmed-memory intervention with clear paired controls and an honest distinction between artificial swaps and reachable histories. Extinction and clipping may eliminate useful probe responses; recording them prevents success-biased filtering but cannot rescue an uninformative dynamical regime.",
+    "revision": "Freeze zero-distance unit conventions, FFT convolution and state-matching procedures. Report all twenty initializations and reachable-match rates; if responses vanish, conclude the specified regime is uninformative rather than tuning on held-out pulse intervals."
+  },
+  {
+    "candidateId": "O-S2-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The frozen sampler, renderers, viability screen and held-out intervention families make the comparison materially stronger. Fixed-coordinate training lesions may hit empty space for many localized seeds, creating zero response vectors; differing viable counts can also destabilize pairwise-diversity estimates.",
+    "revision": "Prespecify zero-occupancy assays and archives with fewer than two viable survivors. Report overlap mass for every intervention and coverage alongside conditional pairwise diversity, without moving lesions after inspecting held-out outcomes."
+  },
+  {
+    "candidateId": "C-R1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The factorial design now separates typing from provenance and uncertainty, while equal bits and inaccessible oracle parameters address major fairness concerns. The exact relation-compatibility semantics and aggregation equations remain unspecified, so implementation choices could still determine whether typing has any independent content.",
+    "revision": "Publish relation truth tables, bit allocations, uncertainty quantization and all eight aggregators before sampling test worlds. Fix episode counts and a shared initial-information rule, keeping the Bayesian oracle strictly outside policy tuning and archive selection."
+  },
+  {
+    "candidateId": "C-I1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The explicit deadlines, sample ledger and held-out failure families make the protocol comparison credible. The rule selecting the most recently disagreeing pair needs deterministic tie handling, and it is unclear whether updated votes replace previous samples or combine all observations.",
+    "revision": "Define pair selection, cyclic ordering and vote updates exactly; resolve disagreement ties by immutable sensor IDs. Publish the failure generators and independent episode count, then compare complete error-abstention-delay curves rather than selecting one favorable threshold afterward."
+  },
+  {
+    "candidateId": "C-M2-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 3,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Fallible claim-specific corrections, flat observation-ID memory and equal-byte controls now isolate ancestry storage more convincingly. Likelihood weighting still requires explicit dependence assumptions; correlated distinct-source claims can remain overcounted even with perfect relay deduplication and calibrated correction reliability.",
+    "revision": "Release the likelihood equations, graph encoding and retention policy with fixed byte costs. Distinguish error from incorrect correlation assumptions from error due to corrupted ancestry, and report performance separately across held-out common-cause and correction-shift regimes."
+  },
+  {
+    "candidateId": "C-S1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 3,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Equal-cost role replacement and dummy-location controls directly address the previous deletion confound. Execution is still less specified than the small packet benchmarks: role transition rules, map sizes, search-run count and how receiver energy is charged remain open implementation decisions.",
+    "revision": "Publish complete finite-state transitions, map generator, action scheduling and sender/receiver energy ledger. Fix independent search count and evaluation allocation; report replacement and dummy-message effects per frozen team across shared held-out maps."
+  },
+  {
+    "candidateId": "D-R2-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Explicit laws, noise, counterfactual descriptors and unknown-law calibration make the benchmark testable. Approximate response closeness is not transitive, so calling merged models equivalence classes requires a clustering rule. Parallel-spring topologies may also be observationally identical beyond their summed parameters.",
+    "revision": "Freeze a transitive clustering procedure or score pairwise distinguishability without classes. Audit effective network diversity and parameter identifiability using training-only generators, then report held-out topology cases that reduce to the same aggregate force-displacement law."
+  },
+  {
+    "candidateId": "D-I1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 4,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "The four-loss factorial contrast and separation of primary accounting from auxiliary budgets now identify the intended comparison. The numerical weights are declared, but describing them as both fixed constants and timing-calibrated quantities leaves an avoidable ambiguity about the actual stopping rule.",
+    "revision": "Choose either the stated fixed accounting weights or a preregistered calibration algorithm before testing. Publish executable module contracts, count all rejected children, and report raw operations, runtime and sensitivity to alternative weights alongside the primary result."
+  },
+  {
+    "candidateId": "D-M1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 4
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Observable-only features, exception reversals and online-constraint controls substantially reduce leakage and trivial-blacklisting explanations. The experiment is small enough to execute, but the primary cost expression does not assign explicit weights to classifier updates and archive scans despite promising full accounting.",
+    "revision": "Freeze weights for updates and scanned entries, including empty-history novelty and cold-start validity priors. Keep uncertain feedback distinguishable from confirmed invalidity, and report ablations against constraint learning on the identical exposed feature and label stream."
+  },
+  {
+    "candidateId": "D-S1-v2",
+    "critic": "feasibility",
+    "scores": {
+      "grounding": 3,
+      "mechanism": 3,
+      "falsifiability": 4,
+      "feasibility": 3
+    },
+    "nicheFit": true,
+    "fatal": false,
+    "feedback": "Common retrieval, independent builds and separate top-k/Pareto claims now support a fair operational comparison. The shifted cost schedule requires a precise split between archive retention and deployment retrieval, and the referenced spring laws are not supplied inside this standalone candidate.",
+    "revision": "Reference a frozen simulator specification and define whether shifted costs alter only feasibility or also retained archives. Publish partial-front filling rules and treatment of fewer than twelve feasible plans; report per-budget results even when aggregate area improves."
+  }
+]

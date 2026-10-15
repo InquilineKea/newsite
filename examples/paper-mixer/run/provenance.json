@@ -1,0 +1,42 @@
+{
+  "contexts": {
+    "initial_generators": [
+      "mix_organism",
+      "mix_collective",
+      "mix_discovery"
+    ],
+    "critics": [
+      "mixer_critic_evidence",
+      "mixer_critic_feasibility"
+    ],
+    "revisers": "Same three generator contexts, given actual parent feedback",
+    "implementation": "Separate UI context and coordinator code"
+  },
+  "model_independence": "All contexts inherit one parent model; role separation is not model-family independence.",
+  "scientific_execution": "Actual model outputs saved in run/*.json; only archive construction, validation and UI checks were executed as code. Proposed scientific experiments were not run.",
+  "checks": [
+    "7 archive-invariant tests passed",
+    "actual-data UI DOM unit checks passed",
+    "generic JSON adapter protocol fixture: ten calls, exact parity, no new AI calls",
+    "JavaScript syntax and Python compilation passed"
+  ],
+  "browser_qa": "Unavailable; no browser preview or substitute browser was launched.",
+  "record_hashes": {
+    "config.json": "06944b29fa89c9b82eaf24fead1a86cb5c7cfe227345c5327a8316c97af68e96",
+    "feedback-initial-evidence.json": "de1ac6f926aa3dea6703d0955d3577d46882177eb79d50eff3ec195a984b143c",
+    "feedback-initial-feasibility.json": "2181b4c4c9f53fc5e6cb4d1289b0194f0cd1b0536b924ef9588c009f3c61809a",
+    "feedback-revised-evidence.json": "b4887593664c462bdb71f4c13d778c1a4b11c903d5c6f94e1b4749da8c4c14d4",
+    "feedback-revised-feasibility.json": "f5cef737e4391c5b161792ba5c16948873c2a61d9c703b21a319d8ca00e45f8a",
+    "initial-archive.json": "0f8194a74c2ed49e4abb9f7058ceec13b3930e97b771f760c4abc3c79c72ee46",
+    "initial-collective.json": "80bbd42c0aff966a73cc60c376b7cd751ef26aebd9123d68aacc69fd2f4dc0fe",
+    "initial-discovery.json": "78170c75d999858069b982f8751bf45d09816bd753d891555ec6df133e63e90f",
+    "initial-organism.json": "0f3ce58441e5a4b263ba9c286dc8b08a99b338c011a597d6da1c2a74e123b608",
+    "results.json": "d21b34dd253b188b1fd7ce29e6415259390341c6abf025a7f6e25e7446fb41f2",
+    "revised-collective.json": "7225ee80606604b99d4169d43c3ecdef8dec899be168bbc264ea5a81a95d1af5",
+    "revised-discovery.json": "e707ff55591f99392a94d61d2f319ddf188961c794c6088fc8748fe0292fb94e",
+    "revised-organism.json": "e27ec4f068141684024c0cb550758dca3c9f5644beac43611df4e587d9adfde2",
+    "revision-packet-collective.json": "12d42f2747af6dc73791fb927a22be936fbac99a25b26b4b2f430618597e644e",
+    "revision-packet-discovery.json": "cf5d196b8f810acd63cb1fe07bec232321a242b1a855e4024b6250b070f5a619",
+    "revision-packet-organism.json": "913e620a6ce75dffee3cb677b6a913e7f6e6ae028b611a33e154d7915e3ad132"
+  }
+}
