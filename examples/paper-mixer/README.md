@@ -143,3 +143,35 @@ model calls and does not recompute editorial ratings from source texts. Unknown
 assessments remain null and are omitted from a scatter axis instead of plotted
 as zero. Scatter offsets only separate tied ordinal categories; they add no
 scientific precision. The accessible table retains exact categories.
+
+## Buehler atlas: separate rankings across eras
+
+`/buehler/` ranks 18 selected Buehler papers independently on representation
+change, structural transfer, formal composition, dynamics, process organization,
+explanatory gain, validation closure and robustness. These are conceptually
+separable dimensions, not proven statistically independent factors. There is
+no summed quality, novelty or prestige score.
+
+CGCNN, NequIP and corrected A-Lab are strong chosen comparator papers, not a
+representative sample of conventional materials research. Category ranges
+and per-axis rankings retain ties; filters preserve the complete corpus ranks.
+A pairwise Spearman table shows where rating axes overlap. Ratings remain
+editorial AI judgments with confidence and precise reviewed-version scope.
+
+Four domain readers, one methods auditor and a coordinator shared the same
+inherited model family. The corpus includes one abstract-only profile
+(Categorical prototyping) and a partial FieldPerceiver read; six dimensions
+remain unknown. The copresheaves profile pins arXiv v2 (August 2026), retains
+its important version change, and exposes disagreement about explanatory gain
+(final 3, low confidence; auditor 2). No experiments or independent reproductions
+were performed by this project. Original readings and the audit are retained.
+
+```sh
+python scripts/build_buehler.py
+node scripts/test_buehler.mjs
+```
+
+The exporter validates the recorded profiles and produces ordinal rankings,
+CSV, a report, correlation diagnostics and a focused source bundle. It makes
+no model calls and does not infer ratings from source text. The website reads
+its published JSON; it does not launch agents or scientific jobs.

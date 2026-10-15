@@ -1,0 +1,2105 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Buehler · Different kinds of departure",
+  "date": "2026-10-15",
+  "description": "Separate rankings for 18 selected Markus J. Buehler papers across eras, compared with three strong modern materials-research exemplars. Distinguish conceptual surprise, tested explanatory insight, formal structure and downstream validation.",
+  "scope": "User-selected key papers across eras. This is a curated 18-paper comparison, not a complete bibliography or a statistically representative sample of materials science.",
+  "limitations": [
+    "Scores are editorial AI judgments on pinned versions, with evidence locators and confidence, not measured novelty, calibrated expert ratings or author prestige.",
+    "Four domain readers, one methods auditor and the coordinator share one inherited model family. Role separation does not establish independent model errors.",
+    "Axes are conceptually separable but correlated. The Spearman table diagnoses overlap descriptively; it does not prove statistical independence.",
+    "CGCNN, NequIP and corrected A-Lab are purposively selected strong comparators, not a statistical sample of conventional papers. Their ranges are illustrative.",
+    "A low departure category can accompany strong science. Theory can be rigorous without fabrication; the closure axis records evidence type rather than total rigor.",
+    "Ranks cover the full 18-paper corpus and retain ties; filters change visibility, never the reference population. Missing evidence is unranked, not zero.",
+    "Categorical prototyping is abstract-only, with five unknown dimensions and low-confidence supported ratings. FieldPerceiver is a partial main-text assessment with unknown robustness.",
+    "COPRESHEAF explanation has explicit reviewer disagreement: final 3, low confidence; auditor 2. Its schema-relative symbolic novelty does not establish unique causal mechanics.",
+    "No proposed experiment, raw-data reanalysis, code reproduction or independent scientific replication was performed. The webpage shows a recorded assessment; it makes no new AI calls."
+  ],
+  "papers": [
+    {
+      "id": "COLLAGEN",
+      "title": "Nature designs tough collagen: Explaining the nanostructure of collagen fibrils",
+      "shortTitle": "Critical lengths in collagen",
+      "authors": [
+        "Markus J. Buehler"
+      ],
+      "year": 2006,
+      "status": "Peer-reviewed",
+      "version": "PNAS 103(33), 12285–12290, published August 2006",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/",
+      "doi": "10.1073/pnas.0603216103",
+      "role": "Buehler",
+      "family": "Multiscale mechanics",
+      "summary": "Two competing critical lengths connect molecular adhesion, slip pulses and rupture to fibril strength and dissipation. The main fibril calculations use a two-dimensional, hydrated, cross-link-free reference. Consequently, the explanatory gain is a mechanism map under explicit assumptions, not a comprehensive reconstruction of living tissue. The measured natural molecular length provides external consistency rather than a new experimental test.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Critical-length ratios organize mechanisms across molecular and fibril scales.",
+          "locator": "Results: Critical Molecular Length Scales; Figure 5"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Griffith-style fracture reasoning transfers within mechanics, rather than between distant domains.",
+          "locator": "Methods: Slip-Pulse Nucleation and Propagation"
+        },
+        "formal": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Analytical scaling laws provide no central formal composition constraint.",
+          "locator": "Equations 1–6; Methods"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Loading-induced slip propagation and rupture are central analyzed responses.",
+          "locator": "Figures 2–4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "The scientist specifies the multiscale analysis and parameter sweeps.",
+          "locator": "Methods: Modeling Procedure"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Competing slip and rupture scales discriminate failure mechanisms.",
+          "locator": "Figures 2 and 5"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Atomistically parameterized mesoscopic simulations test predictions; no new fabrication.",
+          "locator": "Methods: Reactive Mesoscopic Model; Figures 2–4"
+        },
+        "robustness": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Lengths, adhesion, cross-links and geometries vary; physiological alternatives remain open.",
+          "locator": "Results: Bimolecular Assemblies; Larger Collagen Fibrils"
+        }
+      },
+      "surprise": {
+        "observation": "Stronger adhesion can eventually favor brittle molecular rupture.",
+        "interpretation": "Maximizing bond strength alone need not maximize toughness.",
+        "boundary": "Model mechanics do not establish evolutionary optimization.",
+        "locator": "Figure 2e; Conclusion"
+      },
+      "detail": {
+        "observation": "The slip threshold shifts from roughly 42 nm in pairs to 200 nm in fibrils.",
+        "consequence": "Boundary conditions and confinement change the inferred design scale.",
+        "locator": "Results: Larger Collagen Fibrils"
+      },
+      "coverage": {
+        "read": [
+          "Main results, figures and methods"
+        ],
+        "notRead": [
+          "Supporting information; underlying atomistic trajectories"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary full text",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/",
+          "scope": "Theory, computational results and methods"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "SILK",
+      "title": "Nanoconfinement controls stiffness, strength and mechanical toughness of β-sheet crystals in silk",
+      "shortTitle": "Weak bonds, strong silk",
+      "authors": [
+        "Sinan Keten",
+        "Zhiping Xu",
+        "Britni Ihle",
+        "Markus J. Buehler"
+      ],
+      "year": 2010,
+      "status": "Peer-reviewed",
+      "version": "Nature Materials 9, 359–367; published online March 14, 2010; author-hosted advance publication PDF",
+      "url": "https://doi.org/10.1038/nmat2704",
+      "doi": "10.1038/nmat2704",
+      "role": "Buehler",
+      "family": "Multiscale mechanics",
+      "summary": "Nanoconfinement makes weak hydrogen bonds cooperate through uniform shear and repeated bond reformation. The comparison tests pure bending against combined shear and bending, making the added mechanism consequential. Critical strand length also bounds how far crystal dimensions can grow. Cited experimental shear moduli were not measured on individual silk nanocrystals, limiting the directness of validation.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Crystal size and strain distribution explain collective bond performance.",
+          "locator": "Figures 2–5"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Continuum shear–bending theory interprets molecular deformation within mechanics.",
+          "locator": "Equations 1–4; Figure 3"
+        },
+        "formal": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "No central formal composition or transport constraint drives this mechanics contribution.",
+          "locator": "Methods: Continuum theory"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Bending, pull-out and stick–slip trajectories are central analyzed responses.",
+          "locator": "Figures 2 and 4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Fixed computational experiments do not reorganize a discovery workflow.",
+          "locator": "Methods: Molecular dynamics model"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Strain localization and cooperative rupture distinguish small from large crystals.",
+          "locator": "Figures 2–4"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Molecular dynamics and DFT support mechanics; experiments are external comparisons.",
+          "locator": "Table 1; Methods"
+        },
+        "robustness": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Alternative beam models, size sweeps and pulling rates discriminate mechanisms.",
+          "locator": "Figure 3; Methods: Application of boundary conditions"
+        }
+      },
+      "surprise": {
+        "observation": "Smaller crystals can simultaneously improve stiffness, strength and dissipation.",
+        "interpretation": "Weak-bond architecture can overcome constituent weakness.",
+        "boundary": "Nanocrystal behavior is not a complete model of whole silk.",
+        "locator": "Figures 4–5; Discussion"
+      },
+      "detail": {
+        "observation": "Experimental-rate pull-out forces require an estimated sixfold reduction; the transition length survives rate variation.",
+        "consequence": "The robust claim concerns the mechanism and length scale, rather than raw simulated force.",
+        "locator": "Methods: Application of boundary conditions"
+      },
+      "coverage": {
+        "read": [
+          "Main PDF results, figures, Table 1 and methods"
+        ],
+        "notRead": [
+          "Separate supplement; raw trajectories"
+        ]
+      },
+      "references": [
+        {
+          "title": "Author-hosted primary PDF",
+          "url": "https://web.mit.edu/mbuehler/www/papers/Nature_Materials_2010.pdf",
+          "scope": "Main paper, figures, methods and rate limitations"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "OLOGS",
+      "title": "Category Theoretic Analysis of Hierarchical Protein Materials and Social Networks",
+      "shortTitle": "Protein–social network ologs",
+      "authors": [
+        "David I. Spivak",
+        "Tristan Giesa",
+        "Elizabeth Wood",
+        "Markus J. Buehler"
+      ],
+      "year": 2011,
+      "status": "Peer-reviewed",
+      "version": "PLOS ONE 6(9): e23911; published September 8, 2011",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911",
+      "doi": "10.1371/journal.pone.0023911",
+      "role": "Buehler",
+      "family": "Categorical materials",
+      "summary": "A shared categorical description makes selected protein-failure and communication-failure mechanisms explicitly comparable. This is a qualitative transfer of deliberately simplified structure–function relations. The authors acknowledge that added detail could break the correspondence. The useful advance is stating which relations must survive a translation; identical abstract organization does not establish identical chemistry or empirical behavior.",
+      "assessments": {
+        "representation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Typed relations replace a solely constituent-based account of functionality.",
+          "locator": "Methods; Figure 4"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Protein hidden length maps explicitly to backup social communication.",
+          "locator": "Results: Analogy; Table 3"
+        },
+        "formal": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Commuting diagrams and fiber products constrain meanings and composition.",
+          "locator": "Figure 4; Tables 1–2"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Failure under extension or noise is analyzed qualitatively.",
+          "locator": "Figures 3 and 5"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Researchers construct representations; no adaptive discovery process is executed.",
+          "locator": "Methods; Conclusion"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "A latent lifeline explains retained function after weak links fail.",
+          "locator": "Figure 3; Olog of social network"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "The social case is constructed; prior protein mechanics motivate examples.",
+          "locator": "Outline; Results: Analogy"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "With/without-lifeline comparisons are illustrative, not broad empirical tests.",
+          "locator": "Figures 3 and 5"
+        }
+      },
+      "surprise": {
+        "observation": "A slack connection can be functionally invisible until another connection fails.",
+        "interpretation": "The useful abstraction includes conditional function, beyond connectivity.",
+        "boundary": "The social example was deliberately designed to match the protein olog.",
+        "locator": "Figure 3; Analogy section"
+      },
+      "detail": {
+        "observation": "Figure 4 alone omits essential equalities and fiber-product definitions in Tables 1–2.",
+        "consequence": "A similar-looking graph is insufficient to establish the claimed correspondence.",
+        "locator": "Results, discussion immediately following Tables 1–2"
+      },
+      "coverage": {
+        "read": [
+          "Main methods and results; supporting-figure descriptions"
+        ],
+        "notRead": [
+          "Separate supplemental PDFs; cited original mechanics studies"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary full text",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911",
+          "scope": "Olog construction, analogy and explicit limitations"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "PROTOTYPE",
+      "title": "Categorical prototyping: incorporating molecular mechanisms into 3D printing",
+      "shortTitle": "Categorical 3D prototypes",
+      "authors": [
+        "Dieter B. Brommer",
+        "Tristan Giesa",
+        "David I. Spivak",
+        "Markus J. Buehler"
+      ],
+      "year": 2016,
+      "status": "Peer-reviewed; assessment coverage limited",
+      "version": "Nanotechnology 27(2): 024002; online November 30, 2015; print January 15, 2016",
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002",
+      "doi": "10.1088/0957-4484/27/2/024002",
+      "role": "Buehler",
+      "family": "Categorical materials",
+      "summary": "The abstract reports transferring selected molecular mechanics into printed, experimentally tested macroscopic models; full methods were unavailable. These provisional entries distinguish an explicit experimental claim from an audited experimental result. Unknown formal or robustness support remains unranked. The abstract describes preserving a subset of mechanics, which is a narrower objective than reproducing the entire molecular material or establishing a universal translation guarantee.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "low",
+          "rationale": "A prototype preserves selected model properties across physical realizations.",
+          "locator": "Abstract"
+        },
+        "transfer": {
+          "score": 2,
+          "confidence": "low",
+          "rationale": "The reported correspondence connects nanoscale models and macroscopic printed structures.",
+          "locator": "Abstract"
+        },
+        "formal": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Formal preservation conditions cannot be rated from the abstract.",
+          "locator": "Full text unavailable"
+        },
+        "dynamics": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Detailed temporal or modal targets were not reviewed.",
+          "locator": "Full text unavailable"
+        },
+        "organization": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Workflow organization was not described in reviewed material.",
+          "locator": "Full text unavailable"
+        },
+        "explanation": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Mechanistic discrimination needs the unretrieved results and controls.",
+          "locator": "Full text unavailable"
+        },
+        "validation": {
+          "score": 4,
+          "confidence": "low",
+          "rationale": "The abstract explicitly reports printing and mechanical experimental validation.",
+          "locator": "Abstract; experimental claim not methods-audited"
+        },
+        "robustness": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Replication, uncertainty and alternatives could not be checked.",
+          "locator": "Full text unavailable"
+        }
+      },
+      "surprise": {
+        "observation": "The abstract reports examining a twisted physical prototype beyond the original model.",
+        "interpretation": "A faithful partial embodiment may suggest additional questions.",
+        "boundary": "This observation has not been checked against full results.",
+        "locator": "Abstract"
+      },
+      "detail": {
+        "observation": "Only chosen mechanical properties are claimed to be retained.",
+        "consequence": "Geometric resemblance would not warrant assuming all nanoscale properties transfer.",
+        "locator": "Abstract; full-text detail unavailable"
+      },
+      "coverage": {
+        "read": [
+          "Abstract and publication metadata only"
+        ],
+        "notRead": [
+          "Publisher full text blocked; methods, figures and supplements unavailable"
+        ]
+      },
+      "references": [
+        {
+          "title": "PubMed primary abstract record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26618369/",
+          "scope": "Abstract and bibliographic metadata only"
+        },
+        {
+          "title": "Publisher record",
+          "url": "https://doi.org/10.1088/0957-4484/27/2/024002",
+          "scope": "Full-text access attempt blocked"
+        },
+        {
+          "title": "Europe PMC primary abstract API",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:26618369&format=json&resulttype=core",
+          "scope": "Retrieved original abstract; full paper unavailable"
+        }
+      ],
+      "readingLevel": "Abstract only"
+    },
+    {
+      "id": "COPRESHEAF",
+      "title": "Self-Revising Discovery Systems for Science: A Categorical Framework for Agentic Artificial Intelligence",
+      "shortTitle": "Self-revising copresheaves",
+      "authors": [
+        "Fiona Y. Wang",
+        "Markus J. Buehler"
+      ],
+      "year": 2026,
+      "status": "Preprint",
+      "version": "arXiv:2606.01444v2, 21 August 2026",
+      "url": "https://arxiv.org/html/2606.01444v2",
+      "doi": "10.48550/arXiv.2606.01444",
+      "role": "Buehler",
+      "family": "Categorical discovery systems",
+      "summary": "Audits representational revision through typed evidence transport and residuals.",
+      "assessments": {
+        "representation": {
+          "score": 4,
+          "confidence": "medium",
+          "rationale": "Accepted symbolic revisions receive post-hoc schema audits.",
+          "locator": "§2.5; §4.7"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Mechanics supplies an operational discovery-system grammar.",
+          "locator": "§1; §2.5–2.7"
+        },
+        "formal": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Explicit preservation conditions; software lacks full functorial certification.",
+          "locator": "§2.3; §4.5"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Collective modes explain normalized fluctuation patterns.",
+          "locator": "§2.5; Eq.7"
+        },
+        "organization": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Artifact needs and mutation coordinate distributed work.",
+          "locator": "§2.6; §4.7"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "low",
+          "rationale": "A compact physically interpretable interaction improves over additive alternatives on accumulated evidence; causal uniqueness is unestablished.",
+          "locator": "§2.5; Table2",
+          "alternativeScores": [
+            {
+              "reviewer": "methods auditor",
+              "score": 2,
+              "rationale": "Symbolic model selection supports an interpretable relationship; independent causal mechanics and untouched-protein tests remain open."
+            }
+          ]
+        },
+        "validation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Replayable surrogate and public-data checks.",
+          "locator": "§4.6–4.7"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Paired MDL and adversarial stages; no fixed held-out benchmark.",
+          "locator": "§4.7"
+        }
+      },
+      "surprise": {
+        "observation": "Accepted law multiplies log-compliance by slow-mode participation.",
+        "interpretation": "Local softness depends on collective participation.",
+        "boundary": "An admitted product over existing GNM quantities; schema-relative novelty, not universal discovery.",
+        "locator": "§2.5; §4.5 Remark5"
+      },
+      "detail": {
+        "observation": "V2 retains compliance; HEA fatigue replaces the main fiber-network case.",
+        "consequence": "Fiber AIC is supplementary; MDL gain is not categorical discovery cost.",
+        "locator": "§4.6–4.7"
+      },
+      "coverage": {
+        "read": [
+          "V2 main methods/results and formal propositions"
+        ],
+        "notRead": [
+          "Supplementary files; code execution; full v1"
+        ]
+      },
+      "references": [
+        {
+          "title": "Reviewed v2 primary text",
+          "url": "https://arxiv.org/html/2606.01444v2",
+          "scope": "Main text"
+        },
+        {
+          "title": "Earlier v1 abstract",
+          "url": "https://arxiv.org/abs/2606.01444v1",
+          "scope": "Version comparison only"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "STIMULUS",
+      "title": "A Category-Theoretic Framework from Biological Mechanics to Engineered Stimulus-Response Systems",
+      "shortTitle": "Compositional stimulus–response design",
+      "authors": [
+        "Lee Marom",
+        "Skylar Tibbits",
+        "Gioele Zardini",
+        "Markus J. Buehler"
+      ],
+      "year": 2026,
+      "status": "Published, Journal of the Mechanics and Physics of Solids 216, 106780",
+      "version": "Reviewed arXiv:2604.26367v2, 20 August 2026; journal record verified",
+      "url": "https://arxiv.org/html/2604.26367v2",
+      "doi": "10.1016/j.jmps.2026.106780",
+      "role": "Buehler",
+      "family": "Categorical materials fabrication",
+      "summary": "Composes biological mechanics into printed actuator specifications.",
+      "assessments": {
+        "representation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Dynamical interfaces connect hierarchy and manufacturing.",
+          "locator": "§2–6"
+        },
+        "transfer": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Biological architecture transfers to tested printed actuators.",
+          "locator": "§4; §7"
+        },
+        "formal": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Composition preserves simulation conditions, conditional on valid models.",
+          "locator": "AppendixA; §1"
+        },
+        "dynamics": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Bending/twisting responses are explicit targets.",
+          "locator": "§7"
+        },
+        "organization": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Fixed modular Grasshopper pipeline.",
+          "locator": "§6"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Stimulus and kinematic modules recombine predictively.",
+          "locator": "§7"
+        },
+        "validation": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Four fabricated actuator classes test central pipeline.",
+          "locator": "§7; Table3"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Small replications and marginal process windows; joint uncertainty open.",
+          "locator": "§5; §7–8"
+        }
+      },
+      "surprise": {
+        "observation": "Thermal twisting combines two previously tested modules.",
+        "interpretation": "Validated interfaces can generate an additional actuator class.",
+        "boundary": "Direct mechanics also derives it; one recombination demonstrates limited scope.",
+        "locator": "§7 CaseIII"
+      },
+      "detail": {
+        "observation": "Validation measures equilibrium angles, n=3–4 per class.",
+        "consequence": "Transient accuracy and broad manufacturing robustness remain unestablished.",
+        "locator": "§7 Table3; §8"
+      },
+      "coverage": {
+        "read": [
+          "V2 mechanics, pipeline, cases, appendix"
+        ],
+        "notRead": [
+          "Videos; supplementary files; repository execution"
+        ]
+      },
+      "references": [
+        {
+          "title": "Reviewed v2 primary text",
+          "url": "https://arxiv.org/html/2604.26367v2",
+          "scope": "Main text and appendix"
+        },
+        {
+          "title": "Journal publication",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022509626002814",
+          "scope": "Publication record"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "REPLACE",
+      "title": "Category Theory Based Solution for the Building Block Replacement Problem in Materials Design",
+      "shortTitle": "Building-block replacement",
+      "authors": [
+        "Tristan Giesa",
+        "David I. Spivak",
+        "Markus J. Buehler"
+      ],
+      "year": 2012,
+      "status": "Published, Advanced Engineering Materials 14(9), 810–817",
+      "version": "Author final manuscript; MIT-hosted 8-page PDF",
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf",
+      "doi": "10.1002/adem.201200109",
+      "role": "Buehler",
+      "family": "Categorical materials substitution",
+      "summary": "Ologs make constrained substitution comparable across material systems.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Explicit structure–function relations organize replacement.",
+          "locator": "§1–2"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Fruit mixtures and laminates share typed replacement structure.",
+          "locator": "§2.1–2.2"
+        },
+        "formal": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Commuting paths and data migration constrain queries.",
+          "locator": "§2; Fig2"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Targets static homogenized elastic properties.",
+          "locator": "§2.2"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "No adaptive discovery coordination central.",
+          "locator": "§1–3"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Abstract correspondence exposes common substitution equations.",
+          "locator": "§2.2"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Illustrative calculations; no fabricated replacement test.",
+          "locator": "§2.1–2.3"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Residuals and constraints discussed; narrow examples.",
+          "locator": "§2.1–2.2"
+        }
+      },
+      "surprise": {
+        "observation": "Seemingly distant mixtures share a replacement-query schema.",
+        "interpretation": "Reusable relational structure can survive substrate changes.",
+        "boundary": "Aggregation physics remains domain-specific; schema isomorphism does not equal physical equivalence.",
+        "locator": "§2.2"
+      },
+      "detail": {
+        "observation": "Laminate calculation retains only in-plane ABD components.",
+        "consequence": "Out-of-plane replacement requires nonlinear solving and additional constraints.",
+        "locator": "§2.2"
+      },
+      "coverage": {
+        "read": [
+          "Methods; worked calculations; discussion"
+        ],
+        "notRead": [
+          "Independent reproduction"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary manuscript",
+          "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf",
+          "scope": "Eight pages"
+        },
+        {
+          "title": "MIT record",
+          "url": "https://dspace.mit.edu/entities/publication/49388733-782f-4e65-b845-bb5a855dde1e",
+          "scope": "Bibliography and version"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "MUSIC",
+      "title": "Materials by Design: Merging Proteins and Music",
+      "shortTitle": "Proteins and music",
+      "authors": [
+        "Joyce Y. Wong",
+        "John McDonald",
+        "Micki Taylor-Pinney",
+        "David I. Spivak",
+        "David L. Kaplan",
+        "Markus J. Buehler"
+      ],
+      "year": 2012,
+      "status": "Published, Nano Today 7(6), 488–495; review/case study",
+      "version": "Reviewed MIT-hosted accepted manuscript",
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf",
+      "doi": "10.1016/j.nantod.2012.09.001",
+      "role": "Buehler",
+      "family": "Materials–music translation",
+      "summary": "Transfers hierarchical silk assembly relationships into musical composition.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Hierarchy and connectivity replace sequence-only encoding.",
+          "locator": "Fig3"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Explicit distant-domain mapping produces flute compositions.",
+          "locator": "Spinning melodies"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Hierarchical ologs constrain selected correspondences.",
+          "locator": "Fig3"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Assembly and temporal music structure are central.",
+          "locator": "Fig2–4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "No self-organizing discovery process central.",
+          "locator": "Main text"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Network connectivity explains reviewed fiber-formation contrast.",
+          "locator": "Fig2"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Compositions instantiate mapping; material improvement return loop untested.",
+          "locator": "Spinning melodies"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Two-sequence contrast; perceptual validation proposed.",
+          "locator": "Fig2; Fig5"
+        }
+      },
+      "surprise": {
+        "observation": "Stronger individual proteins can fail to form fibers.",
+        "interpretation": "Excessive local aggregation can defeat network formation.",
+        "boundary": "Mechanism is reviewed prior experiment/simulation, not proof musical aesthetics predicts materials.",
+        "locator": "From the bottom up; Fig2"
+      },
+      "detail": {
+        "observation": "fMRI assessment and music-to-material improvement are future proposals.",
+        "consequence": "Performed sonification does not establish predictive reverse transfer.",
+        "locator": "Fig5; conclusion"
+      },
+      "coverage": {
+        "read": [
+          "Primary manuscript text and figure captions"
+        ],
+        "notRead": [
+          "Audio; supplementary mapping rules; prior-data studies"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary manuscript",
+          "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf",
+          "scope": "Eight pages"
+        },
+        {
+          "title": "MIT record",
+          "url": "https://dspace.mit.edu/entities/publication/04df14ec-c6d4-440e-9085-e82db557f277",
+          "scope": "Bibliography and version"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "FIELDPERCEIVER",
+      "title": "FieldPerceiver: Domain agnostic transformer model to predict multiscale physical fields and nonlinear material properties through neural ologs",
+      "shortTitle": "FieldPerceiver",
+      "authors": [
+        "Markus J. Buehler"
+      ],
+      "year": 2022,
+      "status": "Published journal article; partial primary-text access",
+      "version": "Materials Today 57, 9–25; 2022 publisher snapshot accessed 2026-10-15",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316",
+      "doi": "10.1016/j.mattod.2022.05.020",
+      "role": "Buehler",
+      "family": "Neural physical fields",
+      "summary": "Tokenized material organization predicts fracture fields.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Learned relations among supplied building blocks.",
+          "locator": "Introduction; Building the model snippet"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Perceiver architecture transferred into fracture prediction.",
+          "locator": "Introduction"
+        },
+        "formal": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Neural olog language; no checked composition established here.",
+          "locator": "Introduction; Building the model snippet"
+        },
+        "dynamics": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Loaded fields central; temporal extension deferred.",
+          "locator": "Introduction; Conclusions snippet"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "medium",
+          "rationale": "Single prescribed predictor.",
+          "locator": "Introduction"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Reported size and orientation effects connect to fracture theory.",
+          "locator": "Introduction"
+        },
+        "validation": {
+          "score": 2,
+          "confidence": "low",
+          "rationale": "MD-grounded predictive comparisons reported; detailed protocol unavailable.",
+          "locator": "Abstract; Introduction"
+        },
+        "robustness": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Full held-out and sensitivity protocol inaccessible.",
+          "locator": "Materials and methods snippet"
+        }
+      },
+      "surprise": {
+        "observation": "Occupancy tokens replace image input.",
+        "interpretation": "Attention learns effective relations without supplied constitutive properties.",
+        "boundary": "Fixed A/B vocabulary is not autonomous schema revision.",
+        "locator": "Introduction, building blocks A and B"
+      },
+      "detail": {
+        "observation": "Time dependence and other materials are future extensions.",
+        "consequence": "Domain-agnostic architecture exceeds the demonstrated graphene domain.",
+        "locator": "Conclusions snippet"
+      },
+      "coverage": {
+        "read": [
+          "Publisher abstract, introduction, model/conclusion/methods snippets"
+        ],
+        "notRead": [
+          "Full results, full methods, supplementary data, code execution"
+        ]
+      },
+      "references": [
+        {
+          "title": "Publisher primary text",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316",
+          "scope": "Partial text and section snippets; assessed 2026-10-15"
+        }
+      ],
+      "readingLevel": "Partial main text"
+    },
+    {
+      "id": "MECHGPT",
+      "title": "Generative retrieval-augmented ontologic graph and multi-agent strategies for interpretive large language model-based materials design",
+      "shortTitle": "MechGPT + agents",
+      "authors": [
+        "Markus J. Buehler"
+      ],
+      "year": 2023,
+      "status": "arXiv preprint snapshot",
+      "version": "arXiv:2310.19998v1, 30 October 2023; accessed 2026-10-15",
+      "url": "https://arxiv.org/pdf/2310.19998",
+      "doi": "10.48550/arXiv.2310.19998",
+      "role": "Buehler",
+      "family": "Graph retrieval and executable agents",
+      "summary": "Graph retrieval and agents combine knowledge with executed calculations.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Explicit relational context augments fixed model representations.",
+          "locator": "§2.2"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Music–protein and protein–glass mappings are explicit but exploratory.",
+          "locator": "§2.2; Fig 6; Table 7"
+        },
+        "formal": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Graph/interface structure without transport guarantees.",
+          "locator": "§§2.2, 4"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "medium",
+          "rationale": "Energy curves and knowledge tasks; no designed temporal response.",
+          "locator": "§2.3.3; Fig 8"
+        },
+        "organization": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Prescribed specialist roles coordinate executable tools.",
+          "locator": "§2.3; Tables 8–10"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Energy–geometry relation calculated; analogies remain hypotheses.",
+          "locator": "§2.3.3; Fig 8"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Agents execute DFT scan and fit.",
+          "locator": "§2.3.3; Table 10"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Illustrative retrieval comparisons; broad alternatives untested.",
+          "locator": "§§2.1–2.3"
+        }
+      },
+      "surprise": {
+        "observation": "Agents recover from execution errors and save computed outputs.",
+        "interpretation": "This reaches beyond proposal-only automation.",
+        "boundary": "Successful execution does not validate electronic-state assumptions.",
+        "locator": "Table 10, pp 52–58"
+      },
+      "detail": {
+        "observation": "Printed O2 code uses RKS/PBE/STO-3G.",
+        "consequence": "Numerical provenance permits auditing model adequacy.",
+        "locator": "Table 10, pp 53–56"
+      },
+      "coverage": {
+        "read": [
+          "Main results §§2.1–2.3; selected methods; Tables 8–10, printed code and error recovery"
+        ],
+        "notRead": [
+          "Independent execution; exhaustive supplementary comparisons"
+        ]
+      },
+      "references": [
+        {
+          "title": "Pinned arXiv record",
+          "url": "https://arxiv.org/abs/2310.19998v1",
+          "scope": "Version and authorship"
+        },
+        {
+          "title": "Primary full PDF",
+          "url": "https://arxiv.org/pdf/2310.19998",
+          "scope": "Methods, executed examples and transcripts; assessed 2026-10-15"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "SCIAGENTS",
+      "title": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "shortTitle": "SciAgents",
+      "authors": [
+        "Alireza Ghafarollahi",
+        "Markus J. Buehler"
+      ],
+      "year": 2024,
+      "status": "arXiv preprint snapshot",
+      "version": "arXiv:2409.05556v1, 9 September 2024; accessed 2026-10-15",
+      "url": "https://arxiv.org/html/2409.05556v1",
+      "doi": "10.48550/arXiv.2409.05556",
+      "role": "Buehler",
+      "family": "Graph-guided research teams",
+      "summary": "Specialized agents turn sampled graph paths into reviewed proposals.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Sampled concept relations guide proposals; ontology not autonomously revised.",
+          "locator": "§§2.1, 4.1–4.3"
+        },
+        "transfer": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Bio-inspired concepts mapped into proposed composite designs.",
+          "locator": "§2.1; Tables 1–3"
+        },
+        "formal": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Graph paths constrain context, not physical truth.",
+          "locator": "§4.2"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "medium",
+          "rationale": "Adaptive material behavior proposed, not actually designed or checked.",
+          "locator": "§2.1; Tables 1–3"
+        },
+        "organization": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Adaptive speaker selection operates within prescribed roles; distributed need-driven routing is not established.",
+          "locator": "§2.2; §4.4"
+        },
+        "explanation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Plausible mechanisms generated without discriminating physical tests.",
+          "locator": "§2.1; Tables 1–3"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Executed proposal generation and agent review.",
+          "locator": "§§2.1–2.2"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Illustrative workflow comparison; independent calibration remains open.",
+          "locator": "§§2.1–2.2; §4.6"
+        }
+      },
+      "surprise": {
+        "observation": "Random waypoints introduce less obvious conceptual routes.",
+        "interpretation": "Discovery diversity can come from retrieval topology.",
+        "boundary": "Graph distance does not establish novelty or useful mechanisms.",
+        "locator": "§4.2"
+      },
+      "detail": {
+        "observation": "Novelty checking retrieves three sets of ten abstracts.",
+        "consequence": "A missing match cannot establish priority.",
+        "locator": "§4.6"
+      },
+      "coverage": {
+        "read": [
+          "Main methods/results; prior scoped reading reassessed against new rubric"
+        ],
+        "notRead": [
+          "Full supplementary proposal bodies; code execution; measured material validation"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary v1 HTML",
+          "url": "https://arxiv.org/html/2409.05556v1",
+          "scope": "Methods/results and novelty-tool limits; assessed 2026-10-15"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "CEPHALO",
+      "title": "Cephalo: Multi-Modal Vision-Language Models for Bio-Inspired Materials Analysis and Design",
+      "shortTitle": "Cephalo",
+      "authors": [
+        "Markus J. Buehler"
+      ],
+      "year": 2024,
+      "status": "Published journal article",
+      "version": "Advanced Functional Materials 34, 2409531; published 5 September 2024; accessed 2026-10-15",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531",
+      "doi": "10.1002/adfm.202409531",
+      "role": "Buehler",
+      "family": "Multimodal materials models",
+      "summary": "Vision-language models connect figures, design language and quantitative tasks.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Joint image/text descriptors with task-specific tuning.",
+          "locator": "§4; Fig 1"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Visual natural patterns feed generated 3D material designs.",
+          "locator": "§4.3–4.5"
+        },
+        "formal": {
+          "score": 0,
+          "confidence": "medium",
+          "rationale": "No formal composition guarantee central to evaluated tasks.",
+          "locator": "§§4, 6"
+        },
+        "dynamics": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Dynamic simulations reduced to final damage/initiation endpoints.",
+          "locator": "§4.6.2; §6, Predicting Crack Dynamics"
+        },
+        "organization": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Fixed training and generation pipelines; experts merged.",
+          "locator": "§4.2; §6"
+        },
+        "explanation": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Predictive success does not identify causal mechanisms.",
+          "locator": "§4.6"
+        },
+        "validation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Held-out MD-derived endpoint benchmarks.",
+          "locator": "Figs 31–32; §6"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Held-out metrics and model variants; wider shifts unresolved.",
+          "locator": "§4.6; Table 1; §6"
+        }
+      },
+      "surprise": {
+        "observation": "Small adapted models answer quantitative image queries.",
+        "interpretation": "Scientific fine-tuning adds capabilities beyond generic visual description.",
+        "boundary": "Benchmarks do not validate generated architectures physically.",
+        "locator": "§4.6; Figs 31–32"
+      },
+      "detail": {
+        "observation": "Damage is normalized thresholded pixel change, with 90/10 splitting.",
+        "consequence": "Score fidelity depends on visualization and dataset construction.",
+        "locator": "§6, Predicting Crack Dynamics"
+      },
+      "coverage": {
+        "read": [
+          "Main results; model merging; quantitative benchmarks; dataset and endpoint training methods"
+        ],
+        "notRead": [
+          "Supplementary figures beyond captions; checkpoint execution; fabricated designs"
+        ]
+      },
+      "references": [
+        {
+          "title": "Publisher primary full text",
+          "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531",
+          "scope": "Methods/results, visual design and held-out MD endpoints; assessed 2026-10-15"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "HYPERGRAPH",
+      "title": "Higher-Order Knowledge Representations for Agentic Scientific Reasoning",
+      "shortTitle": "Hypergraph reasoning",
+      "authors": [
+        "Isabella A. Stewart",
+        "Markus J. Buehler"
+      ],
+      "year": 2026,
+      "status": "arXiv preprint snapshot",
+      "version": "arXiv:2601.04878v1, 8 January 2026; accessed 2026-10-15",
+      "url": "https://arxiv.org/html/2601.04878v1",
+      "doi": "10.48550/arXiv.2601.04878",
+      "role": "Buehler",
+      "family": "Higher-order knowledge",
+      "summary": "Multi-entity literature events constrain agent retrieval paths.",
+      "assessments": {
+        "representation": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "N-ary events preserve context lost by naive pairwise expansion.",
+          "locator": "§§1.4, 2.1"
+        },
+        "transfer": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Literature paths bridge material formulations and processing.",
+          "locator": "§2.3; Figs 9–12"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Schema and hyperedge-intersection constraints implemented.",
+          "locator": "§§4.2, 4.4"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "medium",
+          "rationale": "Knowledge structure, not temporal material behavior.",
+          "locator": "§§2.2–2.3"
+        },
+        "organization": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "GraphAgent, Engineer and Hypothesizer have prescribed sequence.",
+          "locator": "§2.3; Fig 8"
+        },
+        "explanation": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Retrieved bridges generate mechanistic hypotheses.",
+          "locator": "§2.3"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Corpus analysis and generated dialogues; material tests proposed.",
+          "locator": "§2.3"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Illustrative path/intersection changes; broad causal comparisons open.",
+          "locator": "§2.3; Figs 9–12"
+        }
+      },
+      "surprise": {
+        "observation": "Extra paths recover chitosan in a proposed PCL–ceria composite.",
+        "interpretation": "Retrieval context changes the proposed mechanism.",
+        "boundary": "Incidence overlap does not prove causal interaction.",
+        "locator": "§2.3; Figs 9, 11"
+      },
+      "detail": {
+        "observation": "Text alternates exact versus minimum shared-node constraints.",
+        "consequence": "Reproduction requires resolving traversal semantics.",
+        "locator": "Fig 8 caption versus §4.4"
+      },
+      "coverage": {
+        "read": [
+          "Main representation definitions; extraction/cleaning methods; structural analysis; agent examples; traversal methods"
+        ],
+        "notRead": [
+          "Code execution; independent extraction audit; experimental composite validation"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary v1 full text",
+          "url": "https://arxiv.org/html/2601.04878v1",
+          "scope": "Representation, retrieval constraints and illustrative reasoning; assessed 2026-10-15"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "PROTAGENTS",
+      "title": "ProtAgents: protein discovery via large language model multi-agent collaborations combining physics and machine learning",
+      "shortTitle": "ProtAgents",
+      "authors": [
+        "Alireza Ghafarollahi",
+        "Markus J. Buehler"
+      ],
+      "year": 2024,
+      "status": "Peer-reviewed; author-preprint snapshot assessed",
+      "version": "arXiv:2402.04268v1 (27 January 2024); journal publication verified separately",
+      "url": "https://arxiv.org/html/2402.04268v1",
+      "doi": "10.1039/D4DD00013G",
+      "role": "Buehler",
+      "family": "Agent orchestration",
+      "summary": "Prescribed agent roles connect protein generation, folding, mechanics prediction and normal-mode calculations.",
+      "assessments": {
+        "representation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Tool integration retains supplied protein descriptors.",
+          "locator": "§2; §4"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Familiar computational techniques combined within protein analysis.",
+          "locator": "§2.1–2.3"
+        },
+        "formal": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Function schemas structure calls; no composition guarantee established.",
+          "locator": "§2, Table 1"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Vibrations and unfolding properties are central analyzed outcomes.",
+          "locator": "§2.2–2.3"
+        },
+        "organization": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Planner, Assistant, Critic and manager have prescribed roles.",
+          "locator": "§2, Table 1"
+        },
+        "explanation": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Examples demonstrate orchestration more than discriminating mechanisms.",
+          "locator": "§2.1–2.3"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Executed ANM calculations accompany learned property predictions.",
+          "locator": "§4 Natural Vibrational Frequency Calculations"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Illustrative tasks expose failures; broad comparative testing unreviewed.",
+          "locator": "§2.1–2.3"
+        }
+      },
+      "surprise": {
+        "observation": "The Critic repairs malformed data and identifies a failed structural conditioning case.",
+        "interpretation": "Useful scientific workflow supervision extends beyond generating sequences.",
+        "boundary": "Successful conversations do not establish general autonomous reliability.",
+        "locator": "§2.1–2.3; Table 4 discussion"
+      },
+      "detail": {
+        "observation": "ProteinForceGPT is used only for forward predictions; normal modes use ANM.",
+        "consequence": "Computed modes and predicted unfolding forces carry different evidential weight.",
+        "locator": "§4 ProteinForceGPT; Natural Vibrational Frequency Calculations"
+      },
+      "coverage": {
+        "read": [
+          "Preprint §2.1–2.3 results and §4 selected methods."
+        ],
+        "notRead": [
+          "Journal full text blocked; external supplements, code and raw outputs not inspected."
+        ]
+      },
+      "references": [
+        {
+          "title": "Author preprint full text",
+          "url": "https://arxiv.org/html/2402.04268v1",
+          "scope": "Assessed results/methods snapshot"
+        },
+        {
+          "title": "Digital Discovery publication",
+          "url": "https://pubs.rsc.org/doi/d4dd00013g",
+          "scope": "Publication status and DOI"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "ATOMAGENTS",
+      "title": "AtomAgents: Alloy design and discovery through physics-aware multi-modal multi-agent artificial intelligence",
+      "shortTitle": "AtomAgents",
+      "authors": [
+        "Alireza Ghafarollahi",
+        "Markus J. Buehler"
+      ],
+      "year": 2024,
+      "status": "Author preprint assessed; published subsequently in PNAS (2025)",
+      "version": "arXiv:2407.10022v1 (13 July 2024)",
+      "url": "https://arxiv.org/html/2407.10022v1",
+      "doi": "10.48550/arXiv.2407.10022",
+      "role": "Buehler",
+      "family": "Physics and agents",
+      "summary": "Prescribed agents plan alloy calculations and evaluate hypotheses with atomistic simulations.",
+      "assessments": {
+        "representation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Automates established alloy variables and simulation workflows.",
+          "locator": "§2.1–2.4"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Multimodal integration remains within alloy mechanics.",
+          "locator": "§2.1–2.4"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Fracture calculation imposes explicit elasticity-theory relations.",
+          "locator": "§4.1"
+        },
+        "dynamics": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Transition paths inform static barriers and toughness estimates.",
+          "locator": "§2.3–2.4"
+        },
+        "organization": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Planner/Critic and a manager coordinate prescribed roles.",
+          "locator": "§2, Table 1"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "NbMo simulations quantify an energy-variation/Peierls-barrier relationship.",
+          "locator": "§2.4"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "LAMMPS and NEB calculations test alloy hypotheses.",
+          "locator": "§2.1–2.4; §4"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Potential comparisons and configuration sampling; broader generality remains open.",
+          "locator": "§2.2–2.4"
+        }
+      },
+      "surprise": {
+        "observation": "A generated barrier-correlation hypothesis is followed by NEB calculations.",
+        "interpretation": "The contribution includes executing a test, beyond proposing materials.",
+        "boundary": "One simulated alloy system does not establish universal design laws.",
+        "locator": "§2.4, Figures 7–9"
+      },
+      "detail": {
+        "observation": "LAMMPS scripts are human-authored; core-image interpretation needs labeled examples.",
+        "consequence": "Autonomy depends on prepared tools and task-specific contextual support.",
+        "locator": "§2 introductory paragraph; §2.2"
+      },
+      "coverage": {
+        "read": [
+          "Preprint results §2.1–2.4 and methods §4."
+        ],
+        "notRead": [
+          "External supporting figures, raw simulations and PNAS revision not inspected."
+        ]
+      },
+      "references": [
+        {
+          "title": "Assessed author preprint",
+          "url": "https://arxiv.org/html/2407.10022v1",
+          "scope": "Exact methods/results snapshot"
+        },
+        {
+          "title": "Author repository publication record",
+          "url": "https://github.com/lamm-mit/AtomAgents/blob/main/README.md",
+          "scope": "Cites PNAS 122(4), e2414074122 (2025)"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "VIBEGEN",
+      "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model",
+      "shortTitle": "VibeGen",
+      "authors": [
+        "Bo Ni",
+        "Markus J. Buehler"
+      ],
+      "year": 2025,
+      "status": "Author preprint assessed; peer-reviewed Matter publication verified (2026)",
+      "version": "arXiv:2502.10173v1 (14 February 2025)",
+      "url": "https://arxiv.org/pdf/2502.10173",
+      "doi": "10.1016/j.matt.2026.102706",
+      "role": "Buehler",
+      "family": "Dynamics design",
+      "summary": "Protein sequences are generated for prescribed residue-wise vibrational amplitudes, then screened by a predictor.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Dynamics becomes an inverse-design descriptor alongside sequence and structure.",
+          "locator": "§2, Equations 1–2"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Language diffusion and mechanics combine within protein design.",
+          "locator": "§2"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Coordinate-invariant amplitude descriptor constrains a limited component.",
+          "locator": "§2, Equations 1–2"
+        },
+        "dynamics": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Inverse design targets detailed normal-mode amplitude profiles.",
+          "locator": "§2, Figures 4–7"
+        },
+        "organization": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Designer and predictor have fixed specialized coordination.",
+          "locator": "§2, Figure 1B"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Secondary-structure confinement correlates with designed local amplitudes.",
+          "locator": "§2, Figures 4 and 6"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Folded designs undergo force-field normal-mode calculations.",
+          "locator": "§4 Normal mode analysis"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Held-out random split and predictor-selection comparisons; cluster separation unestablished.",
+          "locator": "§4 Dataset; Figure 7"
+        }
+      },
+      "surprise": {
+        "observation": "Different generated folds can satisfy similar vibrational profiles.",
+        "interpretation": "A family of motions can organize design alternatives.",
+        "boundary": "Mode matching does not demonstrate enzymatic function or cellular dynamics.",
+        "locator": "§2, Figure 6; conclusion"
+      },
+      "detail": {
+        "observation": "Target is only the first nontrivial mode’s amplitude, discarding displacement directions.",
+        "consequence": "Matching the descriptor does not recover the full dynamical operator.",
+        "locator": "§2, Equations 1–2"
+      },
+      "coverage": {
+        "read": [
+          "Preprint §2–4; embedded supplementary descriptions."
+        ],
+        "notRead": [
+          "External supplements, raw structures and journal revision; no experiments rerun."
+        ]
+      },
+      "references": [
+        {
+          "title": "Assessed 2025 preprint",
+          "url": "https://arxiv.org/pdf/2502.10173",
+          "scope": "Methods/results snapshot"
+        },
+        {
+          "title": "Matter publication",
+          "url": "https://www.sciencedirect.com/science/article/pii/S259023852600069X",
+          "scope": "2026 journal status; full text blocked"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "SCIENCECLAW",
+      "title": "Autonomous Agents Coordinating Distributed Discovery Through Emergent Artifact Exchange",
+      "shortTitle": "ScienceClaw + Infinite",
+      "authors": [
+        "Fiona Y. Wang",
+        "Lee Marom",
+        "Subhadeep Pal",
+        "Rachel K. Luu",
+        "Wei Lu",
+        "Jaime A. Berkovich",
+        "Markus J. Buehler"
+      ],
+      "year": 2026,
+      "status": "Preprint",
+      "version": "arXiv:2603.14312v1 (15 March 2026)",
+      "url": "https://arxiv.org/html/2603.14312v1",
+      "doi": "10.48550/arXiv.2603.14312",
+      "role": "Buehler",
+      "family": "Decentralized discovery",
+      "summary": "Needs, typed artifacts and provenance connect distributed investigations without central task assignment.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Cross-domain descriptors and explicit provenance enrich represented relations.",
+          "locator": "§2.2.4; §3.4–3.5"
+        },
+        "transfer": {
+          "score": 4,
+          "confidence": "medium",
+          "rationale": "Resonance mappings yield instantiated FEM-tested designs.",
+          "locator": "§3.4"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Typed provenance DAG and gates constrain limited interfaces.",
+          "locator": "§2.2.4–2.2.5; §5"
+        },
+        "dynamics": {
+          "score": 4,
+          "confidence": "medium",
+          "rationale": "Ribbed lattice variants target frequency bands and modal density.",
+          "locator": "§3.4"
+        },
+        "organization": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Open needs and compatible artifacts route distributed work.",
+          "locator": "§2.2.5"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Cross-domain relations quantified; shared governing laws unestablished.",
+          "locator": "§3.4–3.5"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Resonance candidates receive 3D FEM checks, without fabrication.",
+          "locator": "§3.4"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Model comparison and analogy critique; coordination ablations unreviewed.",
+          "locator": "§3.4–3.5"
+        }
+      },
+      "surprise": {
+        "observation": "Agents construct an executable grammar spanning urban growth and grain evolution.",
+        "interpretation": "Analogy becomes an inspectable hypothesis.",
+        "boundary": "Reduced seven-node similarity does not imply shared mechanisms.",
+        "locator": "§3.5, Figures 12–14"
+      },
+      "detail": {
+        "observation": "Schema compatibility can be nonempty input-name/payload-key overlap.",
+        "consequence": "Syntactic compatibility and lineage do not guarantee scientific validity.",
+        "locator": "§5 Schema-Overlap Matching"
+      },
+      "coverage": {
+        "read": [
+          "§2 architecture, selected §3 cases, selected §5 implementation."
+        ],
+        "notRead": [
+          "External raw artifacts, supplementary networks and live deployment not audited."
+        ]
+      },
+      "references": [
+        {
+          "title": "Assessed preprint",
+          "url": "https://arxiv.org/html/2603.14312v1",
+          "scope": "Architecture, cases and implementation"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "GRAPHAGENTS",
+      "title": "GraphAgents: Knowledge Graph–Guided Agentic AI for Cross-Domain Materials Design",
+      "shortTitle": "GraphAgents",
+      "authors": [
+        "Isabella A. Stewart",
+        "Tarjei Paule Hage",
+        "Yu-Chuan Hsu",
+        "Markus J. Buehler"
+      ],
+      "year": 2026,
+      "status": "Preprint",
+      "version": "arXiv:2602.07491v1 (7 February 2026)",
+      "url": "https://arxiv.org/html/2602.07491v1",
+      "doi": "10.48550/arXiv.2602.07491",
+      "role": "Buehler",
+      "family": "Knowledge graph exploration",
+      "summary": "A fixed agent sequence explores literature graphs for PFAS-free biomedical-tubing hypotheses.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Explicit literature relations enrich retrieval and ideation.",
+          "locator": "§2.1; §4.1"
+        },
+        "transfer": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Graph paths bridge related material-property domains.",
+          "locator": "§2.2"
+        },
+        "formal": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Traversal structure lacks scientific composition guarantees.",
+          "locator": "§2.2; §4.3"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Static material requirements dominate this assessed contribution.",
+          "locator": "§2.1–2.2"
+        },
+        "organization": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Specialized agents execute a prescribed sequential framework.",
+          "locator": "§2.1, Figure 1"
+        },
+        "explanation": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Generated justifications remain proposed material mechanisms.",
+          "locator": "§2.2"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Candidate merits evaluated through generated hypotheses and LLM judging.",
+          "locator": "§2.2–2.3"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Five ablations; GPT-5 judging leaves material performance untested.",
+          "locator": "§2.3, Tables 1–3"
+        }
+      },
+      "surprise": {
+        "observation": "Direct graph exploration beats the full pipeline on judged novelty.",
+        "interpretation": "Added grounding can trade novelty for evidential context.",
+        "boundary": "Judged novelty is not tested materials improvement.",
+        "locator": "§2.3, Table 3"
+      },
+      "detail": {
+        "observation": "Self-referential and context-poor edges can dominate shortest paths.",
+        "consequence": "A short relational route can provide weak scientific support.",
+        "locator": "§2.2, Figure 8 discussion"
+      },
+      "coverage": {
+        "read": [
+          "§2 selected results/ablation; §4 graph/corpus methods."
+        ],
+        "notRead": [
+          "Supplementary full agent outputs, raw graphs and code not inspected."
+        ]
+      },
+      "references": [
+        {
+          "title": "Assessed preprint",
+          "url": "https://arxiv.org/html/2602.07491v1",
+          "scope": "Results, ablations and methods"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "CGCNN",
+      "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+      "shortTitle": "CGCNN",
+      "authors": [
+        "Tian Xie",
+        "Jeffrey C. Grossman"
+      ],
+      "year": 2018,
+      "status": "Peer-reviewed Physical Review Letters article",
+      "version": "Published 6 April 2018; main publisher PDF hosted by author lab",
+      "url": "https://doi.org/10.1103/PhysRevLett.120.145301",
+      "doi": "10.1103/PhysRevLett.120.145301",
+      "role": "Comparator",
+      "family": "Fixed-task property prediction",
+      "summary": "Learned crystal graphs predict properties and expose site-level design patterns.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Learned relations enrich a supplied crystal-graph vocabulary.",
+          "locator": "Fig.1; Eqs.1–3"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Graph learning transfers into crystal-property prediction.",
+          "locator": "Introduction"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Pooling enforces permutation and unit-cell-size invariance.",
+          "locator": "Eq.2"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Targets are static calculated properties.",
+          "locator": "Table I"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Training and prediction follow a fixed workflow.",
+          "locator": "Eqs.1–3"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Site contributions reveal quantified chemical preferences.",
+          "locator": "Fig.3; pp4–5"
+        },
+        "validation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Held-out calculations test a surrogate, without new synthesis.",
+          "locator": "Fig.2; Table I"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Architecture comparisons and new crystals; distribution-shift limits remain.",
+          "locator": "Eqs.4–5; p4 new-crystal evaluation"
+        }
+      },
+      "surprise": {
+        "observation": "An interpretable pooling constraint exposes promising perovskite site preferences.",
+        "interpretation": "Standard prediction research can generate design insight.",
+        "boundary": "Learned site energies are model contributions, not separately measured atomic energies.",
+        "locator": "Fig.3; pp4–5"
+      },
+      "detail": {
+        "observation": "Interpretable pooling worsens perovskite MAE from 0.099 to 0.130 eV/atom.",
+        "consequence": "Interpretability and predictive accuracy are different objectives.",
+        "locator": "p4; Fig.3"
+      },
+      "coverage": {
+        "read": [
+          "Main six-page published PDF, including equations, comparisons and perovskite case",
+          "Supplement indexed split description: random 60/20/20"
+        ],
+        "notRead": [
+          "Full supplementary methods",
+          "Raw data, code execution or independent reproduction"
+        ]
+      },
+      "references": [
+        {
+          "title": "Author-lab publisher PDF",
+          "url": "https://gg.mit.edu/wp-content/uploads/2018/06/PhysRevLett.120.145301-2.pdf",
+          "scope": "Complete main text read"
+        },
+        {
+          "title": "Supplement",
+          "url": "https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.120.145301/SM.pdf",
+          "scope": "Indexed split excerpt only"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "NEQUIP",
+      "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
+      "shortTitle": "NequIP",
+      "authors": [
+        "Simon Batzner",
+        "Albert Musaelian",
+        "Lixin Sun",
+        "Mario Geiger",
+        "Jonathan P. Mailoa",
+        "Mordechai Kornbluth",
+        "Nicola Molinari",
+        "Tess E. Smidt",
+        "Boris Kozinsky"
+      ],
+      "year": 2022,
+      "status": "Peer-reviewed Nature Communications article",
+      "version": "Published 4 May 2022, 13:2453",
+      "url": "https://www.nature.com/articles/s41467-022-29939-5",
+      "doi": "10.1038/s41467-022-29939-5",
+      "role": "Comparator",
+      "family": "Physics-constrained atomistic learning",
+      "summary": "Equivariant tensor features enable data-efficient forces and molecular dynamics.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Tensor features enrich a fixed atomistic representation.",
+          "locator": "Fig.1"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Geometric learning is applied within atomistic prediction.",
+          "locator": "Introduction"
+        },
+        "formal": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Composed equivariant layers and energy-gradient forces enforce symmetry and conservation.",
+          "locator": "Eqs.1–8; Fig.1"
+        },
+        "dynamics": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Simulations target structural and kinetic response.",
+          "locator": "Figs.3–4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Learning and evaluation use a fixed pipeline.",
+          "locator": "Methods: Training"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Controlled tensor-order comparisons isolate an architectural explanation.",
+          "locator": "Data efficiency; Fig.5"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Direct MD tests structure and diffusion against AIMD.",
+          "locator": "Figs.3–4"
+        },
+        "robustness": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Ablations, data budgets and phase tests; extrapolation remains bounded.",
+          "locator": "Fig.5; Methods: Learning Curve Experiments"
+        }
+      },
+      "surprise": {
+        "observation": "Equivariance changes learning-curve slopes in tested systems.",
+        "interpretation": "Formal inductive bias can change data efficiency, beyond shifting accuracy.",
+        "boundary": "This is an empirical architecture effect, not universal learning theory.",
+        "locator": "Data efficiency; Fig.5"
+      },
+      "detail": {
+        "observation": "Many benchmark splits sample frames from shared trajectories; glass tests also cross melt-to-quench.",
+        "consequence": "Held-out-frame accuracy and phase transfer provide distinct evidence.",
+        "locator": "Methods: Reference Data Sets"
+      },
+      "coverage": {
+        "read": [
+          "Publisher main HTML: architecture, equivariance, results, data efficiency and Methods",
+          "Software versions, split construction and learning-curve controls"
+        ],
+        "notRead": [
+          "Separate supplementary PDF",
+          "Raw trajectories or executable reproduction"
+        ]
+      },
+      "references": [
+        {
+          "title": "Publisher full text",
+          "url": "https://www.nature.com/articles/s41467-022-29939-5",
+          "scope": "Main methods/results read"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    },
+    {
+      "id": "ALAB",
+      "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+      "shortTitle": "A-Lab (corrected)",
+      "authors": [
+        "Nathan J. Szymanski",
+        "Bernardus Rendy",
+        "Yuxing Fei",
+        "Rishi E. Kumar",
+        "Tanjin He",
+        "David Milsted",
+        "Matthew J. McDermott",
+        "Max Gallant",
+        "Ekin Dogus Cubuk",
+        "Amil Merchant",
+        "Haegyeom Kim",
+        "Anubhav Jain",
+        "Christopher J. Bartel",
+        "Kristin Persson",
+        "Yan Zeng",
+        "Gerbrand Ceder"
+      ],
+      "year": 2023,
+      "status": "Peer-reviewed Nature article; author correction in January 2026",
+      "version": "Corrected publisher HTML accessed 15 October 2026; title and counts reflect correction",
+      "url": "https://www.nature.com/articles/s41586-023-06734-w",
+      "doi": "10.1038/s41586-023-06734-w",
+      "role": "Comparator",
+      "family": "Closed-loop experimental discovery",
+      "summary": "Literature, thermodynamics, active learning and robotics close a synthesis loop.",
+      "assessments": {
+        "representation": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Recipes evolve within supplied phase and synthesis representations.",
+          "locator": "Methods: Materials screening"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Knowledge and algorithms combine within inorganic synthesis.",
+          "locator": "Fig.1"
+        },
+        "formal": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Interfaces and constraints organize a modular pipeline.",
+          "locator": "Fig.1; Methods"
+        },
+        "dynamics": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Reaction outcomes serve synthesis endpoints, not designed dynamical functions.",
+          "locator": "Experimental outcomes"
+        },
+        "organization": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Recipe adaptation occurs within prescribed workflow and targets.",
+          "locator": "Methods: Active learning"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Failure analysis identifies actionable synthesis barriers.",
+          "locator": "Fig.4"
+        },
+        "validation": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Robotics performs synthesis and XRD characterization.",
+          "locator": "Figs.1–2"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Manual phase rechecks support outcomes; pipeline-level alternatives remain open.",
+          "locator": "Experimental outcomes; correction"
+        }
+      },
+      "surprise": {
+        "observation": "Physical autonomy already exists outside Buehler’s agent frameworks.",
+        "interpretation": "Self-organization must be distinguished from autonomous execution.",
+        "boundary": "This is a strong chosen comparator, not a typical-field percentile.",
+        "locator": "Fig.1; Methods: Active learning"
+      },
+      "detail": {
+        "observation": "Corrected record reports 36 of 57 targets, with four further XRD-inconclusive cases.",
+        "consequence": "Use corrected evidence, and distinguish new-to-algorithm from globally novel materials.",
+        "locator": "Experimental synthesis outcomes; Methods: Materials screening; 2026 correction"
+      },
+      "coverage": {
+        "read": [
+          "Corrected publisher main HTML: workflow, outcomes, barriers, Methods and data/code availability",
+          "Publisher correction link and change-history notice"
+        ],
+        "notRead": [
+          "Correction full text: retrieval failed",
+          "Separate supplementary diffraction data",
+          "Independent synthesis or raw XRD reanalysis"
+        ]
+      },
+      "references": [
+        {
+          "title": "Corrected publisher article",
+          "url": "https://www.nature.com/articles/s41586-023-06734-w",
+          "scope": "Main corrected text and methods read"
+        },
+        {
+          "title": "2026 Author Correction",
+          "url": "https://doi.org/10.1038/s41586-025-09992-y",
+          "scope": "Existence verified; full correction retrieval failed"
+        }
+      ],
+      "readingLevel": "Main methods and results"
+    }
+  ]
+}

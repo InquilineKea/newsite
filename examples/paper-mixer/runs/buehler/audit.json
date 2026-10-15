@@ -1,0 +1,236 @@
+{
+  "role": "Methods and axis-independence audit; inherited model family, no independent replication",
+  "date": "2026-10-15",
+  "rubricVersion": "1.0",
+  "coverage": {
+    "readerFilesReviewed": [
+      "buehler-classics.json",
+      "buehler-category.json",
+      "buehler-models.json",
+      "buehler-agents.json"
+    ],
+    "primaryTextsRead": [
+      "https://arxiv.org/html/2606.01444v2",
+      "https://arxiv.org/html/2604.26367v2"
+    ],
+    "notPerformed": [
+      "Scientific data reanalysis",
+      "Code execution",
+      "Independent replication",
+      "Full-text re-reading of all 18 papers"
+    ]
+  },
+  "verdict": "Usable as a purposive, evidence-linked ranking on separate axes, with explicit scope, uncertainty and reviewer disagreement. It is not an exhaustive bibliography or a statistical ranking of materials science.",
+  "axisAudit": [
+    {
+      "axes": [
+        "representation",
+        "formal",
+        "organization"
+      ],
+      "finding": "Conceptually separable but likely correlated in this selected corpus. Cite vocabulary changes, compositional conditions, and executed coordination separately; do not reuse one architecture label as evidence for all three."
+    },
+    {
+      "axes": [
+        "dynamics",
+        "organization"
+      ],
+      "finding": "Rate material response or modal targets separately from iterative agent behavior. Agent iteration is not material dynamics."
+    },
+    {
+      "axes": [
+        "transfer",
+        "explanation"
+      ],
+      "finding": "An operational cross-domain mapping can be strong transfer while remaining weak evidence for a mechanism. Distant language alone is insufficient."
+    },
+    {
+      "axes": [
+        "validation",
+        "robustness"
+      ],
+      "finding": "Closure and discrimination differ: fabrication can close a loop while controls remain narrow. Formal consistency is conditional and cannot establish material fidelity."
+    },
+    {
+      "axes": [
+        "formal"
+      ],
+      "finding": "Apply mathematical guarantees beyond category theory. Composed equivariant layers and energy-derived forces can warrant the highest anchor when proved and implemented."
+    }
+  ],
+  "calibration": {
+    "comparatorOrder": [
+      "representation",
+      "transfer",
+      "formal",
+      "dynamics",
+      "organization",
+      "explanation",
+      "validation",
+      "robustness"
+    ],
+    "comparatorScoresReviewed": {
+      "CGCNN": [
+        2,
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        2
+      ],
+      "NequIP": [
+        2,
+        1,
+        4,
+        3,
+        0,
+        3,
+        3,
+        3
+      ],
+      "A-Lab corrected": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        4,
+        2
+      ]
+    },
+    "judgment": "Comparator profiles are coherent with the frozen anchors, conditional on the parent primary-source reviews. They are three strong selected exemplars, not an estimate of the distribution of standard materials papers.",
+    "importantInterpretation": "A-Lab organization1 refers to reorganization of discovery work, not low autonomy; its physical closed loop still receives validation4. NequIP formal4 prevents category-theory favoritism.",
+    "distinctivePoles": [
+      "Representation revision: COPRESHEAF exceeds the supplied comparators on this axis.",
+      "Distant structural transfer: STIMULUS and SCIENCECLAW lead the assessed corpus.",
+      "Detailed modal inverse design: VIBEGEN and SCIENCECLAW lead dynamics.",
+      "Artifact- or need-driven organization: SCIENCECLAW and COPRESHEAF lead this particular coordination axis.",
+      "Formal structure, mechanistic explanation and physical closure have strong comparator counterparts; these are not unique Buehler advantages."
+    ]
+  },
+  "paperRecommendations": [
+    {
+      "paperId": "SCIAGENTS",
+      "axis": "organization",
+      "readerScore": 3,
+      "recommendedScore": 2,
+      "resolution": "Accepted by coordinator",
+      "reason": "Dynamic speaker selection among predefined roles is adaptive scheduling, not demonstrated artifact- or need-driven distributed coordination."
+    },
+    {
+      "paperId": "COPRESHEAF",
+      "axis": "explanation",
+      "readerScore": 3,
+      "auditorScore": 2,
+      "finalCoordinatorScore": 3,
+      "confidence": "low",
+      "resolution": "Preserve dissent, not consensus",
+      "reason": "Reader credits a compact interpretable interaction distinguishing additive alternatives; auditor requires stronger out-of-sample discrimination before that anchor."
+    },
+    {
+      "paperId": "COPRESHEAF",
+      "axis": "formal",
+      "readerScore": 3,
+      "recommendedScore": 3,
+      "resolution": "Agree",
+      "reason": "Explicit preservation conditions and audits, not a completely certified deployed categorical substrate."
+    },
+    {
+      "paperId": "COPRESHEAF",
+      "axis": "representation",
+      "readerScore": 4,
+      "recommendedScore": 4,
+      "resolution": "Agree with scope",
+      "reason": "Audited revision of the committed symbolic schema; novelty remains relative to that declared schema."
+    },
+    {
+      "paperId": "PROTOTYPE",
+      "axis": "validation",
+      "readerScore": 4,
+      "recommendedScore": 4,
+      "confidence": "low",
+      "resolution": "Provisional abstract-level evidence only",
+      "reason": "An explicit experiment claim can indicate closure type, while its methods and strength remain unaudited. Keep all unread dimensions null and visibly mark coverage."
+    },
+    {
+      "paperId": "SILK",
+      "axis": "formal",
+      "readerScore": 0,
+      "recommendedScore": 0,
+      "resolution": "Wording clarification",
+      "reason": "Say no central formal composition constraint assessed, rather than no categorical constraint. The rubric also recognizes symmetry and conservation guarantees."
+    }
+  ],
+  "copresheafScope": {
+    "url": "https://arxiv.org/html/2606.01444v2",
+    "version": "v2, 21 August 2026",
+    "findings": [
+      {
+        "locator": "§2.3; §2.6; §4.7",
+        "claim": "The implemented provenance layer is weaker than complete software-enforced functorial certification."
+      },
+      {
+        "locator": "§2.5; §4.7",
+        "claim": "Protein fits use accumulated evidence; the mixed slice enters refitting and selection, so it is not an untouched test."
+      },
+      {
+        "locator": "§2.5; §4.5",
+        "claim": "The product interaction is new relative to the admitted schema, while its GNM quantities already exist."
+      },
+      {
+        "locator": "§2.7",
+        "claim": "HEA median-threshold/slope gate yields a public-data hypothesis, not new fatigue testing."
+      }
+    ],
+    "auditorCautions": [
+      "Operator-library and search-budget matched comparisons, plus held-out protein families, would strengthen discovery claims.",
+      "Residues within chains are dependent; complexity penalties do not replace external prediction tests.",
+      "Paris growth depends on C, loading range and conditions as well as slope; phase differences can confound summary comparisons."
+    ]
+  },
+  "reportingRequirements": [
+    "Keep scores ordinal, ties intact and no arithmetic total.",
+    "Use null for insufficient reviewed evidence; no zero imputation.",
+    "Display confidence and abstract-only coverage alongside rank.",
+    "Report pairwise-complete rank correlations with sample sizes as redundancy diagnostics; no statistical independence claim.",
+    "Label conceptual surprise, tested empirical surprise and formal surprise distinctly.",
+    "Do not call generated reviews or this audit independent scientific replication.",
+    "Coverage is 18 selected papers, not every Buehler publication."
+  ],
+  "limitations": [
+    "Selection favors conceptual breadth and agentic work.",
+    "Most papers have one bounded reader; the audit fully reread only two primary texts.",
+    "No literature-wide novelty priority search was performed.",
+    "Ordinal judgments can move with additional methods, supplements or revised versions."
+  ],
+  "applied": {
+    "SCIAGENTS.organization": {
+      "score": 2,
+      "confidence": "medium",
+      "rationale": "Adaptive speaker selection operates within prescribed roles; distributed need-driven routing is not established.",
+      "locator": "§2.2; §4.4"
+    },
+    "SILK.formal": {
+      "score": 0,
+      "confidence": "high",
+      "rationale": "No central formal composition or transport constraint drives this mechanics contribution.",
+      "locator": "Methods: Continuum theory"
+    },
+    "COPRESHEAF.explanation": {
+      "score": 3,
+      "confidence": "low",
+      "rationale": "A compact physically interpretable interaction improves over additive alternatives on accumulated evidence; causal uniqueness is unestablished.",
+      "locator": "§2.5; Table2",
+      "alternativeScores": [
+        {
+          "reviewer": "methods auditor",
+          "score": 2,
+          "rationale": "Symbolic model selection supports an interpretable relationship; independent causal mechanics and untouched-protein tests remain open."
+        }
+      ]
+    }
+  }
+}

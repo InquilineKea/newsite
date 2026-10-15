@@ -1,0 +1,404 @@
+{
+  "reader": "category_reader",
+  "papers": [
+    {
+      "id": "COPRESHEAF",
+      "title": "Self-Revising Discovery Systems for Science: A Categorical Framework for Agentic Artificial Intelligence",
+      "shortTitle": "Self-revising copresheaves",
+      "authors": [
+        "Fiona Y. Wang",
+        "Markus J. Buehler"
+      ],
+      "year": 2026,
+      "status": "Preprint",
+      "version": "arXiv:2606.01444v2, 21 August 2026",
+      "url": "https://arxiv.org/html/2606.01444v2",
+      "doi": "10.48550/arXiv.2606.01444",
+      "role": "Buehler",
+      "family": "Categorical discovery systems",
+      "summary": "Audits representational revision through typed evidence transport and residuals.",
+      "assessments": {
+        "representation": {
+          "score": 4,
+          "confidence": "medium",
+          "rationale": "Accepted symbolic revisions receive post-hoc schema audits.",
+          "locator": "§2.5; §4.7"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Mechanics supplies an operational discovery-system grammar.",
+          "locator": "§1; §2.5–2.7"
+        },
+        "formal": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Explicit preservation conditions; software lacks full functorial certification.",
+          "locator": "§2.3; §4.5"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Collective modes explain normalized fluctuation patterns.",
+          "locator": "§2.5; Eq.7"
+        },
+        "organization": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Artifact needs and mutation coordinate distributed work.",
+          "locator": "§2.6; §4.7"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Compliance–mode interaction replaces additive explanations.",
+          "locator": "§2.5; Table2"
+        },
+        "validation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Replayable surrogate and public-data checks.",
+          "locator": "§4.6–4.7"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Paired MDL and adversarial stages; no fixed held-out benchmark.",
+          "locator": "§4.7"
+        }
+      },
+      "surprise": {
+        "observation": "Accepted law multiplies log-compliance by slow-mode participation.",
+        "interpretation": "Local softness depends on collective participation.",
+        "boundary": "An admitted product over existing GNM quantities; schema-relative novelty, not universal discovery.",
+        "locator": "§2.5; §4.5 Remark5"
+      },
+      "detail": {
+        "observation": "V2 retains compliance; HEA fatigue replaces the main fiber-network case.",
+        "consequence": "Fiber AIC is supplementary; MDL gain is not categorical discovery cost.",
+        "locator": "§4.6–4.7"
+      },
+      "coverage": {
+        "read": [
+          "V2 main methods/results and formal propositions"
+        ],
+        "notRead": [
+          "Supplementary files; code execution; full v1"
+        ]
+      },
+      "references": [
+        {
+          "title": "Reviewed v2 primary text",
+          "url": "https://arxiv.org/html/2606.01444v2",
+          "scope": "Main text"
+        },
+        {
+          "title": "Earlier v1 abstract",
+          "url": "https://arxiv.org/abs/2606.01444v1",
+          "scope": "Version comparison only"
+        }
+      ]
+    },
+    {
+      "id": "STIMULUS",
+      "title": "A Category-Theoretic Framework from Biological Mechanics to Engineered Stimulus-Response Systems",
+      "shortTitle": "Compositional stimulus–response design",
+      "authors": [
+        "Lee Marom",
+        "Skylar Tibbits",
+        "Gioele Zardini",
+        "Markus J. Buehler"
+      ],
+      "year": 2026,
+      "status": "Published, Journal of the Mechanics and Physics of Solids 216, 106780",
+      "version": "Reviewed arXiv:2604.26367v2, 20 August 2026; journal record verified",
+      "url": "https://arxiv.org/html/2604.26367v2",
+      "doi": "10.1016/j.jmps.2026.106780",
+      "role": "Buehler",
+      "family": "Categorical materials fabrication",
+      "summary": "Composes biological mechanics into printed actuator specifications.",
+      "assessments": {
+        "representation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Dynamical interfaces connect hierarchy and manufacturing.",
+          "locator": "§2–6"
+        },
+        "transfer": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Biological architecture transfers to tested printed actuators.",
+          "locator": "§4; §7"
+        },
+        "formal": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Composition preserves simulation conditions, conditional on valid models.",
+          "locator": "AppendixA; §1"
+        },
+        "dynamics": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Bending/twisting responses are explicit targets.",
+          "locator": "§7"
+        },
+        "organization": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Fixed modular Grasshopper pipeline.",
+          "locator": "§6"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Stimulus and kinematic modules recombine predictively.",
+          "locator": "§7"
+        },
+        "validation": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Four fabricated actuator classes test central pipeline.",
+          "locator": "§7; Table3"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Small replications and marginal process windows; joint uncertainty open.",
+          "locator": "§5; §7–8"
+        }
+      },
+      "surprise": {
+        "observation": "Thermal twisting combines two previously tested modules.",
+        "interpretation": "Validated interfaces can generate an additional actuator class.",
+        "boundary": "Direct mechanics also derives it; one recombination demonstrates limited scope.",
+        "locator": "§7 CaseIII"
+      },
+      "detail": {
+        "observation": "Validation measures equilibrium angles, n=3–4 per class.",
+        "consequence": "Transient accuracy and broad manufacturing robustness remain unestablished.",
+        "locator": "§7 Table3; §8"
+      },
+      "coverage": {
+        "read": [
+          "V2 mechanics, pipeline, cases, appendix"
+        ],
+        "notRead": [
+          "Videos; supplementary files; repository execution"
+        ]
+      },
+      "references": [
+        {
+          "title": "Reviewed v2 primary text",
+          "url": "https://arxiv.org/html/2604.26367v2",
+          "scope": "Main text and appendix"
+        },
+        {
+          "title": "Journal publication",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0022509626002814",
+          "scope": "Publication record"
+        }
+      ]
+    },
+    {
+      "id": "REPLACE",
+      "title": "Category Theory Based Solution for the Building Block Replacement Problem in Materials Design",
+      "shortTitle": "Building-block replacement",
+      "authors": [
+        "Tristan Giesa",
+        "David I. Spivak",
+        "Markus J. Buehler"
+      ],
+      "year": 2012,
+      "status": "Published, Advanced Engineering Materials 14(9), 810–817",
+      "version": "Author final manuscript; MIT-hosted 8-page PDF",
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf",
+      "doi": "10.1002/adem.201200109",
+      "role": "Buehler",
+      "family": "Categorical materials substitution",
+      "summary": "Ologs make constrained substitution comparable across material systems.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Explicit structure–function relations organize replacement.",
+          "locator": "§1–2"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Fruit mixtures and laminates share typed replacement structure.",
+          "locator": "§2.1–2.2"
+        },
+        "formal": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Commuting paths and data migration constrain queries.",
+          "locator": "§2; Fig2"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Targets static homogenized elastic properties.",
+          "locator": "§2.2"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "No adaptive discovery coordination central.",
+          "locator": "§1–3"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Abstract correspondence exposes common substitution equations.",
+          "locator": "§2.2"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Illustrative calculations; no fabricated replacement test.",
+          "locator": "§2.1–2.3"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Residuals and constraints discussed; narrow examples.",
+          "locator": "§2.1–2.2"
+        }
+      },
+      "surprise": {
+        "observation": "Seemingly distant mixtures share a replacement-query schema.",
+        "interpretation": "Reusable relational structure can survive substrate changes.",
+        "boundary": "Aggregation physics remains domain-specific; schema isomorphism does not equal physical equivalence.",
+        "locator": "§2.2"
+      },
+      "detail": {
+        "observation": "Laminate calculation retains only in-plane ABD components.",
+        "consequence": "Out-of-plane replacement requires nonlinear solving and additional constraints.",
+        "locator": "§2.2"
+      },
+      "coverage": {
+        "read": [
+          "Methods; worked calculations; discussion"
+        ],
+        "notRead": [
+          "Independent reproduction"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary manuscript",
+          "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf",
+          "scope": "Eight pages"
+        },
+        {
+          "title": "MIT record",
+          "url": "https://dspace.mit.edu/entities/publication/49388733-782f-4e65-b845-bb5a855dde1e",
+          "scope": "Bibliography and version"
+        }
+      ]
+    },
+    {
+      "id": "MUSIC",
+      "title": "Materials by Design: Merging Proteins and Music",
+      "shortTitle": "Proteins and music",
+      "authors": [
+        "Joyce Y. Wong",
+        "John McDonald",
+        "Micki Taylor-Pinney",
+        "David I. Spivak",
+        "David L. Kaplan",
+        "Markus J. Buehler"
+      ],
+      "year": 2012,
+      "status": "Published, Nano Today 7(6), 488–495; review/case study",
+      "version": "Reviewed MIT-hosted accepted manuscript",
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf",
+      "doi": "10.1016/j.nantod.2012.09.001",
+      "role": "Buehler",
+      "family": "Materials–music translation",
+      "summary": "Transfers hierarchical silk assembly relationships into musical composition.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Hierarchy and connectivity replace sequence-only encoding.",
+          "locator": "Fig3"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Explicit distant-domain mapping produces flute compositions.",
+          "locator": "Spinning melodies"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Hierarchical ologs constrain selected correspondences.",
+          "locator": "Fig3"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Assembly and temporal music structure are central.",
+          "locator": "Fig2–4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "No self-organizing discovery process central.",
+          "locator": "Main text"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Network connectivity explains reviewed fiber-formation contrast.",
+          "locator": "Fig2"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Compositions instantiate mapping; material improvement return loop untested.",
+          "locator": "Spinning melodies"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Two-sequence contrast; perceptual validation proposed.",
+          "locator": "Fig2; Fig5"
+        }
+      },
+      "surprise": {
+        "observation": "Stronger individual proteins can fail to form fibers.",
+        "interpretation": "Excessive local aggregation can defeat network formation.",
+        "boundary": "Mechanism is reviewed prior experiment/simulation, not proof musical aesthetics predicts materials.",
+        "locator": "From the bottom up; Fig2"
+      },
+      "detail": {
+        "observation": "fMRI assessment and music-to-material improvement are future proposals.",
+        "consequence": "Performed sonification does not establish predictive reverse transfer.",
+        "locator": "Fig5; conclusion"
+      },
+      "coverage": {
+        "read": [
+          "Primary manuscript text and figure captions"
+        ],
+        "notRead": [
+          "Audio; supplementary mapping rules; prior-data studies"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary manuscript",
+          "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf",
+          "scope": "Eight pages"
+        },
+        {
+          "title": "MIT record",
+          "url": "https://dspace.mit.edu/entities/publication/04df14ec-c6d4-440e-9085-e82db557f277",
+          "scope": "Bibliography and version"
+        }
+      ]
+    }
+  ]
+}

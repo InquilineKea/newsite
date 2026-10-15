@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-15",
+  "scope": "User-selected key papers across eras. This is a curated 18-paper comparison, not a complete bibliography or a statistically representative sample of materials science.",
+  "readers": {
+    "buehler_classics": [
+      "COLLAGEN",
+      "SILK",
+      "OLOGS",
+      "PROTOTYPE"
+    ],
+    "buehler_category": [
+      "COPRESHEAF",
+      "STIMULUS",
+      "REPLACE",
+      "MUSIC"
+    ],
+    "buehler_models": [
+      "FIELDPERCEIVER",
+      "MECHGPT",
+      "SCIAGENTS",
+      "CEPHALO",
+      "HYPERGRAPH"
+    ],
+    "buehler_agents": [
+      "PROTAGENTS",
+      "ATOMAGENTS",
+      "VIBEGEN",
+      "SCIENCECLAW",
+      "GRAPHAGENTS"
+    ],
+    "root": [
+      "CGCNN",
+      "NEQUIP",
+      "ALAB"
+    ]
+  },
+  "auditor": "buehler_audit; representation and causal/validation boundaries, claim-relative score calibration, comparator fairness",
+  "interface": "buehler_interface; no scientific rating assignment",
+  "coordinator": "root; rubric, comparator reading, integration, adjudication and publication",
+  "independence": "Same inherited model family, separate contexts. No external expert calibration or independent reproduction.",
+  "originalReadings": "readings/ retains original outputs; audit.json records disagreement and applied refinements.",
+  "execution": "Primary-text reading and assessment; deterministic ranking/export and unit checks. No scientific workflow or empirical validation executed here.",
+  "browserQA": "Unavailable; no browser QA performed.",
+  "recordHashes": {
+    "audit.json": "a2b229c84ef545f56b2ce958ce28345efc89143b2b66a31fa4a5ae243841e23d",
+    "papers.json": "bfb3f98e049b96543f998efbc33c22e3601764a2e48ef27298b227e99229ee89",
+    "readings/buehler-agents.json": "f7fc9ecd524268a22dcffc14a4e21d5fc502dbc72b194d3121a5a1d73fec3a41",
+    "readings/buehler-category.json": "9d47dd655df3f26e55d044d0e6ea90561b4c2008155887363461eaeacdfe4800",
+    "readings/buehler-classics.json": "80b332a7cf258283914a835c08295e45f870cb28a233e151e22b70c4c6117a1c",
+    "readings/buehler-comparators.json": "e639a7d462509f22b846e2f9c17d54790b009a1e189d7a40813bb31401376014",
+    "readings/buehler-models.json": "0f00dcce6325c414d98d7045c0ef9a66118c07afcbfc13d1c9c766eff6e41f51",
+    "rubric.json": "d1820f3cf5d1edd0883da7e9d9ed8450be77e468be1d1575c9f7e3127f2ced80"
+  }
+}

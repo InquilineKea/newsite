@@ -1,0 +1,392 @@
+{
+  "reader": "buehler_classics",
+  "papers": [
+    {
+      "id": "COLLAGEN",
+      "title": "Nature designs tough collagen: Explaining the nanostructure of collagen fibrils",
+      "shortTitle": "Critical lengths in collagen",
+      "authors": [
+        "Markus J. Buehler"
+      ],
+      "year": 2006,
+      "status": "Peer-reviewed",
+      "version": "PNAS 103(33), 12285–12290, published August 2006",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/",
+      "doi": "10.1073/pnas.0603216103",
+      "role": "Buehler",
+      "family": "Multiscale mechanics",
+      "summary": "Two competing critical lengths connect molecular adhesion, slip pulses and rupture to fibril strength and dissipation. The main fibril calculations use a two-dimensional, hydrated, cross-link-free reference. Consequently, the explanatory gain is a mechanism map under explicit assumptions, not a comprehensive reconstruction of living tissue. The measured natural molecular length provides external consistency rather than a new experimental test.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Critical-length ratios organize mechanisms across molecular and fibril scales.",
+          "locator": "Results: Critical Molecular Length Scales; Figure 5"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Griffith-style fracture reasoning transfers within mechanics, rather than between distant domains.",
+          "locator": "Methods: Slip-Pulse Nucleation and Propagation"
+        },
+        "formal": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Analytical scaling laws provide no central formal composition constraint.",
+          "locator": "Equations 1–6; Methods"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Loading-induced slip propagation and rupture are central analyzed responses.",
+          "locator": "Figures 2–4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "The scientist specifies the multiscale analysis and parameter sweeps.",
+          "locator": "Methods: Modeling Procedure"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Competing slip and rupture scales discriminate failure mechanisms.",
+          "locator": "Figures 2 and 5"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Atomistically parameterized mesoscopic simulations test predictions; no new fabrication.",
+          "locator": "Methods: Reactive Mesoscopic Model; Figures 2–4"
+        },
+        "robustness": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Lengths, adhesion, cross-links and geometries vary; physiological alternatives remain open.",
+          "locator": "Results: Bimolecular Assemblies; Larger Collagen Fibrils"
+        }
+      },
+      "surprise": {
+        "observation": "Stronger adhesion can eventually favor brittle molecular rupture.",
+        "interpretation": "Maximizing bond strength alone need not maximize toughness.",
+        "boundary": "Model mechanics do not establish evolutionary optimization.",
+        "locator": "Figure 2e; Conclusion"
+      },
+      "detail": {
+        "observation": "The slip threshold shifts from roughly 42 nm in pairs to 200 nm in fibrils.",
+        "consequence": "Boundary conditions and confinement change the inferred design scale.",
+        "locator": "Results: Larger Collagen Fibrils"
+      },
+      "coverage": {
+        "read": [
+          "Main results, figures and methods"
+        ],
+        "notRead": [
+          "Supporting information; underlying atomistic trajectories"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary full text",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/",
+          "scope": "Theory, computational results and methods"
+        }
+      ]
+    },
+    {
+      "id": "SILK",
+      "title": "Nanoconfinement controls stiffness, strength and mechanical toughness of β-sheet crystals in silk",
+      "shortTitle": "Weak bonds, strong silk",
+      "authors": [
+        "Sinan Keten",
+        "Zhiping Xu",
+        "Britni Ihle",
+        "Markus J. Buehler"
+      ],
+      "year": 2010,
+      "status": "Peer-reviewed",
+      "version": "Nature Materials 9, 359–367; published online March 14, 2010; author-hosted advance publication PDF",
+      "url": "https://doi.org/10.1038/nmat2704",
+      "doi": "10.1038/nmat2704",
+      "role": "Buehler",
+      "family": "Multiscale mechanics",
+      "summary": "Nanoconfinement makes weak hydrogen bonds cooperate through uniform shear and repeated bond reformation. The comparison tests pure bending against combined shear and bending, making the added mechanism consequential. Critical strand length also bounds how far crystal dimensions can grow. Cited experimental shear moduli were not measured on individual silk nanocrystals, limiting the directness of validation.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Crystal size and strain distribution explain collective bond performance.",
+          "locator": "Figures 2–5"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Continuum shear–bending theory interprets molecular deformation within mechanics.",
+          "locator": "Equations 1–4; Figure 3"
+        },
+        "formal": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "No categorical composition or transport constraint drives the contribution.",
+          "locator": "Methods: Continuum theory"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Bending, pull-out and stick–slip trajectories are central analyzed responses.",
+          "locator": "Figures 2 and 4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Fixed computational experiments do not reorganize a discovery workflow.",
+          "locator": "Methods: Molecular dynamics model"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Strain localization and cooperative rupture distinguish small from large crystals.",
+          "locator": "Figures 2–4"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Molecular dynamics and DFT support mechanics; experiments are external comparisons.",
+          "locator": "Table 1; Methods"
+        },
+        "robustness": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Alternative beam models, size sweeps and pulling rates discriminate mechanisms.",
+          "locator": "Figure 3; Methods: Application of boundary conditions"
+        }
+      },
+      "surprise": {
+        "observation": "Smaller crystals can simultaneously improve stiffness, strength and dissipation.",
+        "interpretation": "Weak-bond architecture can overcome constituent weakness.",
+        "boundary": "Nanocrystal behavior is not a complete model of whole silk.",
+        "locator": "Figures 4–5; Discussion"
+      },
+      "detail": {
+        "observation": "Experimental-rate pull-out forces require an estimated sixfold reduction; the transition length survives rate variation.",
+        "consequence": "The robust claim concerns the mechanism and length scale, rather than raw simulated force.",
+        "locator": "Methods: Application of boundary conditions"
+      },
+      "coverage": {
+        "read": [
+          "Main PDF results, figures, Table 1 and methods"
+        ],
+        "notRead": [
+          "Separate supplement; raw trajectories"
+        ]
+      },
+      "references": [
+        {
+          "title": "Author-hosted primary PDF",
+          "url": "https://web.mit.edu/mbuehler/www/papers/Nature_Materials_2010.pdf",
+          "scope": "Main paper, figures, methods and rate limitations"
+        }
+      ]
+    },
+    {
+      "id": "OLOGS",
+      "title": "Category Theoretic Analysis of Hierarchical Protein Materials and Social Networks",
+      "shortTitle": "Protein–social network ologs",
+      "authors": [
+        "David I. Spivak",
+        "Tristan Giesa",
+        "Elizabeth Wood",
+        "Markus J. Buehler"
+      ],
+      "year": 2011,
+      "status": "Peer-reviewed",
+      "version": "PLOS ONE 6(9): e23911; published September 8, 2011",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911",
+      "doi": "10.1371/journal.pone.0023911",
+      "role": "Buehler",
+      "family": "Categorical materials",
+      "summary": "A shared categorical description makes selected protein-failure and communication-failure mechanisms explicitly comparable. This is a qualitative transfer of deliberately simplified structure–function relations. The authors acknowledge that added detail could break the correspondence. The useful advance is stating which relations must survive a translation; identical abstract organization does not establish identical chemistry or empirical behavior.",
+      "assessments": {
+        "representation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Typed relations replace a solely constituent-based account of functionality.",
+          "locator": "Methods; Figure 4"
+        },
+        "transfer": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Protein hidden length maps explicitly to backup social communication.",
+          "locator": "Results: Analogy; Table 3"
+        },
+        "formal": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Commuting diagrams and fiber products constrain meanings and composition.",
+          "locator": "Figure 4; Tables 1–2"
+        },
+        "dynamics": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Failure under extension or noise is analyzed qualitatively.",
+          "locator": "Figures 3 and 5"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Researchers construct representations; no adaptive discovery process is executed.",
+          "locator": "Methods; Conclusion"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "A latent lifeline explains retained function after weak links fail.",
+          "locator": "Figure 3; Olog of social network"
+        },
+        "validation": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "The social case is constructed; prior protein mechanics motivate examples.",
+          "locator": "Outline; Results: Analogy"
+        },
+        "robustness": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "With/without-lifeline comparisons are illustrative, not broad empirical tests.",
+          "locator": "Figures 3 and 5"
+        }
+      },
+      "surprise": {
+        "observation": "A slack connection can be functionally invisible until another connection fails.",
+        "interpretation": "The useful abstraction includes conditional function, beyond connectivity.",
+        "boundary": "The social example was deliberately designed to match the protein olog.",
+        "locator": "Figure 3; Analogy section"
+      },
+      "detail": {
+        "observation": "Figure 4 alone omits essential equalities and fiber-product definitions in Tables 1–2.",
+        "consequence": "A similar-looking graph is insufficient to establish the claimed correspondence.",
+        "locator": "Results, discussion immediately following Tables 1–2"
+      },
+      "coverage": {
+        "read": [
+          "Main methods and results; supporting-figure descriptions"
+        ],
+        "notRead": [
+          "Separate supplemental PDFs; cited original mechanics studies"
+        ]
+      },
+      "references": [
+        {
+          "title": "Primary full text",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911",
+          "scope": "Olog construction, analogy and explicit limitations"
+        }
+      ]
+    },
+    {
+      "id": "PROTOTYPE",
+      "title": "Categorical prototyping: incorporating molecular mechanisms into 3D printing",
+      "shortTitle": "Categorical 3D prototypes",
+      "authors": [
+        "Dieter B. Brommer",
+        "Tristan Giesa",
+        "David I. Spivak",
+        "Markus J. Buehler"
+      ],
+      "year": 2016,
+      "status": "Peer-reviewed; assessment coverage limited",
+      "version": "Nanotechnology 27(2): 024002; online November 30, 2015; print January 15, 2016",
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002",
+      "doi": "10.1088/0957-4484/27/2/024002",
+      "role": "Buehler",
+      "family": "Categorical materials",
+      "summary": "The abstract reports transferring selected molecular mechanics into printed, experimentally tested macroscopic models; full methods were unavailable. These provisional entries distinguish an explicit experimental claim from an audited experimental result. Unknown formal or robustness support remains unranked. The abstract describes preserving a subset of mechanics, which is a narrower objective than reproducing the entire molecular material or establishing a universal translation guarantee.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "low",
+          "rationale": "A prototype preserves selected model properties across physical realizations.",
+          "locator": "Abstract"
+        },
+        "transfer": {
+          "score": 2,
+          "confidence": "low",
+          "rationale": "The reported correspondence connects nanoscale models and macroscopic printed structures.",
+          "locator": "Abstract"
+        },
+        "formal": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Formal preservation conditions cannot be rated from the abstract.",
+          "locator": "Full text unavailable"
+        },
+        "dynamics": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Detailed temporal or modal targets were not reviewed.",
+          "locator": "Full text unavailable"
+        },
+        "organization": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Workflow organization was not described in reviewed material.",
+          "locator": "Full text unavailable"
+        },
+        "explanation": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Mechanistic discrimination needs the unretrieved results and controls.",
+          "locator": "Full text unavailable"
+        },
+        "validation": {
+          "score": 4,
+          "confidence": "low",
+          "rationale": "The abstract explicitly reports printing and mechanical experimental validation.",
+          "locator": "Abstract; experimental claim not methods-audited"
+        },
+        "robustness": {
+          "score": null,
+          "confidence": "low",
+          "rationale": "Replication, uncertainty and alternatives could not be checked.",
+          "locator": "Full text unavailable"
+        }
+      },
+      "surprise": {
+        "observation": "The abstract reports examining a twisted physical prototype beyond the original model.",
+        "interpretation": "A faithful partial embodiment may suggest additional questions.",
+        "boundary": "This observation has not been checked against full results.",
+        "locator": "Abstract"
+      },
+      "detail": {
+        "observation": "Only chosen mechanical properties are claimed to be retained.",
+        "consequence": "Geometric resemblance would not warrant assuming all nanoscale properties transfer.",
+        "locator": "Abstract; full-text detail unavailable"
+      },
+      "coverage": {
+        "read": [
+          "Abstract and publication metadata only"
+        ],
+        "notRead": [
+          "Publisher full text blocked; methods, figures and supplements unavailable"
+        ]
+      },
+      "references": [
+        {
+          "title": "PubMed primary abstract record",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26618369/",
+          "scope": "Abstract and bibliographic metadata only"
+        },
+        {
+          "title": "Publisher record",
+          "url": "https://doi.org/10.1088/0957-4484/27/2/024002",
+          "scope": "Full-text access attempt blocked"
+        },
+        {
+          "title": "Europe PMC primary abstract API",
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:26618369&format=json&resulttype=core",
+          "scope": "Retrieved original abstract; full paper unavailable"
+        }
+      ]
+    }
+  ]
+}

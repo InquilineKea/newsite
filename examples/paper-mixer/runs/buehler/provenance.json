@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-15",
+  "scope": "User-selected key papers across eras. This is a curated 18-paper comparison, not a complete bibliography or a statistically representative sample of materials science.",
+  "readers": {
+    "buehler_classics": [
+      "COLLAGEN",
+      "SILK",
+      "OLOGS",
+      "PROTOTYPE"
+    ],
+    "buehler_category": [
+      "COPRESHEAF",
+      "STIMULUS",
+      "REPLACE",
+      "MUSIC"
+    ],
+    "buehler_models": [
+      "FIELDPERCEIVER",
+      "MECHGPT",
+      "SCIAGENTS",
+      "CEPHALO",
+      "HYPERGRAPH"
+    ],
+    "buehler_agents": [
+      "PROTAGENTS",
+      "ATOMAGENTS",
+      "VIBEGEN",
+      "SCIENCECLAW",
+      "GRAPHAGENTS"
+    ],
+    "root": [
+      "CGCNN",
+      "NEQUIP",
+      "ALAB"
+    ]
+  },
+  "auditor": "buehler_audit; representation and causal/validation boundaries, claim-relative score calibration, comparator fairness",
+  "interface": "buehler_interface; no scientific rating assignment",
+  "coordinator": "root; rubric, comparator reading, integration, adjudication and publication",
+  "independence": "Same inherited model family, separate contexts. No external expert calibration or independent reproduction.",
+  "originalReadings": "readings/ retains original outputs; audit.json records disagreement and applied refinements.",
+  "execution": "Primary-text reading and assessment; deterministic ranking/export and unit checks. No scientific workflow or empirical validation executed here.",
+  "browserQA": "Unavailable; no browser QA performed."
+}

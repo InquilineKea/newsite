@@ -1,0 +1,438 @@
+{
+  "ranks": {
+    "representation": {
+      "COLLAGEN": 5,
+      "SILK": 5,
+      "OLOGS": 2,
+      "PROTOTYPE": 5,
+      "COPRESHEAF": 1,
+      "STIMULUS": 2,
+      "REPLACE": 5,
+      "MUSIC": 5,
+      "FIELDPERCEIVER": 5,
+      "MECHGPT": 5,
+      "SCIAGENTS": 5,
+      "CEPHALO": 5,
+      "HYPERGRAPH": 2,
+      "PROTAGENTS": 17,
+      "ATOMAGENTS": 17,
+      "VIBEGEN": 5,
+      "SCIENCECLAW": 5,
+      "GRAPHAGENTS": 5
+    },
+    "transfer": {
+      "COLLAGEN": 13,
+      "SILK": 13,
+      "OLOGS": 3,
+      "PROTOTYPE": 9,
+      "COPRESHEAF": 3,
+      "STIMULUS": 1,
+      "REPLACE": 3,
+      "MUSIC": 3,
+      "FIELDPERCEIVER": 13,
+      "MECHGPT": 3,
+      "SCIAGENTS": 9,
+      "CEPHALO": 3,
+      "HYPERGRAPH": 9,
+      "PROTAGENTS": 13,
+      "ATOMAGENTS": 13,
+      "VIBEGEN": 13,
+      "SCIENCECLAW": 1,
+      "GRAPHAGENTS": 9
+    },
+    "formal": {
+      "COLLAGEN": 15,
+      "SILK": 15,
+      "OLOGS": 2,
+      "PROTOTYPE": null,
+      "COPRESHEAF": 2,
+      "STIMULUS": 1,
+      "REPLACE": 2,
+      "MUSIC": 5,
+      "FIELDPERCEIVER": 10,
+      "MECHGPT": 10,
+      "SCIAGENTS": 10,
+      "CEPHALO": 15,
+      "HYPERGRAPH": 5,
+      "PROTAGENTS": 10,
+      "ATOMAGENTS": 5,
+      "VIBEGEN": 5,
+      "SCIENCECLAW": 5,
+      "GRAPHAGENTS": 10
+    },
+    "dynamics": {
+      "COLLAGEN": 4,
+      "SILK": 4,
+      "OLOGS": 4,
+      "PROTOTYPE": null,
+      "COPRESHEAF": 4,
+      "STIMULUS": 3,
+      "REPLACE": 13,
+      "MUSIC": 4,
+      "FIELDPERCEIVER": 10,
+      "MECHGPT": 13,
+      "SCIAGENTS": 13,
+      "CEPHALO": 10,
+      "HYPERGRAPH": 13,
+      "PROTAGENTS": 4,
+      "ATOMAGENTS": 10,
+      "VIBEGEN": 1,
+      "SCIENCECLAW": 1,
+      "GRAPHAGENTS": 13
+    },
+    "organization": {
+      "COLLAGEN": 12,
+      "SILK": 12,
+      "OLOGS": 12,
+      "PROTOTYPE": null,
+      "COPRESHEAF": 1,
+      "STIMULUS": 10,
+      "REPLACE": 12,
+      "MUSIC": 12,
+      "FIELDPERCEIVER": 12,
+      "MECHGPT": 3,
+      "SCIAGENTS": 3,
+      "CEPHALO": 10,
+      "HYPERGRAPH": 3,
+      "PROTAGENTS": 3,
+      "ATOMAGENTS": 3,
+      "VIBEGEN": 3,
+      "SCIENCECLAW": 1,
+      "GRAPHAGENTS": 3
+    },
+    "explanation": {
+      "COLLAGEN": 1,
+      "SILK": 1,
+      "OLOGS": 5,
+      "PROTOTYPE": null,
+      "COPRESHEAF": 1,
+      "STIMULUS": 1,
+      "REPLACE": 5,
+      "MUSIC": 5,
+      "FIELDPERCEIVER": 5,
+      "MECHGPT": 5,
+      "SCIAGENTS": 13,
+      "CEPHALO": 13,
+      "HYPERGRAPH": 13,
+      "PROTAGENTS": 13,
+      "ATOMAGENTS": 5,
+      "VIBEGEN": 5,
+      "SCIENCECLAW": 5,
+      "GRAPHAGENTS": 13
+    },
+    "validation": {
+      "COLLAGEN": 3,
+      "SILK": 3,
+      "OLOGS": 13,
+      "PROTOTYPE": 1,
+      "COPRESHEAF": 10,
+      "STIMULUS": 1,
+      "REPLACE": 13,
+      "MUSIC": 13,
+      "FIELDPERCEIVER": 10,
+      "MECHGPT": 3,
+      "SCIAGENTS": 13,
+      "CEPHALO": 10,
+      "HYPERGRAPH": 13,
+      "PROTAGENTS": 3,
+      "ATOMAGENTS": 3,
+      "VIBEGEN": 3,
+      "SCIENCECLAW": 3,
+      "GRAPHAGENTS": 13
+    },
+    "robustness": {
+      "COLLAGEN": 1,
+      "SILK": 1,
+      "OLOGS": 10,
+      "PROTOTYPE": null,
+      "COPRESHEAF": 3,
+      "STIMULUS": 3,
+      "REPLACE": 10,
+      "MUSIC": 10,
+      "FIELDPERCEIVER": null,
+      "MECHGPT": 10,
+      "SCIAGENTS": 10,
+      "CEPHALO": 3,
+      "HYPERGRAPH": 10,
+      "PROTAGENTS": 10,
+      "ATOMAGENTS": 3,
+      "VIBEGEN": 3,
+      "SCIENCECLAW": 3,
+      "GRAPHAGENTS": 3
+    }
+  },
+  "correlations": {
+    "representation": {
+      "representation": {
+        "rho": 1.0,
+        "n": 18
+      },
+      "transfer": {
+        "rho": 0.5271108771883782,
+        "n": 18
+      },
+      "formal": {
+        "rho": 0.5120881717881005,
+        "n": 17
+      },
+      "dynamics": {
+        "rho": 0.10995948595041453,
+        "n": 17
+      },
+      "organization": {
+        "rho": 0.0015298086453741078,
+        "n": 17
+      },
+      "explanation": {
+        "rho": 0.3143856618815814,
+        "n": 17
+      },
+      "validation": {
+        "rho": -0.24241353647410602,
+        "n": 18
+      },
+      "robustness": {
+        "rho": -0.03347309635022892,
+        "n": 16
+      }
+    },
+    "transfer": {
+      "representation": {
+        "rho": 0.5271108771883782,
+        "n": 18
+      },
+      "transfer": {
+        "rho": 1.0,
+        "n": 18
+      },
+      "formal": {
+        "rho": 0.5355396755046129,
+        "n": 17
+      },
+      "dynamics": {
+        "rho": 0.09619721404877636,
+        "n": 17
+      },
+      "organization": {
+        "rho": 0.13935479575856796,
+        "n": 17
+      },
+      "explanation": {
+        "rho": 0.09012301173931252,
+        "n": 17
+      },
+      "validation": {
+        "rho": -0.14537722173179032,
+        "n": 18
+      },
+      "robustness": {
+        "rho": -0.2496171045177767,
+        "n": 16
+      }
+    },
+    "formal": {
+      "representation": {
+        "rho": 0.5120881717881005,
+        "n": 17
+      },
+      "transfer": {
+        "rho": 0.5355396755046129,
+        "n": 17
+      },
+      "formal": {
+        "rho": 1.0,
+        "n": 17
+      },
+      "dynamics": {
+        "rho": 0.24278967884273275,
+        "n": 17
+      },
+      "organization": {
+        "rho": 0.15298719877019734,
+        "n": 17
+      },
+      "explanation": {
+        "rho": 0.2478690041329826,
+        "n": 17
+      },
+      "validation": {
+        "rho": -0.11557135599446136,
+        "n": 17
+      },
+      "robustness": {
+        "rho": -0.3099435214865892,
+        "n": 16
+      }
+    },
+    "dynamics": {
+      "representation": {
+        "rho": 0.10995948595041453,
+        "n": 17
+      },
+      "transfer": {
+        "rho": 0.09619721404877636,
+        "n": 17
+      },
+      "formal": {
+        "rho": 0.24278967884273275,
+        "n": 17
+      },
+      "dynamics": {
+        "rho": 1.0,
+        "n": 17
+      },
+      "organization": {
+        "rho": 0.02705203553699908,
+        "n": 17
+      },
+      "explanation": {
+        "rho": 0.5346603867398128,
+        "n": 17
+      },
+      "validation": {
+        "rho": 0.5742980299313226,
+        "n": 17
+      },
+      "robustness": {
+        "rho": 0.43745944254230734,
+        "n": 16
+      }
+    },
+    "organization": {
+      "representation": {
+        "rho": 0.0015298086453741078,
+        "n": 17
+      },
+      "transfer": {
+        "rho": 0.13935479575856796,
+        "n": 17
+      },
+      "formal": {
+        "rho": 0.15298719877019734,
+        "n": 17
+      },
+      "dynamics": {
+        "rho": 0.02705203553699908,
+        "n": 17
+      },
+      "organization": {
+        "rho": 1.0,
+        "n": 17
+      },
+      "explanation": {
+        "rho": -0.27581942578555085,
+        "n": 17
+      },
+      "validation": {
+        "rho": 0.17382288140722216,
+        "n": 17
+      },
+      "robustness": {
+        "rho": -0.01369305056551599,
+        "n": 16
+      }
+    },
+    "explanation": {
+      "representation": {
+        "rho": 0.3143856618815814,
+        "n": 17
+      },
+      "transfer": {
+        "rho": 0.09012301173931252,
+        "n": 17
+      },
+      "formal": {
+        "rho": 0.2478690041329826,
+        "n": 17
+      },
+      "dynamics": {
+        "rho": 0.5346603867398128,
+        "n": 17
+      },
+      "organization": {
+        "rho": -0.27581942578555085,
+        "n": 17
+      },
+      "explanation": {
+        "rho": 1.0,
+        "n": 17
+      },
+      "validation": {
+        "rho": 0.49969317375480665,
+        "n": 17
+      },
+      "robustness": {
+        "rho": 0.5358899804331934,
+        "n": 16
+      }
+    },
+    "validation": {
+      "representation": {
+        "rho": -0.24241353647410602,
+        "n": 18
+      },
+      "transfer": {
+        "rho": -0.14537722173179032,
+        "n": 18
+      },
+      "formal": {
+        "rho": -0.11557135599446136,
+        "n": 17
+      },
+      "dynamics": {
+        "rho": 0.5742980299313226,
+        "n": 17
+      },
+      "organization": {
+        "rho": 0.17382288140722216,
+        "n": 17
+      },
+      "explanation": {
+        "rho": 0.49969317375480665,
+        "n": 17
+      },
+      "validation": {
+        "rho": 1.0,
+        "n": 18
+      },
+      "robustness": {
+        "rho": 0.545544725589981,
+        "n": 16
+      }
+    },
+    "robustness": {
+      "representation": {
+        "rho": -0.03347309635022892,
+        "n": 16
+      },
+      "transfer": {
+        "rho": -0.2496171045177767,
+        "n": 16
+      },
+      "formal": {
+        "rho": -0.3099435214865892,
+        "n": 16
+      },
+      "dynamics": {
+        "rho": 0.43745944254230734,
+        "n": 16
+      },
+      "organization": {
+        "rho": -0.01369305056551599,
+        "n": 16
+      },
+      "explanation": {
+        "rho": 0.5358899804331934,
+        "n": 16
+      },
+      "validation": {
+        "rho": 0.545544725589981,
+        "n": 16
+      },
+      "robustness": {
+        "rho": 1.0,
+        "n": 16
+      }
+    }
+  }
+}

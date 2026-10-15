@@ -1,0 +1,322 @@
+{
+  "reader": "root",
+  "papers": [
+    {
+      "id": "CGCNN",
+      "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+      "shortTitle": "CGCNN",
+      "authors": [
+        "Tian Xie",
+        "Jeffrey C. Grossman"
+      ],
+      "year": 2018,
+      "status": "Peer-reviewed Physical Review Letters article",
+      "version": "Published 6 April 2018; main publisher PDF hosted by author lab",
+      "url": "https://doi.org/10.1103/PhysRevLett.120.145301",
+      "doi": "10.1103/PhysRevLett.120.145301",
+      "role": "Comparator",
+      "family": "Fixed-task property prediction",
+      "summary": "Learned crystal graphs predict properties and expose site-level design patterns.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Learned relations enrich a supplied crystal-graph vocabulary.",
+          "locator": "Fig.1; Eqs.1–3"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Graph learning transfers into crystal-property prediction.",
+          "locator": "Introduction"
+        },
+        "formal": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Pooling enforces permutation and unit-cell-size invariance.",
+          "locator": "Eq.2"
+        },
+        "dynamics": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Targets are static calculated properties.",
+          "locator": "Table I"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Training and prediction follow a fixed workflow.",
+          "locator": "Eqs.1–3"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Site contributions reveal quantified chemical preferences.",
+          "locator": "Fig.3; pp4–5"
+        },
+        "validation": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Held-out calculations test a surrogate, without new synthesis.",
+          "locator": "Fig.2; Table I"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Architecture comparisons and new crystals; distribution-shift limits remain.",
+          "locator": "Eqs.4–5; p4 new-crystal evaluation"
+        }
+      },
+      "surprise": {
+        "observation": "An interpretable pooling constraint exposes promising perovskite site preferences.",
+        "interpretation": "Standard prediction research can generate design insight.",
+        "boundary": "Learned site energies are model contributions, not separately measured atomic energies.",
+        "locator": "Fig.3; pp4–5"
+      },
+      "detail": {
+        "observation": "Interpretable pooling worsens perovskite MAE from 0.099 to 0.130 eV/atom.",
+        "consequence": "Interpretability and predictive accuracy are different objectives.",
+        "locator": "p4; Fig.3"
+      },
+      "coverage": {
+        "read": [
+          "Main six-page published PDF, including equations, comparisons and perovskite case",
+          "Supplement indexed split description: random 60/20/20"
+        ],
+        "notRead": [
+          "Full supplementary methods",
+          "Raw data, code execution or independent reproduction"
+        ]
+      },
+      "references": [
+        {
+          "title": "Author-lab publisher PDF",
+          "url": "https://gg.mit.edu/wp-content/uploads/2018/06/PhysRevLett.120.145301-2.pdf",
+          "scope": "Complete main text read"
+        },
+        {
+          "title": "Supplement",
+          "url": "https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.120.145301/SM.pdf",
+          "scope": "Indexed split excerpt only"
+        }
+      ]
+    },
+    {
+      "id": "NEQUIP",
+      "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
+      "shortTitle": "NequIP",
+      "authors": [
+        "Simon Batzner",
+        "Albert Musaelian",
+        "Lixin Sun",
+        "Mario Geiger",
+        "Jonathan P. Mailoa",
+        "Mordechai Kornbluth",
+        "Nicola Molinari",
+        "Tess E. Smidt",
+        "Boris Kozinsky"
+      ],
+      "year": 2022,
+      "status": "Peer-reviewed Nature Communications article",
+      "version": "Published 4 May 2022, 13:2453",
+      "url": "https://www.nature.com/articles/s41467-022-29939-5",
+      "doi": "10.1038/s41467-022-29939-5",
+      "role": "Comparator",
+      "family": "Physics-constrained atomistic learning",
+      "summary": "Equivariant tensor features enable data-efficient forces and molecular dynamics.",
+      "assessments": {
+        "representation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Tensor features enrich a fixed atomistic representation.",
+          "locator": "Fig.1"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Geometric learning is applied within atomistic prediction.",
+          "locator": "Introduction"
+        },
+        "formal": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Composed equivariant layers and energy-gradient forces enforce symmetry and conservation.",
+          "locator": "Eqs.1–8; Fig.1"
+        },
+        "dynamics": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Simulations target structural and kinetic response.",
+          "locator": "Figs.3–4"
+        },
+        "organization": {
+          "score": 0,
+          "confidence": "high",
+          "rationale": "Learning and evaluation use a fixed pipeline.",
+          "locator": "Methods: Training"
+        },
+        "explanation": {
+          "score": 3,
+          "confidence": "medium",
+          "rationale": "Controlled tensor-order comparisons isolate an architectural explanation.",
+          "locator": "Data efficiency; Fig.5"
+        },
+        "validation": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Direct MD tests structure and diffusion against AIMD.",
+          "locator": "Figs.3–4"
+        },
+        "robustness": {
+          "score": 3,
+          "confidence": "high",
+          "rationale": "Ablations, data budgets and phase tests; extrapolation remains bounded.",
+          "locator": "Fig.5; Methods: Learning Curve Experiments"
+        }
+      },
+      "surprise": {
+        "observation": "Equivariance changes learning-curve slopes in tested systems.",
+        "interpretation": "Formal inductive bias can change data efficiency, beyond shifting accuracy.",
+        "boundary": "This is an empirical architecture effect, not universal learning theory.",
+        "locator": "Data efficiency; Fig.5"
+      },
+      "detail": {
+        "observation": "Many benchmark splits sample frames from shared trajectories; glass tests also cross melt-to-quench.",
+        "consequence": "Held-out-frame accuracy and phase transfer provide distinct evidence.",
+        "locator": "Methods: Reference Data Sets"
+      },
+      "coverage": {
+        "read": [
+          "Publisher main HTML: architecture, equivariance, results, data efficiency and Methods",
+          "Software versions, split construction and learning-curve controls"
+        ],
+        "notRead": [
+          "Separate supplementary PDF",
+          "Raw trajectories or executable reproduction"
+        ]
+      },
+      "references": [
+        {
+          "title": "Publisher full text",
+          "url": "https://www.nature.com/articles/s41467-022-29939-5",
+          "scope": "Main methods/results read"
+        }
+      ]
+    },
+    {
+      "id": "ALAB",
+      "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+      "shortTitle": "A-Lab (corrected)",
+      "authors": [
+        "Nathan J. Szymanski",
+        "Bernardus Rendy",
+        "Yuxing Fei",
+        "Rishi E. Kumar",
+        "Tanjin He",
+        "David Milsted",
+        "Matthew J. McDermott",
+        "Max Gallant",
+        "Ekin Dogus Cubuk",
+        "Amil Merchant",
+        "Haegyeom Kim",
+        "Anubhav Jain",
+        "Christopher J. Bartel",
+        "Kristin Persson",
+        "Yan Zeng",
+        "Gerbrand Ceder"
+      ],
+      "year": 2023,
+      "status": "Peer-reviewed Nature article; author correction in January 2026",
+      "version": "Corrected publisher HTML accessed 15 October 2026; title and counts reflect correction",
+      "url": "https://www.nature.com/articles/s41586-023-06734-w",
+      "doi": "10.1038/s41586-023-06734-w",
+      "role": "Comparator",
+      "family": "Closed-loop experimental discovery",
+      "summary": "Literature, thermodynamics, active learning and robotics close a synthesis loop.",
+      "assessments": {
+        "representation": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Recipes evolve within supplied phase and synthesis representations.",
+          "locator": "Methods: Materials screening"
+        },
+        "transfer": {
+          "score": 1,
+          "confidence": "medium",
+          "rationale": "Knowledge and algorithms combine within inorganic synthesis.",
+          "locator": "Fig.1"
+        },
+        "formal": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Interfaces and constraints organize a modular pipeline.",
+          "locator": "Fig.1; Methods"
+        },
+        "dynamics": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Reaction outcomes serve synthesis endpoints, not designed dynamical functions.",
+          "locator": "Experimental outcomes"
+        },
+        "organization": {
+          "score": 1,
+          "confidence": "high",
+          "rationale": "Recipe adaptation occurs within prescribed workflow and targets.",
+          "locator": "Methods: Active learning"
+        },
+        "explanation": {
+          "score": 2,
+          "confidence": "medium",
+          "rationale": "Failure analysis identifies actionable synthesis barriers.",
+          "locator": "Fig.4"
+        },
+        "validation": {
+          "score": 4,
+          "confidence": "high",
+          "rationale": "Robotics performs synthesis and XRD characterization.",
+          "locator": "Figs.1–2"
+        },
+        "robustness": {
+          "score": 2,
+          "confidence": "high",
+          "rationale": "Manual phase rechecks support outcomes; pipeline-level alternatives remain open.",
+          "locator": "Experimental outcomes; correction"
+        }
+      },
+      "surprise": {
+        "observation": "Physical autonomy already exists outside Buehler’s agent frameworks.",
+        "interpretation": "Self-organization must be distinguished from autonomous execution.",
+        "boundary": "This is a strong chosen comparator, not a typical-field percentile.",
+        "locator": "Fig.1; Methods: Active learning"
+      },
+      "detail": {
+        "observation": "Corrected record reports 36 of 57 targets, with four further XRD-inconclusive cases.",
+        "consequence": "Use corrected evidence, and distinguish new-to-algorithm from globally novel materials.",
+        "locator": "Experimental synthesis outcomes; Methods: Materials screening; 2026 correction"
+      },
+      "coverage": {
+        "read": [
+          "Corrected publisher main HTML: workflow, outcomes, barriers, Methods and data/code availability",
+          "Publisher correction link and change-history notice"
+        ],
+        "notRead": [
+          "Correction full text: retrieval failed",
+          "Separate supplementary diffraction data",
+          "Independent synthesis or raw XRD reanalysis"
+        ]
+      },
+      "references": [
+        {
+          "title": "Corrected publisher article",
+          "url": "https://www.nature.com/articles/s41586-023-06734-w",
+          "scope": "Main corrected text and methods read"
+        },
+        {
+          "title": "2026 Author Correction",
+          "url": "https://doi.org/10.1038/s41586-025-09992-y",
+          "scope": "Existence verified; full correction retrieval failed"
+        }
+      ]
+    }
+  ]
+}
