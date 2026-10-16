@@ -1,0 +1,1120 @@
+{
+  "schema": "triangle_scattering_audit_v1",
+  "conventions": {
+    "hamiltonian_indices": "H[target,source]",
+    "oriented_bonds": [
+      "0->1",
+      "1->2",
+      "2->0"
+    ],
+    "bond_amplitude": "t exp(+i phi/3)",
+    "loop_product": "H[1,0] H[2,1] H[0,2] = t^3 exp(i phi)",
+    "retarded_green": "(E I-H+i gamma I/2)^-1",
+    "scattering": "S=I-i gamma G",
+    "transmission": "T[output,input]=abs(S[output,input])^2",
+    "port_coupling": "W=sqrt(gamma) I, three single normalized channels; no unobserved leakage",
+    "circulation": "mean_j(T[(j+1)%3,j]-T[(j-1)%3,j])",
+    "time_convention": "exp(-i E t), hbar=1",
+    "energy_unit": "t=1"
+  },
+  "recommended": {
+    "t": 1.0,
+    "phi_plus": 1.5707963267948966,
+    "phi_minus": -1.5707963267948966,
+    "energy": 0.0,
+    "gamma": 2.0,
+    "eigenvalues_plus": [
+      -1.73205080756888,
+      -0.0,
+      1.73205080756888
+    ],
+    "eigenvalues_minus": [
+      -1.73205080756888,
+      -0.0,
+      1.73205080756888
+    ],
+    "T_plus": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "T_minus": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "circulation_plus": -1.0,
+    "circulation_minus": 1.0000000000000002,
+    "fixed_label_frobenius_difference": 2.4494897427831783,
+    "gauge_angles": [
+      0.31,
+      -0.78,
+      1.19
+    ]
+  },
+  "detuned_preset": {
+    "onsite": [
+      0.0,
+      0.2,
+      -0.35
+    ],
+    "phi_plus": 1.5707963267948966,
+    "phi_minus": -1.5707963267948966,
+    "energy": 0.0,
+    "gamma": 2.0,
+    "eigenvalues": [
+      -1.80488942294815,
+      -0.04878147788489,
+      1.70367090083304
+    ],
+    "T_plus": [
+      [
+        0.00029420771064,
+        0.99009900990099,
+        0.00960678238837
+      ],
+      [
+        0.02942077106437,
+        0.00990099009901,
+        0.96067823883662
+      ],
+      [
+        0.97028502122498,
+        0.0,
+        0.02971497877502
+      ]
+    ],
+    "T_minus": [
+      [
+        0.00029420771064,
+        0.02942077106437,
+        0.97028502122498
+      ],
+      [
+        0.99009900990099,
+        0.00990099009901,
+        0.0
+      ],
+      [
+        0.00960678238837,
+        0.96067823883662,
+        0.02971497877502
+      ]
+    ],
+    "circulation_plus": -0.9606782388366186,
+    "circulation_minus": 0.9606782388366186,
+    "diagonal_matching_permutations": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "loop_product_distance": 2.0,
+    "gauge_permutation_equivalence": false,
+    "proof_scope": "Unique onsite values force the identity matching permutation; gauge-invariant loop products differ. Time reversal remains an equivalence only if explicitly included in the chosen quotient."
+  },
+  "checks": {
+    "hermiticity": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "Each reverse bond is the conjugate of its forward bond."
+    },
+    "opposite_flux_same_spectrum": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "Entrywise conjugate Hermitian matrices have identical real spectra."
+    },
+    "analytic_spectrum": {
+      "pass": true,
+      "max_absolute_error": 4.440892098500626e-16,
+      "description": "Exact pi/2-flux spectrum at t=1, zero onsite energies."
+    },
+    "positive_flux_circulator": {
+      "pass": true,
+      "max_absolute_error": 4.291958987631782e-32,
+      "description": "Rows are output ports; columns are input ports."
+    },
+    "negative_flux_circulator": {
+      "pass": true,
+      "max_absolute_error": 4.440892098500626e-16,
+      "description": "Opposite flux reverses routing with physical port labels held fixed."
+    },
+    "onsager_transpose_amplitude": {
+      "pass": true,
+      "max_absolute_error": 2.5900124204191946e-16,
+      "description": "S(-phi)=S(phi)^T under the stated real equal-port coupling convention."
+    },
+    "gauge_covariance_amplitude": {
+      "pass": true,
+      "max_absolute_error": 3.391715581214272e-16,
+      "description": "Diagonal site gauge induces channel phase changes."
+    },
+    "gauge_invariance_probability": {
+      "pass": true,
+      "max_absolute_error": 3.3896367021215384e-32,
+      "description": "Intensity routing does not depend on site/channel phase conventions."
+    },
+    "gauge_invariance_eigenspectrum": {
+      "pass": true,
+      "max_absolute_error": 4.440892098500626e-16,
+      "description": "A diagonal unitary conjugation preserves eigenvalues."
+    },
+    "wilson_loop_gauge_invariance": {
+      "pass": true,
+      "max_absolute_error": 5.551115123125783e-17,
+      "description": "Oriented loop product is t^3 exp(i phi); phases cancel under gauge."
+    },
+    "wilson_loop_flux": {
+      "pass": true,
+      "max_absolute_error": 2.1632341619892146e-16,
+      "description": "phi is the net oriented loop phase modulo 2pi."
+    },
+    "zero_flux_reciprocity_amplitude": {
+      "pass": true,
+      "max_absolute_error": 1.1443916996305594e-16,
+      "description": "Real symmetric H at zero flux gives reciprocal S."
+    },
+    "zero_flux_reciprocity_probability": {
+      "pass": true,
+      "max_absolute_error": 1.6653345369377348e-16,
+      "description": "Zero-flux routing is reciprocal."
+    },
+    "unitarity": {
+      "pass": true,
+      "max_absolute_error": 1.8201638975255093e-16,
+      "description": "No internal loss/gain and all three wide-band ports retained."
+    },
+    "input_probability_conservation": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "Each normalized incoming channel scatters with total probability one."
+    },
+    "output_probability_conservation": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "Unitarity also makes T row sums one."
+    },
+    "eigenpair_residual_plus": {
+      "pass": true,
+      "max_absolute_error": 6.533102476583651e-16,
+      "description": "H v=lambda v residual."
+    },
+    "eigenpair_residual_minus": {
+      "pass": true,
+      "max_absolute_error": 6.533102476583651e-16,
+      "description": "H v=lambda v residual."
+    },
+    "all_six_permutation_covariances": {
+      "pass": true,
+      "max_absolute_error": 4.440892098500626e-16,
+      "description": "Relabel the Hamiltonian and ports together; compare in the same labels."
+    },
+    "opposite_flux_unlabelled_equivalence": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "The opposite-flux triangles are the same unlabelled system under reflection."
+    },
+    "reflected_routing_equivalence": {
+      "pass": true,
+      "max_absolute_error": 4.440892098500626e-16,
+      "description": "Fixed-port routing differs; relabelled routing agrees."
+    },
+    "detuned_opposite_flux_spectrum": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "Distinct real onsite energies preserve conjugate-pair isospectrality."
+    },
+    "detuned_opposite_flux_transpose": {
+      "pass": true,
+      "max_absolute_error": 1.6883057536160646e-16,
+      "description": "Same physical labelled onsite arrangement, reversed flux."
+    },
+    "detuned_canonical_flux_permutation_invariance": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "Unique onsite values canonically orient the cycle; all six relabellings preserve this invariant."
+    },
+    "detuned_canonical_flux_gauge_invariance": {
+      "pass": true,
+      "max_absolute_error": 2.482534153247273e-16,
+      "description": "Diagonal gauges preserve the onsite-ordered cycle product."
+    },
+    "randomized_unitarity_40": {
+      "pass": true,
+      "max_absolute_error": 6.666927056938411e-16,
+      "description": "Random energy, leakage, flux and real onsite detunings; deterministic seed 2718."
+    },
+    "randomized_opposite_flux_transpose_40": {
+      "pass": true,
+      "max_absolute_error": 4.518280359883027e-16,
+      "description": "Transpose relation survives real onsite detuning."
+    },
+    "randomized_opposite_flux_isospectral_40": {
+      "pass": true,
+      "max_absolute_error": 0.0,
+      "description": "Conjugate-pair isospectrality survives real onsite detuning."
+    },
+    "randomized_gauge_invariance_40": {
+      "pass": true,
+      "max_absolute_error": 7.771561172376096e-16,
+      "description": "Intensity invariance survives randomized phase choices and detunings."
+    }
+  },
+  "negative_controls": {
+    "wrong_self_energy_halfwidth": {
+      "detected": true,
+      "unitarity_error": 0.7142857142857143
+    },
+    "nonhermitian_reverse_bond": {
+      "detected": true
+    },
+    "spectrum_only_routing_inference": {
+      "detected": true,
+      "reason": "Same eigenvalues, opposite fixed-port intensity routing."
+    },
+    "unlabelled_novelty_claim": {
+      "detected": true,
+      "reason": "Reflection maps the +/-flux triangles and all their ports exactly."
+    }
+  },
+  "grid": {
+    "count": 100,
+    "description": "100 fixed three-site candidates; phi x energy x gamma. No optimization, learned model, actual materials, or large-size extrapolation.",
+    "rows": [
+      {
+        "phi": -1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 0.5,
+        "circulation": 0.05224223253915613,
+        "mean_reflection": 0.7845007907759808,
+        "unitarity_error": 2.2204968978100707e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 1.0,
+        "circulation": 0.2639175257731961,
+        "mean_reflection": 0.4061855670103092,
+        "unitarity_error": 4.441263516662087e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 2.0,
+        "circulation": 0.6153846153846154,
+        "mean_reflection": 0.07692307692307691,
+        "unitarity_error": 2.2206082300406403e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 4.0,
+        "circulation": 0.4923076923076924,
+        "mean_reflection": 0.26153846153846155,
+        "unitarity_error": 4.4473218865894e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 0.5,
+        "circulation": 0.10034296913277813,
+        "mean_reflection": 0.7365997060264574,
+        "unitarity_error": 2.2245297431687456e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 1.0,
+        "circulation": 0.4324324324324325,
+        "mean_reflection": 0.3513513513513513,
+        "unitarity_error": 2.606280791881679e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 2.0,
+        "circulation": 0.8497925311203319,
+        "mean_reflection": 0.04398340248962646,
+        "unitarity_error": 2.6228572183618686e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 4.0,
+        "circulation": 0.6076700541502855,
+        "mean_reflection": 0.2024330539277501,
+        "unitarity_error": 3.330802541544995e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 0.5,
+        "circulation": 0.42648896293211186,
+        "mean_reflection": 0.0937109537692627,
+        "unitarity_error": 4.440926787846101e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 1.0,
+        "circulation": 0.7573964497041418,
+        "mean_reflection": 0.053254437869822556,
+        "unitarity_error": 4.440954254125519e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 2.0,
+        "circulation": 1.0000000000000002,
+        "mean_reflection": 2.322177977162497e-32,
+        "unitarity_error": 2.590012420419195e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 4.0,
+        "circulation": 0.6530612244897962,
+        "mean_reflection": 0.18367346938775517,
+        "unitarity_error": 2.2274738134540937e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 0.5,
+        "circulation": 0.10034296913277792,
+        "mean_reflection": 0.7365997060264579,
+        "unitarity_error": 2.633883584051593e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 1.0,
+        "circulation": 0.4324324324324323,
+        "mean_reflection": 0.35135135135135154,
+        "unitarity_error": 2.221019856382752e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 2.0,
+        "circulation": 0.8497925311203319,
+        "mean_reflection": 0.04398340248962657,
+        "unitarity_error": 2.550119978432583e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 4.0,
+        "circulation": 0.6076700541502859,
+        "mean_reflection": 0.20243305392775005,
+        "unitarity_error": 5.551134929542271e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 0.5,
+        "circulation": 0.05224223253915614,
+        "mean_reflection": 0.7845007907759808,
+        "unitarity_error": 1.1102801256465486e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 1.0,
+        "circulation": 0.2639175257731959,
+        "mean_reflection": 0.40618556701030945,
+        "unitarity_error": 2.223960617215093e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 2.0,
+        "circulation": 0.6153846153846153,
+        "mean_reflection": 0.07692307692307694,
+        "unitarity_error": 4.442401244643757e-16
+      },
+      {
+        "phi": -1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 4.0,
+        "circulation": 0.4923076923076927,
+        "mean_reflection": 0.26153846153846155,
+        "unitarity_error": 6.661449384216344e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 0.5,
+        "circulation": 0.1535070128916852,
+        "mean_reflection": 0.6233339103340834,
+        "unitarity_error": 2.2205426555651805e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 1.0,
+        "circulation": 0.5626967090579096,
+        "mean_reflection": 0.18781725888324874,
+        "unitarity_error": 4.441018701303113e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 2.0,
+        "circulation": 0.8150827329735896,
+        "mean_reflection": 0.05882352941176469,
+        "unitarity_error": 2.3774596256240206e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 4.0,
+        "circulation": 0.47575644499745984,
+        "mean_reflection": 0.3133047210300431,
+        "unitarity_error": 2.8876033618127135e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 0.5,
+        "circulation": 0.3908373792310558,
+        "mean_reflection": 0.2666372851476419,
+        "unitarity_error": 3.0567691474127037e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 1.0,
+        "circulation": 0.8150827329735896,
+        "mean_reflection": 0.05882352941176464,
+        "unitarity_error": 4.44974169900809e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 2.0,
+        "circulation": 0.984250847364334,
+        "mean_reflection": 0.005549389567147633,
+        "unitarity_error": 3.332583166820921e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 4.0,
+        "circulation": 0.5630092935324275,
+        "mean_reflection": 0.22799777795413054,
+        "unitarity_error": 2.233015066355865e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 0.5,
+        "circulation": 0.13649530759970216,
+        "mean_reflection": 0.6650761890103125,
+        "unitarity_error": 2.334096275103498e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 1.0,
+        "circulation": 0.47575644499745984,
+        "mean_reflection": 0.3133047210300431,
+        "unitarity_error": 2.3536911728731844e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 2.0,
+        "circulation": 0.8150827329735892,
+        "mean_reflection": 0.05882352941176472,
+        "unitarity_error": 2.228998395897472e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 4.0,
+        "circulation": 0.5626967090579094,
+        "mean_reflection": 0.18781725888324877,
+        "unitarity_error": 2.2215440291743646e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 0.5,
+        "circulation": 0.033676755913692596,
+        "mean_reflection": 0.8590361903315232,
+        "unitarity_error": 1.3497350329331283e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 1.0,
+        "circulation": 0.18981378713083577,
+        "mean_reflection": 0.5616438356164385,
+        "unitarity_error": 2.7966948896412294e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 2.0,
+        "circulation": 0.5417287803758493,
+        "mean_reflection": 0.13989004276114844,
+        "unitarity_error": 2.739362854779062e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 4.0,
+        "circulation": 0.4896459457382926,
+        "mean_reflection": 0.18724549658361514,
+        "unitarity_error": 3.3319004286791663e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 0.5,
+        "circulation": 0.021308840461236156,
+        "mean_reflection": 0.8492923564889349,
+        "unitarity_error": 2.220446874753359e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 1.0,
+        "circulation": 0.12303135592054172,
+        "mean_reflection": 0.5382907880133184,
+        "unitarity_error": 1.3638325202431036e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 2.0,
+        "circulation": 0.3744974719067842,
+        "mean_reflection": 0.13513513513513517,
+        "unitarity_error": 4.441556819321152e-16
+      },
+      {
+        "phi": -1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 4.0,
+        "circulation": 0.3835683449287481,
+        "mean_reflection": 0.22491349480968859,
+        "unitarity_error": 2.232191248202506e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": -1.0,
+        "gamma": 0.5,
+        "circulation": 0.0,
+        "mean_reflection": 0.11724137931034484,
+        "unitarity_error": 3.760604449960594e-17
+      },
+      {
+        "phi": 0.0,
+        "energy": -1.0,
+        "gamma": 1.0,
+        "circulation": 1.295260195396016e-16,
+        "mean_reflection": 0.13513513513513517,
+        "unitarity_error": 2.2205461598926657e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": -1.0,
+        "gamma": 2.0,
+        "circulation": 1.850371707708594e-17,
+        "mean_reflection": 0.20000000000000004,
+        "unitarity_error": 3.331450764192697e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": -1.0,
+        "gamma": 4.0,
+        "circulation": -7.401486830834377e-17,
+        "mean_reflection": 0.38461538461538436,
+        "unitarity_error": 2.2300678861910977e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": -0.5,
+        "gamma": 0.5,
+        "circulation": 4.625929269271486e-17,
+        "mean_reflection": 0.7465346534653464,
+        "unitarity_error": 1.1163743787905042e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": -0.5,
+        "gamma": 1.0,
+        "circulation": 3.700743415417188e-17,
+        "mean_reflection": 0.3846153846153846,
+        "unitarity_error": 1.416577837270687e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": -0.5,
+        "gamma": 2.0,
+        "circulation": 0.0,
+        "mean_reflection": 0.1172413793103449,
+        "unitarity_error": 3.439306062877866e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": -0.5,
+        "gamma": 4.0,
+        "circulation": 0.0,
+        "mean_reflection": 0.2654232424677189,
+        "unitarity_error": 4.441016042803111e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.0,
+        "gamma": 0.5,
+        "circulation": 9.25185853854297e-18,
+        "mean_reflection": 0.8841628959276017,
+        "unitarity_error": 2.221243497061752e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.0,
+        "gamma": 1.0,
+        "circulation": -9.25185853854297e-18,
+        "mean_reflection": 0.6235294117647058,
+        "unitarity_error": 1.1257329048535904e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.0,
+        "gamma": 2.0,
+        "circulation": 5.551115123125783e-17,
+        "mean_reflection": 0.20000000000000004,
+        "unitarity_error": 2.2204738046524586e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.0,
+        "gamma": 4.0,
+        "circulation": -3.700743415417188e-17,
+        "mean_reflection": 0.19999999999999998,
+        "unitarity_error": 2.442995248882551e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.5,
+        "gamma": 0.5,
+        "circulation": 4.625929269271485e-18,
+        "mean_reflection": 0.9065010956902847,
+        "unitarity_error": 3.5830699075441095e-17
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.5,
+        "gamma": 1.0,
+        "circulation": 0.0,
+        "mean_reflection": 0.6799999999999998,
+        "unitarity_error": 1.1129397471172595e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.5,
+        "gamma": 2.0,
+        "circulation": -9.251858538542972e-17,
+        "mean_reflection": 0.24260355029585792,
+        "unitarity_error": 1.3439745269653566e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 0.5,
+        "gamma": 4.0,
+        "circulation": 0.0,
+        "mean_reflection": 0.1808,
+        "unitarity_error": 4.440966793677542e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 1.0,
+        "gamma": 0.5,
+        "circulation": -4.625929269271485e-18,
+        "mean_reflection": 0.8841628959276018,
+        "unitarity_error": 2.220446091127069e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 1.0,
+        "gamma": 1.0,
+        "circulation": 1.850371707708594e-17,
+        "mean_reflection": 0.623529411764706,
+        "unitarity_error": 1.3960800657206223e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 1.0,
+        "gamma": 2.0,
+        "circulation": 0.0,
+        "mean_reflection": 0.19999999999999998,
+        "unitarity_error": 2.2216184128245217e-16
+      },
+      {
+        "phi": 0.0,
+        "energy": 1.0,
+        "gamma": 4.0,
+        "circulation": -1.850371707708594e-17,
+        "mean_reflection": 0.20000000000000004,
+        "unitarity_error": 2.708160597383588e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 0.5,
+        "circulation": -0.15350701289168528,
+        "mean_reflection": 0.6233339103340834,
+        "unitarity_error": 2.220599929406377e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 1.0,
+        "circulation": -0.5626967090579098,
+        "mean_reflection": 0.18781725888324874,
+        "unitarity_error": 6.661348414006649e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 2.0,
+        "circulation": -0.8150827329735894,
+        "mean_reflection": 0.058823529411764684,
+        "unitarity_error": 4.44294242197746e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -1.0,
+        "gamma": 4.0,
+        "circulation": -0.4757564449974599,
+        "mean_reflection": 0.31330472103004303,
+        "unitarity_error": 2.2207063339948737e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 0.5,
+        "circulation": -0.39083737923105577,
+        "mean_reflection": 0.2666372851476421,
+        "unitarity_error": 1.1132176601704635e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 1.0,
+        "circulation": -0.8150827329735896,
+        "mean_reflection": 0.05882352941176464,
+        "unitarity_error": 4.442482241516132e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 2.0,
+        "circulation": -0.9842508473643341,
+        "mean_reflection": 0.0055493895671476215,
+        "unitarity_error": 2.473810224531164e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": -0.5,
+        "gamma": 4.0,
+        "circulation": -0.5630092935324275,
+        "mean_reflection": 0.22799777795413054,
+        "unitarity_error": 1.6147177109923948e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 0.5,
+        "circulation": -0.13649530759970213,
+        "mean_reflection": 0.6650761890103124,
+        "unitarity_error": 2.222290991706243e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 1.0,
+        "circulation": -0.47575644499745967,
+        "mean_reflection": 0.31330472103004303,
+        "unitarity_error": 2.2208081457899435e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 2.0,
+        "circulation": -0.8150827329735892,
+        "mean_reflection": 0.0588235294117647,
+        "unitarity_error": 3.340201154280035e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.0,
+        "gamma": 4.0,
+        "circulation": -0.5626967090579094,
+        "mean_reflection": 0.18781725888324877,
+        "unitarity_error": 2.2211721577941484e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 0.5,
+        "circulation": -0.03367675591369256,
+        "mean_reflection": 0.8590361903315232,
+        "unitarity_error": 4.118474037131453e-17
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 1.0,
+        "circulation": -0.18981378713083585,
+        "mean_reflection": 0.5616438356164383,
+        "unitarity_error": 2.2211719094798496e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 2.0,
+        "circulation": -0.5417287803758493,
+        "mean_reflection": 0.13989004276114844,
+        "unitarity_error": 2.220772134834528e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 0.5,
+        "gamma": 4.0,
+        "circulation": -0.4896459457382925,
+        "mean_reflection": 0.1872454965836151,
+        "unitarity_error": 3.3315824621545154e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 0.5,
+        "circulation": -0.021308840461236146,
+        "mean_reflection": 0.849292356488935,
+        "unitarity_error": 8.082659860443183e-17
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 1.0,
+        "circulation": -0.12303135592054182,
+        "mean_reflection": 0.5382907880133185,
+        "unitarity_error": 3.04350808260441e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 2.0,
+        "circulation": -0.3744974719067842,
+        "mean_reflection": 0.1351351351351352,
+        "unitarity_error": 2.664113490685236e-16
+      },
+      {
+        "phi": 1.0471975511965976,
+        "energy": 1.0,
+        "gamma": 4.0,
+        "circulation": -0.3835683449287481,
+        "mean_reflection": 0.22491349480968856,
+        "unitarity_error": 2.222866710938642e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 0.5,
+        "circulation": -0.05224223253915614,
+        "mean_reflection": 0.7845007907759808,
+        "unitarity_error": 1.1106123829626809e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 1.0,
+        "circulation": -0.263917525773196,
+        "mean_reflection": 0.4061855670103094,
+        "unitarity_error": 2.319815984542088e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 2.0,
+        "circulation": -0.6153846153846154,
+        "mean_reflection": 0.07692307692307693,
+        "unitarity_error": 4.441639262733416e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -1.0,
+        "gamma": 4.0,
+        "circulation": -0.49230769230769234,
+        "mean_reflection": 0.26153846153846155,
+        "unitarity_error": 2.2336412112369207e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 0.5,
+        "circulation": -0.10034296913277807,
+        "mean_reflection": 0.7365997060264574,
+        "unitarity_error": 2.2214262695595904e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 1.0,
+        "circulation": -0.4324324324324326,
+        "mean_reflection": 0.35135135135135126,
+        "unitarity_error": 2.2241689371281107e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 2.0,
+        "circulation": -0.8497925311203322,
+        "mean_reflection": 0.04398340248962651,
+        "unitarity_error": 2.7629855690071143e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": -0.5,
+        "gamma": 4.0,
+        "circulation": -0.6076700541502857,
+        "mean_reflection": 0.20243305392775016,
+        "unitarity_error": 4.440892782840234e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 0.5,
+        "circulation": -0.42648896293211136,
+        "mean_reflection": 0.09371095376926296,
+        "unitarity_error": 5.553754996881783e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 1.0,
+        "circulation": -0.7573964497041422,
+        "mean_reflection": 0.05325443786982242,
+        "unitarity_error": 4.441703502427873e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 2.0,
+        "circulation": -1.0,
+        "mean_reflection": 2.0287785779242912e-32,
+        "unitarity_error": 1.8201638975255093e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.0,
+        "gamma": 4.0,
+        "circulation": -0.6530612244897961,
+        "mean_reflection": 0.18367346938775517,
+        "unitarity_error": 2.2215015939781493e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 0.5,
+        "circulation": -0.10034296913277796,
+        "mean_reflection": 0.7365997060264577,
+        "unitarity_error": 2.2224276118539257e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 1.0,
+        "circulation": -0.4324324324324323,
+        "mean_reflection": 0.3513513513513515,
+        "unitarity_error": 2.389850319827716e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 2.0,
+        "circulation": -0.8497925311203319,
+        "mean_reflection": 0.0439834024896266,
+        "unitarity_error": 2.220613823029741e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 0.5,
+        "gamma": 4.0,
+        "circulation": -0.6076700541502859,
+        "mean_reflection": 0.20243305392775013,
+        "unitarity_error": 2.2211385726724336e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 0.5,
+        "circulation": -0.05224223253915614,
+        "mean_reflection": 0.7845007907759808,
+        "unitarity_error": 2.2207332729871683e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 1.0,
+        "circulation": -0.2639175257731959,
+        "mean_reflection": 0.40618556701030945,
+        "unitarity_error": 4.441370724512321e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 2.0,
+        "circulation": -0.6153846153846152,
+        "mean_reflection": 0.07692307692307697,
+        "unitarity_error": 2.2324460618493595e-16
+      },
+      {
+        "phi": 1.5707963267948966,
+        "energy": 1.0,
+        "gamma": 4.0,
+        "circulation": -0.4923076923076926,
+        "mean_reflection": 0.26153846153846155,
+        "unitarity_error": 4.441365662183564e-16
+      }
+    ]
+  },
+  "limits": [
+    "An ideal coherent single-particle/linear-wave tight-binding scattering model; no chemistry, mechanics, nonlinear hysteresis, finite-temperature bath, fabrication or empirical validation.",
+    "Complex hopping with nonzero loop phase breaks time reversal in this spinless model. An implementation requires a justified effective flux mechanism; ordinary static reciprocal spring networks do not inherit this behavior merely from the graph.",
+    "Opposite flux with fixed external port labels gives distinct routing. Without labelled ports the symmetric triangle pair is equivalent by reflection and must not count as two intrinsically distinct unlabelled designs. The distinct-onsite preset removes this reflection equivalence under gauge plus permutation, but remains time-reversal related.",
+    "Gauge invariance of intensities assumes independent site/port phase changes and the specified diagonal equal-channel coupling. Coherent superposition inputs require transforming their channel phases consistently.",
+    "Ideal circulation occurs at a tuned point; the finite grid is a toy robustness screen, not a universal bandwidth, tolerance or scalable material claim.",
+    "Flux is defined modulo 2pi. The uniform bond-phase gauge may change under phi->phi+2pi; all measured probabilities remain gauge-equivalent.",
+    "Eigenspectrum is the closed Hamiltonian spectrum. Directional routing additionally depends on eigenvectors, port attachment, energy and coupling widths."
+  ]
+}

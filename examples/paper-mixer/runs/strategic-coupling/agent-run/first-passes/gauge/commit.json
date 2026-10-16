@@ -1,0 +1,5 @@
+{
+  "algorithm": "SHA-256(salt UTF-8 + newline + exact draft UTF-8); salt is hex encoding of 32 random bytes",
+  "commitment": "ee36f907d39877fc3bd37f87770056db8cce123db6533b4e80ce0d6b9dee8848",
+  "draftSha256": "a7da8b0206f83ce6a96de92d332837b6f15c97440bd1788a9cd39e92eeafc7cd"
+}

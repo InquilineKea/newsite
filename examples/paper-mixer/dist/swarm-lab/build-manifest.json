@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "swarm-lab-build/1.0",
+  "sourceSha256": "0bd14fe0c8faf770479563119aab9673fa56c21537c7e930eaac06ed8f56e31e",
+  "runSha256": "2c58eded17d3912c805e4dce44a04e190fb90e88a73615ce7ba70d9de63b54e0",
+  "agentPassSha256": "1b6778ec1add000eda5271c773eb336ee7fca39730d389053b55e8f800ed6291",
+  "physicsChecks": 29,
+  "firstPasses": 6,
+  "coalitionOutputs": 3,
+  "modelTokenUsage": null,
+  "ontologyPromoted": false,
+  "browserQA": false,
+  "semanticScope": "Finite scattering fixture, actual bounded readings and deterministic routing replay; no materials or agent-strategy superiority claim."
+}

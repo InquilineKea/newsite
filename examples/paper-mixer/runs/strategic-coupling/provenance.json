@@ -1,0 +1,30 @@
+{
+  "record": {
+    "artifact_id": "5cf725cd-f94a-4fcb-987a-8b13077d4a51",
+    "artifact_type": "strategic_coupling_run",
+    "producer_agent": "Builder",
+    "skill_used": "evidence-factorization",
+    "schema_version": "1.0",
+    "investigation_id": "strategic-coupling-20261016",
+    "timestamp": "2026-10-16T03:39:53.611025+00:00",
+    "content_hash": "764d8b2422794666b8fd4855c0514b77ee0d40440a7b60e9db8a48de73282bcc",
+    "parent_artifact_ids": [
+      "f45094c8-2de5-447c-8a6d-7a9ee9d8f380"
+    ],
+    "result_quality": "ok",
+    "needs": [],
+    "summary": "Executed 28-candidate coherent scattering fixture, 196 scattering solves, 29 physics checks; six committed first-pass worker contexts and three bounded coalition proposals. Four-arm deterministic routing replay and external budgeted adapter runtime; no AI strategy superiority or experimental validation."
+  },
+  "factorySha256": "c5108c064c5aa85c18c3c32a890f2d93f148ea6fa91ba9791b54cbf8f9f3fcce",
+  "checks": {
+    "physics": 29,
+    "negativeControls": 4,
+    "protocolTests": 10,
+    "domUnits": "passed",
+    "previousArchives": "passed",
+    "browserQA": "unavailable"
+  },
+  "agentInferenceUsage": null,
+  "promotion": false,
+  "lineageScope": "Matter Zoo structure extended; no cross-material transfer is certified."
+}

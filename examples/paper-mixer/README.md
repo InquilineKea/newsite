@@ -1,5 +1,41 @@
 # Paper Mixer — ALife × Buehler
 
+## Strategic Coupling / Swarm Lab
+
+`/swarm-lab/` implements the shared conversation's six-representation protocol:
+geometry, spectrum, gauge, transport, archive and numerical skeptic. It includes
+private per-worker state, salted first-pass commitments, published-evidence
+allowlists, discrepancy routing, bounded/dissolving coalitions, cooldown and
+communication budgets, low-exposure probes, reviewed edge updates, local schema
+forks and a generic versioned QD archive. Matter has scored toy response niches;
+representation and policy candidates remain unscored where scientific utility
+has not been measured. Shared ontology promotion is a separate human decision.
+
+The recorded physics fixture evaluates 28 three-site tight-binding candidates,
+with 196 scattering solves, 29 checks and explicit gauge/permutation/time-reversal
+controls. Six actual worker contexts completed first passes before reveal; three
+coalition followups returned proposed outputs. Their model/token independence
+is not established; internal inference usage is unknown. Four deterministic
+communication replays have zero model tokens and no measured discovery advantage.
+
+```sh
+python scripts/swarm_lab.py
+python scripts/test_swarm_lab.py
+node scripts/test_swarm_lab_ui.mjs
+python scripts/build_swarm_lab.py
+python scripts/swarm_runtime.py --arm event \
+  --adapter-json '["python", "my_agent_adapter.py"]' --output /tmp/event-run
+```
+
+The adapter owns credentials, context isolation and provider token enforcement.
+Twelve calls per arm share one aggregate cap and cached physics evidence. This
+is a communication experiment, not adaptive materials search. See
+`dist/swarm-lab/GUIDE.md` for boundaries, JSON contracts and reproduction details.
+Raw source, measured run, commitments, agent outputs and audits are retained in
+`runs/strategic-coupling/`. No Kagome, chemistry, mechanical hysteresis, fabrication
+or experimental validation is claimed. Mathematical/protocol/DOM checks pass;
+browser QA was unavailable.
+
 ## Computational Matter Zoo
 
 `/matter-zoo/` preserves the supplied 27-section Notion research program and adds

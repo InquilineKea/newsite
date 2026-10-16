@@ -1,0 +1,108 @@
+{
+  "worker": "skeptic",
+  "representation": "skeptic/1.0; numerical audit only, excluded from comparable physics distances",
+  "scopedClaim": {
+    "claim": "All 28 supplied candidates are marked valid, with reported eigen residuals and unitarity errors near double-precision roundoff and modest reported maximum condition values. These diagnostics support internal numerical consistency of the reported toy responses under their unspecified definitions. They neither establish scientific novelty nor identify a physical transport mechanism.",
+    "ranges": {
+      "eigenResidual": {
+        "min": 3.1186449331649705e-16,
+        "max": 1.1103990390400293e-15
+      },
+      "unitarityError": {
+        "min": 2.221909528311904e-16,
+        "max": 1.1102566691227e-15
+      },
+      "maxCondition": {
+        "min": 2.187610716296458,
+        "max": 2.637628203592391
+      }
+    },
+    "validCount": 28,
+    "candidateCount": 28,
+    "archiveAnomaliesReported": []
+  },
+  "preserved": [
+    "Per-candidate eigenResidual, unitarityError, maxCondition and validity flag.",
+    "Reported solver consistency, approximate probability-conservation diagnostic and conditioning summary.",
+    "All 28 descriptor-registry candidate identifiers and the registry statement that responses are numerically valid toy responses, not global novelty."
+  ],
+  "informationLost": [
+    "Hamiltonians, scattering matrices, eigenvectors, energy grids, physical parameterization and transport observables are absent.",
+    "Residual normalization, matrix norm, condition-number definition, validity tolerances, solver algorithm, working precision and convergence histories are absent.",
+    "Reported maxima do not reveal where conditioning peaks or whether an energy grid misses a narrow resonance.",
+    "These four diagnostics cannot identify topology, mechanisms, material realizations, novelty, chemistry, Kagome physics, mechanical stress or hysteresis."
+  ],
+  "uncertainty": {
+    "observedMissingness": {
+      "missingExpectedMetricEntries": 0,
+      "missingArchivedCandidateIds": [],
+      "duplicateCandidateIds": 0
+    },
+    "limitations": [
+      "Every supplied observation contains all four expected metrics; completeness here concerns only this packet, not omitted simulator states or external evidence.",
+      "Near-roundoff residuals suggest numerical consistency but cannot certify forward accuracy without normalization, conditioning definitions and reference calculations.",
+      "valid=true is a supplied flag; its acceptance rule was not available for independent verification.",
+      "Tiny differences among residuals are not physical dissimilarity and should not rank novelty or transport behavior.",
+      "No uncertainty intervals, independent implementation, model-error estimate, discretization checks or experimental validation are supplied.",
+      "Procedural isolation is not statistical independence; the simulator and curated pool remain shared."
+    ]
+  },
+  "candidateIds": [
+    "X00",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "X21",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X26",
+    "X27"
+  ],
+  "proposedTest": {
+    "question": "For all 28 exact archived toy inputs, does an independent higher-precision recomputation reproduce the scattering matrices and eigenvalues across a refined energy grid while satisfying explicitly normalized residual and unitarity tolerances?",
+    "control": "Retrieve the exact simulator inputs and metric definitions first; use the same Hamiltonian and lead conventions in an independently implemented solver at at least 80 decimal digits. Include an analytically solvable Hermitian scattering case and a deliberately perturbed nonunitary scattering matrix to verify the diagnostic detects a known violation. Compare eigenvalue sets without relying on eigenvector ordering, and compare scattering matrices using the same channel phase convention. Record the original and refined energy grids.",
+    "failureCriterion": "Flag numerical certification as failed or incomplete if any archived input or normalization is unavailable, a control fails, a dimensionless normalized eigen residual or relative Frobenius unitarity defect exceeds 1e-10, or the independently recomputed scattering matrix or matched eigenvalue set differs from the original by more than 1e-8 under documented relative scaling. These are proposed audit thresholds, not inferred original validity rules. A failure challenges numerical robustness or reproducibility; a pass does not establish novelty or implementation mechanism."
+  },
+  "localSchemaFork": {
+    "id": "skeptic/local-1",
+    "baseVersion": "matter-zoo/1.0",
+    "proposedFields": {
+      "auditRole": "numerical-validity-only; not a physics-distance representation",
+      "metricDefinitions": "norms, normalization scales and condition-number interpretation",
+      "solverProvenance": "algorithm, implementation version and working precision",
+      "validationThresholds": "explicit tolerances and validity-flag derivation",
+      "gridCoverage": "sampled energies, resolution and refinement result",
+      "missingness": "missing metrics, candidates and required source inputs",
+      "independentRecomputation": "reference precision, controls and deviations",
+      "physicalImplementationEvidence": "mechanism evidence or explicitly unavailable"
+    },
+    "sharedPromotion": false
+  },
+  "runtimeOverlap": {
+    "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+    "tools": [
+      "Python/read-only file access"
+    ],
+    "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+  },
+  "tokenUsage": null
+}

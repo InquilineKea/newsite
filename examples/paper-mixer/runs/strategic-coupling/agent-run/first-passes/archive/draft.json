@@ -1,0 +1,185 @@
+{
+  "worker": "archive",
+  "representation": {
+    "version": "archive/1.0",
+    "features": [
+      "mean reflection across three energies",
+      "absolute circulation at E=0"
+    ],
+    "comparisonTolerance": 1e-12,
+    "observedDescriptorGroups": [
+      {
+        "values": [
+          0.186614976535,
+          0.0
+        ],
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X12",
+          "X13",
+          "X24",
+          "X25"
+        ]
+      },
+      {
+        "values": [
+          0.189347361234,
+          0.0
+        ],
+        "candidateIds": [
+          "X02",
+          "X03",
+          "X26",
+          "X27"
+        ]
+      },
+      {
+        "values": [
+          0.029322268326,
+          1.0
+        ],
+        "candidateIds": [
+          "X04",
+          "X05",
+          "X20",
+          "X21"
+        ]
+      },
+      {
+        "values": [
+          0.043444631738,
+          0.960678238837
+        ],
+        "candidateIds": [
+          "X06",
+          "X07",
+          "X22",
+          "X23"
+        ]
+      },
+      {
+        "values": [
+          0.107349863846,
+          0.628539361055
+        ],
+        "candidateIds": [
+          "X08",
+          "X09",
+          "X16",
+          "X17"
+        ]
+      },
+      {
+        "values": [
+          0.122703018002,
+          0.580088198816
+        ],
+        "candidateIds": [
+          "X10",
+          "X11",
+          "X18",
+          "X19"
+        ]
+      },
+      {
+        "values": [
+          0.197065575726,
+          0.0
+        ],
+        "candidateIds": [
+          "X14",
+          "X15"
+        ]
+      }
+    ]
+  },
+  "scopedClaim": "Within the supplied 28-candidate packet, these two coarse descriptors form seven numerically distinguishable groups at absolute tolerance 1e-12. Multiple candidate IDs share every descriptor group. Descriptor equality supports a local archive collision, not physical equivalence, independent replication, or global novelty.",
+  "preserved": [
+    "The mean of reflection across the three sampled energies.",
+    "The magnitude of circulation at E=0, separating numerically zero values from finite magnitudes in this packet.",
+    "Seven distinct descriptor locations and their membership, conditional on the stated numerical tolerance."
+  ],
+  "informationLost": [
+    "The circulation sign is discarded by the absolute value; opposite signed circulation, if present, would map to the same magnitude. The packet cannot establish which collisions are sign reversals.",
+    "The three individual reflection values, their energy dependence, order and spread are discarded by averaging; distinct profiles with the same mean could collide.",
+    "Circulation away from E=0, phase-sensitive response and other observables are absent.",
+    "Microscopic parameters, realization mechanism and physical identity cannot be reconstructed from these two numbers. Archive occupancy cannot establish material diversity or performance outside this toy."
+  ],
+  "uncertainty": [
+    "Differences of order 1e-16 within groups are treated as numerical residue, not certified physical differences; no error bounds or convergence study are supplied.",
+    "The packet supplies neither signed circulation nor per-energy reflection, so no particular cause of a collision can be identified.",
+    "This is a three-site coherent scattering toy; no conclusion extends to Kagome structure, chemistry, stress, hysteresis, fabrication or experimental validation. Complex hopping still requires an implementation mechanism.",
+    "All observations share a deterministic simulator and curated pool. Separate packet access is procedural isolation, not an independent physical measurement or independent replication."
+  ],
+  "candidateIds": [
+    "X00",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "X21",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X26",
+    "X27"
+  ],
+  "proposedTest": {
+    "question": "Do any candidate IDs sharing an archive descriptor differ in signed circulation at E=0 or in at least one of the three individual reflection values?",
+    "control": "Recompute every same-group candidate with the same deterministic simulator, the identical three-energy grid, unchanged parameters and conventions, and a documented numerical tolerance. Repeat a reference candidate and use a tighter numerical setting to bound numerical drift. Record signed circulation and the ordered reflection triple before applying the current compression.",
+    "failureCriterion": "The claim that each archive group is interchangeable for those resolved observables fails if any within-group pair differs in signed circulation or an individual reflection value by more than max(1e-10, ten times the measured repeat/convergence drift). If no pair differs, this test has not resolved the collisions; it does not establish equivalence under other observables."
+  },
+  "localSchemaFork": {
+    "id": "archive/local-1",
+    "baseVersion": "matter-zoo/1.0",
+    "proposedFields": [
+      {
+        "name": "reflectionByEnergy",
+        "type": "ordered array of {energy, reflection}",
+        "purpose": "Expose averaging collisions."
+      },
+      {
+        "name": "signedCirculationAtZero",
+        "type": "number",
+        "purpose": "Expose sign information removed by absolute value."
+      },
+      {
+        "name": "numericalTolerance",
+        "type": "number",
+        "purpose": "Distinguish numerical residue from resolved differences."
+      },
+      {
+        "name": "descriptorCollisionMembers",
+        "type": "array of candidate IDs",
+        "purpose": "Retain all local candidates represented by a descriptor location."
+      }
+    ],
+    "sharedPromotion": false
+  },
+  "runtimeOverlap": {
+    "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+    "tools": [
+      "Python/read-only file access"
+    ],
+    "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+  },
+  "tokenUsage": null
+}

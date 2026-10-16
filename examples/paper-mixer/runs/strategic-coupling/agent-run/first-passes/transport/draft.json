@@ -1,0 +1,239 @@
+{
+  "worker": "transport",
+  "representation": "transport/1.0: three 3x3 normalized intensity matrices at E=[-0.5,0,0.5], output row/input column",
+  "scopedClaim": "At an explicitly chosen absolute entrywise tolerance of 1e-12, the 28 supplied candidates form 12 distinguishable intensity-response classes on these three sampled energies. The view preserves labeled-port directional routing and energy dependence, but does not identify an underlying hopping mechanism, phase, flux, or spectrum.",
+  "preserved": {
+    "equivalenceClasses": [
+      [
+        "X00",
+        "X01",
+        "X24",
+        "X25"
+      ],
+      [
+        "X02",
+        "X03",
+        "X26",
+        "X27"
+      ],
+      [
+        "X04",
+        "X05"
+      ],
+      [
+        "X06",
+        "X07"
+      ],
+      [
+        "X08",
+        "X09"
+      ],
+      [
+        "X10",
+        "X11"
+      ],
+      [
+        "X12",
+        "X13"
+      ],
+      [
+        "X14",
+        "X15"
+      ],
+      [
+        "X16",
+        "X17"
+      ],
+      [
+        "X18",
+        "X19"
+      ],
+      [
+        "X20",
+        "X21"
+      ],
+      [
+        "X22",
+        "X23"
+      ]
+    ],
+    "withinClassMaxAbsoluteDifference": 8.881784197001252e-16,
+    "minimumBetweenClassMaxAbsoluteDifference": 0.0929214056553371,
+    "normalization": "Each sampled matrix has both row and column sums within approximately 1e-15 of one. This is a property of the normalized supplied arrays, not proof of experimentally measured power conservation.",
+    "symmetricIntensityClasses": [
+      [
+        "X00",
+        "X01",
+        "X24",
+        "X25"
+      ],
+      [
+        "X02",
+        "X03",
+        "X26",
+        "X27"
+      ],
+      [
+        "X12",
+        "X13"
+      ],
+      [
+        "X14",
+        "X15"
+      ]
+    ],
+    "distinctTransposeClassPairs": [
+      [
+        [
+          "X04",
+          "X05"
+        ],
+        [
+          "X20",
+          "X21"
+        ]
+      ],
+      [
+        [
+          "X06",
+          "X07"
+        ],
+        [
+          "X22",
+          "X23"
+        ]
+      ],
+      [
+        [
+          "X08",
+          "X09"
+        ],
+        [
+          "X16",
+          "X17"
+        ]
+      ],
+      [
+        [
+          "X10",
+          "X11"
+        ],
+        [
+          "X18",
+          "X19"
+        ]
+      ]
+    ],
+    "centerRoutingExample": "At E=0, X04/X05 route input 0 to output 1, input 1 to output 2, and input 2 to output 0, with unit intensities up to floating-point error. X20/X21 route in the reverse labeled-port cycle.",
+    "energyDependenceExample": "X00/X01/X24/X25 and X12/X13 agree at E=0 but differ at E=-0.5 and +0.5; their sampled responses match after reversing the energy order. A single central-energy observation would merge these distinct three-energy classes."
+  },
+  "informationLost": [
+    "Intensity-only data do not retain complex scattering amplitudes, relative phases, phase delays, or their energy derivatives.",
+    "Three energy samples leave behavior between and outside those energies unresolved; no full spectral or broadband claim follows.",
+    "Normalization does not provide absolute incoming/outgoing power calibration or physical loss accounting.",
+    "Identical sampled intensity matrices cannot decide whether candidates have identical internal structures or mechanisms. No unseen flux, hopping phase, Hamiltonian, or spectrum is inferred.",
+    "Labeled-port directional contrast is retained here; pooling ports or averaging forward and reverse entries would discard it."
+  ],
+  "uncertainty": [
+    "The 1e-12 grouping threshold is a numerical comparison convention, not an experimental uncertainty estimate. No measurement noise, replicates, or calibration model is supplied.",
+    "Entries around 1e-32 and values slightly above one are compatible with floating-point roundoff; exact physical zeros or ideal performance are not established.",
+    "Intensity symmetry at these sampled energies does not establish microscopic reciprocity across all energies. Conversely, observed labeled-port asymmetry alone does not identify its implementation mechanism.",
+    "The archive is a curated local descriptor registry with numerically valid toy responses, not evidence of global novelty.",
+    "This is a three-site coherent scattering toy with no fabrication or experimental validation; no Kagome, chemistry, mechanical stress, or hysteresis inference is warranted.",
+    "Workers share a deterministic simulator and curated pool. Separate packets and commitments provide procedural isolation, not statistical independence."
+  ],
+  "candidateIds": [
+    "X00",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "X21",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X26",
+    "X27"
+  ],
+  "proposedTest": {
+    "question": "Do the candidate groups indistinguishable at the three supplied energies remain indistinguishable on a prespecified denser energy grid?",
+    "control": "Using the same normalized intensity simulator and labeled-port convention, compute every candidate at E=-0.5,-0.4,...,0.5. First reproduce the supplied three-energy responses to max-entry error <=1e-12; use X00 versus X12 as a positive distinction control at the supplied endpoint energies. Keep numerical precision and normalization fixed.",
+    "failureCriterion": "Reject the extension of any supplied within-class equivalence if a pair in that class differs by more than 1e-8 in any matrix entry at a new grid energy, provided the reproduction control passes. If reproduction exceeds 1e-12, treat the test as invalid pending numerical investigation. The threshold is a prespecified numerical criterion, not a measured error bar; no difference detected on this grid would not prove equality at all energies."
+  },
+  "localSchemaFork": {
+    "id": "transport/local-1",
+    "baseVersion": "matter-zoo/1.0",
+    "proposedFields": [
+      {
+        "name": "energyGrid",
+        "type": "number[]",
+        "value": [
+          -0.5,
+          0,
+          0.5
+        ]
+      },
+      {
+        "name": "indexConvention",
+        "type": "string",
+        "value": "matrix[outputPort][inputPort]; row-major blocks ordered by energy"
+      },
+      {
+        "name": "comparisonTolerance",
+        "type": "number",
+        "value": 1e-12
+      },
+      {
+        "name": "sampledIntensityClass",
+        "type": "candidateId[]",
+        "description": "Local equivalence under the stated grid, labels, and numerical tolerance"
+      },
+      {
+        "name": "intensityTransposeResidual",
+        "type": "number",
+        "description": "max over sampled energies and port pairs of abs(T_ij-T_ji); an intensity statistic, not a mechanism label"
+      },
+      {
+        "name": "rowColumnSumResidual",
+        "type": "number",
+        "description": "maximum absolute departure of supplied normalized row or column sums from one"
+      },
+      {
+        "name": "coverageLimits",
+        "type": "string[]",
+        "value": [
+          "three energy samples",
+          "no amplitude phases",
+          "no absolute power calibration",
+          "no experimental error model"
+        ]
+      }
+    ],
+    "sharedPromotion": false
+  },
+  "runtimeOverlap": {
+    "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+    "tools": [
+      "Python/read-only file access"
+    ],
+    "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+  },
+  "tokenUsage": null
+}

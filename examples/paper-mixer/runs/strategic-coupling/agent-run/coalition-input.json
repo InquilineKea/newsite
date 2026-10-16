@@ -1,0 +1,578 @@
+{
+  "event": {
+    "eventId": "D-X06-X22",
+    "candidateIds": [
+      "X06",
+      "X22"
+    ],
+    "owners": [
+      "spectrum",
+      "transport"
+    ],
+    "delta": 1.0,
+    "rawDistances": {
+      "spectrum": 0.0,
+      "transport": 3.6832884317194456
+    },
+    "normalizedDistances": {
+      "spectrum": 0.0,
+      "transport": 1.0
+    },
+    "artifactIds": [
+      "X06-spectrum",
+      "X22-transport"
+    ],
+    "claim": "The spectrum and labelled-port response disagree about this pair.",
+    "requestedTest": "Test a gauge-invariant loop descriptor and an explicit port/permutation equivalence control.",
+    "uncertainty": "Mechanism not established by the distance alone.",
+    "normalizationVersion": "q95-no-gauge-training-v1"
+  },
+  "candidateEvidence": [
+    {
+      "id": "X06",
+      "phi": -1.5707963267948966,
+      "detuned": true,
+      "gaugeCopy": false,
+      "onsite": [
+        0,
+        0.2,
+        -0.35
+      ],
+      "hamiltonian": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.8660254037844387,
+            0.49999999999999994
+          ],
+          [
+            0.8660254037844387,
+            -0.49999999999999994
+          ]
+        ],
+        [
+          [
+            0.8660254037844387,
+            -0.49999999999999994
+          ],
+          [
+            0.2,
+            0.0
+          ],
+          [
+            0.8660254037844387,
+            0.49999999999999994
+          ]
+        ],
+        [
+          [
+            0.8660254037844387,
+            0.49999999999999994
+          ],
+          [
+            0.8660254037844387,
+            -0.49999999999999994
+          ],
+          [
+            -0.35,
+            0.0
+          ]
+        ]
+      ],
+      "eigenvalues": [
+        -1.8048894229481502,
+        -0.048781477884888146,
+        1.7036709008330386
+      ],
+      "transport": [
+        [
+          [
+            0.05250120979978832,
+            0.004724370699059209,
+            0.9427744195011526
+          ],
+          [
+            0.8446124949762553,
+            0.10289449725642011,
+            0.05249300776732465
+          ],
+          [
+            0.10288629522395644,
+            0.892381132044521,
+            0.004732572731522845
+          ]
+        ],
+        [
+          [
+            0.0002942077106437107,
+            0.02942077106437151,
+            0.9702850212249846
+          ],
+          [
+            0.9900990099009901,
+            0.009900990099009873,
+            2.146230825032099e-32
+          ],
+          [
+            0.00960678238836616,
+            0.9606782388366187,
+            0.029714978775015197
+          ]
+        ],
+        [
+          [
+            0.04293879935429443,
+            0.1436834737592773,
+            0.8133777268864278
+          ],
+          [
+            0.9391629132570068,
+            0.011119621774385288,
+            0.04971746496860815
+          ],
+          [
+            0.017898287388698936,
+            0.8451969044663367,
+            0.13690480814496372
+          ]
+        ]
+      ],
+      "heldOutTransport": [
+        [
+          [
+            0.035866707693481416,
+            0.013802910412405528,
+            0.9503303818941136
+          ],
+          [
+            0.8971891768063525,
+            0.0745148568482165,
+            0.02829596634543108
+          ],
+          [
+            0.06694411550016623,
+            0.9116822327393785,
+            0.021373651760455678
+          ]
+        ],
+        [
+          [
+            0.04488924766770655,
+            0.10488518900011458,
+            0.8502255633321786
+          ],
+          [
+            0.9439667010010311,
+            0.029156469317689292,
+            0.026876829681279402
+          ],
+          [
+            0.011144051331262173,
+            0.8659583416821961,
+            0.12289760698654192
+          ]
+        ],
+        [
+          [
+            0.022992021360058696,
+            0.009592616383308236,
+            0.9674153622566334
+          ],
+          [
+            0.9304837891808967,
+            0.049851347233321755,
+            0.019664863585781837
+          ],
+          [
+            0.046524189459044775,
+            0.9405560363833702,
+            0.01291977415758515
+          ]
+        ],
+        [
+          [
+            0.018594765590122526,
+            0.07488070458062979,
+            0.906524529829248
+          ],
+          [
+            0.9734491595481852,
+            0.007362659903028035,
+            0.019188180548786342
+          ],
+          [
+            0.007956074861691902,
+            0.9177566355163425,
+            0.07428728962196587
+          ]
+        ]
+      ],
+      "circulation": 0.9606782388366186,
+      "loop": [
+        2.7755575615628914e-16,
+        -1.0
+      ],
+      "quality": {
+        "eigenResidual": 7.108895957933346e-16,
+        "unitarityError": 5.551178023653651e-16,
+        "maxCondition": 2.205798880649556,
+        "valid": true
+      }
+    },
+    {
+      "id": "X22",
+      "phi": 1.5707963267948966,
+      "detuned": true,
+      "gaugeCopy": false,
+      "onsite": [
+        0,
+        0.2,
+        -0.35
+      ],
+      "hamiltonian": [
+        [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.8660254037844387,
+            -0.49999999999999994
+          ],
+          [
+            0.8660254037844387,
+            0.49999999999999994
+          ]
+        ],
+        [
+          [
+            0.8660254037844387,
+            0.49999999999999994
+          ],
+          [
+            0.2,
+            0.0
+          ],
+          [
+            0.8660254037844387,
+            -0.49999999999999994
+          ]
+        ],
+        [
+          [
+            0.8660254037844387,
+            -0.49999999999999994
+          ],
+          [
+            0.8660254037844387,
+            0.49999999999999994
+          ],
+          [
+            -0.35,
+            0.0
+          ]
+        ]
+      ],
+      "eigenvalues": [
+        -1.8048894229481502,
+        -0.048781477884888146,
+        1.7036709008330386
+      ],
+      "transport": [
+        [
+          [
+            0.05250120979978832,
+            0.8446124949762553,
+            0.10288629522395648
+          ],
+          [
+            0.004724370699059206,
+            0.10289449725642008,
+            0.8923811320445212
+          ],
+          [
+            0.942774419501153,
+            0.05249300776732471,
+            0.004732572731522845
+          ]
+        ],
+        [
+          [
+            0.0002942077106437108,
+            0.9900990099009901,
+            0.009606782388366186
+          ],
+          [
+            0.029420771064371482,
+            0.009900990099009872,
+            0.9606782388366187
+          ],
+          [
+            0.9702850212249848,
+            3.8485884030027165e-33,
+            0.02971497877501516
+          ]
+        ],
+        [
+          [
+            0.042938799354294455,
+            0.9391629132570064,
+            0.01789828738869893
+          ],
+          [
+            0.1436834737592774,
+            0.011119621774385318,
+            0.845196904466337
+          ],
+          [
+            0.8133777268864283,
+            0.04971746496860815,
+            0.13690480814496378
+          ]
+        ]
+      ],
+      "heldOutTransport": [
+        [
+          [
+            0.035866707693481395,
+            0.8971891768063529,
+            0.06694411550016614
+          ],
+          [
+            0.013802910412405427,
+            0.0745148568482166,
+            0.9116822327393783
+          ],
+          [
+            0.9503303818941129,
+            0.02829596634543108,
+            0.02137365176045581
+          ]
+        ],
+        [
+          [
+            0.044889247667706585,
+            0.9439667010010306,
+            0.011144051331262146
+          ],
+          [
+            0.10488518900011462,
+            0.02915646931768937,
+            0.8659583416821961
+          ],
+          [
+            0.8502255633321786,
+            0.026876829681279368,
+            0.12289760698654177
+          ]
+        ],
+        [
+          [
+            0.022992021360058755,
+            0.9304837891808967,
+            0.04652418945904475
+          ],
+          [
+            0.009592616383308227,
+            0.04985134723332178,
+            0.9405560363833708
+          ],
+          [
+            0.9674153622566332,
+            0.0196648635857818,
+            0.012919774157585126
+          ]
+        ],
+        [
+          [
+            0.01859476559012243,
+            0.9734491595481863,
+            0.007956074861691873
+          ],
+          [
+            0.07488070458062976,
+            0.0073626599030280375,
+            0.9177566355163427
+          ],
+          [
+            0.9065245298292478,
+            0.01918818054878639,
+            0.07428728962196582
+          ]
+        ]
+      ],
+      "circulation": -0.9606782388366186,
+      "loop": [
+        2.7755575615628914e-16,
+        1.0
+      ],
+      "quality": {
+        "eigenResidual": 7.108895957933346e-16,
+        "unitarityError": 4.448240994889975e-16,
+        "maxCondition": 2.2057988806495565,
+        "valid": true
+      }
+    }
+  ],
+  "publishedFirstPasses": [
+    {
+      "worker": "spectrum",
+      "scopedClaim": {
+        "statement": "The 28 supplied sorted eigenvalue triples form eight numerical equivalence classes at absolute componentwise tolerance 1e-10. Same-spectrum candidates cannot be distinguished by any function of these eigenvalues alone; this does not establish equality of site-resolved scattering responses.",
+        "absoluteTolerance": 1e-10,
+        "equivalenceClasses": [
+          {
+            "candidateIds": [
+              "X00",
+              "X01",
+              "X24",
+              "X25"
+            ],
+            "representativeEigenvalues": [
+              -2.0,
+              1.0,
+              1.0000000000000004
+            ]
+          },
+          {
+            "candidateIds": [
+              "X02",
+              "X03",
+              "X26",
+              "X27"
+            ],
+            "representativeEigenvalues": [
+              -2.0675835775044806,
+              0.8022115191198008,
+              1.1153720583846796
+            ]
+          },
+          {
+            "candidateIds": [
+              "X04",
+              "X05",
+              "X20",
+              "X21"
+            ],
+            "representativeEigenvalues": [
+              -1.732050807568877,
+              -5.100087019371813e-16,
+              1.7320508075688772
+            ]
+          },
+          {
+            "candidateIds": [
+              "X06",
+              "X07",
+              "X22",
+              "X23"
+            ],
+            "representativeEigenvalues": [
+              -1.8048894229481502,
+              -0.048781477884888146,
+              1.7036709008330386
+            ]
+          },
+          {
+            "candidateIds": [
+              "X08",
+              "X09",
+              "X16",
+              "X17"
+            ],
+            "representativeEigenvalues": [
+              -1.4142135623730951,
+              -0.5176380902050418,
+              1.9318516525781366
+            ]
+          },
+          {
+            "candidateIds": [
+              "X10",
+              "X11",
+              "X18",
+              "X19"
+            ],
+            "representativeEigenvalues": [
+              -1.501016082209777,
+              -0.5485892780966698,
+              1.8996053603064473
+            ]
+          },
+          {
+            "candidateIds": [
+              "X12",
+              "X13"
+            ],
+            "representativeEigenvalues": [
+              -1.0000000000000004,
+              -1.0,
+              2.0
+            ]
+          },
+          {
+            "candidateIds": [
+              "X14",
+              "X15"
+            ],
+            "representativeEigenvalues": [
+              -1.2227072051213714,
+              -0.8940548559896393,
+              1.9667620611110102
+            ]
+          }
+        ],
+        "sameSpectrumPairCount": 38,
+        "scope": "Three-site coherent scattering toy and supplied curated pool only; no experimental, fabrication, global novelty, chemistry, Kagome, mechanical stress or hysteresis claim."
+      },
+      "uncertainty": [
+        "Equalities are numerical at a declared tolerance, not proofs of algebraic equality. Residual differences on the order of floating-point roundoff are not evidence of a physical splitting.",
+        "The packet supplies no units, eigenvectors, full matrices, or contact model. Negative eigenvalues do not by themselves establish dynamical instability.",
+        "No response difference between any same-spectrum pair is asserted. The next test requires full labeled matrices from an authorized subsequent stage.",
+        "Procedural first-pass isolation is not statistically independent replication: this worker shares the simulator, curated pool and inherited model family."
+      ],
+      "proposedTest": {
+        "question": "Is the spectrum sufficient to predict the labeled site-1 resolvent for the same-spectrum pair X04 and X20? Given their full labeled three-site matrices H, evaluate G11=[((0.5+0.05i)I-H)^(-1)]11 for each.",
+        "control": "Before comparison, verify sorted eigenvalues agree componentwise within 1e-10; use the same energy units, site-1 label, numerical precision, and resolvent convention. Repeat each calculation identically as a numerical reproducibility control; preserve the physical site/contact mapping rather than choosing a new basis independently for each candidate.",
+        "failureCriterion": "Reject spectral sufficiency for this local observable if abs(G11(X04)-G11(X20)) exceeds 1e-8 and both repeat-control discrepancies are below 1e-10. If they agree, this single probe has not falsified sufficiency and does not prove equality of all contact-resolved responses. The test is proposed, not executed."
+      }
+    },
+    {
+      "worker": "gauge",
+      "scopedClaim": "Interpreting each pair as the real and imaginary components of an oriented loop product, all 28 descriptors have unit magnitude within floating-point error. X00–X03 and X24–X27 describe the same phase modulo 2π (π); X04–X07 have phase −π/2, X08–X11 −π/4, X12–X15 zero, X16–X19 +π/4, and X20–X23 +π/2. Thus there are six distinct complex values at numerical tolerance, with repeated candidates within each value. For a product t12 t23 t31, local site rephasing cancels around the loop, preserving this total phase. That gauge interpretation is conditional on the descriptor construction and ordering, which this packet does not specify explicitly.",
+      "uncertainty": [
+        "The packet supplies pairs without a loop construction formula, units, edge order, or hopping normalization; the oriented-product interpretation uses the assigned representation task.",
+        "The differences at roughly 10^−16 are consistent with numerical rounding; no uncertainty model or experimental data are present.",
+        "Repeated loop values do not imply candidates have identical dynamics. No independent rephasing or orientation-reversal calculation has been observed.",
+        "These are numerically valid responses of a three-site coherent scattering toy; complex hopping requires an implementation mechanism, and there is no fabrication or experimental validation.",
+        "Separate packet context is procedural separation, not statistical independence from other workers sharing the deterministic simulator and curated pool."
+      ],
+      "proposedTest": {
+        "question": "Given explicit Hermitian three-site hoppings and the descriptor definition, does recomputing the ordered loop product after arbitrary local site rephasings preserve its complex value, while reversing the loop order returns its complex conjugate?",
+        "control": "Use the same Hamiltonian parameters and fixed ordered edge convention. Include the identity rephasing, several seeded nontrivial site phases with t_ij transformed by exp(i(θ_i−θ_j)), and a separately labeled reversed-orientation evaluation. Include a nonreal loop such as the value associated with X08 and a real loop such as X12. Compare raw complex values, not branch-cut phase differences.",
+        "failureCriterion": "For unit-scale products, any forward rephased product differing from the original by more than 1e−12 in complex absolute error, or a reversed product differing from its conjugate by more than 1e−12, falsifies the claimed implementation/convention consistency. This is a proposed check; the supplied packet cannot execute it."
+      }
+    },
+    {
+      "worker": "transport",
+      "scopedClaim": "At an explicitly chosen absolute entrywise tolerance of 1e-12, the 28 supplied candidates form 12 distinguishable intensity-response classes on these three sampled energies. The view preserves labeled-port directional routing and energy dependence, but does not identify an underlying hopping mechanism, phase, flux, or spectrum.",
+      "uncertainty": [
+        "The 1e-12 grouping threshold is a numerical comparison convention, not an experimental uncertainty estimate. No measurement noise, replicates, or calibration model is supplied.",
+        "Entries around 1e-32 and values slightly above one are compatible with floating-point roundoff; exact physical zeros or ideal performance are not established.",
+        "Intensity symmetry at these sampled energies does not establish microscopic reciprocity across all energies. Conversely, observed labeled-port asymmetry alone does not identify its implementation mechanism.",
+        "The archive is a curated local descriptor registry with numerically valid toy responses, not evidence of global novelty.",
+        "This is a three-site coherent scattering toy with no fabrication or experimental validation; no Kagome, chemistry, mechanical stress, or hysteresis inference is warranted.",
+        "Workers share a deterministic simulator and curated pool. Separate packets and commitments provide procedural isolation, not statistical independence."
+      ],
+      "proposedTest": {
+        "question": "Do the candidate groups indistinguishable at the three supplied energies remain indistinguishable on a prespecified denser energy grid?",
+        "control": "Using the same normalized intensity simulator and labeled-port convention, compute every candidate at E=-0.5,-0.4,...,0.5. First reproduce the supplied three-energy responses to max-entry error <=1e-12; use X00 versus X12 as a positive distinction control at the supplied endpoint energies. Keep numerical precision and normalization fixed.",
+        "failureCriterion": "Reject the extension of any supplied within-class equivalence if a pair in that class differs by more than 1e-8 in any matrix entry at a new grid energy, provided the reproduction control passes. If reproduction exceeds 1e-12, treat the test as invalid pending numerical investigation. The threshold is a prespecified numerical criterion, not a measured error bar; no difference detected on this grid would not prove equality at all energies."
+      }
+    }
+  ],
+  "scope": "Only these published claims and measured candidate evidence are shared. No peer private drafts. Return one bounded proposal; do not promote global ontology."
+}

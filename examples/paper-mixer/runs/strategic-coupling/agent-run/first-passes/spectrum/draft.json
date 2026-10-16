@@ -1,0 +1,195 @@
+{
+  "worker": "spectrum",
+  "representation": "spectrum/1.0",
+  "scopedClaim": {
+    "statement": "The 28 supplied sorted eigenvalue triples form eight numerical equivalence classes at absolute componentwise tolerance 1e-10. Same-spectrum candidates cannot be distinguished by any function of these eigenvalues alone; this does not establish equality of site-resolved scattering responses.",
+    "absoluteTolerance": 1e-10,
+    "equivalenceClasses": [
+      {
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X24",
+          "X25"
+        ],
+        "representativeEigenvalues": [
+          -2.0,
+          1.0,
+          1.0000000000000004
+        ]
+      },
+      {
+        "candidateIds": [
+          "X02",
+          "X03",
+          "X26",
+          "X27"
+        ],
+        "representativeEigenvalues": [
+          -2.0675835775044806,
+          0.8022115191198008,
+          1.1153720583846796
+        ]
+      },
+      {
+        "candidateIds": [
+          "X04",
+          "X05",
+          "X20",
+          "X21"
+        ],
+        "representativeEigenvalues": [
+          -1.732050807568877,
+          -5.100087019371813e-16,
+          1.7320508075688772
+        ]
+      },
+      {
+        "candidateIds": [
+          "X06",
+          "X07",
+          "X22",
+          "X23"
+        ],
+        "representativeEigenvalues": [
+          -1.8048894229481502,
+          -0.048781477884888146,
+          1.7036709008330386
+        ]
+      },
+      {
+        "candidateIds": [
+          "X08",
+          "X09",
+          "X16",
+          "X17"
+        ],
+        "representativeEigenvalues": [
+          -1.4142135623730951,
+          -0.5176380902050418,
+          1.9318516525781366
+        ]
+      },
+      {
+        "candidateIds": [
+          "X10",
+          "X11",
+          "X18",
+          "X19"
+        ],
+        "representativeEigenvalues": [
+          -1.501016082209777,
+          -0.5485892780966698,
+          1.8996053603064473
+        ]
+      },
+      {
+        "candidateIds": [
+          "X12",
+          "X13"
+        ],
+        "representativeEigenvalues": [
+          -1.0000000000000004,
+          -1.0,
+          2.0
+        ]
+      },
+      {
+        "candidateIds": [
+          "X14",
+          "X15"
+        ],
+        "representativeEigenvalues": [
+          -1.2227072051213714,
+          -0.8940548559896393,
+          1.9667620611110102
+        ]
+      }
+    ],
+    "sameSpectrumPairCount": 38,
+    "scope": "Three-site coherent scattering toy and supplied curated pool only; no experimental, fabrication, global novelty, chemistry, Kagome, mechanical stress or hysteresis claim."
+  },
+  "preserved": [
+    "Sorted energy levels, multiplicities within numerical tolerance, spectral gaps, spectral extrema, trace, determinant, and spectral moments.",
+    "The X00/X01/X24/X25 class has a repeated level near +1; X12/X13 has a repeated level near -1. X04/X05/X20/X21 has a level numerically consistent with zero.",
+    "Trace is numerically 0 for X00/X01/X04/X05/X08/X09/X12/X13/X16/X17/X20/X21/X24/X25 and -0.15 for the other candidates; sum of squared eigenvalues is respectively 6 and 6.1625.",
+    "For a matrix with the supplied eigenvalues, its characteristic polynomial and the trace of its resolvent at a nonsingular argument are determined."
+  ],
+  "informationLost": [
+    "Eigenvectors, their amplitudes and relative phases in a labeled site basis, and the assignment of eigenstates to specific contacts.",
+    "Individual onsite entries, hopping magnitudes and phases, spatial organization, and a unique underlying matrix cannot be recovered from these triples alone.",
+    "Site-resolved Green functions, transmission and reflection with specified contacts, directional response, and coupling to external probes require additional observables and contact definitions.",
+    "These values alone cannot decide candidate identity up to a physically allowed relabeling or gauge transformation, physical realizability of complex hopping, or experimental novelty."
+  ],
+  "uncertainty": [
+    "Equalities are numerical at a declared tolerance, not proofs of algebraic equality. Residual differences on the order of floating-point roundoff are not evidence of a physical splitting.",
+    "The packet supplies no units, eigenvectors, full matrices, or contact model. Negative eigenvalues do not by themselves establish dynamical instability.",
+    "No response difference between any same-spectrum pair is asserted. The next test requires full labeled matrices from an authorized subsequent stage.",
+    "Procedural first-pass isolation is not statistically independent replication: this worker shares the simulator, curated pool and inherited model family."
+  ],
+  "candidateIds": [
+    "X00",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "X21",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X26",
+    "X27"
+  ],
+  "proposedTest": {
+    "question": "Is the spectrum sufficient to predict the labeled site-1 resolvent for the same-spectrum pair X04 and X20? Given their full labeled three-site matrices H, evaluate G11=[((0.5+0.05i)I-H)^(-1)]11 for each.",
+    "control": "Before comparison, verify sorted eigenvalues agree componentwise within 1e-10; use the same energy units, site-1 label, numerical precision, and resolvent convention. Repeat each calculation identically as a numerical reproducibility control; preserve the physical site/contact mapping rather than choosing a new basis independently for each candidate.",
+    "failureCriterion": "Reject spectral sufficiency for this local observable if abs(G11(X04)-G11(X20)) exceeds 1e-8 and both repeat-control discrepancies are below 1e-10. If they agree, this single probe has not falsified sufficiency and does not prove equality of all contact-resolved responses. The test is proposed, not executed."
+  },
+  "localSchemaFork": {
+    "id": "spectrum/local-1",
+    "baseVersion": "matter-zoo/1.0",
+    "proposedFields": [
+      {
+        "name": "spectralEquivalenceClass",
+        "type": "array<candidateId>",
+        "meaning": "Candidates agreeing in sorted eigenvalues at a separately recorded tolerance."
+      },
+      {
+        "name": "eigenvalueAbsoluteTolerance",
+        "type": "number",
+        "meaning": "Tolerance used to distinguish roundoff from resolved spectral differences."
+      },
+      {
+        "name": "siteResolvedObservableRequired",
+        "type": "boolean",
+        "meaning": "True when a requested physical distinction depends on eigenvectors or labeled contact couplings."
+      }
+    ],
+    "sharedPromotion": false
+  },
+  "runtimeOverlap": {
+    "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+    "tools": [
+      "Python/read-only file access"
+    ],
+    "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+  },
+  "tokenUsage": null
+}

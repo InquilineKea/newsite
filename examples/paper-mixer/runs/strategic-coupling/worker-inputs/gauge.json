@@ -1,0 +1,278 @@
+{
+  "worker": "gauge",
+  "scope": "Independent first pass. Do not read peer outputs. Use only this packet.",
+  "representation": {
+    "representationVersion": "gauge/1.0",
+    "observations": [
+      {
+        "candidateId": "X00",
+        "representation": "gauge",
+        "values": [
+          -1.0,
+          -3.885780586188048e-16
+        ]
+      },
+      {
+        "candidateId": "X01",
+        "representation": "gauge",
+        "values": [
+          -0.9999999999999998,
+          -2.7755575615628914e-16
+        ]
+      },
+      {
+        "candidateId": "X02",
+        "representation": "gauge",
+        "values": [
+          -1.0,
+          -3.885780586188048e-16
+        ]
+      },
+      {
+        "candidateId": "X03",
+        "representation": "gauge",
+        "values": [
+          -0.9999999999999998,
+          -2.7755575615628914e-16
+        ]
+      },
+      {
+        "candidateId": "X04",
+        "representation": "gauge",
+        "values": [
+          2.7755575615628914e-16,
+          -1.0
+        ]
+      },
+      {
+        "candidateId": "X05",
+        "representation": "gauge",
+        "values": [
+          2.498001805406602e-16,
+          -0.9999999999999999
+        ]
+      },
+      {
+        "candidateId": "X06",
+        "representation": "gauge",
+        "values": [
+          2.7755575615628914e-16,
+          -1.0
+        ]
+      },
+      {
+        "candidateId": "X07",
+        "representation": "gauge",
+        "values": [
+          2.498001805406602e-16,
+          -0.9999999999999999
+        ]
+      },
+      {
+        "candidateId": "X08",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865476,
+          -0.7071067811865475
+        ]
+      },
+      {
+        "candidateId": "X09",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865472,
+          -0.7071067811865472
+        ]
+      },
+      {
+        "candidateId": "X10",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865476,
+          -0.7071067811865475
+        ]
+      },
+      {
+        "candidateId": "X11",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865472,
+          -0.7071067811865472
+        ]
+      },
+      {
+        "candidateId": "X12",
+        "representation": "gauge",
+        "values": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X13",
+        "representation": "gauge",
+        "values": [
+          0.9999999999999998,
+          -5.551115123125783e-17
+        ]
+      },
+      {
+        "candidateId": "X14",
+        "representation": "gauge",
+        "values": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X15",
+        "representation": "gauge",
+        "values": [
+          0.9999999999999998,
+          -5.551115123125783e-17
+        ]
+      },
+      {
+        "candidateId": "X16",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865476,
+          0.7071067811865475
+        ]
+      },
+      {
+        "candidateId": "X17",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865474,
+          0.7071067811865472
+        ]
+      },
+      {
+        "candidateId": "X18",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865476,
+          0.7071067811865475
+        ]
+      },
+      {
+        "candidateId": "X19",
+        "representation": "gauge",
+        "values": [
+          0.7071067811865474,
+          0.7071067811865472
+        ]
+      },
+      {
+        "candidateId": "X20",
+        "representation": "gauge",
+        "values": [
+          2.7755575615628914e-16,
+          1.0
+        ]
+      },
+      {
+        "candidateId": "X21",
+        "representation": "gauge",
+        "values": [
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "candidateId": "X22",
+        "representation": "gauge",
+        "values": [
+          2.7755575615628914e-16,
+          1.0
+        ]
+      },
+      {
+        "candidateId": "X23",
+        "representation": "gauge",
+        "values": [
+          2.220446049250313e-16,
+          1.0
+        ]
+      },
+      {
+        "candidateId": "X24",
+        "representation": "gauge",
+        "values": [
+          -1.0,
+          3.885780586188048e-16
+        ]
+      },
+      {
+        "candidateId": "X25",
+        "representation": "gauge",
+        "values": [
+          -0.9999999999999999,
+          3.0531133177191805e-16
+        ]
+      },
+      {
+        "candidateId": "X26",
+        "representation": "gauge",
+        "values": [
+          -1.0,
+          3.885780586188048e-16
+        ]
+      },
+      {
+        "candidateId": "X27",
+        "representation": "gauge",
+        "values": [
+          -0.9999999999999999,
+          3.0531133177191805e-16
+        ]
+      }
+    ],
+    "archive": {
+      "kind": "local descriptor registry",
+      "candidateIds": [
+        "X00",
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20",
+        "X21",
+        "X22",
+        "X23",
+        "X24",
+        "X25",
+        "X26",
+        "X27"
+      ],
+      "anomalies": [],
+      "quality": "Numerically valid toy responses; not global novelty."
+    },
+    "schemaFork": {
+      "id": "gauge/local-1",
+      "base": "matter-zoo/1.0",
+      "sharedPromotion": false
+    }
+  },
+  "task": "Identify what your representation preserves and cannot decide; propose one falsifiable next test. Do not infer other views.",
+  "limits": [
+    "Three-site coherent scattering toy, not Kagome, chemistry, mechanical stress or hysteresis.",
+    "Complex hopping requires an implementation mechanism; no fabrication or experimental validation."
+  ]
+}

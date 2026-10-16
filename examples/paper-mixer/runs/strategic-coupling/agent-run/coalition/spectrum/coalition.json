@@ -1,0 +1,45 @@
+{
+  "kind": "DescriptorProposal",
+  "scopedClaim": {
+    "statement": "X06 and X22 have equal supplied eigenvalues but different fixed-label routing. Their supplied matrices satisfy H22=conj(H06)=transpose(H06). In the spinless site convention this is the time-reversed pair, not a diagonal gauge copy. A general isospectral unitary relation would not establish physical equivalence of labeled contacts.",
+    "equivalenceReason": "For H22=D P H06 P^T D†, the three distinct onsite values (0,0.2,-0.35) force P to be the identity when matching these matrices. Diagonal gauge transformations preserve the oriented loop product, which differs between these candidates. Thus no diagonal gauge-plus-permutation map identifies these supplied matrices while preserving their onsite assignments.",
+    "orientationAudit": "Define L123=H12 H23 H31 explicitly. It is approximately +i for X06 and -i for X22. The packet loop values instead match L132=H13 H32 H21, the conjugate orientation. This is consistent with an opposite loop convention, not by itself an implementation error; orientation must be recorded before assigning signs.",
+    "transportEvidence": "The supplied training and held-out intensity matrices for X22 equal the transpose of those for X06 within 1.2e-15 maximum entry error. Their fixed-label maximum entry differences are approximately 0.96067824 on training samples and 0.92089117 on held-out samples. Transposition exchanges incoming/outgoing routing; it is not simultaneous relabeling of both port axes.",
+    "spectralExplanation": "For a Hermitian three-site matrix, the characteristic polynomial depends on the oriented loop through its real part. Complex conjugation preserves that real part and the spectrum while reversing the imaginary part. Spectral equality therefore does not determine routing orientation."
+  },
+  "proposedDescriptorOrTest": {
+    "descriptor": {
+      "name": "local oriented three-site descriptor with explicit equivalence policy",
+      "fields": [
+        "fixed site and port labels",
+        "labeled onsite vector",
+        "labeled edge magnitudes",
+        "complex ordered loop product",
+        "explicit loop index order and Hamiltonian-entry convention",
+        "permitted equivalence operations"
+      ],
+      "equivalencePolicy": "Report diagonal rephasing, simultaneous site/port permutation, and time reversal separately. Do not quotient time reversal when evaluating fixed-label directional routing. An odd permutation reverses loop orientation and must also permute onsite entries and both transport axes."
+    },
+    "test": "Reproduce the supplied intensities using the unchanged contact model, then apply seeded diagonal rephasings and all six simultaneous site/port permutations. Check descriptor covariance under each operation. Separately apply complex conjugation and test the transposed-intensity relation; require a stated spinless/time-reversal-compatible contact convention.",
+    "controls": [
+      "Identity transformation reproduces inputs within 1e-12 maximum entry error.",
+      "Diagonal rephasing preserves the ordered loop and intensities when contact channel phases transform consistently.",
+      "A permutation acts on the onsite vector, loop orientation and both transport axes together.",
+      "Complex conjugation conjugates the loop and, for the stated contact assumptions, transposes intensities.",
+      "Compare held-out samples without changing fitting or equivalence conventions."
+    ],
+    "executionState": "Proposed transformation-control experiment only; algebraic comparisons above use supplied matrices and samples, with no new simulator run."
+  },
+  "whatChangedFromOwnFirstPass": "The first pass could establish only spectral equivalence classes and proposed a diagonal resolvent probe for X04/X20. The coalition now supplies a concrete different pair with matrices, oriented loops and routing data. For the observed transpose pair X06/X22, every diagonal resolvent entry is equal because inverse(zI-H^T)=transpose(inverse(zI-H)); a diagonal-only probe would miss this routing distinction. The next descriptor and test therefore retain an explicitly oriented loop and off-diagonal labeled routing.",
+  "supportingCandidateIds": [
+    "X06",
+    "X22"
+  ],
+  "alternativeExplanation": "A loop-sign difference alone may arise from opposite orientation conventions or an odd port/site permutation; the packet explicitly uses the opposite loop orientation from L123. The distinct matched onsite values obstruct a nonidentity permutation equivalence here. Contact asymmetries or another scattering convention could invalidate an all-energy transpose prediction even though the supplied samples satisfy it. These possibilities require the stated controls rather than identification of a new mechanism from a distance metric.",
+  "failureCriterion": "If the identity reproduction error exceeds 1e-12, suspend the test as numerically invalid. Otherwise a loop change under a diagonal rephasing above 1e-12 falsifies descriptor invariance; a correctly transformed intensity difference above 1e-8 falsifies the claimed transformation rule. Any explicit D,P satisfying H22=D P H06 P^T D† within 1e-10 would falsify the claimed lack of gauge/permutation equivalence. A valid contact-model computation with transposition error above 1e-8 at a prespecified additional energy falsifies the proposed extension of the time-reversed routing relation beyond supplied samples.",
+  "validationScope": "Only X06/X22 in the deterministic three-site coherent-scattering toy and supplied sample arrays. Algebraic consequences of the supplied matrices are distinguished from proposed simulator controls. No new material, fabrication result, experimental validation, independent statistical replication, global novelty, or agent-strategy superiority is claimed. This is one bounded coalition proposal; the coalition dissolves afterward.",
+  "sharedOntologyPromotion": false,
+  "status": "proposed",
+  "results": null,
+  "tokenUsage": null
+}

@@ -1,0 +1,306 @@
+{
+  "worker": "spectrum",
+  "scope": "Independent first pass. Do not read peer outputs. Use only this packet.",
+  "representation": {
+    "representationVersion": "spectrum/1.0",
+    "observations": [
+      {
+        "candidateId": "X00",
+        "representation": "spectrum",
+        "values": [
+          -2.0,
+          1.0,
+          1.0000000000000004
+        ]
+      },
+      {
+        "candidateId": "X01",
+        "representation": "spectrum",
+        "values": [
+          -1.9999999999999996,
+          0.9999999999999994,
+          1.0
+        ]
+      },
+      {
+        "candidateId": "X02",
+        "representation": "spectrum",
+        "values": [
+          -2.0675835775044806,
+          0.8022115191198008,
+          1.1153720583846796
+        ]
+      },
+      {
+        "candidateId": "X03",
+        "representation": "spectrum",
+        "values": [
+          -2.0675835775044797,
+          0.8022115191198008,
+          1.1153720583846793
+        ]
+      },
+      {
+        "candidateId": "X04",
+        "representation": "spectrum",
+        "values": [
+          -1.732050807568877,
+          -5.100087019371813e-16,
+          1.7320508075688772
+        ]
+      },
+      {
+        "candidateId": "X05",
+        "representation": "spectrum",
+        "values": [
+          -1.732050807568877,
+          -6.349087922075114e-16,
+          1.7320508075688772
+        ]
+      },
+      {
+        "candidateId": "X06",
+        "representation": "spectrum",
+        "values": [
+          -1.8048894229481502,
+          -0.048781477884888146,
+          1.7036709008330386
+        ]
+      },
+      {
+        "candidateId": "X07",
+        "representation": "spectrum",
+        "values": [
+          -1.804889422948151,
+          -0.048781477884888215,
+          1.7036709008330393
+        ]
+      },
+      {
+        "candidateId": "X08",
+        "representation": "spectrum",
+        "values": [
+          -1.4142135623730951,
+          -0.5176380902050418,
+          1.9318516525781366
+        ]
+      },
+      {
+        "candidateId": "X09",
+        "representation": "spectrum",
+        "values": [
+          -1.414213562373095,
+          -0.517638090205042,
+          1.9318516525781364
+        ]
+      },
+      {
+        "candidateId": "X10",
+        "representation": "spectrum",
+        "values": [
+          -1.501016082209777,
+          -0.5485892780966698,
+          1.8996053603064473
+        ]
+      },
+      {
+        "candidateId": "X11",
+        "representation": "spectrum",
+        "values": [
+          -1.501016082209777,
+          -0.5485892780966701,
+          1.8996053603064467
+        ]
+      },
+      {
+        "candidateId": "X12",
+        "representation": "spectrum",
+        "values": [
+          -1.0000000000000004,
+          -1.0,
+          2.0
+        ]
+      },
+      {
+        "candidateId": "X13",
+        "representation": "spectrum",
+        "values": [
+          -1.0,
+          -1.0,
+          1.9999999999999998
+        ]
+      },
+      {
+        "candidateId": "X14",
+        "representation": "spectrum",
+        "values": [
+          -1.2227072051213714,
+          -0.8940548559896393,
+          1.9667620611110102
+        ]
+      },
+      {
+        "candidateId": "X15",
+        "representation": "spectrum",
+        "values": [
+          -1.2227072051213705,
+          -0.8940548559896387,
+          1.9667620611110095
+        ]
+      },
+      {
+        "candidateId": "X16",
+        "representation": "spectrum",
+        "values": [
+          -1.4142135623730951,
+          -0.5176380902050418,
+          1.9318516525781366
+        ]
+      },
+      {
+        "candidateId": "X17",
+        "representation": "spectrum",
+        "values": [
+          -1.414213562373095,
+          -0.5176380902050414,
+          1.9318516525781362
+        ]
+      },
+      {
+        "candidateId": "X18",
+        "representation": "spectrum",
+        "values": [
+          -1.501016082209777,
+          -0.5485892780966698,
+          1.8996053603064473
+        ]
+      },
+      {
+        "candidateId": "X19",
+        "representation": "spectrum",
+        "values": [
+          -1.5010160822097771,
+          -0.5485892780966696,
+          1.8996053603064473
+        ]
+      },
+      {
+        "candidateId": "X20",
+        "representation": "spectrum",
+        "values": [
+          -1.732050807568877,
+          -5.100087019371813e-16,
+          1.7320508075688772
+        ]
+      },
+      {
+        "candidateId": "X21",
+        "representation": "spectrum",
+        "values": [
+          -1.7320508075688772,
+          -4.683753385137379e-16,
+          1.7320508075688776
+        ]
+      },
+      {
+        "candidateId": "X22",
+        "representation": "spectrum",
+        "values": [
+          -1.8048894229481502,
+          -0.048781477884888146,
+          1.7036709008330386
+        ]
+      },
+      {
+        "candidateId": "X23",
+        "representation": "spectrum",
+        "values": [
+          -1.8048894229481514,
+          -0.048781477884887695,
+          1.703670900833039
+        ]
+      },
+      {
+        "candidateId": "X24",
+        "representation": "spectrum",
+        "values": [
+          -2.0,
+          1.0,
+          1.0000000000000004
+        ]
+      },
+      {
+        "candidateId": "X25",
+        "representation": "spectrum",
+        "values": [
+          -2.0,
+          0.9999999999999993,
+          1.0000000000000002
+        ]
+      },
+      {
+        "candidateId": "X26",
+        "representation": "spectrum",
+        "values": [
+          -2.0675835775044806,
+          0.8022115191198008,
+          1.1153720583846796
+        ]
+      },
+      {
+        "candidateId": "X27",
+        "representation": "spectrum",
+        "values": [
+          -2.0675835775044797,
+          0.8022115191198005,
+          1.115372058384679
+        ]
+      }
+    ],
+    "archive": {
+      "kind": "local descriptor registry",
+      "candidateIds": [
+        "X00",
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20",
+        "X21",
+        "X22",
+        "X23",
+        "X24",
+        "X25",
+        "X26",
+        "X27"
+      ],
+      "anomalies": [],
+      "quality": "Numerically valid toy responses; not global novelty."
+    },
+    "schemaFork": {
+      "id": "spectrum/local-1",
+      "base": "matter-zoo/1.0",
+      "sharedPromotion": false
+    }
+  },
+  "task": "Identify what your representation preserves and cannot decide; propose one falsifiable next test. Do not infer other views.",
+  "limits": [
+    "Three-site coherent scattering toy, not Kagome, chemistry, mechanical stress or hysteresis.",
+    "Complex hopping requires an implementation mechanism; no fabrication or experimental validation."
+  ]
+}

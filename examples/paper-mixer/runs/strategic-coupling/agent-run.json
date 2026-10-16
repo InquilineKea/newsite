@@ -1,0 +1,1134 @@
+{
+  "schemaVersion": "recorded-worker-pass/1.0",
+  "execution": "Six actual separate Codex contexts, then three bounded followups in a temporary spectrum/gauge/transport coalition. All first passes committed before coordinator reveal.",
+  "firstPasses": [
+    {
+      "worker": "geometry",
+      "commitment": "88fdbf9aeba1287925f748b132cf4e13dd067a605c0baaf8223eddb6d96f58dc",
+      "draftSha256": "189eff6c09a86c9476d261a1dedc91da95c38cdeb229722e82f445ecbbd5f1fc",
+      "revealedAfterAllCommitted": true,
+      "draft": {
+        "worker": "geometry",
+        "representation": "geometry/1.0",
+        "scopedClaim": "The 28 supplied six-component geometry vectors form exactly two numerical equivalence classes of 14 candidates each. Components 1 through 4 are identical across every candidate: [1, 1, 1, 0]. The classes differ only in components 5 and 6, with values (0, 0) or (0.2, -0.35). This is descriptor equivalence within this packet, not proof of complete geometric or physical equivalence.",
+        "preserved": {
+          "observedVectorLength": 6,
+          "constantComponents": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 0
+          },
+          "equivalenceClasses": [
+            {
+              "values": [
+                1,
+                1,
+                1,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "candidateIds": [
+                "X00",
+                "X01",
+                "X04",
+                "X05",
+                "X08",
+                "X09",
+                "X12",
+                "X13",
+                "X16",
+                "X17",
+                "X20",
+                "X21",
+                "X24",
+                "X25"
+              ]
+            },
+            {
+              "values": [
+                1,
+                1,
+                1,
+                0,
+                0.2,
+                -0.35
+              ],
+              "candidateIds": [
+                "X02",
+                "X03",
+                "X06",
+                "X07",
+                "X10",
+                "X11",
+                "X14",
+                "X15",
+                "X18",
+                "X19",
+                "X22",
+                "X23",
+                "X26",
+                "X27"
+              ]
+            }
+          ],
+          "archiveStatus": "The supplied local descriptor registry lists all 28 candidates, no anomalies, and numerically valid toy responses; it explicitly does not establish global novelty."
+        },
+        "informationLost": [
+          "The packet provides no component names, units, coordinate convention, generating geometry, or descriptor construction rule; the physical meaning of individual components cannot be established.",
+          "Candidates sharing a vector cannot be distinguished by this representation; omitted geometric differences cannot be ruled out.",
+          "Flux, routing, eigenvalues, transport, implementation mechanisms, and experimental feasibility are not observed and cannot be inferred from these vectors."
+        ],
+        "uncertainty": [
+          "Equality is exact numerical equality in the supplied JSON; measurement precision, robustness, and sensitivity to geometry changes are not supplied.",
+          "The scope is a three-site coherent-scattering toy. No inference to Kagome systems, chemistry, mechanical stress, hysteresis, fabrication, or experimental validation is justified.",
+          "This independent first pass uses a separate packet from the same deterministic simulator and curated candidate pool, so it is not statistical or security independence."
+        ],
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "X21",
+          "X22",
+          "X23",
+          "X24",
+          "X25",
+          "X26",
+          "X27"
+        ],
+        "proposedTest": {
+          "question": "After component definitions and frozen source geometries are supplied, does an independent recomputation using geometry/1.0 reproduce the two reported descriptor classes for X00, X01, X02, and X03?",
+          "control": "Freeze the descriptor definition, ordering, coordinate convention, units, source inputs, and numerical precision before recomputation. Include an exact duplicate of the X00 source geometry as a repeatability control; treat X00/X01 and X02/X03 as the two asserted same-vector pairs.",
+          "failureCriterion": "The claim fails for the tested subset if any independently recomputed component differs from its supplied value by more than a prespecified absolute tolerance of 1e-10, or either asserted same-vector pair splits by more than that tolerance. A failing duplicate control makes the test inconclusive until repeatability is repaired. A passing result validates only descriptor reproduction, not unobserved physical properties."
+        },
+        "localSchemaFork": {
+          "id": "geometry/local-1",
+          "baseVersion": "matter-zoo/1.0",
+          "proposedFields": [
+            {
+              "name": "componentDefinitions",
+              "description": "Ordered descriptor names, units, coordinate conventions, and construction rules."
+            },
+            {
+              "name": "descriptorEquivalenceClass",
+              "description": "Group identifier under an explicit equality tolerance; does not imply complete physical equivalence."
+            },
+            {
+              "name": "sourceGeometryProvenance",
+              "description": "Frozen geometry input identifier and descriptor implementation version for reproducible recomputation."
+            },
+            {
+              "name": "comparisonTolerance",
+              "description": "Declared absolute and relative tolerances and precision for descriptor comparison."
+            }
+          ],
+          "sharedPromotion": false
+        },
+        "runtimeOverlap": {
+          "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+          "tools": [
+            "Python/read-only file access"
+          ],
+          "sharedInputs": "same deterministic simulator and curated candidate pool; separate packet"
+        },
+        "tokenUsage": null
+      },
+      "tokenUsage": null
+    },
+    {
+      "worker": "spectrum",
+      "commitment": "d675e941e7d4bba5773d52ed40fcee0ec4b82e60db1e4da93e1ef0947093325a",
+      "draftSha256": "bc58e425a76c48d7343bc2a86de455331aa0be4661e0d8ec212c623618e65b2c",
+      "revealedAfterAllCommitted": true,
+      "draft": {
+        "worker": "spectrum",
+        "representation": "spectrum/1.0",
+        "scopedClaim": {
+          "statement": "The 28 supplied sorted eigenvalue triples form eight numerical equivalence classes at absolute componentwise tolerance 1e-10. Same-spectrum candidates cannot be distinguished by any function of these eigenvalues alone; this does not establish equality of site-resolved scattering responses.",
+          "absoluteTolerance": 1e-10,
+          "equivalenceClasses": [
+            {
+              "candidateIds": [
+                "X00",
+                "X01",
+                "X24",
+                "X25"
+              ],
+              "representativeEigenvalues": [
+                -2.0,
+                1.0,
+                1.0000000000000004
+              ]
+            },
+            {
+              "candidateIds": [
+                "X02",
+                "X03",
+                "X26",
+                "X27"
+              ],
+              "representativeEigenvalues": [
+                -2.0675835775044806,
+                0.8022115191198008,
+                1.1153720583846796
+              ]
+            },
+            {
+              "candidateIds": [
+                "X04",
+                "X05",
+                "X20",
+                "X21"
+              ],
+              "representativeEigenvalues": [
+                -1.732050807568877,
+                -5.100087019371813e-16,
+                1.7320508075688772
+              ]
+            },
+            {
+              "candidateIds": [
+                "X06",
+                "X07",
+                "X22",
+                "X23"
+              ],
+              "representativeEigenvalues": [
+                -1.8048894229481502,
+                -0.048781477884888146,
+                1.7036709008330386
+              ]
+            },
+            {
+              "candidateIds": [
+                "X08",
+                "X09",
+                "X16",
+                "X17"
+              ],
+              "representativeEigenvalues": [
+                -1.4142135623730951,
+                -0.5176380902050418,
+                1.9318516525781366
+              ]
+            },
+            {
+              "candidateIds": [
+                "X10",
+                "X11",
+                "X18",
+                "X19"
+              ],
+              "representativeEigenvalues": [
+                -1.501016082209777,
+                -0.5485892780966698,
+                1.8996053603064473
+              ]
+            },
+            {
+              "candidateIds": [
+                "X12",
+                "X13"
+              ],
+              "representativeEigenvalues": [
+                -1.0000000000000004,
+                -1.0,
+                2.0
+              ]
+            },
+            {
+              "candidateIds": [
+                "X14",
+                "X15"
+              ],
+              "representativeEigenvalues": [
+                -1.2227072051213714,
+                -0.8940548559896393,
+                1.9667620611110102
+              ]
+            }
+          ],
+          "sameSpectrumPairCount": 38,
+          "scope": "Three-site coherent scattering toy and supplied curated pool only; no experimental, fabrication, global novelty, chemistry, Kagome, mechanical stress or hysteresis claim."
+        },
+        "preserved": [
+          "Sorted energy levels, multiplicities within numerical tolerance, spectral gaps, spectral extrema, trace, determinant, and spectral moments.",
+          "The X00/X01/X24/X25 class has a repeated level near +1; X12/X13 has a repeated level near -1. X04/X05/X20/X21 has a level numerically consistent with zero.",
+          "Trace is numerically 0 for X00/X01/X04/X05/X08/X09/X12/X13/X16/X17/X20/X21/X24/X25 and -0.15 for the other candidates; sum of squared eigenvalues is respectively 6 and 6.1625.",
+          "For a matrix with the supplied eigenvalues, its characteristic polynomial and the trace of its resolvent at a nonsingular argument are determined."
+        ],
+        "informationLost": [
+          "Eigenvectors, their amplitudes and relative phases in a labeled site basis, and the assignment of eigenstates to specific contacts.",
+          "Individual onsite entries, hopping magnitudes and phases, spatial organization, and a unique underlying matrix cannot be recovered from these triples alone.",
+          "Site-resolved Green functions, transmission and reflection with specified contacts, directional response, and coupling to external probes require additional observables and contact definitions.",
+          "These values alone cannot decide candidate identity up to a physically allowed relabeling or gauge transformation, physical realizability of complex hopping, or experimental novelty."
+        ],
+        "uncertainty": [
+          "Equalities are numerical at a declared tolerance, not proofs of algebraic equality. Residual differences on the order of floating-point roundoff are not evidence of a physical splitting.",
+          "The packet supplies no units, eigenvectors, full matrices, or contact model. Negative eigenvalues do not by themselves establish dynamical instability.",
+          "No response difference between any same-spectrum pair is asserted. The next test requires full labeled matrices from an authorized subsequent stage.",
+          "Procedural first-pass isolation is not statistically independent replication: this worker shares the simulator, curated pool and inherited model family."
+        ],
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "X21",
+          "X22",
+          "X23",
+          "X24",
+          "X25",
+          "X26",
+          "X27"
+        ],
+        "proposedTest": {
+          "question": "Is the spectrum sufficient to predict the labeled site-1 resolvent for the same-spectrum pair X04 and X20? Given their full labeled three-site matrices H, evaluate G11=[((0.5+0.05i)I-H)^(-1)]11 for each.",
+          "control": "Before comparison, verify sorted eigenvalues agree componentwise within 1e-10; use the same energy units, site-1 label, numerical precision, and resolvent convention. Repeat each calculation identically as a numerical reproducibility control; preserve the physical site/contact mapping rather than choosing a new basis independently for each candidate.",
+          "failureCriterion": "Reject spectral sufficiency for this local observable if abs(G11(X04)-G11(X20)) exceeds 1e-8 and both repeat-control discrepancies are below 1e-10. If they agree, this single probe has not falsified sufficiency and does not prove equality of all contact-resolved responses. The test is proposed, not executed."
+        },
+        "localSchemaFork": {
+          "id": "spectrum/local-1",
+          "baseVersion": "matter-zoo/1.0",
+          "proposedFields": [
+            {
+              "name": "spectralEquivalenceClass",
+              "type": "array<candidateId>",
+              "meaning": "Candidates agreeing in sorted eigenvalues at a separately recorded tolerance."
+            },
+            {
+              "name": "eigenvalueAbsoluteTolerance",
+              "type": "number",
+              "meaning": "Tolerance used to distinguish roundoff from resolved spectral differences."
+            },
+            {
+              "name": "siteResolvedObservableRequired",
+              "type": "boolean",
+              "meaning": "True when a requested physical distinction depends on eigenvectors or labeled contact couplings."
+            }
+          ],
+          "sharedPromotion": false
+        },
+        "runtimeOverlap": {
+          "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+          "tools": [
+            "Python/read-only file access"
+          ],
+          "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+        },
+        "tokenUsage": null
+      },
+      "tokenUsage": null
+    },
+    {
+      "worker": "gauge",
+      "commitment": "ee36f907d39877fc3bd37f87770056db8cce123db6533b4e80ce0d6b9dee8848",
+      "draftSha256": "a7da8b0206f83ce6a96de92d332837b6f15c97440bd1788a9cd39e92eeafc7cd",
+      "revealedAfterAllCommitted": true,
+      "draft": {
+        "worker": "gauge",
+        "representation": "gauge/1.0: ordered real and imaginary components of an oriented complex loop descriptor",
+        "scopedClaim": "Interpreting each pair as the real and imaginary components of an oriented loop product, all 28 descriptors have unit magnitude within floating-point error. X00–X03 and X24–X27 describe the same phase modulo 2π (π); X04–X07 have phase −π/2, X08–X11 −π/4, X12–X15 zero, X16–X19 +π/4, and X20–X23 +π/2. Thus there are six distinct complex values at numerical tolerance, with repeated candidates within each value. For a product t12 t23 t31, local site rephasing cancels around the loop, preserving this total phase. That gauge interpretation is conditional on the descriptor construction and ordering, which this packet does not specify explicitly.",
+        "preserved": [
+          "Complex loop magnitude and total oriented phase modulo 2π; near −π and +π are one value, not distinct classes.",
+          "Nonreal conjugate values distinguish opposite loop phases when the same edge orientation convention is held fixed. Reversing orientation conjugates the product for Hermitian reverse hoppings.",
+          "Equality of the supplied loop descriptor across candidate IDs, within a stated numerical tolerance; this alone does not establish full physical or gauge equivalence."
+        ],
+        "informationLost": [
+          "Individual edge phases and the site basis phase convention are not recoverable from their loop product.",
+          "Individual hopping magnitudes, on-site terms, coupling to leads, energy dependence, and full Hamiltonians are not supplied by this descriptor.",
+          "A single loop descriptor cannot determine scattering or transport observables, implementation feasibility, experimentally realized flux, or bulk topology."
+        ],
+        "uncertainty": [
+          "The packet supplies pairs without a loop construction formula, units, edge order, or hopping normalization; the oriented-product interpretation uses the assigned representation task.",
+          "The differences at roughly 10^−16 are consistent with numerical rounding; no uncertainty model or experimental data are present.",
+          "Repeated loop values do not imply candidates have identical dynamics. No independent rephasing or orientation-reversal calculation has been observed.",
+          "These are numerically valid responses of a three-site coherent scattering toy; complex hopping requires an implementation mechanism, and there is no fabrication or experimental validation.",
+          "Separate packet context is procedural separation, not statistical independence from other workers sharing the deterministic simulator and curated pool."
+        ],
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "X21",
+          "X22",
+          "X23",
+          "X24",
+          "X25",
+          "X26",
+          "X27"
+        ],
+        "proposedTest": {
+          "question": "Given explicit Hermitian three-site hoppings and the descriptor definition, does recomputing the ordered loop product after arbitrary local site rephasings preserve its complex value, while reversing the loop order returns its complex conjugate?",
+          "control": "Use the same Hamiltonian parameters and fixed ordered edge convention. Include the identity rephasing, several seeded nontrivial site phases with t_ij transformed by exp(i(θ_i−θ_j)), and a separately labeled reversed-orientation evaluation. Include a nonreal loop such as the value associated with X08 and a real loop such as X12. Compare raw complex values, not branch-cut phase differences.",
+          "failureCriterion": "For unit-scale products, any forward rephased product differing from the original by more than 1e−12 in complex absolute error, or a reversed product differing from its conjugate by more than 1e−12, falsifies the claimed implementation/convention consistency. This is a proposed check; the supplied packet cannot execute it."
+        },
+        "localSchemaFork": {
+          "id": "gauge/local-1",
+          "baseVersion": "matter-zoo/1.0",
+          "proposedFields": {
+            "loopEdges": "Explicit ordered edge list and transformation convention.",
+            "loopProductDefinition": "Formula and any normalization mapping hopping data to the stored complex descriptor.",
+            "complexLoopProduct": "Real and imaginary parts with numeric tolerance.",
+            "phaseModulo2Pi": "Phase representation with branch convention and equivalence tolerance.",
+            "loopMagnitude": "Product magnitude and units or normalization.",
+            "rephasingCheck": "Maximum complex residual, seeded phases, and pass tolerance.",
+            "orientationReversalCheck": "Complex-conjugation residual and edge-order provenance."
+          },
+          "sharedPromotion": false
+        },
+        "runtimeOverlap": {
+          "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+          "tools": [
+            "Python/read-only file access"
+          ],
+          "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+        },
+        "tokenUsage": null
+      },
+      "tokenUsage": null
+    },
+    {
+      "worker": "transport",
+      "commitment": "9928838b9a706219940eea655a4758517f9603ba1516ce9cb638337c932ccb4e",
+      "draftSha256": "d075c982f3c71f0d3d441652e98e870834a400c5d666863b8e30535c8469ae3c",
+      "revealedAfterAllCommitted": true,
+      "draft": {
+        "worker": "transport",
+        "representation": "transport/1.0: three 3x3 normalized intensity matrices at E=[-0.5,0,0.5], output row/input column",
+        "scopedClaim": "At an explicitly chosen absolute entrywise tolerance of 1e-12, the 28 supplied candidates form 12 distinguishable intensity-response classes on these three sampled energies. The view preserves labeled-port directional routing and energy dependence, but does not identify an underlying hopping mechanism, phase, flux, or spectrum.",
+        "preserved": {
+          "equivalenceClasses": [
+            [
+              "X00",
+              "X01",
+              "X24",
+              "X25"
+            ],
+            [
+              "X02",
+              "X03",
+              "X26",
+              "X27"
+            ],
+            [
+              "X04",
+              "X05"
+            ],
+            [
+              "X06",
+              "X07"
+            ],
+            [
+              "X08",
+              "X09"
+            ],
+            [
+              "X10",
+              "X11"
+            ],
+            [
+              "X12",
+              "X13"
+            ],
+            [
+              "X14",
+              "X15"
+            ],
+            [
+              "X16",
+              "X17"
+            ],
+            [
+              "X18",
+              "X19"
+            ],
+            [
+              "X20",
+              "X21"
+            ],
+            [
+              "X22",
+              "X23"
+            ]
+          ],
+          "withinClassMaxAbsoluteDifference": 8.881784197001252e-16,
+          "minimumBetweenClassMaxAbsoluteDifference": 0.0929214056553371,
+          "normalization": "Each sampled matrix has both row and column sums within approximately 1e-15 of one. This is a property of the normalized supplied arrays, not proof of experimentally measured power conservation.",
+          "symmetricIntensityClasses": [
+            [
+              "X00",
+              "X01",
+              "X24",
+              "X25"
+            ],
+            [
+              "X02",
+              "X03",
+              "X26",
+              "X27"
+            ],
+            [
+              "X12",
+              "X13"
+            ],
+            [
+              "X14",
+              "X15"
+            ]
+          ],
+          "distinctTransposeClassPairs": [
+            [
+              [
+                "X04",
+                "X05"
+              ],
+              [
+                "X20",
+                "X21"
+              ]
+            ],
+            [
+              [
+                "X06",
+                "X07"
+              ],
+              [
+                "X22",
+                "X23"
+              ]
+            ],
+            [
+              [
+                "X08",
+                "X09"
+              ],
+              [
+                "X16",
+                "X17"
+              ]
+            ],
+            [
+              [
+                "X10",
+                "X11"
+              ],
+              [
+                "X18",
+                "X19"
+              ]
+            ]
+          ],
+          "centerRoutingExample": "At E=0, X04/X05 route input 0 to output 1, input 1 to output 2, and input 2 to output 0, with unit intensities up to floating-point error. X20/X21 route in the reverse labeled-port cycle.",
+          "energyDependenceExample": "X00/X01/X24/X25 and X12/X13 agree at E=0 but differ at E=-0.5 and +0.5; their sampled responses match after reversing the energy order. A single central-energy observation would merge these distinct three-energy classes."
+        },
+        "informationLost": [
+          "Intensity-only data do not retain complex scattering amplitudes, relative phases, phase delays, or their energy derivatives.",
+          "Three energy samples leave behavior between and outside those energies unresolved; no full spectral or broadband claim follows.",
+          "Normalization does not provide absolute incoming/outgoing power calibration or physical loss accounting.",
+          "Identical sampled intensity matrices cannot decide whether candidates have identical internal structures or mechanisms. No unseen flux, hopping phase, Hamiltonian, or spectrum is inferred.",
+          "Labeled-port directional contrast is retained here; pooling ports or averaging forward and reverse entries would discard it."
+        ],
+        "uncertainty": [
+          "The 1e-12 grouping threshold is a numerical comparison convention, not an experimental uncertainty estimate. No measurement noise, replicates, or calibration model is supplied.",
+          "Entries around 1e-32 and values slightly above one are compatible with floating-point roundoff; exact physical zeros or ideal performance are not established.",
+          "Intensity symmetry at these sampled energies does not establish microscopic reciprocity across all energies. Conversely, observed labeled-port asymmetry alone does not identify its implementation mechanism.",
+          "The archive is a curated local descriptor registry with numerically valid toy responses, not evidence of global novelty.",
+          "This is a three-site coherent scattering toy with no fabrication or experimental validation; no Kagome, chemistry, mechanical stress, or hysteresis inference is warranted.",
+          "Workers share a deterministic simulator and curated pool. Separate packets and commitments provide procedural isolation, not statistical independence."
+        ],
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "X21",
+          "X22",
+          "X23",
+          "X24",
+          "X25",
+          "X26",
+          "X27"
+        ],
+        "proposedTest": {
+          "question": "Do the candidate groups indistinguishable at the three supplied energies remain indistinguishable on a prespecified denser energy grid?",
+          "control": "Using the same normalized intensity simulator and labeled-port convention, compute every candidate at E=-0.5,-0.4,...,0.5. First reproduce the supplied three-energy responses to max-entry error <=1e-12; use X00 versus X12 as a positive distinction control at the supplied endpoint energies. Keep numerical precision and normalization fixed.",
+          "failureCriterion": "Reject the extension of any supplied within-class equivalence if a pair in that class differs by more than 1e-8 in any matrix entry at a new grid energy, provided the reproduction control passes. If reproduction exceeds 1e-12, treat the test as invalid pending numerical investigation. The threshold is a prespecified numerical criterion, not a measured error bar; no difference detected on this grid would not prove equality at all energies."
+        },
+        "localSchemaFork": {
+          "id": "transport/local-1",
+          "baseVersion": "matter-zoo/1.0",
+          "proposedFields": [
+            {
+              "name": "energyGrid",
+              "type": "number[]",
+              "value": [
+                -0.5,
+                0,
+                0.5
+              ]
+            },
+            {
+              "name": "indexConvention",
+              "type": "string",
+              "value": "matrix[outputPort][inputPort]; row-major blocks ordered by energy"
+            },
+            {
+              "name": "comparisonTolerance",
+              "type": "number",
+              "value": 1e-12
+            },
+            {
+              "name": "sampledIntensityClass",
+              "type": "candidateId[]",
+              "description": "Local equivalence under the stated grid, labels, and numerical tolerance"
+            },
+            {
+              "name": "intensityTransposeResidual",
+              "type": "number",
+              "description": "max over sampled energies and port pairs of abs(T_ij-T_ji); an intensity statistic, not a mechanism label"
+            },
+            {
+              "name": "rowColumnSumResidual",
+              "type": "number",
+              "description": "maximum absolute departure of supplied normalized row or column sums from one"
+            },
+            {
+              "name": "coverageLimits",
+              "type": "string[]",
+              "value": [
+                "three energy samples",
+                "no amplitude phases",
+                "no absolute power calibration",
+                "no experimental error model"
+              ]
+            }
+          ],
+          "sharedPromotion": false
+        },
+        "runtimeOverlap": {
+          "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+          "tools": [
+            "Python/read-only file access"
+          ],
+          "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+        },
+        "tokenUsage": null
+      },
+      "tokenUsage": null
+    },
+    {
+      "worker": "archive",
+      "commitment": "e893c43bd24fe92bff5a2d075001d970cd4bc75f82da79ddacfb579ae345b3cb",
+      "draftSha256": "5ae8a8c9c8d360f1b5760b30536e7322c1c91c5af9ee821f50cf682db2e17109",
+      "revealedAfterAllCommitted": true,
+      "draft": {
+        "worker": "archive",
+        "representation": {
+          "version": "archive/1.0",
+          "features": [
+            "mean reflection across three energies",
+            "absolute circulation at E=0"
+          ],
+          "comparisonTolerance": 1e-12,
+          "observedDescriptorGroups": [
+            {
+              "values": [
+                0.186614976535,
+                0.0
+              ],
+              "candidateIds": [
+                "X00",
+                "X01",
+                "X12",
+                "X13",
+                "X24",
+                "X25"
+              ]
+            },
+            {
+              "values": [
+                0.189347361234,
+                0.0
+              ],
+              "candidateIds": [
+                "X02",
+                "X03",
+                "X26",
+                "X27"
+              ]
+            },
+            {
+              "values": [
+                0.029322268326,
+                1.0
+              ],
+              "candidateIds": [
+                "X04",
+                "X05",
+                "X20",
+                "X21"
+              ]
+            },
+            {
+              "values": [
+                0.043444631738,
+                0.960678238837
+              ],
+              "candidateIds": [
+                "X06",
+                "X07",
+                "X22",
+                "X23"
+              ]
+            },
+            {
+              "values": [
+                0.107349863846,
+                0.628539361055
+              ],
+              "candidateIds": [
+                "X08",
+                "X09",
+                "X16",
+                "X17"
+              ]
+            },
+            {
+              "values": [
+                0.122703018002,
+                0.580088198816
+              ],
+              "candidateIds": [
+                "X10",
+                "X11",
+                "X18",
+                "X19"
+              ]
+            },
+            {
+              "values": [
+                0.197065575726,
+                0.0
+              ],
+              "candidateIds": [
+                "X14",
+                "X15"
+              ]
+            }
+          ]
+        },
+        "scopedClaim": "Within the supplied 28-candidate packet, these two coarse descriptors form seven numerically distinguishable groups at absolute tolerance 1e-12. Multiple candidate IDs share every descriptor group. Descriptor equality supports a local archive collision, not physical equivalence, independent replication, or global novelty.",
+        "preserved": [
+          "The mean of reflection across the three sampled energies.",
+          "The magnitude of circulation at E=0, separating numerically zero values from finite magnitudes in this packet.",
+          "Seven distinct descriptor locations and their membership, conditional on the stated numerical tolerance."
+        ],
+        "informationLost": [
+          "The circulation sign is discarded by the absolute value; opposite signed circulation, if present, would map to the same magnitude. The packet cannot establish which collisions are sign reversals.",
+          "The three individual reflection values, their energy dependence, order and spread are discarded by averaging; distinct profiles with the same mean could collide.",
+          "Circulation away from E=0, phase-sensitive response and other observables are absent.",
+          "Microscopic parameters, realization mechanism and physical identity cannot be reconstructed from these two numbers. Archive occupancy cannot establish material diversity or performance outside this toy."
+        ],
+        "uncertainty": [
+          "Differences of order 1e-16 within groups are treated as numerical residue, not certified physical differences; no error bounds or convergence study are supplied.",
+          "The packet supplies neither signed circulation nor per-energy reflection, so no particular cause of a collision can be identified.",
+          "This is a three-site coherent scattering toy; no conclusion extends to Kagome structure, chemistry, stress, hysteresis, fabrication or experimental validation. Complex hopping still requires an implementation mechanism.",
+          "All observations share a deterministic simulator and curated pool. Separate packet access is procedural isolation, not an independent physical measurement or independent replication."
+        ],
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "X21",
+          "X22",
+          "X23",
+          "X24",
+          "X25",
+          "X26",
+          "X27"
+        ],
+        "proposedTest": {
+          "question": "Do any candidate IDs sharing an archive descriptor differ in signed circulation at E=0 or in at least one of the three individual reflection values?",
+          "control": "Recompute every same-group candidate with the same deterministic simulator, the identical three-energy grid, unchanged parameters and conventions, and a documented numerical tolerance. Repeat a reference candidate and use a tighter numerical setting to bound numerical drift. Record signed circulation and the ordered reflection triple before applying the current compression.",
+          "failureCriterion": "The claim that each archive group is interchangeable for those resolved observables fails if any within-group pair differs in signed circulation or an individual reflection value by more than max(1e-10, ten times the measured repeat/convergence drift). If no pair differs, this test has not resolved the collisions; it does not establish equivalence under other observables."
+        },
+        "localSchemaFork": {
+          "id": "archive/local-1",
+          "baseVersion": "matter-zoo/1.0",
+          "proposedFields": [
+            {
+              "name": "reflectionByEnergy",
+              "type": "ordered array of {energy, reflection}",
+              "purpose": "Expose averaging collisions."
+            },
+            {
+              "name": "signedCirculationAtZero",
+              "type": "number",
+              "purpose": "Expose sign information removed by absolute value."
+            },
+            {
+              "name": "numericalTolerance",
+              "type": "number",
+              "purpose": "Distinguish numerical residue from resolved differences."
+            },
+            {
+              "name": "descriptorCollisionMembers",
+              "type": "array of candidate IDs",
+              "purpose": "Retain all local candidates represented by a descriptor location."
+            }
+          ],
+          "sharedPromotion": false
+        },
+        "runtimeOverlap": {
+          "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+          "tools": [
+            "Python/read-only file access"
+          ],
+          "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+        },
+        "tokenUsage": null
+      },
+      "tokenUsage": null
+    },
+    {
+      "worker": "skeptic",
+      "commitment": "bb5cdc3584cca492d4f37c2ecc3e857f1c3ab519bd5cb496a1a40fd17c554228",
+      "draftSha256": "8654a6bff537ed36ded4ad05aecbf4c4caefe3b6896b3ff62a4fb516f6d99396",
+      "revealedAfterAllCommitted": true,
+      "draft": {
+        "worker": "skeptic",
+        "representation": "skeptic/1.0; numerical audit only, excluded from comparable physics distances",
+        "scopedClaim": {
+          "claim": "All 28 supplied candidates are marked valid, with reported eigen residuals and unitarity errors near double-precision roundoff and modest reported maximum condition values. These diagnostics support internal numerical consistency of the reported toy responses under their unspecified definitions. They neither establish scientific novelty nor identify a physical transport mechanism.",
+          "ranges": {
+            "eigenResidual": {
+              "min": 3.1186449331649705e-16,
+              "max": 1.1103990390400293e-15
+            },
+            "unitarityError": {
+              "min": 2.221909528311904e-16,
+              "max": 1.1102566691227e-15
+            },
+            "maxCondition": {
+              "min": 2.187610716296458,
+              "max": 2.637628203592391
+            }
+          },
+          "validCount": 28,
+          "candidateCount": 28,
+          "archiveAnomaliesReported": []
+        },
+        "preserved": [
+          "Per-candidate eigenResidual, unitarityError, maxCondition and validity flag.",
+          "Reported solver consistency, approximate probability-conservation diagnostic and conditioning summary.",
+          "All 28 descriptor-registry candidate identifiers and the registry statement that responses are numerically valid toy responses, not global novelty."
+        ],
+        "informationLost": [
+          "Hamiltonians, scattering matrices, eigenvectors, energy grids, physical parameterization and transport observables are absent.",
+          "Residual normalization, matrix norm, condition-number definition, validity tolerances, solver algorithm, working precision and convergence histories are absent.",
+          "Reported maxima do not reveal where conditioning peaks or whether an energy grid misses a narrow resonance.",
+          "These four diagnostics cannot identify topology, mechanisms, material realizations, novelty, chemistry, Kagome physics, mechanical stress or hysteresis."
+        ],
+        "uncertainty": {
+          "observedMissingness": {
+            "missingExpectedMetricEntries": 0,
+            "missingArchivedCandidateIds": [],
+            "duplicateCandidateIds": 0
+          },
+          "limitations": [
+            "Every supplied observation contains all four expected metrics; completeness here concerns only this packet, not omitted simulator states or external evidence.",
+            "Near-roundoff residuals suggest numerical consistency but cannot certify forward accuracy without normalization, conditioning definitions and reference calculations.",
+            "valid=true is a supplied flag; its acceptance rule was not available for independent verification.",
+            "Tiny differences among residuals are not physical dissimilarity and should not rank novelty or transport behavior.",
+            "No uncertainty intervals, independent implementation, model-error estimate, discretization checks or experimental validation are supplied.",
+            "Procedural isolation is not statistical independence; the simulator and curated pool remain shared."
+          ]
+        },
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X02",
+          "X03",
+          "X04",
+          "X05",
+          "X06",
+          "X07",
+          "X08",
+          "X09",
+          "X10",
+          "X11",
+          "X12",
+          "X13",
+          "X14",
+          "X15",
+          "X16",
+          "X17",
+          "X18",
+          "X19",
+          "X20",
+          "X21",
+          "X22",
+          "X23",
+          "X24",
+          "X25",
+          "X26",
+          "X27"
+        ],
+        "proposedTest": {
+          "question": "For all 28 exact archived toy inputs, does an independent higher-precision recomputation reproduce the scattering matrices and eigenvalues across a refined energy grid while satisfying explicitly normalized residual and unitarity tolerances?",
+          "control": "Retrieve the exact simulator inputs and metric definitions first; use the same Hamiltonian and lead conventions in an independently implemented solver at at least 80 decimal digits. Include an analytically solvable Hermitian scattering case and a deliberately perturbed nonunitary scattering matrix to verify the diagnostic detects a known violation. Compare eigenvalue sets without relying on eigenvector ordering, and compare scattering matrices using the same channel phase convention. Record the original and refined energy grids.",
+          "failureCriterion": "Flag numerical certification as failed or incomplete if any archived input or normalization is unavailable, a control fails, a dimensionless normalized eigen residual or relative Frobenius unitarity defect exceeds 1e-10, or the independently recomputed scattering matrix or matched eigenvalue set differs from the original by more than 1e-8 under documented relative scaling. These are proposed audit thresholds, not inferred original validity rules. A failure challenges numerical robustness or reproducibility; a pass does not establish novelty or implementation mechanism."
+        },
+        "localSchemaFork": {
+          "id": "skeptic/local-1",
+          "baseVersion": "matter-zoo/1.0",
+          "proposedFields": {
+            "auditRole": "numerical-validity-only; not a physics-distance representation",
+            "metricDefinitions": "norms, normalization scales and condition-number interpretation",
+            "solverProvenance": "algorithm, implementation version and working precision",
+            "validationThresholds": "explicit tolerances and validity-flag derivation",
+            "gridCoverage": "sampled energies, resolution and refinement result",
+            "missingness": "missing metrics, candidates and required source inputs",
+            "independentRecomputation": "reference precision, controls and deviations",
+            "physicalImplementationEvidence": "mechanism evidence or explicitly unavailable"
+          },
+          "sharedPromotion": false
+        },
+        "runtimeOverlap": {
+          "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+          "tools": [
+            "Python/read-only file access"
+          ],
+          "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+        },
+        "tokenUsage": null
+      },
+      "tokenUsage": null
+    }
+  ],
+  "coalitionOutputs": [
+    {
+      "worker": "spectrum",
+      "output": {
+        "kind": "DescriptorProposal",
+        "scopedClaim": {
+          "statement": "X06 and X22 have equal supplied eigenvalues but different fixed-label routing. Their supplied matrices satisfy H22=conj(H06)=transpose(H06). In the spinless site convention this is the time-reversed pair, not a diagonal gauge copy. A general isospectral unitary relation would not establish physical equivalence of labeled contacts.",
+          "equivalenceReason": "For H22=D P H06 P^T D†, the three distinct onsite values (0,0.2,-0.35) force P to be the identity when matching these matrices. Diagonal gauge transformations preserve the oriented loop product, which differs between these candidates. Thus no diagonal gauge-plus-permutation map identifies these supplied matrices while preserving their onsite assignments.",
+          "orientationAudit": "Define L123=H12 H23 H31 explicitly. It is approximately +i for X06 and -i for X22. The packet loop values instead match L132=H13 H32 H21, the conjugate orientation. This is consistent with an opposite loop convention, not by itself an implementation error; orientation must be recorded before assigning signs.",
+          "transportEvidence": "The supplied training and held-out intensity matrices for X22 equal the transpose of those for X06 within 1.2e-15 maximum entry error. Their fixed-label maximum entry differences are approximately 0.96067824 on training samples and 0.92089117 on held-out samples. Transposition exchanges incoming/outgoing routing; it is not simultaneous relabeling of both port axes.",
+          "spectralExplanation": "For a Hermitian three-site matrix, the characteristic polynomial depends on the oriented loop through its real part. Complex conjugation preserves that real part and the spectrum while reversing the imaginary part. Spectral equality therefore does not determine routing orientation."
+        },
+        "proposedDescriptorOrTest": {
+          "descriptor": {
+            "name": "local oriented three-site descriptor with explicit equivalence policy",
+            "fields": [
+              "fixed site and port labels",
+              "labeled onsite vector",
+              "labeled edge magnitudes",
+              "complex ordered loop product",
+              "explicit loop index order and Hamiltonian-entry convention",
+              "permitted equivalence operations"
+            ],
+            "equivalencePolicy": "Report diagonal rephasing, simultaneous site/port permutation, and time reversal separately. Do not quotient time reversal when evaluating fixed-label directional routing. An odd permutation reverses loop orientation and must also permute onsite entries and both transport axes."
+          },
+          "test": "Reproduce the supplied intensities using the unchanged contact model, then apply seeded diagonal rephasings and all six simultaneous site/port permutations. Check descriptor covariance under each operation. Separately apply complex conjugation and test the transposed-intensity relation; require a stated spinless/time-reversal-compatible contact convention.",
+          "controls": [
+            "Identity transformation reproduces inputs within 1e-12 maximum entry error.",
+            "Diagonal rephasing preserves the ordered loop and intensities when contact channel phases transform consistently.",
+            "A permutation acts on the onsite vector, loop orientation and both transport axes together.",
+            "Complex conjugation conjugates the loop and, for the stated contact assumptions, transposes intensities.",
+            "Compare held-out samples without changing fitting or equivalence conventions."
+          ],
+          "executionState": "Proposed transformation-control experiment only; algebraic comparisons above use supplied matrices and samples, with no new simulator run."
+        },
+        "whatChangedFromOwnFirstPass": "The first pass could establish only spectral equivalence classes and proposed a diagonal resolvent probe for X04/X20. The coalition now supplies a concrete different pair with matrices, oriented loops and routing data. For the observed transpose pair X06/X22, every diagonal resolvent entry is equal because inverse(zI-H^T)=transpose(inverse(zI-H)); a diagonal-only probe would miss this routing distinction. The next descriptor and test therefore retain an explicitly oriented loop and off-diagonal labeled routing.",
+        "supportingCandidateIds": [
+          "X06",
+          "X22"
+        ],
+        "alternativeExplanation": "A loop-sign difference alone may arise from opposite orientation conventions or an odd port/site permutation; the packet explicitly uses the opposite loop orientation from L123. The distinct matched onsite values obstruct a nonidentity permutation equivalence here. Contact asymmetries or another scattering convention could invalidate an all-energy transpose prediction even though the supplied samples satisfy it. These possibilities require the stated controls rather than identification of a new mechanism from a distance metric.",
+        "failureCriterion": "If the identity reproduction error exceeds 1e-12, suspend the test as numerically invalid. Otherwise a loop change under a diagonal rephasing above 1e-12 falsifies descriptor invariance; a correctly transformed intensity difference above 1e-8 falsifies the claimed transformation rule. Any explicit D,P satisfying H22=D P H06 P^T D† within 1e-10 would falsify the claimed lack of gauge/permutation equivalence. A valid contact-model computation with transposition error above 1e-8 at a prespecified additional energy falsifies the proposed extension of the time-reversed routing relation beyond supplied samples.",
+        "validationScope": "Only X06/X22 in the deterministic three-site coherent-scattering toy and supplied sample arrays. Algebraic consequences of the supplied matrices are distinguished from proposed simulator controls. No new material, fabrication result, experimental validation, independent statistical replication, global novelty, or agent-strategy superiority is claimed. This is one bounded coalition proposal; the coalition dissolves afterward.",
+        "sharedOntologyPromotion": false,
+        "status": "proposed",
+        "results": null,
+        "tokenUsage": null
+      }
+    },
+    {
+      "worker": "gauge",
+      "output": {
+        "kind": "Review",
+        "subtype": "equivalence",
+        "scopedClaim": "For the supplied X06/X22 matrices, H(X22)=conjugate(H(X06)), so the pair is related by spinless complex conjugation (an algebraic time-reversal operation in the stated site basis) and has the same spectrum. Their labeled on-site values [0,0.2,−0.35] are all distinct. Any exact equivalence H22=D P H06 P† D† with diagonal site phases D therefore forces P to preserve every on-site value and hence to be the identity. The oriented products H12 H23 H31 are +i and −i, respectively, which diagonal rephasing cannot change; thus the displayed Hamiltonians are not related by diagonal gauge plus a site permutation. The packet reports the opposite loop orientation, yielding −i and +i: explicit orientation is essential. The supplied intensity matrices are mutually transposed to roundoff and have opposite reported circulation, demonstrating distinct fixed-label routing at those sampled conditions. This is a finite three-site statement, not a bulk topological-phase classification.",
+        "proposedDescriptorOrTest": {
+          "name": "Separate labeled gauge, relabeling, and conjugation relations",
+          "descriptorFields": [
+            "Ordered site and port labels, complete on-site vector and edge magnitudes.",
+            "Explicit ordered loop formula: choose L=H12 H23 H31 and retain both real and imaginary parts; record that the packet loop uses the reverse orientation.",
+            "Separate residuals for direct labeled equality, diagonal gauge equality, simultaneous site/port permutation plus gauge equality, and conjugate-matrix equality.",
+            "Fixed-label intensity difference and transpose residual at each sampled condition; any relabeled comparison must move the entire Hamiltonian and contact/port mapping together."
+          ],
+          "question": "Does explicit enumeration of the six site permutations and consistent phase solving confirm that no diagonal-gauge/permutation mapping relates X06 and X22, while complex conjugation maps the matrices and transposes their supplied labeled intensity responses?",
+          "control": "Use the displayed matrices and declared L orientation, first reproduce their eigenvalues and loop values at 1e−12 tolerance. Generate a seeded diagonal rephasing of X06 as a positive gauge control and a simultaneous site/port relabeling of that same case as a positive permutation control. Require the full on-site vector and contact mapping to transform with the chosen permutation. Keep the antiunitary conjugation control separate from every unitary gauge/permutation control. If fresh transport is computed, first specify and reproduce the original contact model; compare each supplied and held-out sample without reordering energies.",
+          "comparisonRule": "Use max-entry complex absolute residual <=1e−12 for numerical equality, with independent intensity and transpose residuals. Do not identify a transposed response with fixed-label equality, or an arbitrary isospectral unitary with a diagonal site gauge/permutation."
+        },
+        "whatChangedFromOwnFirstPass": "The first pass could only interpret abstract loop pairs conditionally. The authorized coalition packet now supplies full Hamiltonians and labeled intensity data for X06/X22, allowing a specific distinction between gauge equivalence, permutation equivalence and conjugation. It also exposes an orientation convention: H12 H23 H31 gives the conjugate of the stored loop. The loop descriptor resolves a spectral degeneracy for this pair but still cannot reconstruct the full response.",
+        "supportingCandidateIds": [
+          "X06",
+          "X22"
+        ],
+        "alternativeExplanation": "An orientation or input/output index convention change can reverse a loop sign or transpose an intensity array without changing the underlying labeled apparatus. Thus conventions and contact mappings must be audited before attributing the contrast to physical time reversal. The displayed matrices establish an algebraic conjugation relation, while the packet does not establish an implemented magnetic mechanism or experimental time-reversal operation. General isospectral unitary equivalence also exists for equal Hermitian spectra, but need not preserve physical site and port labels.",
+        "failureCriterion": "Reject the proposed absence of diagonal-gauge/permutation equivalence if any of the six consistent full-matrix mappings attains residual <=1e−12 after the positive controls pass. Reject the algebraic conjugation/transpose account if the displayed conjugation residual or any matched-sample transpose residual exceeds 1e−12. If the formula/orientation or contact reproduction controls fail, mark the test inconclusive until conventions are resolved, rather than interpreting the failure as a new phase.",
+        "validationScope": "One proposed equivalence audit for two supplied candidates in a deterministic three-site coherent scattering toy, using only the coalition packet and own first pass. No new simulation or experiment has been executed here; observed relations are statements about the displayed data. The proposed controls and transport reproduction remain unexecuted. No global ontology, experimental realization, bulk topology, or statistical independence claim.",
+        "sharedOntologyPromotion": false,
+        "status": "proposed",
+        "results": null,
+        "tokenUsage": null
+      }
+    },
+    {
+      "worker": "transport",
+      "output": {
+        "kind": "Hypothesis",
+        "subtype": "experiment",
+        "scopedClaim": "In the supplied detuned pair X06/X22, equal sorted eigenvalues coexist with different fixed-port intensity responses and opposite oriented loop descriptors. The supplied Hamiltonians are complex conjugates with the same distinct ordered onsite values [0,0.2,-0.35]. This supports testing orientation-sensitive, contact-resolved descriptors; it does not establish a new material mechanism. Fixed physical ports must remain fixed when assessing response equivalence.",
+        "proposedDescriptorOrTest": {
+          "name": "Fixed-port response and explicit gauge/permutation controls",
+          "descriptor": "Retain the full energy-indexed labeled-port intensity matrix and the ordered complex loop product alongside the eigenvalues. Add the declaration of physical contact labels and whether a comparison permits passive relabeling.",
+          "question": "Can the observed distinction be removed by local rephasing while physical ports stay fixed, and how does explicitly allowed passive port permutation differ between detuned and symmetric controls?",
+          "procedure": [
+            "Use only the provided X06/X22 Hamiltonians to reproduce the three supplied responses with the original simulator contact model; record the fixed physical port-to-site map. Require numerical reproduction before drawing conclusions.",
+            "Apply diagonal unitary rephasings H -> D H D† and transform contact basis conventions consistently. Recompute the ordered loop and the intensity matrices at the original and four supplied held-out sample indices. Gauge covariance predicts unchanged fixed-port intensities and unchanged ordered loop; the held-out energies must be identified from authorized simulator metadata before energy-specific claims.",
+            "Enumerate all six simultaneous site permutations, carrying onsite values, edges, and physical contact metadata together. Report both fixed physical labels and a separately declared passive relabeling comparison T -> P T Pᵀ. Do not accept an independently optimized input/output permutation as physical equivalence.",
+            "For the detuned pair, require any proposed symmetry that preserves the physical onsite assignment to preserve [0,0.2,-0.35]. Its three distinct entries allow only the identity permutation under that restriction. Test whether any gauge-only map can match the matrices and ordered loop; opposite nonreal loop products predict it cannot.",
+            "Create an explicitly labeled symmetric control by replacing both onsite vectors with [0,0,0] while retaining their supplied conjugate hoppings. With symmetry-compatible equal contacts, test an odd site permutation plus any required rephasing as a permitted passive relabeling. Compare the fixed-port response separately: a passive relabeling match does not establish equality at fixed physical ports. If the simulator contacts break that symmetry, retain their asymmetry and flag that the symmetric-contact control is not instantiated."
+          ],
+          "controls": [
+            "Identity rephasing and identity permutation reproduce the original arrays.",
+            "Seeded nontrivial local rephasings leave the ordered loop unchanged.",
+            "An odd orientation permutation conjugates the loop when the directed edge convention is carried explicitly.",
+            "Keep numerical precision, normalization, energy ordering, and contact implementation fixed."
+          ]
+        },
+        "whatChangedFromOwnFirstPass": "My isolated transport packet could identify sampled intensity classes and transpose relations but supplied no Hamiltonians, onsite pattern, loop values, or spectra. The coalition now authorizes those facts for X06/X22 and published summaries only. This narrows the broad denser-grid proposal to a specific gauge/permutation test with fixed physical contacts, separating detuning-pinned site identities from a deliberately constructed symmetric control.",
+        "supportingCandidateIds": [
+          "X06",
+          "X22"
+        ],
+        "alternativeExplanation": "A different port-label convention, inconsistent contact transformation, or numerical implementation error could create an apparent disagreement. Equal eigenvalues constrain a different summary of the same toy system; representation-specific equivalence alone does not demonstrate physical novelty. Permutation equivalence of an explicitly symmetric control would not transfer to the detuned pair or erase their fixed-port distinction.",
+        "failureCriterion": {
+          "reproductionGate": "If any original response entry differs from the supplied value by more than 1e-12, suspend interpretation and investigate the implementation.",
+          "gaugeControl": "A consistently transformed gauge copy that changes an ordered loop by more than 1e-12 or any fixed-port intensity by more than 1e-10 falsifies the claimed gauge/contact implementation consistency.",
+          "detunedHypothesis": "An explicit diagonal unitary map matching X06 to X22 to Hamiltonian max-entry residual <=1e-10 while retaining onsite assignments and reproducing their opposite nonreal ordered loops would falsify the proposed gauge-only obstruction and require checking the loop convention.",
+          "symmetricControl": "Under verified symmetry-compatible equal contacts, failure of the proposed odd-permutation Hamiltonian match or simultaneous port-covariant intensity match at residual <=1e-10 falsifies that control prediction. A permutation-only match must be reported separately from equality with physical ports fixed.",
+          "limits": "All thresholds are numerical conventions, not experimental uncertainty estimates; finite sampled agreement is not an all-energy proof."
+        },
+        "validationScope": "Proposed numerical experiment within this three-site coherent-scattering toy, using the two authorized Hamiltonians and explicitly constructed controls. No new calculations of the proposed experiment are reported. The supplied held-out matrices have no energy labels in this packet, so only their sample ordering is presently available. No experimental, fabrication, global novelty, material superiority, or agent superiority claim; procedural isolation is not statistical independence.",
+        "sharedOntologyPromotion": false,
+        "status": "proposed",
+        "results": null,
+        "tokenUsage": null
+      }
+    }
+  ],
+  "coalitionStatus": "dissolved",
+  "sharedOntologyPromoted": false,
+  "tokenUsage": null,
+  "limits": [
+    "All contexts inherit the same model family; exact identifier unverified.",
+    "Model inference token usage was not exposed; no equal-token AI superiority inference.",
+    "Context isolation follows input allowlists; shared filesystem is not a security boundary.",
+    "The deterministic software four-arm replay is distinct from this recorded nine-turn worker exercise."
+  ]
+}

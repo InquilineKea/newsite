@@ -1,0 +1,79 @@
+{
+  "worker": "gauge",
+  "representation": "gauge/1.0: ordered real and imaginary components of an oriented complex loop descriptor",
+  "scopedClaim": "Interpreting each pair as the real and imaginary components of an oriented loop product, all 28 descriptors have unit magnitude within floating-point error. X00–X03 and X24–X27 describe the same phase modulo 2π (π); X04–X07 have phase −π/2, X08–X11 −π/4, X12–X15 zero, X16–X19 +π/4, and X20–X23 +π/2. Thus there are six distinct complex values at numerical tolerance, with repeated candidates within each value. For a product t12 t23 t31, local site rephasing cancels around the loop, preserving this total phase. That gauge interpretation is conditional on the descriptor construction and ordering, which this packet does not specify explicitly.",
+  "preserved": [
+    "Complex loop magnitude and total oriented phase modulo 2π; near −π and +π are one value, not distinct classes.",
+    "Nonreal conjugate values distinguish opposite loop phases when the same edge orientation convention is held fixed. Reversing orientation conjugates the product for Hermitian reverse hoppings.",
+    "Equality of the supplied loop descriptor across candidate IDs, within a stated numerical tolerance; this alone does not establish full physical or gauge equivalence."
+  ],
+  "informationLost": [
+    "Individual edge phases and the site basis phase convention are not recoverable from their loop product.",
+    "Individual hopping magnitudes, on-site terms, coupling to leads, energy dependence, and full Hamiltonians are not supplied by this descriptor.",
+    "A single loop descriptor cannot determine scattering or transport observables, implementation feasibility, experimentally realized flux, or bulk topology."
+  ],
+  "uncertainty": [
+    "The packet supplies pairs without a loop construction formula, units, edge order, or hopping normalization; the oriented-product interpretation uses the assigned representation task.",
+    "The differences at roughly 10^−16 are consistent with numerical rounding; no uncertainty model or experimental data are present.",
+    "Repeated loop values do not imply candidates have identical dynamics. No independent rephasing or orientation-reversal calculation has been observed.",
+    "These are numerically valid responses of a three-site coherent scattering toy; complex hopping requires an implementation mechanism, and there is no fabrication or experimental validation.",
+    "Separate packet context is procedural separation, not statistical independence from other workers sharing the deterministic simulator and curated pool."
+  ],
+  "candidateIds": [
+    "X00",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "X21",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X26",
+    "X27"
+  ],
+  "proposedTest": {
+    "question": "Given explicit Hermitian three-site hoppings and the descriptor definition, does recomputing the ordered loop product after arbitrary local site rephasings preserve its complex value, while reversing the loop order returns its complex conjugate?",
+    "control": "Use the same Hamiltonian parameters and fixed ordered edge convention. Include the identity rephasing, several seeded nontrivial site phases with t_ij transformed by exp(i(θ_i−θ_j)), and a separately labeled reversed-orientation evaluation. Include a nonreal loop such as the value associated with X08 and a real loop such as X12. Compare raw complex values, not branch-cut phase differences.",
+    "failureCriterion": "For unit-scale products, any forward rephased product differing from the original by more than 1e−12 in complex absolute error, or a reversed product differing from its conjugate by more than 1e−12, falsifies the claimed implementation/convention consistency. This is a proposed check; the supplied packet cannot execute it."
+  },
+  "localSchemaFork": {
+    "id": "gauge/local-1",
+    "baseVersion": "matter-zoo/1.0",
+    "proposedFields": {
+      "loopEdges": "Explicit ordered edge list and transformation convention.",
+      "loopProductDefinition": "Formula and any normalization mapping hopping data to the stored complex descriptor.",
+      "complexLoopProduct": "Real and imaginary parts with numeric tolerance.",
+      "phaseModulo2Pi": "Phase representation with branch convention and equivalence tolerance.",
+      "loopMagnitude": "Product magnitude and units or normalization.",
+      "rephasingCheck": "Maximum complex residual, seeded phases, and pass tolerance.",
+      "orientationReversalCheck": "Complex-conjugation residual and edge-order provenance."
+    },
+    "sharedPromotion": false
+  },
+  "runtimeOverlap": {
+    "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+    "tools": [
+      "Python/read-only file access"
+    ],
+    "sharedInputs": "same deterministic simulator and curated pool; separate packet"
+  },
+  "tokenUsage": null
+}

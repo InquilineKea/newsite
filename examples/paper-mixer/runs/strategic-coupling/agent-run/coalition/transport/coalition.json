@@ -1,0 +1,41 @@
+{
+  "kind": "Hypothesis",
+  "subtype": "experiment",
+  "scopedClaim": "In the supplied detuned pair X06/X22, equal sorted eigenvalues coexist with different fixed-port intensity responses and opposite oriented loop descriptors. The supplied Hamiltonians are complex conjugates with the same distinct ordered onsite values [0,0.2,-0.35]. This supports testing orientation-sensitive, contact-resolved descriptors; it does not establish a new material mechanism. Fixed physical ports must remain fixed when assessing response equivalence.",
+  "proposedDescriptorOrTest": {
+    "name": "Fixed-port response and explicit gauge/permutation controls",
+    "descriptor": "Retain the full energy-indexed labeled-port intensity matrix and the ordered complex loop product alongside the eigenvalues. Add the declaration of physical contact labels and whether a comparison permits passive relabeling.",
+    "question": "Can the observed distinction be removed by local rephasing while physical ports stay fixed, and how does explicitly allowed passive port permutation differ between detuned and symmetric controls?",
+    "procedure": [
+      "Use only the provided X06/X22 Hamiltonians to reproduce the three supplied responses with the original simulator contact model; record the fixed physical port-to-site map. Require numerical reproduction before drawing conclusions.",
+      "Apply diagonal unitary rephasings H -> D H D† and transform contact basis conventions consistently. Recompute the ordered loop and the intensity matrices at the original and four supplied held-out sample indices. Gauge covariance predicts unchanged fixed-port intensities and unchanged ordered loop; the held-out energies must be identified from authorized simulator metadata before energy-specific claims.",
+      "Enumerate all six simultaneous site permutations, carrying onsite values, edges, and physical contact metadata together. Report both fixed physical labels and a separately declared passive relabeling comparison T -> P T Pᵀ. Do not accept an independently optimized input/output permutation as physical equivalence.",
+      "For the detuned pair, require any proposed symmetry that preserves the physical onsite assignment to preserve [0,0.2,-0.35]. Its three distinct entries allow only the identity permutation under that restriction. Test whether any gauge-only map can match the matrices and ordered loop; opposite nonreal loop products predict it cannot.",
+      "Create an explicitly labeled symmetric control by replacing both onsite vectors with [0,0,0] while retaining their supplied conjugate hoppings. With symmetry-compatible equal contacts, test an odd site permutation plus any required rephasing as a permitted passive relabeling. Compare the fixed-port response separately: a passive relabeling match does not establish equality at fixed physical ports. If the simulator contacts break that symmetry, retain their asymmetry and flag that the symmetric-contact control is not instantiated."
+    ],
+    "controls": [
+      "Identity rephasing and identity permutation reproduce the original arrays.",
+      "Seeded nontrivial local rephasings leave the ordered loop unchanged.",
+      "An odd orientation permutation conjugates the loop when the directed edge convention is carried explicitly.",
+      "Keep numerical precision, normalization, energy ordering, and contact implementation fixed."
+    ]
+  },
+  "whatChangedFromOwnFirstPass": "My isolated transport packet could identify sampled intensity classes and transpose relations but supplied no Hamiltonians, onsite pattern, loop values, or spectra. The coalition now authorizes those facts for X06/X22 and published summaries only. This narrows the broad denser-grid proposal to a specific gauge/permutation test with fixed physical contacts, separating detuning-pinned site identities from a deliberately constructed symmetric control.",
+  "supportingCandidateIds": [
+    "X06",
+    "X22"
+  ],
+  "alternativeExplanation": "A different port-label convention, inconsistent contact transformation, or numerical implementation error could create an apparent disagreement. Equal eigenvalues constrain a different summary of the same toy system; representation-specific equivalence alone does not demonstrate physical novelty. Permutation equivalence of an explicitly symmetric control would not transfer to the detuned pair or erase their fixed-port distinction.",
+  "failureCriterion": {
+    "reproductionGate": "If any original response entry differs from the supplied value by more than 1e-12, suspend interpretation and investigate the implementation.",
+    "gaugeControl": "A consistently transformed gauge copy that changes an ordered loop by more than 1e-12 or any fixed-port intensity by more than 1e-10 falsifies the claimed gauge/contact implementation consistency.",
+    "detunedHypothesis": "An explicit diagonal unitary map matching X06 to X22 to Hamiltonian max-entry residual <=1e-10 while retaining onsite assignments and reproducing their opposite nonreal ordered loops would falsify the proposed gauge-only obstruction and require checking the loop convention.",
+    "symmetricControl": "Under verified symmetry-compatible equal contacts, failure of the proposed odd-permutation Hamiltonian match or simultaneous port-covariant intensity match at residual <=1e-10 falsifies that control prediction. A permutation-only match must be reported separately from equality with physical ports fixed.",
+    "limits": "All thresholds are numerical conventions, not experimental uncertainty estimates; finite sampled agreement is not an all-energy proof."
+  },
+  "validationScope": "Proposed numerical experiment within this three-site coherent-scattering toy, using the two authorized Hamiltonians and explicitly constructed controls. No new calculations of the proposed experiment are reported. The supplied held-out matrices have no energy labels in this packet, so only their sample ordering is presently available. No experimental, fabrication, global novelty, material superiority, or agent superiority claim; procedural isolation is not statistical independence.",
+  "sharedOntologyPromotion": false,
+  "status": "proposed",
+  "results": null,
+  "tokenUsage": null
+}

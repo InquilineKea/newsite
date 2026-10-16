@@ -1,0 +1,390 @@
+{
+  "worker": "geometry",
+  "scope": "Independent first pass. Do not read peer outputs. Use only this packet.",
+  "representation": {
+    "representationVersion": "geometry/1.0",
+    "observations": [
+      {
+        "candidateId": "X00",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X01",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X02",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X03",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X04",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X05",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X06",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X07",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X08",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X09",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X10",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X11",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X12",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X13",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X14",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X15",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X16",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X17",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X18",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X19",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X20",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X21",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X22",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X23",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X24",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X25",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "candidateId": "X26",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      },
+      {
+        "candidateId": "X27",
+        "representation": "geometry",
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ]
+      }
+    ],
+    "archive": {
+      "kind": "local descriptor registry",
+      "candidateIds": [
+        "X00",
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20",
+        "X21",
+        "X22",
+        "X23",
+        "X24",
+        "X25",
+        "X26",
+        "X27"
+      ],
+      "anomalies": [],
+      "quality": "Numerically valid toy responses; not global novelty."
+    },
+    "schemaFork": {
+      "id": "geometry/local-1",
+      "base": "matter-zoo/1.0",
+      "sharedPromotion": false
+    }
+  },
+  "task": "Identify what your representation preserves and cannot decide; propose one falsifiable next test. Do not infer other views.",
+  "limits": [
+    "Three-site coherent scattering toy, not Kagome, chemistry, mechanical stress or hysteresis.",
+    "Complex hopping requires an implementation mechanism; no fabrication or experimental validation."
+  ]
+}

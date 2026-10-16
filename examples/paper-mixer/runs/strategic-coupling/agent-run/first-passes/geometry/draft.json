@@ -1,0 +1,145 @@
+{
+  "worker": "geometry",
+  "representation": "geometry/1.0",
+  "scopedClaim": "The 28 supplied six-component geometry vectors form exactly two numerical equivalence classes of 14 candidates each. Components 1 through 4 are identical across every candidate: [1, 1, 1, 0]. The classes differ only in components 5 and 6, with values (0, 0) or (0.2, -0.35). This is descriptor equivalence within this packet, not proof of complete geometric or physical equivalence.",
+  "preserved": {
+    "observedVectorLength": 6,
+    "constantComponents": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 0
+    },
+    "equivalenceClasses": [
+      {
+        "values": [
+          1,
+          1,
+          1,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "candidateIds": [
+          "X00",
+          "X01",
+          "X04",
+          "X05",
+          "X08",
+          "X09",
+          "X12",
+          "X13",
+          "X16",
+          "X17",
+          "X20",
+          "X21",
+          "X24",
+          "X25"
+        ]
+      },
+      {
+        "values": [
+          1,
+          1,
+          1,
+          0,
+          0.2,
+          -0.35
+        ],
+        "candidateIds": [
+          "X02",
+          "X03",
+          "X06",
+          "X07",
+          "X10",
+          "X11",
+          "X14",
+          "X15",
+          "X18",
+          "X19",
+          "X22",
+          "X23",
+          "X26",
+          "X27"
+        ]
+      }
+    ],
+    "archiveStatus": "The supplied local descriptor registry lists all 28 candidates, no anomalies, and numerically valid toy responses; it explicitly does not establish global novelty."
+  },
+  "informationLost": [
+    "The packet provides no component names, units, coordinate convention, generating geometry, or descriptor construction rule; the physical meaning of individual components cannot be established.",
+    "Candidates sharing a vector cannot be distinguished by this representation; omitted geometric differences cannot be ruled out.",
+    "Flux, routing, eigenvalues, transport, implementation mechanisms, and experimental feasibility are not observed and cannot be inferred from these vectors."
+  ],
+  "uncertainty": [
+    "Equality is exact numerical equality in the supplied JSON; measurement precision, robustness, and sensitivity to geometry changes are not supplied.",
+    "The scope is a three-site coherent-scattering toy. No inference to Kagome systems, chemistry, mechanical stress, hysteresis, fabrication, or experimental validation is justified.",
+    "This independent first pass uses a separate packet from the same deterministic simulator and curated candidate pool, so it is not statistical or security independence."
+  ],
+  "candidateIds": [
+    "X00",
+    "X01",
+    "X02",
+    "X03",
+    "X04",
+    "X05",
+    "X06",
+    "X07",
+    "X08",
+    "X09",
+    "X10",
+    "X11",
+    "X12",
+    "X13",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "X21",
+    "X22",
+    "X23",
+    "X24",
+    "X25",
+    "X26",
+    "X27"
+  ],
+  "proposedTest": {
+    "question": "After component definitions and frozen source geometries are supplied, does an independent recomputation using geometry/1.0 reproduce the two reported descriptor classes for X00, X01, X02, and X03?",
+    "control": "Freeze the descriptor definition, ordering, coordinate convention, units, source inputs, and numerical precision before recomputation. Include an exact duplicate of the X00 source geometry as a repeatability control; treat X00/X01 and X02/X03 as the two asserted same-vector pairs.",
+    "failureCriterion": "The claim fails for the tested subset if any independently recomputed component differs from its supplied value by more than a prespecified absolute tolerance of 1e-10, or either asserted same-vector pair splits by more than that tolerance. A failing duplicate control makes the test inconclusive until repeatability is repaired. A passing result validates only descriptor reproduction, not unobserved physical properties."
+  },
+  "localSchemaFork": {
+    "id": "geometry/local-1",
+    "baseVersion": "matter-zoo/1.0",
+    "proposedFields": [
+      {
+        "name": "componentDefinitions",
+        "description": "Ordered descriptor names, units, coordinate conventions, and construction rules."
+      },
+      {
+        "name": "descriptorEquivalenceClass",
+        "description": "Group identifier under an explicit equality tolerance; does not imply complete physical equivalence."
+      },
+      {
+        "name": "sourceGeometryProvenance",
+        "description": "Frozen geometry input identifier and descriptor implementation version for reproducible recomputation."
+      },
+      {
+        "name": "comparisonTolerance",
+        "description": "Declared absolute and relative tolerances and precision for descriptor comparison."
+      }
+    ],
+    "sharedPromotion": false
+  },
+  "runtimeOverlap": {
+    "modelFamily": "inherited Codex parent model; exact model identifier unverified",
+    "tools": [
+      "Python/read-only file access"
+    ],
+    "sharedInputs": "same deterministic simulator and curated candidate pool; separate packet"
+  },
+  "tokenUsage": null
+}

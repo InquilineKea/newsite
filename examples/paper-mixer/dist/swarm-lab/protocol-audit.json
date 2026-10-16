@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "strategic-coupling-audit/1.0",
+  "scope": "Executable minimum and falsification audit of shared conversation against Matter Zoo extension contract; no external mutation or checkout edits.",
+  "source": "https://chatgpt.com/share/6ad197e7-cde4-83e9-8828-7f49bad97836",
+  "verdict": "Implement an inspectable seeded routing benchmark and extensible protocol. Treat apparent advantages as fixture-specific, never evidence of AI-agent or materials superiority.",
+  "criticalCorrections": [
+    {
+      "id": "laplacian-diversity",
+      "problem": "Laplacian eigenvalue entropy measures properties of a graph, not representational diversity.",
+      "counterexample": "For complete unit-weight similarity graph on n identical agents, L=nI−11ᵀ has spectrum [0,n,...,n]. Normalized nonzero eigenvalues give effective rank n−1, falsely high for identical representations.",
+      "replacement": "For each representation collect normalized distances for the same frozen candidate-pair probe set. Center the agent-by-pair fingerprint matrix across agents. Compute singular values s; p=s²/sum(s²); D=exp(−sum(p log p)). Define D=0 when centered energy≤tolerance. Report nonconstant fingerprint count and held-out predictive utility beside D. Graph spectrum remains a connectivity diagnostic only.",
+      "limits": "This captures diversity of distinctions on chosen probes, not all knowledge or scientific independence. A centered n-agent matrix has rank≤n−1. Random noise can increase effective rank, so utility and robustness gates are mandatory."
+    },
+    {
+      "id": "disagreement-scales",
+      "problem": "Distances from heterogeneous spaces cannot be subtracted before declaring a calibration.",
+      "replacement": "Freeze training calibration candidate pairs, per-feature centering/scaling, representation metric, and q95 distance scale before comparison arms. Set dtilde=min(1,d/q95). If q95≤epsilon, flag representation uninformative; do not divide by zero or silently invent a distance. Delta=abs(dtilde_r−dtilde_s). Distances and thresholds must be versioned; calibration may not use held-out outcomes.",
+      "limits": "Clipping can hide extremes; show raw distance, q95 and saturation alongside disagreement. Distance matrices with identical structure but distinct labels may still encode different semantics."
+    },
+    {
+      "id": "spectrum-vs-transfer",
+      "problem": "Equal spectra do not imply equal response at fixed physical ports.",
+      "replacement": "Use a deliberately isospectral pair related by permutation while keeping the lab input/output ports fixed. Eigenvalue equality is an exact construction; changed resolvent response shows loss of port information. If ports, boundaries and observations are permuted too, the model instead supplies an equivalence control.",
+      "limits": "A designed isospectral fixture tests protocol behavior; it is not a discovered material or empirical proof of general superiority."
+    },
+    {
+      "id": "topology-scope",
+      "problem": "Loop-sign products or localization are not automatically topological phases.",
+      "replacement": "For real signed symmetric operators use gauge-invariant cycle-sign products as the minimum gauge representation. State transformation H→SHS with diagonal S=±1 and transform source/readout consistently. Call them loop-sign invariants; bulk topological invariants remain unavailable without suitable geometry, gap and boundary assumptions."
+    },
+    {
+      "id": "normalization-identifiability",
+      "problem": "Agreement about distances is not agreement about mechanistic interpretation.",
+      "replacement": "Preserve representations and local schemas even after a coalition resolves one discrepancy. Coalition output changes a tested descriptor or experiment proposal; it never overwrites all private representations."
+    }
+  ],
+  "executableMinimum": {
+    "model": "One explicitly declared finite real-symmetric tight-binding operator family. Record dimensionless units, matrix basis, boundaries, input/output ports, damping/self-energy, frequency grid, code version and seed. No mechanical stress, hysteresis, mode lifetime or fabricated experiment claims.",
+    "representations": [
+      {
+        "id": "geometry",
+        "state": "Graph degree/motif and embedding descriptors; private candidate ranking, anomalies and local archive.",
+        "limit": "Do not infer transport quality from geometry alone."
+      },
+      {
+        "id": "spectrum",
+        "state": "Sorted eigenvalues and declared spectral summary; private archive.",
+        "limit": "Eigenvalue spectrum intentionally omits port orientation and eigenvectors."
+      },
+      {
+        "id": "gauge",
+        "state": "Cycle-sign products in a declared deterministic cycle basis; gauge-equivalence controls.",
+        "limit": "No Chern number or topological-phase claim."
+      },
+      {
+        "id": "transport",
+        "state": "Complex port resolvent or its declared magnitudes over fixed frequencies and fixed losses.",
+        "limit": "Record conditioning and absolute versus normalized amplitude; resonances require stable regularization."
+      },
+      {
+        "id": "archive",
+        "state": "Frozen material behavior descriptors, occupancy, novelty and quality history.",
+        "limit": "This is a meta-search representation, not an independent physical measurement."
+      },
+      {
+        "id": "skeptic",
+        "state": "Eigenpair residuals, response conditioning, perturbation sensitivity, numerical validity and missingness.",
+        "limit": "Unknown is not zero; numerical failure is distinct from physical refutation."
+      }
+    ],
+    "privacy": "Store private hypotheses, failed ideas and local rankings per worker. Router may access published distance summaries, uncertainty and artifact IDs, never full private narratives. Site inspection by H is separate from algorithmic worker visibility.",
+    "communicationEnvelope": {
+      "required": [
+        "eventId",
+        "producer",
+        "candidateIds",
+        "representationVersion",
+        "distanceDefinition",
+        "normalizationVersion",
+        "rawDistances",
+        "normalizedDistances",
+        "discrepancy",
+        "claim",
+        "artifactIds",
+        "uncertainty",
+        "requestedTest",
+        "costLedger"
+      ],
+      "forbidden": [
+        "rawPrivateTranscript",
+        "unverifiedSharedConclusion"
+      ],
+      "intake": "Use existing Matter Zoo extension envelope and parentArtifactIds; source sections link to the original program. Add typed event payload rather than weakening its execution/proposal gates."
+    },
+    "coalition": "Choose highest eligible disagreement above fixed threshold; include its two representation owners and optionally skeptic, maximum 3. Give only relevant candidate facts and published evidence. Close after one bounded output and release members. Preserve discrepancy and failed outputs.",
+    "outputs": [
+      {
+        "kind": "DescriptorProposal",
+        "requirements": [
+          "formula",
+          "domain",
+          "units",
+          "normalization",
+          "parent discrepancy",
+          "training and held-out tests",
+          "robustness controls"
+        ],
+        "status": "proposed with null results until actually evaluated"
+      },
+      {
+        "kind": "Hypothesis",
+        "subtype": "experiment",
+        "requirements": [
+          "question",
+          "intervention",
+          "baseline",
+          "budget",
+          "failure criterion",
+          "expected distinguishing observations"
+        ],
+        "status": "proposed with null results until run"
+      },
+      {
+        "kind": "Review",
+        "subtype": "equivalence_certificate",
+        "requirements": [
+          "named map",
+          "domain",
+          "ports and boundary transformation",
+          "preserved observables",
+          "information loss",
+          "tolerance",
+          "certificate code or exact proof"
+        ],
+        "status": "A sampled numerical certificate is bounded to its tested inputs; label exact proof only when established algebraically"
+      }
+    ],
+    "triggerPolicy": "Implement disagreement first. Optional OOD, uncertainty, stagnation and frontier triggers need separate definitions and logged reasons; do not label arbitrary threshold crossings epistemic information gain.",
+    "routing": "Use a transparent VOI proxy, not asserted Bayesian information gain: v=(disagreement×declared unresolvedness×estimated partner utility)/(1+communication cost). Log every numerator, denominator and threshold. Partner utility starts neutral and updates only after independently measured output yield.",
+    "couplingUpdate": "Bound J_ab in [0,1], with decay toward a declared prior plus eta times measured yield. Yield components use fixed normalized units: held-out prediction improvement, valid archive coverage gain, useful descriptor acceptance minus costs. Do not let self-reported novelty increase J.",
+    "cooldown": "Per pair and discrepancy cooldown prevents repeated messages; allow one declared high-severity numerical failure override and log it. Define local, coalition and synthesis timescales as update counts, not literal model cognition.",
+    "antiConcentration": "Log edge exposure shares and HHI concentration. Reserve a fixed exploration fraction (e.g. one in five eligible events) for a low-exposure pair with a valid question; select deterministically from the seeded policy. Probes can produce no result. Do not maximize diversity at the expense of evidence.",
+    "schemaForks": "Per-agent versioned schema proposals coexist with lineage, prediction target, counterexample, migration and adversarial tests. Slow synthesis creates a new proposal branch. Only a separate human decision promotes shared ontology; an intake receipt or passed toy check cannot do so.",
+    "threeArchives": {
+      "matter": "Frozen behavioral bins and validity gate; one quality champion per niche with lineage. Newly invented descriptors do not retroactively improve the primary comparison archive.",
+      "representation": "Keep distinguishable feature families using held-out predictive error, compression, invariance, robustness and novel distinctions. No automatic quality from dimensionality or noise.",
+      "swarm": "Archive policy configurations by measured communication concentration and cost with held-out coverage/false-merging quality. One fixed four-arm run does not yet constitute evolved swarm policies."
+    }
+  },
+  "ablation": {
+    "arms": [
+      "single integrator with access to all measured representation evidence",
+      "six continuously broadcasting workers",
+      "six isolated workers",
+      "six workers with event-triggered temporary coalitions"
+    ],
+    "fairness": [
+      "Same candidate generator and seed block, initial archive, calibration split, held-out material set, physical model and observation definitions.",
+      "Same total solver-call cap, same inference-token cap and same policy-decision cap. Debit coalition recomputation and private worker proposals. Give single arm equal aggregate reasoning budget, not one sixth.",
+      "If deterministic workers use no LLM, inference tokens=0 in every arm and label this a software routing ablation. Zero equal token counts cannot support claims about AI inference efficiency.",
+      "Charge identical cached solver artifacts consistently to all arms. Report requested evaluations and actual solver calls separately.",
+      "Broadcast overhead is measured and charged explicitly; do not hand-code lower epistemic quality for broadcast or single arms.",
+      "A replay over identical candidate/evidence streams compares routing, not discoveries caused by communication. An adaptive search comparison must actually allow communication to alter proposals and deduct costs.",
+      "All arms may tie or outperform event routing. Never choose a fixture or score because it guarantees D wins. Use multiple seed blocks plus holdout shifts before generalization."
+    ],
+    "metrics": [
+      "Validated toy behavioral niche coverage under frozen bins",
+      "False novelty: claimed new behavior collapsing under declared equivalence/robustness tests",
+      "False merging: predicted-equivalent pairs separated by held-out response above tolerance",
+      "Held-out useful descriptor improvement and its uncertainty",
+      "Solver calls and total cost per validated new niche",
+      "Centered distance-fingerprint diversity with held-out utility",
+      "Communication count, edge concentration, coalition durations and failed events"
+    ],
+    "falsification": "The strategic-coupling hypothesis is unsupported or refuted for this benchmark if event routing gives no cost-adjusted coverage benefit, increases false merging, or loses its apparent benefit across held-out seeds. Report ties and negative results."
+  },
+  "requiredTests": [
+    "Complete identical similarity graph demonstrates high Laplacian entropy but centered fingerprint diversity 0.",
+    "Identical nonconstant fingerprints yield 0 centered diversity; independent fingerprints exceed 0; all-constant/empty inputs have explicit undefined-or-zero behavior.",
+    "Positive unit rescaling of raw descriptors with consistently scaled frozen calibrator does not change dtilde; q95=0 yields uninformative flag; missing observations never become distance 0.",
+    "No router access to unexported hypotheses/rankings; outgoing evidence keys are allowlisted and serializable.",
+    "Permutation isospectral pair has equal eigenvalues within tolerance but distinct fixed-port response; jointly transformed port equivalence control passes.",
+    "Gauge transformation preserves eigenvalues and appropriately transformed transfer observables; cycle-sign products remain fixed.",
+    "Every coalition has 2–3 members, satisfies cooldown/budget/threshold rules, emits exactly one typed bounded output, and dissolves.",
+    "Repeated low-yield communications weaken or fail to strengthen J; held-out useful outputs strengthen it within bounds; anti-concentration probes are present and their failures preserved.",
+    "Proposals cannot contain completed numeric results or pass shared schema promotion; local fork does not overwrite canonical schema.",
+    "All four arms obey exact solver and policy caps; actual LLM token use is either measured or absent, never invented.",
+    "Baseline policies have no hard-coded outcome multipliers or discovery penalties. Fixture reversal and randomized seed blocks can produce ties or baseline wins.",
+    "Archive updates reject invalid physics/numerics, preserve descriptor versions and lineage, and keep negative/inconclusive evidence."
+  ],
+  "integrationNotes": [
+    "Current Matter Zoo already forbids imagined proposal results and requires executed calculation fields, controls and limitations; preserve these guards.",
+    "Current schema has no Experiment or EquivalenceCertificate kind. Represent these as Hypothesis/Review payload subtypes, or issue an explicit versioned schema change with migration.",
+    "Source publication contains speculative language; implementation should distinguish executable protocol, deterministic fixture results, live external agent execution and genuine physics discoveries."
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "worker": "skeptic",
+  "scope": "Independent first pass. Do not read peer outputs. Use only this packet.",
+  "representation": {
+    "representationVersion": "skeptic/1.0",
+    "observations": [
+      {
+        "candidateId": "X00",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 4.0029660424867215e-16,
+          "unitarityError": 5.853055610376802e-16,
+          "maxCondition": 2.40831891575846,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X01",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 5.978733960281817e-16,
+          "unitarityError": 4.443338021661012e-16,
+          "maxCondition": 2.4083189157584597,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X02",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 6.73169701932636e-16,
+          "unitarityError": 4.3806443253450705e-16,
+          "maxCondition": 2.637628203592391,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X03",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 9.040822243568021e-16,
+          "unitarityError": 4.441282978234536e-16,
+          "maxCondition": 2.6376282035923895,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X04",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 6.533102476583651e-16,
+          "unitarityError": 2.6228572183618686e-16,
+          "maxCondition": 2.187610716296459,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X05",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 4.642451693911695e-16,
+          "unitarityError": 4.449907265839162e-16,
+          "maxCondition": 2.187610716296458,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X06",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 7.108895957933346e-16,
+          "unitarityError": 5.551178023653651e-16,
+          "maxCondition": 2.205798880649556,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X07",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 3.7238012298709097e-16,
+          "unitarityError": 6.662270109378958e-16,
+          "maxCondition": 2.205798880649557,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X08",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 3.2368285245694683e-16,
+          "unitarityError": 2.4840498354396407e-16,
+          "maxCondition": 2.629021148384297,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X09",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 4.494909211857047e-16,
+          "unitarityError": 4.441303741743018e-16,
+          "maxCondition": 2.629021148384298,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X10",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 4.460365043975677e-16,
+          "unitarityError": 3.4785005322487523e-16,
+          "maxCondition": 2.5965723814781256,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X11",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 9.011940398734646e-16,
+          "unitarityError": 3.6119971073825694e-16,
+          "maxCondition": 2.5965723814781256,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X12",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 3.3306690738754696e-16,
+          "unitarityError": 3.439306062877866e-16,
+          "maxCondition": 2.40831891575846,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X13",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 3.1401849173675503e-16,
+          "unitarityError": 3.8011088456313363e-16,
+          "maxCondition": 2.408318915758459,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X14",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 8.881784197001252e-16,
+          "unitarityError": 2.221909528311904e-16,
+          "maxCondition": 2.476417369504927,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X15",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 7.468261590855958e-16,
+          "unitarityError": 1.1102566691227e-15,
+          "maxCondition": 2.4764173695049276,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X16",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 3.2368285245694683e-16,
+          "unitarityError": 6.664877485656066e-16,
+          "maxCondition": 2.629021148384297,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X17",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 3.1186449331649705e-16,
+          "unitarityError": 8.88401292800131e-16,
+          "maxCondition": 2.6290211483842985,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X18",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 4.460365043975677e-16,
+          "unitarityError": 5.551145155626359e-16,
+          "maxCondition": 2.5965723814781247,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X19",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 7.007057381743245e-16,
+          "unitarityError": 4.579194196180582e-16,
+          "maxCondition": 2.596572381478125,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X20",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 6.533102476583651e-16,
+          "unitarityError": 2.7629855690071143e-16,
+          "maxCondition": 2.1876107162964584,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X21",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 3.5961193924471635e-16,
+          "unitarityError": 2.4513363036624375e-16,
+          "maxCondition": 2.187610716296458,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X22",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 7.108895957933346e-16,
+          "unitarityError": 4.448240994889975e-16,
+          "maxCondition": 2.2057988806495565,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X23",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 1.1103990390400293e-15,
+          "unitarityError": 4.654423685253057e-16,
+          "maxCondition": 2.205798880649556,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X24",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 4.0029660424867215e-16,
+          "unitarityError": 4.440979549249082e-16,
+          "maxCondition": 2.40831891575846,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X25",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 4.0029660424867215e-16,
+          "unitarityError": 3.3316063639520904e-16,
+          "maxCondition": 2.4083189157584597,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X26",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 6.73169701932636e-16,
+          "unitarityError": 4.441955760298401e-16,
+          "maxCondition": 2.637628203592389,
+          "valid": true
+        }
+      },
+      {
+        "candidateId": "X27",
+        "representation": "skeptic",
+        "values": {
+          "eigenResidual": 6.722137407118775e-16,
+          "unitarityError": 6.661783608261737e-16,
+          "maxCondition": 2.6376282035923895,
+          "valid": true
+        }
+      }
+    ],
+    "archive": {
+      "kind": "local descriptor registry",
+      "candidateIds": [
+        "X00",
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X14",
+        "X15",
+        "X16",
+        "X17",
+        "X18",
+        "X19",
+        "X20",
+        "X21",
+        "X22",
+        "X23",
+        "X24",
+        "X25",
+        "X26",
+        "X27"
+      ],
+      "anomalies": [],
+      "quality": "Numerically valid toy responses; not global novelty."
+    },
+    "schemaFork": {
+      "id": "skeptic/local-1",
+      "base": "matter-zoo/1.0",
+      "sharedPromotion": false
+    }
+  },
+  "task": "Identify what your representation preserves and cannot decide; propose one falsifiable next test. Do not infer other views.",
+  "limits": [
+    "Three-site coherent scattering toy, not Kagome, chemistry, mechanical stress or hysteresis.",
+    "Complex hopping requires an implementation mechanism; no fabrication or experimental validation."
+  ]
+}

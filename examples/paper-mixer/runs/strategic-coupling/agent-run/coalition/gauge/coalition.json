@@ -1,0 +1,29 @@
+{
+  "kind": "Review",
+  "subtype": "equivalence",
+  "scopedClaim": "For the supplied X06/X22 matrices, H(X22)=conjugate(H(X06)), so the pair is related by spinless complex conjugation (an algebraic time-reversal operation in the stated site basis) and has the same spectrum. Their labeled on-site values [0,0.2,−0.35] are all distinct. Any exact equivalence H22=D P H06 P† D† with diagonal site phases D therefore forces P to preserve every on-site value and hence to be the identity. The oriented products H12 H23 H31 are +i and −i, respectively, which diagonal rephasing cannot change; thus the displayed Hamiltonians are not related by diagonal gauge plus a site permutation. The packet reports the opposite loop orientation, yielding −i and +i: explicit orientation is essential. The supplied intensity matrices are mutually transposed to roundoff and have opposite reported circulation, demonstrating distinct fixed-label routing at those sampled conditions. This is a finite three-site statement, not a bulk topological-phase classification.",
+  "proposedDescriptorOrTest": {
+    "name": "Separate labeled gauge, relabeling, and conjugation relations",
+    "descriptorFields": [
+      "Ordered site and port labels, complete on-site vector and edge magnitudes.",
+      "Explicit ordered loop formula: choose L=H12 H23 H31 and retain both real and imaginary parts; record that the packet loop uses the reverse orientation.",
+      "Separate residuals for direct labeled equality, diagonal gauge equality, simultaneous site/port permutation plus gauge equality, and conjugate-matrix equality.",
+      "Fixed-label intensity difference and transpose residual at each sampled condition; any relabeled comparison must move the entire Hamiltonian and contact/port mapping together."
+    ],
+    "question": "Does explicit enumeration of the six site permutations and consistent phase solving confirm that no diagonal-gauge/permutation mapping relates X06 and X22, while complex conjugation maps the matrices and transposes their supplied labeled intensity responses?",
+    "control": "Use the displayed matrices and declared L orientation, first reproduce their eigenvalues and loop values at 1e−12 tolerance. Generate a seeded diagonal rephasing of X06 as a positive gauge control and a simultaneous site/port relabeling of that same case as a positive permutation control. Require the full on-site vector and contact mapping to transform with the chosen permutation. Keep the antiunitary conjugation control separate from every unitary gauge/permutation control. If fresh transport is computed, first specify and reproduce the original contact model; compare each supplied and held-out sample without reordering energies.",
+    "comparisonRule": "Use max-entry complex absolute residual <=1e−12 for numerical equality, with independent intensity and transpose residuals. Do not identify a transposed response with fixed-label equality, or an arbitrary isospectral unitary with a diagonal site gauge/permutation."
+  },
+  "whatChangedFromOwnFirstPass": "The first pass could only interpret abstract loop pairs conditionally. The authorized coalition packet now supplies full Hamiltonians and labeled intensity data for X06/X22, allowing a specific distinction between gauge equivalence, permutation equivalence and conjugation. It also exposes an orientation convention: H12 H23 H31 gives the conjugate of the stored loop. The loop descriptor resolves a spectral degeneracy for this pair but still cannot reconstruct the full response.",
+  "supportingCandidateIds": [
+    "X06",
+    "X22"
+  ],
+  "alternativeExplanation": "An orientation or input/output index convention change can reverse a loop sign or transpose an intensity array without changing the underlying labeled apparatus. Thus conventions and contact mappings must be audited before attributing the contrast to physical time reversal. The displayed matrices establish an algebraic conjugation relation, while the packet does not establish an implemented magnetic mechanism or experimental time-reversal operation. General isospectral unitary equivalence also exists for equal Hermitian spectra, but need not preserve physical site and port labels.",
+  "failureCriterion": "Reject the proposed absence of diagonal-gauge/permutation equivalence if any of the six consistent full-matrix mappings attains residual <=1e−12 after the positive controls pass. Reject the algebraic conjugation/transpose account if the displayed conjugation residual or any matched-sample transpose residual exceeds 1e−12. If the formula/orientation or contact reproduction controls fail, mark the test inconclusive until conventions are resolved, rather than interpreting the failure as a new phase.",
+  "validationScope": "One proposed equivalence audit for two supplied candidates in a deterministic three-site coherent scattering toy, using only the coalition packet and own first pass. No new simulation or experiment has been executed here; observed relations are statements about the displayed data. The proposed controls and transport reproduction remain unexecuted. No global ontology, experimental realization, bulk topology, or statistical independence claim.",
+  "sharedOntologyPromotion": false,
+  "status": "proposed",
+  "results": null,
+  "tokenUsage": null
+}
