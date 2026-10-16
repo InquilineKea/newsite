@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "matter-zoo-import/1.0",
+  "importedAt": "2026-10-16T02:25:29.843719+00:00",
+  "source": {
+    "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204",
+    "title": "🧬 Computational Matter Zoo — Modal Biodiversity, Programmable Coupling & Agentic Discovery",
+    "lastEditedAt": "2026-10-16T01:53:21.443Z",
+    "snapshotSha256": "e76392b3f8dbe0962f587978c840f5c3d5ce8f1b131891930e20e4abaf84f5f0",
+    "verification": {
+      "state": "unverified"
+    },
+    "coverage": "All 27 numbered sections preserved; linked claims and named 2026 work not independently verified in this import."
+  },
+  "programSha256": "fcace9a4c672c081d2db01ff4da8538b945f2132f5d10ad204017335fcae06ea",
+  "counts": {
+    "sections": 27,
+    "types": 19,
+    "hypotheses": 7,
+    "descriptors": 11,
+    "experiments": 5,
+    "specialties": 23,
+    "tasks": 6,
+    "roadmap": 14
+  },
+  "commonsTaskIds": {
+    "Z01": "T-26ac017b",
+    "Z02": "T-0041c14d",
+    "Z03": "T-477e31c4",
+    "Z04": "T-1298e637",
+    "Z05": "T-a74de32c",
+    "Z06": "T-bef347e5"
+  },
+  "execution": "No new physical simulations or experiments were performed. All five experiments planned; six expansion tasks queued.",
+  "checks": [
+    "27 source sections preserved",
+    "7 hypotheses retain alternatives, tests and failure criteria",
+    "actual-model DOM interactions and safe rendering",
+    "extension proposal/result gates",
+    "immutable intake and duplicate-ID rejection",
+    "all prior archive and UI checks pass"
+  ],
+  "browserQA": "Unavailable; no browser QA performed.",
+  "schemaPromotion": false,
+  "sourceSynchronization": "Point-in-time snapshot; no live Notion synchronization."
+}

@@ -1,0 +1,23 @@
+{
+  "record": {
+    "artifact_id": "f45094c8-2de5-447c-8a6d-7a9ee9d8f380",
+    "artifact_type": "research_program",
+    "producer_agent": "Builder",
+    "skill_used": "evidence-factorization",
+    "schema_version": "1.0",
+    "investigation_id": "matter-zoo-import-20261016",
+    "timestamp": "2026-10-16T02:25:29.844231+00:00",
+    "content_hash": "1c8cbea7ca89408bbee862259bee367c4b69b91413492c16895a0ac0e3351d7f",
+    "parent_artifact_ids": [
+      "05715407-00ef-4bc2-bba8-6315288b9ce2"
+    ],
+    "result_quality": "ok",
+    "needs": [],
+    "summary": "Notion Matter Zoo import: 27 sections, 19 proposed types, five planned experiments, six complementary queued tasks; preserved source and versioned artifact intake. No new physics run."
+  },
+  "nativeFactorySha256": "c5108c064c5aa85c18c3c32a890f2d93f148ea6fa91ba9791b54cbf8f9f3fcce",
+  "parentMeaning": "Presheaf workflow structure extended; this lineage does not certify a scientific transfer.",
+  "audit": "A separate context of the same inherited model inspected the structure; shared-model limits remain.",
+  "sourceSha256": "e76392b3f8dbe0962f587978c840f5c3d5ce8f1b131891930e20e4abaf84f5f0",
+  "programSha256": "fcace9a4c672c081d2db01ff4da8538b945f2132f5d10ad204017335fcae06ea"
+}

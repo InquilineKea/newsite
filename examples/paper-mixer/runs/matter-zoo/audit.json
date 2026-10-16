@@ -1,0 +1,147 @@
+{
+  "auditVersion": "1.0.0",
+  "scope": "Design audit of the supplied Computational Matter Zoo Notion snapshot; no simulation, experimental validation, or external mutation performed.",
+  "source": {
+    "pageId": "3f96336816258179a894fa15a2eef695",
+    "snapshotPath": "/workspace/scratch/0bededede7ad/zoo-source.json",
+    "snapshotAt": "2026-10-16T01:53:21.443Z",
+    "sections": 27,
+    "treatment": "Preserve source text and section anchors. The research program's proposals and named intellectual connections remain source assertions, not independently verified results."
+  },
+  "recommendedEntryPoint": {
+    "title": "Computational Matter Zoo",
+    "kind": "expandable_research_program",
+    "initialState": "imported_planned",
+    "defaultBenchmark": "One declared 2D breathing-Kagome linear spring model, followed by separately implemented tight-binding and photonic models.",
+    "rationale": "The source offers three alternative starting physics models. Select one per executable run; do not pool their parameter vectors, spectra, units, or validation claims.",
+    "phases": [
+      {"id": "P1", "title": "One executable baseline", "sourceSections": [2, 5, 12, 13, 22], "gate": "Known geometry, boundary conditions, operator, units, solver checks, and reproducible baseline output."},
+      {"id": "P2", "title": "Controlled diversity search", "sourceSections": [3, 16, 19, 21], "gate": "Frozen descriptors, archive grid and budgets; negative/control candidates; matched random-search baseline."},
+      {"id": "P3", "title": "Descriptor and schema challenges", "sourceSections": [17, 18, 19, 24], "gate": "Held-out robustness and explanatory tests justify migration; no retroactive silent relabeling."},
+      {"id": "P4", "title": "Richer physics and fidelity", "sourceSections": [4, 6, 7, 9, 10, 11, 15, 23, 27], "gate": "Each new physical coupling is explicitly modeled and checked before a cross-domain claim."}
+    ]
+  },
+  "typedEntities": [
+    {"type": "SourceSnapshot", "required": ["id", "url", "retrievedAt", "sourceLastEditedAt", "contentHash", "rawText", "sectionIndex"]},
+    {"type": "ResearchQuestion", "required": ["id", "sourceRefs", "question", "domain", "status", "decisionCriteria"]},
+    {"type": "ModelSpecification", "required": ["id", "physicsDomain", "degreesOfFreedom", "equations", "units", "assumptions", "boundaryConditions", "symmetries", "parameters", "operatorConvention", "inputPorts", "outputPorts", "validityLimits", "version"]},
+    {"type": "CandidateDesign", "required": ["id", "modelSpecId", "geometryArtifact", "parameterValues", "parentDesignIds", "intervention", "controlDesignIds", "designHash", "proposedBy"]},
+    {"type": "RunRecord", "required": ["id", "candidateId", "modelSpecVersion", "codeCommit", "inputHashes", "solver", "solverVersion", "seed", "numericalSettings", "startedAt", "status", "logs", "outputArtifactIds", "failureReason"]},
+    {"type": "Artifact", "required": ["id", "kind", "contentHash", "location", "producerRunId", "units", "shape", "coordinateSystem", "normalization", "schemaVersion"]},
+    {"type": "DescriptorDefinition", "required": ["id", "version", "formulaOrCode", "units", "validDomains", "requiredArtifacts", "normalization", "degeneracyPolicy", "uncertaintyMethod", "failureCases"]},
+    {"type": "Observation", "required": ["id", "runId", "descriptorId", "descriptorVersion", "value", "uncertainty", "qualityFlags", "artifactRefs"]},
+    {"type": "Hypothesis", "required": ["id", "claim", "domain", "assumptions", "prediction", "control", "falsifier", "provenance", "status", "supportingEvidenceIds", "contradictingEvidenceIds"]},
+    {"type": "ValidationRecord", "required": ["id", "hypothesisId", "testPlan", "executedRunIds", "outcome", "scope", "limitations", "reviewer", "timestamp"]},
+    {"type": "ArchiveDefinition", "required": ["id", "version", "descriptorVersions", "binsOrDistance", "qualityMeasure", "eligibilityRules", "evaluationBudget", "comparisonBaseline", "selectionPolicy"]},
+    {"type": "ArchiveMember", "required": ["archiveVersion", "candidateId", "observationIds", "cellOrEmbedding", "quality", "validationTier", "selectionReason"]},
+    {"type": "AgentTask", "required": ["id", "role", "inputs", "schemaVersions", "authorizedTools", "budget", "deliverableTypes", "acceptanceChecks", "dependencies", "status", "lease", "artifactRefs", "reviewDisposition"]},
+    {"type": "SchemaProposal", "required": ["id", "fromVersion", "proposedTypesOrFields", "counterexampleIds", "reasonOldSchemaFails", "prediction", "validationPlan", "migrationMap", "compatibilityTests", "reviewState"]},
+    {"type": "TransferContract", "required": ["id", "sourceDomain", "targetDomain", "sharedVariables", "mapDefinition", "preservedQuantities", "lostInformation", "assumptions", "verificationEvidence", "status"]}
+  ],
+  "physicalDomains": {
+    "mechanical": {
+      "operators": "K, M and damping D; K phi = omega^2 M phi. For the declared harmonic convention, mechanical response may use (-omega^2 M + i omega D + K)^(-1). Use distinct names B_in and C_out for input/readout maps.",
+      "parameters": ["positions", "springOrBeamConstitutiveLaw", "mass", "stiffness", "constraints", "damping", "equilibratedPrestress"],
+      "requirements": ["Declare translational-only springs versus rotational beam degrees of freedom.", "Separate rigid translations, mechanisms, numerical near-zero modes and unstable negative eigenvalues.", "Prestress requires force equilibrium and a consistent tangent stiffness, including geometric contributions.", "A linear time-invariant spring model does not demonstrate hysteresis, nonlinear gates or higher-order mode coupling."]
+    },
+    "tight_binding": {
+      "operators": "H with declared orbital basis and units; Green function (E + i eta - H - Sigma(E))^(-1).",
+      "parameters": ["onsitePotentials", "hoppingMagnitudes", "hoppingPhases", "orbitalBasis", "leadSelfEnergies"],
+      "requirements": ["For closed Hermitian models use reciprocal conjugate hoppings and check Hermiticity.", "Specify oriented loop phases modulo 2 pi; a gauge-dependent bond phase alone is not a physical flux descriptor.", "Transmission requires explicit leads/self-energies and port normalization.", "An abstract tight-binding calculation does not establish electronic transport or realizability in an MXene or moire material."]
+    },
+    "photonic_coupled_mode": {
+      "operators": "A separately declared temporal or propagation coupled-mode operator; identify whether the independent variable is time or propagation distance.",
+      "parameters": ["propagationOrResonanceParameters", "coupling", "loss", "drive", "modeBasis", "portNormalization"],
+      "requirements": ["Couplings can carry inverse-length or inverse-time units according to formulation; do not call all eigenvalues mechanical frequencies.", "Loss/gain, reciprocity, bandwidth and effective-model assumptions must be declared.", "An engineered phase or nonlocal coupling requires an implementation mechanism; an arbitrary complex matrix is only a model proposal."]
+    },
+    "future_domains": {
+      "members": ["MXene chemistry", "moire electronic routing", "spintronics", "carrier conversion", "nonlinear dynamics", "fabrication"],
+      "status": "research_backlog",
+      "promotionGate": "A domain-specific model, inputs, observable definitions, numerical verification and validation scope must exist before it can produce a claimed result."
+    }
+  },
+  "crossDomainBoundaries": [
+    "A shared graph or matrix shape is a comparison interface, not a physical equivalence or a verified transfer map.",
+    "The full source parameter list is a tagged union across physics models, not one simultaneously meaningful mechanical design vector.",
+    "Mechanical mass normalization, electronic wavefunction normalization and photonic power normalization require explicit maps before quantitative descriptor comparison.",
+    "A static passive real spring stiffness matrix cannot implement arbitrary hopping phases; any gyroscopic, active or modulated mechanism needs its own equations.",
+    "Tiny impurities can strongly alter a simulated response, but no source-import step establishes useful material behavior or fabrication feasibility."
+  ],
+  "descriptorAndClaimChecks": [
+    "IPR is basis- and normalization-sensitive; record treatment of variable masses, degenerate subspaces, finite size and edge support.",
+    "A flat band or a localized eigenmode alone does not establish topology, robust memory or controllable readout.",
+    "Topological invariants need their valid symmetry class, gap, geometry and calculation; boundary-state plots are insufficient alone.",
+    "Group velocity needs a defined periodic dispersion; do not assign it to every finite disordered mode.",
+    "Lifetime and Q need damping or leakage; an undamped eigensolve does not measure either.",
+    "Resolvent SVD depends on input/output definitions, units, weighting and frequency broadening. High rank alone does not imply independent useful computations.",
+    "Pseudospectral behavior must be interpreted in its operator norm and physical metric. Strong nonnormal transient claims need a nonnormal model and time-domain checks.",
+    "Compare perturbation efficiency using a fixed, dimensionally declared norm and minimum denominators; avoid ratios dominated by numerical noise.",
+    "Archive occupancy is diversity under declared descriptors; it is not evidence of physical novelty, broad utility or a new universality class.",
+    "Protect decoupling as an explicit design objective alongside coupling, with matched functional and robustness tests for both."
+  ],
+  "statusAndFailurePolicy": {
+    "artifactStatus": ["planned", "executing", "executed", "numerically_verified", "independently_reproduced", "experimentally_validated"],
+    "hypothesisStatus": ["proposed", "test_ready", "tested_supported_within_scope", "tested_refuted_within_scope", "inconclusive", "superseded"],
+    "negativeResultTypes": ["physical_falsification", "numerical_failure", "invalid_assumption", "underpowered_test", "missing_data", "implementation_bug"],
+    "rules": ["An imported plan starts as planned/proposed; do not manufacture measured values or completed runs.", "Never count a solver error as physical falsification.", "Keep failed runs and contradicted hypotheses with hashes, logs and scope; supersede instead of deleting.", "Separate quality, diversity, validity, numerical confidence and physical validation tier.", "Human or agent opinions can rank interestingness but cannot upgrade evidence tier."]
+  },
+  "agentPackets": [
+    {
+      "id": "ZOO-T1", "role": "Model builder", "axis": "Physical construction and interventions", "sourceSections": [2, 3, 4, 5, 22],
+      "inputs": ["SourceSnapshot", "chosen physics domain", "frozen baseline ModelSpecification"],
+      "deliverables": ["Versioned model manifest", "baseline and paired intervention CandidateDesign records", "executable geometry/operator generator", "explicit predicted outcome and falsifier"],
+      "acceptance": ["Domain tags and units are complete", "baseline and control differ only by declared intervention", "no cross-domain parameter mixing"],
+      "dependsOn": []
+    },
+    {
+      "id": "ZOO-T2", "role": "Numerical verifier", "axis": "Correctness and identifiability", "sourceSections": [2, 12, 13, 22],
+      "inputs": ["ZOO-T1 model and generator"],
+      "deliverables": ["RunRecord and raw operator/eigenpair artifacts", "residual, symmetry, stability and convergence checks", "explicit acceptance/rejection with failure classification"],
+      "acceptance": ["Check small analytic/reference cases", "record boundary and degeneracy conventions", "reject invalid eigensolves before archive eligibility"],
+      "dependsOn": ["ZOO-T1"]
+    },
+    {
+      "id": "ZOO-T3", "role": "Observable and archive cartographer", "axis": "Behavior measurement and coverage", "sourceSections": [12, 13, 16, 17, 23],
+      "inputs": ["Verified raw artifacts", "versioned DescriptorDefinition and ArchiveDefinition"],
+      "deliverables": ["Observable calculations with port/normalization metadata", "baseline MAP-Elites versus matched random-search comparison", "empty-niche and tradeoff report with candidate IDs"],
+      "acceptance": ["Fixed initial descriptors and equal evaluation budgets", "no computation claim from modal count alone", "report invalid-candidate fraction and uncertainty"],
+      "dependsOn": ["ZOO-T2"]
+    },
+    {
+      "id": "ZOO-T4", "role": "Mechanism skeptic", "axis": "Alternative explanations and causal discrimination", "sourceSections": [3, 4, 5, 19, 24],
+      "inputs": ["Candidate hypotheses", "raw operator and observable artifacts", "baseline controls"],
+      "deliverables": ["Competing mechanism hypotheses", "falsifying counter-designs and symmetry/boundary controls", "tested verdict or executable discriminating test plan"],
+      "acceptance": ["Distinguish topology from ordinary localization and finite-size artifacts", "test both rare-coupling and protected-decoupling explanations", "retain refuted hypotheses"],
+      "dependsOn": ["ZOO-T2"]
+    },
+    {
+      "id": "ZOO-T5", "role": "Descriptor adversary and schema steward", "axis": "Representational adequacy", "sourceSections": [17, 18, 19, 24],
+      "inputs": ["Frozen archive", "anomalies", "descriptor definitions", "mechanism-skeptic counterexamples"],
+      "deliverables": ["Redundancy and sensitivity audit", "SchemaProposal with counterexamples and held-out prediction", "explicit migration/compatibility map and re-indexing plan"],
+      "acceptance": ["Novel dimension must add stable predictive or discriminating value", "preserve the original archive version", "no relabeling old results as independently validated discoveries"],
+      "dependsOn": ["ZOO-T3", "ZOO-T4"]
+    },
+    {
+      "id": "ZOO-T6", "role": "Fidelity and experiment planner", "axis": "External validity and realizability", "sourceSections": [7, 9, 10, 11, 21, 27],
+      "inputs": ["Reviewed hypotheses", "verified elite designs", "robustness reports", "material and fabrication constraints if available"],
+      "deliverables": ["Higher-fidelity validation or physical experiment plan", "tolerance and constitutive uncertainty analysis", "costed discriminating measurements", "explicit domain-transfer contracts"],
+      "acceptance": ["Separate simulation evidence from fabrication feasibility", "state required material data and unavailable capabilities", "do not claim execution before RunRecord/measurement artifacts exist"],
+      "dependsOn": ["ZOO-T3", "ZOO-T4"]
+    }
+  ],
+  "coordinationPolicy": {
+    "orthogonality": "These roles inspect different failure axes; all may use the same model family and are not statistically independent replicates. Deliberate review overlap is required at domain boundaries.",
+    "taskHandshake": ["Claim versioned task and lease", "read input hashes and schema versions", "produce typed artifacts", "attach checks and failures", "handoff to a different review role", "human gate for scientific promotion or schema change"],
+    "scopeGuard": "Task execution must be capability-aware. Creating these task packets does not run unavailable physics software or fabricate experimental capabilities."
+  },
+  "presheafConnection": {
+    "contexts": ["geometry and constitutive assumptions", "operator and symmetry", "modal observables", "driven ports and transport", "validation and provenance"],
+    "localSection": "Scoped typed claims plus their exact model/run/descriptor versions and evidence references.",
+    "restriction": "Projection to shared variables with retained units, scope and provenance; no information-adding restriction.",
+    "overlap": "Agreement on the same model identity, boundary conditions, coordinates, normalization and parameter meaning; matching words alone do not establish overlap.",
+    "gluingGate": "A merged candidate claim needs all applicable cross-context constraints, not just pairwise keyword compatibility.",
+    "copresheafUse": "Track typed artifact availability and schema inclusion; distinguish an existing artifact index from a claim that an inference or experiment occurred.",
+    "schemaEvolution": "Version schemas and transfer contracts explicitly. A new type or descriptor is a proposal until its migration and scientific discrimination tests pass.",
+    "limitation": "This is a proposed organization for expansion. It does not certify scientific sheaf gluing, derive a universal physical theory, or compute cohomology."
+  }
+}

@@ -1,5 +1,37 @@
 # Paper Mixer — ALife × Buehler
 
+## Computational Matter Zoo
+
+`/matter-zoo/` preserves the supplied 27-section Notion research program and adds
+19 proposed artifact types, explicit model-family boundaries, seven hypotheses
+with alternatives/falsifiers, 11 provisional diversity axes, five planned
+experiments, 23 source specialties and six complementary Agent Commons task
+packets. Actual durable task IDs and dependencies are recorded in
+`runs/matter-zoo/commons-tasks.json`. None of these queued tasks has been executed
+by this import. The static explorer prepares/downloads packets; Agent Commons
+handles durable coordination, evidence handoffs and review.
+
+Canonical seed: `runs/matter-zoo/source/notion.json`; generated structure:
+`runs/matter-zoo/program.json`; structural audit: `runs/matter-zoo/audit.json`.
+The source is a point-in-time snapshot, not a live Notion sync. A bounded separate
+context of the same inherited model audited structure and scientific boundaries.
+It supplies no independent scientific replication.
+
+```sh
+python scripts/build_matter_zoo.py
+node scripts/test_matter_zoo.mjs
+python scripts/zoo_expand.py my-artifact.json
+python scripts/zoo_expand.py my-artifact.json --output-dir runs/matter-zoo/extensions
+```
+
+The last command creates a new artifact ID directory with canonical payload and
+SHA-256 receipt; duplicate IDs fail. Intake does not run submitted code, upgrade
+evidence, merge scientific claims or promote schemas. See the downloadable
+`dist/matter-zoo/AGENT_GUIDE.md` for the complete workflow. Browser QA was
+unavailable; actual-data DOM, source coverage, packet and immutable intake checks
+exercise the implementation. Cross-family transfers and scientific arrows remain
+proposed contracts requiring domain evidence.
+
 A small, executed quality-diversity demonstration with actual AI generation,
 critique and feedback-guided revision. Its static explorer makes the recorded
 archive, source boundaries, full feedback and parent lineage inspectable.

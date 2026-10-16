@@ -1,0 +1,1602 @@
+{
+  "schemaVersion": "matter-zoo/1.0",
+  "title": "Computational Matter Zoo",
+  "state": "imported_research_program_no_new_simulations",
+  "source": {
+    "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204",
+    "title": "🧬 Computational Matter Zoo — Modal Biodiversity, Programmable Coupling & Agentic Discovery",
+    "lastEditedAt": "2026-10-16T01:53:21.443Z",
+    "snapshotSha256": "e76392b3f8dbe0962f587978c840f5c3d5ce8f1b131891930e20e4abaf84f5f0",
+    "verification": {
+      "state": "unverified"
+    },
+    "coverage": "All 27 numbered sections preserved; linked claims and named 2026 work not independently verified in this import."
+  },
+  "thesis": "Discover a robust, controllable repertoire of physical computations; preserve selective coupling and protected decoupling as competing design directions.",
+  "northStar": "Robust, controllable repertoire per area, energy, time and fabrication complexity; a proposed vector of measures, not a calibrated scalar.",
+  "sections": [
+    {
+      "id": "S1",
+      "number": 1,
+      "title": "Central research question",
+      "text": "**Can we discover substrates whose native physical dynamics expose a large, controllable repertoire of useful computations?**\nTarget a Pareto frontier among rigidity, modal biodiversity, localization, transport, controllable coupling, protected decoupling, rotational/torsional modes, gauge phase, carrier diversity, nonlinear resonance, reconfigurability, robustness, addressability, and useful input-output operator diversity.\n> **Useful diversity can come from coupling OR from protected decoupling.** A substrate may benefit from many long-lived independent modes plus sparse, precisely selected resonances connecting them.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S2",
+      "number": 2,
+      "title": "Modal biodiversity",
+      "text": "For a mechanical lattice:\n$$\nK\\phi_n=\\omega_n^2M\\phi_n\n$$\nTreat a mode as a phenotype:\n$$\nz_n=(\\omega_n,P_n,\\xi_n,v_{g,n},Q_n,\\chi_n,s_n,\\tau_n,g_{nmk\\ldots})\n$$\nRelevant axes include frequency, polarization, translation/rotation/torsion, localization, group velocity, lifetime, chirality, symmetry sector, topology, perturbational susceptibility, and pairwise/higher-order coupling.\n<table fit-page-width=\"true\" header-row=\"true\">\n<tr>\n<td>Modal diversity</td>\n<td>Coupling</td>\n<td>Regime</td>\n</tr>\n<tr>\n<td>Low</td>\n<td>Dense</td>\n<td>Synchronization / consensus</td>\n</tr>\n<tr>\n<td>High</td>\n<td>Dense</td>\n<td>Strongly interacting many-body computation</td>\n</tr>\n<tr>\n<td>Low</td>\n<td>Sparse</td>\n<td>Modular computation</td>\n</tr>\n<tr>\n<td>High</td>\n<td>Rare/selective</td>\n<td>Protected specialist modes + occasional synthesis</td>\n</tr>\n</table>",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S3",
+      "number": 3,
+      "title": "Spectral doping, defects, marginality",
+      "text": "Generalize the steel analogy:\n$$\n\\text{small controlled symmetry violation}\\rightarrow\\text{new collective response}\n$$\nPerturbations include mass/stiffness impurities, missing bonds, geometric distortion, chirality defects, correlated disorder, prestress defects, and boundaries.\n$$\n\\eta_{defect}=\\frac{\\Delta D_{useful\\ modes}}{\\|\\delta L\\|}\n$$\nAndrea Liu's jamming, marginal rigidity, soft-mode, allostery and physical-learning work motivates searching where small structural interventions create large functional changes. The interesting regime may be ordered enough for coherent transport yet disordered enough for rich local modes.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S4",
+      "number": 4,
+      "title": "Tensegrity diversity",
+      "text": "$$\n\\ker R\\sim\\text{mechanisms / zero modes},\\qquad \\ker R^T\\sim\\text{states of self-stress}\n$$\nPrestress changes the dynamical landscape:\n$$\nD=D(\\sigma_0)\n$$\n**Hypothesis:** prestress can act as a reprogrammable coupling matrix, switching localization, softness, rotational channels, buckling states, and cross-modal coupling.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S5",
+      "number": 5,
+      "title": "Kagome lattices",
+      "text": "Kagome is attractive because geometry can support coexisting flat/dispersive bands, frustration, compact localized modes, crossings, edge phenomena, and unusual transport.\n$$\n\\text{flat/localized modes}\\rightarrow\\text{memory/resonant niches}\n$$\n$$\n\\text{dispersive modes}\\rightarrow\\text{transport/communication}\n$$\nSearch breathing, chiral, decorated, mechanical, acoustic, photonic and electronic Kagome families.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S6",
+      "number": 6,
+      "title": "Artificial gauge fields and programmable coupling",
+      "text": "$$\nH=\\sum_{\\langle ij\\rangle}t_{ij}e^{i\\phi_{ij}}a_i^\\dagger a_j\n$$\nBoth coupling magnitude and phase are design variables. **Physical adjacency need not equal computational adjacency.**\nPrefer gauge-invariant loop quantities:\n$$\n\\Phi_\\gamma=\\sum_{(ij)\\in\\gamma}\\phi_{ij}\n$$\nTrack coupling magnitude diversity, loop-flux diversity, sparsity, modularity, switchability, rare-coupling fraction, and higher-order resonances.\nThe 2026 dispersionless-coupling work in dense waveguide arrays is conceptually important because effective coupling can be engineered independently of simple proximity. General lesson: **coupling itself can become programmable matter.**",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S7",
+      "number": 7,
+      "title": "MXenes and material degrees of freedom",
+      "text": "- **Kagome:** architectural geometry/topology\n- **MXenes:** constituent/material/surface-chemistry tunability\n- **Gauge engineering:** effective coupling amplitude and phase\n$$\n\\text{Kagome}\\times\\text{MXene}\\times\\text{prestress}\\times\\text{defects}\\times\\text{fields}\n$$",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S8",
+      "number": 8,
+      "title": "Tensor and interaction diversity",
+      "text": "Keep distinct: interaction order, effective tensor rank, symmetry sectors, tensor-network topology, shared-information structure, and coupling-strength ecology.\n$$\nJ_{ij}\\sim\\{O(1),\\epsilon,0,\\text{rare event}\\}\n$$\nRare-event coupling is potentially a computational primitive.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S9",
+      "number": 9,
+      "title": "Carrier biodiversity",
+      "text": "Possible carriers include charge, spin, magnons, photons, phonons, excitons, polaritons, valleys, domain walls and skyrmions.\n$$\nC_{\\alpha\\beta}(\\omega,k,E,F,\\ldots)\n$$\nThe goal is selective conversion between representations while preserving useful independent channels.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S10",
+      "number": 10,
+      "title": "Moiré electronic routing",
+      "text": "$$\nH=H_0+V_{moire}(\\mathbf r)+V_{gate}(\\mathbf r,t)+H_{strain}+H_{SOC}+\\cdots\n$$\nPossible addresses include position, momentum, spin, valley, layer, orbital/sublattice, band and energy.\n$$\n\\text{wire address}\\rightarrow\\text{wire + internal-state address}\n$$\nA future moiré routing layer could use a moiré pattern generator, electronic transport sheet, local gates, internal-state selectors and multiple readouts.\n$$\nV(\\mathbf r)=\\sum_\\alpha V_\\alpha(\\mathbf r;\\theta_\\alpha,\\phi_\\alpha)\n$$",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S11",
+      "number": 11,
+      "title": "Spintronics and stateful routing",
+      "text": "$$\ny_t=H(\\omega;m_t)x_t,\\qquad m_{t+1}=F(m_t,x_t)\n$$\nNow routing depends on history. Magnetic textures can hold state; magnons can propagate signals through that stateful landscape.\n$$\n\\text{twist}\\rightarrow\\text{magnetic interaction landscape}\\rightarrow\\text{spin texture}\\rightarrow\\text{carrier/magnon routing}\n$$",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S12",
+      "number": 12,
+      "title": "Resolvent-centered computational matter",
+      "text": "Eigenmodes ask **what can oscillate?** The resolvent asks **given this input and control state, what actually responds, where, and by how much?**\n$$\nR(\\omega)=(-\\omega^2M+i\\omega C+K)^{-1}\n$$\n$$\nG^R(E)=(E+i0^+-H-\\Sigma(E))^{-1}\n$$\nWith input B and readout C:\n$$\nH_{IO}=CRB\n$$\nSVD:\n$$\nH_{IO}=U\\Sigma V^\\dagger\n$$\nV gives optimal inputs, U output patterns, singular values accessible/amplified channels. This motivates **resolvent diversity**.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S13",
+      "number": 13,
+      "title": "Spectrum vs resolvent vs pseudospectrum",
+      "text": "<table fit-page-width=\"true\" header-row=\"true\">\n<tr>\n<td>Object</td>\n<td>Question</td>\n</tr>\n<tr>\n<td>Spectrum</td>\n<td>What intrinsic modes exist?</td>\n</tr>\n<tr>\n<td>Resolvent</td>\n<td>Which input-output responses can actually be driven?</td>\n</tr>\n<tr>\n<td>Pseudospectrum</td>\n<td>How sensitive are modes/responses to perturbation?</td>\n</tr>\n</table>\n$$\nD_{spectrum},\\quad D_{resolvent},\\quad D_{pseudo}\n$$",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S14",
+      "number": 14,
+      "title": "Why CPUs/GPUs/ICs fit",
+      "text": "Digital electronics intentionally project enormous physical state spaces into small robust logical alphabets:\n$$\n\\mathcal H_{physical}\\rightarrow\\mathcal H_{logical}\n$$\nCMOS suppresses unwanted resonance, coupling, analog variability and microscopic carrier detail to gain abstraction and reliability.\n> **Digital computing suppresses “more is different” at the device level so that “more is different” can emerge safely at the software level.**\nThe question is: **which physical degrees of freedom did digital computing correctly abstract away, and which useful ones did it throw away?**",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S15",
+      "number": 15,
+      "title": "Substrate-centric compilation",
+      "text": "$$\n\\text{software operation}\\rightarrow\\text{appropriate physical phenomenon}\n$$\nA future compiler might choose charge, spin, valley, photon, phonon, magnon, exciton, localized mode, propagating mode, or hybrid quasiparticle.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S16",
+      "number": 16,
+      "title": "Quality-diversity objective",
+      "text": "$$\n\\mathbf D=(D_{geometry},D_{mode},D_{localization},D_{topology},D_{phase},D_{coupling},D_{carrier},D_{transport},D_{resolvent},D_{pseudo},D_{reconfig})\n$$\nMaintain geometric, modal, topological, gauge/phase, transfer-operator, and learned “interesting physics” archives.\n$$\n\\min d_G(A,B),\\ \\max d_M(A,B)\n$$\nfinds tiny structural changes with huge modal consequences.\n$$\n\\max d_G(A,B),\\ \\min d_M(A,B)\n$$\nfinds universality.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S17",
+      "number": 17,
+      "title": "Human-AI QD",
+      "text": "Ask humans high-value comparison questions: Which pair differs for a deeper physical reason? Are A and B the same mechanism? Does C require a new category? Which discovery violates an expected tradeoff?\n$$\n\\text{human scientific taste}\\rightarrow\\text{learned diversity metric}\\rightarrow\\text{scaled search}\n$$",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S18",
+      "number": 18,
+      "title": "Wang–Buehler copresheaves and schema growth",
+      "text": "The useful abstraction is that the **scientific schema itself can expand**.\n$$\nI_t:\\mathcal S_t\\rightarrow\\mathbf{Set}\n$$\nPossible types: Geometry, Hamiltonian/DynamicalMatrix, Spectrum, Mode, LocalizationDescriptor, TopologicalInvariant, GaugeFlux, CouplingTensor, Resolvent, TransportResponse, FabricationRecord, ValidationRecord.\nDistinguish **fiber diversity**, **morphism/mechanism diversity**, and **schema diversity**.\nIf the schema collapses physically distinct phenomena:\n$$\n\\mathcal S_t\\rightarrow\\mathcal S_{t+1}\n$$\nThe most interesting novelty is residual scientific structure not explainable as another sample in the old vocabulary.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S19",
+      "number": 19,
+      "title": "Descriptor co-evolution",
+      "text": "Treat descriptors as provisional. Example:\n$$\nS_{loc}=\\frac{\\Delta IPR}{\\Delta\\sigma}\n$$\nA descriptor adversary tests independence, predictive value, numerical robustness, higher-fidelity survival and mechanistic plausibility before promotion.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S20",
+      "number": 20,
+      "title": "Agent swarm specializations",
+      "text": "- **Kagome morphologist:** breathing, decoration, chirality, geometry\n- **Defect engineer:** vacancies, mass/stiffness doping, correlated disorder\n- **Gauge-field architect:** complex couplings and loop flux\n- **Tensegrity agent:** self-stress, zero modes, buckling\n- **Spectral ecologist:** unusual mode populations\n- **Mode-identity agent:** rotational/translational/polarization character\n- **Localization agent:** IPR, localization length, edge/bulk support\n- **Topological physicist:** invariants and protected channels\n- **Transport agent:** transmission and directionality\n- **Resolvent agent:** addressable input-output channels\n- **Pseudospectral agent:** fragility and transient amplification\n- **Nonlinear-resonance agent:** higher-order selection rules\n- **Carrier-conversion agent:** charge/spin/valley/photon/phonon/magnon interfaces\n- **Moiré architect:** twist, gates, layers and minibands\n- **Spintronics agent:** persistent magnetic state\n- **Fabrication agent:** tolerances and realizability\n- **Flat-band skeptic:** artifact detection\n- **Topology skeptic:** topology vs ordinary localization\n- **Archive cartographer:** empty QD niches\n- **Descriptor inventor:** new coordinates\n- **Descriptor adversary:** redundancy / fake dimensions\n- **Mechanism theorist:** structure → mechanism → phenotype laws\n- **Experiment designer:** discriminating tests and fidelity escalation",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S21",
+      "number": 21,
+      "title": "Executable swarm loop",
+      "text": "**Human scientific taste → heterogeneous agents → candidate designs/interventions → fast physics simulator → QD archives → empty niches/anomalies/tradeoff violations → new hypotheses and descriptors → adversarial tests → higher-fidelity validation → mechanisms/fabrication candidates → human scientific taste.**\nAgents must output **designs, calculations, falsifiable hypotheses, or descriptor proposals**, not merely prose.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S22",
+      "number": 22,
+      "title": "First tractable benchmark",
+      "text": "Start with a 2D breathing-Kagome spring/beam, photonic coupled-mode, or tight-binding model.\n$$\nx=\\{r_{breathing},k_{ij},m_i,t_{ij},\\phi_{ij},\\sigma_{ij},\\delta r_i,V_i\\}\n$$\nFor every candidate compute eigenfrequencies/bands, mode vectors, polarization, IPR, group velocity, loop fluxes, topology where appropriate, Green's function/resolvent, terminal scattering/transmission, robustness, and response to prestress/gates.\n**Initial scientific target:** Find the smallest perturbations that create genuinely new classes of modes or robust input-output operators.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S23",
+      "number": 23,
+      "title": "Transfer-operator QD",
+      "text": "$$\n\\mathcal H_x(E,\\lambda)=C[E-H_x(\\lambda)-\\Sigma]^{-1}B\n$$\n$$\n\\mathscr R_x=\\{\\mathcal H_x(E,\\lambda):E,\\lambda\\}\n$$\nSearch for one-to-one routers, arbitrary-ratio splitters, valley/layer demultiplexers, energy-selective routers, persistent-state switches, nonlinear gates, high-rank mixers, localized memory channels, and robust protected channels.\nThe optimized object becomes **a repertoire of computations**, not a single material property.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S24",
+      "number": 24,
+      "title": "Scientific questions for the swarm",
+      "text": "- What predicts high routing diversity?\n- When does topology add functionality beyond ordinary localization?\n- Does high resolvent rank require particular gauge-flux patterns?\n- When does marginality increase reconfigurability without destroying robustness?\n- What coupling distributions maximize independent modes plus rare synthesis?\n- What is the smallest defect that opens a new computational channel?\n- Are there universality classes of modal ecologies?\n- Which tradeoffs can gauge fields, topology, prestress, or hybrid carriers break?\n- Which descriptors repeatedly fail, forcing schema expansion?",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S25",
+      "number": 25,
+      "title": "Intellectual synthesis",
+      "text": "**Andrea Liu:** marginality, jamming, soft modes, disorder, allostery, physical learning.\n**Markus Buehler / Fiona Wang:** agentic scientific discovery, multiscale materials reasoning, typed scientific schemas and schema transitions.\n**Jeff Clune / Joel Lehman / Ken Stanley:** quality-diversity, open-endedness, escaping objective collapse, learned notions of interesting difference.\n**Topological/mechanical metamaterials:** protected modes, unusual response, architecture-driven function.\n**Condensed matter:** phase diversity, carrier diversity, localization, symmetry sectors, quasiparticles, correlated states.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S26",
+      "number": 26,
+      "title": "Strongest formulation",
+      "text": "> **Do not ask for the best material. Ask for the smallest set of structural and control degrees of freedom that generates the largest robust repertoire of qualitatively distinct physical computations, while allowing the ontology of “distinct” to evolve when the system discovers new physics.**\nThis combines “More Is Different” with open-ended search, quality-diversity, resolvent/control theory, programmable coupling, and agentic science.",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    },
+    {
+      "id": "S27",
+      "number": 27,
+      "title": "Near-term project sequence",
+      "text": "1. Build cheap Kagome / coupled-mode sandbox.\n2. Implement physics-grounded descriptor extraction.\n3. Run baseline MAP-Elites.\n4. Add heterogeneous mutation agents.\n5. Add archive cartographer and skeptic agents.\n6. Add human similarity judgments / learned diversity.\n7. Add descriptor invention and adversarial descriptor tests.\n8. Add resolvent/transfer-operator archive.\n9. Add synthetic gauge phases.\n10. Add disorder/prestress and reconfiguration.\n11. Add realistic moiré / electronic transport models.\n12. Escalate elites to higher-fidelity simulation.\n13. Search the archive for new laws and tradeoff violations.\n14. Select a small number of experimentally plausible structures.\n<callout icon=\"🧭\" color=\"blue_bg\">\n\t**North-star metric:** not FLOPs, not number of modes, not dimensionality alone. Measure the **robust, controllable repertoire of independently useful physical transformations per unit area, energy, time, and fabrication complexity**.\n</callout>",
+      "url": "https://app.notion.com/p/3f96336816258179a894fa15a2eef695?pvs=204"
+    }
+  ],
+  "types": [
+    {
+      "id": "Geometry",
+      "requiredFields": [
+        "positions",
+        "connectivity",
+        "dimension",
+        "boundary",
+        "coordinateUnits"
+      ],
+      "scope": "Architecture without an assumed physical operator.",
+      "sourceSections": [
+        5,
+        7,
+        22
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Material",
+      "requiredFields": [
+        "constituents",
+        "parameterSources",
+        "units",
+        "uncertainty"
+      ],
+      "scope": "Constituent and surface-chemistry parameters need separate evidence.",
+      "sourceSections": [
+        7,
+        9
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Operator",
+      "requiredFields": [
+        "family",
+        "basis",
+        "units",
+        "conventions",
+        "boundary",
+        "regime",
+        "parameterHash"
+      ],
+      "scope": "Tagged mechanical K/M/damping, tight-binding Hamiltonian or photonic coupled-mode generator; never an implicit interchangeable matrix.",
+      "sourceSections": [
+        2,
+        6,
+        12,
+        22
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Spectrum",
+      "requiredFields": [
+        "operatorId",
+        "solver",
+        "eigenvalues",
+        "residuals",
+        "normalization"
+      ],
+      "scope": "Computed spectrum with numerical checks.",
+      "sourceSections": [
+        2,
+        13
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Mode",
+      "requiredFields": [
+        "spectrumId",
+        "index",
+        "vector",
+        "normalization",
+        "degeneracyHandling"
+      ],
+      "scope": "Mode identities require a basis and a convention for degenerate subspaces.",
+      "sourceSections": [
+        2,
+        20
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "LocalizationDescriptor",
+      "requiredFields": [
+        "modeId",
+        "definition",
+        "coarseGraining",
+        "sizeScaling"
+      ],
+      "scope": "Localization definition and system-size comparison.",
+      "sourceSections": [
+        2,
+        19
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "TopologicalInvariant",
+      "requiredFields": [
+        "operatorId",
+        "invariant",
+        "assumptions",
+        "gapCheck",
+        "boundaryControl"
+      ],
+      "scope": "Optional and model-specific; absent invariant is unknown.",
+      "sourceSections": [
+        5,
+        20,
+        24
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "GaugeFlux",
+      "requiredFields": [
+        "operatorId",
+        "orientedLoops",
+        "phaseConvention",
+        "fluxModulo"
+      ],
+      "scope": "Loop observables rather than unqualified edge phases.",
+      "sourceSections": [
+        6,
+        22
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "CouplingTensor",
+      "requiredFields": [
+        "operatorId",
+        "order",
+        "basis",
+        "units",
+        "selectionRules"
+      ],
+      "scope": "Pairwise and higher-order interactions remain distinct.",
+      "sourceSections": [
+        8,
+        9
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Resolvent",
+      "requiredFields": [
+        "operatorId",
+        "frequencyGrid",
+        "dampingOrSelfEnergy",
+        "regularization",
+        "conditioning"
+      ],
+      "scope": "Response depends on losses, contacts and convention.",
+      "sourceSections": [
+        12,
+        13,
+        23
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "TransportResponse",
+      "requiredFields": [
+        "resolventId",
+        "inputPorts",
+        "outputPorts",
+        "portNormalization",
+        "observable"
+      ],
+      "scope": "Readout and port definition are part of the claim.",
+      "sourceSections": [
+        12,
+        23
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "ControlProtocol",
+      "requiredFields": [
+        "candidateId",
+        "driveHistory",
+        "initialState",
+        "amplitude",
+        "readoutHistory"
+      ],
+      "scope": "History and nonlinear behavior require a specified stateful protocol.",
+      "sourceSections": [
+        4,
+        10,
+        11
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Candidate",
+      "requiredFields": [
+        "geometryId",
+        "operatorId",
+        "controls",
+        "interventions",
+        "baselineId"
+      ],
+      "scope": "A design is a proposal until calculations or measurements exist.",
+      "sourceSections": [
+        3,
+        16,
+        22
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "DescriptorDefinition",
+      "requiredFields": [
+        "formula",
+        "units",
+        "domain",
+        "normalization",
+        "robustnessTests",
+        "version"
+      ],
+      "scope": "Provisional coordinates with adversarial checks before promotion.",
+      "sourceSections": [
+        16,
+        17,
+        19
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Hypothesis",
+      "requiredFields": [
+        "claim",
+        "alternatives",
+        "discriminatingTest",
+        "failureCriterion"
+      ],
+      "scope": "Competing explanations and falsifiable outcomes.",
+      "sourceSections": [
+        21,
+        24
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "Calculation",
+      "requiredFields": [
+        "candidateId",
+        "codeRef",
+        "parameters",
+        "seed",
+        "solver",
+        "convergence",
+        "outputs"
+      ],
+      "scope": "Execution provenance; a planned run has no populated results.",
+      "sourceSections": [
+        21,
+        22,
+        27
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "ValidationRecord",
+      "requiredFields": [
+        "targetId",
+        "evidenceLevel",
+        "controls",
+        "outcome",
+        "limitations",
+        "reviewer"
+      ],
+      "scope": "Numerical validity, robustness and physical confirmation are separate.",
+      "sourceSections": [
+        19,
+        21,
+        27
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "FabricationRecord",
+      "requiredFields": [
+        "candidateId",
+        "process",
+        "tolerances",
+        "parameterCalibration",
+        "measurements"
+      ],
+      "scope": "Realizability requires its own record.",
+      "sourceSections": [
+        18,
+        20,
+        27
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "SchemaProposal",
+      "requiredFields": [
+        "oldVersion",
+        "proposedChange",
+        "counterexample",
+        "migration",
+        "adversarialTests"
+      ],
+      "scope": "New vocabulary is proposed without overwriting earlier artifacts.",
+      "sourceSections": [
+        18,
+        19
+      ],
+      "status": "proposed"
+    }
+  ],
+  "morphisms": [
+    {
+      "id": "assemble",
+      "from": "Geometry",
+      "to": "Operator",
+      "contract": "Parameter and material model must be explicit.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    },
+    {
+      "id": "diagonalize",
+      "from": "Operator",
+      "to": "Spectrum",
+      "contract": "Solver residuals, units and conventions retained.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    },
+    {
+      "id": "select_mode",
+      "from": "Spectrum",
+      "to": "Mode",
+      "contract": "Record degeneracy treatment.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    },
+    {
+      "id": "measure_localization",
+      "from": "Mode",
+      "to": "LocalizationDescriptor",
+      "contract": "Specify basis, normalization and size dependence.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    },
+    {
+      "id": "derive_response",
+      "from": "Operator",
+      "to": "Resolvent",
+      "contract": "Declare drive convention, losses and regularization.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    },
+    {
+      "id": "read_ports",
+      "from": "Resolvent",
+      "to": "TransportResponse",
+      "contract": "Port sets, normalization and contacts fixed.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    },
+    {
+      "id": "test",
+      "from": "Calculation",
+      "to": "ValidationRecord",
+      "contract": "A failed or inconclusive check remains visible.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    },
+    {
+      "id": "revise_vocabulary",
+      "from": "SchemaProposal",
+      "to": "DescriptorDefinition",
+      "contract": "Only after adversarial review and recorded human decision.",
+      "status": "proposed_pipeline_not_verified_morphism"
+    }
+  ],
+  "families": [
+    {
+      "id": "mechanical",
+      "title": "Mechanical Kagome",
+      "operator": "K φ = ω² M φ; R(ω) = [K − ω²M + iωD]⁻¹",
+      "scope": "Start with linear spring degrees of freedom. Beam rotations, prestress and nonlinear state require explicit extensions.",
+      "deferred": [
+        "spin/valley conversion",
+        "arbitrary complex hopping",
+        "hysteresis without a state model"
+      ]
+    },
+    {
+      "id": "tight_binding",
+      "title": "Electronic / tight-binding",
+      "operator": "G(E) = [E + iη − H − Σ(E)]⁻¹",
+      "scope": "Declare Hermiticity, units, filling/observable when relevant, contacts and synthetic gauge implementation.",
+      "deferred": [
+        "fabricated electronic transport",
+        "realistic moiré chemistry",
+        "mechanical prestress equivalence"
+      ]
+    },
+    {
+      "id": "photonic",
+      "title": "Photonic coupled-mode",
+      "operator": "Declare the evolution variable and generator before comparing spectra or transfer maps.",
+      "scope": "Keep propagation distance versus time, loss, mode normalization and physical coupling realization explicit.",
+      "deferred": [
+        "direct mechanical equivalence",
+        "broadband realizability",
+        "experimental phase control"
+      ]
+    }
+  ],
+  "descriptors": [
+    {
+      "id": "geometry",
+      "title": "Structural distance",
+      "definitionRequirement": "positions/connectivity; quotient out declared symmetries",
+      "sourceSections": [
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "mode",
+      "title": "Modal repertoire",
+      "definitionRequirement": "frequency/polarization; account for degeneracy and normalization",
+      "sourceSections": [
+        2,
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "localization",
+      "title": "Localization",
+      "definitionRequirement": "IPR or length with basis, size and mass convention",
+      "sourceSections": [
+        2,
+        19
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "topology",
+      "title": "Topology",
+      "definitionRequirement": "named invariant with assumptions and gap checks",
+      "sourceSections": [
+        5,
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "phase",
+      "title": "Gauge / loop phase",
+      "definitionRequirement": "oriented loop flux modulo 2π; do not count gauge copies",
+      "sourceSections": [
+        6,
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "coupling",
+      "title": "Coupling ecology",
+      "definitionRequirement": "magnitude/order/sparsity/selectivity as separate measurements",
+      "sourceSections": [
+        8,
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "carrier",
+      "title": "Carrier / conversion",
+      "definitionRequirement": "channels actually represented by the selected model",
+      "sourceSections": [
+        9,
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "transport",
+      "title": "Transport",
+      "definitionRequirement": "terminal transmission with contacts and normalization",
+      "sourceSections": [
+        16,
+        22
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "resolvent",
+      "title": "Accessible response",
+      "definitionRequirement": "singular values under fixed port scaling, damping and frequency grid",
+      "sourceSections": [
+        12,
+        16,
+        23
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "pseudo",
+      "title": "Sensitivity",
+      "definitionRequirement": "declared perturbation norm and physically allowed perturbations",
+      "sourceSections": [
+        13,
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    },
+    {
+      "id": "reconfig",
+      "title": "Reconfigurability",
+      "definitionRequirement": "response changes over a specified control protocol",
+      "sourceSections": [
+        4,
+        11,
+        16
+      ],
+      "status": "provisional",
+      "observedValue": null
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "small_defect",
+      "claim": "Tiny interventions can open useful new channels.",
+      "alternative": "A near-singularity or changed normalization creates apparent novelty.",
+      "test": "Matched perturbation budgets, conditioning, residuals and loss/size sweeps.",
+      "failureCriterion": "Gain disappears under those controls.",
+      "sourceSections": [
+        3,
+        22,
+        24
+      ],
+      "status": "untested_proposal",
+      "results": null
+    },
+    {
+      "id": "rare_coupling",
+      "claim": "Protected channels plus selective coupling may yield useful repertoire.",
+      "alternative": "A dense or uncoupled baseline performs equally well at equal cost.",
+      "test": "Compare sparse, dense and decoupled controls with fixed ports and budgets.",
+      "failureCriterion": "No reproducible repertoire/robustness advantage.",
+      "sourceSections": [
+        1,
+        2,
+        8,
+        24
+      ],
+      "status": "untested_proposal",
+      "results": null
+    },
+    {
+      "id": "prestress",
+      "claim": "Prestress may reconfigure localization and coupling.",
+      "alternative": "Changes are instability, geometry drift or an incorrect tangent stiffness.",
+      "test": "Equilibrium and stability checks, reversible sweeps and matched geometry controls.",
+      "failureCriterion": "Switching fails those checks or only reflects instability.",
+      "sourceSections": [
+        4,
+        24
+      ],
+      "status": "untested_proposal",
+      "results": null
+    },
+    {
+      "id": "topological_value",
+      "claim": "A protected channel may add function beyond ordinary localization.",
+      "alternative": "Ordinary defect/edge localization explains the same response.",
+      "test": "Model-specific invariant, gap and matched-disorder trivial controls.",
+      "failureCriterion": "No distinction survives the matched controls.",
+      "sourceSections": [
+        5,
+        20,
+        24
+      ],
+      "status": "untested_proposal",
+      "results": null
+    },
+    {
+      "id": "accessible_modes",
+      "claim": "A diverse spectrum may produce a diverse controllable IO repertoire.",
+      "alternative": "The added modes are dark to the selected ports.",
+      "test": "Hold port scaling, drive budget and loss fixed; compare singular channels.",
+      "failureCriterion": "Added modes have no accessible channel under the declared task.",
+      "sourceSections": [
+        12,
+        13,
+        23
+      ],
+      "status": "untested_proposal",
+      "results": null
+    },
+    {
+      "id": "new_coordinates",
+      "claim": "Some distinctions may require new descriptor types.",
+      "alternative": "The coordinate is a redundant transform or numerical artifact.",
+      "test": "Held-out predictive value, redundancy, stability and mechanism tests.",
+      "failureCriterion": "Old descriptors explain the distinction or new axis is unstable.",
+      "sourceSections": [
+        18,
+        19,
+        24
+      ],
+      "status": "untested_proposal",
+      "results": null
+    },
+    {
+      "id": "stateful_routing",
+      "claim": "A persistent internal state may support routing dependent on history.",
+      "alternative": "A memoryless resonance or transient is being called memory.",
+      "test": "Matched reset, history reversal, dwell-time and repeated cycle protocols.",
+      "failureCriterion": "Readout is independent of retained state or loses persistence.",
+      "sourceSections": [
+        11,
+        23
+      ],
+      "status": "untested_proposal",
+      "results": null
+    }
+  ],
+  "specialties": [
+    {
+      "id": "specialty-1",
+      "title": "Kagome morphologist",
+      "focus": "breathing, decoration, chirality, geometry",
+      "deliverable": "Geometry + Candidate",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-2",
+      "title": "Defect engineer",
+      "focus": "vacancies, mass/stiffness doping, correlated disorder",
+      "deliverable": "paired Candidate interventions",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-3",
+      "title": "Gauge-field architect",
+      "focus": "complex couplings and loop flux",
+      "deliverable": "Operator + GaugeFlux",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-4",
+      "title": "Tensegrity agent",
+      "focus": "self-stress, zero modes, buckling",
+      "deliverable": "equilibrium / self-stress Calculation",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-5",
+      "title": "Spectral ecologist",
+      "focus": "unusual mode populations",
+      "deliverable": "Spectrum + population descriptors",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-6",
+      "title": "Mode-identity agent",
+      "focus": "rotational/translational/polarization character",
+      "deliverable": "Mode + polarization checks",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-7",
+      "title": "Localization agent",
+      "focus": "IPR, localization length, edge/bulk support",
+      "deliverable": "LocalizationDescriptor + size controls",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-8",
+      "title": "Topological physicist",
+      "focus": "invariants and protected channels",
+      "deliverable": "TopologicalInvariant + assumptions",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-9",
+      "title": "Transport agent",
+      "focus": "transmission and directionality",
+      "deliverable": "TransportResponse + contact controls",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-10",
+      "title": "Resolvent agent",
+      "focus": "addressable input-output channels",
+      "deliverable": "Resolvent + accessible channel Calculation",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-11",
+      "title": "Pseudospectral agent",
+      "focus": "fragility and transient amplification",
+      "deliverable": "structured sensitivity Calculation",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-12",
+      "title": "Nonlinear-resonance agent",
+      "focus": "higher-order selection rules",
+      "deliverable": "CouplingTensor + drive protocol",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-13",
+      "title": "Carrier-conversion agent",
+      "focus": "charge/spin/valley/photon/phonon/magnon interfaces",
+      "deliverable": "conversion model + calibration needs",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-14",
+      "title": "Moiré architect",
+      "focus": "twist, gates, layers and minibands",
+      "deliverable": "parameterized Operator proposal",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-15",
+      "title": "Spintronics agent",
+      "focus": "persistent magnetic state",
+      "deliverable": "ControlProtocol + state update model",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-16",
+      "title": "Fabrication agent",
+      "focus": "tolerances and realizability",
+      "deliverable": "FabricationRecord / tolerance proposal",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-17",
+      "title": "Flat-band skeptic",
+      "focus": "artifact detection",
+      "deliverable": "ValidationRecord / artifact counterexample",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-18",
+      "title": "Topology skeptic",
+      "focus": "topology vs ordinary localization",
+      "deliverable": "trivial comparator + ValidationRecord",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-19",
+      "title": "Archive cartographer",
+      "focus": "empty QD niches",
+      "deliverable": "niche coverage and empty-cell audit",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-20",
+      "title": "Descriptor inventor",
+      "focus": "new coordinates",
+      "deliverable": "DescriptorDefinition proposal",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-21",
+      "title": "Descriptor adversary",
+      "focus": "redundancy / fake dimensions",
+      "deliverable": "redundancy / robustness ValidationRecord",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-22",
+      "title": "Mechanism theorist",
+      "focus": "structure → mechanism → phenotype laws",
+      "deliverable": "Hypothesis + competing mechanism",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    },
+    {
+      "id": "specialty-23",
+      "title": "Experiment designer",
+      "focus": "discriminating tests and fidelity escalation",
+      "deliverable": "falsification protocol + fidelity ladder",
+      "sourceSections": [
+        20
+      ],
+      "registration": "proposed_specialty_not_running_agent"
+    }
+  ],
+  "experiments": [
+    {
+      "id": "E01",
+      "title": "Freeze a breathing-Kagome baseline",
+      "family": "mechanical",
+      "question": "What is the smallest reproducible model and set of controls?",
+      "parameters": [
+        "geometry / boundary",
+        "mass and stiffness units",
+        "breathing ratio",
+        "input and output ports"
+      ],
+      "baseline": "Undoped lattice under identical boundary and port definitions.",
+      "measurements": [
+        "eigenpairs + residuals",
+        "mode normalization",
+        "IPR convention",
+        "damped IO singular channels"
+      ],
+      "controls": [
+        "finite-size sweep",
+        "positive-mass and stiffness sanity",
+        "rigid-mode / boundary accounting",
+        "conditioning and damping sweep"
+      ],
+      "failureCriterion": "Numerical checks fail or apparent channel diversity depends on arbitrary scaling.",
+      "outputs": [
+        "Geometry",
+        "Operator",
+        "Spectrum",
+        "ValidationRecord"
+      ],
+      "sourceSections": [
+        2,
+        5,
+        12,
+        22,
+        27
+      ],
+      "status": "planned_not_run",
+      "results": null
+    },
+    {
+      "id": "E02",
+      "title": "One defect, paired comparison",
+      "family": "mechanical",
+      "question": "Can a small intervention create a reproducible accessible channel?",
+      "parameters": [
+        "defect location",
+        "mass or stiffness change",
+        "fixed perturbation norm"
+      ],
+      "baseline": "Same E01 geometry and solver; undoped and random matched-budget controls.",
+      "measurements": [
+        "modal change",
+        "localization change",
+        "IO response change",
+        "perturbation cost"
+      ],
+      "controls": [
+        "port normalization",
+        "conditioning / loss",
+        "size scaling",
+        "repeat random seeds"
+      ],
+      "failureCriterion": "Novelty is a numerical singularity, hidden port change or unstable result.",
+      "outputs": [
+        "Candidate",
+        "Calculation",
+        "ValidationRecord"
+      ],
+      "sourceSections": [
+        3,
+        16,
+        22,
+        24
+      ],
+      "status": "planned_not_run",
+      "results": null
+    },
+    {
+      "id": "E03",
+      "title": "Selective coupling versus isolation",
+      "family": "mechanical",
+      "question": "Which regime preserves independent channels while allowing selected transfer?",
+      "parameters": [
+        "sparse / dense / decoupled designs",
+        "equal intervention budget",
+        "fixed readout task"
+      ],
+      "baseline": "Matched isolated and dense networks.",
+      "measurements": [
+        "accessible channel count at frozen threshold",
+        "crosstalk",
+        "robustness",
+        "energy / amplitude requirements"
+      ],
+      "controls": [
+        "same ports and losses",
+        "equal search budget",
+        "held-out perturbations"
+      ],
+      "failureCriterion": "Benefit vanishes on held-out perturbations or fair baselines.",
+      "outputs": [
+        "Candidate",
+        "TransportResponse",
+        "ValidationRecord"
+      ],
+      "sourceSections": [
+        1,
+        2,
+        8,
+        23,
+        24
+      ],
+      "status": "planned_not_run",
+      "results": null
+    },
+    {
+      "id": "E04",
+      "title": "Gauge-phase branch",
+      "family": "tight_binding",
+      "question": "Do inequivalent loop fluxes alter robust routing?",
+      "parameters": [
+        "oriented loop flux",
+        "Hermitian hopping convention",
+        "contact self-energy"
+      ],
+      "baseline": "Zero-flux and gauge-equivalent controls.",
+      "measurements": [
+        "spectrum",
+        "loop flux",
+        "terminal response",
+        "conditioning"
+      ],
+      "controls": [
+        "gauge invariance",
+        "contact normalization",
+        "loss / broadening sweep"
+      ],
+      "failureCriterion": "Diversity counts gauge copies or relies on one unphysical contact convention.",
+      "outputs": [
+        "Operator",
+        "GaugeFlux",
+        "TransportResponse",
+        "ValidationRecord"
+      ],
+      "sourceSections": [
+        6,
+        22,
+        23,
+        27
+      ],
+      "status": "planned_not_run",
+      "results": null
+    },
+    {
+      "id": "E05",
+      "title": "Prestress and stateful extension",
+      "family": "mechanical",
+      "question": "Does a declared state model support reproducible switching or hysteresis?",
+      "parameters": [
+        "equilibrium state",
+        "prestress protocol",
+        "tangent stiffness",
+        "sweep amplitude / rate"
+      ],
+      "baseline": "Unstressed equilibrium and memoryless linear control.",
+      "measurements": [
+        "stability",
+        "forward / reverse response",
+        "state persistence",
+        "cycle dependence"
+      ],
+      "controls": [
+        "equilibrium residual",
+        "quasi-static rate sweep",
+        "dwell/reset controls",
+        "numerical convergence"
+      ],
+      "failureCriterion": "No stable state model, or apparent hysteresis disappears with convergence.",
+      "outputs": [
+        "ControlProtocol",
+        "Calculation",
+        "ValidationRecord"
+      ],
+      "sourceSections": [
+        4,
+        11,
+        24,
+        27
+      ],
+      "status": "planned_not_run",
+      "results": null
+    }
+  ],
+  "tasks": [
+    {
+      "id": "Z01",
+      "title": "Freeze model and benchmark contract",
+      "role": "Build",
+      "dependencies": [],
+      "complementarity": {
+        "method": "constructive computation",
+        "evidence": "code + matrix identities",
+        "assumption": "numerical correctness"
+      },
+      "deliverable": "Executable E01 model; named units/boundary/ports; residual, conditioning and size checks.",
+      "boundary": "Declare which proposed measurements are inapplicable. No topology, memory or validation claim from a static spectrum.",
+      "status": "queued_not_started",
+      "sourceSections": [
+        19,
+        20,
+        21,
+        22,
+        27
+      ],
+      "commonsTaskId": "T-26ac017b"
+    },
+    {
+      "id": "Z02",
+      "title": "Challenge benchmark assumptions before execution",
+      "role": "Challenge",
+      "dependencies": [],
+      "complementarity": {
+        "method": "adversarial dimensional analysis",
+        "evidence": "source + counterexample",
+        "assumption": "measurement validity"
+      },
+      "deliverable": "Independent specification audit; alternative explanations; revised acceptance gates.",
+      "boundary": "Distinguish mode diversity from port-accessible response and reject implicit cross-family equivalence.",
+      "status": "queued_not_started",
+      "sourceSections": [
+        19,
+        20,
+        21,
+        22,
+        27
+      ],
+      "commonsTaskId": "T-0041c14d"
+    },
+    {
+      "id": "Z03",
+      "title": "Propose paired defect interventions",
+      "role": "Explore",
+      "dependencies": [
+        "Z01",
+        "Z02"
+      ],
+      "complementarity": {
+        "method": "divergent mechanistic search",
+        "evidence": "paired design records",
+        "assumption": "intervention comparability"
+      },
+      "deliverable": "E02 candidate pairs with fixed perturbation cost and matched random controls.",
+      "boundary": "Produce design files and falsifiable predictions; no unrun metrics.",
+      "status": "queued_not_started",
+      "sourceSections": [
+        19,
+        20,
+        21,
+        22,
+        27
+      ],
+      "commonsTaskId": "T-477e31c4"
+    },
+    {
+      "id": "Z04",
+      "title": "Measure accessible response and equal-budget baselines",
+      "role": "Evaluate",
+      "dependencies": [
+        "Z01",
+        "Z02"
+      ],
+      "complementarity": {
+        "method": "confirmatory numerical evaluation",
+        "evidence": "held-out perturbations",
+        "assumption": "generalization"
+      },
+      "deliverable": "E01/E03 calculations and loss/port/size sensitivity records.",
+      "boundary": "Freeze ports, quality gates, seeds, compute budget and descriptor versions before comparisons.",
+      "status": "queued_not_started",
+      "sourceSections": [
+        19,
+        20,
+        21,
+        22,
+        27
+      ],
+      "commonsTaskId": "T-1298e637"
+    },
+    {
+      "id": "Z05",
+      "title": "Audit descriptors and proposed schema changes",
+      "role": "Challenge",
+      "dependencies": [
+        "Z03",
+        "Z04"
+      ],
+      "complementarity": {
+        "method": "adversarial descriptor analysis",
+        "evidence": "held-out/redundancy tests",
+        "assumption": "representation adequacy"
+      },
+      "deliverable": "DescriptorProposal or rejection, with counterexample and migration requirements.",
+      "boundary": "New axes require independent tests; never promote from novelty rhetoric.",
+      "status": "queued_not_started",
+      "sourceSections": [
+        19,
+        20,
+        21,
+        22,
+        27
+      ],
+      "commonsTaskId": "T-a74de32c"
+    },
+    {
+      "id": "Z06",
+      "title": "Synthesize mechanisms and plan fidelity escalation",
+      "role": "Synthesize",
+      "dependencies": [
+        "Z05"
+      ],
+      "complementarity": {
+        "method": "integrative formal comparison",
+        "evidence": "artifact lineage + discriminating tests",
+        "assumption": "logical consistency"
+      },
+      "deliverable": "Competing mechanism map, unresolved evidence needs and one higher-fidelity protocol.",
+      "boundary": "Keep failed/null results, family limits and human decision separate from simulation success.",
+      "status": "queued_not_started",
+      "sourceSections": [
+        19,
+        20,
+        21,
+        22,
+        27
+      ],
+      "commonsTaskId": "T-bef347e5"
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "P1",
+      "title": "Build cheap Kagome / coupled-mode sandbox.",
+      "status": "planned"
+    },
+    {
+      "id": "P2",
+      "title": "Implement physics-grounded descriptor extraction.",
+      "status": "planned"
+    },
+    {
+      "id": "P3",
+      "title": "Run baseline MAP-Elites.",
+      "status": "planned"
+    },
+    {
+      "id": "P4",
+      "title": "Add heterogeneous mutation agents.",
+      "status": "planned"
+    },
+    {
+      "id": "P5",
+      "title": "Add archive cartographer and skeptic agents.",
+      "status": "planned"
+    },
+    {
+      "id": "P6",
+      "title": "Add human similarity judgments / learned diversity.",
+      "status": "planned"
+    },
+    {
+      "id": "P7",
+      "title": "Add descriptor invention and adversarial descriptor tests.",
+      "status": "planned"
+    },
+    {
+      "id": "P8",
+      "title": "Add resolvent/transfer-operator archive.",
+      "status": "planned"
+    },
+    {
+      "id": "P9",
+      "title": "Add synthetic gauge phases.",
+      "status": "planned"
+    },
+    {
+      "id": "P10",
+      "title": "Add disorder/prestress and reconfiguration.",
+      "status": "planned"
+    },
+    {
+      "id": "P11",
+      "title": "Add realistic moiré / electronic transport models.",
+      "status": "planned"
+    },
+    {
+      "id": "P12",
+      "title": "Escalate elites to higher-fidelity simulation.",
+      "status": "planned"
+    },
+    {
+      "id": "P13",
+      "title": "Search the archive for new laws and tradeoff violations.",
+      "status": "planned"
+    },
+    {
+      "id": "P14",
+      "title": "Select a small number of experimentally plausible structures.",
+      "status": "planned"
+    }
+  ],
+  "localViews": [
+    {
+      "id": "geometry",
+      "keys": [
+        "candidateId",
+        "operatorId",
+        "family",
+        "basis",
+        "units",
+        "boundary",
+        "normalization",
+        "parameterHash",
+        "descriptorVersion",
+        "evidenceLevel",
+        "geometryId",
+        "intervention"
+      ]
+    },
+    {
+      "id": "spectral",
+      "keys": [
+        "candidateId",
+        "operatorId",
+        "family",
+        "basis",
+        "units",
+        "boundary",
+        "normalization",
+        "parameterHash",
+        "descriptorVersion",
+        "evidenceLevel",
+        "spectrumId",
+        "localization"
+      ]
+    },
+    {
+      "id": "coupling",
+      "keys": [
+        "candidateId",
+        "operatorId",
+        "family",
+        "basis",
+        "units",
+        "boundary",
+        "normalization",
+        "parameterHash",
+        "descriptorVersion",
+        "evidenceLevel",
+        "loopFlux",
+        "couplingTensorId"
+      ]
+    },
+    {
+      "id": "response",
+      "keys": [
+        "candidateId",
+        "operatorId",
+        "family",
+        "basis",
+        "units",
+        "boundary",
+        "normalization",
+        "parameterHash",
+        "descriptorVersion",
+        "evidenceLevel",
+        "ports",
+        "lossConvention",
+        "responseId"
+      ]
+    },
+    {
+      "id": "validation",
+      "keys": [
+        "candidateId",
+        "operatorId",
+        "family",
+        "basis",
+        "units",
+        "boundary",
+        "normalization",
+        "parameterHash",
+        "descriptorVersion",
+        "evidenceLevel",
+        "controls",
+        "outcome",
+        "reviewer"
+      ]
+    }
+  ],
+  "schemaEvolution": {
+    "version": "1.0",
+    "path": [
+      "propose counterexample",
+      "check existing vocabulary",
+      "test new descriptor on held-out cases",
+      "review numerical and mechanistic robustness",
+      "record human decision",
+      "version schema and migrate explicitly"
+    ],
+    "promotion": "No automatic promotion; submitted artifacts remain pending review.",
+    "distinctions": [
+      "fiber: new candidate under existing types",
+      "mechanism: proposed new typed relationship",
+      "schema: new type or observable requiring a migration"
+    ]
+  },
+  "limitations": [
+    "This is a faithful source import plus explicitly proposed implementation contracts. It contains no new physics results.",
+    "The graph is a proposed scientific schema, not a category with proved composition laws or a verified functor.",
+    "Local-view restriction is literal field projection; matching metadata does not certify a scientific translation.",
+    "Specialty labels do not establish orthogonal reasoning; require method/evidence/assumption declarations and disclose shared models, tools and data.",
+    "The static explorer prepares packets and downloads; Agent Commons coordinates durable tasks. It does not launch runtimes.",
+    "C in the source denotes damping and readout in different equations; the mechanical template uses D for damping and C_out for readout."
+  ]
+}
