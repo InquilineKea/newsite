@@ -1,0 +1,669 @@
+{
+  "reviewer": "evidence-and-feasibility first pass",
+  "review_scope": "All 72 extracted messages read; near-duplicate assistant drafts treated as repeated statements, not extra evidence. Review did not inspect notebook artifacts or external papers; source citations inside transcript are not independently validated here. No peer reviews read before this file was written.",
+  "source_sha256": "8938cdd6ae351dfbdebcc63c33a917b57f590f9404f555461ec35c5b5c67aac5",
+  "ordinal_rubric": {
+    "feasibility": {
+      "0": "No executable mechanism",
+      "1": "Major missing physical/semantic specification",
+      "2": "Specified enough to prototype but major unknowns",
+      "3": "Small controlled implementation feasible with defined inputs",
+      "4": "Explicit model/method directly executable now"
+    },
+    "testability": {
+      "0": "No measurable claim",
+      "1": "Needs operational definition",
+      "2": "Possible test but important metric/control missing",
+      "3": "Controlled test with concrete baseline possible",
+      "4": "Explicit discriminating computation or matched benchmark specified"
+    }
+  },
+  "no_composite_score": true,
+  "evidence_boundaries": [
+    "Established methodology denotes identifiable mathematics or known-style analysis; novelty and paper attribution have not been literature-verified in this review.",
+    "The transcript-reported notebook, 256-rule CA enumeration, 384-to-24 quotient audit, five demonstrations and 39 checks are claims in message eec630d9-373e-4f09-9ded-3bc94bae2e9a. The linked sandbox artifacts were not available in this review, so these are not independently reproduced notebook results.",
+    "Only the explicit triangle/gauge calculation and the complete-graph metric counterexample below were numerically executed in this review.",
+    "No real-material device, multiagent superiority, open-ended discovery advantage, or Sakana investigation result is demonstrated by this evaluation."
+  ],
+  "families": [
+    {
+      "family_id": "E01",
+      "label": "Communication topology and genuine higher-order reasoning",
+      "source_anchor": {
+        "message_id": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "message_index": 68,
+        "quote": "may require hyperedges."
+      },
+      "evidence_class": "established representation; proposed agent capability",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Graphs/hypergraphs describe schedules. A three-member conversation does not establish irreducible three-way interaction. Full token and exposure accounting is needed.",
+      "smallest_experiment": "On tasks with separately withheld clue packets, compare one simultaneous three-member exchange with all pairs plus identical final aggregation; randomize tasks and seeds.",
+      "baseline": "Pairwise messaging with matched total model tokens, solver calls, evidence exposure and latency.",
+      "confounds": [
+        "Group-size/context-length effects",
+        "Different evidence access",
+        "Coordinator stronger than workers"
+      ],
+      "falsifying_or_limiting_observation": "Any gain disappears after matching evidence access or pairwise aggregation."
+    },
+    {
+      "family_id": "E02",
+      "label": "Sheaf compatibility and local-to-global constraints",
+      "source_anchor": {
+        "message_id": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "message_index": 68,
+        "quote": "a collection of local reasoning states that satisfy all cross-agent compatibility constraints."
+      },
+      "evidence_class": "established mathematical construction; untested semantic encoding",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Useful when stalks/restrictions and consistency tests are explicit. Arbitrary prose disagreement is not automatically a sheaf obstruction or a nonzero H1. Nonzero H1 is not a blanket certificate that no global section exists.",
+      "smallest_experiment": "Create finite typed claim spaces with known compatible/incompatible assignments; check restriction composition and enumerate global sections before applying to text.",
+      "baseline": "SAT/CSP checker and ordinary typed knowledge graph.",
+      "confounds": [
+        "Trivial zero sections in linear sheaves",
+        "Inconsistent translation maps",
+        "Encoding errors mistaken for conceptual disagreement"
+      ],
+      "falsifying_or_limiting_observation": "No improvement over CSP, or the alleged obstruction vanishes after repairing translations."
+    },
+    {
+      "family_id": "E03",
+      "label": "Hodge and persistent-homology reasoning diagnostics",
+      "source_anchor": {
+        "message_id": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "message_index": 68,
+        "quote": "72\\%\\text{ gradient},\\quad"
+      },
+      "evidence_class": "established linear/topological tools; proposed interpretation",
+      "feasibility": 2,
+      "testability": 2,
+      "assessment": "Hodge percentages require a fixed cochain representation, orientation, inner product and chosen filled faces. An embedding loop need not be a semantic contradiction; persistent topology may reflect metric artifacts.",
+      "smallest_experiment": "Generate a claim graph with known additive ranking, cyclic inconsistency and planted semantic contradiction; test recovery under paraphrase and edge orientation.",
+      "baseline": "Cycle detection, residual least squares and contradiction labels.",
+      "confounds": [
+        "Embedding distance",
+        "Face filling changes curl versus harmonic assignment",
+        "Percentages depend on norm and scaling"
+      ],
+      "falsifying_or_limiting_observation": "Metrics track paraphrase or graph size rather than known contradiction structure."
+    },
+    {
+      "family_id": "E04",
+      "label": "Optimal-transport alignment of agent representations",
+      "source_anchor": {
+        "message_id": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "message_index": 68,
+        "quote": "you can align their **relational geometry**."
+      },
+      "evidence_class": "established optimization; proposed semantic application",
+      "feasibility": 2,
+      "testability": 2,
+      "assessment": "OT/GW aligns defined metrics and measures, not meanings automatically. Equal relational geometry can admit semantically wrong permutations. Mass creation in unbalanced OT is a mathematical model rather than demonstrated discovery.",
+      "smallest_experiment": "Use two symbolic ontologies with hidden known correspondence and distractors; measure recovered matching and held-out consequence prediction.",
+      "baseline": "Dictionary alignment, nearest-neighbor embedding alignment, random matching.",
+      "confounds": [
+        "Ground-cost choice",
+        "Symmetric ontologies",
+        "Uncalibrated hypothesis probabilities",
+        "Optimization local minima"
+      ],
+      "falsifying_or_limiting_observation": "Low transport cost with wrong semantics or no predictive benefit."
+    },
+    {
+      "family_id": "E05",
+      "label": "Curvature-aware message allocation",
+      "source_anchor": {
+        "message_id": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "message_index": 68,
+        "quote": "B_e \\propto f(-\\kappa_e)."
+      },
+      "evidence_class": "proposed scheduler using established graph statistic",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "A graph bottleneck is not necessarily a valuable information channel. Negative curvature can identify structural scarcity without identifying relevant expertise.",
+      "smallest_experiment": "Randomize bandwidth by curvature, edge betweenness, uncertainty and uniform allocation on the same task graphs; freeze routing before held-out tasks.",
+      "baseline": "Uniform and betweenness-based schedules with matched budgets.",
+      "confounds": [
+        "Degree and density",
+        "Graph distance definition",
+        "Task information placement",
+        "Scheduler overhead"
+      ],
+      "falsifying_or_limiting_observation": "Curvature loses after controlling degree/betweenness or wastes budget on irrelevant bridges."
+    },
+    {
+      "family_id": "E06",
+      "label": "Multiscale agency and computational phase taxonomy",
+      "source_anchor": {
+        "message_id": "71578d01-d7e9-40d1-b5b1-d690bf626a76",
+        "message_index": 65,
+        "quote": "Weyl-crossing interdisciplinary swarm"
+      },
+      "evidence_class": "analogy / research framing",
+      "feasibility": 1,
+      "testability": 1,
+      "assessment": "Physics labels create hypotheses but supply neither a Hamiltonian nor an agency measure. Topological protection, criticality and universality need operational definitions and scaling evidence.",
+      "smallest_experiment": "Define a macro-goal with perturbation recovery and recruitment control; compare collective to its best component and matched centralized controller.",
+      "baseline": "Centralized controller, independent workers and ordinary adaptive scheduling.",
+      "confounds": [
+        "Goal-space volume lacks units/measure",
+        "Anthropomorphism",
+        "Best component has less evidence or budget"
+      ],
+      "falsifying_or_limiting_observation": "No robust macro-level control beyond ordinary aggregation; no invariant scaling across implementations."
+    },
+    {
+      "family_id": "E07",
+      "label": "Modal biodiversity under controllability constraints",
+      "source_anchor": {
+        "message_id": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "message_index": 62,
+        "quote": "engineer a maximally rich ecology of mechanically useful modes"
+      },
+      "evidence_class": "established modes; proposed diversity objective",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Frequency, localization, polarization and lifetime are distinct descriptors, but useful diversity must account for actuator/readout access and stability. Mode count alone grows trivially with system size.",
+      "smallest_experiment": "Compare same-size stable spring networks with matched mass/stiffness budgets; characterize modes, then test fixed actuator/readout response and noise.",
+      "baseline": "Random networks and designs optimized for a single specified response.",
+      "confounds": [
+        "System size",
+        "Descriptor redundancy",
+        "Eigenvector basis ambiguity near degeneracy",
+        "Inaccessible modes"
+      ],
+      "falsifying_or_limiting_observation": "High descriptor coverage does not improve any held-out accessible response."
+    },
+    {
+      "family_id": "E08",
+      "label": "Spectral doping and small-intervention response",
+      "source_anchor": {
+        "message_id": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "message_index": 62,
+        "quote": "spectral doping"
+      },
+      "evidence_class": "proposed synthesis of defect engineering and sensitivity search",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "A concrete cheap search target if perturbation cost and functional distance are normalized. Sensitivity can reflect instability rather than useful programmability.",
+      "smallest_experiment": "Perturb one mass, bond or onsite term at a time and measure held-out response changes while enforcing positive stability margin.",
+      "baseline": "Random equal-cost defects and direct gradient sensitivity.",
+      "confounds": [
+        "Units in perturbation norm",
+        "Near-singular resonance",
+        "Finite-size effects",
+        "Comparing different actuator maps"
+      ],
+      "falsifying_or_limiting_observation": "Large response occurs only at an unstable or unusably narrow operating point."
+    },
+    {
+      "family_id": "E09",
+      "label": "Prestress and tensegrity reconfiguration",
+      "source_anchor": {
+        "message_id": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "message_index": 62,
+        "quote": "prestress = reprogrammable coupling matrix"
+      },
+      "evidence_class": "established model dependence; proposed computational use",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Prestress can alter tangent stiffness, but allowable self-stress, geometry equilibrium and buckling must be solved consistently. A freely editable matrix is not an admissible tensegrity control.",
+      "smallest_experiment": "Choose one equilibrated prestressed unit/network; sweep a feasible load path, recompute equilibrium/tangent modes and one input-output response.",
+      "baseline": "Unprestressed geometry and equivalent topology-preserving stiffness tuning.",
+      "confounds": [
+        "Geometric nonlinearities",
+        "Actuator work",
+        "Buckling",
+        "Slack cables",
+        "Hysteresis"
+      ],
+      "falsifying_or_limiting_observation": "Desired channel occurs only beyond instability or requires infeasible stress/control work."
+    },
+    {
+      "family_id": "E10",
+      "label": "Rare nonlinear coupling and resonance gates",
+      "source_anchor": {
+        "message_id": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "message_index": 62,
+        "quote": "A+B\\rightarrow C."
+      },
+      "evidence_class": "established nonlinear motif; proposed robust primitive",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Frequency matching is necessary in common wave-mixing models but does not guarantee nonzero coupling, selectivity or a usable Boolean gate. Need interaction tensor, damping, threshold and error rate.",
+      "smallest_experiment": "Simulate three damped modes with specified cubic coupling; sweep input combinations, detuning and noise; test separate A-only/B-only controls.",
+      "baseline": "Linear coupled modes and uncoupled nonlinear modes with matched energy.",
+      "confounds": [
+        "Selection rules",
+        "Amplitude thresholds",
+        "Pump energy",
+        "Cross-talk",
+        "Output readout threshold"
+      ],
+      "falsifying_or_limiting_observation": "C appears equally under one input, or coincidence behavior disappears under small detuning/noise."
+    },
+    {
+      "family_id": "E11",
+      "label": "Kagome and synthetic-flux programmable coupling",
+      "source_anchor": {
+        "message_id": "65ad79d0-a5d1-4b2e-a291-071e00675930",
+        "message_index": 56,
+        "quote": "physical adjacency}\\neq\\text{computational adjacency"
+      },
+      "evidence_class": "established model concepts; proposed platform transfer",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Geometry and complex hopping permit meaningful operator searches. A waveguide effective-coupling result does not license arbitrary independent phases in passive mechanical/electronic structures.",
+      "smallest_experiment": "Use one small coupled-mode graph; vary one independent cycle flux at fixed magnitudes and contacts; audit conservation and reciprocal limits.",
+      "baseline": "Zero-flux network, random amplitudes, and direct transport search.",
+      "confounds": [
+        "Programmability versus fabricated fixed design",
+        "Reciprocity constraints",
+        "Frequency window",
+        "Port model"
+      ],
+      "falsifying_or_limiting_observation": "Desired matrix cannot be realized with permitted controls or works only under omitted active modulation."
+    },
+    {
+      "family_id": "E12",
+      "label": "MXene-based adaptive substrate",
+      "source_anchor": {
+        "message_id": "65ad79d0-a5d1-4b2e-a291-071e00675930",
+        "message_index": 56,
+        "quote": "programmable substrate diversity"
+      },
+      "evidence_class": "candidate materials lead; no material-specific validation",
+      "feasibility": 1,
+      "testability": 2,
+      "assessment": "MXene chemistry is a domain choice rather than evidence that a proposed Kagome/MXene/gauge combination has the requisite tunable stiffness, damping or phases. Composition-specific parameters are absent.",
+      "smallest_experiment": "Select one composition/termination and one control mechanism; acquire or calculate calibrated constitutive/optical parameters before one device-level model.",
+      "baseline": "Conventional material with matched measured constitutive properties.",
+      "confounds": [
+        "Surface oxidation",
+        "Termination distribution",
+        "Damping",
+        "Control range",
+        "Unspecified fabrication"
+      ],
+      "falsifying_or_limiting_observation": "Realistic tunability/loss cannot support the mechanism predicted by freely chosen parameters."
+    },
+    {
+      "family_id": "E13",
+      "label": "Input-output resolvent repertoire",
+      "source_anchor": {
+        "message_id": "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd",
+        "message_index": 41,
+        "quote": "diversity of independently addressable input-output transformations"
+      },
+      "evidence_class": "established control/transport methodology; proposed QD objective",
+      "feasibility": 4,
+      "testability": 4,
+      "assessment": "Strong operational center of the program: specify B,C,contacts, energy/frequency and controls. Resolvent entries are not normalized transmission probabilities without contact factors; rank is a descriptor, not generic quality.",
+      "smallest_experiment": "Freeze ports/control grid and train/held-out energies. Archive robust scattering/transfer responses, including low-rank selective and high-rank mixing niches.",
+      "baseline": "Spectrum-only, raw-parameter and direct response archives on same candidate pool.",
+      "confounds": [
+        "Port normalization",
+        "Measurement resolution",
+        "Narrow resonance",
+        "Unfair number of controls",
+        "Ignoring setup/readout costs"
+      ],
+      "falsifying_or_limiting_observation": "Apparent repertoire collapses under held-out operating conditions or fixed interfaces."
+    },
+    {
+      "family_id": "E14",
+      "label": "Non-normal transient and pseudospectral diversity",
+      "source_anchor": {
+        "message_id": "3a09cb14-aa12-476e-9b23-767b05039b80",
+        "message_index": 44,
+        "quote": "pseudoinverse, but I find no pseudospectral analysis"
+      },
+      "evidence_class": "established distinction; proposed expanded search",
+      "feasibility": 4,
+      "testability": 4,
+      "assessment": "Pseudoinverse and pseudospectrum differ. Non-normal operators with identical eigenvalues can have different transient amplification; Euclidean operator gain depends on physically chosen norm and state scaling.",
+      "smallest_experiment": "Compare A=[[-1,k],[0,-2]] with k=0 versus k>0; compute exp(At) gain and fixed-input response; vary perturbation structure/noise.",
+      "baseline": "Normal diagonal operator with same eigenvalues and same physical energy norm.",
+      "confounds": [
+        "State coordinate scaling",
+        "Unstructured versus physically allowed perturbations",
+        "Gain also amplifies noise",
+        "Actuation cost"
+      ],
+      "falsifying_or_limiting_observation": "Gain advantage disappears in physical energy norm or cannot be read out robustly."
+    },
+    {
+      "family_id": "E15",
+      "label": "Moiré internal-state electronic routing",
+      "source_anchor": {
+        "message_id": "4e6acb0c-90fb-40ff-bc60-4e2b4ac39234",
+        "message_index": 34,
+        "quote": "design concept assembled from real ingredients"
+      },
+      "evidence_class": "proposed device synthesis with reported precedents",
+      "feasibility": 2,
+      "testability": 3,
+      "assessment": "Input/output/internal labels give a coherent device target, but no full realizable moire router is demonstrated in this transcript. Twist is often a fabrication parameter, not a runtime control.",
+      "smallest_experiment": "Specify one validated continuum/tight-binding model and contacts; search gate-only reconfiguration at fixed fabricated twist, then sweep disorder and temperature.",
+      "baseline": "Conventional electron-optics or photonic router matched on error, bandwidth and area/control cost.",
+      "confounds": [
+        "Valley lifetime",
+        "Contact selectivity",
+        "Coherence",
+        "Correlated regimes outside single-particle model",
+        "Twist inhomogeneity"
+      ],
+      "falsifying_or_limiting_observation": "Channel distinction vanishes with realistic contacts/disorder or cannot be runtime selected."
+    },
+    {
+      "family_id": "E16",
+      "label": "Stateful spintronic routing and hybrid-carrier compiler",
+      "source_anchor": {
+        "message_id": "94cd9848-6e6c-4428-9e45-be3107460a9f",
+        "message_index": 36,
+        "quote": "physics selection"
+      },
+      "evidence_class": "established memory motifs; speculative heterogeneous architecture",
+      "feasibility": 2,
+      "testability": 2,
+      "assessment": "Stateful dynamics is concrete; a universal compiler across charge/spin/exciton/photon/phonon is a much larger systems claim. Conversion interfaces may dominate energy and latency.",
+      "smallest_experiment": "Demonstrate one writable persistent state that changes one later routing response; measure retention, read disturbance, switching energy and conversion overhead.",
+      "baseline": "CMOS-controlled switch plus conventional memory.",
+      "confounds": [
+        "Retention/writeability tradeoff",
+        "Thermal noise",
+        "Transducer overhead",
+        "Operating-temperature mismatch",
+        "Error correction"
+      ],
+      "falsifying_or_limiting_observation": "End-to-end energy/error/latency is worse after including interfaces, or state cannot be written/read independently."
+    },
+    {
+      "family_id": "E17",
+      "label": "Gauge-aware quotient and consequential loop flux",
+      "source_anchor": {
+        "message_id": "07346c46-b406-43a9-afcd-6b3a66298cae",
+        "message_index": 21,
+        "quote": "identical eigenvalue spectra but opposite routing behavior"
+      },
+      "evidence_class": "locally verified model result; established gauge algebra",
+      "feasibility": 4,
+      "testability": 4,
+      "assessment": "Best supported concrete counterexample: equal spectra do not determine fixed-port responses. In the symmetric triangle the opposite flux pair becomes equivalent if output permutation is allowed; the task quotient must be declared.",
+      "smallest_experiment": "Replay explicit 3x3 H(phi), E=0,gamma=2; apply random local rephasings; compare port-labelled versus gauge-plus-permutation equivalence and perturb operating point.",
+      "baseline": "Raw matrix distance, eigenvalue distance, and full transport response.",
+      "confounds": [
+        "Fixed port labels",
+        "Orientation/sign convention",
+        "Single operating point",
+        "Ideal contacts",
+        "Time-reversal included in quotient"
+      ],
+      "falsifying_or_limiting_observation": "If task treats output ports interchangeable, opposite-flux symmetric pair is not two intrinsic device classes."
+    },
+    {
+      "family_id": "E18",
+      "label": "Counterexample-driven descriptor/schema revision",
+      "source_anchor": {
+        "message_id": "100ac390-d5f9-47f9-8be8-376a118905a1",
+        "message_index": 14,
+        "quote": "descriptor co-evolution triggered by empirical failure"
+      },
+      "evidence_class": "proposed method; partial implementation elsewhere is not proof here",
+      "feasibility": 3,
+      "testability": 4,
+      "assessment": "A falsifiable and valuable synthesis if additions improve frozen held-out prediction or discrimination. Schema residual or a newly coined type is not automatically empirical novelty; Lan transport preserves information only under specified maps.",
+      "smallest_experiment": "Plant gauge copies plus isospectral response-distinct pairs; let a descriptor proposer revise features using training data; freeze and score false merges/novelty on unseen candidates and operating points.",
+      "baseline": "Fixed spectrum, full response, and direct supervised feature selection with identical access.",
+      "confounds": [
+        "Scoreboard changes",
+        "Feature leakage",
+        "Extra solver calls",
+        "Post hoc success criteria",
+        "Representation complexity"
+      ],
+      "falsifying_or_limiting_observation": "Revision only increases cell count or fits training examples without held-out discrimination."
+    },
+    {
+      "family_id": "E19",
+      "label": "Human/AI feedback and competing QD archives",
+      "source_anchor": {
+        "message_id": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "message_index": 52,
+        "quote": "Which pair differs for a deeper physical reason?"
+      },
+      "evidence_class": "established QD ingredients; proposed domain adaptation",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Human similarity judgments can specify interests; AI feedback needs calibration and cannot certify physical truth. Multiple archives preserve alternatives but do not make axes statistically independent.",
+      "smallest_experiment": "Collect blinded pair/triplet mechanism judgments, repeat a subset for agreement, learn metric on train comparisons, and compare coverage on frozen intervention outcomes.",
+      "baseline": "Handcrafted descriptors, random human-query choice, AI-only scoring.",
+      "confounds": [
+        "Expert disagreement",
+        "Prestige/wording bias",
+        "Feedback loops",
+        "Changing descriptor scale",
+        "Curse of dimensionality"
+      ],
+      "falsifying_or_limiting_observation": "Learned similarity tracks visual wording or judges without improving intervention-relevant diversity."
+    },
+    {
+      "family_id": "E20",
+      "label": "Event-triggered specialist coalitions and adaptive scientific synapses",
+      "source_anchor": {
+        "message_id": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "message_index": 17,
+        "quote": "integration should be anomaly-conditioned, not continuous"
+      },
+      "evidence_class": "proposed architecture; multiagent superiority untested",
+      "feasibility": 3,
+      "testability": 4,
+      "assessment": "Strong controlled benchmark candidate. Distinct context packets and committed first passes preserve procedural separation, not model/statistical independence. VOI requires validated calibration; disagreement/cost is a heuristic. Three archives can overfit a common benchmark.",
+      "smallest_experiment": "Randomize single integrator, broadcast, isolated and event-triggered six-role arms across unseen task pools/seeds with same model, total tokens, solver calls and evidence.",
+      "baseline": "All four matched arms, plus event router with random triggers.",
+      "confounds": [
+        "Different exposure",
+        "Cached solver accounting",
+        "Router overhead",
+        "Correlated model failures",
+        "Stopping/censoring",
+        "Adaptive reward leakage"
+      ],
+      "falsifying_or_limiting_observation": "No held-out gain per resource, or benefit disappears when access and overhead are matched."
+    },
+    {
+      "family_id": "E21",
+      "label": "ALife transformation and causal-structure mining",
+      "source_anchor": {
+        "message_id": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "message_index": 6,
+        "quote": "counting **transformations that can be reliably induced**"
+      },
+      "evidence_class": "established analysis ingredients; proposed mining/transfer synthesis",
+      "feasibility": 3,
+      "testability": 3,
+      "assessment": "Good mechanism-level expansion beyond appearance. For CA, boundary/input/time protocol determines transformation counts; constant maps can inflate count without preserving input information. For Lenia, discretization and moving frames matter.",
+      "smallest_experiment": "Exhaust a small CA protocol or perturb one reproducible Lenia/NCA pattern; separate distinct functions, injective/input-sensitive functions, reliability and recovery.",
+      "baseline": "Random rules/candidates, image novelty and local-spectrum-only descriptors.",
+      "confounds": [
+        "Protocol size",
+        "Boundary conditions",
+        "Finite horizon",
+        "Translation/rotation quotient",
+        "Intervention distribution",
+        "Observation of hidden state"
+      ],
+      "falsifying_or_limiting_observation": "Many transformations are resets/constants or novelty disappears when function rather than appearance is scored."
+    },
+    {
+      "family_id": "E22",
+      "label": "ALife Koopman/Floquet, memory and recovery analysis",
+      "source_anchor": {
+        "message_id": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "message_index": 6,
+        "quote": "A slowly changing internal variable is not automatically useful memory."
+      },
+      "evidence_class": "established methods; proposed comparative atlas",
+      "feasibility": 3,
+      "testability": 4,
+      "assessment": "Local Jacobian, Floquet, Koopman, basin geometry and writable/readable memory answer different questions. A fitted Koopman matrix can create spurious modes; local derivatives miss nonlinear basin changes.",
+      "smallest_experiment": "Choose one fixed rule/trajectory, test local derivative predictions against finite perturbations, compare held-out response forecasts and explicit delayed write/read tasks.",
+      "baseline": "Linear autoregression, raw state readout and matched stable dynamics without memory mechanism.",
+      "confounds": [
+        "Dictionary and resolution",
+        "Nonstationarity",
+        "Readout training leakage",
+        "Autocorrelated inputs",
+        "Unobserved forcing"
+      ],
+      "falsifying_or_limiting_observation": "Interesting modes fail held-out response prediction or memory vanishes with independent inputs."
+    },
+    {
+      "family_id": "E23",
+      "label": "Mechanism reduction and compilation from ALife to matter",
+      "source_anchor": {
+        "message_id": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "message_index": 6,
+        "quote": "The transfer criterion should be agreement on interventions, not just agreement on eigenvalues."
+      },
+      "evidence_class": "proposed cross-domain research bridge",
+      "feasibility": 2,
+      "testability": 3,
+      "assessment": "High conceptual reach with explicit falsifier. Matching selected input-output traces is weaker than matching all dynamics, but sufficient task equivalence can be defined. Physical energy/nonlocality/time/control resources must transfer too.",
+      "smallest_experiment": "Reduce one robust simulated write-gate-read motif to a few-state model; fit a candidate circuit/oscillator and test unseen inputs, damage and resets.",
+      "baseline": "Direct digital implementation and generic reservoir with same task/energy accounting.",
+      "confounds": [
+        "Hidden nonlocal updates",
+        "External power",
+        "Time-scale matching",
+        "Training-only behavior",
+        "Physical state/control mismatch"
+      ],
+      "falsifying_or_limiting_observation": "Transfer fails under unseen interventions or requires resources excluded from comparison."
+    },
+    {
+      "family_id": "E24",
+      "label": "Quotient recurrent reasoning and loop-corrected attention",
+      "source_anchor": {
+        "message_id": "07346c46-b406-43a9-afcd-6b3a66298cae",
+        "message_index": 21,
+        "quote": "pure gauge"
+      },
+      "evidence_class": "algebraically checkable distinction; proposed attention extension",
+      "feasibility": 2,
+      "testability": 3,
+      "assessment": "If Uij=gamma_i conjugate(gamma_j), loop product is identically one. This says nothing alone about attention nonlinearity or performance; linear complexity is not sparse or linear input-output behavior. Paper attribution requires source audit.",
+      "smallest_experiment": "Generate pure-gauge versus nontrivial-flux relations and test a restricted loop channel against matched-parameter attention/message-passing on held-out relational tasks.",
+      "baseline": "Same model with extra matched parameters but no loop features; fixed cycle basis and random features.",
+      "confounds": [
+        "Loop enumeration complexity",
+        "Modulo phase ambiguity",
+        "Extra compute/parameters",
+        "Unverified architecture attribution"
+      ],
+      "falsifying_or_limiting_observation": "No task benefit after matched capacity/compute, or supposedly nontrivial loop feature is identically one."
+    }
+  ],
+  "local_checks": {
+    "triangle": {
+      "formula": "H(phi)=[[0,1,exp(-i phi)],[1,0,1],[exp(i phi),1,0]]; S=I-2i(-H+iI)^-1; T=abs(S)^2; ports zero-indexed",
+      "zero_flux_input_0": [
+        0.2,
+        0.4,
+        0.4
+      ],
+      "plus_pi_over_2_input_0": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "minus_pi_over_2_input_0": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "both_nonzero_flux_eigenvalues": [
+        -1.7320508075688774,
+        0.0,
+        1.7320508075688772
+      ],
+      "max_unitarity_error": 4.935108374623745e-16,
+      "sample_rephasing_max_T_error": 9.37349864163661e-34,
+      "limitations": "Ideal wide-band equal contacts, dimensionless unit hopping, E=0 only; not a fabricated device or robustness proof."
+    },
+    "port_quotient": {
+      "formula": "Let P swap nodes1/2 and D=diag(1,-i,-i). D P H(+pi/2) P^T D^dagger=H(-pi/2).",
+      "matrix_error": 0.0,
+      "conclusion": "Symmetric triangle opposite-flux pair is not distinct under gauge-plus-unlabelled-port-permutation quotient."
+    },
+    "invalid_diversity_proxy": {
+      "source_message_id": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+      "formula": "For n identical representation fingerprints with complete-graph W and L=nI-11^T, nonzero Laplacian eigenvalues are n repeated n-1 times. exp(H(lambda/sum lambda))=n-1.",
+      "n": 6,
+      "reported_metric": 5.000000000000001,
+      "true_distinct_representation_count": 1,
+      "conclusion": "Laplacian eigenvalue entropy measures graph-spectrum structure and is not a sound generic measure of representation diversity. Use centered fingerprint rank/distances with constant-data handling, and validate their relation to task-relevant complementarity."
+    }
+  },
+  "overstatement_audit": [
+    {
+      "anchor_message_id": "689ed3a3-b2aa-475b-9589-27a736662aed",
+      "claim": "That is a topological obstruction",
+      "correction": "An inconsistent preference cycle is a constraint inconsistency. A sheaf/cohomological interpretation requires a specified construction; do not equate arbitrary contradiction, nonzero H1 and absence of global sections."
+    },
+    {
+      "anchor_message_id": "8daef89e-5aa9-45df-ae57-c5e89d12e597",
+      "claim": "reward diversity that creates residual scientific structure",
+      "correction": "A formal residual can reflect representation choices or added bookkeeping. Require held-out predictive or intervention information before treating it as empirical novelty."
+    },
+    {
+      "anchor_message_id": "8466bf72-b28c-4148-bf0f-f96d36701d7f",
+      "claim": "self-expanding 50–500+ dimensional ontology",
+      "correction": "Object types, descriptor count, effective dimension and independent physical degrees of freedom are different. More axes can reduce archive occupancy without increasing mechanism diversity."
+    },
+    {
+      "anchor_message_id": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+      "claim": "strategically coupled representational diversity > permanent consensus OR permanent isolation",
+      "correction": "Research hypothesis only. Protocol execution or a fixed candidate-pool replay does not measure adaptive discovery superiority."
+    },
+    {
+      "anchor_message_id": "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd",
+      "claim": "The SVD gives an especially beautiful measure",
+      "correction": "Effective rank is scale/norm dependent and does not count all possible computations. Low rank can be desirable for selective routing; singular-value amplitude versus energy weighting must be declared."
+    },
+    {
+      "anchor_message_id": "8daef89e-5aa9-45df-ae57-c5e89d12e597",
+      "claim": "Geometry→DynamicalMatrix→Spectrum→Mode",
+      "correction": "If Spectrum contains only eigenvalues, it cannot determine eigenvectors or mode shapes. Preserve the operator/eigensystem or explicitly pass the additional data. Material-to-response computations commonly require multiple inputs: geometry, physical parameters, operating point, boundary/contact and actuation/readout models."
+    },
+    {
+      "anchor_message_id": "8466bf72-b28c-4148-bf0f-f96d36701d7f",
+      "claim": "HEA threshold/Paris-slope example is a verified Wang–Buehler case",
+      "correction": "Treat as transcript attribution only; current primary-source audit by parent verified protein mode-conditioned compliance and fiber anisotropy, not this HEA claim."
+    }
+  ],
+  "recommended_minimum_program": [
+    {
+      "stage": 1,
+      "experiment": "Gauge and port-quotient counterexamples",
+      "why": "Low cost, explicit equations, strong false-novelty/false-merging controls. Already locally reproducible toy result."
+    },
+    {
+      "stage": 2,
+      "experiment": "Frozen held-out descriptor-revision benchmark",
+      "why": "Tests whether richer vocabulary preserves consequential distinctions without changing the scoreboard."
+    },
+    {
+      "stage": 3,
+      "experiment": "Four-arm matched-budget agent trial",
+      "why": "Tests architecture advantage separately from representation advantage."
+    },
+    {
+      "stage": 4,
+      "experiment": "One ALife write/read/recovery mechanism and one reduced implementation",
+      "why": "Adds an orthogonal nonlinear/stateful family and tests the transfer claim rather than only its analogy."
+    }
+  ]
+}

@@ -1,0 +1,826 @@
+{
+  "reviewer": "mechanism/equivalence first-pass reviewer",
+  "sourceUrl": "https://chatgpt.com/share/6ad1b4fb-7c58-83e8-a3be-dd9b55490a6d",
+  "sourceMessagesSha256": "8938cdd6ae351dfbdebcc63c33a917b57f590f9404f555461ec35c5b5c67aac5",
+  "method": "Read extracted conversation independently of peer reviews; canonicalize by distinct intervention/readout pair rather than terminology; identify equivalence groups, comparator and falsifier. Source citations and notebook execution claims are not independent verification.",
+  "scope": "25 canonical research families, not a claim of 25 mutually independent ideas or a complete literature novelty audit. Several are supporting tools, implementation domains or umbrella architectures.",
+  "families": [
+    {
+      "id": "M01",
+      "title": "Interaction arity as a test-time compute variable",
+      "sourceMessageIds": [
+        "689ed3a3-b2aa-475b-9589-27a736662aed"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+          "role": "assistant",
+          "quote": "a three-way reasoning interaction need not equal three pairwise interactions."
+        }
+      ],
+      "mechanism": "Compare pairwise graphs, genuinely joint hyperedges, nested teams and hierarchy under matched model and resource budgets. Joint context can enable a conditional interaction unavailable in any pairwise exchange.",
+      "distinctionFromAdjacentFamilies": "Interaction arity differs from graph density and from semantic compatibility; a triangle of pairwise edges is not itself evidence for irreducible three-way synergy.",
+      "keyFalsifier": "An equally budgeted pairwise or centrally integrated control reproduces every claimed group-only gain; extra participants or tokens account for the effect.",
+      "noveltyScope": "Concrete architectural comparison; source cites higher-order network precedents. New reasoning capability or scaling law remains unmeasured here.",
+      "descriptor": {
+        "objectLevel": "agent architecture",
+        "causalLever": "interaction arity",
+        "readout": "held-out task performance and synergy"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M02",
+      "title": "Translation-aware consistency and typed assembly",
+      "sourceMessageIds": [
+        "689ed3a3-b2aa-475b-9589-27a736662aed"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+          "role": "assistant",
+          "quote": "These two agents use different representations but become consistent after translation."
+        }
+      ],
+      "mechanism": "Agents carry heterogeneous local state spaces and explicit maps to overlap contexts. Check compatibility after translation; separately record how local evidence is assembled into summaries.",
+      "distinctionFromAdjacentFamilies": "Consistency constraints and covariant assembly are distinct operations. A provenance graph or a contradictory ranking is not automatically a sheaf/cohomological construction.",
+      "keyFalsifier": "No explicit spaces, maps and composition laws can be supplied, or a simple typed constraint solver gives identical conclusions at lower cost.",
+      "noveltyScope": "Useful formalization goal and implementation pattern, not a demonstrated new theorem. Sheaf, cosheaf and copresheaf labels require declared variance and axioms.",
+      "descriptor": {
+        "objectLevel": "agent representation",
+        "causalLever": "semantic translation and constraints",
+        "readout": "compatibility residual and provenance"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M03",
+      "title": "Topology and Hodge diagnostics of reasoning",
+      "sourceMessageIds": [
+        "689ed3a3-b2aa-475b-9589-27a736662aed"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+          "role": "assistant",
+          "quote": "phenomenology of collective reasoning"
+        }
+      ],
+      "mechanism": "Encode task-grounded messages as edge flows and hypotheses as a filtered complex, then test whether circulation, harmonic components or persistence predict stalled or productive reasoning.",
+      "distinctionFromAdjacentFamilies": "This measures an explicitly constructed representation; it does not establish that semantic contradiction is literally topological. It is different from changing interaction arity.",
+      "keyFalsifier": "Results change arbitrarily with message embedding, edge weights, filtration or chosen filled faces, and do not predict held-out reasoning failures beyond simple redundancy measures.",
+      "noveltyScope": "Method-transfer proposal. Persistent loops and flow decomposition are descriptors, not evidence of causal benefit from topology.",
+      "descriptor": {
+        "objectLevel": "diagnostic",
+        "causalLever": "flow decomposition and filtration",
+        "readout": "out-of-sample failure prediction"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M04",
+      "title": "Geometry-aware alignment and routing",
+      "sourceMessageIds": [
+        "689ed3a3-b2aa-475b-9589-27a736662aed"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+          "role": "assistant",
+          "quote": "How much semantic work does it take to transform one belief distribution into the other?"
+        }
+      ],
+      "mechanism": "Two submechanisms: optimal transport aligns hypothesis distributions or relational geometries; graph curvature proposes which communication bottlenecks deserve bandwidth. These can be tested separately.",
+      "distinctionFromAdjacentFamilies": "OT alignment needs a justified ground cost; curvature is a property of a declared graph and measure. They are adjacent routing tools, not interchangeable measures of understanding or value.",
+      "keyFalsifier": "Random, uncertainty-based or disagreement-based routing matches or beats the method at equal total inference and alignment cost; results reverse under reasonable ground costs.",
+      "noveltyScope": "An architectural research direction using established mathematical tools; neither semantic validity nor superiority follows from a Wasserstein or curvature value.",
+      "descriptor": {
+        "objectLevel": "communication",
+        "causalLever": "distribution alignment or bottleneck allocation",
+        "readout": "prediction gain per total cost"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M05",
+      "title": "Collective agency and physical-phase metaphors",
+      "sourceMessageIds": [
+        "689ed3a3-b2aa-475b-9589-27a736662aed"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+          "role": "assistant",
+          "quote": "communication is not automatically collective intelligence"
+        }
+      ],
+      "mechanism": "Define a macro-goal variable and test whether a collective recruits, suppresses or reorganizes components to restore it after perturbations. Ferromagnetic, spin-glass, Weyl-crossing and tensegrity descriptions can motivate candidate dynamics.",
+      "distinctionFromAdjacentFamilies": "Macro-goal control is testable; named condensed-matter phases remain analogies without an order parameter, dynamics and discriminating intervention. Mere message passing is insufficient.",
+      "keyFalsifier": "The collective cannot recover a macro-goal under component perturbation better than a matched coordinator or passive aggregation, or all behavior is explained by an ordinary workflow.",
+      "noveltyScope": "High conceptual ambition, low specification in the source. Physical names should not receive novelty credit until operationalized.",
+      "descriptor": {
+        "objectLevel": "collective control",
+        "causalLever": "recruitment and coarse graining",
+        "readout": "macro-goal recovery"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M06",
+      "title": "Modal ecology rather than mode counting",
+      "sourceMessageIds": [
+        "0b114b13-b1ad-4f96-9e26-e83c3f6c069f"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+          "role": "assistant",
+          "quote": "modal diversity isn't merely"
+        }
+      ],
+      "mechanism": "Characterize each mode by polarization, localization, lifetime, symmetry, accessibility and coupling, then preserve complementary useful niches subject to stability and control constraints.",
+      "distinctionFromAdjacentFamilies": "Frequency entropy, number of modes and dimension of a schema are not independent functional diversity. This is a phenotype framework rather than a single new physical mechanism.",
+      "keyFalsifier": "Added phenotype coordinates are redundant or inaccessible to specified actuators/readouts and do not distinguish any reproducible intervention outcome.",
+      "noveltyScope": "Synthesis of standard modal descriptors into a search objective; novelty resides in tested combinations or discoveries, not in naming modal biodiversity.",
+      "descriptor": {
+        "objectLevel": "physical phenotype",
+        "causalLever": "mode characterization",
+        "readout": "addressable functional niches"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M07",
+      "title": "Spectral doping and minimal allosteric intervention",
+      "sourceMessageIds": [
+        "0b114b13-b1ad-4f96-9e26-e83c3f6c069f"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+          "role": "assistant",
+          "quote": "tiny structural intervention"
+        }
+      ],
+      "mechanism": "Use selected bond removals, mass/stiffness defects, chirality or disorder to alter a targeted long-range response or create an addressable localized state. Search response change per physical intervention cost.",
+      "distinctionFromAdjacentFamilies": "Different from maximizing disorder or raw spectral spread; the causal claim is a controlled small change creating a large useful response while preserving declared constraints.",
+      "keyFalsifier": "Random defects at matched cost perform equally, the response vanishes under robustness tests, or the gain comes solely from loss of rigidity or an unstable operating point.",
+      "noveltyScope": "Source acknowledges existing defect/allostery precedents. A new mechanism needs a held-out causal intervention and comparator, not only a large susceptibility.",
+      "descriptor": {
+        "objectLevel": "physical design",
+        "causalLever": "local defect or bond intervention",
+        "readout": "response change per intervention"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M08",
+      "title": "Prestress-controlled rotational and translational channels",
+      "sourceMessageIds": [
+        "0b114b13-b1ad-4f96-9e26-e83c3f6c069f"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+          "role": "assistant",
+          "quote": "prestress changes the modal landscape without changing topology"
+        }
+      ],
+      "mechanism": "At fixed structure, prestress or stable multistability changes the tangent stiffness and translation-rotation coupling blocks, allowing localized, rotational or propagating regimes to be selected.",
+      "distinctionFromAdjacentFamilies": "Topology-preserving parameter reconfiguration differs from defect creation. Orthogonal coordinates are dynamically decoupled only when the relevant coupling terms vanish.",
+      "keyFalsifier": "Apparent switching is caused by geometric reconstruction, uncontrolled buckling or instability, and no reversible useful operating range survives noise and actuator constraints.",
+      "noveltyScope": "Testable mechanics proposal with established prestress concepts; no fabricated implementation is established by the conversation.",
+      "descriptor": {
+        "objectLevel": "physical control",
+        "causalLever": "prestress and cross-sector coupling",
+        "readout": "reversible channel switching"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M09",
+      "title": "Rare nonlinear resonances and programmable decoupling",
+      "sourceMessageIds": [
+        "0b114b13-b1ad-4f96-9e26-e83c3f6c069f"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+          "role": "assistant",
+          "quote": "Rare resonances become *computation*"
+        }
+      ],
+      "mechanism": "Keep modes approximately independent except when amplitude, frequency sum, symmetry or a slow state permits a nonlinear interaction. Evaluate AND-like coincidence or conditional conversion together with off-state leakage.",
+      "distinctionFromAdjacentFamilies": "Sparse adjacency alone does not produce event gating. Frequency matching is necessary in some models but not sufficient: coupling magnitude, damping, detuning and selection rules determine the response.",
+      "keyFalsifier": "Output appears under either input alone, leakage overwhelms selectivity, or the claimed gate disappears after including damping, finite bandwidth and energy cost.",
+      "noveltyScope": "Cross-domain synthesis of known resonance/gating ideas. New science would be a reproducible nontrivial repertoire or tradeoff improvement.",
+      "descriptor": {
+        "objectLevel": "physical dynamics",
+        "causalLever": "resonance and selection rules",
+        "readout": "conditional response and leakage"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M10",
+      "title": "Quotient-aware loop flux and false-diversity control",
+      "sourceMessageIds": [
+        "07346c46-b406-43a9-afcd-6b3a66298cae"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "07346c46-b406-43a9-afcd-6b3a66298cae",
+          "role": "assistant",
+          "quote": "different matrix entries, identical response"
+        }
+      ],
+      "mechanism": "First quotient transformations proved to preserve the declared task; then vary invariant loop products. Contrast large coordinate changes with unchanged response against isospectral but fixed-port-distinct transport.",
+      "distinctionFromAdjacentFamilies": "Pure node-phase transport has trivial loop holonomy. Unused modes are not gauge. Opposite fluxes can become equivalent under allowed reflection/relabeling, so interfaces and equivalence groups must be explicit.",
+      "keyFalsifier": "Loop descriptors fail a gauge-invariance test; consistent transformed contacts change the measured invariant response; or claimed distinct candidates are equivalent under the task's declared quotient.",
+      "noveltyScope": "Source reports an ideal triangle demo, not a new device. High value as a unit test and descriptor-audit mechanism; literature novelty is not assessed.",
+      "descriptor": {
+        "objectLevel": "physical equivalence",
+        "causalLever": "local rephasing versus loop-flux intervention",
+        "readout": "false novelty and false merging"
+      },
+      "priority": "core",
+      "evidenceStatus": "source-reported finite model demonstration"
+    },
+    {
+      "id": "M11",
+      "title": "Addressable response-operator repertoires",
+      "sourceMessageIds": [
+        "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd",
+          "role": "assistant",
+          "quote": "diversity of independently addressable input-output transformations"
+        }
+      ],
+      "mechanism": "For specified input/readout maps and contact models, archive the family C R(E,lambda) B or properly normalized scattering responses across control settings, bandwidths and operating conditions.",
+      "distinctionFromAdjacentFamilies": "The full resolvent, port-restricted response and scattering probability are not identical. Singular-value effective rank at one setting measures channel balance, not automatically diversity across a control repertoire.",
+      "keyFalsifier": "The supposed channels are below noise, physically inaccessible or fragile; the same useful operator family is obtained by a simpler design with lower control/readout cost.",
+      "noveltyScope": "Operational central objective integrating control/transport tools; no general hardware advantage or new transform is established.",
+      "descriptor": {
+        "objectLevel": "physical function",
+        "causalLever": "control-indexed input-output maps",
+        "readout": "robust distinct transformations"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M12",
+      "title": "Non-normal transient and perturbation diversity",
+      "sourceMessageIds": [
+        "3a09cb14-aa12-476e-9b23-767b05039b80"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "3a09cb14-aa12-476e-9b23-767b05039b80",
+          "role": "assistant",
+          "quote": "two lattices can have nearly identical eigenvalue spectra but radically different pseudospectra"
+        }
+      ],
+      "mechanism": "Compare stable operators with identical or near-identical eigenvalues but different non-normality, finite-time gain, pseudospectra or projected resolvents under specified input and noise models.",
+      "distinctionFromAdjacentFamilies": "Pseudoinverse compliance is distinct from pseudospectra. High gain is not useful information processing by itself, and unstructured pseudospectra are not a substitute for physical structured uncertainty.",
+      "keyFalsifier": "Gain gives no signal-to-noise or task benefit, is explained by trivial rescaling, violates resource constraints, or disappears when physically allowable perturbations are enforced.",
+      "noveltyScope": "Standard dynamical distinction; source later reports a toy demonstration. Novelty would require a new robust computational mechanism or controlled search finding.",
+      "descriptor": {
+        "objectLevel": "physical dynamics",
+        "causalLever": "non-normal coupling",
+        "readout": "transient task gain and robustness"
+      },
+      "priority": "core",
+      "evidenceStatus": "source-reported conceptual and toy-model demonstration"
+    },
+    {
+      "id": "M13",
+      "title": "Moiré and internal-state-selective routing",
+      "sourceMessageIds": [
+        "cc443b2e-312b-4d5f-8660-8e88b96b5dbe"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "cc443b2e-312b-4d5f-8660-8e88b96b5dbe",
+          "role": "assistant",
+          "quote": "internal quantum labels"
+        }
+      ],
+      "mechanism": "Program potential landscapes and selected valley/layer/spin channels, with gates or domain configurations, to realize a multi-terminal state-resolved response family.",
+      "distinctionFromAdjacentFamilies": "Moiré is a substrate/control route, not equivalent to Kagome geometry or MXene chemistry. Twist, gate fields, Peierls phases and independent internal channels are not freely interchangeable controls.",
+      "keyFalsifier": "Predicted selectivity fails with contacts, intervalley scattering, disorder, realistic temperatures or calibration; configuration and readout costs remove any task advantage.",
+      "noveltyScope": "Architecture assembled from cited ingredients in the source; no complete programmable moiré routing layer is demonstrated here and recent experimental references were not reverified in this review.",
+      "descriptor": {
+        "objectLevel": "material implementation",
+        "causalLever": "moire potential and internal-state selection",
+        "readout": "state-resolved routing"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M14",
+      "title": "Persistent substrate state as routing memory",
+      "sourceMessageIds": [
+        "94cd9848-6e6c-4428-9e45-be3107460a9f"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "94cd9848-6e6c-4428-9e45-be3107460a9f",
+          "role": "assistant",
+          "quote": "The device's previous inputs alter"
+        }
+      ],
+      "mechanism": "A writable internal state, such as a magnetic texture or polarization, changes how later signals propagate; separate write, retention, gate and read operations.",
+      "distinctionFromAdjacentFamilies": "Persistent appearance or a slow mode is not useful memory without accessible writing and reading. A state-dependent operator differs from a stateless externally reconfigured one.",
+      "keyFalsifier": "A later response contains no recoverable information about earlier input after controlling for continuing drive, thermal drift and readout leakage, or writing destroys useful retention.",
+      "noveltyScope": "Broad known state-machine/memory principle; source offers candidate substrates, not a validated integrated device.",
+      "descriptor": {
+        "objectLevel": "stateful physical function",
+        "causalLever": "internal-state write and read",
+        "readout": "retention-dependent routing"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M15",
+      "title": "Carrier conversion graph and substrate-selecting compiler",
+      "sourceMessageIds": [
+        "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd",
+          "role": "assistant",
+          "quote": "selective conversion graph"
+        }
+      ],
+      "mechanism": "Choose which computation maps to charge, spin, photons, phonons, excitons or hybrid excitations, explicitly accounting for interfaces and suppression of unwanted conversion.",
+      "distinctionFromAdjacentFamilies": "Counting carrier species does not establish independently controllable channels. Compilation across carriers is distinct from merely routing within a single carrier family.",
+      "keyFalsifier": "Conversion, storage, calibration and control overhead exceed any native processing gain on a matched end-to-end task; a conventional CPU/GPU/FPGA implementation wins at required error.",
+      "noveltyScope": "Long-horizon architecture vision. No generic superiority or production-ready quasiparticle compiler is shown.",
+      "descriptor": {
+        "objectLevel": "heterogeneous architecture",
+        "causalLever": "carrier conversion and task placement",
+        "readout": "end-to-end cost at fixed error"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M16",
+      "title": "Human and AI feedback on mechanism diversity",
+      "sourceMessageIds": [
+        "6c00375a-d72b-4781-8b62-fbed34981a7b"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "6c00375a-d72b-4781-8b62-fbed34981a7b",
+          "role": "assistant",
+          "quote": "these two materials are novel for the same reason"
+        }
+      ],
+      "mechanism": "Use pairwise judgments about mechanism equivalence and surprising difference to learn a search representation; calibrate AI feedback against humans and ground candidate quality in solver outcomes.",
+      "distinctionFromAdjacentFamilies": "Human taste defines provisional interests; it does not replace physical verification. A learned similarity metric can still erase hidden response differences or follow prestige and terminology.",
+      "keyFalsifier": "Judgments are inconsistent across blinded experts, learned diversity fails held-out intervention distinctions, or gains vanish against a fixed response descriptor at equal labeling cost.",
+      "noveltyScope": "Applied QDHF/QDAIF synthesis with acknowledged precedents. A useful new contribution would be validated feedback efficiency or better nonredundant discovery.",
+      "descriptor": {
+        "objectLevel": "search evaluation",
+        "causalLever": "pairwise mechanism judgments",
+        "readout": "held-out diversity and label efficiency"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M17",
+      "title": "Counterexample-driven schema revision and provenance",
+      "sourceMessageIds": [
+        "8daef89e-5aa9-45df-ae57-c5e89d12e597"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "8daef89e-5aa9-45df-ae57-c5e89d12e597",
+          "role": "assistant",
+          "quote": "sometimes }Z\\text{ itself is wrong."
+        }
+      ],
+      "mechanism": "Counterexamples to an existing descriptor trigger a proposed type/operation or new measurable coordinate. Preserve provenance, failed models and migrations; accept added complexity only after held-out predictive tests.",
+      "distinctionFromAdjacentFamilies": "Schema expansion is not automatically scientific novelty. Left Kan transport or a residual cannot manufacture empirical evidence; a new field name and a new measurable distinction are different.",
+      "keyFalsifier": "New coordinates fail conditional predictive tests, merely re-express existing features, or improve only the discovery scoreboard that they themselves redefined.",
+      "noveltyScope": "Central integration proposal beyond a fixed descriptor archive; categorical novelty claims require explicit schemas, maps and semantics rather than a renamed database.",
+      "descriptor": {
+        "objectLevel": "scientific representation",
+        "causalLever": "audited descriptor addition or removal",
+        "readout": "held-out prediction and complexity"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M18",
+      "title": "Strategic communication through discrepancy coalitions",
+      "sourceMessageIds": [
+        "e1bf708b-cec2-4c52-a9ee-b739871b0457"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+          "role": "assistant",
+          "quote": "integration should be anomaly-conditioned, not continuous"
+        }
+      ],
+      "mechanism": "Keep private evidence-limited representations; communicate typed counterexamples when frozen normalized distances disagree, then dissolve temporary coalitions after proposing an equivalence proof, descriptor or discriminating experiment. Adapt routing only with verified yield.",
+      "distinctionFromAdjacentFamilies": "Method/data/view diversity can be complementary without statistical independence. A disagreement score or information-gain proxy is not an estimated causal value of communication.",
+      "keyFalsifier": "At fixed model, inference, solver, routing and wall-clock budgets, broadcast, isolation, random routing or a single integrator discovers equally many robust nonredundant behaviors.",
+      "noveltyScope": "Highly testable architectural hypothesis, not established swarm superiority. Laplacian spectral entropy in this source must not be used as a representation-diversity certificate.",
+      "descriptor": {
+        "objectLevel": "agent architecture",
+        "causalLever": "event-triggered information exchange",
+        "readout": "validated discovery per total budget"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M19",
+      "title": "Local schema forks and three coupled archives",
+      "sourceMessageIds": [
+        "e1bf708b-cec2-4c52-a9ee-b739871b0457"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+          "role": "assistant",
+          "quote": "QD archive of scientific representations"
+        }
+      ],
+      "mechanism": "Preserve competing matter, representation and swarm-policy candidates; representations are evaluated by prediction, compression, invariance and robustness while alternative schemas generate distinct hypotheses.",
+      "distinctionFromAdjacentFamilies": "These are three search levels, not three independently established sources of scientific diversity. A representation is different from a communication policy and from a physical candidate.",
+      "keyFalsifier": "The nested search only multiplies bookkeeping; no retained representation predicts a distinct held-out feature, and policy evaluation leaks into its own evaluation set.",
+      "noveltyScope": "Open-ended search architecture vision. Most defensible as explicit multiobjective archives with stable external evaluation; no demonstrated improvement is supplied.",
+      "descriptor": {
+        "objectLevel": "meta-search",
+        "causalLever": "competing representations and policies",
+        "readout": "external prediction and useful retained alternatives"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M20",
+      "title": "Environment-programmed transformation repertoires in ALife",
+      "sourceMessageIds": [
+        "d1418e34-4e6c-4899-acec-3ee3485d36fd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+          "role": "assistant",
+          "quote": "The surrounding material becomes part of the program."
+        }
+      ],
+      "mechanism": "For a fixed interior and time/boundary protocol, vary environmental configuration and count reliably induced input-output functions, retaining input-preserving functions separately from erasure or constant outputs.",
+      "distinctionFromAdjacentFamilies": "Counts of states, visual patterns and distinct functions differ. More environment settings need not imply more useful transformations, and finite protocol equivalence is not true dynamical equivalence.",
+      "keyFalsifier": "Distinct function counts are entirely explained by overwrite/erasure, are unstable under seeds or boundary changes, or provide no controllable useful transformations on held-out input states.",
+      "noveltyScope": "Source explicitly identifies an existing cellular-automaton precedent and later reports an elementary-CA toy enumeration; novelty is the proposed intervention-focused archive and transfer test.",
+      "descriptor": {
+        "objectLevel": "artificial-life function",
+        "causalLever": "environment configuration",
+        "readout": "reliably induced transformations"
+      },
+      "priority": "core",
+      "evidenceStatus": "source-reported precedent and finite enumeration"
+    },
+    {
+      "id": "M21",
+      "title": "Phase-specific and finite-time intervention channels",
+      "sourceMessageIds": [
+        "d1418e34-4e6c-4899-acec-3ee3485d36fd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+          "role": "assistant",
+          "quote": "channels that are mostly closed"
+        }
+      ],
+      "mechanism": "For moving or periodic ALife, identify trajectory-dependent response kernels, Floquet structure and phase-response curves. Test whether useful communication or stimulation windows open at particular phases or slow-state contexts.",
+      "distinctionFromAdjacentFamilies": "This is temporal access to a response, not stationary spectral diversity. A local linearization is tied to a state, trajectory and perturbation amplitude.",
+      "keyFalsifier": "Predicted windows fail under phase-locked interventions or held-out cycles, or a time-averaged/stationary response predicts outcomes just as well.",
+      "noveltyScope": "Appropriate method selection transferred into ALife mining; discovery requires an unanticipated reproducible timing mechanism rather than an interesting fitted mode.",
+      "descriptor": {
+        "objectLevel": "artificial-life dynamics",
+        "causalLever": "intervention timing and phase",
+        "readout": "phase-dependent causal response"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M22",
+      "title": "Validated Koopman or transfer-operator discovery",
+      "sourceMessageIds": [
+        "d1418e34-4e6c-4899-acec-3ee3485d36fd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+          "role": "assistant",
+          "quote": "This feature survives changes in data, resolution, observable dictionary, and prediction horizon"
+        }
+      ],
+      "mechanism": "Learn observables exposing persistent, slow or transition-predictive organization; validate spectral features with residual, data, resolution and out-of-sample intervention checks.",
+      "distinctionFromAdjacentFamilies": "The exact Koopman linearity in observable space does not guarantee a small valid fitted linear model. A fitted eigenvalue is an estimator output, not itself a new physical entity.",
+      "keyFalsifier": "Modes shift under reasonable dictionaries or data splits, fail residual/forecast tests, or fail to improve prediction against simple trajectory statistics.",
+      "noveltyScope": "Established analysis tools proposed as mechanism miners. No literature-new Koopman method is claimed by the source.",
+      "descriptor": {
+        "objectLevel": "dynamical representation",
+        "causalLever": "observable selection and operator approximation",
+        "readout": "validated forecasting and interventions"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M23",
+      "title": "Writable memory, basin geometry and functional recovery",
+      "sourceMessageIds": [
+        "d1418e34-4e6c-4899-acec-3ee3485d36fd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+          "role": "assistant",
+          "quote": "A slowly changing internal variable is not automatically useful memory."
+        }
+      ],
+      "mechanism": "Map return/switch/failure regions under finite perturbations, then test whether controlled inputs can write a state and outputs can read it after noise or damage. Separate local derivatives from global basin organization.",
+      "distinctionFromAdjacentFamilies": "Local stability, attractor count, visible oscillation and regenerative appearance do not establish useful memory or preserved function. Distinct basins can exist despite matching local derivatives.",
+      "keyFalsifier": "No state can be selectively written/read, apparent recovery preserves morphology but loses the task, or success disappears with unseen perturbations and damage locations.",
+      "noveltyScope": "Strong operational bridge from ALife to control and memory; source reports an illustrative nonlinear-memory demonstration rather than a general material realization.",
+      "descriptor": {
+        "objectLevel": "artificial-life function",
+        "causalLever": "finite perturbation and state transition",
+        "readout": "write/read accuracy and recovery"
+      },
+      "priority": "core",
+      "evidenceStatus": "source-reported toy-model distinction"
+    },
+    {
+      "id": "M24",
+      "title": "Causal structures, interaction grammars and ALife ecologies",
+      "sourceMessageIds": [
+        "d1418e34-4e6c-4899-acec-3ee3485d36fd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+          "role": "assistant",
+          "quote": "The thing to mine is not just the oscillators."
+        }
+      ],
+      "mechanism": "Identify predictively distinct mobile structures and context-dependent interactions, including slow variables controlling when subsystems exchange phase or information. Test reusable interaction rules rather than visual novelty.",
+      "distinctionFromAdjacentFamilies": "Persistent moving shapes need not be computational tokens; environment-induced context and a transferable rule must be separated from trajectory coincidence. Ecological appearance and causal coupling are different.",
+      "keyFalsifier": "Interaction outcomes do not repeat under controlled timing/context, apparent tokens fail intervention tests, or the learned grammar predicts no held-out collisions or collective responses.",
+      "noveltyScope": "Extends cited causal-state and Flow-Lenia precedents into intervention-based mechanism search; the slow-state coupling example is explicitly hypothetical.",
+      "descriptor": {
+        "objectLevel": "artificial-life organization",
+        "causalLever": "controlled encounter and adaptive coupling",
+        "readout": "interaction-rule generalization"
+      },
+      "priority": "supporting",
+      "evidenceStatus": "proposal"
+    },
+    {
+      "id": "M25",
+      "title": "Compile ALife mechanisms into minimal physical models",
+      "sourceMessageIds": [
+        "d1418e34-4e6c-4899-acec-3ee3485d36fd"
+      ],
+      "sourceQuotes": [
+        {
+          "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+          "role": "assistant",
+          "quote": "The transfer criterion should be agreement on interventions, not just agreement on eigenvalues."
+        }
+      ],
+      "mechanism": "Reduce a simulated mechanism to the smallest validated state and coupling model, then seek a substrate implementing the same intervention-response family while disclosing energy, locality, symmetry, control and readout requirements.",
+      "distinctionFromAdjacentFamilies": "Numerical simulation, reduced-model agreement and fabricated realization are separate fidelity levels. Similar eigenvalues, animations or morphology do not demonstrate transferable computation.",
+      "keyFalsifier": "A candidate substrate fails held-out interventions, requires unavailable nonlocal/asymmetric/active controls, or has no cost/robustness advantage once interfaces and control are counted.",
+      "noveltyScope": "Most ambitious integration thesis. Source provides candidate mechanism mining and toy demonstrations, not a completed ALife-to-hardware transfer.",
+      "descriptor": {
+        "objectLevel": "cross-domain transfer",
+        "causalLever": "minimal-model reduction and realization",
+        "readout": "held-out intervention equivalence"
+      },
+      "priority": "core",
+      "evidenceStatus": "proposal"
+    }
+  ],
+  "deduplication": [
+    {
+      "aliases": [
+        "QuotientLab",
+        "Gauge Agent",
+        "quotient-aware loop-sensitive QD",
+        "false novelty versus false merging"
+      ],
+      "canonical": "M10",
+      "reason": "Repeated restatements of the same quotient/response counterexample mechanism; do not count each role or branding as a discovery."
+    },
+    {
+      "aliases": [
+        "spectral ecology",
+        "modal biodiversity",
+        "mode phenotype space"
+      ],
+      "canonical": "M06",
+      "reason": "One mode-phenotyping objective; concrete defects, prestress and resonances remain separate causal levers."
+    },
+    {
+      "aliases": [
+        "resolvent repertoire",
+        "transfer-operator archive",
+        "programmable scattering family"
+      ],
+      "canonical": "M11",
+      "reason": "Related response-family objectives; interface normalization and fixed/controlled operating regimes still require distinctions."
+    },
+    {
+      "aliases": [
+        "schema breaker",
+        "descriptor inventor",
+        "residual scientific structure",
+        "Kan transport",
+        "ontology co-evolution"
+      ],
+      "canonical": "M17",
+      "reason": "One audited representation-revision loop with several formal bookkeeping components; no bonus novelty for a new type alone."
+    },
+    {
+      "aliases": [
+        "contradiction resonance",
+        "scientific synapse",
+        "temporary coalition",
+        "cross-modal probe",
+        "strategically coupled agents"
+      ],
+      "canonical": "M18",
+      "reason": "One family of event-driven communication hypotheses with multiple triggers/policy components."
+    },
+    {
+      "aliases": [
+        "Weyl-crossing swarm",
+        "ferromagnetic consensus",
+        "spin-glass hypothesis memory",
+        "cognitive self-stress",
+        "exciton-like agent pair"
+      ],
+      "canonical": "M05",
+      "reason": "Currently metaphors, unless a specified state/dynamics/intervention yields predictions distinct from ordinary modular or adversarial agents."
+    }
+  ],
+  "criticalCorrections": [
+    {
+      "claim": "Laplacian eigenvalue entropy measures representational diversity",
+      "verdict": "Reject as a general certificate",
+      "reason": "Even identical agent fingerprints can induce a complete similarity graph with many nonzero Laplacian eigenvalues. Use centered descriptor/distance fingerprints, a stated normalization and held-out task information."
+    },
+    {
+      "claim": "H^1 detects any cycle of mutually inconsistent agent statements",
+      "verdict": "Requires a defined sheaf/complex and explicit maps",
+      "reason": "A cyclic ranking can be encoded and diagnosed by several constructions; semantic inconsistency alone does not establish a sheaf cohomology result."
+    },
+    {
+      "claim": "All gauge-invariant, stable, nonlinear relations are useful indirect relations",
+      "verdict": "Insufficient",
+      "reason": "The relation can be constant, redundant or irrelevant. Require invariance, sensitivity, conditional predictive value and robustness."
+    },
+    {
+      "claim": "Many descriptor families or typed objects mean many independent physical degrees of freedom",
+      "verdict": "Reject",
+      "reason": "Count effective, task-relevant distinctions, not ontology nodes, redundant coordinates or carrier labels."
+    },
+    {
+      "claim": "High transfer rank, gain or raw repertoire count means better computation",
+      "verdict": "Task conditional",
+      "reason": "One selective channel can be preferable; noise, write/read access, bandwidth, input preservation and total resource cost matter."
+    },
+    {
+      "claim": "A numerical artificial-life or lattice demo establishes material/device or swarm superiority",
+      "verdict": "Reject",
+      "reason": "Use separate evidence gates for model validity, intervention result, matched-budget discovery advantage and physical realization."
+    }
+  ],
+  "highestValueCounterexamplePairs": [
+    {
+      "pair": "Large coordinate change, same response",
+      "families": [
+        "M10",
+        "M17"
+      ],
+      "design": "Transform H, states and interfaces consistently under a declared local rephasing; require invariant task response while raw entries change."
+    },
+    {
+      "pair": "Same spectrum, different fixed-port response",
+      "families": [
+        "M10",
+        "M11"
+      ],
+      "design": "Opposite triangle flux with fixed contacts/labels; explicitly test whether relabeling belongs to the allowed quotient before claiming intrinsic novelty."
+    },
+    {
+      "pair": "Same local derivative, different global memory",
+      "families": [
+        "M12",
+        "M23"
+      ],
+      "design": "Match local linearizations, then apply finite write/switch/recovery pulses across basins and measure readable state."
+    },
+    {
+      "pair": "Small physical change, large useful response",
+      "families": [
+        "M07",
+        "M08",
+        "M09"
+      ],
+      "design": "Targeted defect, prestress or detuning intervention; compare random matched-cost changes and stability/noise controls."
+    },
+    {
+      "pair": "Same appearance, different intervention response",
+      "families": [
+        "M20",
+        "M21",
+        "M24"
+      ],
+      "design": "Hold visual summaries or morphology similar while varying environment/timing; test repeated causal response under new input states."
+    },
+    {
+      "pair": "Different architectures, same effective behavior",
+      "families": [
+        "M06",
+        "M11",
+        "M25"
+      ],
+      "design": "Compare dissimilar substrates after task-preserving coordinate/interface alignment, using a held-out intervention family rather than a single matched spectrum."
+    }
+  ],
+  "recommendedStudySequence": [
+    {
+      "stage": 1,
+      "families": [
+        "M10",
+        "M11"
+      ],
+      "goal": "Freeze equivalence group and held-out port-response evaluation; establish false novelty/false merging controls."
+    },
+    {
+      "stage": 2,
+      "families": [
+        "M17",
+        "M18",
+        "M16"
+      ],
+      "goal": "Compare fixed versus revised descriptors and single/isolated/broadcast/event-driven agents under fully matched budgets and blinded mechanism judgments."
+    },
+    {
+      "stage": 3,
+      "families": [
+        "M20",
+        "M23",
+        "M21",
+        "M24"
+      ],
+      "goal": "Mine a bounded ALife family with intervention-derived function, timing and memory descriptors; preserve multiple causal explanations."
+    },
+    {
+      "stage": 4,
+      "families": [
+        "M25",
+        "M07",
+        "M08",
+        "M09",
+        "M13",
+        "M14",
+        "M15"
+      ],
+      "goal": "Reduce one surviving mechanism and test a feasible substrate; keep hardware performance unclaimed until end-to-end validated."
+    }
+  ],
+  "orthogonalityCaveat": "Families span physical levers, representation tools, agent protocols and transfer objectives. They are complementary across levels, not statistical replicates or pairwise orthogonal mathematical axes. Shared eigenmodels, simulator assumptions and model-family judgments can correlate errors.",
+  "noveltyAudit": "No external literature search performed by this reviewer. Novelty assessments are limited to distinctions and synthesis within the supplied conversation; all claims of new-to-literature novelty remain unverified."
+}

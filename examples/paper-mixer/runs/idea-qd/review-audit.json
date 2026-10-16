@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "idea-qd-review-audit/1",
+  "reviewers": [
+    {
+      "file": "mechanism-review.json",
+      "role": "Mechanisms & equivalence",
+      "method": "Classify causal mechanisms, aliases and discriminating predictions.",
+      "overlap": "Shared parent model family and conversation; mathematical assumptions overlap.",
+      "sha256": "312baedeb5123cf4fe52302cbbbb9e215a63c4c2c2f1c79ccd696386aa02e547"
+    },
+    {
+      "file": "evidence-review.json",
+      "role": "Evidence & feasibility",
+      "method": "Separate source claims from observed results; audit interfaces, controls and confounds.",
+      "overlap": "Shared model family and source; also used numerical linear algebra.",
+      "sha256": "eaa8aba1e8dde7a0c64e39ba8a0a3eabac22c64d99ed3075fc392d750aeef9a9"
+    },
+    {
+      "file": "diversity-review.json",
+      "role": "Diversity & blind spots",
+      "method": "Audit descriptor choices, granularity, overlooked ideas and comparison policy.",
+      "overlap": "Shared model family and source; no independent human or experimental evidence.",
+      "sha256": "16514c762c39db2e830a4e5fe0fa5b8665db806d8e5e88632863f30414ffec33"
+    }
+  ],
+  "protocol": "Separate first passes completed before parent synthesis; exact files frozen by SHA256. No salted preregistration. Parent synthesis makes the final ordinal judgments, not a reviewer vote.",
+  "granularity": {
+    "mechanismFamilies": 25,
+    "evidenceFamilies": 24,
+    "diversityFamilies": 31,
+    "parentFamilies": 33,
+    "explanation": "Different review scopes split and merge topics differently. Counts do not measure model independence or discovered mechanisms."
+  },
+  "synthesisDecisions": [
+    {
+      "issue": "Protocol sufficiency versus exact symmetry",
+      "decision": "Split observational aliasing (I32) from quotient search (I01). Finite response equality is never promoted to full physical equivalence."
+    },
+    {
+      "issue": "Boundary functions versus useful memory",
+      "decision": "Keep I18 separate from I15; count transformations and input preservation independently."
+    },
+    {
+      "issue": "Local schemas and three archives",
+      "decision": "Merge in I04 as one architecture family; retain aliases. Separately test each archive in an ablation."
+    },
+    {
+      "issue": "Prestress and defect changes",
+      "decision": "Group in I08 as controlled susceptibility search, with distinct physical equilibrium and stability requirements."
+    },
+    {
+      "issue": "Attention loop correction",
+      "decision": "Retain I31 as a stretch; pure-gauge factorization algebra is checkable while learned task gain is unknown."
+    },
+    {
+      "issue": "Semantic geometry and physics metaphor",
+      "decision": "Keep I25 and I30 visible but outside the bounded experiment gate until operationalized."
+    }
+  ],
+  "unresolved": [
+    "No exhaustive literature novelty audit; every literatureNovelty remains null.",
+    "Exact granularity and primary niche tags remain analyst judgments.",
+    "No randomized repeated matched-budget experiment estimates multiagent superiority.",
+    "One-axis score changes can alter nominal frontiers; \u00b11 interval checks produce no robust dominance."
+  ]
+}

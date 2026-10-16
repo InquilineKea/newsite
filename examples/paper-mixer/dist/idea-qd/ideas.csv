@@ -1,0 +1,34 @@
+id,title,scope,intervention,specification,discrimination,tractability,leverage,novelty_potential,literature_novelty,evidence,queue_eligible,nominal_niche_frontier,source_message_id
+I01,"Quotient-aware, loop-sensitive QD",representation,coordinate,4,4,4,4,Synthesis,unknown,Toy premise checked here,True,True,07346c46-b406-43a9-afcd-6b3a66298cae
+I02,Transfer-operator repertoires,physical,parameter,4,4,3,4,Synthesis,unknown,Established tools; project untested,True,True,c31c8130-4021-42b0-b0d8-a67b2e1f6dfd
+I03,Counterexample-driven descriptor revision,representation,organization,4,4,4,4,Synthesis,unknown,Proposal; toy motivation checked,True,True,1ee0662d-d339-42f4-bd98-7f7bfcb798cc
+I04,Three coupled archives with local schema forks,search,organization,3,3,3,4,Synthesis,unknown,Proposal,True,False,e1bf708b-cec2-4c52-a9ee-b739871b0457
+I05,Anomaly-triggered temporary agent coalitions,search,organization,4,4,3,4,Synthesis,unknown,Local workflow exists; advantage untested,True,True,e1bf708b-cec2-4c52-a9ee-b739871b0457
+I06,Human similarity feedback with AI scaling,search,organization,4,4,3,3,Known method applied here,unknown,QDHF precedent verified; application proposed,True,False,6c00375a-d72b-4781-8b62-fbed34981a7b
+I07,Complementary modal ecology,physical,parameter,3,3,3,3,Known ingredients; broad synthesis,unknown,Proposal,True,False,0b114b13-b1ad-4f96-9e26-e83c3f6c069f
+I08,"Small defect or prestress, large functional change",physical,parameter,4,4,3,3,Known mechanism; search extension,unknown,Mechanical-network precedent verified,True,False,0b114b13-b1ad-4f96-9e26-e83c3f6c069f
+I09,Rare nonlinear resonance as a gate,physical,input-history,3,4,3,4,Known mechanism; program synthesis,unknown,Proposal,True,False,0b114b13-b1ad-4f96-9e26-e83c3f6c069f
+I10,Non-normal transient and resolvent diversity,physical,input-history,4,4,4,3,Established phenomenon,unknown,Toy premise checked here,True,False,eec630d9-373e-4f09-9ded-3bc94bae2e9a
+I11,Programmable moiré carrier routing,physical,parameter,3,3,1,4,Ambitious synthesis,unknown,Transcript leads; device not checked,False,False,cc443b2e-312b-4d5f-8660-8e88b96b5dbe
+I12,Stateful spin or ferroelectric routing,physical,input-history,3,3,2,4,Known ingredients; integration proposed,unknown,Transcript leads; device not checked,True,False,94cd9848-6e6c-4428-9e45-be3107460a9f
+I13,Cross-carrier conversion primitives,transfer,parameter,2,3,1,4,Stretch,unknown,Proposal,False,False,94cd9848-6e6c-4428-9e45-be3107460a9f
+I14,Intervention-first ALife mechanism mining,transfer,input-history,4,4,3,4,Synthesis,unknown,ALife search precedent; extension proposed,True,True,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I15,Writable/readable memory and basin geometry,physical,input-history,4,4,4,4,Established tools; application synthesis,unknown,Basin premise checked here,True,True,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I16,Time-windowed channels and Floquet response,physical,input-history,3,4,3,4,Known tools; ALife synthesis,unknown,Proposal,True,False,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I17,Verified Koopman features for ALife,representation,input-history,3,4,3,3,Known method applied here,unknown,ResDMD precedent verified,True,False,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I18,Boundary-programmable transformation repertoires,physical,input-history,4,4,4,3,Established question; project application,unknown,ECA protocol executed here,True,False,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I19,Coherent structures and interaction grammars,representation,input-history,3,3,3,4,Known tools; computational extension,unknown,Proposal,True,False,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I20,Adaptive ecologies and history-gated coupling,physical,input-history,3,3,2,4,Synthesis,unknown,Proposal,True,False,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I21,Compile ALife into minimal physical mechanisms,transfer,input-history,3,4,2,4,Ambitious synthesis,unknown,Proposal,True,False,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I22,Topology beyond ordinary localization,physical,parameter,3,4,3,3,Established distinction,unknown,Proposal,True,False,1ee0662d-d339-42f4-bd98-7f7bfcb798cc
+I23,Higher-order coalitions and structured TTC,search,organization,3,4,3,3,Synthesis,unknown,Proposal,True,False,689ed3a3-b2aa-475b-9589-27a736662aed
+I24,Sheaf compatibility and Hodge disagreement,representation,organization,3,3,3,3,Established mathematics; application proposed,unknown,Primary sheaf framework checked,True,False,689ed3a3-b2aa-475b-9589-27a736662aed
+I25,OT or curvature-driven communication routing,search,organization,2,3,2,3,Stretch,unknown,Proposal,False,False,689ed3a3-b2aa-475b-9589-27a736662aed
+I26,Macro-level goal control and error correction,search,organization,2,3,2,4,Stretch,unknown,Conceptual proposal,False,False,689ed3a3-b2aa-475b-9589-27a736662aed
+I27,A calibrated fidelity and resource ladder,transfer,organization,4,4,2,3,Established workflow applied here,unknown,Plan; no DFT or device run,True,True,b866471f-24f0-4cb6-a625-8459efc39c89
+I28,Universality through reverse diversity search,representation,parameter,3,4,4,4,Synthesis,unknown,Proposal,True,True,1ee0662d-d339-42f4-bd98-7f7bfcb798cc
+I29,Evolve selection policies as well as candidates,search,organization,2,3,3,3,Known precedent; extension proposed,unknown,Transcript reading lead,False,False,d1418e34-4e6c-4899-acec-3ee3485d36fd
+I30,Physics-inspired reasoning phase taxonomy,search,organization,1,2,2,3,Analogy,unknown,No literal mechanism demonstrated,False,False,71578d01-d7e9-40d1-b5b1-d690bf626a76
+I31,Gauge-invariant relational correction to attention,representation,coordinate,3,4,2,4,Stretch,unknown,Algebraic distinction; learned benefit untested,True,False,07346c46-b406-43a9-afcd-6b3a66298cae
+I32,Audit observational aliasing beyond exact symmetries,representation,input-history,4,4,4,4,Synthesis,unknown,Restricted-interface counterexample checked here,True,True,eec630d9-373e-4f09-9ded-3bc94bae2e9a
+I33,Adaptive routing with low-exposure exploration probes,search,organization,3,4,3,3,Synthesis,unknown,Proposal; local heuristic implementation exists,True,False,e1bf708b-cec2-4c52-a9ee-b739871b0457

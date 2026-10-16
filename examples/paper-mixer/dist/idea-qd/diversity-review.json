@@ -1,0 +1,901 @@
+{
+  "schema": "idea-diversity-review.v1",
+  "reviewer": "diversity and evaluation-design specialist",
+  "sourceUrl": "https://chatgpt.com/share/6ad1b4fb-7c58-83e8-a3be-dd9b55490a6d",
+  "sourceMessages": 72,
+  "sourceTextCharacters": 273973,
+  "sourceSha256": "8938cdd6ae351dfbdebcc63c33a917b57f590f9404f555461ec35c5b5c67aac5",
+  "independence": "First pass conducted without reading peer reviews. This is a separate context, not an independent model family or independent empirical replication.",
+  "scope": "Complete readable conversation text was reviewed. Redacted plugin outputs and notebook links were not inspected by this specialist; summary claims of five executions and 39 passing checks remain reported claims here.",
+  "mainConclusion": "High conceptual breadth, concentrated operational readiness. Strong near-term experimental portfolio combines task-aware equivalence, protocol sufficiency, functional response, writable memory, and counterexample-driven representation repair. Hardware transfer and semantic geometry remain promising proposals with larger untested assumptions.",
+  "qualityAxes": [
+    {
+      "id": "specification",
+      "question": "Does the source identify an executable object, inputs/outputs, and conditions?",
+      "anchors": {
+        "0": "label only",
+        "1": "metaphor",
+        "2": "partial mechanism",
+        "3": "operational outline",
+        "4": "clear mathematical or experimental contract"
+      }
+    },
+    {
+      "id": "falsifiability",
+      "question": "Can a negative control or discriminating intervention defeat the claim?",
+      "anchors": {
+        "0": "no test",
+        "1": "vague success story",
+        "2": "test possible but underspecified",
+        "3": "clear outcome/alternative",
+        "4": "explicit matched counterfactual or fixed held-out test"
+      }
+    },
+    {
+      "id": "nearTermTractability",
+      "question": "Can a meaningful first test run in an explicit small simulator without unknown material data?",
+      "anchors": {
+        "0": "not implementable",
+        "1": "requires unavailable foundational capability",
+        "2": "substantial modeling/calibration",
+        "3": "bounded implementation feasible",
+        "4": "direct small-model numerical experiment"
+      }
+    },
+    {
+      "id": "discriminationValue",
+      "question": "Would the test distinguish competing explanations or expose a consequential blind spot?",
+      "anchors": {
+        "0": "no scientific comparison",
+        "1": "cosmetic distinction",
+        "2": "useful engineering difference",
+        "3": "meaningful explanatory contrast",
+        "4": "direct counterexample to a plausible insufficient representation or causal account"
+      }
+    }
+  ],
+  "qualityPolicy": {
+    "aggregateScore": null,
+    "pareto": "Use nondomination within a research-object and fidelity stratum. Do not let a simple gauge demonstration dominate a speculative hardware program across incomparable objectives. Preserve weakly supported but potentially distinctive ideas as exploration entries.",
+    "gates": [
+      "traceable source claim",
+      "specified measurable outcome and explicit comparator",
+      "physical/numerical validity appropriate to the claim",
+      "fixed evaluation protocol not tuned to archive descriptors"
+    ],
+    "missingValues": "Unknown evidence/novelty is null or unknown, never zero and never fabricated confidence.",
+    "intervals": "For expert scoring, use adjacent-level ranges or individual reviewer profiles; exact one-point differences should not determine irreversible selection.",
+    "promotion": "Proposal -> executable model test -> robustness -> calibrated material -> physical validation. Promotion requires new evidence, not higher evaluator enthusiasm.",
+    "scoreUncertainty": "Treat each point rating as a reviewer-local central label with a plausible one-level range clipped to 0–4. These are not measured confidence intervals."
+  },
+  "diversityAxes": [
+    {
+      "id": "researchObject",
+      "values": [
+        "matter",
+        "representation",
+        "swarm",
+        "measurement",
+        "transfer"
+      ],
+      "purpose": "What is actually being altered or discovered?"
+    },
+    {
+      "id": "mechanismNiche",
+      "purpose": "Causal response, memory, equivalence, representation repair, communication scheduling, transfer, etc.; one primary family plus secondary tags."
+    },
+    {
+      "id": "interventionLogic",
+      "purpose": "Remove irrelevant distinctions, restore missed distinctions, construct useful behavior, discriminate mechanisms, transfer behavior."
+    },
+    {
+      "id": "temporalScope",
+      "values": [
+        "static/linear",
+        "transient",
+        "periodic",
+        "stateful/nonlinear",
+        "adaptive/multiscale"
+      ],
+      "purpose": "Prevents all phenomena from becoming an eigenspectrum."
+    },
+    {
+      "id": "evidenceFidelity",
+      "values": [
+        "analogy",
+        "specified proposal",
+        "executed ideal model",
+        "robust numerical model",
+        "calibrated material",
+        "physical experiment"
+      ],
+      "purpose": "Evidence facet/stratum, not a reward for prestige."
+    },
+    {
+      "id": "substrateDomain",
+      "purpose": "Mechanical, photonic, electronic, magnetic, cellular automaton, agent software. Use as facet only unless a substrate changes causal primitives or resource constraints."
+    }
+  ],
+  "dedupRules": [
+    "Merge aliases, rhetorical restatements, agent-role names, and notebook summaries into their underlying hypothesis/test.",
+    "Keep a candidate separate when its intervention, predicted observable, causal alternative, invariance contract, or resource model changes.",
+    "Do not merge gauge equivalence, restricted-protocol indistinguishability, approximate functional equivalence, and different physical realizations of a shared reduced mechanism.",
+    "Do not count many coordinates as independent diversity dimensions; test redundancy after conditioning on known descriptors.",
+    "Store broad programs as parent nodes; specific hypotheses are child entries so a vision is not repeatedly counted through its examples.",
+    "Retain both tiny-structure/large-behavior and large-structure/same-behavior pair searches. Neither is guaranteed to be more novel."
+  ],
+  "lowSalienceHighInformation": [
+    "protocol-alias",
+    "writable-memory",
+    "universality-reverse",
+    "temporal-channels",
+    "local-forks",
+    "matched-budget"
+  ],
+  "balancedFirstPortfolio": [
+    "task-aware-quotient",
+    "protocol-alias",
+    "nonnormal-response",
+    "basin-memory",
+    "writable-memory",
+    "event-coalitions",
+    "descriptor-revision",
+    "mechanism-transfer"
+  ],
+  "coverageLimits": [
+    "This is coverage of one conversation, not the field or all scientifically possible niches.",
+    "The 31 mechanism/program families are an explicit review granularity, not an intrinsic diversity count.",
+    "Unvisited grid cells do not establish missing science or valuable search opportunities.",
+    "No objective descriptor rank or independence can be inferred from terminology; effective dimension needs empirical data.",
+    "No completed Sakana AI Scientist run, physical device advantage, multiagent superiority, or validated ALife-to-material transfer is established by this review."
+  ],
+  "criticalCorrections": [
+    {
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "messageIndex": 17,
+        "quote": "p_k=\\frac{\\lambda_k}{\\sum_j\\lambda_j}"
+      },
+      "issue": "Laplacian spectral entropy is not a representation-diversity metric: identical agents with dense equal similarities can have a high-rank graph Laplacian. Use centered response fingerprints, predictive residual diversity or calibrated subspace comparisons, with identical-agent negative controls."
+    },
+    {
+      "source": {
+        "messageId": "8daef89e-5aa9-45df-ae57-c5e89d12e597",
+        "messageIndex": 49,
+        "quote": "reward diversity that creates residual scientific structure"
+      },
+      "issue": "An ontology residual depends on the schema/transport model. It is not by itself proof of physical novelty; require newly discriminating observations and complexity controls."
+    },
+    {
+      "source": {
+        "messageId": "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd",
+        "messageIndex": 41,
+        "quote": "r_{\\rm eff}=1"
+      },
+      "issue": "Effective rank is task-conditioned, not a scalar objective to maximize. A selective rank-one router may be more useful than a broad noisy mixer."
+    },
+    {
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "messageIndex": 68,
+        "quote": "a *topological obstruction*"
+      },
+      "issue": "Semantic cyclic disagreement is not automatically a cohomological obstruction; the algebraic state spaces and maps must be defined before that mathematical conclusion."
+    }
+  ],
+  "ideas": [
+    {
+      "id": "task-aware-quotient",
+      "title": "Task-aware equivalence and quotienting",
+      "researchObject": "representation",
+      "questionLogic": "remove redundancy",
+      "mechanismNiche": "provenance and equivalence",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "07346c46-b406-43a9-afcd-6b3a66298cae",
+        "messageIndex": 21,
+        "quote": "The fixed port labels matter"
+      },
+      "dedupAndBoundary": "Merge Gauge Agent, quotient verifier, local rephasing dedup, and coordinate-copy elimination. A basis change is redundant only when interfaces and observables transform consistently.",
+      "nextDiscriminatingTest": "Compare raw and transformed models with fixed versus jointly transformed ports; retain an explicit equivalence contract.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "loop-sensitive-relations",
+      "title": "Invariant loop descriptors beyond eigenvalues",
+      "researchObject": "representation",
+      "questionLogic": "restore missing distinctions",
+      "mechanismNiche": "spectral aliasing",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "07346c46-b406-43a9-afcd-6b3a66298cae",
+        "messageIndex": 21,
+        "quote": "identical eigenvalue spectra but opposite routing behavior"
+      },
+      "dedupAndBoundary": "Do not count gauge flux, chirality, Wilson loops, and relational correction as four discoveries in the same U(1) model. They are features/interventions within one mechanism family.",
+      "nextDiscriminatingTest": "Match spectra while reversing flux and measure fixed-port scattering; test relabeling/time-reversal contracts separately.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "protocol-alias",
+      "title": "Limited protocols can hide distinct behavior",
+      "researchObject": "measurement",
+      "questionLogic": "design discriminating interventions",
+      "mechanismNiche": "measurement sufficiency",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "eec630d9-373e-4f09-9ded-3bc94bae2e9a",
+        "messageIndex": 0,
+        "quote": "an insufficient measurement protocol still merges distinct states"
+      },
+      "dedupAndBoundary": "This is distinct from coordinate equivalence: equality under one test battery does not imply physical equivalence. Notebook execution is reported in text, not independently verified by this review.",
+      "nextDiscriminatingTest": "Construct train-protocol aliases, then hold out energies, contact strengths, inputs, and perturbation sequences.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "resolvent-repertoire",
+      "title": "Addressable input-output repertoire",
+      "researchObject": "matter",
+      "questionLogic": "measure usable response",
+      "mechanismNiche": "functional repertoire",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd",
+        "messageIndex": 41,
+        "quote": "diversity of independently addressable input-output transformations"
+      },
+      "dedupAndBoundary": "Merge resolvent diversity, scattering repertoire, carrier pathways, and operator archive when no new mechanism or protocol changes. Preserve rank-one selective niches alongside multiplexing.",
+      "nextDiscriminatingTest": "Keep B/C, frequency grid, noise and gain normalization explicit; compare reachable transfer operators under control budget.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "nonnormal-response",
+      "title": "Transient amplification and pseudospectral distinctions",
+      "researchObject": "matter",
+      "questionLogic": "restore missing distinctions",
+      "mechanismNiche": "transient response",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "3a09cb14-aa12-476e-9b23-767b05039b80",
+        "messageIndex": 44,
+        "quote": "nearly identical eigenvalue spectra but radically different pseudospectra"
+      },
+      "dedupAndBoundary": "Distinct from Hermitian loop chirality: non-normality introduces eigenvector geometry and transient behavior. Not every non-Hermitian matrix is non-normal.",
+      "nextDiscriminatingTest": "Hold eigenvalues fixed, vary non-normal coupling, compare finite-time gain and noise sensitivity; use normal-matrix controls.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "basin-memory",
+      "title": "Global basin geometry beyond local derivatives",
+      "researchObject": "matter",
+      "questionLogic": "restore missing distinctions",
+      "mechanismNiche": "nonlinear state",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "similar local relaxation rates but respond very differently to a large disturbance"
+      },
+      "dedupAndBoundary": "Distinct from local resolvent analysis. Same local derivative does not fix switching or recovery.",
+      "nextDiscriminatingTest": "Match local linearization but vary nonlinear terms; map basin and switching boundaries with structured large perturbations.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "writable-memory",
+      "title": "Writable and readable memory",
+      "researchObject": "measurement",
+      "questionLogic": "measure usable response",
+      "mechanismNiche": "input-output memory",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "A slowly changing internal variable is not automatically useful memory."
+      },
+      "dedupAndBoundary": "Merge persistent-mode labels only if write/read tasks coincide. Quiet memory and visible oscillation are not equivalent descriptors.",
+      "nextDiscriminatingTest": "Use randomized input histories, separate write/hold/read phases, held-out readout, delay curves, and decoy persistent dynamics.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "temporal-channels",
+      "title": "Phase-conditioned and time-varying response channels",
+      "researchObject": "matter",
+      "questionLogic": "design discriminating interventions",
+      "mechanismNiche": "temporal gating",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "specific temporal windows in which they become effective"
+      },
+      "dedupAndBoundary": "Floquet/phase response and finite-time response kernels share a temporal-channel family but require different assumptions (periodic vs nonstationary).",
+      "nextDiscriminatingTest": "Compare matched perturbations at multiple trajectory phases; prevent phase misalignment from masquerading as channel diversity.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "koopman-audit",
+      "title": "Verified Koopman observable discovery",
+      "researchObject": "representation",
+      "questionLogic": "measure usable response",
+      "mechanismNiche": "dynamical reduction",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "survives changes in data, resolution, observable dictionary, and prediction horizon"
+      },
+      "dedupAndBoundary": "Do not reward every fitted eigenvalue. Exact Koopman linearity does not make finite fitted coordinates sufficient or causal.",
+      "nextDiscriminatingTest": "Vary dictionaries, sample spacing and prediction horizon; require residual estimates and held-out intervention prediction.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "higher-order-functions",
+      "title": "Nonlinear coincidence and interaction functions",
+      "researchObject": "matter",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "nonlinear interaction",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "Effects that appear only when inputs interact"
+      },
+      "dedupAndBoundary": "Three/four-wave resonances and higher-order response form related but not automatically identical implementations; pure pairwise linear interference is not nonlinear computation.",
+      "nextDiscriminatingTest": "Measure superposition residual y(u+v)-y(u)-y(v)+y(0), timing controls, amplitude scaling, and alternative nonlinear sources.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "ca-transformations",
+      "title": "Environment-programmed cellular-automaton functions",
+      "researchObject": "matter",
+      "questionLogic": "measure usable response",
+      "mechanismNiche": "programmable environment",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "Different surrounding configurations implement different functions"
+      },
+      "dedupAndBoundary": "Transformation counts are protocol-defined. Constant overwrite functions should not count as useful input-preserving computations.",
+      "nextDiscriminatingTest": "Enumerate exact interior input-output truth tables under fixed boundaries/time; separate constant maps, injective maps, and task-useful maps.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "causal-grammar",
+      "title": "Coherent-structure interaction grammar",
+      "researchObject": "representation",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "emergent symbolic objects",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 3,
+        "nearTermTractability": 3,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "identify persistent traveling structures and determine what happens when they meet"
+      },
+      "dedupAndBoundary": "Different-looking particles are not distinct computational primitives until collision interventions separate them.",
+      "nextDiscriminatingTest": "Control collision angle/timing/context and predict outputs on withheld configurations; compare against shape-only clustering.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "adaptive-ecology",
+      "title": "History-gated interaction in heterogeneous ALife",
+      "researchObject": "matter",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "adaptive coupling",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "The thing to mine is not just the oscillators."
+      },
+      "dedupAndBoundary": "Flow-Lenia coexistence and learned selection policy are sources of candidate dynamics, not demonstrated physical transfer.",
+      "nextDiscriminatingTest": "Perturb slow gating state q while holding fast oscillators fixed; test history dependence and isolate environmental mediation.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "mechanism-transfer",
+      "title": "ALife-to-material reduced mechanism transfer",
+      "researchObject": "transfer",
+      "questionLogic": "transfer mechanism",
+      "mechanismNiche": "cross-substrate compilation",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 2,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "messageIndex": 6,
+        "quote": "The transfer criterion should be agreement on interventions, not just agreement on eigenvalues."
+      },
+      "dedupAndBoundary": "Merge compiler-for-quasiparticles, ALife compilation, and ecosystem-of-carriers as vision-level transfer family unless each interface has an explicit resource model.",
+      "nextDiscriminatingTest": "Require held-out write/read/switch/recovery interventions, minimal sufficient states, and end-to-end energy/control/readout costs.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "minimal-perturbation",
+      "title": "Small structural intervention, large functional change",
+      "researchObject": "matter",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "intervention leverage",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "messageIndex": 52,
+        "quote": "Find the smallest perturbations that create genuinely new classes of modes."
+      },
+      "dedupAndBoundary": "Spectral doping, defect engineer, susceptibility, and near-degenerate localization split are related strategies. A large derivative can indicate fragility rather than utility.",
+      "nextDiscriminatingTest": "Normalize perturbation cost physically; compare robustness and desired effect to random, symmetry-breaking and boundary controls.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "universality-reverse",
+      "title": "Large structural difference, same effective behavior",
+      "researchObject": "representation",
+      "questionLogic": "remove redundancy",
+      "mechanismNiche": "mechanism equivalence",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "messageIndex": 52,
+        "quote": "wildly different structures implementing essentially the same effective physics"
+      },
+      "dedupAndBoundary": "Keep distinct from gauge equivalence: different physical realizations may agree only on a bounded task family. This reverse search is easy to overlook.",
+      "nextDiscriminatingTest": "Find different-genotype pairs with close response families, then actively seek a separating intervention and report unresolved equivalence.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "prestress-reconfiguration",
+      "title": "Prestress as reversible modal context switch",
+      "researchObject": "matter",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "reconfigurable mechanics",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "messageIndex": 62,
+        "quote": "prestress changes the modal landscape without changing topology"
+      },
+      "dedupAndBoundary": "Distinct physical intervention from changing link phase. Tensegrity, buckling, self-stress and rotation are not mere aliases, but need separate constitutive models before splitting niches.",
+      "nextDiscriminatingTest": "Evaluate geometric stiffness, equilibrium and stability before/after loading; measure accessible response changes per actuation cost.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "rare-resonance",
+      "title": "Selective rare resonances and protected decoupling",
+      "researchObject": "matter",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "conditional coupling",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "messageIndex": 62,
+        "quote": "selection rules are the program"
+      },
+      "dedupAndBoundary": "Merge sparse, rare, state-dependent and resonance-gated coupling only where intervention mechanism is the same; sparse static graphs alone do not establish temporal gating.",
+      "nextDiscriminatingTest": "Hold component mode diversity fixed; compare dense/static-sparse/context-gated couplings on both task benefit and interference.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "stateful-routing",
+      "title": "Internal-state and persistent-state routing",
+      "researchObject": "matter",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "stateful transport",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 2,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "94cd9848-6e6c-4428-9e45-be3107460a9f",
+        "messageIndex": 36,
+        "quote": "State-dependent routing"
+      },
+      "dedupAndBoundary": "Moiré, spintronics, MXenes, magnonics and excitonics are candidate domains, not five independent functional discoveries. Split a niche when write mechanism, scattering law, or resource constraint differs.",
+      "nextDiscriminatingTest": "Specify actual tunable Hamiltonian/control knobs, retention/readout and conversion losses; compare to conventional transistor/memristor routing.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "descriptor-revision",
+      "title": "Counterexample-triggered descriptor evolution",
+      "researchObject": "representation",
+      "questionLogic": "restore missing distinctions",
+      "mechanismNiche": "representation repair",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "messageIndex": 52,
+        "quote": "separates physically distinct specimens already collapsed together"
+      },
+      "dedupAndBoundary": "Merge descriptor inventor/adversary, schema breaker, flux susceptibility and new-axis proposals into a repair loop, while storing proposed coordinates separately.",
+      "nextDiscriminatingTest": "Freeze the external evaluation protocol; admit descriptor only after held-out added predictive value, robustness and complexity controls.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "schema-residual",
+      "title": "Audited schema transport and genuinely new content",
+      "researchObject": "representation",
+      "questionLogic": "audit provenance",
+      "mechanismNiche": "schema semantics",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 3,
+        "nearTermTractability": 3,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "8daef89e-5aa9-45df-ae57-c5e89d12e597",
+        "messageIndex": 49,
+        "quote": "what can legitimately be carried forward into this richer vocabulary"
+      },
+      "dedupAndBoundary": "Adding a field does not demonstrate a Kan-extension result or scientific discovery. Specify category, functors, relations and universal property if formal claim is made.",
+      "nextDiscriminatingTest": "Use finite typed example with commuting maps and compare transported old records against newly measured information; penalize gratuitous type inflation.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "local-forks",
+      "title": "Competing local schemas and minority mechanisms",
+      "researchObject": "swarm",
+      "questionLogic": "preserve alternatives",
+      "mechanismNiche": "representational pluralism",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "messageIndex": 17,
+        "quote": "local schema forks"
+      },
+      "dedupAndBoundary": "Distinct from private chat history: rival schemas must issue different predictions on the same cases. Final global schema is optional.",
+      "nextDiscriminatingTest": "Keep competing descriptor branches with immutable predictions; assess niche-specific validation instead of forcing a universal winner.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "event-coalitions",
+      "title": "Disagreement-triggered temporary coalitions",
+      "researchObject": "swarm",
+      "questionLogic": "schedule communication",
+      "mechanismNiche": "selective communication",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "messageIndex": 17,
+        "quote": "integration should be anomaly-conditioned, not continuous"
+      },
+      "dedupAndBoundary": "Merge strategically integrated, resonance communication and coalition dissolution as core scheduling family. Value beyond fixed deterministic evidence replay remains unproven.",
+      "nextDiscriminatingTest": "Compare one integrator, broadcast, isolated and event-triggered systems under matched actual tokens, solver calls and opportunities.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "adaptive-router",
+      "title": "Learned information-value routing with exploration probes",
+      "researchObject": "swarm",
+      "questionLogic": "schedule communication",
+      "mechanismNiche": "adaptive communication",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "messageIndex": 17,
+        "quote": "Call these **cross-modal probes**."
+      },
+      "dedupAndBoundary": "VOI, scientific synapses and anti-clique exploration add adaptive-policy claims beyond static event routing. Call a hand-designed proxy a proxy, not information gain.",
+      "nextDiscriminatingTest": "Randomize eligible contact policies; fit on training tasks, evaluate scientific yield on held-out tasks, cost accounting and low-exposure probes.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "three-archives",
+      "title": "Matter, representation and swarm archives",
+      "researchObject": "swarm",
+      "questionLogic": "preserve alternatives",
+      "mechanismNiche": "multilevel search",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 3,
+        "nearTermTractability": 4,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "messageIndex": 17,
+        "quote": "three coupled QD archives"
+      },
+      "dedupAndBoundary": "Useful research architecture, but three archive names do not prove three independent diversity gains. Quality/descriptor contracts differ across archive types.",
+      "nextDiscriminatingTest": "Freeze versions and maintain raw records when descriptors change; independently validate matter behavior, representation utility and policy utility.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "human-metric",
+      "title": "Human comparisons of mechanism-level difference",
+      "researchObject": "measurement",
+      "questionLogic": "learn meaningful distinctions",
+      "mechanismNiche": "preference geometry",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "messageIndex": 52,
+        "quote": "Which pair differs for a deeper physical reason?"
+      },
+      "dedupAndBoundary": "QDHF/QDAIF are prior methods, not novel results merely from using them. Human agreement is a perspective on meaningfulness, not ground truth about physics.",
+      "nextDiscriminatingTest": "Use blinded paired judgments, repeated controls and expert disagreement; compare learned metric to mechanism and response-based baselines.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "matched-budget",
+      "title": "Fixed evaluation and matched compute benchmark",
+      "researchObject": "measurement",
+      "questionLogic": "audit causal advantage",
+      "mechanismNiche": "causal evaluation",
+      "scores": {
+        "specification": 4,
+        "falsifiability": 4,
+        "nearTermTractability": 4,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "07346c46-b406-43a9-afcd-6b3a66298cae",
+        "messageIndex": 21,
+        "quote": "Hold the final evaluation set fixed"
+      },
+      "dedupAndBoundary": "Not a new material mechanism; a high-value methodological enabler. Holdout tests must remain unseen by descriptor and router development.",
+      "nextDiscriminatingTest": "Predeclare paired seeds, actual total tokens, tool/solver costs, model/context differences, time and failure rates; report uncertainty across independent trials.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "higher-order-swarm",
+      "title": "Higher-order communication and interaction architecture",
+      "researchObject": "swarm",
+      "questionLogic": "construct mechanism",
+      "mechanismNiche": "group interaction",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 4,
+        "nearTermTractability": 3,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "messageIndex": 68,
+        "quote": "a three-way reasoning interaction need not equal three pairwise interactions"
+      },
+      "dedupAndBoundary": "Hypergraphs, simplicial complexes and cell complexes differ structurally but are not distinct empirical mechanisms until implemented update rules differ.",
+      "nextDiscriminatingTest": "Match aggregate information and compute; compare group message operation against all pairwise exchanges and serialization controls.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "compatibility-hodge",
+      "title": "Typed compatibility and cycle disagreement diagnostics",
+      "researchObject": "representation",
+      "questionLogic": "audit consistency",
+      "mechanismNiche": "local-global consistency",
+      "scores": {
+        "specification": 3,
+        "falsifiability": 3,
+        "nearTermTractability": 3,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "messageIndex": 68,
+        "quote": "different representations but become consistent after translation"
+      },
+      "dedupAndBoundary": "Sheaf/cosheaf, Hodge cycles and general semantic contradictions cannot be treated interchangeably. A cyclic ranking is not automatically a cohomology obstruction without a specified sheaf.",
+      "nextDiscriminatingTest": "Specify state spaces, maps, inner products and filled faces; test diagnostics on planted compatible, inconsistent and mis-translated examples.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "transport-curvature",
+      "title": "OT alignment and geometry-aware bandwidth",
+      "researchObject": "swarm",
+      "questionLogic": "schedule communication",
+      "mechanismNiche": "alignment cost",
+      "scores": {
+        "specification": 2,
+        "falsifiability": 3,
+        "nearTermTractability": 2,
+        "discriminationValue": 3
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "messageIndex": 68,
+        "quote": "you can align their **relational geometry**"
+      },
+      "dedupAndBoundary": "OT/GW alignment and curvature-based routing are distinct mathematical tools but source does not define semantic costs or verify their value. Curvature sign alone is not a sufficient scheduler.",
+      "nextDiscriminatingTest": "Fit grounded distance/cost models and compare to simple uncertainty/disagreement routing with matched costs; inspect high-curvature counterexamples.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    },
+    {
+      "id": "agency-scale",
+      "title": "Operational multiscale competency",
+      "researchObject": "swarm",
+      "questionLogic": "measure usable response",
+      "mechanismNiche": "collective control",
+      "scores": {
+        "specification": 2,
+        "falsifiability": 3,
+        "nearTermTractability": 2,
+        "discriminationValue": 4
+      },
+      "scoreInterpretation": "Ordinal first-pass judgment of the articulated proposal, not measured performance or publication novelty. Adjacent scores should be treated as uncertain.",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "messageIndex": 68,
+        "quote": "Does communication create a new higher-scale agent, or just a chat room?"
+      },
+      "dedupAndBoundary": "Levin-style agency is an explanatory lens until macro-goal, recovery and recruitment interventions are specified. Avoid counting anthropomorphic terms as behavior.",
+      "nextDiscriminatingTest": "Declare macro-goal control task, disable recruiter/feedback components, compare recoverable disturbances and attainable states to components alone.",
+      "evidenceInThisReview": "source-anchored proposal; execution claims are unverified unless a separate reproducible artifact is inspected",
+      "publicationNovelty": "unknown; comparator-specific prior-art search required"
+    }
+  ]
+}

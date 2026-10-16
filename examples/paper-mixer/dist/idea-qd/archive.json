@@ -1,0 +1,2277 @@
+{
+  "schemaVersion": "idea-qd/1.0",
+  "title": "Computational Matter Zoo — Idea Quality & Diversity",
+  "date": "2026-10-16",
+  "source": {
+    "url": "https://chatgpt.com/share/6ad1b4fb-7c58-83e8-a3be-dd9b55490a6d",
+    "retrieved": "2026-10-16",
+    "messageCount": 72,
+    "sha256": "8938cdd6ae351dfbdebcc63c33a917b57f590f9404f555461ec35c5b5c67aac5",
+    "order": "Hydration extraction order; not asserted chronological",
+    "unavailable": "Redacted plugin outputs and linked sandbox notebook artifacts were not recovered.",
+    "method": "Deduplicated user/assistant message IDs from the public shared-page hydration payload; exact source spans retained per idea."
+  },
+  "method": {
+    "unit": "Canonical research-idea family; includes evaluable ideas and flagged analogies. Not paper or device ranking.",
+    "axes": [
+      {
+        "id": "specification",
+        "name": "Specification",
+        "anchors": [
+          "Metaphor only",
+          "Named direction",
+          "Partial model or protocol",
+          "Variables and intervention identifiable",
+          "Executable contract or fully specified discriminating test"
+        ]
+      },
+      {
+        "id": "discrimination",
+        "name": "Discriminating power",
+        "anchors": [
+          "No contrasting outcome",
+          "General aspiration",
+          "Outcome measure named",
+          "Credible baseline and failure condition",
+          "Counterexample or controlled test isolates the claimed distinction"
+        ]
+      },
+      {
+        "id": "tractability",
+        "name": "Near-term tractability",
+        "anchors": [
+          "No credible execution path",
+          "Needs unresolved platform/calibration",
+          "Requires substantial modeling/infrastructure",
+          "Feasible with bounded additional work",
+          "Can test a central premise cheaply now"
+        ]
+      },
+      {
+        "id": "leverage",
+        "name": "Scientific leverage",
+        "anchors": [
+          "No informative distinction",
+          "One narrow tuning result",
+          "Useful local improvement",
+          "Reusable mechanism or method",
+          "Could revise useful distinctions or connect several validated domains"
+        ]
+      }
+    ],
+    "scoreSemantics": "Parent-synthesized ordinal formulation judgments, not empirical merit. Each axis has ±1 bounded sensitivity, not statistical uncertainty.",
+    "queueGate": "Specification>=3, discrimination>=3, tractability>=2. This admits bounded experiments, not scientifically validated elites.",
+    "frontier": "Pareto comparison on four formulation axes within the same declared niche and queue eligibility; ties preserved. No weighted total or global winner.",
+    "scopeOrder": [
+      "physical",
+      "representation",
+      "search",
+      "transfer"
+    ],
+    "interventionOrder": [
+      "coordinate",
+      "parameter",
+      "input-history",
+      "organization"
+    ],
+    "diversitySemantics": "Primary categorical tags summarize what changes and what is studied. Cross-cutting mechanisms remain visible in full records. Four-by-four grid is a declared display, not a complete universe.",
+    "dedup": "Merge repeated wording and substrate-only variants; split when intervention, response or falsifier differs.",
+    "novelty": "Potential novelty as synthesis, known-method application, stretch or analogy. Literature novelty unknown.",
+    "reviewProtocol": "Three separate first passes; each was instructed not to read peer conclusions. First-pass files frozen with SHA256 before parent synthesis. No salted pre-registration was used for these reviews.",
+    "runtime": "Live review contexts plus Python/NumPy/SciPy controls; no completed Sakana investigation."
+  },
+  "ideas": [
+    {
+      "id": "I01",
+      "title": "Quotient-aware, loop-sensitive QD",
+      "source": {
+        "messageId": "07346c46-b406-43a9-afcd-6b3a66298cae",
+        "extractionIndex": 21,
+        "role": "assistant",
+        "quote": "Removing representational redundancy while preserving loop-sensitive relations",
+        "start": 16545,
+        "end": 16623
+      },
+      "scope": "representation",
+      "intervention": "coordinate",
+      "mechanism": "Task-preserving equivalence",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 4,
+        "leverage": 4
+      },
+      "scoreRationale": "Explicit equivalence tests and low-cost counterexamples make this the strongest anchor. The triangle establishes a failure of spectrum-only descriptors, not a new physical discovery.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Toy premise checked here",
+      "claim": "Ignore local phase conventions while retaining loop relations that change a declared routing task.",
+      "nextTest": "Compare raw, eigenvalue and invariant-response descriptors on new graph families and unseen contacts.",
+      "baseline": "Direct scattering descriptors; canonical gauge fixing; identical proposal pool.",
+      "falsifier": "No gain in distinct robust responses per total solver and inference cost.",
+      "confounds": "Fixed port labels, allowed permutations, time reversal, contacts, energy window and tolerance.",
+      "aliases": [
+        "QuotientLab",
+        "Gauge Agent",
+        "false novelty"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          3,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / coordinate",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I02",
+      "title": "Transfer-operator repertoires",
+      "source": {
+        "messageId": "c31c8130-4021-42b0-b0d8-a67b2e1f6dfd",
+        "extractionIndex": 41,
+        "role": "assistant",
+        "quote": "diversity of independently addressable input-output transformations",
+        "start": 2029,
+        "end": 2096
+      },
+      "scope": "physical",
+      "intervention": "parameter",
+      "mechanism": "Addressable linear response",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 4
+      },
+      "scoreRationale": "The response object is precise and useful across substrates. A repertoire still needs a distance, thresholds and cost budget; resolvent rank alone is not task capacity.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Established tools; project untested",
+      "claim": "Search controllable families C(zI-A)^-1 B rather than mode counts.",
+      "nextTest": "Fix ports and a noise floor; measure distinguishable responses across held-out controls, frequencies and costs.",
+      "baseline": "Spectrum-only search; random controls; conventional programmable network.",
+      "falsifier": "Many response differences collapse below readout noise or require impractical control energy.",
+      "confounds": "Input normalization, bandwidth, operating state, crosstalk and correlated singular channels.",
+      "aliases": [
+        "resolvent repertoire",
+        "operator archive"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / parameter",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I03",
+      "title": "Counterexample-driven descriptor revision",
+      "source": {
+        "messageId": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "extractionIndex": 52,
+        "role": "assistant",
+        "quote": "remains nonredundant after conditioning on existing descriptors",
+        "start": 6534,
+        "end": 6597
+      },
+      "scope": "representation",
+      "intervention": "organization",
+      "mechanism": "Predictive schema expansion",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 4,
+        "leverage": 4
+      },
+      "scoreRationale": "This supplies a falsifiable meaning of seeing the previously unseen. Formal residual content is relative to a schema and does not by itself establish useful scientific novelty.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal; toy motivation checked",
+      "claim": "Promote a descriptor only when it predicts consequential distinctions missed by the frozen schema.",
+      "nextTest": "Split training and final evaluation; propose descriptors on anomalies and test held-out prediction with complexity penalties.",
+      "baseline": "Fixed rich descriptor; random feature additions; manual physicist revision.",
+      "falsifier": "New descriptor adds no held-out information or changes only the scoreboard.",
+      "confounds": "Adaptive overfitting, post-selection, redundant features, noisy derivatives and schema migration.",
+      "aliases": [
+        "schema revision",
+        "residual discovery",
+        "copresheaf"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          3,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "WB"
+      ],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I04",
+      "title": "Three coupled archives with local schema forks",
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "extractionIndex": 17,
+        "role": "assistant",
+        "quote": "three coupled QD archives",
+        "start": 10332,
+        "end": 10357
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Plural scientific representations",
+      "scores": {
+        "specification": 3,
+        "discrimination": 3,
+        "tractability": 3,
+        "leverage": 4
+      },
+      "scoreRationale": "A valuable architecture for preserving dissent, though the causal role of each archive needs separate ablations. More maps do not automatically mean more mechanisms.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Preserve matter, representation and communication-policy alternatives without immediate consensus.",
+      "nextTest": "Freeze candidate data; compare one map with competing maps and versioned schema forks on new tasks.",
+      "baseline": "One validated response archive; fixed ensembles of representations.",
+      "falsifier": "Forks add coordination cost without better prediction or discovery.",
+      "confounds": "Common simulator bias, schema proliferation, migration loss and selection feedback.",
+      "aliases": [
+        "representational speciation",
+        "local schema forks"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I05"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I05",
+      "title": "Anomaly-triggered temporary agent coalitions",
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "extractionIndex": 17,
+        "role": "assistant",
+        "quote": "integration should be anomaly-conditioned, not continuous",
+        "start": 11626,
+        "end": 11683
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Selective communication",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 4
+      },
+      "scoreRationale": "The trigger and coalition output are concrete. Existing deterministic replays and a small live coalition do not estimate strategy superiority.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Local workflow exists; advantage untested",
+      "claim": "Open bounded communication when normalized representations disagree on the same candidate pair.",
+      "nextTest": "Randomize single integrator, broadcast, isolated and event-triggered arms across repeated tasks; match inference, solver calls and tools.",
+      "baseline": "Random messaging and fixed sparse graph at the same message budget.",
+      "falsifier": "Event routing fails to improve frozen held-out discovery or loses after overhead.",
+      "confounds": "Same model errors, token accounting, threshold tuning, shared tools and exploration starvation.",
+      "aliases": [
+        "strategically coupled diversity",
+        "rare agent resonance"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I06",
+      "title": "Human similarity feedback with AI scaling",
+      "source": {
+        "messageId": "6c00375a-d72b-4781-8b62-fbed34981a7b",
+        "extractionIndex": 59,
+        "role": "assistant",
+        "quote": "Which pair represents more genuinely different physics?",
+        "start": 6634,
+        "end": 6689
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Learned diversity metric",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "A sensible established tool rather than an original invention. The novel opportunity is teaching physical equivalence and useful difference, not maximizing approval.",
+      "novelty": "Known method applied here",
+      "literatureNovelty": null,
+      "evidence": "QDHF precedent verified; application proposed",
+      "claim": "Learn mechanism similarity from comparisons, then use calibrated AI judgments between human reviews.",
+      "nextTest": "Blind experts to labels; collect disagreement and repeats; evaluate on held-out interventions and unseen mechanisms.",
+      "baseline": "Hand-crafted response metric; AI-only judgments; random query selection.",
+      "falsifier": "Learned distances track visual language or expert fashion without functional discrimination.",
+      "confounds": "Rater expertise, anchoring, inconsistent comparisons, AI-human calibration and prestige cues.",
+      "aliases": [
+        "QDHF",
+        "QDAIF",
+        "human taste"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "QDHF"
+      ],
+      "dominatedBy": [
+        "I05"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I07",
+      "title": "Complementary modal ecology",
+      "source": {
+        "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "extractionIndex": 62,
+        "role": "assistant",
+        "quote": "diversity of modes",
+        "start": 10539,
+        "end": 10557
+      },
+      "scope": "physical",
+      "intervention": "parameter",
+      "mechanism": "Coexisting dynamical sectors",
+      "scores": {
+        "specification": 3,
+        "discrimination": 3,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "The ambition is broad and physically meaningful. An additive modal-diversity sum is currently underspecified and may double-count frequency, lifetime and localization.",
+      "novelty": "Known ingredients; broad synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Co-design extended, localized, rotational and long-lived modes with selective usable couplings.",
+      "nextTest": "Use one mechanical model with fixed actuators; test transport and write/read tasks alongside stability.",
+      "baseline": "Single-task optimizer and mode-count maximization under equal constraints.",
+      "falsifier": "Added modes are inaccessible, unstable or do not enlarge the usable task repertoire.",
+      "confounds": "Rigid-body zero modes, degeneracy, incompatible objectives and correlated descriptors.",
+      "aliases": [
+        "modal biodiversity",
+        "spectral ecology",
+        "Kagome",
+        "MXenes"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / parameter",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I02",
+        "I08",
+        "I22"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I08",
+      "title": "Small defect or prestress, large functional change",
+      "source": {
+        "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "extractionIndex": 62,
+        "role": "assistant",
+        "quote": "prestress changes the modal landscape without changing topology",
+        "start": 7873,
+        "end": 7936
+      },
+      "scope": "physical",
+      "intervention": "parameter",
+      "mechanism": "Susceptibility and allostery",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "Strong physical precedent makes this tractable. High response per tiny change can be a fragility metric rather than an engineering benefit.",
+      "novelty": "Known mechanism; search extension",
+      "literatureNovelty": null,
+      "evidence": "Mechanical-network precedent verified",
+      "claim": "Find bounded structural or prestress interventions that switch a useful response while retaining stability.",
+      "nextTest": "Sweep perturbation size with matched random defects; check response, stability margin and fabrication tolerance.",
+      "baseline": "Random bond removal; standard sensitivity optimization.",
+      "falsifier": "Gains vanish away from instability or within realistic noise and tolerances.",
+      "confounds": "Units of perturbation norm, critical fragility, buckling, damping and eigenvector sign/basis ambiguity.",
+      "aliases": [
+        "spectral doping",
+        "modal susceptibility",
+        "tensegrity"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / parameter",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "ALLOSTERY"
+      ],
+      "dominatedBy": [
+        "I02"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I09",
+      "title": "Rare nonlinear resonance as a gate",
+      "source": {
+        "messageId": "0b114b13-b1ad-4f96-9e26-e83c3f6c069f",
+        "extractionIndex": 62,
+        "role": "assistant",
+        "quote": "selection rules are the program",
+        "start": 6915,
+        "end": 6946
+      },
+      "scope": "physical",
+      "intervention": "input-history",
+      "mechanism": "Conditional nonlinear mixing",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 4
+      },
+      "scoreRationale": "Potentially distinctive function with a clear falsifier. Frequency matching alone does not establish a nonzero interaction or an AND gate.",
+      "novelty": "Known mechanism; program synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Couple otherwise separate sectors only for chosen joint inputs, frequencies or amplitudes.",
+      "nextTest": "Simulate a specified three-mode nonlinear system; measure truth table, off-target leakage, detuning and noise.",
+      "baseline": "Always-coupled linear mixer and equal-energy single inputs.",
+      "falsifier": "Output appears for single inputs or disappears under small detuning at useful power.",
+      "confounds": "Energy source, symmetry selection rules, nonlinear coefficient magnitudes and unwanted resonances.",
+      "aliases": [
+        "three-wave gate",
+        "rare coupling"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I15"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I10",
+      "title": "Non-normal transient and resolvent diversity",
+      "source": {
+        "messageId": "eec630d9-373e-4f09-9ded-3bc94bae2e9a",
+        "extractionIndex": 0,
+        "role": "assistant",
+        "quote": "Non-normal dynamics",
+        "start": 1995,
+        "end": 2014
+      },
+      "scope": "physical",
+      "intervention": "input-history",
+      "mechanism": "Transient amplification",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 4,
+        "leverage": 3
+      },
+      "scoreRationale": "A clean counterexample to eigenvalue sufficiency. Our two-state illustration checks the phenomenon; useful computation and hardware realization remain separate.",
+      "novelty": "Established phenomenon",
+      "literatureNovelty": null,
+      "evidence": "Toy premise checked here",
+      "claim": "Equal eigenvalues can hide different finite-time gains and input-output sensitivity.",
+      "nextTest": "Compare stable matrices with identical spectra, then score useful signal/noise task performance under normalized inputs.",
+      "baseline": "Normal matrix with same eigenvalues and same allowed energy budget.",
+      "falsifier": "Gain amplifies noise or saturates without task benefit.",
+      "confounds": "Choice of norm and units, B/C interfaces, physical energy supply and nonlinear saturation.",
+      "aliases": [
+        "pseudospectra",
+        "non-Hermitian dynamics"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          3,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I15"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I11",
+      "title": "Programmable moiré carrier routing",
+      "source": {
+        "messageId": "cc443b2e-312b-4d5f-8660-8e88b96b5dbe",
+        "extractionIndex": 33,
+        "role": "assistant",
+        "quote": "What moiré landscape makes the electrons naturally implement it?",
+        "start": 10766,
+        "end": 10830
+      },
+      "scope": "physical",
+      "intervention": "parameter",
+      "mechanism": "Band-structure routing",
+      "scores": {
+        "specification": 3,
+        "discrimination": 3,
+        "tractability": 1,
+        "leverage": 4
+      },
+      "scoreRationale": "High potential leverage but a weak first hackathon target. The broad device stack lacks a calibrated model and performance comparison.",
+      "novelty": "Ambitious synthesis",
+      "literatureNovelty": null,
+      "evidence": "Transcript leads; device not checked",
+      "claim": "Use gates, twist-induced potentials and contacts to select internal-state-dependent routing channels.",
+      "nextTest": "First specify one continuum/tight-binding model and realistic contact/disorder distribution; validate selective transmission.",
+      "baseline": "Ordinary gate-defined electron optics and photonic routing at matched constraints.",
+      "falsifier": "The effect requires inaccessible controls or vanishes with contacts and disorder.",
+      "confounds": "Temperature, twist inhomogeneity, interactions, dephasing, contact selectivity and fabrication.",
+      "aliases": [
+        "moiré routing layer",
+        "electronic FPGA"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          0,
+          2
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": false,
+      "niche": "physical / parameter",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I02"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I12",
+      "title": "Stateful spin or ferroelectric routing",
+      "source": {
+        "messageId": "94cd9848-6e6c-4428-9e45-be3107460a9f",
+        "extractionIndex": 36,
+        "role": "assistant",
+        "quote": "State-dependent routing",
+        "start": 8061,
+        "end": 8084
+      },
+      "scope": "physical",
+      "intervention": "input-history",
+      "mechanism": "Internal-state memory gate",
+      "scores": {
+        "specification": 3,
+        "discrimination": 3,
+        "tractability": 2,
+        "leverage": 4
+      },
+      "scoreRationale": "Statefulness gives a different function from a static scattering matrix. Co-locating memory and routing has costs that the transcript has not quantified.",
+      "novelty": "Known ingredients; integration proposed",
+      "literatureNovelty": null,
+      "evidence": "Transcript leads; device not checked",
+      "claim": "Store a persistent state that selects subsequent signal pathways.",
+      "nextTest": "Choose one explicit state variable; test write/read retention, switching, fatigue and energy in a calibrated model.",
+      "baseline": "Stateless router plus external memory and controller.",
+      "falsifier": "Equivalent function is cheaper or more reliable with separated memory and routing.",
+      "confounds": "Retention-write tradeoff, hysteresis, read disturbance, thermal drift and control overhead.",
+      "aliases": [
+        "spintronics",
+        "ferroelectric moiré",
+        "magnetic texture"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I09",
+        "I15",
+        "I16"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I13",
+      "title": "Cross-carrier conversion primitives",
+      "source": {
+        "messageId": "94cd9848-6e6c-4428-9e45-be3107460a9f",
+        "extractionIndex": 36,
+        "role": "assistant",
+        "quote": "one physical representation can be converted into another",
+        "start": 14868,
+        "end": 14925
+      },
+      "scope": "transfer",
+      "intervention": "parameter",
+      "mechanism": "Heterogeneous transduction",
+      "scores": {
+        "specification": 2,
+        "discrimination": 3,
+        "tractability": 1,
+        "leverage": 4
+      },
+      "scoreRationale": "Potentially orthogonal to simple routing, but the catalogue is not yet one executable research hypothesis.",
+      "novelty": "Stretch",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Transfer information among charge, spin, valley, exciton, photon or magnon channels with a useful interface.",
+      "nextTest": "Select exactly two carriers and a measurable transducer; measure conversion efficiency, noise and bandwidth.",
+      "baseline": "Established separate transducer chain.",
+      "falsifier": "Conversion losses and added controls dominate any computational benefit.",
+      "confounds": "Incompatible scales, baths, impedance, reciprocity, quantum/classical distinctions and readout.",
+      "aliases": [
+        "carrier biodiversity",
+        "hybrid quasiparticles"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          1,
+          3
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          0,
+          2
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": false,
+      "niche": "transfer / parameter",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I14",
+      "title": "Intervention-first ALife mechanism mining",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "The object worth archiving is therefore not just an organism or a matrix",
+        "start": 6878,
+        "end": 6950
+      },
+      "scope": "transfer",
+      "intervention": "input-history",
+      "mechanism": "Response-based ALife search",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 4
+      },
+      "scoreRationale": "One of the strongest long-term directions. Its novelty lies in the intervention-based synthesis and transfer test, not the existence of automated ALife search.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "ALife search precedent; extension proposed",
+      "claim": "Mine reproducible memory, recovery and conditional response mechanisms rather than appearance alone.",
+      "nextTest": "Search one simulator using visual novelty versus held-out intervention signatures, matching evaluation cost.",
+      "baseline": "ASAL-style visual descriptors; random rules; direct task optimizer.",
+      "falsifier": "Response descriptors fail to yield stable distinct mechanisms beyond appearance baselines.",
+      "confounds": "Seed, boundary, update convention, visualization bias and external control supplied by simulator.",
+      "aliases": [
+        "Computational Matter Zoo",
+        "response search"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "transfer / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "ASAL"
+      ],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I15",
+      "title": "Writable/readable memory and basin geometry",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "A slowly changing internal variable is not automatically useful memory",
+        "start": 12339,
+        "end": 12409
+      },
+      "scope": "physical",
+      "intervention": "input-history",
+      "mechanism": "Nonlinear state retention",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 4,
+        "leverage": 4
+      },
+      "scoreRationale": "High information per experiment. Equal local Jacobians need not imply equal global basins; our illustration confirms only that premise, not a memory device.",
+      "novelty": "Established tools; application synthesis",
+      "literatureNovelty": null,
+      "evidence": "Basin premise checked here",
+      "claim": "Separate persistent activity from a state that inputs can write, outputs can read, and perturbations do not erase.",
+      "nextTest": "Use separate write, delay, distractor, read and reset phases; test held-out histories and noise.",
+      "baseline": "Linear fading memory and bistable state with identical local derivative where feasible.",
+      "falsifier": "Persistent state cannot be written/read reliably or carries no information about inputs.",
+      "confounds": "Readout capacity, hidden forcing, basin sampling, saturation and selective reporting.",
+      "aliases": [
+        "Hankel singular values",
+        "attractor basins",
+        "recovery"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          3,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "IPC"
+      ],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I16",
+      "title": "Time-windowed channels and Floquet response",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "channels that are mostly closed",
+        "start": 9867,
+        "end": 9898
+      },
+      "scope": "physical",
+      "intervention": "input-history",
+      "mechanism": "Trajectory-dependent response",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 4
+      },
+      "scoreRationale": "This can reveal a genuine blind spot of stationary spectra. Floquet methods require periodic behavior; general trajectories require time-varying kernels.",
+      "novelty": "Known tools; ALife synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Detect channels open at specific phases or times along moving or periodic patterns.",
+      "nextTest": "Measure phase-conditioned perturbation kernels and predict new timing-dependent responses.",
+      "baseline": "Stationary average transfer function; randomized intervention times.",
+      "falsifier": "Time-conditioned model fails out of sample or adds no discrimination beyond state.",
+      "confounds": "Phase registration, nonstationarity, trajectory alignment, finite-amplitude perturbations and state leakage.",
+      "aliases": [
+        "Floquet modes",
+        "phase response",
+        "finite-time kernels"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I15"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I17",
+      "title": "Verified Koopman features for ALife",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "This feature survives changes in data, resolution, observable dictionary",
+        "start": 11361,
+        "end": 11433
+      },
+      "scope": "representation",
+      "intervention": "input-history",
+      "mechanism": "Observable-space reduction",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "Useful representation candidate with explicit verification. Linear operator notation does not guarantee a finite exact reduction of nonlinear dynamics.",
+      "novelty": "Known method applied here",
+      "literatureNovelty": null,
+      "evidence": "ResDMD precedent verified",
+      "claim": "Accept spectral observables only when residual and held-out response tests support them.",
+      "nextTest": "Vary dictionaries, resolution, horizons and seeds; compare intervention prediction and residuals.",
+      "baseline": "Linearization, delay embedding and direct finite-time response estimator.",
+      "falsifier": "Modes disappear with dictionaries or fail response predictions.",
+      "confounds": "Spectral pollution, hidden state, finite samples, continuous spectrum and uncontrolled inputs.",
+      "aliases": [
+        "Koopman",
+        "DMD",
+        "ResDMD"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "RESDMD"
+      ],
+      "dominatedBy": [
+        "I32"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I18",
+      "title": "Boundary-programmable transformation repertoires",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "The surrounding material becomes part of the program",
+        "start": 1685,
+        "end": 1737
+      },
+      "scope": "physical",
+      "intervention": "input-history",
+      "mechanism": "Environment-selected functions",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 4,
+        "leverage": 3
+      },
+      "scoreRationale": "A particularly clean ALife starting point. Our exhaustive 256-rule toy protocol is new here and is not a reproduction of the source notebook or the full published study.",
+      "novelty": "Established question; project application",
+      "literatureNovelty": null,
+      "evidence": "ECA protocol executed here",
+      "claim": "Count which input-output functions a region can perform under different surrounding initial states.",
+      "nextTest": "Enumerate small rules with explicit boundary/time/input protocol; separately score bijectivity, information and noise.",
+      "baseline": "Random rules; high transformation count without input preservation.",
+      "falsifier": "Large repertoires consist mostly of constant or indistinguishable functions.",
+      "confounds": "Region size, evolving versus clamped environment, time horizon and input prior.",
+      "aliases": [
+        "transformational complexity",
+        "ECA repertoire"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          3,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "TC"
+      ],
+      "dominatedBy": [
+        "I15"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I19",
+      "title": "Coherent structures and interaction grammars",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "local causal-state work discovers domains, coherent structures, and interactions",
+        "start": 13341,
+        "end": 13421
+      },
+      "scope": "representation",
+      "intervention": "input-history",
+      "mechanism": "Predictive particle-like organization",
+      "scores": {
+        "specification": 3,
+        "discrimination": 3,
+        "tractability": 3,
+        "leverage": 4
+      },
+      "scoreRationale": "A different route from spectra to computational primitives. Particle-like patterns are not literal quantum quasiparticles.",
+      "novelty": "Known tools; computational extension",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Find predictively distinct traveling structures and test their collision logic as reusable operations.",
+      "nextTest": "Identify structures on training trajectories; intervene on timing and context and test a held-out interaction table.",
+      "baseline": "Shape tracking; raw-state predictors; chance encounter statistics.",
+      "falsifier": "Particle labels do not predict interaction outcomes beyond raw states.",
+      "confounds": "Coarse graining, temporal windows, observer-dependent labels and untested contexts.",
+      "aliases": [
+        "local causal states",
+        "interaction logic"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I32"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I20",
+      "title": "Adaptive ecologies and history-gated coupling",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "The thing to mine is not just the oscillators",
+        "start": 15401,
+        "end": 15446
+      },
+      "scope": "physical",
+      "intervention": "input-history",
+      "mechanism": "Adaptive interaction rules",
+      "scores": {
+        "specification": 3,
+        "discrimination": 3,
+        "tractability": 2,
+        "leverage": 4
+      },
+      "scoreRationale": "Broader than a static modal zoo and worth preserving as a separate niche. The proposed slow-variable model is currently schematic.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Search coexisting organizations whose slow state controls when they exchange influence.",
+      "nextTest": "Use causal perturbations of the proposed slow variable; measure conditional coupling and preserved independent function.",
+      "baseline": "Fixed coupling with matched mean interaction strength; common-input controls.",
+      "falsifier": "Apparent gating is explained by common forcing, density or measurement phase.",
+      "confounds": "Ecological context, mass conservation, latent state, nonlocal rules and external energy.",
+      "aliases": [
+        "Flow-Lenia ecology",
+        "adaptive coupling"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I09",
+        "I15",
+        "I16"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I21",
+      "title": "Compile ALife into minimal physical mechanisms",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "The transfer criterion should be agreement on interventions",
+        "start": 19842,
+        "end": 19901
+      },
+      "scope": "transfer",
+      "intervention": "input-history",
+      "mechanism": "Mechanism reduction and realization",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 2,
+        "leverage": 4
+      },
+      "scoreRationale": "High potential novelty as an integrated experiment. A matching animation or eigenvalue spectrum is not mechanism transfer or hardware advantage.",
+      "novelty": "Ambitious synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Reduce an ALife behavior to a minimal dynamical model, then realize its tested intervention responses in another substrate.",
+      "nextTest": "Fit on one intervention family; test new histories, damage and noise in source and reduced target with an explicit resource ledger.",
+      "baseline": "Black-box emulator; standard reservoir; simple recurrent dynamical system.",
+      "falsifier": "Transfer succeeds only on training traces or requires unavailable nonlocal controls.",
+      "confounds": "Identifiability, reduction fidelity, control/readout energy, bandwidth and substrate calibration.",
+      "aliases": [
+        "mechanism compiler",
+        "transferable dynamical atlas"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "transfer / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I14"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I22",
+      "title": "Topology beyond ordinary localization",
+      "source": {
+        "messageId": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "extractionIndex": 52,
+        "role": "assistant",
+        "quote": "distinguishes real topology from ordinary localization",
+        "start": 2330,
+        "end": 2384
+      },
+      "scope": "physical",
+      "intervention": "parameter",
+      "mechanism": "Protected versus accidental response",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "A necessary skeptical track. Localization or a visually striking edge mode alone does not establish topology.",
+      "novelty": "Established distinction",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Preserve robust boundary or defect behaviors only when the claimed invariant and perturbation class justify protection.",
+      "nextTest": "Compare topological and nontopological localized controls under symmetry-preserving and symmetry-breaking disorder.",
+      "baseline": "Ordinary defect mode with matched frequency/localization.",
+      "falsifier": "Robustness is reproduced without topology or disappears within the claimed protected class.",
+      "confounds": "Boundary conditions, finite size, gap closing, symmetry, non-Hermitian conventions and actuator coupling.",
+      "aliases": [
+        "topology skeptic",
+        "protected channels"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "physical / parameter",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I02",
+        "I08"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I23",
+      "title": "Higher-order coalitions and structured TTC",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "extractionIndex": 68,
+        "role": "assistant",
+        "quote": "a three-way reasoning interaction need not equal three pairwise interactions",
+        "start": 2795,
+        "end": 2871
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Interaction arity",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "The hypothesis is testable once hyperedge semantics are explicit. Drawing a filled triangle does not create an irreducible multiway interaction.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Test whether a joint context enables functions unavailable to matched pairwise exchanges.",
+      "nextTest": "Construct tasks with known multiway dependencies; compare hyperedge and pairwise protocols under matched tokens, rounds and tools.",
+      "baseline": "Pairwise relay with equal total information; single integrator.",
+      "falsifier": "Equal information pairwise communication matches performance and cost.",
+      "confounds": "Hidden broadcast, context length, nonlinear aggregator and incomparable communication budgets.",
+      "aliases": [
+        "hypergraphs",
+        "simplicial TTC",
+        "message passing"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I05",
+        "I06"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I24",
+      "title": "Sheaf compatibility and Hodge disagreement",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "extractionIndex": 68,
+        "role": "assistant",
+        "quote": "Can these local beliefs be consistently reconciled?",
+        "start": 7036,
+        "end": 7087
+      },
+      "scope": "representation",
+      "intervention": "organization",
+      "mechanism": "Local-to-global constraints",
+      "scores": {
+        "specification": 3,
+        "discrimination": 3,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "Useful formal machinery when the mathematical objects exist. A preference cycle alone is not automatically a cohomological obstruction; H1 nonzero does not mean no global section.",
+      "novelty": "Established mathematics; application proposed",
+      "literatureNovelty": null,
+      "evidence": "Primary sheaf framework checked",
+      "claim": "Encode explicit translations or restrictions and distinguish inconsistency from representational mismatch.",
+      "nextTest": "Start with finite symbolic constraints with known satisfying assignments; test localization and compare plain constraint solving.",
+      "baseline": "SAT/constraint graph; weighted residual checks; majority voting.",
+      "falsifier": "Topological score gives no useful diagnosis beyond simpler constraints or depends on arbitrary embedding.",
+      "confounds": "Choice of stalks/maps/filled faces, inequality versus vector constraints and semantic embedding validity.",
+      "aliases": [
+        "sheaves",
+        "cosheaves",
+        "Hodge flow",
+        "persistent disagreement"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [
+        "SHEAF"
+      ],
+      "dominatedBy": [
+        "I03"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I25",
+      "title": "OT or curvature-driven communication routing",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "extractionIndex": 68,
+        "role": "assistant",
+        "quote": "routing itself becomes",
+        "start": 11639,
+        "end": 11661
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Metric routing policy",
+      "scores": {
+        "specification": 2,
+        "discrimination": 3,
+        "tractability": 2,
+        "leverage": 3
+      },
+      "scoreRationale": "Interesting policy variants, but OT distance is not automatically semantic work and curvature does not directly measure information value. Keep separate diagnostics in implementation.",
+      "novelty": "Stretch",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Allocate communication using a calibrated hypothesis-space transport cost or graph bottleneck diagnostic.",
+      "nextTest": "Define the cost/graph precisely; randomize equal-budget communication and measure held-out task benefit.",
+      "baseline": "Shortest path, uncertainty-triggered and random sparse routing.",
+      "falsifier": "Curvature or transport adds computation without improving scientific yield.",
+      "confounds": "Arbitrary semantic ground metric, sign conventions, degree effects and positive curvature as false redundancy proxy.",
+      "aliases": [
+        "Wasserstein",
+        "Gromov-Wasserstein",
+        "Ricci scheduler"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          1,
+          3
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": false,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I04",
+        "I05",
+        "I06",
+        "I23",
+        "I33"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I26",
+      "title": "Macro-level goal control and error correction",
+      "source": {
+        "messageId": "689ed3a3-b2aa-475b-9589-27a736662aed",
+        "extractionIndex": 68,
+        "role": "assistant",
+        "quote": "communication is not automatically collective intelligence",
+        "start": 13341,
+        "end": 13399
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Multiscale collective control",
+      "scores": {
+        "specification": 2,
+        "discrimination": 3,
+        "tractability": 2,
+        "leverage": 4
+      },
+      "scoreRationale": "A worthwhile functional test. The proposed ratio of goal-space sizes is undefined without measures and does not establish a new cognitive individual.",
+      "novelty": "Stretch",
+      "literatureNovelty": null,
+      "evidence": "Conceptual proposal",
+      "claim": "Ask whether a collective can retain a macro-level goal under perturbations through adaptive division of labor.",
+      "nextTest": "Specify macro-variable and success region; disable recruitment/control and perturb subagents under matched resources.",
+      "baseline": "Fixed team and centralized controller.",
+      "falsifier": "Performance is fully explained by extra resources or one controlling component.",
+      "confounds": "Anthropomorphism, goal attribution, hidden human correction and incomparable goal spaces.",
+      "aliases": [
+        "Levin-style agency",
+        "collective competency"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          1,
+          3
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": false,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I04",
+        "I05"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I27",
+      "title": "A calibrated fidelity and resource ladder",
+      "source": {
+        "messageId": "b866471f-24f0-4cb6-a625-8459efc39c89",
+        "extractionIndex": 30,
+        "role": "assistant",
+        "quote": "promising results must climb a",
+        "start": 1452,
+        "end": 1482
+      },
+      "scope": "transfer",
+      "intervention": "organization",
+      "mechanism": "Model-to-substrate validation",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 2,
+        "leverage": 3
+      },
+      "scoreRationale": "Essential to the project, though availability depends on calibration and tools. NumPy calculation alone cannot supply material-specific parameters or phase diagrams.",
+      "novelty": "Established workflow applied here",
+      "literatureNovelty": null,
+      "evidence": "Plan; no DFT or device run",
+      "claim": "Move candidates from cheap models to calibrated simulation and experiment while preserving uncertainty and costs.",
+      "nextTest": "Preselect random and elite candidates for higher-fidelity validation; estimate ranking transfer and failure modes.",
+      "baseline": "Cheap-model-only selection; random validation; standard multifidelity optimizer.",
+      "falsifier": "Toy elites fail systematically at higher fidelity or total validation cost erases search gains.",
+      "confounds": "Selection bias, uncertain force constants/hoppings, model discrepancy, solver error and failed validations.",
+      "aliases": [
+        "DFT",
+        "Thermo-Calc",
+        "FEM",
+        "NEGF",
+        "cost per primitive"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "transfer / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I28",
+      "title": "Universality through reverse diversity search",
+      "source": {
+        "messageId": "1ee0662d-d339-42f4-bd98-7f7bfcb798cc",
+        "extractionIndex": 52,
+        "role": "assistant",
+        "quote": "which discovers **universality**",
+        "start": 7760,
+        "end": 7792
+      },
+      "scope": "representation",
+      "intervention": "parameter",
+      "mechanism": "Many realizations, shared function",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 4,
+        "leverage": 4
+      },
+      "scoreRationale": "An overlooked counterweight to novelty search. Failure under richer tests is informative; finite behavioral agreement must not be called universal physical equivalence.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal",
+      "claim": "Search structurally distant systems with indistinguishable tested responses, alongside nearby systems with large response changes.",
+      "nextTest": "Fit response-matched pairs on training inputs; distinguish them with new ports, frequencies and histories.",
+      "baseline": "Random structurally distant pairs and standard model reduction.",
+      "falsifier": "Equivalence breaks immediately under modest new interventions or is caused by a blind interface.",
+      "confounds": "Task-scoped equivalence versus exact conjugacy, coarse response tolerance and inaccessible state.",
+      "aliases": [
+        "reverse search",
+        "large change same behavior"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          3,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / parameter",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I29",
+      "title": "Evolve selection policies as well as candidates",
+      "source": {
+        "messageId": "d1418e34-4e6c-4899-acec-3ee3485d36fd",
+        "extractionIndex": 6,
+        "role": "assistant",
+        "quote": "evolving how search selects candidates",
+        "start": 18982,
+        "end": 19020
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Meta-selection",
+      "scores": {
+        "specification": 2,
+        "discrimination": 3,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "Distinct from changing descriptors or agent messaging. This remains an underdeveloped lead rather than a worked algorithm in the source.",
+      "novelty": "Known precedent; extension proposed",
+      "literatureNovelty": null,
+      "evidence": "Transcript reading lead",
+      "claim": "Adapt the balance between diversification and fitness using a policy that transfers across task families.",
+      "nextTest": "Train selection on some worlds and test unseen worlds with equal evaluation budgets.",
+      "baseline": "Fixed MAP-Elites, novelty search, random and hand-tuned mixtures.",
+      "falsifier": "Meta-policy fails transfer or consumes its apparent gain in training cost.",
+      "confounds": "Meta-overfitting, benchmark leakage, reward definition and amortization horizon.",
+      "aliases": [
+        "Selecting for Selection",
+        "selection-policy evolution"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          1,
+          3
+        ],
+        "discrimination": [
+          2,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": false,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I04",
+        "I05",
+        "I06",
+        "I23",
+        "I33"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I30",
+      "title": "Physics-inspired reasoning phase taxonomy",
+      "source": {
+        "messageId": "71578d01-d7e9-40d1-b5b1-d690bf626a76",
+        "extractionIndex": 65,
+        "role": "assistant",
+        "quote": "tensegrity-style phase transitions in reasoning",
+        "start": 15708,
+        "end": 15755
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Analogy requiring operationalization",
+      "scores": {
+        "specification": 1,
+        "discrimination": 2,
+        "tractability": 2,
+        "leverage": 3
+      },
+      "scoreRationale": "Useful ideation pressure but currently the weakest scientific formulation. Ferromagnetic, Weyl, exciton and tensor labels do not yet define separate validated computational mechanisms.",
+      "novelty": "Analogy",
+      "literatureNovelty": null,
+      "evidence": "No literal mechanism demonstrated",
+      "claim": "Use physical analogies to propose measurable coordination regimes rather than infer them from terminology.",
+      "nextTest": "Choose one analogy, define state/update/control/order parameter, then test a predicted transition against null processes.",
+      "baseline": "Ordinary modular graph or state machine with the same resources.",
+      "falsifier": "No distinct prediction survives replacing the physics vocabulary with a generic model.",
+      "confounds": "Category errors, entropy without specified measure, tensor rank versus diversity and unsupported phase-transition language.",
+      "aliases": [
+        "spin-glass swarm",
+        "Weyl-crossing swarm",
+        "tensor diversity",
+        "quasiparticle agents"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          0,
+          2
+        ],
+        "discrimination": [
+          1,
+          3
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": false,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I04",
+        "I05",
+        "I06",
+        "I23",
+        "I33"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I31",
+      "title": "Gauge-invariant relational correction to attention",
+      "source": {
+        "messageId": "07346c46-b406-43a9-afcd-6b3a66298cae",
+        "extractionIndex": 21,
+        "role": "assistant",
+        "quote": "small relational correction channel",
+        "start": 17154,
+        "end": 17189
+      },
+      "scope": "representation",
+      "intervention": "coordinate",
+      "mechanism": "Irreducible loop relations",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 2,
+        "leverage": 4
+      },
+      "scoreRationale": "The factorization Uij=gamma_i conjugate(gamma_j) forces every loop product to one. This identifies an algebraic missing capability, not a proven neural architecture gain.",
+      "novelty": "Stretch",
+      "literatureNovelty": null,
+      "evidence": "Algebraic distinction; learned benefit untested",
+      "claim": "Add a bounded loop-feature channel that carries relations not expressible as node-phase differences.",
+      "nextTest": "Compare pure-gauge factorized links with independent loop links on known cycle-dependent tasks at matched parameters and compute.",
+      "baseline": "Softmax attention, efficient attention and extra nonrelational features with equal capacity.",
+      "falsifier": "Loop channel adds no held-out task benefit or destroys intended scaling.",
+      "confounds": "Cycle enumeration, phase wrapping, feature leakage, orientation conventions and complexity versus input-output linearity.",
+      "aliases": [
+        "quotient recurrent reasoning",
+        "loop-corrected attention"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          1,
+          3
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / coordinate",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I01"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I32",
+      "title": "Audit observational aliasing beyond exact symmetries",
+      "source": {
+        "messageId": "eec630d9-373e-4f09-9ded-3bc94bae2e9a",
+        "extractionIndex": 0,
+        "role": "assistant",
+        "quote": "an insufficient measurement protocol still merges distinct states",
+        "start": 2596,
+        "end": 2661
+      },
+      "scope": "representation",
+      "intervention": "input-history",
+      "mechanism": "Protocol sufficiency",
+      "scores": {
+        "specification": 4,
+        "discrimination": 4,
+        "tractability": 4,
+        "leverage": 4
+      },
+      "scoreRationale": "This is a separate and easily overlooked idea: removing coordinate copies and discovering blind measurements solve opposite errors. Our two-state restricted-interface example verifies only a concrete alias.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Restricted-interface counterexample checked here",
+      "claim": "Treat finite response equality as a provisional statement and actively search for a discriminating intervention.",
+      "nextTest": "Find models matching training measurements; open a new port, energy or input history and measure whether the equivalence breaks.",
+      "baseline": "Fixed narrow protocol; random additional measurements; exact known-symmetry controls.",
+      "falsifier": "Adaptive measurement adds no discrimination per cost or falsely separates known equivalents.",
+      "confounds": "Noise threshold, hidden states, selected operating conditions and inaccessible interventions.",
+      "aliases": [
+        "protocol alias",
+        "measurement sufficiency"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          3,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          3,
+          4
+        ],
+        "leverage": [
+          3,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "representation / input-history",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [],
+      "nominalNicheFrontier": true,
+      "robustlyDominatedBy": []
+    },
+    {
+      "id": "I33",
+      "title": "Adaptive routing with low-exposure exploration probes",
+      "source": {
+        "messageId": "e1bf708b-cec2-4c52-a9ee-b739871b0457",
+        "extractionIndex": 17,
+        "role": "assistant",
+        "quote": "cross-modal probes",
+        "start": 7208,
+        "end": 7226
+      },
+      "scope": "search",
+      "intervention": "organization",
+      "mechanism": "Learned coupling policy",
+      "scores": {
+        "specification": 3,
+        "discrimination": 4,
+        "tractability": 3,
+        "leverage": 3
+      },
+      "scoreRationale": "Distinct from deciding when one coalition opens. Updating scientific synapses needs measured gains and exploration; a disagreement-per-cost score is not calibrated Bayesian information gain.",
+      "novelty": "Synthesis",
+      "literatureNovelty": null,
+      "evidence": "Proposal; local heuristic implementation exists",
+      "claim": "Adapt communication strengths from validated scientific yield while probing specialists that current distances would ignore.",
+      "nextTest": "Compare fixed, adaptive and adaptive-with-probes policies on new task families, charge all routing and evaluation costs.",
+      "baseline": "Random low-exposure probes and fixed sparse communication with equal budget.",
+      "falsifier": "Updates overfit the training tasks or probes outperform the learned score alone.",
+      "confounds": "Delayed credit, proxy value-of-information, shared feedback loops and selection bias.",
+      "aliases": [
+        "scientific synapses",
+        "cross-modal probes"
+      ],
+      "scoreIntervals": {
+        "specification": [
+          2,
+          4
+        ],
+        "discrimination": [
+          3,
+          4
+        ],
+        "tractability": [
+          2,
+          4
+        ],
+        "leverage": [
+          2,
+          4
+        ]
+      },
+      "queueEligible": true,
+      "niche": "search / organization",
+      "noveltyConfidence": "provisional; no exhaustive literature search",
+      "literatureRefs": [],
+      "dominatedBy": [
+        "I05",
+        "I06"
+      ],
+      "nominalNicheFrontier": false,
+      "robustlyDominatedBy": []
+    }
+  ],
+  "references": [
+    {
+      "id": "QDHF",
+      "title": "Quality Diversity through Human Feedback",
+      "url": "https://proceedings.mlr.press/v235/ding24h.html",
+      "checkedScope": "Primary abstract: human similarity judgments can learn diversity metrics. Does not validate this materials application."
+    },
+    {
+      "id": "WB",
+      "title": "Self-Revising Discovery Systems for Science, v2",
+      "url": "https://arxiv.org/abs/2606.01444v2",
+      "checkedScope": "Primary abstract checked: typed copresheaf states, Kan transport, protein and fiber-network cases. Schema-relative novelty is not a general priority claim."
+    },
+    {
+      "id": "ASAL",
+      "title": "Automating the Search for Artificial Life with Foundation Models",
+      "url": "https://arxiv.org/abs/2412.17799",
+      "checkedScope": "Primary abstract checked: foundation-model-guided ALife search exists. Intervention transfer is our proposed extension."
+    },
+    {
+      "id": "RESDMD",
+      "title": "Residual dynamic mode decomposition: robust and verified Koopmanism",
+      "url": "https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/residual-dynamic-mode-decomposition-robust-and-verified-koopmanism/67F1513D7E0E182E8094ABCD3E5E94ED",
+      "checkedScope": "Primary methods excerpt checked: residual tests address spurious Koopman modes."
+    },
+    {
+      "id": "TC",
+      "title": "Investigating Transformational Complexity",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2021/7501405",
+      "checkedScope": "Primary publication metadata checked. Local ECA protocol is illustrative and separately defined."
+    },
+    {
+      "id": "ALLOSTERY",
+      "title": "Designing allostery-inspired response in mechanical networks",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5347623/",
+      "checkedScope": "Primary abstract and significance checked: small bond changes tune distant mechanical responses, including physical networks."
+    },
+    {
+      "id": "IPC",
+      "title": "Information Processing Capacity of Dynamical Systems",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3400147/",
+      "checkedScope": "Primary abstract and methods excerpt checked: useful input-history functions differ from mere activity. Local ECA entropy is not this capacity measure."
+    },
+    {
+      "id": "SHEAF",
+      "title": "Toward a Spectral Theory of Cellular Sheaves",
+      "url": "https://arxiv.org/abs/1808.01513",
+      "checkedScope": "Primary abstract checked: explicit cellular sheaves and Hodge Laplacians; no validation of unrestricted semantic analogies."
+    }
+  ],
+  "reviews": [
+    {
+      "file": "mechanism-review.json",
+      "sha256": "312baedeb5123cf4fe52302cbbbb9e215a63c4c2c2f1c79ccd696386aa02e547"
+    },
+    {
+      "file": "evidence-review.json",
+      "sha256": "eaa8aba1e8dde7a0c64e39ba8a0a3eabac22c64d99ed3075fc392d750aeef9a9"
+    },
+    {
+      "file": "diversity-review.json",
+      "sha256": "16514c762c39db2e830a4e5fe0fa5b8665db806d8e5e88632863f30414ffec33"
+    }
+  ],
+  "limitations": [
+    "This is an evaluated map of a finite conversation, not a generated discovery campaign or a comprehensive literature review.",
+    "Thirty-three canonical families are a human/AI analytical granularity choice. Aliases, substrate variants and repeated assistant answers are merged; useful submechanisms may be split in future versions.",
+    "Three complementary reviewers used separate first-pass contexts but share the parent model family and source data. Role specialization does not establish statistical independence. No human ratings were collected.",
+    "Four 0–4 formulation axes are distinct questions, not proven statistically orthogonal factors. They are ordinal judgments with ±1 sensitivity bands, not confidence intervals, calibrated probabilities or measured scientific quality.",
+    "Novelty potential concerns the proposed synthesis. Literature novelty remains null for every idea; primary-source checks establish selected precedents, not absence of prior art.",
+    "The source reports a 7,400-word notebook, five demos and 39 checks. Its sandbox files were not recovered here; those reported numbers are not counted as verified. New local controls use their own explicit protocols.",
+    "The Sakana AI Scientist installation did not complete an AI investigation in the preceding run. It did not produce these evaluations.",
+    "No physical device, material-specific DFT/thermodynamic calculation, new hardware advantage, or matched-budget multiagent superiority was demonstrated.",
+    "Diversity cell occupancy is conditional on this declared schema and corpus. Empty cells are prompts for inquiry, not proof of undiscovered science.",
+    "Review files preserve first-pass suggestions. Parent synthesis corrects overclaims and reconciles taxonomic choices; reviewer descriptions are not empirical outcomes."
+  ],
+  "shortlist": [
+    {
+      "id": "I01",
+      "reason": "Best executable anchor: test both false novelty and false merging."
+    },
+    {
+      "id": "I03",
+      "reason": "Most useful scientific extension: make new descriptors earn predictive value."
+    },
+    {
+      "id": "I18",
+      "reason": "Best low-cost ALife entry: finite exhaustive transformation maps with explicit protocol."
+    },
+    {
+      "id": "I15",
+      "reason": "Best overlooked control: input-writable and output-readable memory, not persistent activity."
+    },
+    {
+      "id": "I05",
+      "reason": "Best coordination hypothesis: repeated randomized matched-budget tests remain necessary."
+    },
+    {
+      "id": "I21",
+      "reason": "High-upside stretch: one minimal mechanism transferred under held-out interventions."
+    }
+  ],
+  "corrections": [
+    {
+      "claim": "Same spectrum means same function",
+      "correction": "False for fixed interfaces; triangle and non-normal examples supply counterexamples."
+    },
+    {
+      "claim": "Same finite measured response means gauge equivalence",
+      "correction": "Only observational equivalence under that protocol; unobserved states or new interventions can differ."
+    },
+    {
+      "claim": "Laplacian entropy measures representational diversity",
+      "correction": "Fails a six-identical-agent negative control; graph connectivity spectra and representation diversity are separate."
+    },
+    {
+      "claim": "Any new schema residual is new useful science",
+      "correction": "Residual is schema-relative; require added predictive discrimination, robustness and complexity accounting."
+    },
+    {
+      "claim": "Spectra determine mode shapes",
+      "correction": "Eigenvalues alone do not recover eigenvectors. Retain the operator, state/interface and eigenspaces, especially at degeneracy."
+    },
+    {
+      "claim": "Graph cycles automatically imply nonlinear reasoning or cohomological obstruction",
+      "correction": "Specify state spaces, maps, faces and semantics. Hodge decomposition is linear; a sheaf may have nonzero H1 and still global sections."
+    },
+    {
+      "claim": "Orthogonal agents are independent agents",
+      "correction": "Different methods and inputs improve complementarity; shared model, data and solver errors remain."
+    }
+  ],
+  "summary": {
+    "ideaFamilies": 33,
+    "occupiedDeclaredCells": 10,
+    "declaredCells": 16,
+    "queueEligible": 27,
+    "nominalNicheFrontier": 9,
+    "robustlyDominated": 0,
+    "literatureNoveltyEstablished": 0,
+    "humanRatings": 0
+  }
+}

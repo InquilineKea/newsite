@@ -276,3 +276,12 @@ stronger extrapolations. Temporary missingness and overlap-conflict controls
 are clearly labeled synthetic demonstrations and never modify saved facts.
 Passing a screen establishes consistency of the chosen encoding, not a new
 scientific result. Audit fixes and original extracted records are retained.
+
+
+## Idea quality and diversity evaluation
+
+`dist/idea-qd/` evaluates the shared Computational Matter Zoo conversation at `/idea-qd/`: 33 canonical families from 72 deduplicated messages, exact quote spans, four nonaggregated ordinal formulation axes, categorical scope/intervention niches, experiment gates, within-niche nominal Pareto fronts and bounded ±1 sensitivity. Literature novelty remains unknown. Three complementary first-pass reviews are preserved with hashes; they share a model family and source corpus.
+
+`python scripts/build_idea_qd.py` replays the analyst-authored map from the frozen `runs/idea-qd/messages.json` and frozen review files. `python scripts/idea_qd_controls.py` executes dimensionless triangle/gauge/port controls, restricted-interface aliasing, non-normal transient gains, a local-derivative/global-basin counterexample, all 256 ECA rules under the explicit finite boundary protocol, and a failed Laplacian entropy proxy negative control. These are new illustrations, not a reproduction of the inaccessible source notebook. No physical-device or swarm-superiority claim is made.
+
+Validation: `python scripts/test_idea_qd.py` and `node scripts/test_idea_qd_ui.mjs`. The browser preview capability is unavailable; actual-data DOM units exercise filtering, niche selection, axis ordering, comparison, source rendering and load failures. Existing raw result hashes remain unchanged. Downloadable report, JSON, CSV, controls, source, review audit and reproduction bundle are included on the page.

@@ -1,0 +1,17 @@
+{
+  "artifact_id": "36b5048a-b312-49b6-8e89-bb0daf3e0871",
+  "artifact_type": "IdeaQualityDiversityEvaluation",
+  "producer_agent": "Builder",
+  "skill_used": "matter-zoo-idea-qd",
+  "schema_version": "1.0",
+  "investigation_id": "matter-zoo-idea-qd-2026-10-16",
+  "timestamp": "2026-10-16T05:39:12.567425+00:00",
+  "content_hash": "61063cbaf581a6a89b7edd8b105d99882cd15f5a59c39c3161af3fe108d58aca",
+  "parent_artifact_ids": [
+    "5cf725cd-f94a-4fcb-987a-8b13077d4a51",
+    "f45094c8-2de5-447c-8a6d-7a9ee9d8f380"
+  ],
+  "result_quality": "ok",
+  "needs": [],
+  "summary": "33 source-anchored idea families, four separate formulation axes, three complementary same-family first-pass reviews, 13 numerical assertions and explicit novelty/evidence limits. No scientific or strategy superiority claim."
+}

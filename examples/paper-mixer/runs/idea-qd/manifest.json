@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "idea-qd-manifest/1",
+  "siteUrl": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/idea-qd/",
+  "sourceUrl": "https://chatgpt.com/share/6ad1b4fb-7c58-83e8-a3be-dd9b55490a6d",
+  "summary": {
+    "ideaFamilies": 33,
+    "occupiedDeclaredCells": 10,
+    "declaredCells": 16,
+    "queueEligible": 27,
+    "nominalNicheFrontier": 9,
+    "robustlyDominated": 0,
+    "literatureNoveltyEstablished": 0,
+    "humanRatings": 0
+  },
+  "files": [
+    {
+      "path": "archive.json",
+      "sha256": "2c091775a06d27fbfd9ad20157e5890df4543841aeb1e0c496f8d6f4023b2b2e",
+      "bytes": 82337
+    },
+    {
+      "path": "controls.json",
+      "sha256": "89ec49c083d6ef5f33abb7b48827f92c6078c4210127c86c13320fcd68cefa04",
+      "bytes": 275217
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "54e866964a7c0f5ad04d5ccfeb51a85a7b807f36740ac3ecf56a253e73b3d43b",
+      "bytes": 43980
+    },
+    {
+      "path": "ideas.csv",
+      "sha256": "ad466c0725032c2b81e2a6e3b47e05b227b448697f8e641afb8c4ea79d43cddb",
+      "bytes": 6147
+    },
+    {
+      "path": "messages.json",
+      "sha256": "8938cdd6ae351dfbdebcc63c33a917b57f590f9404f555461ec35c5b5c67aac5",
+      "bytes": 296942
+    },
+    {
+      "path": "review-audit.json",
+      "sha256": "e34d157187e5727391882f61d8ad4d9961598575f9d19e6a919bd8237f616195",
+      "bytes": 3225
+    },
+    {
+      "path": "mechanism-review.json",
+      "sha256": "312baedeb5123cf4fe52302cbbbb9e215a63c4c2c2f1c79ccd696386aa02e547",
+      "bytes": 45913
+    },
+    {
+      "path": "evidence-review.json",
+      "sha256": "eaa8aba1e8dde7a0c64e39ba8a0a3eabac22c64d99ed3075fc392d750aeef9a9",
+      "bytes": 37818
+    },
+    {
+      "path": "diversity-review.json",
+      "sha256": "16514c762c39db2e830a4e5fe0fa5b8665db806d8e5e88632863f30414ffec33",
+      "bytes": 51299
+    }
+  ],
+  "validation": {
+    "numericAssertions": 13,
+    "archiveTests": 7,
+    "domTests": "passed: filters, empty states, frontier gate, per-axis order, compare, source literal text, failure handling",
+    "existingRegressions": "archive and all seven existing route DOM suites passed",
+    "browserQA": "unavailable; not performed"
+  },
+  "limitations": [
+    "Formulation judgments, not measured scientific quality.",
+    "Literature novelty unknown for all ideas.",
+    "Same-family complementary reviewers are not statistically independent.",
+    "No completed Sakana AI investigation, new physical device or measured swarm advantage."
+  ]
+}
