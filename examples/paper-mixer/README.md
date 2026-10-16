@@ -175,3 +175,36 @@ The exporter validates the recorded profiles and produces ordinal rankings,
 CSV, a report, correlation diagnostics and a focused source bundle. It makes
 no model calls and does not infer ratings from source text. The website reads
 its published JSON; it does not launch agents or scientific jobs.
+
+## Paper presheaf: scoped evidence and conditional synthesis
+
+`/presheaf/` factors the 18-paper Buehler corpus into five reading contexts,
+109 source-linked categorical ports and eight explicit cross-paper contracts.
+The projection is curated and lossy; it does not derive an ontology from scores.
+Each fact is namespaced by paper and preserves source scope and reading limits.
+
+The base is a finite discrete variable space K with subset contexts and union
+covers. The product assignment functor E(U) has literal projection restrictions.
+F(U) retains complete assignments that satisfy every declared constraint whose
+full support lies in U. F is a separated presheaf; cross-patch predicates can
+prevent an otherwise compatible family from gluing. A failed selected packet
+does not imply that every global section is absent. Unknown observations are
+partial records and are tested through hypothetical finite completions, never
+treated as observed evidence or total sections.
+
+A separate covariant functor I(U) tracks fixed artifacts with support in U,
+using literal inclusion maps. This is artifact availability, not production or
+a cosheaf. Sheafification on this discrete base can forget the cross-variable
+constraints; it is not a scientific repair operation. No cohomology is computed.
+
+```sh
+node scripts/test_presheaf.mjs --write
+node scripts/test_presheaf_ui.mjs
+python scripts/build_presheaf.py
+```
+
+The bridge view contrasts bounded catalog/contract claims with deliberately
+stronger extrapolations. Temporary missingness and overlap-conflict controls
+are clearly labeled synthetic demonstrations and never modify saved facts.
+Passing a screen establishes consistency of the chosen encoding, not a new
+scientific result. Audit fixes and original extracted records are retained.

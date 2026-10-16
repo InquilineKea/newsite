@@ -1,0 +1,692 @@
+{
+  "date": "2026-10-16",
+  "status": "passed",
+  "formalScope": "Finite-fixture property checks and actual packet regressions; no exhaustive enumeration of the full powerset base and no theorem-prover certification.",
+  "tests": {
+    "identity": 27,
+    "composition": 343,
+    "restrictionClosure": 85,
+    "covariantAvailability": 27,
+    "actualPacketScenarios": 48,
+    "validGluingCounterexample": true,
+    "otherGlobalSectionsPreserved": true,
+    "unknownNotEvidence": true,
+    "malformedCoverRegression": true,
+    "domainLiteralValidation": true
+  },
+  "results": [
+    {
+      "bridgeId": "provenance_revision",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "compatible",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "provenance_revision",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "COPRESHEAF.representation"
+      ],
+      "completions": {
+        "total": 17,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "provenance_revision",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "provenance_revision",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": true,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "provenance_revision",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "COPRESHEAF.representation"
+      ],
+      "completions": {
+        "total": 17,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "provenance_revision",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "conditional_transfer",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "compatible",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "conditional_transfer",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "OLOGS.guarantee"
+      ],
+      "completions": {
+        "total": 4,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "conditional_transfer",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "conditional_transfer",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": true,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "conditional_transfer",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "OLOGS.guarantee"
+      ],
+      "completions": {
+        "total": 4,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "conditional_transfer",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "modal_contract",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "compatible",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "modal_contract",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTAGENTS.response"
+      ],
+      "completions": {
+        "total": 7,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "modal_contract",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "modal_contract",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": true,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "modal_contract",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTAGENTS.response"
+      ],
+      "completions": {
+        "total": 7,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "modal_contract",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "multiscale_failure",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "compatible",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "multiscale_failure",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "COLLAGEN.evidence"
+      ],
+      "completions": {
+        "total": 5,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "multiscale_failure",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "multiscale_failure",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": true,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "multiscale_failure",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "COLLAGEN.evidence"
+      ],
+      "completions": {
+        "total": 5,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "multiscale_failure",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "retrieval_context",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "compatible",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "retrieval_context",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "GRAPHAGENTS.evidence"
+      ],
+      "completions": {
+        "total": 5,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "retrieval_context",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "retrieval_context",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": true,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "retrieval_context",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "GRAPHAGENTS.evidence"
+      ],
+      "completions": {
+        "total": 5,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "retrieval_context",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "executed_calculations",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "compatible",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "executed_calculations",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "ATOMAGENTS.evidence"
+      ],
+      "completions": {
+        "total": 5,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "executed_calculations",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "executed_calculations",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": true,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "executed_calculations",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "ATOMAGENTS.evidence"
+      ],
+      "completions": {
+        "total": 5,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "executed_calculations",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "partial_embodiment",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response"
+      ],
+      "completions": {
+        "total": 28,
+        "accepted": 7,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "partial_embodiment",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response",
+        "STIMULUS.guarantee"
+      ],
+      "completions": {
+        "total": 112,
+        "accepted": 7,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "partial_embodiment",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response"
+      ],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "partial_embodiment",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response"
+      ],
+      "completions": {
+        "total": 28,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "partial_embodiment",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response",
+        "STIMULUS.guarantee"
+      ],
+      "completions": {
+        "total": 112,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "partial_embodiment",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response"
+      ],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "representation_observable",
+      "mode": "bounded",
+      "scenario": "recorded",
+      "status": "compatible",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 1,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "representation_observable",
+      "mode": "bounded",
+      "scenario": "withheld_fact",
+      "status": "unresolved",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "CEPHALO.endpoint"
+      ],
+      "completions": {
+        "total": 2,
+        "accepted": 2,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "representation_observable",
+      "mode": "bounded",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "representation_observable",
+      "mode": "stronger",
+      "scenario": "recorded",
+      "status": "blocked",
+      "isGluingFailure": true,
+      "unknownKeys": [],
+      "completions": {
+        "total": 1,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "representation_observable",
+      "mode": "stronger",
+      "scenario": "withheld_fact",
+      "status": "blocked",
+      "isGluingFailure": false,
+      "unknownKeys": [
+        "CEPHALO.endpoint"
+      ],
+      "completions": {
+        "total": 2,
+        "accepted": 0,
+        "truncated": false
+      }
+    },
+    {
+      "bridgeId": "representation_observable",
+      "mode": "stronger",
+      "scenario": "synthetic_overlap_conflict",
+      "status": "overlap_conflict",
+      "isGluingFailure": false,
+      "unknownKeys": [],
+      "completions": {
+        "total": 0,
+        "accepted": 0,
+        "truncated": false
+      }
+    }
+  ],
+  "browserQA": "Unavailable; no browser QA performed."
+}

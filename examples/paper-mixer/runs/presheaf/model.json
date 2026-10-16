@@ -1,0 +1,4976 @@
+{
+  "schemaVersion": "1.0",
+  "date": "2026-10-16",
+  "title": "Paper Presheaf · Local evidence, scoped synthesis",
+  "description": "A curated finite presheaf over scoped paper facts, with literal restriction maps, cross-paper contract screens and a separate copresheaf of fixed artifact availability.",
+  "mathematics": {
+    "base": "Finite discrete variable space K; contexts are subsets U ⊆ K, with union covers and inclusion arrows. Five topic views group ports for reading; they do not define empirical equivalence.",
+    "eventSheaf": "E(U) = ∏_{k∈U} D_k. Restriction to V⊆U projects an assignment onto V. Compatible complete local assignments merge uniquely in E.",
+    "presheaf": "F(U) contains complete assignments in E(U) satisfying each declared constraint whose full support lies in U. Projection preserves those constraints, so F is a presheaf. Cross-patch constraints can obstruct existence of a glue.",
+    "copresheaf": "I(U) is the set of fixed evidence/contract-definition artifacts with support contained in U. U⊆V gives inclusion I(U)→I(V). This is availability, not artifact generation, empirical confirmation or a cosheaf claim.",
+    "gluing": "Check matching restrictions on overlaps; merge local assignments; then test the joint screen. A fully observed compatible local family can fail to give a section of F on its union. F is separated: uniqueness is inherited from assignments.",
+    "unknown": "null is an unobserved partial record, not a domain value or a mathematical section. Finite completions are hypothetical possibilities, never new evidence. An unresolved packet is not called a certified gluing counterexample.",
+    "sheafification": "For this discrete base, sheafification retains singleton stalk data and can discard cross-variable constraints. It is not a scientifically valid repair button."
+  },
+  "limitations": [
+    "Paper ports are curated, lossy scoped projections from the existing pinned readings, not an automatically learned ontology or a complete interpretation of each paper.",
+    "Restriction maps are literal projections and mathematically checked. Cross-paper material/causal translation maps are candidate interfaces, not verified morphisms; bounded passes describe scoped comparisons or inventories.",
+    "A passed Boolean screen verifies consistency of this encoding and contract. It does not validate causality, physical equivalence, universal novelty or an unperformed scientific experiment.",
+    "A blocked packet does not show the papers contradict or that every global section is impossible. It shows this selected packet cannot satisfy the chosen screen.",
+    "The stronger scope often deliberately requests an unsupported extrapolation. It is displayed to reveal missing interfaces, not to attribute that claim to the authors.",
+    "Withholding and overlap-conflict controls are synthetic demonstrations. They never edit source observations or constitute new experiments.",
+    "PROTOTYPE is abstract-only and FieldPerceiver partially read. Unknown interfaces remain null and may require reading before any scientific test.",
+    "All reader, auditor and coordinator contexts share one model family. No independent scientific reproduction or theorem-prover certification was performed.",
+    "No cohomology groups, sheaf Laplacians, learned restriction maps or statistically independent latent factors are computed."
+  ],
+  "contexts": [
+    {
+      "id": "representation",
+      "label": "Representation and schema",
+      "question": "What entities and relations are admitted, and can that vocabulary change?"
+    },
+    {
+      "id": "interface",
+      "label": "Formal interface and structure",
+      "question": "Which meanings, composition rules or preservation conditions are explicit?"
+    },
+    {
+      "id": "observable",
+      "label": "Dynamics and observables",
+      "question": "What measured, calculated or designed response is actually represented?"
+    },
+    {
+      "id": "coordination",
+      "label": "Discovery coordination",
+      "question": "Who or what selects the next operation, and through which artifact interface?"
+    },
+    {
+      "id": "evidence",
+      "label": "Evidence and claim scope",
+      "question": "Which parts are constructed, executed, benchmarked or physically tested?"
+    }
+  ],
+  "papers": [
+    {
+      "id": "COLLAGEN",
+      "title": "Nature designs tough collagen: Explaining the nanostructure of collagen fibrils",
+      "shortTitle": "Critical lengths in collagen",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/",
+      "version": "PNAS 103(33), 12285–12290, published August 2006",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Stronger adhesion can eventually favor brittle molecular rupture.",
+        "interpretation": "Maximizing bond strength alone need not maximize toughness.",
+        "boundary": "Model mechanics do not establish evolutionary optimization.",
+        "locator": "Figure 2e; Conclusion"
+      },
+      "detail": {
+        "observation": "The slip threshold shifts from roughly 42 nm in pairs to 200 nm in fibrils.",
+        "consequence": "Boundary conditions and confinement change the inferred design scale.",
+        "locator": "Results: Larger Collagen Fibrils"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "COLLAGEN.representation",
+        "COLLAGEN.guarantee",
+        "COLLAGEN.response",
+        "COLLAGEN.organization",
+        "COLLAGEN.evidence",
+        "COLLAGEN.length_context"
+      ]
+    },
+    {
+      "id": "SILK",
+      "title": "Nanoconfinement controls stiffness, strength and mechanical toughness of β-sheet crystals in silk",
+      "shortTitle": "Weak bonds, strong silk",
+      "url": "https://doi.org/10.1038/nmat2704",
+      "version": "Nature Materials 9, 359–367; published online March 14, 2010; author-hosted advance publication PDF",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Smaller crystals can simultaneously improve stiffness, strength and dissipation.",
+        "interpretation": "Weak-bond architecture can overcome constituent weakness.",
+        "boundary": "Nanocrystal behavior is not a complete model of whole silk.",
+        "locator": "Figures 4–5; Discussion"
+      },
+      "detail": {
+        "observation": "Experimental-rate pull-out forces require an estimated sixfold reduction; the transition length survives rate variation.",
+        "consequence": "The robust claim concerns the mechanism and length scale, rather than raw simulated force.",
+        "locator": "Methods: Application of boundary conditions"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "SILK.representation",
+        "SILK.guarantee",
+        "SILK.response",
+        "SILK.organization",
+        "SILK.evidence",
+        "SILK.length_context"
+      ]
+    },
+    {
+      "id": "OLOGS",
+      "title": "Category Theoretic Analysis of Hierarchical Protein Materials and Social Networks",
+      "shortTitle": "Protein–social network ologs",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911",
+      "version": "PLOS ONE 6(9): e23911; published September 8, 2011",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "A slack connection can be functionally invisible until another connection fails.",
+        "interpretation": "The useful abstraction includes conditional function, beyond connectivity.",
+        "boundary": "The social example was deliberately designed to match the protein olog.",
+        "locator": "Figure 3; Analogy section"
+      },
+      "detail": {
+        "observation": "Figure 4 alone omits essential equalities and fiber-product definitions in Tables 1–2.",
+        "consequence": "A similar-looking graph is insufficient to establish the claimed correspondence.",
+        "locator": "Results, discussion immediately following Tables 1–2"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "OLOGS.representation",
+        "OLOGS.guarantee",
+        "OLOGS.response",
+        "OLOGS.organization",
+        "OLOGS.evidence"
+      ]
+    },
+    {
+      "id": "PROTOTYPE",
+      "title": "Categorical prototyping: incorporating molecular mechanisms into 3D printing",
+      "shortTitle": "Categorical 3D prototypes",
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002",
+      "version": "Nanotechnology 27(2): 024002; online November 30, 2015; print January 15, 2016",
+      "readingLevel": "Abstract only",
+      "surprise": {
+        "observation": "The abstract reports examining a twisted physical prototype beyond the original model.",
+        "interpretation": "A faithful partial embodiment may suggest additional questions.",
+        "boundary": "This observation has not been checked against full results.",
+        "locator": "Abstract"
+      },
+      "detail": {
+        "observation": "Only chosen mechanical properties are claimed to be retained.",
+        "consequence": "Geometric resemblance would not warrant assuming all nanoscale properties transfer.",
+        "locator": "Abstract; full-text detail unavailable"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "PROTOTYPE.representation",
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response",
+        "PROTOTYPE.organization",
+        "PROTOTYPE.evidence"
+      ]
+    },
+    {
+      "id": "COPRESHEAF",
+      "title": "Self-Revising Discovery Systems for Science: A Categorical Framework for Agentic Artificial Intelligence",
+      "shortTitle": "Self-revising copresheaves",
+      "url": "https://arxiv.org/html/2606.01444v2",
+      "version": "arXiv:2606.01444v2, 21 August 2026",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Accepted law multiplies log-compliance by slow-mode participation.",
+        "interpretation": "Local softness depends on collective participation.",
+        "boundary": "An admitted product over existing GNM quantities; schema-relative novelty, not universal discovery.",
+        "locator": "§2.5; §4.5 Remark5"
+      },
+      "detail": {
+        "observation": "V2 retains compliance; HEA fatigue replaces the main fiber-network case.",
+        "consequence": "Fiber AIC is supplementary; MDL gain is not categorical discovery cost.",
+        "locator": "§4.6–4.7"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "COPRESHEAF.representation",
+        "COPRESHEAF.guarantee",
+        "COPRESHEAF.response",
+        "COPRESHEAF.organization",
+        "COPRESHEAF.evidence",
+        "COPRESHEAF.runtime_certification"
+      ]
+    },
+    {
+      "id": "STIMULUS",
+      "title": "A Category-Theoretic Framework from Biological Mechanics to Engineered Stimulus-Response Systems",
+      "shortTitle": "Compositional stimulus–response design",
+      "url": "https://arxiv.org/html/2604.26367v2",
+      "version": "Reviewed arXiv:2604.26367v2, 20 August 2026; journal record verified",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Thermal twisting combines two previously tested modules.",
+        "interpretation": "Validated interfaces can generate an additional actuator class.",
+        "boundary": "Direct mechanics also derives it; one recombination demonstrates limited scope.",
+        "locator": "§7 CaseIII"
+      },
+      "detail": {
+        "observation": "Validation measures equilibrium angles, n=3–4 per class.",
+        "consequence": "Transient accuracy and broad manufacturing robustness remain unestablished.",
+        "locator": "§7 Table3; §8"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "STIMULUS.representation",
+        "STIMULUS.guarantee",
+        "STIMULUS.response",
+        "STIMULUS.organization",
+        "STIMULUS.evidence",
+        "STIMULUS.test_scope"
+      ]
+    },
+    {
+      "id": "REPLACE",
+      "title": "Category Theory Based Solution for the Building Block Replacement Problem in Materials Design",
+      "shortTitle": "Building-block replacement",
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf",
+      "version": "Author final manuscript; MIT-hosted 8-page PDF",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Seemingly distant mixtures share a replacement-query schema.",
+        "interpretation": "Reusable relational structure can survive substrate changes.",
+        "boundary": "Aggregation physics remains domain-specific; schema isomorphism does not equal physical equivalence.",
+        "locator": "§2.2"
+      },
+      "detail": {
+        "observation": "Laminate calculation retains only in-plane ABD components.",
+        "consequence": "Out-of-plane replacement requires nonlinear solving and additional constraints.",
+        "locator": "§2.2"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "REPLACE.representation",
+        "REPLACE.guarantee",
+        "REPLACE.response",
+        "REPLACE.organization",
+        "REPLACE.evidence",
+        "REPLACE.test_scope"
+      ]
+    },
+    {
+      "id": "MUSIC",
+      "title": "Materials by Design: Merging Proteins and Music",
+      "shortTitle": "Proteins and music",
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf",
+      "version": "Reviewed MIT-hosted accepted manuscript",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Stronger individual proteins can fail to form fibers.",
+        "interpretation": "Excessive local aggregation can defeat network formation.",
+        "boundary": "Mechanism is reviewed prior experiment/simulation, not proof musical aesthetics predicts materials.",
+        "locator": "From the bottom up; Fig2"
+      },
+      "detail": {
+        "observation": "fMRI assessment and music-to-material improvement are future proposals.",
+        "consequence": "Performed sonification does not establish predictive reverse transfer.",
+        "locator": "Fig5; conclusion"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "MUSIC.representation",
+        "MUSIC.guarantee",
+        "MUSIC.response",
+        "MUSIC.organization",
+        "MUSIC.evidence",
+        "MUSIC.reverse_transfer"
+      ]
+    },
+    {
+      "id": "FIELDPERCEIVER",
+      "title": "FieldPerceiver: Domain agnostic transformer model to predict multiscale physical fields and nonlinear material properties through neural ologs",
+      "shortTitle": "FieldPerceiver",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316",
+      "version": "Materials Today 57, 9–25; 2022 publisher snapshot accessed 2026-10-15",
+      "readingLevel": "Partial main text",
+      "surprise": {
+        "observation": "Occupancy tokens replace image input.",
+        "interpretation": "Attention learns effective relations without supplied constitutive properties.",
+        "boundary": "Fixed A/B vocabulary is not autonomous schema revision.",
+        "locator": "Introduction, building blocks A and B"
+      },
+      "detail": {
+        "observation": "Time dependence and other materials are future extensions.",
+        "consequence": "Domain-agnostic architecture exceeds the demonstrated graphene domain.",
+        "locator": "Conclusions snippet"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "FIELDPERCEIVER.representation",
+        "FIELDPERCEIVER.guarantee",
+        "FIELDPERCEIVER.response",
+        "FIELDPERCEIVER.organization",
+        "FIELDPERCEIVER.evidence",
+        "FIELDPERCEIVER.temporal_validation"
+      ]
+    },
+    {
+      "id": "MECHGPT",
+      "title": "Generative retrieval-augmented ontologic graph and multi-agent strategies for interpretive large language model-based materials design",
+      "shortTitle": "MechGPT + agents",
+      "url": "https://arxiv.org/pdf/2310.19998",
+      "version": "arXiv:2310.19998v1, 30 October 2023; accessed 2026-10-15",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Agents recover from execution errors and save computed outputs.",
+        "interpretation": "This reaches beyond proposal-only automation.",
+        "boundary": "Successful execution does not validate electronic-state assumptions.",
+        "locator": "Table 10, pp 52–58"
+      },
+      "detail": {
+        "observation": "Printed O2 code uses RKS/PBE/STO-3G.",
+        "consequence": "Numerical provenance permits auditing model adequacy.",
+        "locator": "Table 10, pp 53–56"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "MECHGPT.representation",
+        "MECHGPT.guarantee",
+        "MECHGPT.response",
+        "MECHGPT.organization",
+        "MECHGPT.evidence",
+        "MECHGPT.validation_kind"
+      ]
+    },
+    {
+      "id": "SCIAGENTS",
+      "title": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "shortTitle": "SciAgents",
+      "url": "https://arxiv.org/html/2409.05556v1",
+      "version": "arXiv:2409.05556v1, 9 September 2024; accessed 2026-10-15",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Random waypoints introduce less obvious conceptual routes.",
+        "interpretation": "Discovery diversity can come from retrieval topology.",
+        "boundary": "Graph distance does not establish novelty or useful mechanisms.",
+        "locator": "§4.2"
+      },
+      "detail": {
+        "observation": "Novelty checking retrieves three sets of ten abstracts.",
+        "consequence": "A missing match cannot establish priority.",
+        "locator": "§4.6"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "SCIAGENTS.representation",
+        "SCIAGENTS.guarantee",
+        "SCIAGENTS.response",
+        "SCIAGENTS.organization",
+        "SCIAGENTS.evidence",
+        "SCIAGENTS.workflow_evidence",
+        "SCIAGENTS.performance_status"
+      ]
+    },
+    {
+      "id": "CEPHALO",
+      "title": "Cephalo: Multi-Modal Vision-Language Models for Bio-Inspired Materials Analysis and Design",
+      "shortTitle": "Cephalo",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531",
+      "version": "Advanced Functional Materials 34, 2409531; published 5 September 2024; accessed 2026-10-15",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Small adapted models answer quantitative image queries.",
+        "interpretation": "Scientific fine-tuning adds capabilities beyond generic visual description.",
+        "boundary": "Benchmarks do not validate generated architectures physically.",
+        "locator": "§4.6; Figs 31–32"
+      },
+      "detail": {
+        "observation": "Damage is normalized thresholded pixel change, with 90/10 splitting.",
+        "consequence": "Score fidelity depends on visualization and dataset construction.",
+        "locator": "§6, Predicting Crack Dynamics"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "CEPHALO.representation",
+        "CEPHALO.guarantee",
+        "CEPHALO.response",
+        "CEPHALO.organization",
+        "CEPHALO.evidence",
+        "CEPHALO.endpoint"
+      ]
+    },
+    {
+      "id": "HYPERGRAPH",
+      "title": "Higher-Order Knowledge Representations for Agentic Scientific Reasoning",
+      "shortTitle": "Hypergraph reasoning",
+      "url": "https://arxiv.org/html/2601.04878v1",
+      "version": "arXiv:2601.04878v1, 8 January 2026; accessed 2026-10-15",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Extra paths recover chitosan in a proposed PCL–ceria composite.",
+        "interpretation": "Retrieval context changes the proposed mechanism.",
+        "boundary": "Incidence overlap does not prove causal interaction.",
+        "locator": "§2.3; Figs 9, 11"
+      },
+      "detail": {
+        "observation": "Text alternates exact versus minimum shared-node constraints.",
+        "consequence": "Reproduction requires resolving traversal semantics.",
+        "locator": "Fig 8 caption versus §4.4"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "HYPERGRAPH.representation",
+        "HYPERGRAPH.guarantee",
+        "HYPERGRAPH.response",
+        "HYPERGRAPH.organization",
+        "HYPERGRAPH.evidence",
+        "HYPERGRAPH.workflow_evidence",
+        "HYPERGRAPH.relation_semantics"
+      ]
+    },
+    {
+      "id": "PROTAGENTS",
+      "title": "ProtAgents: protein discovery via large language model multi-agent collaborations combining physics and machine learning",
+      "shortTitle": "ProtAgents",
+      "url": "https://arxiv.org/html/2402.04268v1",
+      "version": "arXiv:2402.04268v1 (27 January 2024); journal publication verified separately",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "The Critic repairs malformed data and identifies a failed structural conditioning case.",
+        "interpretation": "Useful scientific workflow supervision extends beyond generating sequences.",
+        "boundary": "Successful conversations do not establish general autonomous reliability.",
+        "locator": "§2.1–2.3; Table 4 discussion"
+      },
+      "detail": {
+        "observation": "ProteinForceGPT is used only for forward predictions; normal modes use ANM.",
+        "consequence": "Computed modes and predicted unfolding forces carry different evidential weight.",
+        "locator": "§4 ProteinForceGPT; Natural Vibrational Frequency Calculations"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "PROTAGENTS.representation",
+        "PROTAGENTS.guarantee",
+        "PROTAGENTS.response",
+        "PROTAGENTS.organization",
+        "PROTAGENTS.evidence",
+        "PROTAGENTS.predicted_unfolding"
+      ]
+    },
+    {
+      "id": "ATOMAGENTS",
+      "title": "AtomAgents: Alloy design and discovery through physics-aware multi-modal multi-agent artificial intelligence",
+      "shortTitle": "AtomAgents",
+      "url": "https://arxiv.org/html/2407.10022v1",
+      "version": "arXiv:2407.10022v1 (13 July 2024)",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "A generated barrier-correlation hypothesis is followed by NEB calculations.",
+        "interpretation": "The contribution includes executing a test, beyond proposing materials.",
+        "boundary": "One simulated alloy system does not establish universal design laws.",
+        "locator": "§2.4, Figures 7–9"
+      },
+      "detail": {
+        "observation": "LAMMPS scripts are human-authored; core-image interpretation needs labeled examples.",
+        "consequence": "Autonomy depends on prepared tools and task-specific contextual support.",
+        "locator": "§2 introductory paragraph; §2.2"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "ATOMAGENTS.representation",
+        "ATOMAGENTS.guarantee",
+        "ATOMAGENTS.response",
+        "ATOMAGENTS.organization",
+        "ATOMAGENTS.evidence",
+        "ATOMAGENTS.validation_kind"
+      ]
+    },
+    {
+      "id": "VIBEGEN",
+      "title": "Agentic End-to-End De Novo Protein Design for Tailored Dynamics Using a Language Diffusion Model",
+      "shortTitle": "VibeGen",
+      "url": "https://arxiv.org/pdf/2502.10173",
+      "version": "arXiv:2502.10173v1 (14 February 2025)",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Different generated folds can satisfy similar vibrational profiles.",
+        "interpretation": "A family of motions can organize design alternatives.",
+        "boundary": "Mode matching does not demonstrate enzymatic function or cellular dynamics.",
+        "locator": "§2, Figure 6; conclusion"
+      },
+      "detail": {
+        "observation": "Target is only the first nontrivial mode’s amplitude, discarding displacement directions.",
+        "consequence": "Matching the descriptor does not recover the full dynamical operator.",
+        "locator": "§2, Equations 1–2"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "VIBEGEN.representation",
+        "VIBEGEN.guarantee",
+        "VIBEGEN.response",
+        "VIBEGEN.organization",
+        "VIBEGEN.evidence",
+        "VIBEGEN.descriptor_information"
+      ]
+    },
+    {
+      "id": "SCIENCECLAW",
+      "title": "Autonomous Agents Coordinating Distributed Discovery Through Emergent Artifact Exchange",
+      "shortTitle": "ScienceClaw + Infinite",
+      "url": "https://arxiv.org/html/2603.14312v1",
+      "version": "arXiv:2603.14312v1 (15 March 2026)",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Agents construct an executable grammar spanning urban growth and grain evolution.",
+        "interpretation": "Analogy becomes an inspectable hypothesis.",
+        "boundary": "Reduced seven-node similarity does not imply shared mechanisms.",
+        "locator": "§3.5, Figures 12–14"
+      },
+      "detail": {
+        "observation": "Schema compatibility can be nonempty input-name/payload-key overlap.",
+        "consequence": "Syntactic compatibility and lineage do not guarantee scientific validity.",
+        "locator": "§5 Schema-Overlap Matching"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "SCIENCECLAW.representation",
+        "SCIENCECLAW.guarantee",
+        "SCIENCECLAW.response",
+        "SCIENCECLAW.organization",
+        "SCIENCECLAW.evidence",
+        "SCIENCECLAW.matching_semantics",
+        "SCIENCECLAW.descriptor_information"
+      ]
+    },
+    {
+      "id": "GRAPHAGENTS",
+      "title": "GraphAgents: Knowledge Graph–Guided Agentic AI for Cross-Domain Materials Design",
+      "shortTitle": "GraphAgents",
+      "url": "https://arxiv.org/html/2602.07491v1",
+      "version": "arXiv:2602.07491v1 (7 February 2026)",
+      "readingLevel": "Main methods and results",
+      "surprise": {
+        "observation": "Direct graph exploration beats the full pipeline on judged novelty.",
+        "interpretation": "Added grounding can trade novelty for evidential context.",
+        "boundary": "Judged novelty is not tested materials improvement.",
+        "locator": "§2.3, Table 3"
+      },
+      "detail": {
+        "observation": "Self-referential and context-poor edges can dominate shortest paths.",
+        "consequence": "A short relational route can provide weak scientific support.",
+        "locator": "§2.2, Figure 8 discussion"
+      },
+      "contexts": [
+        "representation",
+        "interface",
+        "observable",
+        "coordination",
+        "evidence"
+      ],
+      "ports": [
+        "GRAPHAGENTS.representation",
+        "GRAPHAGENTS.guarantee",
+        "GRAPHAGENTS.response",
+        "GRAPHAGENTS.organization",
+        "GRAPHAGENTS.evidence",
+        "GRAPHAGENTS.workflow_evidence"
+      ]
+    }
+  ],
+  "ports": [
+    {
+      "id": "COLLAGEN.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "critical_lengths",
+      "confidence": "high",
+      "locator": "Results: Critical Molecular Length Scales; Figure 5",
+      "evidence": "Critical-length ratios organize mechanisms across molecular and fibril scales.",
+      "boundary": "Atomistically parameterized two-dimensional hydrated fibril reference; critical-length mechanics do not reconstruct living tissue.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "COLLAGEN"
+    },
+    {
+      "id": "COLLAGEN.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "none",
+      "confidence": "high",
+      "locator": "Equations 1–6; Methods",
+      "evidence": "Analytical scaling laws provide no central formal composition constraint.",
+      "boundary": "Atomistically parameterized two-dimensional hydrated fibril reference; critical-length mechanics do not reconstruct living tissue.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "COLLAGEN"
+    },
+    {
+      "id": "COLLAGEN.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "scalar_response",
+      "confidence": "high",
+      "locator": "Figures 2–4",
+      "evidence": "Loading-induced slip propagation and rupture are central analyzed responses.",
+      "boundary": "Atomistically parameterized two-dimensional hydrated fibril reference; critical-length mechanics do not reconstruct living tissue.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "COLLAGEN"
+    },
+    {
+      "id": "COLLAGEN.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "manual",
+      "confidence": "high",
+      "locator": "Methods: Modeling Procedure",
+      "evidence": "The scientist specifies the multiscale analysis and parameter sweeps.",
+      "boundary": "Atomistically parameterized two-dimensional hydrated fibril reference; critical-length mechanics do not reconstruct living tissue.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "COLLAGEN"
+    },
+    {
+      "id": "COLLAGEN.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physics_simulation",
+      "confidence": "high",
+      "locator": "Methods: Reactive Mesoscopic Model; Figures 2–4",
+      "evidence": "Atomistically parameterized mesoscopic simulations test predictions; no new fabrication.",
+      "boundary": "Atomistically parameterized two-dimensional hydrated fibril reference; critical-length mechanics do not reconstruct living tissue.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "COLLAGEN"
+    },
+    {
+      "id": "SILK.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "confinement_geometry",
+      "confidence": "high",
+      "locator": "Figures 2–5",
+      "evidence": "Crystal size and strain distribution explain collective bond performance.",
+      "boundary": "Nanocrystal models and external comparisons do not constitute new measurements of individual silk nanocrystals.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "SILK"
+    },
+    {
+      "id": "SILK.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "none",
+      "confidence": "high",
+      "locator": "Methods: Continuum theory",
+      "evidence": "No central formal composition or transport constraint drives this mechanics contribution.",
+      "boundary": "Nanocrystal models and external comparisons do not constitute new measurements of individual silk nanocrystals.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "SILK"
+    },
+    {
+      "id": "SILK.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "scalar_response",
+      "confidence": "high",
+      "locator": "Figures 2 and 4",
+      "evidence": "Bending, pull-out and stick–slip trajectories are central analyzed responses.",
+      "boundary": "Nanocrystal models and external comparisons do not constitute new measurements of individual silk nanocrystals.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "SILK"
+    },
+    {
+      "id": "SILK.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "fixed_pipeline",
+      "confidence": "high",
+      "locator": "Methods: Molecular dynamics model",
+      "evidence": "Fixed computational experiments do not reorganize a discovery workflow.",
+      "boundary": "Nanocrystal models and external comparisons do not constitute new measurements of individual silk nanocrystals.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "SILK"
+    },
+    {
+      "id": "SILK.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physics_simulation",
+      "confidence": "high",
+      "locator": "Table 1; Methods",
+      "evidence": "Molecular dynamics and DFT support mechanics; experiments are external comparisons.",
+      "boundary": "Nanocrystal models and external comparisons do not constitute new measurements of individual silk nanocrystals.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "SILK"
+    },
+    {
+      "id": "OLOGS.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "typed_relations",
+      "confidence": "high",
+      "locator": "Methods; Figure 4",
+      "evidence": "Typed relations replace a solely constituent-based account of functionality.",
+      "boundary": "Conditions constrain a deliberately simplified analogy; matching diagrams do not establish matching chemistry or physical behavior.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "OLOGS"
+    },
+    {
+      "id": "OLOGS.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "formal_conditional",
+      "confidence": "high",
+      "locator": "Figure 4; Tables 1–2",
+      "evidence": "Commuting diagrams and fiber products constrain meanings and composition.",
+      "boundary": "Conditions constrain a deliberately simplified analogy; matching diagrams do not establish matching chemistry or physical behavior.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "OLOGS"
+    },
+    {
+      "id": "OLOGS.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "qualitative_response",
+      "confidence": "high",
+      "locator": "Figures 3 and 5",
+      "evidence": "Failure under extension or noise is analyzed qualitatively.",
+      "boundary": "Conditions constrain a deliberately simplified analogy; matching diagrams do not establish matching chemistry or physical behavior.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "OLOGS"
+    },
+    {
+      "id": "OLOGS.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "manual",
+      "confidence": "high",
+      "locator": "Methods; Conclusion",
+      "evidence": "Researchers construct representations; no adaptive discovery process is executed.",
+      "boundary": "Conditions constrain a deliberately simplified analogy; matching diagrams do not establish matching chemistry or physical behavior.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "OLOGS"
+    },
+    {
+      "id": "OLOGS.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "constructed_example",
+      "confidence": "high",
+      "locator": "Outline; Results: Analogy",
+      "evidence": "The social case is constructed; prior protein mechanics motivate examples.",
+      "boundary": "Conditions constrain a deliberately simplified analogy; matching diagrams do not establish matching chemistry or physical behavior.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "OLOGS"
+    },
+    {
+      "id": "PROTOTYPE.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "partial_embodiment",
+      "confidence": "low",
+      "locator": "Abstract",
+      "evidence": "A prototype preserves selected model properties across physical realizations.",
+      "boundary": "Abstract-only report of selected property transfer and printing; methods, formal preservation and detailed dynamics remain unreviewed.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "PROTOTYPE"
+    },
+    {
+      "id": "PROTOTYPE.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": null,
+      "confidence": "unknown",
+      "locator": "Full text unavailable",
+      "evidence": "Formal preservation conditions cannot be rated from the abstract.",
+      "boundary": "Abstract-only report of selected property transfer and printing; methods, formal preservation and detailed dynamics remain unreviewed.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "PROTOTYPE"
+    },
+    {
+      "id": "PROTOTYPE.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": null,
+      "confidence": "unknown",
+      "locator": "Full text unavailable",
+      "evidence": "Detailed temporal or modal targets were not reviewed.",
+      "boundary": "Abstract-only report of selected property transfer and printing; methods, formal preservation and detailed dynamics remain unreviewed.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "PROTOTYPE"
+    },
+    {
+      "id": "PROTOTYPE.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": null,
+      "confidence": "unknown",
+      "locator": "Full text unavailable",
+      "evidence": "Workflow organization was not described in reviewed material.",
+      "boundary": "Abstract-only report of selected property transfer and printing; methods, formal preservation and detailed dynamics remain unreviewed.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "PROTOTYPE"
+    },
+    {
+      "id": "PROTOTYPE.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physical_experiment",
+      "confidence": "low",
+      "locator": "Abstract; experimental claim not methods-audited",
+      "evidence": "The abstract explicitly reports printing and mechanical experimental validation.",
+      "boundary": "Abstract-only report of selected property transfer and printing; methods, formal preservation and detailed dynamics remain unreviewed.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "PROTOTYPE"
+    },
+    {
+      "id": "COPRESHEAF.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "schema_revision",
+      "confidence": "medium",
+      "locator": "§2.5; §4.7",
+      "evidence": "Accepted symbolic revisions receive post-hoc schema audits.",
+      "boundary": "Post-hoc schema audits and an admitted product of existing GNM quantities; software lacks full functorial certification and causal uniqueness.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "COPRESHEAF"
+    },
+    {
+      "id": "COPRESHEAF.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "formal_conditional",
+      "confidence": "high",
+      "locator": "§2.3; §4.5",
+      "evidence": "Explicit preservation conditions; software lacks full functorial certification.",
+      "boundary": "Post-hoc schema audits and an admitted product of existing GNM quantities; software lacks full functorial certification and causal uniqueness.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "COPRESHEAF"
+    },
+    {
+      "id": "COPRESHEAF.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "modal_amplitude",
+      "confidence": "high",
+      "locator": "§2.5; Eq.7",
+      "evidence": "Collective modes enter a normalized fluctuation descriptor; this does not encode the full dynamical operator.",
+      "boundary": "Post-hoc schema audits and an admitted product of existing GNM quantities; software lacks full functorial certification and causal uniqueness.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "COPRESHEAF"
+    },
+    {
+      "id": "COPRESHEAF.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "artifact_needs",
+      "confidence": "medium",
+      "locator": "§2.6; §4.7",
+      "evidence": "Artifact needs and mutation coordinate distributed work.",
+      "boundary": "Post-hoc schema audits and an admitted product of existing GNM quantities; software lacks full functorial certification and causal uniqueness. Schema revision is represented separately; this value does not assert that all workflow coordination is formally certified.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "COPRESHEAF"
+    },
+    {
+      "id": "COPRESHEAF.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "benchmark",
+      "confidence": "high",
+      "locator": "§4.6–4.7",
+      "evidence": "Replayable surrogate and public-data checks.",
+      "boundary": "Post-hoc schema audits and an admitted product of existing GNM quantities; software lacks full functorial certification and causal uniqueness.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "COPRESHEAF"
+    },
+    {
+      "id": "STIMULUS.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "compositional_response",
+      "confidence": "high",
+      "locator": "§2–6",
+      "evidence": "Dynamical interfaces connect hierarchy and manufacturing.",
+      "boundary": "Formal composition is conditional on valid component models; physical validation measures equilibrium angles, n=3–4 per class, not full transients.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "STIMULUS"
+    },
+    {
+      "id": "STIMULUS.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "formal_conditional",
+      "confidence": "high",
+      "locator": "AppendixA; §1",
+      "evidence": "Composition preserves simulation conditions, conditional on valid models.",
+      "boundary": "Formal composition is conditional on valid component models; physical validation measures equilibrium angles, n=3–4 per class, not full transients.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "STIMULUS"
+    },
+    {
+      "id": "STIMULUS.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "scalar_response",
+      "confidence": "high",
+      "locator": "§7",
+      "evidence": "The experimentally checked scalar is equilibrium angle. Bending/twisting responses are explicit targets.",
+      "boundary": "Formal composition is conditional on valid component models; physical validation measures equilibrium angles, n=3–4 per class, not full transients.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "STIMULUS"
+    },
+    {
+      "id": "STIMULUS.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "fixed_pipeline",
+      "confidence": "high",
+      "locator": "§6",
+      "evidence": "Fixed modular Grasshopper pipeline.",
+      "boundary": "Formal composition is conditional on valid component models; physical validation measures equilibrium angles, n=3–4 per class, not full transients.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "STIMULUS"
+    },
+    {
+      "id": "STIMULUS.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physical_experiment",
+      "confidence": "high",
+      "locator": "§7; Table3",
+      "evidence": "Four fabricated actuator classes test central pipeline.",
+      "boundary": "Formal composition is conditional on valid component models; physical validation measures equilibrium angles, n=3–4 per class, not full transients.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "STIMULUS"
+    },
+    {
+      "id": "REPLACE.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "relational_replacement",
+      "confidence": "high",
+      "locator": "§1–2",
+      "evidence": "Explicit structure–function relations organize replacement.",
+      "boundary": "Illustrative in-plane homogenized replacement; out-of-plane mechanics need additional constraints and solving.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "REPLACE"
+    },
+    {
+      "id": "REPLACE.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "formal_conditional",
+      "confidence": "high",
+      "locator": "§2; Fig2",
+      "evidence": "Commuting paths and data migration constrain queries.",
+      "boundary": "Illustrative in-plane homogenized replacement; out-of-plane mechanics need additional constraints and solving.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "REPLACE"
+    },
+    {
+      "id": "REPLACE.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "static",
+      "confidence": "high",
+      "locator": "§2.2",
+      "evidence": "Targets static homogenized elastic properties.",
+      "boundary": "Illustrative in-plane homogenized replacement; out-of-plane mechanics need additional constraints and solving.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "REPLACE"
+    },
+    {
+      "id": "REPLACE.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "manual",
+      "confidence": "high",
+      "locator": "§1–3",
+      "evidence": "No adaptive discovery coordination central.",
+      "boundary": "Illustrative in-plane homogenized replacement; out-of-plane mechanics need additional constraints and solving.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "REPLACE"
+    },
+    {
+      "id": "REPLACE.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "constructed_example",
+      "confidence": "high",
+      "locator": "§2.1–2.3",
+      "evidence": "Illustrative calculations; no fabricated replacement test.",
+      "boundary": "Illustrative in-plane homogenized replacement; out-of-plane mechanics need additional constraints and solving.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "REPLACE"
+    },
+    {
+      "id": "MUSIC.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "hierarchical_mapping",
+      "confidence": "high",
+      "locator": "Fig3",
+      "evidence": "Hierarchy and connectivity replace sequence-only encoding.",
+      "boundary": "Executed composition instantiates a mapping; reverse music-to-material improvement remains proposed.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "MUSIC"
+    },
+    {
+      "id": "MUSIC.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "medium",
+      "locator": "Fig3",
+      "evidence": "Hierarchical ologs constrain selected correspondences.",
+      "boundary": "Executed composition instantiates a mapping; reverse music-to-material improvement remains proposed.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "MUSIC"
+    },
+    {
+      "id": "MUSIC.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "temporal_composition",
+      "confidence": "medium",
+      "locator": "Fig2–4",
+      "evidence": "Assembly and temporal music structure are central.",
+      "boundary": "Executed composition instantiates a mapping; reverse music-to-material improvement remains proposed.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "MUSIC"
+    },
+    {
+      "id": "MUSIC.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "manual",
+      "confidence": "high",
+      "locator": "Main text",
+      "evidence": "No self-organizing discovery process central.",
+      "boundary": "Executed composition instantiates a mapping; reverse music-to-material improvement remains proposed.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "MUSIC"
+    },
+    {
+      "id": "MUSIC.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "constructed_example",
+      "confidence": "high",
+      "locator": "Spinning melodies",
+      "evidence": "Compositions instantiate mapping; material improvement return loop untested.",
+      "boundary": "Executed composition instantiates a mapping; reverse music-to-material improvement remains proposed.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "MUSIC"
+    },
+    {
+      "id": "FIELDPERCEIVER.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "occupancy_tokens",
+      "confidence": "medium",
+      "locator": "Introduction; Building the model snippet",
+      "evidence": "Learned relations among supplied building blocks.",
+      "boundary": "Partial main-text assessment; supplied A/B vocabulary, graphene domain and loaded-field predictions, not demonstrated schema revision or temporal dynamics.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "FIELDPERCEIVER"
+    },
+    {
+      "id": "FIELDPERCEIVER.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": null,
+      "confidence": "unknown",
+      "locator": "Introduction; Building the model snippet",
+      "evidence": "No checked composition was established in the partially reviewed text; full guarantee status is unknown. Neural olog language; no checked composition established here.",
+      "boundary": "Partial main-text assessment; supplied A/B vocabulary, graphene domain and loaded-field predictions, not demonstrated schema revision or temporal dynamics.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "FIELDPERCEIVER"
+    },
+    {
+      "id": "FIELDPERCEIVER.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "static",
+      "confidence": "medium",
+      "locator": "Introduction; Conclusions snippet",
+      "evidence": "Loaded fields central; temporal extension deferred.",
+      "boundary": "Partial main-text assessment; supplied A/B vocabulary, graphene domain and loaded-field predictions, not demonstrated schema revision or temporal dynamics.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "FIELDPERCEIVER"
+    },
+    {
+      "id": "FIELDPERCEIVER.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "fixed_pipeline",
+      "confidence": "medium",
+      "locator": "Introduction",
+      "evidence": "Single prescribed predictor.",
+      "boundary": "Partial main-text assessment; supplied A/B vocabulary, graphene domain and loaded-field predictions, not demonstrated schema revision or temporal dynamics.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "FIELDPERCEIVER"
+    },
+    {
+      "id": "FIELDPERCEIVER.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "benchmark",
+      "confidence": "low",
+      "locator": "Abstract; Introduction",
+      "evidence": "MD-grounded predictive comparisons reported; detailed protocol unavailable.",
+      "boundary": "Partial main-text assessment; supplied A/B vocabulary, graphene domain and loaded-field predictions, not demonstrated schema revision or temporal dynamics.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "FIELDPERCEIVER"
+    },
+    {
+      "id": "MECHGPT.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "knowledge_graph",
+      "confidence": "medium",
+      "locator": "§2.2",
+      "evidence": "Explicit relational context augments fixed model representations.",
+      "boundary": "Executed DFT scans and fits are computational evidence; electronic-state/model adequacy and experimental agreement require separate checks.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "MECHGPT"
+    },
+    {
+      "id": "MECHGPT.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "medium",
+      "locator": "§§2.2, 4",
+      "evidence": "Graph/interface structure without transport guarantees.",
+      "boundary": "Executed DFT scans and fits are computational evidence; electronic-state/model adequacy and experimental agreement require separate checks.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "MECHGPT"
+    },
+    {
+      "id": "MECHGPT.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "static",
+      "confidence": "medium",
+      "locator": "§2.3.3; Fig 8",
+      "evidence": "Energy curves and knowledge tasks; no designed temporal response.",
+      "boundary": "Executed DFT scans and fits are computational evidence; electronic-state/model adequacy and experimental agreement require separate checks.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "MECHGPT"
+    },
+    {
+      "id": "MECHGPT.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "prescribed_agents",
+      "confidence": "medium",
+      "locator": "§2.3; Tables 8–10",
+      "evidence": "Prescribed specialist roles coordinate executable tools.",
+      "boundary": "Executed DFT scans and fits are computational evidence; electronic-state/model adequacy and experimental agreement require separate checks.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "MECHGPT"
+    },
+    {
+      "id": "MECHGPT.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physics_simulation",
+      "confidence": "high",
+      "locator": "§2.3.3; Table 10",
+      "evidence": "Agents execute DFT scan and fit.",
+      "boundary": "Executed DFT scans and fits are computational evidence; electronic-state/model adequacy and experimental agreement require separate checks.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "MECHGPT"
+    },
+    {
+      "id": "SCIAGENTS.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "knowledge_graph",
+      "confidence": "medium",
+      "locator": "§§2.1, 4.1–4.3",
+      "evidence": "Sampled concept relations guide proposals; ontology not autonomously revised.",
+      "boundary": "Executed proposal-generation and agent review do not test the proposed adaptive materials; abstract retrieval does not establish priority.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "SCIAGENTS"
+    },
+    {
+      "id": "SCIAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "medium",
+      "locator": "§4.2",
+      "evidence": "Graph paths constrain context, not physical truth.",
+      "boundary": "Executed proposal-generation and agent review do not test the proposed adaptive materials; abstract retrieval does not establish priority.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "SCIAGENTS"
+    },
+    {
+      "id": "SCIAGENTS.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": null,
+      "confidence": "unknown",
+      "locator": "§2.1; Tables 1–3",
+      "evidence": "Adaptive responses are proposed; no demonstrated response port can be assigned from that claim. Adaptive material behavior proposed, not actually designed or checked.",
+      "boundary": "Executed proposal-generation and agent review do not test the proposed adaptive materials; abstract retrieval does not establish priority.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "SCIAGENTS"
+    },
+    {
+      "id": "SCIAGENTS.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "prescribed_agents",
+      "confidence": "medium",
+      "locator": "§2.2; §4.4",
+      "evidence": "Adaptive speaker selection operates within prescribed roles; distributed need-driven routing is not established.",
+      "boundary": "Executed proposal-generation and agent review do not test the proposed adaptive materials; abstract retrieval does not establish priority.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "SCIAGENTS"
+    },
+    {
+      "id": "SCIAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "proposal",
+      "confidence": "high",
+      "locator": "§§2.1–2.2",
+      "evidence": "Executed proposal generation and agent review.",
+      "boundary": "Executed proposal-generation and agent review do not test the proposed adaptive materials; abstract retrieval does not establish priority.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "SCIAGENTS"
+    },
+    {
+      "id": "SCIAGENTS.workflow_evidence",
+      "label": "Executed generation and evaluation workflow",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "benchmark",
+      "confidence": "high",
+      "locator": "§§2.1–2.2",
+      "evidence": "Executed proposal generation and agent review.",
+      "boundary": "Workflow execution and review are not physical validation of generated material hypotheses.",
+      "contextIds": [
+        "coordination",
+        "evidence"
+      ],
+      "paperId": "SCIAGENTS"
+    },
+    {
+      "id": "CEPHALO.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "multimodal_descriptors",
+      "confidence": "medium",
+      "locator": "§4; Fig 1",
+      "evidence": "Joint image/text descriptors with task-specific tuning.",
+      "boundary": "Endpoint benchmarks depend on pixel thresholds and dataset construction; generated architectures are not physically validated.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "CEPHALO"
+    },
+    {
+      "id": "CEPHALO.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "none",
+      "confidence": "medium",
+      "locator": "§§4, 6",
+      "evidence": "No formal composition guarantee central to evaluated tasks.",
+      "boundary": "Endpoint benchmarks depend on pixel thresholds and dataset construction; generated architectures are not physically validated.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "CEPHALO"
+    },
+    {
+      "id": "CEPHALO.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "scalar_response",
+      "confidence": "medium",
+      "locator": "§4.6.2; §6, Predicting Crack Dynamics",
+      "evidence": "Dynamic simulations reduced to final damage/initiation endpoints.",
+      "boundary": "Endpoint benchmarks depend on pixel thresholds and dataset construction; generated architectures are not physically validated.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "CEPHALO"
+    },
+    {
+      "id": "CEPHALO.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "fixed_pipeline",
+      "confidence": "medium",
+      "locator": "§4.2; §6",
+      "evidence": "Fixed training and generation pipelines; experts merged.",
+      "boundary": "Endpoint benchmarks depend on pixel thresholds and dataset construction; generated architectures are not physically validated.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "CEPHALO"
+    },
+    {
+      "id": "CEPHALO.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "benchmark",
+      "confidence": "high",
+      "locator": "Figs 31–32; §6",
+      "evidence": "Held-out MD-derived endpoint benchmarks.",
+      "boundary": "Endpoint benchmarks depend on pixel thresholds and dataset construction; generated architectures are not physically validated.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "CEPHALO"
+    },
+    {
+      "id": "HYPERGRAPH.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "hyperedges",
+      "confidence": "medium",
+      "locator": "§§1.4, 2.1",
+      "evidence": "N-ary events preserve context lost by naive pairwise expansion.",
+      "boundary": "Literature hyperedge incidence preserves contextual relations; traversal and generated proposals do not establish causal interactions.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "HYPERGRAPH"
+    },
+    {
+      "id": "HYPERGRAPH.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "high",
+      "locator": "§§4.2, 4.4",
+      "evidence": "Schema and hyperedge-intersection constraints implemented.",
+      "boundary": "Literature hyperedge incidence preserves contextual relations; traversal and generated proposals do not establish causal interactions.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "HYPERGRAPH"
+    },
+    {
+      "id": "HYPERGRAPH.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "static",
+      "confidence": "medium",
+      "locator": "§§2.2–2.3",
+      "evidence": "This static port describes knowledge relations, not material state. Knowledge structure, not temporal material behavior.",
+      "boundary": "Literature hyperedge incidence preserves contextual relations; traversal and generated proposals do not establish causal interactions.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "HYPERGRAPH"
+    },
+    {
+      "id": "HYPERGRAPH.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "prescribed_agents",
+      "confidence": "medium",
+      "locator": "§2.3; Fig 8",
+      "evidence": "GraphAgent, Engineer and Hypothesizer have prescribed sequence.",
+      "boundary": "Literature hyperedge incidence preserves contextual relations; traversal and generated proposals do not establish causal interactions.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "HYPERGRAPH"
+    },
+    {
+      "id": "HYPERGRAPH.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "proposal",
+      "confidence": "high",
+      "locator": "§2.3",
+      "evidence": "Corpus analysis and generated dialogues; material tests proposed.",
+      "boundary": "Literature hyperedge incidence preserves contextual relations; traversal and generated proposals do not establish causal interactions.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "HYPERGRAPH"
+    },
+    {
+      "id": "HYPERGRAPH.workflow_evidence",
+      "label": "Executed generation and evaluation workflow",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "benchmark",
+      "confidence": "high",
+      "locator": "§2.3",
+      "evidence": "Corpus analysis and generated dialogues; material tests proposed.",
+      "boundary": "Workflow execution and review are not physical validation of generated material hypotheses.",
+      "contextIds": [
+        "coordination",
+        "evidence"
+      ],
+      "paperId": "HYPERGRAPH"
+    },
+    {
+      "id": "PROTAGENTS.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "supplied_protein_descriptors",
+      "confidence": "high",
+      "locator": "§2; §4",
+      "evidence": "Tool integration retains supplied protein descriptors.",
+      "boundary": "Normal modes use ANM, while unfolding properties are learned predictions; neither proves cellular function or general autonomous reliability.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "PROTAGENTS"
+    },
+    {
+      "id": "PROTAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "high",
+      "locator": "§2, Table 1",
+      "evidence": "Function schemas structure calls; no composition guarantee established.",
+      "boundary": "Normal modes use ANM, while unfolding properties are learned predictions; neither proves cellular function or general autonomous reliability.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "PROTAGENTS"
+    },
+    {
+      "id": "PROTAGENTS.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "modal_frequency",
+      "confidence": "high",
+      "locator": "§2.2–2.3",
+      "evidence": "Vibrations and unfolding properties are central analyzed outcomes.",
+      "boundary": "Normal modes use ANM, while unfolding properties are learned predictions; neither proves cellular function or general autonomous reliability.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "PROTAGENTS"
+    },
+    {
+      "id": "PROTAGENTS.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "prescribed_agents",
+      "confidence": "high",
+      "locator": "§2, Table 1",
+      "evidence": "Planner, Assistant, Critic and manager have prescribed roles.",
+      "boundary": "Normal modes use ANM, while unfolding properties are learned predictions; neither proves cellular function or general autonomous reliability.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "PROTAGENTS"
+    },
+    {
+      "id": "PROTAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physics_simulation",
+      "confidence": "high",
+      "locator": "§4 Natural Vibrational Frequency Calculations",
+      "evidence": "Executed ANM calculations accompany learned property predictions.",
+      "boundary": "Normal modes use ANM, while unfolding properties are learned predictions; neither proves cellular function or general autonomous reliability.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "PROTAGENTS"
+    },
+    {
+      "id": "PROTAGENTS.predicted_unfolding",
+      "label": "Learned unfolding-property evidence",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "benchmark",
+      "confidence": "high",
+      "locator": "§4 ProteinForceGPT; Natural Vibrational Frequency Calculations",
+      "evidence": "ProteinForceGPT is used only for forward predictions; normal modes use ANM.",
+      "boundary": "The profile distinguishes a learned forward prediction from executed ANM mode calculations.",
+      "contextIds": [
+        "observable",
+        "evidence"
+      ],
+      "paperId": "PROTAGENTS"
+    },
+    {
+      "id": "ATOMAGENTS.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "alloy_variables",
+      "confidence": "high",
+      "locator": "§2.1–2.4",
+      "evidence": "Automates established alloy variables and simulation workflows.",
+      "boundary": "Prepared simulation tools test a bounded alloy system; human-authored scripts and contextual support remain part of the workflow.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "ATOMAGENTS"
+    },
+    {
+      "id": "ATOMAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "high",
+      "locator": "§4.1",
+      "evidence": "Fracture calculation imposes explicit elasticity-theory relations.",
+      "boundary": "Prepared simulation tools test a bounded alloy system; human-authored scripts and contextual support remain part of the workflow.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "ATOMAGENTS"
+    },
+    {
+      "id": "ATOMAGENTS.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "static",
+      "confidence": "high",
+      "locator": "§2.3–2.4",
+      "evidence": "Transition paths inform static barriers and toughness estimates.",
+      "boundary": "Prepared simulation tools test a bounded alloy system; human-authored scripts and contextual support remain part of the workflow.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "ATOMAGENTS"
+    },
+    {
+      "id": "ATOMAGENTS.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "prescribed_agents",
+      "confidence": "high",
+      "locator": "§2, Table 1",
+      "evidence": "Planner/Critic and a manager coordinate prescribed roles.",
+      "boundary": "Prepared simulation tools test a bounded alloy system; human-authored scripts and contextual support remain part of the workflow.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "ATOMAGENTS"
+    },
+    {
+      "id": "ATOMAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physics_simulation",
+      "confidence": "high",
+      "locator": "§2.1–2.4; §4",
+      "evidence": "LAMMPS and NEB calculations test alloy hypotheses.",
+      "boundary": "Prepared simulation tools test a bounded alloy system; human-authored scripts and contextual support remain part of the workflow.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "ATOMAGENTS"
+    },
+    {
+      "id": "VIBEGEN.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "modal_profile",
+      "confidence": "high",
+      "locator": "§2, Equations 1–2",
+      "evidence": "Dynamics becomes an inverse-design descriptor alongside sequence and structure.",
+      "boundary": "First nontrivial mode amplitude discards displacement direction; descriptor agreement does not identify a full dynamical operator.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "VIBEGEN"
+    },
+    {
+      "id": "VIBEGEN.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "high",
+      "locator": "§2, Equations 1–2",
+      "evidence": "Coordinate-invariant amplitude descriptor constrains a limited component.",
+      "boundary": "First nontrivial mode amplitude discards displacement direction; descriptor agreement does not identify a full dynamical operator.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "VIBEGEN"
+    },
+    {
+      "id": "VIBEGEN.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "modal_amplitude",
+      "confidence": "high",
+      "locator": "§2, Figures 4–7",
+      "evidence": "Inverse design targets detailed normal-mode amplitude profiles.",
+      "boundary": "First nontrivial mode amplitude discards displacement direction; descriptor agreement does not identify a full dynamical operator.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "VIBEGEN"
+    },
+    {
+      "id": "VIBEGEN.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "fixed_pipeline",
+      "confidence": "high",
+      "locator": "§2, Figure 1B",
+      "evidence": "Designer and predictor have fixed specialized coordination.",
+      "boundary": "First nontrivial mode amplitude discards displacement direction; descriptor agreement does not identify a full dynamical operator.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "VIBEGEN"
+    },
+    {
+      "id": "VIBEGEN.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physics_simulation",
+      "confidence": "high",
+      "locator": "§4 Normal mode analysis",
+      "evidence": "Folded designs undergo force-field normal-mode calculations.",
+      "boundary": "First nontrivial mode amplitude discards displacement direction; descriptor agreement does not identify a full dynamical operator.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "VIBEGEN"
+    },
+    {
+      "id": "SCIENCECLAW.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "typed_artifacts",
+      "confidence": "medium",
+      "locator": "§2.2.4; §3.4–3.5",
+      "evidence": "Cross-domain descriptors and explicit provenance enrich represented relations.",
+      "boundary": "Typed lineage and nonempty key overlap can support routing; FEM modal checks do not establish fabrication success or semantic validity.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "SCIENCECLAW"
+    },
+    {
+      "id": "SCIENCECLAW.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "high",
+      "locator": "§2.2.4–2.2.5; §5",
+      "evidence": "Typed provenance DAG and gates constrain limited interfaces.",
+      "boundary": "Typed lineage and nonempty key overlap can support routing; FEM modal checks do not establish fabrication success or semantic validity.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "SCIENCECLAW"
+    },
+    {
+      "id": "SCIENCECLAW.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "modal_frequency",
+      "confidence": "medium",
+      "locator": "§3.4",
+      "evidence": "Ribbed lattice variants target frequency bands and modal density.",
+      "boundary": "Typed lineage and nonempty key overlap can support routing; FEM modal checks do not establish fabrication success or semantic validity.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "SCIENCECLAW"
+    },
+    {
+      "id": "SCIENCECLAW.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "artifact_needs",
+      "confidence": "high",
+      "locator": "§2.2.5",
+      "evidence": "Open needs and compatible artifacts route distributed work.",
+      "boundary": "Typed lineage and nonempty key overlap can support routing; FEM modal checks do not establish fabrication success or semantic validity.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "SCIENCECLAW"
+    },
+    {
+      "id": "SCIENCECLAW.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "physics_simulation",
+      "confidence": "high",
+      "locator": "§3.4",
+      "evidence": "Resonance candidates receive 3D FEM checks, without fabrication.",
+      "boundary": "Typed lineage and nonempty key overlap can support routing; FEM modal checks do not establish fabrication success or semantic validity.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "SCIENCECLAW"
+    },
+    {
+      "id": "GRAPHAGENTS.representation",
+      "label": "Admitted representation",
+      "domain": [
+        "critical_lengths",
+        "confinement_geometry",
+        "typed_relations",
+        "partial_embodiment",
+        "schema_revision",
+        "compositional_response",
+        "relational_replacement",
+        "hierarchical_mapping",
+        "occupancy_tokens",
+        "knowledge_graph",
+        "multimodal_descriptors",
+        "hyperedges",
+        "supplied_protein_descriptors",
+        "alloy_variables",
+        "modal_profile",
+        "typed_artifacts",
+        "literature_graph"
+      ],
+      "value": "literature_graph",
+      "confidence": "high",
+      "locator": "§2.1; §4.1",
+      "evidence": "Explicit literature relations enrich retrieval and ideation.",
+      "boundary": "Generated hypotheses and LLM judging evaluate candidate merit; graph-path length or judged novelty does not establish materials improvement.",
+      "contextIds": [
+        "representation"
+      ],
+      "paperId": "GRAPHAGENTS"
+    },
+    {
+      "id": "GRAPHAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition",
+      "domain": [
+        "none",
+        "interface_only",
+        "formal_conditional",
+        "empirical_mapping"
+      ],
+      "value": "interface_only",
+      "confidence": "high",
+      "locator": "§2.2; §4.3",
+      "evidence": "Traversal structure lacks scientific composition guarantees.",
+      "boundary": "Generated hypotheses and LLM judging evaluate candidate merit; graph-path length or judged novelty does not establish materials improvement.",
+      "contextIds": [
+        "interface"
+      ],
+      "paperId": "GRAPHAGENTS"
+    },
+    {
+      "id": "GRAPHAGENTS.response",
+      "label": "Assessed response variable",
+      "domain": [
+        "static",
+        "scalar_response",
+        "qualitative_response",
+        "temporal_composition",
+        "modal_amplitude",
+        "modal_frequency",
+        "dynamical_mapping"
+      ],
+      "value": "static",
+      "confidence": "high",
+      "locator": "§2.1–2.2",
+      "evidence": "This static port describes candidate material requirements, not a completed material test. Static material requirements dominate this assessed contribution.",
+      "boundary": "Generated hypotheses and LLM judging evaluate candidate merit; graph-path length or judged novelty does not establish materials improvement.",
+      "contextIds": [
+        "observable"
+      ],
+      "paperId": "GRAPHAGENTS"
+    },
+    {
+      "id": "GRAPHAGENTS.organization",
+      "label": "Coordination of the reviewed workflow",
+      "domain": [
+        "manual",
+        "fixed_pipeline",
+        "prescribed_agents",
+        "artifact_needs",
+        "schema_revision"
+      ],
+      "value": "prescribed_agents",
+      "confidence": "high",
+      "locator": "§2.1, Figure 1",
+      "evidence": "Specialized agents execute a prescribed sequential framework.",
+      "boundary": "Generated hypotheses and LLM judging evaluate candidate merit; graph-path length or judged novelty does not establish materials improvement.",
+      "contextIds": [
+        "coordination"
+      ],
+      "paperId": "GRAPHAGENTS"
+    },
+    {
+      "id": "GRAPHAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "proposal",
+      "confidence": "high",
+      "locator": "§2.2–2.3",
+      "evidence": "Candidate merits evaluated through generated hypotheses and LLM judging.",
+      "boundary": "Generated hypotheses and LLM judging evaluate candidate merit; graph-path length or judged novelty does not establish materials improvement.",
+      "contextIds": [
+        "evidence"
+      ],
+      "paperId": "GRAPHAGENTS"
+    },
+    {
+      "id": "GRAPHAGENTS.workflow_evidence",
+      "label": "Executed generation and evaluation workflow",
+      "domain": [
+        "proposal",
+        "constructed_example",
+        "benchmark",
+        "physics_simulation",
+        "physical_experiment"
+      ],
+      "value": "benchmark",
+      "confidence": "high",
+      "locator": "§2.2–2.3",
+      "evidence": "Candidate merits evaluated through generated hypotheses and LLM judging.",
+      "boundary": "Workflow execution and review are not physical validation of generated material hypotheses.",
+      "contextIds": [
+        "coordination",
+        "evidence"
+      ],
+      "paperId": "GRAPHAGENTS"
+    },
+    {
+      "id": "COPRESHEAF.runtime_certification",
+      "paperId": "COPRESHEAF",
+      "label": "Implemented categorical certification",
+      "domain": [
+        "not_certified",
+        "certified"
+      ],
+      "value": "not_certified",
+      "confidence": "medium",
+      "locator": "§2.3; §4.7",
+      "evidence": "The paper distinguishes its formal conditions from full software certification.",
+      "boundary": "Formal conditions alone are not an end-to-end certificate.",
+      "contextIds": [
+        "interface"
+      ]
+    },
+    {
+      "id": "SCIENCECLAW.matching_semantics",
+      "paperId": "SCIENCECLAW",
+      "label": "Scope of compatibility matching",
+      "domain": [
+        "key_overlap",
+        "semantic_verified"
+      ],
+      "value": "key_overlap",
+      "confidence": "medium",
+      "locator": "§5 Schema-Overlap Matching",
+      "evidence": "The reviewed rule can use overlap of payload keys and input names.",
+      "boundary": "Syntactic overlap does not prove scientific semantic preservation.",
+      "contextIds": [
+        "interface"
+      ]
+    },
+    {
+      "id": "STIMULUS.test_scope",
+      "paperId": "STIMULUS",
+      "label": "Observed response test scope",
+      "domain": [
+        "equilibrium",
+        "transient"
+      ],
+      "value": "equilibrium",
+      "confidence": "medium",
+      "locator": "§7 Table3; §8",
+      "evidence": "Reported physical comparisons measure equilibrium angles.",
+      "boundary": "A formal dynamical map does not supply unperformed transient measurements.",
+      "contextIds": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "REPLACE.test_scope",
+      "paperId": "REPLACE",
+      "label": "Mechanical property scope",
+      "domain": [
+        "in_plane",
+        "full_tensor"
+      ],
+      "value": "in_plane",
+      "confidence": "medium",
+      "locator": "§2.2",
+      "evidence": "Worked replacement calculation retains in-plane ABD components.",
+      "boundary": "Other mechanical components require additional analysis.",
+      "contextIds": [
+        "observable"
+      ]
+    },
+    {
+      "id": "VIBEGEN.descriptor_information",
+      "paperId": "VIBEGEN",
+      "label": "Information retained by modal target",
+      "domain": [
+        "amplitude_only",
+        "full_operator"
+      ],
+      "value": "amplitude_only",
+      "confidence": "medium",
+      "locator": "§2 Eqs1–2",
+      "evidence": "The target retains an amplitude profile for one mode.",
+      "boundary": "Directions, couplings and dissipation are not determined by that descriptor.",
+      "contextIds": [
+        "observable"
+      ]
+    },
+    {
+      "id": "SCIENCECLAW.descriptor_information",
+      "paperId": "SCIENCECLAW",
+      "label": "Information retained by resonance design",
+      "domain": [
+        "frequency_band",
+        "full_operator"
+      ],
+      "value": "frequency_band",
+      "confidence": "medium",
+      "locator": "§3.4",
+      "evidence": "Lattice design targets frequency bands and modal-density features.",
+      "boundary": "Those features do not specify a complete common dynamical operator.",
+      "contextIds": [
+        "observable"
+      ]
+    },
+    {
+      "id": "HYPERGRAPH.relation_semantics",
+      "paperId": "HYPERGRAPH",
+      "label": "Meaning of higher-order relation",
+      "domain": [
+        "literature_context",
+        "causal_validated"
+      ],
+      "value": "literature_context",
+      "confidence": "medium",
+      "locator": "§2.3; §4.4",
+      "evidence": "Hyperedges preserve contextual multi-entity literature relations.",
+      "boundary": "Incidence is not a causal intervention.",
+      "contextIds": [
+        "representation"
+      ]
+    },
+    {
+      "id": "SCIAGENTS.performance_status",
+      "paperId": "SCIAGENTS",
+      "label": "Status of proposed material gains",
+      "domain": [
+        "forecast",
+        "physical_tested"
+      ],
+      "value": "forecast",
+      "confidence": "medium",
+      "locator": "§2.2; §3 future work",
+      "evidence": "Material-property gains are expected outcomes of proposed work.",
+      "boundary": "A detailed proposal is not a measured material improvement.",
+      "contextIds": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "MECHGPT.validation_kind",
+      "paperId": "MECHGPT",
+      "label": "Type of downstream validation",
+      "domain": [
+        "calculation",
+        "experiment"
+      ],
+      "value": "calculation",
+      "confidence": "medium",
+      "locator": "§2.3.3; Table10",
+      "evidence": "Actual computational execution supports the selected numerical example.",
+      "boundary": "Execution success alone is not physical experimentation.",
+      "contextIds": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "ATOMAGENTS.validation_kind",
+      "paperId": "ATOMAGENTS",
+      "label": "Type of downstream validation",
+      "domain": [
+        "calculation",
+        "experiment"
+      ],
+      "value": "calculation",
+      "confidence": "medium",
+      "locator": "§2.1–2.4",
+      "evidence": "Actual computational execution supports the selected numerical example.",
+      "boundary": "Execution success alone is not physical experimentation.",
+      "contextIds": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "COLLAGEN.length_context",
+      "paperId": "COLLAGEN",
+      "label": "Domain of inferred characteristic length",
+      "domain": [
+        "fibril_specific",
+        "crystal_specific",
+        "universal"
+      ],
+      "value": "fibril_specific",
+      "confidence": "medium",
+      "locator": "Figures2,5; Larger Collagen Fibrils",
+      "evidence": "The characteristic scale belongs to the stated material model and boundary conditions.",
+      "boundary": "It is not a universal length shared by all tissues or crystals.",
+      "contextIds": [
+        "observable"
+      ]
+    },
+    {
+      "id": "SILK.length_context",
+      "paperId": "SILK",
+      "label": "Domain of inferred characteristic length",
+      "domain": [
+        "fibril_specific",
+        "crystal_specific",
+        "universal"
+      ],
+      "value": "crystal_specific",
+      "confidence": "medium",
+      "locator": "Figures2–5; Methods",
+      "evidence": "The characteristic scale belongs to the stated material model and boundary conditions.",
+      "boundary": "It is not a universal length shared by all tissues or crystals.",
+      "contextIds": [
+        "observable"
+      ]
+    },
+    {
+      "id": "MUSIC.reverse_transfer",
+      "paperId": "MUSIC",
+      "label": "Demonstrated reverse material transfer",
+      "domain": [
+        "future",
+        "demonstrated"
+      ],
+      "value": "future",
+      "confidence": "medium",
+      "locator": "Fig5; conclusion",
+      "evidence": "Music-to-material improvement is proposed as future work.",
+      "boundary": "Performed musical compositions are not evidence of improved material performance.",
+      "contextIds": [
+        "evidence"
+      ]
+    },
+    {
+      "id": "FIELDPERCEIVER.temporal_validation",
+      "paperId": "FIELDPERCEIVER",
+      "label": "Temporal generalization scope",
+      "domain": [
+        "future",
+        "demonstrated"
+      ],
+      "value": "future",
+      "confidence": "medium",
+      "locator": "Conclusions snippet",
+      "evidence": "Time-dependent extension is proposed as future work in the reviewed text.",
+      "boundary": "Partial text access remains explicit; no full transient validation is inferred.",
+      "contextIds": [
+        "observable"
+      ]
+    },
+    {
+      "id": "CEPHALO.endpoint",
+      "paperId": "CEPHALO",
+      "label": "Crack-analysis endpoint",
+      "domain": [
+        "terminal_label",
+        "full_operator"
+      ],
+      "value": "terminal_label",
+      "confidence": "medium",
+      "locator": "§6 Predicting Crack Dynamics",
+      "evidence": "Reviewed benchmarks use constructed terminal damage and initiation endpoints.",
+      "boundary": "These labels are not a full dynamics operator.",
+      "contextIds": [
+        "observable"
+      ]
+    }
+  ],
+  "bridges": [
+    {
+      "id": "provenance_revision",
+      "label": "Provenance through schema revision",
+      "paperIds": [
+        "COPRESHEAF",
+        "SCIENCECLAW"
+      ],
+      "contextIds": [
+        "coordination",
+        "evidence",
+        "representation",
+        "interface"
+      ],
+      "scientificClaim": "A distributed artifact chain could retain inspectable scientific meaning when its representation changes.",
+      "interfaceVariables": [
+        {
+          "name": "artifact_id",
+          "meaning": "Immutable identity of a particular input or output artifact",
+          "contextIds": [
+            "coordination",
+            "evidence"
+          ]
+        },
+        {
+          "name": "schema_version",
+          "meaning": "Explicit input and output vocabulary version",
+          "contextIds": [
+            "representation",
+            "interface"
+          ]
+        },
+        {
+          "name": "transport_witness",
+          "meaning": "Declared map from a source-schema claim into a target-schema claim",
+          "contextIds": [
+            "interface",
+            "evidence"
+          ]
+        }
+      ],
+      "requirements": [
+        "Pin input artifacts, schema versions and interpretation before each revision.",
+        "Attach a typed transport witness and residual to each accepted change.",
+        "Check semantic meaning in addition to matching payload keys."
+      ],
+      "gaps": [
+        "The reviewed ScienceClaw key-overlap rule alone does not verify semantic preservation.",
+        "COPRESHEAF formal conditions are not a certificate for the entire implemented artifact workflow."
+      ],
+      "canGlue": "A versioned lineage record and a declared local claim-transport audit.",
+      "temptingOverreach": "A common artifact key or provenance DAG proves that the revised scientific claim remains true.",
+      "locators": [
+        "COPRESHEAF §2.3; §4.5; §4.7",
+        "SCIENCECLAW §2.2.4–2.2.5; §5"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "provenance_revision.scope",
+      "boundedClaim": "A typed comparison of declared schema revisions and artifact-needs coordination; no semantic-preserving runtime transport is certified.",
+      "strongerClaim": "A common artifact key or provenance DAG proves that the revised scientific claim remains true.",
+      "constraint": {
+        "id": "provenance_revision.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "COPRESHEAF.representation",
+          "COPRESHEAF.runtime_certification",
+          "SCIENCECLAW.matching_semantics",
+          "SCIENCECLAW.organization",
+          "provenance_revision.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "provenance_revision.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "COPRESHEAF.representation",
+                "value": "schema_revision"
+              },
+              {
+                "op": "eq",
+                "key": "SCIENCECLAW.organization",
+                "value": "artifact_needs"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "COPRESHEAF.runtime_certification",
+                "value": "certified"
+              },
+              {
+                "op": "eq",
+                "key": "SCIENCECLAW.matching_semantics",
+                "value": "semantic_verified"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    },
+    {
+      "id": "conditional_transfer",
+      "label": "Conditional function under structural transfer",
+      "paperIds": [
+        "OLOGS",
+        "REPLACE",
+        "STIMULUS"
+      ],
+      "contextIds": [
+        "representation",
+        "interface",
+        "observable",
+        "evidence"
+      ],
+      "scientificClaim": "A chosen structure–function relation can be translated only under explicit interface and preservation conditions.",
+      "interfaceVariables": [
+        {
+          "name": "typed_relation",
+          "meaning": "The chosen relation and its source/target types",
+          "contextIds": [
+            "representation",
+            "interface"
+          ]
+        },
+        {
+          "name": "composition_condition",
+          "meaning": "Equalities, admissible queries or model-simulation conditions actually preserved",
+          "contextIds": [
+            "interface"
+          ]
+        },
+        {
+          "name": "response_observable",
+          "meaning": "The selected failure, elasticity or actuator response plus units and loading conditions",
+          "contextIds": [
+            "observable",
+            "evidence"
+          ]
+        }
+      ],
+      "requirements": [
+        "Name the specific source relation and intended target function.",
+        "Specify commuting equalities or simulation conditions for that chosen mapping.",
+        "Calibrate domain-specific physical laws and test the intended target observable."
+      ],
+      "gaps": [
+        "Protein/social analogy is deliberately simplified.",
+        "Replacement example is in-plane; out-of-plane behavior needs extra solving.",
+        "STIMULUS validates equilibrium angles, not general time-dependent response."
+      ],
+      "canGlue": "An interface contract for a selected relation and a bounded target observable.",
+      "temptingOverreach": "A shared categorical schema proves physical equivalence or transfers every material property.",
+      "locators": [
+        "OLOGS Figure4; Tables1–2",
+        "REPLACE §2.2",
+        "STIMULUS AppendixA; §7 Table3"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "conditional_transfer.scope",
+      "boundedClaim": "A typed comparison of the papers’ separately declared preservation conditions; no actual composed cross-paper map is certified.",
+      "strongerClaim": "A shared categorical schema proves physical equivalence or transfers every material property.",
+      "constraint": {
+        "id": "conditional_transfer.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "OLOGS.guarantee",
+          "REPLACE.guarantee",
+          "REPLACE.test_scope",
+          "STIMULUS.guarantee",
+          "STIMULUS.test_scope",
+          "conditional_transfer.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "conditional_transfer.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "OLOGS.guarantee",
+                "value": "formal_conditional"
+              },
+              {
+                "op": "eq",
+                "key": "REPLACE.guarantee",
+                "value": "formal_conditional"
+              },
+              {
+                "op": "eq",
+                "key": "STIMULUS.guarantee",
+                "value": "formal_conditional"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "OLOGS.guarantee",
+                "value": "formal_conditional"
+              },
+              {
+                "op": "eq",
+                "key": "REPLACE.test_scope",
+                "value": "full_tensor"
+              },
+              {
+                "op": "eq",
+                "key": "STIMULUS.test_scope",
+                "value": "transient"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    },
+    {
+      "id": "modal_contract",
+      "label": "Modal capability without full dynamics",
+      "paperIds": [
+        "VIBEGEN",
+        "PROTAGENTS",
+        "SCIENCECLAW"
+      ],
+      "contextIds": [
+        "observable",
+        "interface",
+        "evidence",
+        "representation"
+      ],
+      "scientificClaim": "Modal objectives can be made comparable only after specifying which part of the dynamics each workflow measures.",
+      "interfaceVariables": [
+        {
+          "name": "modal_descriptor",
+          "meaning": "Amplitude profile, natural frequency or frequency-band density; never silently interchange these",
+          "contextIds": [
+            "observable",
+            "interface"
+          ]
+        },
+        {
+          "name": "mode_definition",
+          "meaning": "Mode index, normalization, model and boundary conditions",
+          "contextIds": [
+            "observable",
+            "evidence"
+          ]
+        },
+        {
+          "name": "system_realization",
+          "meaning": "Protein structure or lattice geometry associated with the descriptor",
+          "contextIds": [
+            "representation"
+          ]
+        }
+      ],
+      "requirements": [
+        "Keep descriptor type and units explicit.",
+        "Record ANM, force-field normal-mode or FEM operator assumptions.",
+        "For a requested operator-level claim, measure mode directions, frequencies, couplings and relevant dissipation separately."
+      ],
+      "gaps": [
+        "VibeGen amplitude target discards displacement directions.",
+        "Protein ANM and lattice FEM describe different physical systems and boundary conditions.",
+        "No shared calibrated full-dynamics operator is present in these profiles."
+      ],
+      "canGlue": "A typed modal-descriptor registry and compatible mode-level questions.",
+      "temptingOverreach": "Matching one modal descriptor recovers the full dynamical operator, cellular function or cross-system physical equivalence.",
+      "locators": [
+        "VIBEGEN §2 Eqs1–2; §4",
+        "PROTAGENTS §4 Natural Vibrational Frequency Calculations",
+        "SCIENCECLAW §3.4"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "modal_contract.scope",
+      "boundedClaim": "A typed inventory of modal descriptors with their distinct information losses; no common dynamical operator is asserted.",
+      "strongerClaim": "Matching one modal descriptor recovers the full dynamical operator, cellular function or cross-system physical equivalence.",
+      "constraint": {
+        "id": "modal_contract.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "PROTAGENTS.response",
+          "SCIENCECLAW.descriptor_information",
+          "SCIENCECLAW.response",
+          "VIBEGEN.descriptor_information",
+          "VIBEGEN.response",
+          "modal_contract.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "modal_contract.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "VIBEGEN.response",
+                "value": "modal_amplitude"
+              },
+              {
+                "op": "eq",
+                "key": "PROTAGENTS.response",
+                "value": "modal_frequency"
+              },
+              {
+                "op": "eq",
+                "key": "SCIENCECLAW.response",
+                "value": "modal_frequency"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "VIBEGEN.descriptor_information",
+                "value": "full_operator"
+              },
+              {
+                "op": "eq",
+                "key": "PROTAGENTS.response",
+                "value": "dynamical_mapping"
+              },
+              {
+                "op": "eq",
+                "key": "SCIENCECLAW.descriptor_information",
+                "value": "full_operator"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    },
+    {
+      "id": "multiscale_failure",
+      "label": "Mechanism maps across scale",
+      "paperIds": [
+        "COLLAGEN",
+        "SILK"
+      ],
+      "contextIds": [
+        "representation",
+        "observable",
+        "evidence",
+        "interface"
+      ],
+      "scientificClaim": "A geometry-to-load-sharing-to-failure mechanism map can be compared while retaining the material-specific rupture and slip physics.",
+      "interfaceVariables": [
+        {
+          "name": "length_scale",
+          "meaning": "Model-defined molecular or crystal length and confinement geometry",
+          "contextIds": [
+            "representation",
+            "observable"
+          ]
+        },
+        {
+          "name": "failure_mechanism",
+          "meaning": "Slip, cooperative bond rupture or molecular rupture under stated loading",
+          "contextIds": [
+            "observable"
+          ]
+        },
+        {
+          "name": "rate_and_boundary",
+          "meaning": "Loading rate, hydration, confinement and reference-model assumptions",
+          "contextIds": [
+            "evidence",
+            "interface"
+          ]
+        }
+      ],
+      "requirements": [
+        "Keep each material’s dimensions and critical-length definitions separate.",
+        "Map the load-sharing mechanism rather than transferring raw fitted values.",
+        "Check rate sensitivity and relevant boundary conditions before numerical transfer."
+      ],
+      "gaps": [
+        "Collagen main reference is hydrated, two-dimensional and cross-link-free.",
+        "Silk forces require rate correction; cited shear moduli are indirect comparisons."
+      ],
+      "canGlue": "A bounded comparison of competing failure pathways and geometry-dependent load sharing.",
+      "temptingOverreach": "One universal critical length or a whole-tissue toughness law follows from both simulations.",
+      "locators": [
+        "COLLAGEN Figures2,5; Larger Collagen Fibrils",
+        "SILK Figures2–5; Methods Application of boundary conditions"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "multiscale_failure.scope",
+      "boundedClaim": "A scoped comparison of two simulation-based geometry/failure mechanisms, retaining model-specific lengths.",
+      "strongerClaim": "One universal critical length or a whole-tissue toughness law follows from both simulations.",
+      "constraint": {
+        "id": "multiscale_failure.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "COLLAGEN.evidence",
+          "COLLAGEN.length_context",
+          "SILK.evidence",
+          "SILK.length_context",
+          "multiscale_failure.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "multiscale_failure.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "COLLAGEN.evidence",
+                "value": "physics_simulation"
+              },
+              {
+                "op": "eq",
+                "key": "SILK.evidence",
+                "value": "physics_simulation"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "COLLAGEN.length_context",
+                "value": "universal"
+              },
+              {
+                "op": "eq",
+                "key": "SILK.length_context",
+                "value": "universal"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    },
+    {
+      "id": "retrieval_context",
+      "label": "Contextual relations for proposal formation",
+      "paperIds": [
+        "HYPERGRAPH",
+        "SCIAGENTS",
+        "GRAPHAGENTS"
+      ],
+      "contextIds": [
+        "representation",
+        "evidence",
+        "interface",
+        "coordination"
+      ],
+      "scientificClaim": "A retrieval record can preserve the context used to generate a material hypothesis without converting literature association into causality.",
+      "interfaceVariables": [
+        {
+          "name": "retrieved_relation",
+          "meaning": "Typed relation or n-ary literature event with source identity",
+          "contextIds": [
+            "representation",
+            "evidence"
+          ]
+        },
+        {
+          "name": "traversal_rule",
+          "meaning": "Path sampling, shared-node rule and exact operational traversal semantics",
+          "contextIds": [
+            "interface",
+            "coordination"
+          ]
+        },
+        {
+          "name": "hypothesis_claim",
+          "meaning": "Proposal linked to the supporting and limiting text",
+          "contextIds": [
+            "evidence"
+          ]
+        }
+      ],
+      "requirements": [
+        "Retain evidence sources and contextual qualifications for each relation.",
+        "Resolve exact versus minimum shared-node traversal ambiguity.",
+        "Test causal or performance claims with independent material measurements or calculations."
+      ],
+      "gaps": [
+        "Graph distance and incidence overlap do not establish mechanism or novelty.",
+        "Abstract-only novelty search cannot establish priority.",
+        "Generated dialogue and LLM judging do not validate material performance."
+      ],
+      "canGlue": "A provenance-bearing retrieval-to-hypothesis section.",
+      "temptingOverreach": "A path connecting concepts identifies a causal interaction or demonstrates a novel working material.",
+      "locators": [
+        "HYPERGRAPH §4.4; Fig8",
+        "SCIAGENTS §4.2; §4.6",
+        "GRAPHAGENTS §2.2–2.3"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "retrieval_context.scope",
+      "boundedClaim": "A source-linked inventory of representations and proposal status; no causal gluing is asserted.",
+      "strongerClaim": "A path connecting concepts identifies a causal interaction or demonstrates a novel working material.",
+      "constraint": {
+        "id": "retrieval_context.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "GRAPHAGENTS.evidence",
+          "HYPERGRAPH.relation_semantics",
+          "HYPERGRAPH.representation",
+          "SCIAGENTS.evidence",
+          "SCIAGENTS.performance_status",
+          "retrieval_context.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "retrieval_context.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "HYPERGRAPH.representation",
+                "value": "hyperedges"
+              },
+              {
+                "op": "eq",
+                "key": "SCIAGENTS.evidence",
+                "value": "proposal"
+              },
+              {
+                "op": "eq",
+                "key": "GRAPHAGENTS.evidence",
+                "value": "proposal"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "HYPERGRAPH.relation_semantics",
+                "value": "causal_validated"
+              },
+              {
+                "op": "eq",
+                "key": "SCIAGENTS.performance_status",
+                "value": "physical_tested"
+              },
+              {
+                "op": "eq",
+                "key": "GRAPHAGENTS.evidence",
+                "value": "physical_experiment"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    },
+    {
+      "id": "executed_calculations",
+      "label": "Executed calculations and evidential closure",
+      "paperIds": [
+        "MECHGPT",
+        "ATOMAGENTS"
+      ],
+      "contextIds": [
+        "representation",
+        "evidence",
+        "coordination",
+        "observable",
+        "interface"
+      ],
+      "scientificClaim": "Tool execution can support a bounded computational claim if model assumptions and numerical outputs are auditable.",
+      "interfaceVariables": [
+        {
+          "name": "calculation_spec",
+          "meaning": "Geometry, electronic state or potential, boundary conditions and solver settings",
+          "contextIds": [
+            "representation",
+            "evidence"
+          ]
+        },
+        {
+          "name": "execution_artifact",
+          "meaning": "Actual script, inputs, logs and numerical outputs",
+          "contextIds": [
+            "coordination",
+            "evidence"
+          ]
+        },
+        {
+          "name": "checked_observable",
+          "meaning": "Energy curve, barrier or toughness estimate with its numerical definition",
+          "contextIds": [
+            "observable",
+            "interface"
+          ]
+        }
+      ],
+      "requirements": [
+        "Preserve actual inputs and outputs, not conversational success alone.",
+        "Audit physical-model adequacy separately from code execution.",
+        "Compare the target observable against a suitable numerical baseline and, for experimental claims, measurement."
+      ],
+      "gaps": [
+        "MechGPT printed O2 code uses RKS/PBE/STO-3G; execution alone does not resolve adequacy.",
+        "AtomAgents uses human-authored LAMMPS scripts and task-specific support.",
+        "Neither computational success alone demonstrates physical validation."
+      ],
+      "canGlue": "An execution-provenance and numerical-observable contract.",
+      "temptingOverreach": "An agent-run calculation is experimentally confirmed, autonomously general or physically correct merely because it completed.",
+      "locators": [
+        "MECHGPT §2.3.3; Table10",
+        "ATOMAGENTS §2.1–2.4; §4.1"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "executed_calculations.scope",
+      "boundedClaim": "A comparison of computational execution evidence, keeping solver adequacy and experimental confirmation separate.",
+      "strongerClaim": "An agent-run calculation is experimentally confirmed, autonomously general or physically correct merely because it completed.",
+      "constraint": {
+        "id": "executed_calculations.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "ATOMAGENTS.evidence",
+          "ATOMAGENTS.validation_kind",
+          "MECHGPT.evidence",
+          "MECHGPT.validation_kind",
+          "executed_calculations.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "executed_calculations.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "MECHGPT.evidence",
+                "value": "physics_simulation"
+              },
+              {
+                "op": "eq",
+                "key": "ATOMAGENTS.evidence",
+                "value": "physics_simulation"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "MECHGPT.validation_kind",
+                "value": "experiment"
+              },
+              {
+                "op": "eq",
+                "key": "ATOMAGENTS.validation_kind",
+                "value": "experiment"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    },
+    {
+      "id": "partial_embodiment",
+      "label": "Partial embodiment with unresolved methods",
+      "paperIds": [
+        "PROTOTYPE",
+        "STIMULUS"
+      ],
+      "contextIds": [
+        "representation",
+        "interface",
+        "observable",
+        "evidence"
+      ],
+      "scientificClaim": "A printed realization can test selected transferred mechanics, but the measured property and coverage of the mapping must be explicit.",
+      "interfaceVariables": [
+        {
+          "name": "selected_property",
+          "meaning": "Chosen mechanical property reported to survive embodiment",
+          "contextIds": [
+            "representation",
+            "interface"
+          ]
+        },
+        {
+          "name": "test_observable",
+          "meaning": "Actually measured quantity and experimental conditions",
+          "contextIds": [
+            "observable",
+            "evidence"
+          ]
+        },
+        {
+          "name": "method_access",
+          "meaning": "Whether full methods and controls have been reviewed",
+          "contextIds": [
+            "evidence"
+          ]
+        }
+      ],
+      "requirements": [
+        "Retrieve PROTOTYPE full methods before assigning its formal preservation rule or dynamics.",
+        "Specify which property is transferred and which experiment tests it.",
+        "Retain low confidence for abstract-only reported physical validation."
+      ],
+      "gaps": [
+        "PROTOTYPE methods, formal constraints, controls and dynamics remain unavailable in the recorded assessment.",
+        "STIMULUS equilibrium-angle evidence does not supply missing PROTOTYPE methods."
+      ],
+      "canGlue": "An explicit partial-property transfer question; current PROTOTYPE slots remain unknown.",
+      "temptingOverreach": "A fabricated shape reproduces all nanoscale physics or inherits another paper’s validation.",
+      "locators": [
+        "PROTOTYPE Abstract only",
+        "STIMULUS §7 Table3; §8"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "partial_embodiment.scope",
+      "boundedClaim": "Both printed-mechanics papers supply an explicit formal preservation contract for selected properties; the PROTOTYPE side is currently unread.",
+      "strongerClaim": "A fabricated shape reproduces all nanoscale physics or inherits another paper’s validation.",
+      "constraint": {
+        "id": "partial_embodiment.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "PROTOTYPE.guarantee",
+          "PROTOTYPE.response",
+          "STIMULUS.guarantee",
+          "STIMULUS.test_scope",
+          "partial_embodiment.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "partial_embodiment.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "PROTOTYPE.guarantee",
+                "value": "formal_conditional"
+              },
+              {
+                "op": "eq",
+                "key": "STIMULUS.guarantee",
+                "value": "formal_conditional"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "PROTOTYPE.guarantee",
+                "value": "formal_conditional"
+              },
+              {
+                "op": "eq",
+                "key": "PROTOTYPE.response",
+                "value": "dynamical_mapping"
+              },
+              {
+                "op": "eq",
+                "key": "STIMULUS.test_scope",
+                "value": "transient"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    },
+    {
+      "id": "representation_observable",
+      "label": "From representation to tested observable",
+      "paperIds": [
+        "MUSIC",
+        "FIELDPERCEIVER",
+        "CEPHALO"
+      ],
+      "contextIds": [
+        "representation",
+        "observable",
+        "interface",
+        "evidence"
+      ],
+      "scientificClaim": "Representations can expose selected relationships, but their demonstrated outputs need separate, task-specific evidential contracts.",
+      "interfaceVariables": [
+        {
+          "name": "encoding",
+          "meaning": "Hierarchical music, occupancy token or joint image/text representation",
+          "contextIds": [
+            "representation"
+          ]
+        },
+        {
+          "name": "output_type",
+          "meaning": "Composed artifact, loaded field or thresholded terminal damage endpoint",
+          "contextIds": [
+            "observable",
+            "interface"
+          ]
+        },
+        {
+          "name": "validation_target",
+          "meaning": "The particular correspondence or held-out prediction that was checked",
+          "contextIds": [
+            "evidence"
+          ]
+        }
+      ],
+      "requirements": [
+        "State exactly what the encoding preserves or predicts.",
+        "Keep an instantiated artistic mapping distinct from a quantitative prediction.",
+        "Test reverse transfer, time dependence or generated materials separately if claimed."
+      ],
+      "gaps": [
+        "Music-to-material improvement is future work.",
+        "FieldPerceiver has partial-text coverage and deferred temporal extension.",
+        "Cephalo crack benchmarks reduce dynamics to constructed terminal endpoints."
+      ],
+      "canGlue": "A typed encoding-to-output catalog with preserved task boundaries.",
+      "temptingOverreach": "A rich representation establishes full dynamics, successful reverse transfer or physical validity of generated architectures.",
+      "locators": [
+        "MUSIC Fig3; Fig5; conclusion",
+        "FIELDPERCEIVER Introduction; Conclusions snippet",
+        "CEPHALO §4.6.2; §6"
+      ],
+      "status": "curated_contract_with_executable_screen",
+      "sharedKey": "representation_observable.scope",
+      "boundedClaim": "A catalog of three distinct encodings, retaining separate output and validation scopes.",
+      "strongerClaim": "A rich representation establishes full dynamics, successful reverse transfer or physical validity of generated architectures.",
+      "constraint": {
+        "id": "representation_observable.screen",
+        "label": "Declared interface screen for the selected claim scope",
+        "support": [
+          "CEPHALO.endpoint",
+          "CEPHALO.representation",
+          "FIELDPERCEIVER.representation",
+          "FIELDPERCEIVER.temporal_validation",
+          "MUSIC.representation",
+          "MUSIC.reverse_transfer",
+          "representation_observable.scope"
+        ],
+        "expr": {
+          "op": "if",
+          "test": {
+            "op": "eq",
+            "key": "representation_observable.scope",
+            "value": "bounded"
+          },
+          "then": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "MUSIC.representation",
+                "value": "hierarchical_mapping"
+              },
+              {
+                "op": "eq",
+                "key": "FIELDPERCEIVER.representation",
+                "value": "occupancy_tokens"
+              },
+              {
+                "op": "eq",
+                "key": "CEPHALO.representation",
+                "value": "multimodal_descriptors"
+              }
+            ]
+          },
+          "else": {
+            "op": "all",
+            "args": [
+              {
+                "op": "eq",
+                "key": "MUSIC.reverse_transfer",
+                "value": "demonstrated"
+              },
+              {
+                "op": "eq",
+                "key": "FIELDPERCEIVER.temporal_validation",
+                "value": "demonstrated"
+              },
+              {
+                "op": "eq",
+                "key": "CEPHALO.endpoint",
+                "value": "full_operator"
+              }
+            ]
+          }
+        }
+      },
+      "scientificMapStatus": "Candidate comparison interface only; no cross-paper material or mechanism morphism has been verified."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "evidence:COLLAGEN.representation",
+      "label": "Admitted representation · COLLAGEN",
+      "support": [
+        "COLLAGEN.representation"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/"
+    },
+    {
+      "id": "evidence:COLLAGEN.guarantee",
+      "label": "Scoped interface or preservation condition · COLLAGEN",
+      "support": [
+        "COLLAGEN.guarantee"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/"
+    },
+    {
+      "id": "evidence:COLLAGEN.response",
+      "label": "Assessed response variable · COLLAGEN",
+      "support": [
+        "COLLAGEN.response"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/"
+    },
+    {
+      "id": "evidence:COLLAGEN.organization",
+      "label": "Coordination of the reviewed workflow · COLLAGEN",
+      "support": [
+        "COLLAGEN.organization"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/"
+    },
+    {
+      "id": "evidence:COLLAGEN.evidence",
+      "label": "Evidence for the selected material or mechanism claim · COLLAGEN",
+      "support": [
+        "COLLAGEN.evidence"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/"
+    },
+    {
+      "id": "evidence:SILK.representation",
+      "label": "Admitted representation · SILK",
+      "support": [
+        "SILK.representation"
+      ],
+      "url": "https://doi.org/10.1038/nmat2704"
+    },
+    {
+      "id": "evidence:SILK.guarantee",
+      "label": "Scoped interface or preservation condition · SILK",
+      "support": [
+        "SILK.guarantee"
+      ],
+      "url": "https://doi.org/10.1038/nmat2704"
+    },
+    {
+      "id": "evidence:SILK.response",
+      "label": "Assessed response variable · SILK",
+      "support": [
+        "SILK.response"
+      ],
+      "url": "https://doi.org/10.1038/nmat2704"
+    },
+    {
+      "id": "evidence:SILK.organization",
+      "label": "Coordination of the reviewed workflow · SILK",
+      "support": [
+        "SILK.organization"
+      ],
+      "url": "https://doi.org/10.1038/nmat2704"
+    },
+    {
+      "id": "evidence:SILK.evidence",
+      "label": "Evidence for the selected material or mechanism claim · SILK",
+      "support": [
+        "SILK.evidence"
+      ],
+      "url": "https://doi.org/10.1038/nmat2704"
+    },
+    {
+      "id": "evidence:OLOGS.representation",
+      "label": "Admitted representation · OLOGS",
+      "support": [
+        "OLOGS.representation"
+      ],
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911"
+    },
+    {
+      "id": "evidence:OLOGS.guarantee",
+      "label": "Scoped interface or preservation condition · OLOGS",
+      "support": [
+        "OLOGS.guarantee"
+      ],
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911"
+    },
+    {
+      "id": "evidence:OLOGS.response",
+      "label": "Assessed response variable · OLOGS",
+      "support": [
+        "OLOGS.response"
+      ],
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911"
+    },
+    {
+      "id": "evidence:OLOGS.organization",
+      "label": "Coordination of the reviewed workflow · OLOGS",
+      "support": [
+        "OLOGS.organization"
+      ],
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911"
+    },
+    {
+      "id": "evidence:OLOGS.evidence",
+      "label": "Evidence for the selected material or mechanism claim · OLOGS",
+      "support": [
+        "OLOGS.evidence"
+      ],
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0023911"
+    },
+    {
+      "id": "evidence:PROTOTYPE.representation",
+      "label": "Admitted representation · PROTOTYPE",
+      "support": [
+        "PROTOTYPE.representation"
+      ],
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002"
+    },
+    {
+      "id": "evidence:PROTOTYPE.guarantee",
+      "label": "Scoped interface or preservation condition · PROTOTYPE",
+      "support": [
+        "PROTOTYPE.guarantee"
+      ],
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002"
+    },
+    {
+      "id": "evidence:PROTOTYPE.response",
+      "label": "Assessed response variable · PROTOTYPE",
+      "support": [
+        "PROTOTYPE.response"
+      ],
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002"
+    },
+    {
+      "id": "evidence:PROTOTYPE.organization",
+      "label": "Coordination of the reviewed workflow · PROTOTYPE",
+      "support": [
+        "PROTOTYPE.organization"
+      ],
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002"
+    },
+    {
+      "id": "evidence:PROTOTYPE.evidence",
+      "label": "Evidence for the selected material or mechanism claim · PROTOTYPE",
+      "support": [
+        "PROTOTYPE.evidence"
+      ],
+      "url": "https://doi.org/10.1088/0957-4484/27/2/024002"
+    },
+    {
+      "id": "evidence:COPRESHEAF.representation",
+      "label": "Admitted representation · COPRESHEAF",
+      "support": [
+        "COPRESHEAF.representation"
+      ],
+      "url": "https://arxiv.org/html/2606.01444v2"
+    },
+    {
+      "id": "evidence:COPRESHEAF.guarantee",
+      "label": "Scoped interface or preservation condition · COPRESHEAF",
+      "support": [
+        "COPRESHEAF.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2606.01444v2"
+    },
+    {
+      "id": "evidence:COPRESHEAF.response",
+      "label": "Assessed response variable · COPRESHEAF",
+      "support": [
+        "COPRESHEAF.response"
+      ],
+      "url": "https://arxiv.org/html/2606.01444v2"
+    },
+    {
+      "id": "evidence:COPRESHEAF.organization",
+      "label": "Coordination of the reviewed workflow · COPRESHEAF",
+      "support": [
+        "COPRESHEAF.organization"
+      ],
+      "url": "https://arxiv.org/html/2606.01444v2"
+    },
+    {
+      "id": "evidence:COPRESHEAF.evidence",
+      "label": "Evidence for the selected material or mechanism claim · COPRESHEAF",
+      "support": [
+        "COPRESHEAF.evidence"
+      ],
+      "url": "https://arxiv.org/html/2606.01444v2"
+    },
+    {
+      "id": "evidence:STIMULUS.representation",
+      "label": "Admitted representation · STIMULUS",
+      "support": [
+        "STIMULUS.representation"
+      ],
+      "url": "https://arxiv.org/html/2604.26367v2"
+    },
+    {
+      "id": "evidence:STIMULUS.guarantee",
+      "label": "Scoped interface or preservation condition · STIMULUS",
+      "support": [
+        "STIMULUS.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2604.26367v2"
+    },
+    {
+      "id": "evidence:STIMULUS.response",
+      "label": "Assessed response variable · STIMULUS",
+      "support": [
+        "STIMULUS.response"
+      ],
+      "url": "https://arxiv.org/html/2604.26367v2"
+    },
+    {
+      "id": "evidence:STIMULUS.organization",
+      "label": "Coordination of the reviewed workflow · STIMULUS",
+      "support": [
+        "STIMULUS.organization"
+      ],
+      "url": "https://arxiv.org/html/2604.26367v2"
+    },
+    {
+      "id": "evidence:STIMULUS.evidence",
+      "label": "Evidence for the selected material or mechanism claim · STIMULUS",
+      "support": [
+        "STIMULUS.evidence"
+      ],
+      "url": "https://arxiv.org/html/2604.26367v2"
+    },
+    {
+      "id": "evidence:REPLACE.representation",
+      "label": "Admitted representation · REPLACE",
+      "support": [
+        "REPLACE.representation"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf"
+    },
+    {
+      "id": "evidence:REPLACE.guarantee",
+      "label": "Scoped interface or preservation condition · REPLACE",
+      "support": [
+        "REPLACE.guarantee"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf"
+    },
+    {
+      "id": "evidence:REPLACE.response",
+      "label": "Assessed response variable · REPLACE",
+      "support": [
+        "REPLACE.response"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf"
+    },
+    {
+      "id": "evidence:REPLACE.organization",
+      "label": "Coordination of the reviewed workflow · REPLACE",
+      "support": [
+        "REPLACE.organization"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf"
+    },
+    {
+      "id": "evidence:REPLACE.evidence",
+      "label": "Evidence for the selected material or mechanism claim · REPLACE",
+      "support": [
+        "REPLACE.evidence"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf"
+    },
+    {
+      "id": "evidence:MUSIC.representation",
+      "label": "Admitted representation · MUSIC",
+      "support": [
+        "MUSIC.representation"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf"
+    },
+    {
+      "id": "evidence:MUSIC.guarantee",
+      "label": "Scoped interface or preservation condition · MUSIC",
+      "support": [
+        "MUSIC.guarantee"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf"
+    },
+    {
+      "id": "evidence:MUSIC.response",
+      "label": "Assessed response variable · MUSIC",
+      "support": [
+        "MUSIC.response"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf"
+    },
+    {
+      "id": "evidence:MUSIC.organization",
+      "label": "Coordination of the reviewed workflow · MUSIC",
+      "support": [
+        "MUSIC.organization"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf"
+    },
+    {
+      "id": "evidence:MUSIC.evidence",
+      "label": "Evidence for the selected material or mechanism claim · MUSIC",
+      "support": [
+        "MUSIC.evidence"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf"
+    },
+    {
+      "id": "evidence:FIELDPERCEIVER.representation",
+      "label": "Admitted representation · FIELDPERCEIVER",
+      "support": [
+        "FIELDPERCEIVER.representation"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316"
+    },
+    {
+      "id": "evidence:FIELDPERCEIVER.guarantee",
+      "label": "Scoped interface or preservation condition · FIELDPERCEIVER",
+      "support": [
+        "FIELDPERCEIVER.guarantee"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316"
+    },
+    {
+      "id": "evidence:FIELDPERCEIVER.response",
+      "label": "Assessed response variable · FIELDPERCEIVER",
+      "support": [
+        "FIELDPERCEIVER.response"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316"
+    },
+    {
+      "id": "evidence:FIELDPERCEIVER.organization",
+      "label": "Coordination of the reviewed workflow · FIELDPERCEIVER",
+      "support": [
+        "FIELDPERCEIVER.organization"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316"
+    },
+    {
+      "id": "evidence:FIELDPERCEIVER.evidence",
+      "label": "Evidence for the selected material or mechanism claim · FIELDPERCEIVER",
+      "support": [
+        "FIELDPERCEIVER.evidence"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316"
+    },
+    {
+      "id": "evidence:MECHGPT.representation",
+      "label": "Admitted representation · MECHGPT",
+      "support": [
+        "MECHGPT.representation"
+      ],
+      "url": "https://arxiv.org/pdf/2310.19998"
+    },
+    {
+      "id": "evidence:MECHGPT.guarantee",
+      "label": "Scoped interface or preservation condition · MECHGPT",
+      "support": [
+        "MECHGPT.guarantee"
+      ],
+      "url": "https://arxiv.org/pdf/2310.19998"
+    },
+    {
+      "id": "evidence:MECHGPT.response",
+      "label": "Assessed response variable · MECHGPT",
+      "support": [
+        "MECHGPT.response"
+      ],
+      "url": "https://arxiv.org/pdf/2310.19998"
+    },
+    {
+      "id": "evidence:MECHGPT.organization",
+      "label": "Coordination of the reviewed workflow · MECHGPT",
+      "support": [
+        "MECHGPT.organization"
+      ],
+      "url": "https://arxiv.org/pdf/2310.19998"
+    },
+    {
+      "id": "evidence:MECHGPT.evidence",
+      "label": "Evidence for the selected material or mechanism claim · MECHGPT",
+      "support": [
+        "MECHGPT.evidence"
+      ],
+      "url": "https://arxiv.org/pdf/2310.19998"
+    },
+    {
+      "id": "evidence:SCIAGENTS.representation",
+      "label": "Admitted representation · SCIAGENTS",
+      "support": [
+        "SCIAGENTS.representation"
+      ],
+      "url": "https://arxiv.org/html/2409.05556v1"
+    },
+    {
+      "id": "evidence:SCIAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition · SCIAGENTS",
+      "support": [
+        "SCIAGENTS.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2409.05556v1"
+    },
+    {
+      "id": "evidence:SCIAGENTS.response",
+      "label": "Assessed response variable · SCIAGENTS",
+      "support": [
+        "SCIAGENTS.response"
+      ],
+      "url": "https://arxiv.org/html/2409.05556v1"
+    },
+    {
+      "id": "evidence:SCIAGENTS.organization",
+      "label": "Coordination of the reviewed workflow · SCIAGENTS",
+      "support": [
+        "SCIAGENTS.organization"
+      ],
+      "url": "https://arxiv.org/html/2409.05556v1"
+    },
+    {
+      "id": "evidence:SCIAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim · SCIAGENTS",
+      "support": [
+        "SCIAGENTS.evidence"
+      ],
+      "url": "https://arxiv.org/html/2409.05556v1"
+    },
+    {
+      "id": "evidence:SCIAGENTS.workflow_evidence",
+      "label": "Executed generation and evaluation workflow · SCIAGENTS",
+      "support": [
+        "SCIAGENTS.workflow_evidence"
+      ],
+      "url": "https://arxiv.org/html/2409.05556v1"
+    },
+    {
+      "id": "evidence:CEPHALO.representation",
+      "label": "Admitted representation · CEPHALO",
+      "support": [
+        "CEPHALO.representation"
+      ],
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531"
+    },
+    {
+      "id": "evidence:CEPHALO.guarantee",
+      "label": "Scoped interface or preservation condition · CEPHALO",
+      "support": [
+        "CEPHALO.guarantee"
+      ],
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531"
+    },
+    {
+      "id": "evidence:CEPHALO.response",
+      "label": "Assessed response variable · CEPHALO",
+      "support": [
+        "CEPHALO.response"
+      ],
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531"
+    },
+    {
+      "id": "evidence:CEPHALO.organization",
+      "label": "Coordination of the reviewed workflow · CEPHALO",
+      "support": [
+        "CEPHALO.organization"
+      ],
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531"
+    },
+    {
+      "id": "evidence:CEPHALO.evidence",
+      "label": "Evidence for the selected material or mechanism claim · CEPHALO",
+      "support": [
+        "CEPHALO.evidence"
+      ],
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531"
+    },
+    {
+      "id": "evidence:HYPERGRAPH.representation",
+      "label": "Admitted representation · HYPERGRAPH",
+      "support": [
+        "HYPERGRAPH.representation"
+      ],
+      "url": "https://arxiv.org/html/2601.04878v1"
+    },
+    {
+      "id": "evidence:HYPERGRAPH.guarantee",
+      "label": "Scoped interface or preservation condition · HYPERGRAPH",
+      "support": [
+        "HYPERGRAPH.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2601.04878v1"
+    },
+    {
+      "id": "evidence:HYPERGRAPH.response",
+      "label": "Assessed response variable · HYPERGRAPH",
+      "support": [
+        "HYPERGRAPH.response"
+      ],
+      "url": "https://arxiv.org/html/2601.04878v1"
+    },
+    {
+      "id": "evidence:HYPERGRAPH.organization",
+      "label": "Coordination of the reviewed workflow · HYPERGRAPH",
+      "support": [
+        "HYPERGRAPH.organization"
+      ],
+      "url": "https://arxiv.org/html/2601.04878v1"
+    },
+    {
+      "id": "evidence:HYPERGRAPH.evidence",
+      "label": "Evidence for the selected material or mechanism claim · HYPERGRAPH",
+      "support": [
+        "HYPERGRAPH.evidence"
+      ],
+      "url": "https://arxiv.org/html/2601.04878v1"
+    },
+    {
+      "id": "evidence:HYPERGRAPH.workflow_evidence",
+      "label": "Executed generation and evaluation workflow · HYPERGRAPH",
+      "support": [
+        "HYPERGRAPH.workflow_evidence"
+      ],
+      "url": "https://arxiv.org/html/2601.04878v1"
+    },
+    {
+      "id": "evidence:PROTAGENTS.representation",
+      "label": "Admitted representation · PROTAGENTS",
+      "support": [
+        "PROTAGENTS.representation"
+      ],
+      "url": "https://arxiv.org/html/2402.04268v1"
+    },
+    {
+      "id": "evidence:PROTAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition · PROTAGENTS",
+      "support": [
+        "PROTAGENTS.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2402.04268v1"
+    },
+    {
+      "id": "evidence:PROTAGENTS.response",
+      "label": "Assessed response variable · PROTAGENTS",
+      "support": [
+        "PROTAGENTS.response"
+      ],
+      "url": "https://arxiv.org/html/2402.04268v1"
+    },
+    {
+      "id": "evidence:PROTAGENTS.organization",
+      "label": "Coordination of the reviewed workflow · PROTAGENTS",
+      "support": [
+        "PROTAGENTS.organization"
+      ],
+      "url": "https://arxiv.org/html/2402.04268v1"
+    },
+    {
+      "id": "evidence:PROTAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim · PROTAGENTS",
+      "support": [
+        "PROTAGENTS.evidence"
+      ],
+      "url": "https://arxiv.org/html/2402.04268v1"
+    },
+    {
+      "id": "evidence:PROTAGENTS.predicted_unfolding",
+      "label": "Learned unfolding-property evidence · PROTAGENTS",
+      "support": [
+        "PROTAGENTS.predicted_unfolding"
+      ],
+      "url": "https://arxiv.org/html/2402.04268v1"
+    },
+    {
+      "id": "evidence:ATOMAGENTS.representation",
+      "label": "Admitted representation · ATOMAGENTS",
+      "support": [
+        "ATOMAGENTS.representation"
+      ],
+      "url": "https://arxiv.org/html/2407.10022v1"
+    },
+    {
+      "id": "evidence:ATOMAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition · ATOMAGENTS",
+      "support": [
+        "ATOMAGENTS.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2407.10022v1"
+    },
+    {
+      "id": "evidence:ATOMAGENTS.response",
+      "label": "Assessed response variable · ATOMAGENTS",
+      "support": [
+        "ATOMAGENTS.response"
+      ],
+      "url": "https://arxiv.org/html/2407.10022v1"
+    },
+    {
+      "id": "evidence:ATOMAGENTS.organization",
+      "label": "Coordination of the reviewed workflow · ATOMAGENTS",
+      "support": [
+        "ATOMAGENTS.organization"
+      ],
+      "url": "https://arxiv.org/html/2407.10022v1"
+    },
+    {
+      "id": "evidence:ATOMAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim · ATOMAGENTS",
+      "support": [
+        "ATOMAGENTS.evidence"
+      ],
+      "url": "https://arxiv.org/html/2407.10022v1"
+    },
+    {
+      "id": "evidence:VIBEGEN.representation",
+      "label": "Admitted representation · VIBEGEN",
+      "support": [
+        "VIBEGEN.representation"
+      ],
+      "url": "https://arxiv.org/pdf/2502.10173"
+    },
+    {
+      "id": "evidence:VIBEGEN.guarantee",
+      "label": "Scoped interface or preservation condition · VIBEGEN",
+      "support": [
+        "VIBEGEN.guarantee"
+      ],
+      "url": "https://arxiv.org/pdf/2502.10173"
+    },
+    {
+      "id": "evidence:VIBEGEN.response",
+      "label": "Assessed response variable · VIBEGEN",
+      "support": [
+        "VIBEGEN.response"
+      ],
+      "url": "https://arxiv.org/pdf/2502.10173"
+    },
+    {
+      "id": "evidence:VIBEGEN.organization",
+      "label": "Coordination of the reviewed workflow · VIBEGEN",
+      "support": [
+        "VIBEGEN.organization"
+      ],
+      "url": "https://arxiv.org/pdf/2502.10173"
+    },
+    {
+      "id": "evidence:VIBEGEN.evidence",
+      "label": "Evidence for the selected material or mechanism claim · VIBEGEN",
+      "support": [
+        "VIBEGEN.evidence"
+      ],
+      "url": "https://arxiv.org/pdf/2502.10173"
+    },
+    {
+      "id": "evidence:SCIENCECLAW.representation",
+      "label": "Admitted representation · SCIENCECLAW",
+      "support": [
+        "SCIENCECLAW.representation"
+      ],
+      "url": "https://arxiv.org/html/2603.14312v1"
+    },
+    {
+      "id": "evidence:SCIENCECLAW.guarantee",
+      "label": "Scoped interface or preservation condition · SCIENCECLAW",
+      "support": [
+        "SCIENCECLAW.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2603.14312v1"
+    },
+    {
+      "id": "evidence:SCIENCECLAW.response",
+      "label": "Assessed response variable · SCIENCECLAW",
+      "support": [
+        "SCIENCECLAW.response"
+      ],
+      "url": "https://arxiv.org/html/2603.14312v1"
+    },
+    {
+      "id": "evidence:SCIENCECLAW.organization",
+      "label": "Coordination of the reviewed workflow · SCIENCECLAW",
+      "support": [
+        "SCIENCECLAW.organization"
+      ],
+      "url": "https://arxiv.org/html/2603.14312v1"
+    },
+    {
+      "id": "evidence:SCIENCECLAW.evidence",
+      "label": "Evidence for the selected material or mechanism claim · SCIENCECLAW",
+      "support": [
+        "SCIENCECLAW.evidence"
+      ],
+      "url": "https://arxiv.org/html/2603.14312v1"
+    },
+    {
+      "id": "evidence:GRAPHAGENTS.representation",
+      "label": "Admitted representation · GRAPHAGENTS",
+      "support": [
+        "GRAPHAGENTS.representation"
+      ],
+      "url": "https://arxiv.org/html/2602.07491v1"
+    },
+    {
+      "id": "evidence:GRAPHAGENTS.guarantee",
+      "label": "Scoped interface or preservation condition · GRAPHAGENTS",
+      "support": [
+        "GRAPHAGENTS.guarantee"
+      ],
+      "url": "https://arxiv.org/html/2602.07491v1"
+    },
+    {
+      "id": "evidence:GRAPHAGENTS.response",
+      "label": "Assessed response variable · GRAPHAGENTS",
+      "support": [
+        "GRAPHAGENTS.response"
+      ],
+      "url": "https://arxiv.org/html/2602.07491v1"
+    },
+    {
+      "id": "evidence:GRAPHAGENTS.organization",
+      "label": "Coordination of the reviewed workflow · GRAPHAGENTS",
+      "support": [
+        "GRAPHAGENTS.organization"
+      ],
+      "url": "https://arxiv.org/html/2602.07491v1"
+    },
+    {
+      "id": "evidence:GRAPHAGENTS.evidence",
+      "label": "Evidence for the selected material or mechanism claim · GRAPHAGENTS",
+      "support": [
+        "GRAPHAGENTS.evidence"
+      ],
+      "url": "https://arxiv.org/html/2602.07491v1"
+    },
+    {
+      "id": "evidence:GRAPHAGENTS.workflow_evidence",
+      "label": "Executed generation and evaluation workflow · GRAPHAGENTS",
+      "support": [
+        "GRAPHAGENTS.workflow_evidence"
+      ],
+      "url": "https://arxiv.org/html/2602.07491v1"
+    },
+    {
+      "id": "evidence:COPRESHEAF.runtime_certification",
+      "label": "Implemented categorical certification · COPRESHEAF",
+      "support": [
+        "COPRESHEAF.runtime_certification"
+      ],
+      "url": "https://arxiv.org/html/2606.01444v2"
+    },
+    {
+      "id": "evidence:SCIENCECLAW.matching_semantics",
+      "label": "Scope of compatibility matching · SCIENCECLAW",
+      "support": [
+        "SCIENCECLAW.matching_semantics"
+      ],
+      "url": "https://arxiv.org/html/2603.14312v1"
+    },
+    {
+      "id": "evidence:STIMULUS.test_scope",
+      "label": "Observed response test scope · STIMULUS",
+      "support": [
+        "STIMULUS.test_scope"
+      ],
+      "url": "https://arxiv.org/html/2604.26367v2"
+    },
+    {
+      "id": "evidence:REPLACE.test_scope",
+      "label": "Mechanical property scope · REPLACE",
+      "support": [
+        "REPLACE.test_scope"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/ADEM_2012.pdf"
+    },
+    {
+      "id": "evidence:VIBEGEN.descriptor_information",
+      "label": "Information retained by modal target · VIBEGEN",
+      "support": [
+        "VIBEGEN.descriptor_information"
+      ],
+      "url": "https://arxiv.org/pdf/2502.10173"
+    },
+    {
+      "id": "evidence:SCIENCECLAW.descriptor_information",
+      "label": "Information retained by resonance design · SCIENCECLAW",
+      "support": [
+        "SCIENCECLAW.descriptor_information"
+      ],
+      "url": "https://arxiv.org/html/2603.14312v1"
+    },
+    {
+      "id": "evidence:HYPERGRAPH.relation_semantics",
+      "label": "Meaning of higher-order relation · HYPERGRAPH",
+      "support": [
+        "HYPERGRAPH.relation_semantics"
+      ],
+      "url": "https://arxiv.org/html/2601.04878v1"
+    },
+    {
+      "id": "evidence:SCIAGENTS.performance_status",
+      "label": "Status of proposed material gains · SCIAGENTS",
+      "support": [
+        "SCIAGENTS.performance_status"
+      ],
+      "url": "https://arxiv.org/html/2409.05556v1"
+    },
+    {
+      "id": "evidence:MECHGPT.validation_kind",
+      "label": "Type of downstream validation · MECHGPT",
+      "support": [
+        "MECHGPT.validation_kind"
+      ],
+      "url": "https://arxiv.org/pdf/2310.19998"
+    },
+    {
+      "id": "evidence:ATOMAGENTS.validation_kind",
+      "label": "Type of downstream validation · ATOMAGENTS",
+      "support": [
+        "ATOMAGENTS.validation_kind"
+      ],
+      "url": "https://arxiv.org/html/2407.10022v1"
+    },
+    {
+      "id": "evidence:COLLAGEN.length_context",
+      "label": "Domain of inferred characteristic length · COLLAGEN",
+      "support": [
+        "COLLAGEN.length_context"
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567872/"
+    },
+    {
+      "id": "evidence:SILK.length_context",
+      "label": "Domain of inferred characteristic length · SILK",
+      "support": [
+        "SILK.length_context"
+      ],
+      "url": "https://doi.org/10.1038/nmat2704"
+    },
+    {
+      "id": "evidence:MUSIC.reverse_transfer",
+      "label": "Demonstrated reverse material transfer · MUSIC",
+      "support": [
+        "MUSIC.reverse_transfer"
+      ],
+      "url": "https://web.mit.edu/mbuehler/www/papers/Nano_Today_2012.pdf"
+    },
+    {
+      "id": "evidence:FIELDPERCEIVER.temporal_validation",
+      "label": "Temporal generalization scope · FIELDPERCEIVER",
+      "support": [
+        "FIELDPERCEIVER.temporal_validation"
+      ],
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369702122001316"
+    },
+    {
+      "id": "evidence:CEPHALO.endpoint",
+      "label": "Crack-analysis endpoint · CEPHALO",
+      "support": [
+        "CEPHALO.endpoint"
+      ],
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/adfm.202409531"
+    },
+    {
+      "id": "contract:provenance_revision",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "COPRESHEAF.representation",
+        "COPRESHEAF.runtime_certification",
+        "SCIENCECLAW.matching_semantics",
+        "SCIENCECLAW.organization",
+        "provenance_revision.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    },
+    {
+      "id": "contract:conditional_transfer",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "OLOGS.guarantee",
+        "REPLACE.guarantee",
+        "REPLACE.test_scope",
+        "STIMULUS.guarantee",
+        "STIMULUS.test_scope",
+        "conditional_transfer.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    },
+    {
+      "id": "contract:modal_contract",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "PROTAGENTS.response",
+        "SCIENCECLAW.descriptor_information",
+        "SCIENCECLAW.response",
+        "VIBEGEN.descriptor_information",
+        "VIBEGEN.response",
+        "modal_contract.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    },
+    {
+      "id": "contract:multiscale_failure",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "COLLAGEN.evidence",
+        "COLLAGEN.length_context",
+        "SILK.evidence",
+        "SILK.length_context",
+        "multiscale_failure.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    },
+    {
+      "id": "contract:retrieval_context",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "GRAPHAGENTS.evidence",
+        "HYPERGRAPH.relation_semantics",
+        "HYPERGRAPH.representation",
+        "SCIAGENTS.evidence",
+        "SCIAGENTS.performance_status",
+        "retrieval_context.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    },
+    {
+      "id": "contract:executed_calculations",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "ATOMAGENTS.evidence",
+        "ATOMAGENTS.validation_kind",
+        "MECHGPT.evidence",
+        "MECHGPT.validation_kind",
+        "executed_calculations.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    },
+    {
+      "id": "contract:partial_embodiment",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "PROTOTYPE.guarantee",
+        "PROTOTYPE.response",
+        "STIMULUS.guarantee",
+        "STIMULUS.test_scope",
+        "partial_embodiment.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    },
+    {
+      "id": "contract:representation_observable",
+      "label": "Joint contract definition, not a validation certificate",
+      "support": [
+        "CEPHALO.endpoint",
+        "CEPHALO.representation",
+        "FIELDPERCEIVER.representation",
+        "FIELDPERCEIVER.temporal_validation",
+        "MUSIC.representation",
+        "MUSIC.reverse_transfer",
+        "representation_observable.scope"
+      ],
+      "url": "https://paper-mixer-h.stochasticcockatoo.chatgpt.site/presheaf/model.json"
+    }
+  ],
+  "references": [
+    {
+      "title": "Stacks Project: Sheaves, Definition6.7.1 and Example6.7.5",
+      "url": "https://stacks.math.columbia.edu/tag/006S",
+      "scope": "Sheaf matching/gluing condition and product-of-fibers example"
+    },
+    {
+      "title": "Stacks Project: Sheafification",
+      "url": "https://stacks.math.columbia.edu/tag/007X",
+      "scope": "Associated sheaf; consequences on the chosen discrete base are explained as this model’s deduction"
+    },
+    {
+      "title": "Self-Revising Discovery Systems, reviewed v2",
+      "url": "https://arxiv.org/html/2606.01444v2",
+      "scope": "Scientific inspiration; not a claim that this implementation reproduces that categorical system"
+    }
+  ]
+}

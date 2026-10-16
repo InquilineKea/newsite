@@ -1,0 +1,206 @@
+{
+  "status": "implementation_review_found_one_blocking_validation_gap",
+  "reviewScope": "Independent-context mathematical audit of the proposed model, before implementation. Same inherited model; not independent theorem certification. No scientific truth audit.",
+  "formalModel": {
+    "base": "The finite discrete topological space K. Its opens are every subset U of K, ordered by inclusion. A cover is a family whose union is U.",
+    "eventSheaf": "E(U) = product over k in U of D_k, with literal coordinate projection to every V subset U.",
+    "constraints": "Each fixed constraint c has a fixed declared support S_c subset K and a fixed predicate on product_{k in S_c} D_k.",
+    "constraintPresheaf": "F(U) = {s in E(U): every constraint c with S_c subset U passes on s restricted to S_c}.",
+    "proof": "If s belongs to F(U) and V is a subset of U, every constraint active on V is active on U. Therefore s restricted to V belongs to F(V). Literal projections satisfy identity and composition. Hence F is a subpresheaf of E.",
+    "separated": "F is separated: two sections agreeing on every member of a union cover agree at every coordinate and are equal. A failure of the sheaf condition in this construction is failure of existence, not failure of uniqueness.",
+    "emptyContext": "Require E(empty) = {empty assignment}. With no false empty-support constraints, F(empty) is also this singleton. Either forbid empty-support constraints or document their exceptional semantics."
+  },
+  "minimalCounterexample": {
+    "variables": {
+      "x": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        1
+      ]
+    },
+    "constraint": {
+      "support": [
+        "x",
+        "y"
+      ],
+      "predicate": "x equals y"
+    },
+    "cover": [
+      [
+        "x"
+      ],
+      [
+        "y"
+      ]
+    ],
+    "locals": [
+      {
+        "x": 0
+      },
+      {
+        "y": 1
+      }
+    ],
+    "result": "Both locals belong to F on their individual patches and agree on the empty overlap. Their unique E merge is {x:0,y:1}, which fails the constraint and is not in F({x,y}).",
+    "criticalDistinction": "F({x,y}) is still nonempty: {x:0,y:0} and {x:1,y:1} are global sections. The selected matching family has no extension; that is not a proof that the presheaf has no global sections."
+  },
+  "requirements": [
+    {
+      "severity": "required",
+      "item": "State the discrete topology and union-cover definition; do not use the word sheaf without specifying what constitutes a cover."
+    },
+    {
+      "severity": "required",
+      "item": "Namespace paper observations by paper and experimental scope. Sharing a word such as mode, robustness, or material does not identify two scoped propositions."
+    },
+    {
+      "severity": "required",
+      "item": "Treat unknown as explicit unknown, never false. If included as a domain value, define fixed predicate behavior on it. Prefer separate packet statuses pass, fail, unresolved. Only pass licenses a proposed synthesis; unresolved is missing evidence, not a contradiction."
+    },
+    {
+      "severity": "required",
+      "item": "Keep the distinction between an observation and a possible assignment. An algebraically allowed completion is not a measurement or a paper finding."
+    },
+    {
+      "severity": "required",
+      "item": "A failed observed packet means that this packet does not license this synthesis under the selected contract. It does not establish conflict between the papers, scientific impossibility, or absence of every possible global section."
+    },
+    {
+      "severity": "required",
+      "item": "Freeze each contract and its supports before checking contexts. Every predicate must read only its declared support and be deterministic. Do not silently vary the scientific interpretation by context."
+    },
+    {
+      "severity": "required",
+      "item": "Label contract predicates as curated interpretations and transfer requirements. Mathematical validity of projection and gluing does not validate the predicates scientifically."
+    },
+    {
+      "severity": "required",
+      "item": "Do not describe this as an empirically learned factorization, orthogonalization, cohomology computation, or identification of objective latent factors. It is a finite, authored context-and-constraint model."
+    },
+    {
+      "severity": "required",
+      "item": "Paper score similarity must not be used as restriction equality or gluing evidence. Restriction compares identical scoped variables and literal values."
+    },
+    {
+      "severity": "required",
+      "item": "Do not offer sheafification as a scientific repair. In this discrete topology, multi-variable constraints disappear upon sheafification when all singleton sections remain available. If every constraint has at least two variables, the sheafification is E and forgets exactly those cross-coordinate requirements."
+    },
+    {
+      "severity": "recommended",
+      "item": "Show both the compatible local packet and the cross-support contract that prevents its verified merge. This makes the mathematical reason useful rather than decorative."
+    },
+    {
+      "severity": "recommended",
+      "item": "Allow literal overlaps to be empty when papers concern distinct scoped facts. Explain that nontrivial cross-paper synthesis is supplied by explicit bridge constraints, not invented equivalence between unrelated measurements."
+    },
+    {
+      "severity": "recommended",
+      "item": "If the app checks only selected covers or packets, call those checks local examples. Do not claim a global sheaf-law test over every section and every cover unless it actually enumerates all of them or relies on a stated proof."
+    }
+  ],
+  "unknownOptions": {
+    "verified": "F_verified(U) admits only assignments whose active predicates all return pass.",
+    "possible": "F_possible(U) admits assignments whose active predicates never return fail; unresolved predicates are retained as unresolved, not verified.",
+    "fact": "Each is a presheaf when predicates and supports are fixed. Different membership criteria must not be conflated in UI claims."
+  },
+  "copresheaf": {
+    "safeDefinition": "A Set-valued copresheaf on a category C is a covariant functor I:C -> Set: each declared arrow gets an actual function, and identity/composition must hold.",
+    "pitfall": "A workflow that launches branching scientific production, chooses an arbitrary merge, or generates new artifacts does not by itself define such a functor. If maps are absent, present this as a proposed production direction rather than a validated copresheaf.",
+    "safeConcreteOption": "Use a fixed artifact universe A and declared supports. Set I(U) = {a in A: support(a) subset U}; inclusions U subset V induce literal set inclusions I(U) -> I(V). This is covariant and functorial. It records availability of existing artifacts, not their creation or a cosheaf gluing law.",
+    "cosheafWarning": "Copresheaf and cosheaf are different. Covariance alone does not verify the cosheaf colimit axiom."
+  },
+  "minimumTests": [
+    "E identity and composition for all represented contexts or property-generated examples.",
+    "F restriction closure for every enumerated assignment of a small fixture.",
+    "Compatible local sections produce one unique E merge.",
+    "Any conflicting shared coordinate rejects the packet before evaluating cross-support constraints.",
+    "The equality counterexample fails F-gluing while F(global) remains nonempty.",
+    "An identical successful packet passes its fixed contract.",
+    "A partial packet with an accepted completion remains unresolved, even if all completions pass. If every completion fails, blocked means only rejection by this fixed contract, and isGluingFailure must remain false.",
+    "No constraint reads an undeclared variable; declared supports and domain values are validated.",
+    "Empty context returns a singleton empty assignment.",
+    "If an artifact copresheaf is implemented, inclusion maps satisfy identity and composition; no cosheaf claim is inferred."
+  ],
+  "suggestedUserExplanation": {
+    "presheaf": "Each paper contributes scoped observations. Looking at a smaller question keeps only the observations that belong to it, consistently.",
+    "sheafTest": "When those local observations agree wherever they overlap, can they be assembled into one account that also meets the proposed cross-paper requirements? We show where that assembly succeeds, fails a requirement, or needs more evidence.",
+    "copresheaf": "The reverse direction tracks which existing artifacts become available as contexts are combined. New scientific artifact production is a separate workflow unless explicit functorial maps are implemented."
+  },
+  "primaryMathSources": [
+    {
+      "title": "The Stacks Project, Section 6.7: Sheaves",
+      "url": "https://stacks.math.columbia.edu/tag/006S",
+      "ref": "turn153search0",
+      "supports": "Definition of gluing and uniqueness, empty-cover condition, product-of-pointwise-sets example."
+    },
+    {
+      "title": "The Stacks Project, Section 6.17: Sheafification",
+      "url": "https://stacks.math.columbia.edu/tag/007X",
+      "ref": "turn153search5",
+      "supports": "Stalk construction of sheafification; the discrete-space consequence above is the reviewer's deduction."
+    }
+  ],
+  "implementationAudit": {
+    "path": "/workspace/sites/paper-mixer/dist/presheaf/core.js",
+    "overall": "The finite total-assignment presheaf and separate partial-observation completion semantics are mathematically aligned. One malformed-model case can report compatible when a declared support is not covered; fix before publication.",
+    "checkedCorrect": [
+      "Restriction is literal coordinate projection and rejects absent target coordinates.",
+      "Applicable constraints are exactly those whose declared supports are contained in the section context.",
+      "For total assignments the admitted sets are closed under restriction; identities and composition follow coordinatewise.",
+      "No null is claimed to be a total E or F section: completion enumeration supplies the finite total assignments.",
+      "Finite predicates have fixed supports, and expressionKeys checks that expression variables equal the declared support.",
+      "The current artifact availability rule has literal inclusion maps and is covariant.",
+      "The current common scope field is a shared synthesis-contract choice, not an invented equivalence of paper observations."
+    ],
+    "issues": [
+      {
+        "id": "UNCOVERED_CONSTRAINT_SUPPORT",
+        "severity": "blocking_validation_gap",
+        "reproduced": true,
+        "cause": "validateModel permits a bridge constraint to reference a port whose paper is absent from bridge.paperIds. assessBridge creates no patch for that paper, so the declared support is not covered. completionCounts delegates to admissible, which correctly omits the non-applicable constraint, but assessBridge then mistakes that vacuity for successful verification.",
+        "reproduction": "Bridge B has paperIds [P,Q], support [P.x,Q.x,R.x,B.scope], and conjunction requiring all x=yes and scope=bounded. Every observed x=yes. validateModel accepts it. assessBridge returns status=compatible, checks[0].status=unknown, and witness {P.x:yes,Q.x:yes,B.scope:bounded}, lacking R.x.",
+        "fix": "Require every non-shared support variable to be owned by a paper in bridge.paperIds. Assert union of patch keys equals the declared support. Require all reported checks to be pass before returning compatible.",
+        "regression": "The uncovered-support fixture must fail validation or throw before assessment; never return compatible."
+      },
+      {
+        "id": "PARTIAL_LOCAL_COMPLETENESS",
+        "severity": "future_robustness",
+        "cause": "isGluingFailure checks unknownKeys of the merged assignment only. mergeSections can replace one local null with a known value from another patch. Thus merged completeness alone does not establish that each original local is a total section.",
+        "currentImpact": "Current bridge.scope is always supplied as known, and paper facts are namespaced, so the current patch construction cannot trigger this case.",
+        "fix": "Also require every value in every patch assignment to be non-null and every overlap.unresolved array to be empty before setting isGluingFailure.",
+        "regression": "A partial local field filled from another patch must not be called a sheaf gluing counterexample."
+      },
+      {
+        "id": "PREDICATE_DOMAIN_LITERALS",
+        "severity": "recommended_validation",
+        "cause": "expressionKeys validates references, but predicate eq.value and in.values are not checked against the corresponding domain. A typographical value can create spurious rejection or a runtime error.",
+        "fix": "Validate expression operator shape and arity, ensure eq.value belongs to its declared finite domain, and ensure in.values is an array whose entries belong to that domain.",
+        "regression": "A predicate mentioning an impossible literal must fail schema validation."
+      }
+    ],
+    "unknownClarification": "The implementation conservatively leaves a partial observation unresolved when some completions pass, including when all completions pass. If no completion passes, blocked is sound for the selected packet under the fixed contract; this need not be labeled unresolved merely because null appears. This is constraint rejection under known facts, not scientific disproof.",
+    "userLanguage": "For the selected scoped facts, the screen finds a compatible total assignment, rejects every completion, or cannot yet verify the bridge. Only complete, locally admissible, overlap-compatible packets can supply the displayed presheaf gluing counterexample.",
+    "executedChecks": {
+      "restrictionClosureCases": 125,
+      "compositionCases": 343,
+      "fixture": "All contexts and binary assignments on three coordinates, with a two-coordinate equality constraint.",
+      "gluingCounterexample": "confirmed",
+      "otherGlobalSectionsRemain": "confirmed"
+    }
+  },
+  "implementationResolution": {
+    "status": "Applied and regression-tested",
+    "fixes": [
+      "Reject every bridge-support variable outside its selected paper cover.",
+      "Assert that union of local patch keys equals complete constraint support.",
+      "Return compatible only when every screen passes and no facts are unknown.",
+      "Require each original local patch to be complete and every overlap resolved before flagging a gluing counterexample.",
+      "Reject unknowns as total sections and validate all predicate literals against finite domains."
+    ],
+    "sourceRefinement": "COPRESHEAF organization projects to artifact_needs; representation revision remains in its own port. This avoids interpreting a schema revision as a fully certified workflow.",
+    "checks": "dist/presheaf/checks.json; actual model and malformed-cover regression included."
+  }
+}

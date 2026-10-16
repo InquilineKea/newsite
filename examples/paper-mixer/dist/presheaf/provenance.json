@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-16",
+  "operation": "Curated presheaf-like factorization with an executable finite constraint presheaf and a separate fixed-artifact availability copresheaf.",
+  "sourceAtlas": "runs/buehler/papers.json",
+  "sourceAtlasHash": "bfb3f98e049b96543f998efbc33c22e3601764a2e48ef27298b227e99229ee89",
+  "roles": {
+    "presheaf_paper_ports": "Extracted scoped categorical ports and proposed bridge requirements from pinned existing paper readings, without using score thresholds.",
+    "presheaf_math_audit": "Audited the mathematical construction and code; found malformed-cover and partial-local-section pitfalls.",
+    "presheaf_interface": "Built the interactive view; no scientific predicate selection.",
+    "root": "Constructed finite predicates and engine, refined source projection, implemented regressions, exported and published."
+  },
+  "independence": "Separate contexts share the same inherited model family. No external expert calibration, theorem-prover certification or independent scientific reproduction.",
+  "interpretation": "Ports and predicates are explicit lossy modeling choices, not discovered universal laws. Passing records meet the stated screen only.",
+  "execution": "Actual deterministic identity/composition, restriction closure, availability and gluing fixtures plus48actual-packet scenarios. No new scientific experiments, data reanalysis, learned sheaf or cohomology.",
+  "browserQA": "Unavailable; no browser QA performed.",
+  "recordHashes": {
+    "audit.json": "67b283596bcf42446ea9e1ae2f7926466538f38ee7e0194fb453d9381fe272a3",
+    "model.json": "e913db858c6e034297ba4ed4c23066ac2c03fc38b054e34b208d65aa2e4fbcbc",
+    "readings/ports-original.json": "7e63b5a8f7b0aa51d3fb515bc27dfbb80906bd2851cc416505e938640da03d3a"
+  }
+}
